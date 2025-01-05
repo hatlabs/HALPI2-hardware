@@ -5,13 +5,13 @@
 	(uuid "1dc17b28-8b22-4671-ae14-b7c5868b2a84")
 	(paper "A4")
 	(title_block
-		(title "Sailor Hat for Raspberry Pi")
-		(date "2024-09-25")
-		(rev "v2.0.1")
-		(company "Hat Labs Ltd")
+		(title "HALPI2")
+		(date "2025-01-03")
+		(rev "v0.0.1")
+		(company "Hat Labs Oy")
 		(comment 1 "https://creativecommons.org/licenses/by/4.0")
 		(comment 2 "To view a copy of this license, visit ")
-		(comment 3 "Sailor Hat for Raspberry Pi is licensed under CC BY 4.0.")
+		(comment 3 "HALPI2 is licensed under CC BY 4.0.")
 	)
 	(lib_symbols
 		(symbol "Device:C"
@@ -1211,9 +1211,9 @@
 		)
 		(symbol "power:GND"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1287,8 +1287,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
-					(name "GND"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1370,7 +1370,7 @@
 				(pin power_out line
 					(at 0 0 90)
 					(length 0)
-					(name "pwr"
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1449,6 +1449,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "aee57a7a-ec20-4eb3-8da8-11dfdeedbc45")
+	)
+	(junction
+		(at 152.4 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "aff07ad6-2acc-4e40-ab26-9d2db8932141")
 	)
 	(junction
 		(at 161.29 53.34)
@@ -1662,7 +1668,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 66.04) (xy 146.05 66.04)
+			(xy 152.4 66.04) (xy 146.05 66.04)
 		)
 		(stroke
 			(width 0)
@@ -1812,7 +1818,17 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 69.85) (xy 151.13 66.04)
+			(xy 152.4 66.04) (xy 152.4 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a37479b4-bbb9-4d5a-90e0-089bec1026f0")
+	)
+	(wire
+		(pts
+			(xy 152.4 72.39) (xy 152.4 71.12)
 		)
 		(stroke
 			(width 0)
@@ -2033,6 +2049,18 @@
 		)
 		(uuid "6cf127e8-e16f-4d78-9408-02012baabbce")
 	)
+	(text "FIXME: Replace with LM74700\nand N-ch MOSFET"
+		(exclude_from_sim no)
+		(at 56.134 43.688 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 0 0 1)
+			)
+			(justify left)
+		)
+		(uuid "6d4cb86c-47a2-41ba-aff0-3fd5accfda27")
+	)
 	(text "Common-mode EMI filter"
 		(exclude_from_sim no)
 		(at 112.522 44.958 0)
@@ -2187,6 +2215,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 55.88 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "76cc9736-8949-41dc-9239-23f780c76902")
 		)
@@ -2202,7 +2239,7 @@
 			)
 			(project "SH-RPi"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/b9ac802e-51d9-4be8-a7d3-5b5fa2c8bb97"
-					(reference "D701")
+					(reference "D1001")
 					(unit 1)
 				)
 			)
@@ -2233,7 +2270,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Hatlabs:Polyfuse_JK60-500"
 			(at 43.18 51.562 90)
 			(effects
 				(font
@@ -2269,6 +2306,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 43.18 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f079a6c2-3d70-4ee5-bbad-83501c3b0cfb")
 		)
@@ -2284,7 +2330,7 @@
 			)
 			(project "SH-RPi"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/b9ac802e-51d9-4be8-a7d3-5b5fa2c8bb97"
-					(reference "F701")
+					(reference "F1001")
 					(unit 1)
 				)
 			)
@@ -2308,7 +2354,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF 50V"
+		(property "Value" "10uF/50V"
 			(at 186.944 63.754 0)
 			(effects
 				(font
@@ -2353,6 +2399,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 185.42 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "550e3f27-2c3b-455c-9cab-1fa09c25a946")
 		)
@@ -2368,7 +2423,7 @@
 			)
 			(project "SH-RPi"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/b9ac802e-51d9-4be8-a7d3-5b5fa2c8bb97"
-					(reference "C704")
+					(reference "C1005")
 					(unit 1)
 				)
 			)
@@ -2418,7 +2473,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 185.42 63.5 0)
 			(effects
 				(font
@@ -2439,7 +2494,7 @@
 			)
 			(project "SH-RPi"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/b9ac802e-51d9-4be8-a7d3-5b5fa2c8bb97"
-					(reference "#PWR0703")
+					(reference "#PWR01004")
 					(unit 1)
 				)
 			)
@@ -2506,6 +2561,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 195.58 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "51127615-1006-4186-8241-92de7e7161c5")
 		)
@@ -2521,7 +2585,7 @@
 			)
 			(project "SH-RPi"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/b9ac802e-51d9-4be8-a7d3-5b5fa2c8bb97"
-					(reference "L702")
+					(reference "L1002")
 					(unit 1)
 				)
 			)
@@ -2546,7 +2610,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF 50V"
+		(property "Value" "10uF/50V"
 			(at 204.089 59.563 0)
 			(effects
 				(font
@@ -2591,6 +2655,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 207.01 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6c27a3de-9451-4940-9991-b6ac2ac5e619")
 		)
@@ -2606,7 +2679,7 @@
 			)
 			(project "SH-RPi"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/b9ac802e-51d9-4be8-a7d3-5b5fa2c8bb97"
-					(reference "C705")
+					(reference "C1006")
 					(unit 1)
 				)
 			)
@@ -2656,7 +2729,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 212.09 72.39 0)
 			(effects
 				(font
@@ -2677,7 +2750,7 @@
 			)
 			(project "SH-RPi"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/b9ac802e-51d9-4be8-a7d3-5b5fa2c8bb97"
-					(reference "#PWR0704")
+					(reference "#PWR01005")
 					(unit 1)
 				)
 			)
@@ -2685,7 +2758,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 151.13 69.85 0)
+		(at 152.4 72.39 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2694,7 +2767,7 @@
 		(fields_autoplaced yes)
 		(uuid "2d119e31-1ef9-4225-b108-c1f7416e4145")
 		(property "Reference" "#PWR0701"
-			(at 151.13 76.2 0)
+			(at 152.4 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2703,7 +2776,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 151.13 74.93 0)
+			(at 152.4 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2711,7 +2784,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 151.13 69.85 0)
+			(at 152.4 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2720,7 +2793,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 151.13 69.85 0)
+			(at 152.4 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2728,8 +2801,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 151.13 69.85 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 152.4 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2749,7 +2822,7 @@
 			)
 			(project "SH-RPi"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/b9ac802e-51d9-4be8-a7d3-5b5fa2c8bb97"
-					(reference "#PWR0701")
+					(reference "#PWR01001")
 					(unit 1)
 				)
 			)
@@ -2783,7 +2856,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 210.312 67.31 90)
 			(effects
 				(font
@@ -2810,7 +2883,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25334"
+			(at 212.09 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
 			(at 212.09 67.31 0)
 			(effects
 				(font
@@ -2834,7 +2916,7 @@
 			)
 			(project "SH-RPi"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/b9ac802e-51d9-4be8-a7d3-5b5fa2c8bb97"
-					(reference "R701")
+					(reference "R1001")
 					(unit 1)
 				)
 			)
@@ -2849,7 +2931,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4b9280a6-02dd-452a-80ac-14da46a30081")
-		(property "Reference" "C1202"
+		(property "Reference" "C1007"
 			(at 220.091 57.2516 0)
 			(effects
 				(font
@@ -2858,7 +2940,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF 50V"
+		(property "Value" "10uF/50V"
 			(at 220.091 59.563 0)
 			(effects
 				(font
@@ -2903,6 +2985,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 217.17 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "56314c0e-b90b-47fa-b624-971b416a6f87")
 		)
@@ -2912,7 +3003,7 @@
 		(instances
 			(project "Yellow"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/b9ac802e-51d9-4be8-a7d3-5b5fa2c8bb97"
-					(reference "C1202")
+					(reference "C1007")
 					(unit 1)
 				)
 			)
@@ -2964,7 +3055,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Special symbol for telling ERC where power comes from"
 			(at 55.88 69.85 0)
 			(effects
 				(font
@@ -2985,7 +3076,7 @@
 			)
 			(project "SH-RPi"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/b9ac802e-51d9-4be8-a7d3-5b5fa2c8bb97"
-					(reference "#FLG0701")
+					(reference "#FLG01001")
 					(unit 1)
 				)
 			)
@@ -3010,7 +3101,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF 50V"
+		(property "Value" "10uF/50V"
 			(at 120.65 64.7699 0)
 			(effects
 				(font
@@ -3055,6 +3146,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 116.84 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "bc078a08-fb89-4f9d-8d62-342a0ee277e2")
 		)
@@ -3070,7 +3170,7 @@
 			)
 			(project "SH-RPi"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/b9ac802e-51d9-4be8-a7d3-5b5fa2c8bb97"
-					(reference "C702")
+					(reference "C1002")
 					(unit 1)
 				)
 			)
@@ -3085,7 +3185,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8d197eeb-8fe2-4540-92f0-2224fcb42f0f")
-		(property "Reference" "C1201"
+		(property "Reference" "C1003"
 			(at 161.798 61.214 0)
 			(effects
 				(font
@@ -3094,7 +3194,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF 50V"
+		(property "Value" "10uF/50V"
 			(at 161.798 63.5 0)
 			(effects
 				(font
@@ -3139,6 +3239,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 161.29 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "3b962881-b835-4d05-84b3-50dcf0ab9ff4")
 		)
@@ -3148,7 +3257,7 @@
 		(instances
 			(project "Yellow"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/b9ac802e-51d9-4be8-a7d3-5b5fa2c8bb97"
-					(reference "C1201")
+					(reference "C1003")
 					(unit 1)
 				)
 			)
@@ -3172,7 +3281,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF 50V"
+		(property "Value" "10uF/50V"
 			(at 175.006 63.5 0)
 			(effects
 				(font
@@ -3217,6 +3326,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 173.99 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "98c1bff3-b920-49a0-a0af-fdad3e0110b9")
 		)
@@ -3232,7 +3350,7 @@
 			)
 			(project "SH-RPi"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/b9ac802e-51d9-4be8-a7d3-5b5fa2c8bb97"
-					(reference "C703")
+					(reference "C1004")
 					(unit 1)
 				)
 			)
@@ -3256,7 +3374,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF 50V"
+		(property "Value" "100nF/50V"
 			(at 91.44 64.77 0)
 			(effects
 				(font
@@ -3301,6 +3419,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 105.41 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "3e20fc6a-f285-4aa9-aa12-bcc0e79c604c")
 		)
@@ -3316,7 +3443,7 @@
 			)
 			(project "SH-RPi"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/b9ac802e-51d9-4be8-a7d3-5b5fa2c8bb97"
-					(reference "C701")
+					(reference "C1001")
 					(unit 1)
 				)
 			)
@@ -3332,7 +3459,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bfdb1fd9-aeba-4431-bb53-6f450daa4c55")
-		(property "Reference" "#PWR01201"
+		(property "Reference" "#PWR01002"
 			(at 161.29 69.85 0)
 			(effects
 				(font
@@ -3367,7 +3494,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 161.29 63.5 0)
 			(effects
 				(font
@@ -3382,7 +3509,7 @@
 		(instances
 			(project "Yellow"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/b9ac802e-51d9-4be8-a7d3-5b5fa2c8bb97"
-					(reference "#PWR01201")
+					(reference "#PWR01002")
 					(unit 1)
 				)
 			)
@@ -3450,6 +3577,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 140.97 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a73d3020-ef4b-44c8-8404-8609eb01d8dd")
 		)
@@ -3471,7 +3607,7 @@
 			)
 			(project "SH-RPi"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/b9ac802e-51d9-4be8-a7d3-5b5fa2c8bb97"
-					(reference "L701")
+					(reference "L1001")
 					(unit 1)
 				)
 			)
@@ -3539,6 +3675,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 80.01 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "73018908-e297-45d8-9bc3-a3352ebd1e4a")
 		)
@@ -3554,7 +3699,74 @@
 			)
 			(project "SH-RPi"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/b9ac802e-51d9-4be8-a7d3-5b5fa2c8bb97"
-					(reference "D702")
+					(reference "D1002")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 152.4 71.12 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fa5d9d25-c975-4228-bf26-8ccfc2d664aa")
+		(property "Reference" "#FLG01002"
+			(at 150.495 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 148.59 71.1199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 152.4 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 152.4 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 152.4 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ce07a784-ff96-441e-8765-0b7b9a15a817")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/b9ac802e-51d9-4be8-a7d3-5b5fa2c8bb97"
+					(reference "#FLG01002")
 					(unit 1)
 				)
 			)
@@ -3605,7 +3817,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 173.99 63.5 0)
 			(effects
 				(font
@@ -3626,7 +3838,7 @@
 			)
 			(project "SH-RPi"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/b9ac802e-51d9-4be8-a7d3-5b5fa2c8bb97"
-					(reference "#PWR0702")
+					(reference "#PWR01003")
 					(unit 1)
 				)
 			)

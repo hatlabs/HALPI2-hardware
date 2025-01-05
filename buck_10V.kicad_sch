@@ -5,13 +5,13 @@
 	(uuid "435d6099-f375-40ee-a2b8-9b8a09c29be3")
 	(paper "A4")
 	(title_block
-		(title "Sailor Hat for Raspberry Pi")
-		(date "2024-09-25")
-		(rev "v2.0.1")
-		(company "Hat Labs Ltd")
+		(title "HALPI2")
+		(date "2025-01-03")
+		(rev "v0.0.1")
+		(company "Hat Labs Oy")
 		(comment 1 "https://creativecommons.org/licenses/by/4.0")
 		(comment 2 "To view a copy of this license, visit ")
-		(comment 3 "Sailor Hat for Raspberry Pi is licensed under CC BY 4.0.")
+		(comment 3 "HALPI2 is licensed under CC BY 4.0.")
 	)
 	(lib_symbols
 		(symbol "Amplifier_Operational:LMV321"
@@ -812,6 +812,24 @@
 					(hide yes)
 				)
 			)
+			(property "Sim.Device" "D"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
 			(property "ki_keywords" "diode"
 				(at 0 0 0)
 				(effects
@@ -1452,6 +1470,349 @@
 				)
 			)
 		)
+		(symbol "Hatlabs:COS1333"
+			(pin_names
+				(offset 0.127)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U1103"
+				(at 2.54 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "COS1333TR"
+				(at 6.35 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC" "C693072"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "JLCPCB_CORRECTION" "0;0;270"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Enable" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "single opamp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOT?23*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "COS1333_0_1"
+				(polyline
+					(pts
+						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin power_in line
+					(at -2.54 -7.62 90)
+					(length 3.81)
+					(name "V-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 7.62 270)
+					(length 3.81)
+					(name "V+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "COS1333_1_1"
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Hatlabs:H7533-H#"
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -3.81 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "H7533-H#"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+				(at 0.635 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Shanghai-Siproin-Microelectronics-H7533-H-_C277872.pdf"
+				(at 0 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Positive 100mA 40V Linear Regulator, Fixed Output 3.3V,SOT-23-3"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "LDO Voltage Regulator 100mA Positive"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO?252* TO?263* TO?220*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "H7533-H#_0_1"
+				(rectangle
+					(start -5.08 1.905)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "H7533-H#_1_1"
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Regulator_Switching:LMR33630ADDA"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1695,183 +2056,6 @@
 				)
 			)
 		)
-		(symbol "SH-RPi:COS1333"
-			(pin_names
-				(offset 0.127)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "COS1333"
-				(at 0 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "1.8V, 18µA, RRIO Zero-Drift Operational Amplifier, SOT-23-5"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "single opamp"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "SOT?23*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "COS1333_0_1"
-				(polyline
-					(pts
-						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin power_in line
-					(at -2.54 -7.62 90)
-					(length 3.81)
-					(name "V-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -2.54 7.62 270)
-					(length 3.81)
-					(name "V+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "COS1333_1_1"
-				(pin output line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -7.62 2.54 0)
-					(length 2.54)
-					(name "+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -7.62 -2.54 0)
-					(length 2.54)
-					(name "-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Transistor_BJT:MMBT5551L"
 			(pin_names
 				(offset 0) hide)
@@ -2097,7 +2281,7 @@
 				)
 			)
 			(property "Datasheet" "http://assets.nexperia.com/documents/data-sheet/BSS84.pdf"
-				(at 0 0 0)
+				(at 5.08 -3.81 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2479,9 +2663,9 @@
 		)
 		(symbol "power:GND"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2555,8 +2739,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
-					(name "GND"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2638,7 +2822,7 @@
 				(pin power_out line
 					(at 0 0 90)
 					(length 0)
-					(name "pwr"
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2749,13 +2933,19 @@
 		(uuid "38bb5af0-9c40-4fe7-8310-a30b93690863")
 	)
 	(junction
-		(at 133.35 62.23)
+		(at 124.46 172.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3c83691b-e959-475e-b325-d4477db9af1e")
+	)
+	(junction
+		(at 133.35 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3f5d5533-5924-4581-b6c5-bd7bdc40002c")
 	)
 	(junction
-		(at 138.43 62.23)
+		(at 138.43 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4520c25a-82ca-4867-9723-8c29103ac8eb")
@@ -2803,16 +2993,16 @@
 		(uuid "68957de9-94dc-4135-ab26-2c44406d2048")
 	)
 	(junction
-		(at 175.26 64.77)
+		(at 175.26 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6f1947ce-80be-44b6-9d27-d931fea1911e")
 	)
 	(junction
-		(at 165.1 44.45)
+		(at 85.09 172.72)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "755165b2-6b68-429a-b90a-adc8a7459d7e")
+		(uuid "770bf942-81ca-4a6f-8e8b-674733852964")
 	)
 	(junction
 		(at 222.25 121.92)
@@ -2833,7 +3023,7 @@
 		(uuid "7ee3964a-702a-4913-b1cd-9a592d4b2cf0")
 	)
 	(junction
-		(at 146.05 62.23)
+		(at 146.05 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "89eeebef-8770-44c0-844d-a46c7e1fe804")
@@ -2851,6 +3041,12 @@
 		(uuid "90c08613-9842-40bb-835d-41e7e572ba83")
 	)
 	(junction
+		(at 165.1 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9ce54602-95a6-437a-b257-f02875d40956")
+	)
+	(junction
 		(at 154.94 121.92)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2863,7 +3059,7 @@
 		(uuid "b44666ae-45f5-434e-8c04-67ac33c490da")
 	)
 	(junction
-		(at 184.15 64.77)
+		(at 184.15 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b60e7174-b71b-41ea-92de-4936a32457c3")
@@ -2930,7 +3126,7 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 64.77) (xy 184.15 73.66)
+			(xy 184.15 68.58) (xy 184.15 77.47)
 		)
 		(stroke
 			(width 0)
@@ -3090,6 +3286,16 @@
 	)
 	(wire
 		(pts
+			(xy 176.53 53.34) (xy 176.53 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a0ad8b1-0580-4fec-91ca-bb0efa6e017d")
+	)
+	(wire
+		(pts
 			(xy 68.58 57.15) (xy 68.58 63.5)
 		)
 		(stroke
@@ -3100,6 +3306,16 @@
 	)
 	(wire
 		(pts
+			(xy 78.74 172.72) (xy 85.09 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b46b39f-9fc9-4c11-bea2-8a3725b375be")
+	)
+	(wire
+		(pts
 			(xy 154.94 121.92) (xy 171.45 121.92)
 		)
 		(stroke
@@ -3107,6 +3323,16 @@
 			(type default)
 		)
 		(uuid "1ba44f3d-d060-4a03-8ed5-57a978cab8f4")
+	)
+	(wire
+		(pts
+			(xy 124.46 182.88) (xy 124.46 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c8f7812-ad18-4ec0-821e-a18dd9d69d71")
 	)
 	(wire
 		(pts
@@ -3130,7 +3356,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 72.39) (xy 127 74.93)
+			(xy 127 76.2) (xy 127 78.74)
 		)
 		(stroke
 			(width 0)
@@ -3157,6 +3383,26 @@
 			(type default)
 		)
 		(uuid "26e9cb6b-9751-43ff-a5b1-5964830e03a8")
+	)
+	(wire
+		(pts
+			(xy 124.46 172.72) (xy 132.08 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2722b99f-3053-410a-9a18-9b37615941e2")
+	)
+	(wire
+		(pts
+			(xy 111.76 172.72) (xy 124.46 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2a86fda3-41e0-49ee-87d9-a1383b0275a3")
 	)
 	(wire
 		(pts
@@ -3200,7 +3446,7 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 62.23) (xy 146.05 62.23)
+			(xy 138.43 66.04) (xy 146.05 66.04)
 		)
 		(stroke
 			(width 0)
@@ -3220,7 +3466,7 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 73.66) (xy 160.02 73.66)
+			(xy 184.15 77.47) (xy 160.02 77.47)
 		)
 		(stroke
 			(width 0)
@@ -3290,7 +3536,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 64.77) (xy 146.05 62.23)
+			(xy 146.05 68.58) (xy 146.05 66.04)
 		)
 		(stroke
 			(width 0)
@@ -3420,7 +3666,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 62.23) (xy 160.02 62.23)
+			(xy 146.05 66.04) (xy 160.02 66.04)
 		)
 		(stroke
 			(width 0)
@@ -3450,6 +3696,16 @@
 	)
 	(wire
 		(pts
+			(xy 132.08 172.72) (xy 132.08 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52a5e9d1-3b9c-4931-9d0b-8520f0a3129f")
+	)
+	(wire
+		(pts
 			(xy 222.25 134.62) (xy 226.06 134.62)
 		)
 		(stroke
@@ -3470,7 +3726,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 72.39) (xy 146.05 74.93)
+			(xy 146.05 76.2) (xy 146.05 78.74)
 		)
 		(stroke
 			(width 0)
@@ -3550,6 +3806,16 @@
 	)
 	(wire
 		(pts
+			(xy 138.43 55.88) (xy 138.43 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6072d0ea-d4e4-49d7-b74e-1521ab6e0f3a")
+	)
+	(wire
+		(pts
 			(xy 189.23 132.08) (xy 189.23 139.7)
 		)
 		(stroke
@@ -3570,7 +3836,7 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 64.77) (xy 203.2 64.77)
+			(xy 196.85 68.58) (xy 203.2 68.58)
 		)
 		(stroke
 			(width 0)
@@ -3587,6 +3853,16 @@
 			(type default)
 		)
 		(uuid "68c1d799-47dd-4603-a302-03709e055fc5")
+	)
+	(wire
+		(pts
+			(xy 165.1 53.34) (xy 165.1 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68cfd149-e1d7-42af-a7e4-85e9cb9ead0d")
 	)
 	(wire
 		(pts
@@ -3620,7 +3896,7 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 64.77) (xy 176.53 64.77)
+			(xy 175.26 68.58) (xy 176.53 68.58)
 		)
 		(stroke
 			(width 0)
@@ -3660,6 +3936,16 @@
 	)
 	(wire
 		(pts
+			(xy 85.09 175.26) (xy 85.09 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72c8e49a-d8af-4af3-9247-7c7f7cbc9d4d")
+	)
+	(wire
+		(pts
 			(xy 68.58 63.5) (xy 78.74 63.5)
 		)
 		(stroke
@@ -3680,7 +3966,7 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 64.77) (xy 175.26 68.58)
+			(xy 175.26 68.58) (xy 175.26 72.39)
 		)
 		(stroke
 			(width 0)
@@ -3700,7 +3986,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 62.23) (xy 133.35 64.77)
+			(xy 133.35 66.04) (xy 133.35 68.58)
 		)
 		(stroke
 			(width 0)
@@ -3810,16 +4096,6 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 44.45) (xy 165.1 57.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "832ab819-e79a-488b-8422-fea2546cfcd5")
-	)
-	(wire
-		(pts
 			(xy 248.92 73.66) (xy 248.92 78.74)
 		)
 		(stroke
@@ -3870,6 +4146,16 @@
 	)
 	(wire
 		(pts
+			(xy 165.1 44.45) (xy 165.1 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8753f056-0813-49d2-b67b-fdaa8e5dd6ba")
+	)
+	(wire
+		(pts
 			(xy 68.58 82.55) (xy 86.36 82.55)
 		)
 		(stroke
@@ -3910,7 +4196,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 62.23) (xy 127 62.23)
+			(xy 133.35 66.04) (xy 127 66.04)
 		)
 		(stroke
 			(width 0)
@@ -3970,6 +4256,16 @@
 	)
 	(wire
 		(pts
+			(xy 124.46 172.72) (xy 124.46 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a231232c-7fe7-4727-bcdf-b929999621de")
+	)
+	(wire
+		(pts
 			(xy 222.25 132.08) (xy 222.25 134.62)
 		)
 		(stroke
@@ -3980,7 +4276,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 62.23) (xy 127 64.77)
+			(xy 127 66.04) (xy 127 68.58)
 		)
 		(stroke
 			(width 0)
@@ -4000,13 +4296,23 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 62.23) (xy 133.35 62.23)
+			(xy 138.43 66.04) (xy 133.35 66.04)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "ab76c543-e9e3-4319-82e8-03a0107d97cf")
+	)
+	(wire
+		(pts
+			(xy 104.14 180.34) (xy 104.14 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad320c45-17d2-4fa7-812d-e84f04c7fbcb")
 	)
 	(wire
 		(pts
@@ -4020,7 +4326,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 72.39) (xy 133.35 74.93)
+			(xy 133.35 76.2) (xy 133.35 78.74)
 		)
 		(stroke
 			(width 0)
@@ -4140,7 +4446,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 73.66) (xy 160.02 67.31)
+			(xy 160.02 77.47) (xy 160.02 71.12)
 		)
 		(stroke
 			(width 0)
@@ -4230,7 +4536,7 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 64.77) (xy 189.23 64.77)
+			(xy 184.15 68.58) (xy 189.23 68.58)
 		)
 		(stroke
 			(width 0)
@@ -4250,13 +4556,13 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 44.45) (xy 165.1 44.45)
+			(xy 176.53 53.34) (xy 173.99 53.34)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d2e2e052-3e48-4d1a-97da-45db6669b2a4")
+		(uuid "d35b0404-7773-4d07-8bb8-339f0d4c58b3")
 	)
 	(wire
 		(pts
@@ -4348,6 +4654,16 @@
 		)
 		(uuid "df0d47b8-0757-4f4c-89c9-5c918c68aae8")
 	)
+	(wire
+		(pts
+			(xy 166.37 53.34) (xy 165.1 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dfa43ba6-8a03-4c51-a0d3-d4cd6e372e95")
+	)
 	(polyline
 		(pts
 			(xy 101.6 25.4) (xy 101.6 96.52)
@@ -4360,7 +4676,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 72.39) (xy 165.1 74.93)
+			(xy 165.1 76.2) (xy 165.1 78.74)
 		)
 		(stroke
 			(width 0)
@@ -4430,6 +4746,16 @@
 	)
 	(wire
 		(pts
+			(xy 85.09 172.72) (xy 96.52 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0ce33e1-0239-4dd1-9f9a-44bb3cbf7f24")
+	)
+	(wire
+		(pts
 			(xy 86.36 71.12) (xy 86.36 73.66)
 		)
 		(stroke
@@ -4447,16 +4773,6 @@
 			(type default)
 		)
 		(uuid "f38eb0c0-3d35-4161-a8ea-9142f16d131e")
-	)
-	(wire
-		(pts
-			(xy 138.43 55.88) (xy 138.43 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f5d6c9ed-0432-41c0-b090-0e40505d2c1d")
 	)
 	(wire
 		(pts
@@ -4518,6 +4834,16 @@
 		)
 		(uuid "fe4f22b8-ff9c-4ec0-972f-ae965cca32d5")
 	)
+	(wire
+		(pts
+			(xy 85.09 182.88) (xy 85.09 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff8442ab-9b69-4f86-922b-f9c8703a1179")
+	)
 	(text "Voltage follower with \ndiode to prevent the opamp\nfrom pulling FB down"
 		(exclude_from_sim no)
 		(at 157.48 95.25 0)
@@ -4550,17 +4876,6 @@
 		)
 		(uuid "3f5f7bf7-732f-462e-bd0a-70482f08d654")
 	)
-	(text "FIXME: Check setpoint"
-		(exclude_from_sim no)
-		(at 173.228 34.544 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 255 0 0 1)
-			)
-		)
-		(uuid "5196c50e-a810-44a5-bf18-17e2119c8c5f")
-	)
 	(text "Place a jumper\nbetween 1 and 2\nto increase \nthe current limit\nto 1.9 A."
 		(exclude_from_sim no)
 		(at 247.65 50.8 0)
@@ -4585,7 +4900,7 @@
 	)
 	(text "Zener used to\nprotect the\nnext stage\nfrom overvoltage"
 		(exclude_from_sim no)
-		(at 148.59 88.9 0)
+		(at 148.59 94.996 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4594,7 +4909,7 @@
 		)
 		(uuid "74c26c88-9b4e-4fef-87aa-fab19c12ff8c")
 	)
-	(text "FB voltage divider designed to have\nan 8.87V voltage at Vout"
+	(text "FB voltage divider designed to have\nan 10.06V voltage at Vout"
 		(exclude_from_sim no)
 		(at 158.75 119.38 0)
 		(effects
@@ -4604,17 +4919,6 @@
 			(justify left bottom)
 		)
 		(uuid "871c5330-a520-454d-9457-d9351f3c22d6")
-	)
-	(text "Buck filter design from RT6365 design tool"
-		(exclude_from_sim no)
-		(at 147.32 107.95 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8a5d3615-0a1e-4eb9-9ccd-34de97b1000a")
 	)
 	(text "Max 0.8 A current input"
 		(exclude_from_sim no)
@@ -4649,17 +4953,6 @@
 		)
 		(uuid "b5dd5898-7d11-45f3-9ef3-a372565a6854")
 	)
-	(text "FIXME: Check footprint"
-		(exclude_from_sim no)
-		(at 155.194 113.03 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 255 0 0 1)
-			)
-		)
-		(uuid "c796cf13-7a83-4426-bdba-43c8a29a58b4")
-	)
 	(text "Current limiting circuit"
 		(exclude_from_sim no)
 		(at 200.66 29.21 0)
@@ -4670,6 +4963,16 @@
 			(justify left bottom)
 		)
 		(uuid "d92d8f1c-03bd-458f-941f-b56d6b071063")
+	)
+	(text "This LDO is required for circuits that need to be\npowered before the buck stages are online."
+		(exclude_from_sim no)
+		(at 104.14 160.782 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e984dd01-cc53-4f00-9d5f-550c44291822")
 	)
 	(label "I2A9"
 		(at 256.54 66.04 0)
@@ -4682,19 +4985,8 @@
 		)
 		(uuid "0031f9e4-6c73-4366-ac2c-f5d9fbbc1b12")
 	)
-	(label "EN1"
-		(at 88.9 127 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "08444def-4eed-4bd6-a09a-aa10a88a4d31")
-	)
 	(label "VF-"
-		(at 170.18 73.66 0)
+		(at 170.18 77.47 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4826,7 +5118,7 @@
 		(uuid "c065f729-7889-42c4-810d-3a843993d4da")
 	)
 	(label "FB"
-		(at 203.2 64.77 0)
+		(at 203.2 68.58 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4835,6 +5127,17 @@
 			(justify left bottom)
 		)
 		(uuid "c32dc5d6-98d0-4e47-a80f-3f13b87a3c5c")
+	)
+	(label "B1_VIN"
+		(at 78.74 172.72 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c8257e82-13ed-44a2-bd76-f90fb6f3dd1b")
 	)
 	(label "B1_VIN"
 		(at 74.93 121.92 0)
@@ -4848,7 +5151,7 @@
 		(uuid "e4ae49ab-d575-4186-8a12-f854679d4611")
 	)
 	(label "VFO"
-		(at 175.26 68.58 0)
+		(at 175.26 72.39 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4967,6 +5270,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 133.35 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "30329f31-c6f9-4f9e-9724-82214a2bafa0")
 		)
@@ -4980,9 +5292,9 @@
 					(unit 1)
 				)
 			)
-			(project "SH-RPi"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "C308")
+					(reference "C1111")
 					(unit 1)
 				)
 			)
@@ -5067,6 +5379,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 147.32 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "29a31d56-aa1c-4faa-9108-14c095ad08af")
 		)
@@ -5080,9 +5401,9 @@
 					(unit 1)
 				)
 			)
-			(project "SH-RPi"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "L301")
+					(reference "L1101")
 					(unit 1)
 				)
 			)
@@ -5107,7 +5428,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "47uF 16V"
+		(property "Value" "47uF/16V"
 			(at 168.529 129.413 0)
 			(effects
 				(font
@@ -5161,6 +5482,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 171.45 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "55da805b-04bb-422a-b014-6a6aa97b055c")
 		)
@@ -5174,9 +5504,9 @@
 					(unit 1)
 				)
 			)
-			(project "SH-RPi"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "C309")
+					(reference "C1114")
 					(unit 1)
 				)
 			)
@@ -5200,7 +5530,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "39k"
+		(property "Value" "75k"
 			(at 213.868 142.113 0)
 			(effects
 				(font
@@ -5209,7 +5539,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_SMD_AKL:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 210.312 140.97 90)
 			(effects
 				(font
@@ -5236,7 +5566,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C23242"
+			(at 212.09 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
 			(at 212.09 140.97 0)
 			(effects
 				(font
@@ -5258,9 +5597,9 @@
 					(unit 1)
 				)
 			)
-			(project "SH-RPi"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "R313")
+					(reference "R1110")
 					(unit 1)
 				)
 			)
@@ -5283,7 +5622,7 @@
 				)
 			)
 		)
-		(property "Value" "300k"
+		(property "Value" "680k"
 			(at 215.9 129.54 0)
 			(effects
 				(font
@@ -5291,7 +5630,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_SMD_AKL:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 210.312 128.27 90)
 			(effects
 				(font
@@ -5318,7 +5657,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25822"
+			(at 212.09 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
 			(at 212.09 128.27 0)
 			(effects
 				(font
@@ -5340,9 +5688,9 @@
 					(unit 1)
 				)
 			)
-			(project "SH-RPi"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "R312")
+					(reference "R1109")
 					(unit 1)
 				)
 			)
@@ -5392,7 +5740,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 171.45 139.7 0)
 			(effects
 				(font
@@ -5411,9 +5759,9 @@
 					(unit 1)
 				)
 			)
-			(project "SH-RPi"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "#PWR0316")
+					(reference "#PWR01120")
 					(unit 1)
 				)
 			)
@@ -5463,7 +5811,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 212.09 148.59 0)
 			(effects
 				(font
@@ -5482,9 +5830,9 @@
 					(unit 1)
 				)
 			)
-			(project "SH-RPi"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "#PWR0321")
+					(reference "#PWR01125")
 					(unit 1)
 				)
 			)
@@ -5551,6 +5899,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 31.75 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f6345692-99b2-4514-bccc-306c4bc3e5a6")
 		)
@@ -5564,9 +5921,9 @@
 					(unit 1)
 				)
 			)
-			(project "SH-RPi"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "R301")
+					(reference "R1101")
 					(unit 1)
 				)
 			)
@@ -5574,7 +5931,7 @@
 	)
 	(symbol
 		(lib_id "Device:D")
-		(at 180.34 64.77 180)
+		(at 180.34 68.58 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5582,7 +5939,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005f51426e")
 		(property "Reference" "D305"
-			(at 181.61 59.69 0)
+			(at 181.61 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5591,7 +5948,7 @@
 			)
 		)
 		(property "Value" "1N4148WT"
-			(at 181.483 62.7634 0)
+			(at 181.483 66.5734 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5600,7 +5957,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-523"
-			(at 180.34 64.77 0)
+			(at 180.34 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5609,7 +5966,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 180.34 64.77 0)
+			(at 180.34 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5617,8 +5974,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 180.34 64.77 0)
+		(property "Description" "Diode"
+			(at 180.34 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5626,8 +5983,35 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C414017"
-			(at 180.34 64.77 0)
+		(property "LCSC" "C7420320"
+			(at 180.34 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 180.34 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 180.34 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 180.34 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5648,9 +6032,9 @@
 					(unit 1)
 				)
 			)
-			(project "SH-RPi"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "D305")
+					(reference "D1103")
 					(unit 1)
 				)
 			)
@@ -5658,16 +6042,17 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 171.45 48.26 0)
+		(at 170.18 53.34 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005f532d6c")
 		(property "Reference" "C311"
-			(at 176.53 46.99 0)
+			(at 170.18 45.72 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5675,7 +6060,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 177.8 49.53 0)
+			(at 170.18 48.26 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5683,7 +6068,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 172.4152 44.45 0)
+			(at 166.37 52.3748 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5692,7 +6077,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 171.45 48.26 0)
+			(at 170.18 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5701,7 +6086,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 171.45 48.26 0)
+			(at 170.18 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5710,7 +6095,16 @@
 			)
 		)
 		(property "LCSC" "C1525"
-			(at 171.45 48.26 0)
+			(at 170.18 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 170.18 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5731,9 +6125,9 @@
 					(unit 1)
 				)
 			)
-			(project "SH-RPi"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "C311")
+					(reference "C1113")
 					(unit 1)
 				)
 			)
@@ -5741,7 +6135,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 171.45 52.07 0)
+		(at 176.53 55.88 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5750,7 +6144,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005f535793")
 		(property "Reference" "#PWR0320"
-			(at 171.45 58.42 0)
+			(at 176.53 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5759,7 +6153,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 175.26 54.61 0)
+			(at 180.34 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5767,7 +6161,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 171.45 52.07 0)
+			(at 176.53 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5776,7 +6170,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 171.45 52.07 0)
+			(at 176.53 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5784,8 +6178,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 171.45 52.07 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 176.53 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5803,9 +6197,9 @@
 					(unit 1)
 				)
 			)
-			(project "SH-RPi"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "#PWR0320")
+					(reference "#PWR01121")
 					(unit 1)
 				)
 			)
@@ -5855,7 +6249,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 104.14 142.24 0)
 			(effects
 				(font
@@ -5874,9 +6268,9 @@
 					(unit 1)
 				)
 			)
-			(project "SH-RPi"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "#PWR0307")
+					(reference "#PWR01108")
 					(unit 1)
 				)
 			)
@@ -5891,7 +6285,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "001ee780-a3e0-43c3-8ef9-014440536451")
-		(property "Reference" "#PWR01305"
+		(property "Reference" "#PWR01117"
 			(at 154.94 146.05 0)
 			(effects
 				(font
@@ -5926,7 +6320,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 154.94 139.7 0)
 			(effects
 				(font
@@ -5939,9 +6333,9 @@
 			(uuid "5253d7c5-3bc6-4e20-847f-fc4143a7e80e")
 		)
 		(instances
-			(project "Yellow"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "#PWR01305")
+					(reference "#PWR01117")
 					(unit 1)
 				)
 			)
@@ -5966,7 +6360,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF 50V"
+		(property "Value" "100nF/50V"
 			(at 63.119 138.303 0)
 			(effects
 				(font
@@ -6002,7 +6396,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C14663"
+			(at 66.04 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
 			(at 66.04 137.16 0)
 			(effects
 				(font
@@ -6024,9 +6427,9 @@
 					(unit 1)
 				)
 			)
-			(project "SH-RPi"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "C303")
+					(reference "C1103")
 					(unit 1)
 				)
 			)
@@ -6034,7 +6437,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 127 74.93 0)
+		(at 127 78.74 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6042,7 +6445,7 @@
 		(dnp no)
 		(uuid "00c80d99-4410-4925-8bd0-344fc0a56bfa")
 		(property "Reference" "#PWR0312"
-			(at 127 81.28 0)
+			(at 127 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6051,7 +6454,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 127.127 79.3242 0)
+			(at 127.127 83.1342 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6059,7 +6462,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 127 74.93 0)
+			(at 127 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6068,7 +6471,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 127 74.93 0)
+			(at 127 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6076,8 +6479,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 127 74.93 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 127 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6095,9 +6498,9 @@
 					(unit 1)
 				)
 			)
-			(project "SH-RPi"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "#PWR0312")
+					(reference "#PWR01113")
 					(unit 1)
 				)
 			)
@@ -6112,7 +6515,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "010b0e4c-64c1-45a0-ba3a-51e9ff0af002")
-		(property "Reference" "#PWR01303"
+		(property "Reference" "#PWR01123"
 			(at 189.23 146.05 0)
 			(effects
 				(font
@@ -6147,7 +6550,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 189.23 139.7 0)
 			(effects
 				(font
@@ -6160,9 +6563,9 @@
 			(uuid "fe6b5b9a-efb4-4370-b7de-6a6dd3c10b46")
 		)
 		(instances
-			(project "Yellow"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "#PWR01303")
+					(reference "#PWR01123")
 					(unit 1)
 				)
 			)
@@ -6186,7 +6589,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF 50V"
+		(property "Value" "10uF/50V"
 			(at 56.261 130.683 0)
 			(effects
 				(font
@@ -6231,6 +6634,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 53.34 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "790f40c4-bea2-4aea-acdc-326f8c2190e3")
 		)
@@ -6244,9 +6656,9 @@
 					(unit 1)
 				)
 			)
-			(project "SH-RPi"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "C302")
+					(reference "C1102")
 					(unit 1)
 				)
 			)
@@ -6262,7 +6674,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0f83c5d3-32ad-4c57-9a93-ab31ee18c92f")
-		(property "Reference" "C1302"
+		(property "Reference" "C1106"
 			(at 91.059 142.3416 0)
 			(effects
 				(font
@@ -6271,7 +6683,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1uF 50V"
+		(property "Value" "1uF/50V"
 			(at 91.059 144.653 0)
 			(effects
 				(font
@@ -6307,7 +6719,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C15849"
+			(at 93.98 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
 			(at 93.98 143.51 0)
 			(effects
 				(font
@@ -6323,9 +6744,96 @@
 			(uuid "0c76ac17-5c97-4222-b3b1-34394205238f")
 		)
 		(instances
-			(project "Yellow"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "C1302")
+					(reference "C1106")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 124.46 179.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "14716e12-1da0-44dd-b252-cc8912fb16f6")
+		(property "Reference" "C1109"
+			(at 127.381 177.9016 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF/50V"
+			(at 127.381 180.213 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+			(at 125.4252 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 124.46 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 124.46 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C13585"
+			(at 124.46 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 124.46 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cb25ab43-144a-40a1-a656-ffbe7ee880e1")
+		)
+		(pin "2"
+			(uuid "fd1d6848-b661-4406-a9be-cc4c06f9b697")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
+					(reference "C1109")
 					(unit 1)
 				)
 			)
@@ -6394,6 +6902,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 86.36 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d847f98c-e804-4efa-a00e-9aca092d5778")
 		)
@@ -6407,82 +6924,9 @@
 					(unit 1)
 				)
 			)
-			(project "SH-RPi"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "R305")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 165.1 44.45 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1e204c01-776c-4c2f-afd7-737a0e623ac4")
-		(property "Reference" "#PWR0317"
-			(at 165.1 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "CMx_3V3"
-			(at 167.64 43.1799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 165.1 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 165.1 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 165.1 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d072813c-b436-4897-8882-084488c8eed5")
-		)
-		(instances
-			(project "SH-RPi"
-				(path "/4c14904e-48eb-4243-8cbd-3afad8250b85/00000000-0000-0000-0000-00005ca65cc5"
-					(reference "#PWR0317")
-					(unit 1)
-				)
-			)
-			(project "SH-RPi"
-				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "#PWR0317")
+					(reference "R1104")
 					(unit 1)
 				)
 			)
@@ -6497,7 +6941,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1e7a521f-d36c-41d3-85cc-6f61bb621233")
-		(property "Reference" "C1301"
+		(property "Reference" "C1104"
 			(at 75.311 135.9916 0)
 			(effects
 				(font
@@ -6506,7 +6950,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF 50V"
+		(property "Value" "100nF/50V"
 			(at 75.311 138.303 0)
 			(effects
 				(font
@@ -6542,7 +6986,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C14663"
+			(at 72.39 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
 			(at 72.39 137.16 0)
 			(effects
 				(font
@@ -6558,9 +7011,9 @@
 			(uuid "c3910967-7782-4dfd-b26c-c55b014a272e")
 		)
 		(instances
-			(project "Yellow"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "C1301")
+					(reference "C1104")
 					(unit 1)
 				)
 			)
@@ -6611,7 +7064,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 66.04 142.24 0)
 			(effects
 				(font
@@ -6630,9 +7083,9 @@
 					(unit 1)
 				)
 			)
-			(project "SH-RPi"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "#PWR0303")
+					(reference "#PWR01103")
 					(unit 1)
 				)
 			)
@@ -6682,7 +7135,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 86.36 83.82 0)
 			(effects
 				(font
@@ -6701,9 +7154,9 @@
 					(unit 1)
 				)
 			)
-			(project "SH-RPi"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "#PWR0304")
+					(reference "#PWR01106")
 					(unit 1)
 				)
 			)
@@ -6771,6 +7224,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 124.46 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b4911227-ae4b-43cc-a004-6385721544ee")
 		)
@@ -6784,9 +7246,9 @@
 					(unit 1)
 				)
 			)
-			(project "SH-RPi"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "C306")
+					(reference "C1108")
 					(unit 1)
 				)
 			)
@@ -6837,7 +7299,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 53.34 142.24 0)
 			(effects
 				(font
@@ -6856,16 +7318,82 @@
 					(unit 1)
 				)
 			)
-			(project "SH-RPi"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "#PWR0302")
+					(reference "#PWR01102")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "SH-RPi:COS1333")
+		(lib_id "power:GND")
+		(at 104.14 184.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "39fd94a4-46e2-44de-b100-7d49fe153d48")
+		(property "Reference" "#PWR01109"
+			(at 104.14 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 104.14 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 104.14 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 104.14 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 104.14 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4bc7c959-dc60-4801-ae1f-288df39d1428")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
+					(reference "#PWR01109")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Hatlabs:COS1333")
 		(at 120.65 44.45 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6934,6 +7462,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 120.65 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "d20954a2-f5ab-40aa-9f0d-1946e3116ca4")
 		)
@@ -6956,9 +7493,9 @@
 					(unit 1)
 				)
 			)
-			(project "SH-RPi"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "U302")
+					(reference "U1103")
 					(unit 1)
 				)
 			)
@@ -6966,7 +7503,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:LMV321")
-		(at 167.64 64.77 0)
+		(at 167.64 68.58 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6974,7 +7511,7 @@
 		(dnp no)
 		(uuid "3dd84683-6b80-43ed-81d5-24d03fea0cad")
 		(property "Reference" "U303"
-			(at 171.45 57.15 0)
+			(at 171.45 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6982,7 +7519,7 @@
 			)
 		)
 		(property "Value" "LMV321-TR"
-			(at 173.99 60.96 0)
+			(at 173.99 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6990,7 +7527,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-			(at 167.64 64.77 0)
+			(at 167.64 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7000,7 +7537,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lmv324.pdf"
-			(at 167.64 64.77 0)
+			(at 167.64 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7009,7 +7546,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 167.64 64.77 0)
+			(at 167.64 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7018,7 +7555,7 @@
 			)
 		)
 		(property "LCSC" "C362273"
-			(at 167.64 64.77 0)
+			(at 167.64 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7027,7 +7564,16 @@
 			)
 		)
 		(property "JLCPCB_CORRECTION" "0;0;180"
-			(at 167.64 64.77 0)
+			(at 167.64 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 167.64 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7057,9 +7603,9 @@
 					(unit 1)
 				)
 			)
-			(project "SH-RPi"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "U303")
+					(reference "U1104")
 					(unit 1)
 				)
 			)
@@ -7128,6 +7674,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 68.58 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1206f6db-c160-4718-a87c-f305e1d90d91")
 		)
@@ -7141,9 +7696,9 @@
 					(unit 1)
 				)
 			)
-			(project "SH-RPi"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "R302")
+					(reference "R1102")
 					(unit 1)
 				)
 			)
@@ -7176,7 +7731,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PCM_Capacitor_SMD_AKL:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 223.2152 132.08 0)
 			(effects
 				(font
@@ -7212,7 +7767,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C1671"
+			(at 222.25 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
 			(at 222.25 128.27 0)
 			(effects
 				(font
@@ -7234,9 +7798,9 @@
 					(unit 1)
 				)
 			)
-			(project "SH-RPi"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "C312")
+					(reference "C1118")
 					(unit 1)
 				)
 			)
@@ -7251,7 +7815,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4cfae287-e031-4188-8e6e-ca8156f3e6d2")
-		(property "Reference" "R1301"
+		(property "Reference" "R1106"
 			(at 122.428 134.7216 0)
 			(effects
 				(font
@@ -7296,7 +7860,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C25741"
+			(at 120.65 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
 			(at 120.65 135.89 0)
 			(effects
 				(font
@@ -7312,9 +7885,9 @@
 			(uuid "7107160c-da49-4f62-9cd2-ee8fefbeefa3")
 		)
 		(instances
-			(project "Yellow"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "R1301")
+					(reference "R1106")
 					(unit 1)
 				)
 			)
@@ -7365,7 +7938,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 46.99 142.24 0)
 			(effects
 				(font
@@ -7384,9 +7957,100 @@
 					(unit 1)
 				)
 			)
-			(project "SH-RPi"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "#PWR0301")
+					(reference "#PWR01101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Hatlabs:H7533-H#")
+		(at 104.14 172.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "506843e1-0d43-4851-ab58-a0a3e309a0ae")
+		(property "Reference" "U1102"
+			(at 104.14 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "H7533-H#"
+			(at 104.14 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 104.775 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Shanghai-Siproin-Microelectronics-H7533-H-_C277872.pdf"
+			(at 104.14 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Positive 100mA 40V Linear Regulator, Fixed Output 3.3V,SOT-23-3"
+			(at 104.14 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C277872"
+			(at 104.14 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 104.14 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fbb66b3b-f45c-4b50-8eb4-9fc5ad81dd68")
+		)
+		(pin "2"
+			(uuid "7e023805-5c1f-4e04-b5b7-41d2bf721f7e")
+		)
+		(pin "3"
+			(uuid "5446bfdb-f492-4ebf-90b4-7ba4fd2e8fca")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
+					(reference "U1102")
 					(unit 1)
 				)
 			)
@@ -7401,7 +8065,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "658dffb8-7d17-451a-851c-f809f87cf6cc")
-		(property "Reference" "#PWR01302"
+		(property "Reference" "#PWR01107"
 			(at 93.98 154.94 0)
 			(effects
 				(font
@@ -7436,7 +8100,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 93.98 148.59 0)
 			(effects
 				(font
@@ -7449,9 +8113,75 @@
 			(uuid "35afd97c-2935-4f74-98ab-ec6a3c068a9b")
 		)
 		(instances
-			(project "Yellow"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "#PWR01302")
+					(reference "#PWR01107")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 124.46 184.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6610eb1a-a8b9-47fa-a07f-fdbbad48e39e")
+		(property "Reference" "#PWR01112"
+			(at 124.46 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 124.46 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 124.46 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 124.46 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 124.46 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7458f80f-75d5-48ab-af62-ce8f3cda4f4f")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
+					(reference "#PWR01112")
 					(unit 1)
 				)
 			)
@@ -7502,7 +8232,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Special symbol for telling ERC where power comes from"
 			(at 88.9 121.92 0)
 			(effects
 				(font
@@ -7521,9 +8251,9 @@
 					(unit 1)
 				)
 			)
-			(project "SH-RPi"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "#FLG0301")
+					(reference "#FLG01101")
 					(unit 1)
 				)
 			)
@@ -7574,7 +8304,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Special symbol for telling ERC where power comes from"
 			(at 109.22 26.67 0)
 			(effects
 				(font
@@ -7593,9 +8323,9 @@
 					(unit 1)
 				)
 			)
-			(project "SH-RPi"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "#FLG0302")
+					(reference "#FLG01102")
 					(unit 1)
 				)
 			)
@@ -7665,6 +8395,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 86.36 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "0371e7eb-41b4-41f2-b6bd-9b0651410652")
 		)
@@ -7678,9 +8417,9 @@
 					(unit 1)
 				)
 			)
-			(project "SH-RPi"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "D301")
+					(reference "D1101")
 					(unit 1)
 				)
 			)
@@ -7733,7 +8472,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Generic connector, double row, 02x02, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 251.46 57.15 0)
 			(effects
 				(font
@@ -7752,6 +8491,15 @@
 			)
 		)
 		(property "JLCPCB_CORRECTION" "1.27;1.27;90"
+			(at 251.46 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
 			(at 251.46 57.15 0)
 			(effects
 				(font
@@ -7779,9 +8527,97 @@
 					(unit 1)
 				)
 			)
-			(project "SH-RPi"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "J301")
+					(reference "J1101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 85.09 179.07 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7b5566b3-8d5d-41ab-85a9-cb8c46244a4b")
+		(property "Reference" "C1105"
+			(at 82.169 177.9016 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF/50V"
+			(at 82.169 180.213 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+			(at 84.1248 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 85.09 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 85.09 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C13585"
+			(at 85.09 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 85.09 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e999e1ae-2c7d-4a38-b9c3-1152167c4f90")
+		)
+		(pin "2"
+			(uuid "31b3e4e7-225d-4683-9f8d-e2dc0eb0a14f")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
+					(reference "C1105")
 					(unit 1)
 				)
 			)
@@ -7797,7 +8633,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8475aff0-b338-43cd-8312-21f774879c2d")
-		(property "Reference" "C1303"
+		(property "Reference" "C1116"
 			(at 186.309 127.1016 0)
 			(effects
 				(font
@@ -7806,7 +8642,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "47uF 16V"
+		(property "Value" "47uF/16V"
 			(at 186.309 129.413 0)
 			(effects
 				(font
@@ -7860,6 +8696,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 189.23 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f2f1e62a-eaf4-4ba9-a56b-7daa6cc0cd27")
 		)
@@ -7867,9 +8712,9 @@
 			(uuid "f9e5a508-0303-4983-b230-6fc7030b5977")
 		)
 		(instances
-			(project "Yellow"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "C1303")
+					(reference "C1116")
 					(unit 1)
 				)
 			)
@@ -7939,6 +8784,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 256.54 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "de95c1c1-7105-4dbd-9998-06d56b5eac62")
 		)
@@ -7952,9 +8806,9 @@
 					(unit 1)
 				)
 			)
-			(project "SH-RPi"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "R316")
+					(reference "R1112")
 					(unit 1)
 				)
 			)
@@ -7970,7 +8824,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "88080670-47e9-46bb-bdf8-c054ffa6ff5a")
-		(property "Reference" "TP1301"
+		(property "Reference" "TP1102"
 			(at 228.6 136.6519 0)
 			(effects
 				(font
@@ -8015,13 +8869,22 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 226.06 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "795cb10a-9816-4faa-b394-bd58e60438ab")
 		)
 		(instances
-			(project "Yellow"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "TP1301")
+					(reference "TP1102")
 					(unit 1)
 				)
 			)
@@ -8072,7 +8935,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Special symbol for telling ERC where power comes from"
 			(at 110.49 57.15 0)
 			(effects
 				(font
@@ -8091,9 +8954,9 @@
 					(unit 1)
 				)
 			)
-			(project "SH-RPi"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "#FLG0303")
+					(reference "#FLG01103")
 					(unit 1)
 				)
 			)
@@ -8101,7 +8964,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 193.04 64.77 90)
+		(at 193.04 68.58 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8109,7 +8972,7 @@
 		(dnp no)
 		(uuid "9420766e-3f21-4904-af86-795a7bbb9589")
 		(property "Reference" "R314"
-			(at 195.58 59.69 90)
+			(at 195.58 63.5 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8118,7 +8981,7 @@
 			)
 		)
 		(property "Value" "3.3k"
-			(at 196.85 62.23 90)
+			(at 196.85 66.04 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8127,7 +8990,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 193.04 66.548 90)
+			(at 193.04 70.358 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8136,7 +8999,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 193.04 64.77 0)
+			(at 193.04 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8145,7 +9008,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 193.04 64.77 0)
+			(at 193.04 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8154,7 +9017,16 @@
 			)
 		)
 		(property "LCSC" "C25890"
-			(at 193.04 64.77 0)
+			(at 193.04 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 193.04 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8175,9 +9047,9 @@
 					(unit 1)
 				)
 			)
-			(project "SH-RPi"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "R314")
+					(reference "R1108")
 					(unit 1)
 				)
 			)
@@ -8185,7 +9057,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_Zener")
-		(at 146.05 68.58 270)
+		(at 146.05 72.39 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8193,7 +9065,7 @@
 		(dnp no)
 		(uuid "9fa7de3f-b47b-4fe7-a7e1-3b4dc2cf23c3")
 		(property "Reference" "D304"
-			(at 146.05 71.12 90)
+			(at 146.05 74.93 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8202,7 +9074,7 @@
 			)
 		)
 		(property "Value" "BZT52C3V3S"
-			(at 146.05 73.66 90)
+			(at 146.05 77.47 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8211,7 +9083,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-323"
-			(at 146.05 68.58 0)
+			(at 146.05 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8220,7 +9092,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 146.05 68.58 0)
+			(at 146.05 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8229,7 +9101,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 146.05 68.58 0)
+			(at 146.05 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8238,7 +9110,16 @@
 			)
 		)
 		(property "LCSC" "C173439"
-			(at 146.05 68.58 90)
+			(at 146.05 72.39 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 146.05 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8259,9 +9140,9 @@
 					(unit 1)
 				)
 			)
-			(project "SH-RPi"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "D304")
+					(reference "D1102")
 					(unit 1)
 				)
 			)
@@ -8269,7 +9150,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 133.35 74.93 0)
+		(at 133.35 78.74 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8277,7 +9158,7 @@
 		(dnp no)
 		(uuid "a2954688-c122-4dfb-a85e-08932be02780")
 		(property "Reference" "#PWR0313"
-			(at 133.35 81.28 0)
+			(at 133.35 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8286,7 +9167,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 133.477 79.3242 0)
+			(at 133.477 83.1342 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8294,7 +9175,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 133.35 74.93 0)
+			(at 133.35 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8303,7 +9184,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 133.35 74.93 0)
+			(at 133.35 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8311,8 +9192,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 133.35 74.93 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 133.35 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8330,9 +9211,9 @@
 					(unit 1)
 				)
 			)
-			(project "SH-RPi"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "#PWR0313")
+					(reference "#PWR01115")
 					(unit 1)
 				)
 			)
@@ -8348,7 +9229,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a2cdb5b1-5166-4646-9ada-d0080661b64c")
-		(property "Reference" "U1301"
+		(property "Reference" "U1101"
 			(at 104.14 114.3 0)
 			(effects
 				(font
@@ -8400,6 +9281,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 104.14 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "3ede1241-51cf-46cb-9b1c-5211bff4759e")
 		)
@@ -8428,9 +9318,9 @@
 			(uuid "c4bc40c5-5a03-4816-8f84-99c9c67bb062")
 		)
 		(instances
-			(project ""
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "U1301")
+					(reference "U1101")
 					(unit 1)
 				)
 			)
@@ -8480,7 +9370,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 123.19 60.96 0)
 			(effects
 				(font
@@ -8499,9 +9389,9 @@
 					(unit 1)
 				)
 			)
-			(project "SH-RPi"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "#PWR0309")
+					(reference "#PWR01110")
 					(unit 1)
 				)
 			)
@@ -8571,6 +9461,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 248.92 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "56480f8c-3730-43f9-9c01-c15038854028")
 		)
@@ -8584,9 +9483,75 @@
 					(unit 1)
 				)
 			)
-			(project "SH-RPi"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "R315")
+					(reference "R1111")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 132.08 170.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c3092c27-be6e-4b04-bdcc-aafb0270aca9")
+		(property "Reference" "#PWR01114"
+			(at 132.08 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3_LDO"
+			(at 132.08 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 132.08 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 132.08 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0bda6f01-78a7-4d98-8eee-c7f3eb43e02d")
+		)
+		(instances
+			(project ""
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
+					(reference "#PWR01114")
 					(unit 1)
 				)
 			)
@@ -8636,7 +9601,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 124.46 31.75 0)
 			(effects
 				(font
@@ -8655,9 +9620,9 @@
 					(unit 1)
 				)
 			)
-			(project "SH-RPi"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "#PWR0311")
+					(reference "#PWR01111")
 					(unit 1)
 				)
 			)
@@ -8665,7 +9630,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 133.35 68.58 0)
+		(at 133.35 72.39 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8673,7 +9638,7 @@
 		(dnp no)
 		(uuid "c760e2ed-be76-44df-b90c-843cedefee62")
 		(property "Reference" "R311"
-			(at 134.62 71.12 0)
+			(at 134.62 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8681,8 +9646,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
-			(at 134.62 73.66 0)
+		(property "Value" "15k"
+			(at 134.62 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8691,7 +9656,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 131.572 68.58 90)
+			(at 131.572 72.39 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8700,7 +9665,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 133.35 68.58 0)
+			(at 133.35 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8709,7 +9674,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 133.35 68.58 0)
+			(at 133.35 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8717,8 +9682,17 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25744"
-			(at 133.35 68.58 0)
+		(property "LCSC" "C25756"
+			(at 133.35 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 133.35 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8739,9 +9713,9 @@
 					(unit 1)
 				)
 			)
-			(project "SH-RPi"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "R311")
+					(reference "R1107")
 					(unit 1)
 				)
 			)
@@ -8802,6 +9776,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 128.27 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "4d274e1b-83b0-4510-823b-6f0fdde28c4d")
 		)
@@ -8812,9 +9795,9 @@
 					(unit 1)
 				)
 			)
-			(project "SH-RPi"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "TP301")
+					(reference "TP1101")
 					(unit 1)
 				)
 			)
@@ -8822,7 +9805,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 127 68.58 180)
+		(at 127 72.39 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8830,7 +9813,7 @@
 		(dnp no)
 		(uuid "ce7e002f-9a01-45d0-bc13-707e6a3d7251")
 		(property "Reference" "C307"
-			(at 123.19 71.12 0)
+			(at 123.19 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8838,7 +9821,7 @@
 			)
 		)
 		(property "Value" "220nF"
-			(at 123.19 73.66 0)
+			(at 123.19 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8846,7 +9829,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 126.0348 64.77 0)
+			(at 126.0348 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8855,7 +9838,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 127 68.58 0)
+			(at 127 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8864,7 +9847,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 127 68.58 0)
+			(at 127 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8873,7 +9856,16 @@
 			)
 		)
 		(property "LCSC" "C16772"
-			(at 127 68.58 0)
+			(at 127 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 127 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8894,9 +9886,75 @@
 					(unit 1)
 				)
 			)
-			(project "SH-RPi"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "C307")
+					(reference "C1110")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 85.09 184.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d100df2f-8854-48f9-9387-995f808661b8")
+		(property "Reference" "#PWR01105"
+			(at 85.09 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 85.09 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 85.09 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 85.09 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 85.09 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ee792e3b-d5e7-4910-8749-a8bb13e2d833")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
+					(reference "#PWR01105")
 					(unit 1)
 				)
 			)
@@ -8921,7 +9979,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "47uF 16V"
+		(property "Value" "47uF/16V"
 			(at 177.419 135.763 0)
 			(effects
 				(font
@@ -8975,6 +10033,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 180.34 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "00c8d13b-eab7-42f1-bcc3-557a17b182ed")
 		)
@@ -8988,9 +10055,75 @@
 					(unit 1)
 				)
 			)
-			(project "SH-RPi"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "C310")
+					(reference "C1115")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 165.1 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d7720104-7352-4463-87b2-051a791e23f8")
+		(property "Reference" "#PWR01118"
+			(at 165.1 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3_LDO"
+			(at 165.1 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 165.1 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 165.1 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 165.1 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b2bc9aaf-d1a5-4cf6-a7fc-155ea6979729")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
+					(reference "#PWR01118")
 					(unit 1)
 				)
 			)
@@ -9005,7 +10138,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d8c5ac5f-9708-4b7e-937b-97c1611eadf2")
-		(property "Reference" "#PWR01304"
+		(property "Reference" "#PWR01124"
 			(at 198.12 146.05 0)
 			(effects
 				(font
@@ -9040,7 +10173,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 198.12 139.7 0)
 			(effects
 				(font
@@ -9053,9 +10186,9 @@
 			(uuid "bf81444b-1402-49be-8ad1-b53fa042ea23")
 		)
 		(instances
-			(project "Yellow"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "#PWR01304")
+					(reference "#PWR01124")
 					(unit 1)
 				)
 			)
@@ -9063,7 +10196,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 146.05 74.93 0)
+		(at 146.05 78.74 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9071,7 +10204,7 @@
 		(dnp no)
 		(uuid "db257c26-3e3b-4a76-84de-21747f70ac05")
 		(property "Reference" "#PWR0315"
-			(at 146.05 81.28 0)
+			(at 146.05 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9080,7 +10213,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 146.177 79.3242 0)
+			(at 146.177 83.1342 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9088,7 +10221,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 146.05 74.93 0)
+			(at 146.05 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9097,7 +10230,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 146.05 74.93 0)
+			(at 146.05 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9105,8 +10238,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 146.05 74.93 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 146.05 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9124,9 +10257,9 @@
 					(unit 1)
 				)
 			)
-			(project "SH-RPi"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "#PWR0315")
+					(reference "#PWR01116")
 					(unit 1)
 				)
 			)
@@ -9194,6 +10327,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 81.28 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8f3f5c51-eb87-4b6a-becf-502d36986ebc")
 		)
@@ -9207,9 +10349,9 @@
 					(unit 1)
 				)
 			)
-			(project "SH-RPi"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "R303")
+					(reference "R1103")
 					(unit 1)
 				)
 			)
@@ -9225,7 +10367,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "dff5ce78-4a7f-4f45-98f5-192d7d96f5b5")
-		(property "Reference" "C1304"
+		(property "Reference" "C1117"
 			(at 195.199 133.4516 0)
 			(effects
 				(font
@@ -9234,7 +10376,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "47uF 16V"
+		(property "Value" "47uF/16V"
 			(at 195.199 135.763 0)
 			(effects
 				(font
@@ -9288,6 +10430,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 198.12 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "4985b253-ccf7-46ad-bc17-78bac36ad045")
 		)
@@ -9295,9 +10446,9 @@
 			(uuid "18292079-6ca1-4840-be0d-273022855c2a")
 		)
 		(instances
-			(project "Yellow"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "C1304")
+					(reference "C1117")
 					(unit 1)
 				)
 			)
@@ -9365,6 +10516,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 123.19 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6abd86ff-49fe-4084-87db-931100f45856")
 		)
@@ -9378,9 +10538,9 @@
 					(unit 1)
 				)
 			)
-			(project "SH-RPi"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "C305")
+					(reference "C1107")
 					(unit 1)
 				)
 			)
@@ -9431,7 +10591,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 256.54 78.74 0)
 			(effects
 				(font
@@ -9450,9 +10610,9 @@
 					(unit 1)
 				)
 			)
-			(project "SH-RPi"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "#PWR0323")
+					(reference "#PWR01127")
 					(unit 1)
 				)
 			)
@@ -9534,6 +10694,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 71.12 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "97130d6c-42ff-451b-a559-19d0c4995c9f")
 		)
@@ -9550,9 +10719,9 @@
 					(unit 1)
 				)
 			)
-			(project "SH-RPi"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "Q301")
+					(reference "Q1101")
 					(unit 1)
 				)
 			)
@@ -9633,6 +10802,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 83.82 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "0c055777-cdd7-450c-b810-d0268f9c5a06")
 		)
@@ -9649,9 +10827,9 @@
 					(unit 1)
 				)
 			)
-			(project "SH-RPi"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "Q302")
+					(reference "Q1102")
 					(unit 1)
 				)
 			)
@@ -9676,7 +10854,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10uF 50V"
+		(property "Value" "10uF/50V"
 			(at 44.069 130.683 0)
 			(effects
 				(font
@@ -9721,6 +10899,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 46.99 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "1f61d71c-6eae-46f6-af60-8fa0c91e1beb")
 		)
@@ -9734,9 +10921,9 @@
 					(unit 1)
 				)
 			)
-			(project "SH-RPi"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "C301")
+					(reference "C1101")
 					(unit 1)
 				)
 			)
@@ -9786,7 +10973,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 180.34 139.7 0)
 			(effects
 				(font
@@ -9805,9 +10992,9 @@
 					(unit 1)
 				)
 			)
-			(project "SH-RPi"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "#PWR0319")
+					(reference "#PWR01122")
 					(unit 1)
 				)
 			)
@@ -9863,7 +11050,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "-0.13A Id, -50V Vds, P-Channel MOSFET, SOT-23"
 			(at 135.89 44.45 0)
 			(effects
 				(font
@@ -9890,6 +11077,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 135.89 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "61310a20-3b02-4390-938e-f60b1047d657")
 		)
@@ -9906,9 +11102,9 @@
 					(unit 1)
 				)
 			)
-			(project "SH-RPi"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "Q303")
+					(reference "Q1103")
 					(unit 1)
 				)
 			)
@@ -9932,7 +11128,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100R"
+		(property "Value" "120R"
 			(at 106.68 52.07 90)
 			(effects
 				(font
@@ -9968,7 +11164,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25076"
+		(property "LCSC" "C25079"
+			(at 106.68 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
 			(at 106.68 46.99 0)
 			(effects
 				(font
@@ -9990,9 +11195,9 @@
 					(unit 1)
 				)
 			)
-			(project "SH-RPi"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "R308")
+					(reference "R1105")
 					(unit 1)
 				)
 			)
@@ -10043,7 +11248,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 248.92 78.74 0)
 			(effects
 				(font
@@ -10062,9 +11267,9 @@
 					(unit 1)
 				)
 			)
-			(project "SH-RPi"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "#PWR0322")
+					(reference "#PWR01126")
 					(unit 1)
 				)
 			)
@@ -10072,7 +11277,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 165.1 74.93 0)
+		(at 165.1 78.74 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10080,7 +11285,7 @@
 		(dnp no)
 		(uuid "f730ed99-09e6-417c-ae66-81229b047ef1")
 		(property "Reference" "#PWR0318"
-			(at 165.1 81.28 0)
+			(at 165.1 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10089,7 +11294,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 165.227 79.3242 0)
+			(at 165.227 83.1342 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10097,7 +11302,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 165.1 74.93 0)
+			(at 165.1 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10106,7 +11311,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 165.1 74.93 0)
+			(at 165.1 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10114,8 +11319,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 165.1 74.93 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 165.1 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10133,9 +11338,9 @@
 					(unit 1)
 				)
 			)
-			(project "SH-RPi"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "#PWR0318")
+					(reference "#PWR01119")
 					(unit 1)
 				)
 			)
@@ -10150,7 +11355,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f9b965fd-aeb2-4f87-932e-8497d9014406")
-		(property "Reference" "#PWR01301"
+		(property "Reference" "#PWR01104"
 			(at 72.39 148.59 0)
 			(effects
 				(font
@@ -10185,7 +11390,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 72.39 142.24 0)
 			(effects
 				(font
@@ -10198,9 +11403,9 @@
 			(uuid "65e1f646-434f-44aa-a0b6-57cad2634f88")
 		)
 		(instances
-			(project "Yellow"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "#PWR01301")
+					(reference "#PWR01104")
 					(unit 1)
 				)
 			)
@@ -10216,7 +11421,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fe350db0-9ba1-4f3b-b437-50a09bc909c7")
-		(property "Reference" "C1305"
+		(property "Reference" "C1112"
 			(at 152.019 127.1016 0)
 			(effects
 				(font
@@ -10234,7 +11439,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PCM_Capacitor_SMD_AKL:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 153.9748 132.08 0)
 			(effects
 				(font
@@ -10270,7 +11475,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C1525"
+			(at 154.94 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
 			(at 154.94 128.27 0)
 			(effects
 				(font
@@ -10286,9 +11500,9 @@
 			(uuid "b8e64e8c-7be6-4bc5-971d-f314a1dda898")
 		)
 		(instances
-			(project "Yellow"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "C1305")
+					(reference "C1112")
 					(unit 1)
 				)
 			)

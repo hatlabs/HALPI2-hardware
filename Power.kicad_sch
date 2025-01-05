@@ -5,12 +5,13 @@
 	(uuid "7563390d-2b26-4f42-babb-ee1d9f58d701")
 	(paper "A4")
 	(title_block
-		(title "Power")
-		(date "2022-11-06")
-		(rev "1.3b")
-		(company "Nabu Casa")
-		(comment 1 "www.nabucasa.com")
-		(comment 2 "Yellow")
+		(title "HALPI2")
+		(date "2025-01-03")
+		(rev "v0.0.1")
+		(company "Hat Labs Oy")
+		(comment 1 "https://creativecommons.org/licenses/by/4.0")
+		(comment 2 "To view a copy of this license, visit ")
+		(comment 3 "HALPI2 is licensed under CC BY 4.0.")
 	)
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_01x02"
@@ -154,9 +155,9 @@
 		)
 		(symbol "power:+3.3VP"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -170,7 +171,7 @@
 				)
 			)
 			(property "Value" "+3.3VP"
-				(at 0 2.54 0)
+				(at 0 3.556 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -204,7 +205,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "power-flag"
+			(property "ki_keywords" "global power"
 				(at 0 0 0)
 				(effects
 					(font
@@ -216,8 +217,8 @@
 			(symbol "+3.3VP_0_0"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "+3.3VP"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -274,9 +275,9 @@
 		)
 		(symbol "power:+5V"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -324,7 +325,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "power-flag"
+			(property "ki_keywords" "global power"
 				(at 0 0 0)
 				(effects
 					(font
@@ -374,8 +375,8 @@
 			(symbol "+5V_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "+5V"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -499,7 +500,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 68.58) (xy 140.97 68.58)
+			(xy 143.51 68.58) (xy 140.97 68.58)
 		)
 		(stroke
 			(width 0)
@@ -639,7 +640,7 @@
 		)
 		(uuid "131ea2bd-a8d5-4905-b966-f61e512e084a")
 	)
-	(text "3.3V / 3A\nPCIe\n"
+	(text "3.3V / 3A\nPCIe only\n"
 		(exclude_from_sim no)
 		(at 187.198 86.868 0)
 		(effects
@@ -650,7 +651,7 @@
 		)
 		(uuid "439546fc-d9a1-47b6-ac2c-7dcab4ff7374")
 	)
-	(text "3 * 3.0V supercaps\nand balancing circuit"
+	(text "4 * 2.7V supercaps\nand balancing circuit"
 		(exclude_from_sim no)
 		(at 146.05 86.868 0)
 		(effects
@@ -661,7 +662,19 @@
 		)
 		(uuid "768e0a7f-0613-411c-ba01-40bae73450b2")
 	)
-	(text "5-9.0V\n0-5V at startup"
+	(text "FIXME: Add an ideal diode\nto prevent backflow"
+		(exclude_from_sim no)
+		(at 221.234 42.926 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 0 0 1)
+			)
+			(justify left)
+		)
+		(uuid "89b4b45e-324a-473f-bec4-f1f8daa7b2c7")
+	)
+	(text "5-10.0V\n0-5V at startup"
 		(exclude_from_sim no)
 		(at 144.78 27.94 0)
 		(effects
@@ -672,7 +685,7 @@
 		)
 		(uuid "a01e7007-5847-4597-be2e-259948ef5967")
 	)
-	(text "5.5V / 4A\nPi CM module\nUSB outputs"
+	(text "5.1V / 4A\nPi CM module\nUSB outputs"
 		(exclude_from_sim no)
 		(at 187.452 54.61 0)
 		(effects
@@ -694,7 +707,7 @@
 		)
 		(uuid "aca9f77f-02f9-4043-89e9-70a0529ca519")
 	)
-	(text "Drop input to 9.0V\nLimit input current to 0.8A"
+	(text "Drop input to 10.0V\nLimit input current to 0.8A"
 		(exclude_from_sim no)
 		(at 101.854 55.372 0)
 		(effects
@@ -773,7 +786,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "04d90ee1-dcb4-45a2-8b0b-243222e27005")
-		(property "Reference" "#PWR0110"
+		(property "Reference" "#PWR0601"
 			(at 215.9 36.83 0)
 			(effects
 				(font
@@ -783,7 +796,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 222.8851 37.1983 90)
+			(at 223.52 36.83 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -809,7 +822,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 219.71 36.83 0)
 			(effects
 				(font
@@ -824,7 +837,7 @@
 		(instances
 			(project "Yellow"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42"
-					(reference "#PWR0110")
+					(reference "#PWR0601")
 					(unit 1)
 				)
 			)
@@ -839,7 +852,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "175ee5b9-5e2f-412a-ab57-4ad899982a9e")
-		(property "Reference" "#PWR0112"
+		(property "Reference" "#PWR0602"
 			(at 218.44 73.66 0)
 			(effects
 				(font
@@ -848,8 +861,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3VP"
-			(at 222.8851 70.2183 90)
+		(property "Value" "+3V3"
+			(at 223.266 69.85 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -875,7 +888,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+3.3VP\""
 			(at 219.71 69.85 0)
 			(effects
 				(font
@@ -890,7 +903,7 @@
 		(instances
 			(project "Yellow"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42"
-					(reference "#PWR0112")
+					(reference "#PWR0602")
 					(unit 1)
 				)
 			)
@@ -905,7 +918,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8377f278-ab9c-4c87-95b8-3c27cdf4f255")
-		(property "Reference" "J801"
+		(property "Reference" "J601"
 			(at 36.3728 47.4218 0)
 			(effects
 				(font
@@ -966,6 +979,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 34.29 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c5219e93-3bb1-4fbf-8f8b-56bb92a4b7dd")
 		)
@@ -975,14 +997,14 @@
 		(instances
 			(project "Yellow"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42"
-					(reference "J801")
+					(reference "J601")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(sheet
-		(at 144.78 63.5)
+		(at 143.51 63.5)
 		(size 30.48 25.4)
 		(fields_autoplaced yes)
 		(stroke
@@ -994,7 +1016,7 @@
 		)
 		(uuid "07643414-c558-4752-92d9-19f7e64f0193")
 		(property "Sheetname" "Supercaps"
-			(at 144.78 62.7884 0)
+			(at 143.51 62.7884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1003,7 +1025,7 @@
 			)
 		)
 		(property "Sheetfile" "supercap.kicad_sch"
-			(at 144.78 89.4846 0)
+			(at 143.51 89.4846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1012,7 +1034,7 @@
 			)
 		)
 		(pin "Vcap" bidirectional
-			(at 144.78 68.58 180)
+			(at 143.51 68.58 180)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1022,7 +1044,7 @@
 			(uuid "4cf6675c-3e6f-4eba-a7b3-c0bd87a92bf5")
 		)
 		(instances
-			(project "Yellow"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42"
 					(page "14")
 				)
@@ -1090,7 +1112,7 @@
 			(uuid "42915dc6-b437-403e-90b3-8f98ef7f7184")
 		)
 		(instances
-			(project "Yellow"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42"
 					(page "15")
 				)
@@ -1109,7 +1131,7 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "949897e8-9bb6-4c13-b9c6-3f831f2e4c69")
-		(property "Sheetname" "Buck converter 8.8V"
+		(property "Sheetname" "Buck converter 10V"
 			(at 100.33 31.0384 0)
 			(effects
 				(font
@@ -1118,7 +1140,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "buck_8.8V.kicad_sch"
+		(property "Sheetfile" "buck_10V.kicad_sch"
 			(at 100.33 57.7346 0)
 			(effects
 				(font
@@ -1158,7 +1180,7 @@
 			(uuid "c62ab8bd-2db4-49e6-9ef9-3e46484068d9")
 		)
 		(instances
-			(project "Yellow"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42"
 					(page "13")
 				)
@@ -1226,7 +1248,7 @@
 			(uuid "3bd774a1-3310-46c5-b509-b5e802f7bce0")
 		)
 		(instances
-			(project "Yellow"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42"
 					(page "12")
 				)
@@ -1284,7 +1306,7 @@
 			(uuid "a796e4a4-d368-4aec-89eb-1fb585588fa9")
 		)
 		(instances
-			(project "Yellow"
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42"
 					(page "16")
 				)

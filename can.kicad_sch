@@ -14,6 +14,108 @@
 		(comment 3 "HALPI2 is licensed under CC BY 4.0.")
 	)
 	(lib_symbols
+		(symbol "Connector:TestPoint"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.762) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Connector_Generic:Conn_01x03"
 			(pin_names
 				(offset 1.016) hide)
@@ -3754,10 +3856,22 @@
 		(uuid "611f7436-9c14-410d-b71a-a36a08cefeb8")
 	)
 	(junction
+		(at 109.22 123.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6d9ea81e-64c1-490d-8ead-a3baf27bcfbb")
+	)
+	(junction
 		(at 104.14 49.53)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6fc155aa-d957-4a62-b1ed-e3b4d5c5584f")
+	)
+	(junction
+		(at 184.15 49.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7636921c-b881-4738-acc6-afbf7edae901")
 	)
 	(junction
 		(at 181.61 92.71)
@@ -3796,6 +3910,12 @@
 		(uuid "962ef73f-b028-41e0-84ba-cae20d4cd715")
 	)
 	(junction
+		(at 166.37 125.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9ec29727-548b-4666-bff0-b049d9201fc2")
+	)
+	(junction
 		(at 35.56 151.13)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3820,6 +3940,12 @@
 		(uuid "b2317eb4-0792-43f1-bedb-9353cbe4bfb7")
 	)
 	(junction
+		(at 106.68 125.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bfb81a0b-35f7-4306-89a6-ecd758f1e449")
+	)
+	(junction
 		(at 118.11 49.53)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3836,6 +3962,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e88a7ff0-6c01-4b1c-ab60-8809670b903b")
+	)
+	(junction
+		(at 168.91 123.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "feab534e-fd1f-45c0-b663-c92844d8236b")
 	)
 	(junction
 		(at 149.86 54.61)
@@ -3952,6 +4084,16 @@
 	)
 	(wire
 		(pts
+			(xy 168.91 123.19) (xy 172.72 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1054a8c7-8a5a-4dfe-9d37-5b380b51de9f")
+	)
+	(wire
+		(pts
 			(xy 203.2 123.19) (xy 203.2 133.35)
 		)
 		(stroke
@@ -3969,6 +4111,16 @@
 			(type default)
 		)
 		(uuid "1c3f2299-73d7-481d-a8a1-e19dce545a37")
+	)
+	(wire
+		(pts
+			(xy 109.22 123.19) (xy 109.22 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d97f3f9-1a38-4a40-82ff-ec09849d8c1a")
 	)
 	(wire
 		(pts
@@ -4049,6 +4201,16 @@
 			(type default)
 		)
 		(uuid "2902ab5a-15fe-43e1-8a57-9e7371bdd7fd")
+	)
+	(wire
+		(pts
+			(xy 166.37 125.73) (xy 172.72 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29a2be9f-ece1-4439-9406-8a06a386b5ea")
 	)
 	(wire
 		(pts
@@ -4139,6 +4301,26 @@
 			(type default)
 		)
 		(uuid "38b04621-84d2-4de4-9695-432a0ef168f2")
+	)
+	(wire
+		(pts
+			(xy 109.22 123.19) (xy 123.19 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a065a49-3bb4-4018-8cda-74be8f0f552f")
+	)
+	(wire
+		(pts
+			(xy 184.15 49.53) (xy 181.61 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ab4b302-f28e-41bf-b2b0-7f734bd06543")
 	)
 	(wire
 		(pts
@@ -4273,13 +4455,33 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 129.54) (xy 120.65 133.35)
+			(xy 106.68 125.73) (xy 106.68 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d72bb08-efaf-41bd-a112-c530167b9929")
+	)
+	(wire
+		(pts
+			(xy 123.19 129.54) (xy 123.19 133.35)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "57252caf-5f95-44b5-8dc0-f0396a953fdd")
+	)
+	(wire
+		(pts
+			(xy 106.68 125.73) (xy 123.19 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c06d172-ebbd-4639-a74e-b526bd6db8ae")
 	)
 	(wire
 		(pts
@@ -4423,7 +4625,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 49.53) (xy 181.61 49.53)
+			(xy 189.23 49.53) (xy 184.15 49.53)
 		)
 		(stroke
 			(width 0)
@@ -4433,7 +4635,7 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 123.19) (xy 172.72 123.19)
+			(xy 148.59 123.19) (xy 168.91 123.19)
 		)
 		(stroke
 			(width 0)
@@ -4483,7 +4685,7 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 125.73) (xy 172.72 125.73)
+			(xy 148.59 125.73) (xy 166.37 125.73)
 		)
 		(stroke
 			(width 0)
@@ -4503,7 +4705,17 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 123.19) (xy 123.19 123.19)
+			(xy 166.37 125.73) (xy 166.37 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93ba8c23-f41f-442c-89bd-64f3ea3c9065")
+	)
+	(wire
+		(pts
+			(xy 83.82 123.19) (xy 109.22 123.19)
 		)
 		(stroke
 			(width 0)
@@ -4590,6 +4802,16 @@
 			(type default)
 		)
 		(uuid "a7de4a6a-0f80-458d-8e4e-e7d81d48ea5a")
+	)
+	(wire
+		(pts
+			(xy 168.91 123.19) (xy 168.91 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8453a8c-2f92-459a-a457-c9c2554e4adf")
 	)
 	(wire
 		(pts
@@ -4884,16 +5106,6 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 129.54) (xy 120.65 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e234c3c2-9955-4f09-90d9-d9b0c2f87176")
-	)
-	(wire
-		(pts
 			(xy 148.59 119.38) (xy 151.13 119.38)
 		)
 		(stroke
@@ -4904,7 +5116,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 125.73) (xy 123.19 125.73)
+			(xy 83.82 125.73) (xy 106.68 125.73)
 		)
 		(stroke
 			(width 0)
@@ -5178,6 +5390,17 @@
 			(justify left)
 		)
 		(uuid "91f2aa39-6e90-448f-b39f-e127f92f2c46")
+	)
+	(text "FIXME: Add CAN RX/TX LEDs"
+		(exclude_from_sim no)
+		(at 85.852 86.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 0 0 1)
+			)
+		)
+		(uuid "93e75821-198c-417c-b61b-69cfcb381f31")
 	)
 	(text "CAN bus terminator"
 		(exclude_from_sim no)
@@ -5547,6 +5770,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 104.14 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "89cb71e4-c422-4cfb-b9d8-88f1639348d8")
 		)
@@ -5635,6 +5867,15 @@
 			)
 		)
 		(property "LCSC" "C17572"
+			(at 250.19 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
 			(at 250.19 86.36 0)
 			(effects
 				(font
@@ -5739,6 +5980,15 @@
 			)
 		)
 		(property "Note" ""
+			(at 111.76 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
 			(at 111.76 49.53 0)
 			(effects
 				(font
@@ -5853,6 +6103,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 118.11 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d4b5e317-5b05-4ce0-9651-6cd4728d68cd")
 		)
@@ -5935,6 +6194,72 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 184.15 49.53 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "192e7586-5668-452f-80e9-cd4febbc559a")
+		(property "Reference" "TP1401"
+			(at 186.69 51.5619 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 186.69 54.1019 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 179.07 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 179.07 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 184.15 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "73857268-af29-455b-90b1-83985e2aec9a")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/30f1d4da-1daa-4049-adbf-96a0145bcc97"
+					(reference "TP1401")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3V3")
 		(at 120.65 109.22 0)
 		(unit 1)
@@ -6001,6 +6326,72 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 168.91 129.54 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "21d0fa28-1c3d-4ae2-b41e-fec98845267f")
+		(property "Reference" "TP1402"
+			(at 171.45 131.5719 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 171.45 134.1119 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 163.83 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 163.83 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 168.91 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d1983310-3f08-401e-b887-5bc3824aa6a4")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/30f1d4da-1daa-4049-adbf-96a0145bcc97"
+					(reference "TP1402")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Interface_CAN_LIN:MCP2518FD-xQBB")
 		(at 68.58 130.81 0)
 		(unit 1)
@@ -6058,6 +6449,15 @@
 			)
 		)
 		(property "LCSC" "C621395"
+			(at 68.58 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
 			(at 68.58 130.81 0)
 			(effects
 				(font
@@ -6194,6 +6594,15 @@
 			)
 		)
 		(property "LCSC" "C17572"
+			(at 250.19 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
 			(at 250.19 81.28 0)
 			(effects
 				(font
@@ -6420,6 +6829,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 44.45 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "0827acd2-1c3f-4aa3-b897-893c72a8e328")
 		)
@@ -6504,6 +6922,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 266.7 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9ef7651c-26fd-4a2d-9284-f66fef5555af")
 		)
@@ -6577,6 +7004,15 @@
 			)
 		)
 		(property "LCSC" "C366164"
+			(at 135.89 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
 			(at 135.89 124.46 0)
 			(effects
 				(font
@@ -6673,6 +7109,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 259.08 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9b29e05a-689d-4503-a8e8-b931ff591c36")
 		)
@@ -6743,6 +7188,15 @@
 			)
 		)
 		(property "LCSC" "C1547"
+			(at 35.56 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
 			(at 35.56 162.56 0)
 			(effects
 				(font
@@ -6848,6 +7302,15 @@
 			)
 		)
 		(property "Note" ""
+			(at 212.09 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
 			(at 212.09 133.35 0)
 			(effects
 				(font
@@ -6966,7 +7429,7 @@
 				)
 			)
 		)
-		(property "Footprint" "HALSER:C_1808_4520Metric"
+		(property "Footprint" "Hatlabs:C_1808_4520Metric"
 			(at 135.89 60.96 0)
 			(effects
 				(font
@@ -7021,6 +7484,15 @@
 			)
 		)
 		(property "Note" ""
+			(at 135.89 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
 			(at 135.89 60.96 0)
 			(effects
 				(font
@@ -7097,6 +7569,15 @@
 			)
 		)
 		(property "LCSC" "C1525"
+			(at 64.77 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
 			(at 64.77 111.76 0)
 			(effects
 				(font
@@ -7351,6 +7832,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 157.48 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e68f4ebe-ac7d-44e4-b142-5f12de2f5675")
 		)
@@ -7361,6 +7851,72 @@
 			(project "Yellow"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/30f1d4da-1daa-4049-adbf-96a0145bcc97"
 					(reference "C1409")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 166.37 135.89 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "788b2f68-742e-4fff-b492-613772b620d2")
+		(property "Reference" "TP1403"
+			(at 168.91 137.9219 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 168.91 140.4619 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 161.29 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 161.29 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 166.37 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "06009856-d1b3-4d5d-ba8c-01877f99fa57")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/30f1d4da-1daa-4049-adbf-96a0145bcc97"
+					(reference "TP1403")
 					(unit 1)
 				)
 			)
@@ -7458,6 +8014,15 @@
 			)
 		)
 		(property "JLCPCB_CORRECTION" "0;3.81;270"
+			(at 135.89 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
 			(at 135.89 52.07 0)
 			(effects
 				(font
@@ -7645,6 +8210,15 @@
 			)
 		)
 		(property "Note" ""
+			(at 115.57 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
 			(at 115.57 113.03 0)
 			(effects
 				(font
@@ -8030,6 +8604,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 175.26 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "2ad4c627-fc25-438f-ae4b-8d303c526928")
 		)
@@ -8268,6 +8851,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 152.4 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8a3cecab-2f81-48a8-ac76-9999f8a49fc7")
 		)
@@ -8374,6 +8966,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 166.37 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "3f456868-ab18-4536-8fb5-c2ce390f73df")
 		)
@@ -8384,6 +8985,72 @@
 			(project "Yellow"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/30f1d4da-1daa-4049-adbf-96a0145bcc97"
 					(reference "C1410")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 106.68 135.89 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "be607473-3afc-4a8f-a0d4-87723a2a5f00")
+		(property "Reference" "TP1404"
+			(at 109.22 137.9219 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 109.22 140.4619 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 101.6 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 101.6 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 106.68 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2fdb3120-8c45-40aa-b1ec-e515b1143f1f")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/30f1d4da-1daa-4049-adbf-96a0145bcc97"
+					(reference "TP1404")
 					(unit 1)
 				)
 			)
@@ -8479,6 +9146,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 234.95 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "f6ef5203-6448-4fbc-a217-eb42c57a57c1")
 		)
@@ -8496,7 +9172,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 120.65 133.35 0)
+		(at 123.19 133.35 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8505,7 +9181,7 @@
 		(fields_autoplaced yes)
 		(uuid "ca063660-8ec3-42ca-9cc8-8bd29e84b9a4")
 		(property "Reference" "#PWR01410"
-			(at 120.65 139.7 0)
+			(at 123.19 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8514,7 +9190,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 120.65 138.43 0)
+			(at 123.19 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8522,7 +9198,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 120.65 133.35 0)
+			(at 123.19 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8531,7 +9207,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 120.65 133.35 0)
+			(at 123.19 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8540,7 +9216,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 120.65 133.35 0)
+			(at 123.19 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8718,7 +9394,7 @@
 				)
 			)
 		)
-		(property "Footprint" "HALSER:L_CommonModeChoke_PCAQ2012B"
+		(property "Footprint" "Hatlabs:L_CommonModeChoke_PCAQ2012B"
 			(at 243.84 123.19 0)
 			(effects
 				(font
@@ -8782,6 +9458,15 @@
 			)
 		)
 		(property "Note" ""
+			(at 243.84 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
 			(at 243.84 123.19 0)
 			(effects
 				(font
@@ -8956,6 +9641,15 @@
 			)
 		)
 		(property "Note" ""
+			(at 157.48 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
 			(at 157.48 49.53 0)
 			(effects
 				(font
@@ -9165,6 +9859,15 @@
 			)
 		)
 		(property "LCSC" "C3234993"
+			(at 184.15 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
 			(at 184.15 119.38 0)
 			(effects
 				(font
@@ -9401,6 +10104,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 53.34 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "5697ac81-07db-43c0-b184-6c88b532e889")
 		)
@@ -9508,6 +10220,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 229.87 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "c7b5f4b3-fd2f-4fb7-886c-6739c66d3ff7")
 		)
@@ -9583,6 +10304,72 @@
 			(project "Yellow"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/30f1d4da-1daa-4049-adbf-96a0145bcc97"
 					(reference "#FLG01401")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 109.22 129.54 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "facfbcd1-b4df-45b8-9ab4-428c40e98d6f")
+		(property "Reference" "TP1405"
+			(at 111.76 131.5719 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 111.76 134.1119 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 104.14 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 104.14 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 109.22 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9ca49e2e-5ea5-4247-8909-b0c5f141378b")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/30f1d4da-1daa-4049-adbf-96a0145bcc97"
+					(reference "TP1405")
 					(unit 1)
 				)
 			)

@@ -420,6 +420,16 @@
 	)
 	(wire
 		(pts
+			(xy 184.15 73.66) (xy 185.42 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1190b42f-768e-4c87-b7ae-44a87b37967d")
+	)
+	(wire
+		(pts
 			(xy 185.42 69.85) (xy 176.53 69.85)
 		)
 		(stroke
@@ -662,18 +672,6 @@
 		)
 		(uuid "768e0a7f-0613-411c-ba01-40bae73450b2")
 	)
-	(text "FIXME: Add an ideal diode\nto prevent backflow"
-		(exclude_from_sim no)
-		(at 221.234 42.926 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 255 0 0 1)
-			)
-			(justify left)
-		)
-		(uuid "89b4b45e-324a-473f-bec4-f1f8daa7b2c7")
-	)
 	(text "5-10.0V\n0-5V at startup"
 		(exclude_from_sim no)
 		(at 144.78 27.94 0)
@@ -740,6 +738,18 @@
 			(justify left)
 		)
 		(uuid "42c75d69-d216-4731-bd31-1c508fbf14d7")
+	)
+	(hierarchical_label "EN5V"
+		(shape input)
+		(at 184.15 73.66 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5d78d096-fb54-4918-91a0-f932b9a58503")
 	)
 	(hierarchical_label "Vin_prot"
 		(shape output)
@@ -1304,6 +1314,16 @@
 				(justify right)
 			)
 			(uuid "a796e4a4-d368-4aec-89eb-1fb585588fa9")
+		)
+		(pin "EN" input
+			(at 185.42 73.66 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "c421fb6d-6418-4880-94b7-f6dfc95daa65")
 		)
 		(instances
 			(project "HALPI2"

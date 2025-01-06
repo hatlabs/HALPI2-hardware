@@ -815,6 +815,14 @@
 		(pin "1"
 			(uuid "f5c4edef-106a-417d-bf65-1628e6426a63")
 		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/850df4bf-e40a-4082-adc2-76804638b949/941fe792-02c8-46de-a01c-95bb6b865738"
+					(reference "R2101")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Transistor_BJT:MMDT5401")
@@ -901,14 +909,14 @@
 	(symbol
 		(lib_id "Transistor_BJT:MMDT5401")
 		(at 152.4 92.71 0)
-		(unit 2)
+		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d8db1208-e459-41b8-a734-7c38d0776306")
-		(property "Reference" "Q2101"
+		(property "Reference" "Q2102"
 			(at 157.48 91.4399 0)
 			(effects
 				(font
@@ -970,6 +978,14 @@
 		)
 		(pin "5"
 			(uuid "fc1a4a03-754d-494a-8da9-c9386446ab46")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/850df4bf-e40a-4082-adc2-76804638b949/941fe792-02c8-46de-a01c-95bb6b865738"
+					(reference "Q2102")
+					(unit 1)
+				)
+			)
 		)
 	)
 )

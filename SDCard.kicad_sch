@@ -805,24 +805,6 @@
 						(type background)
 					)
 				)
-				(pin output line
-					(at 11.43 -3.81 180)
-					(length 3.81)
-					(name "~{FAULT}"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin power_in line
 					(at -11.43 3.81 0)
 					(length 3.81)
@@ -870,6 +852,24 @@
 						)
 					)
 					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 11.43 -3.81 180)
+					(length 3.81)
+					(name "~{FAULT}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2118,7 +2118,7 @@
 		(pin "5"
 			(uuid "947e8aef-0a4b-4c0c-8d66-1ab76e978610")
 		)
-		(pin ""
+		(pin "4"
 			(uuid "726937e2-6c4d-4ef5-a32d-3c38d8def5c3")
 		)
 		(pin "3"

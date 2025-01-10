@@ -1626,6 +1626,126 @@
 				)
 			)
 		)
+		(symbol "Hatlabs:+3.3VCMx"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+3.3VCMx"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol driven by the CMx module +3.3V output"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+3.3VCMx_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3.3VCMx_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Hatlabs:RaspberryPi-CM45Lite-A"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -3812,7 +3932,7 @@
 				)
 			)
 		)
-		(symbol "power:+3V3"
+		(symbol "power:+3.3V"
 			(power)
 			(pin_numbers hide)
 			(pin_names
@@ -3829,7 +3949,7 @@
 					(hide yes)
 				)
 			)
-			(property "Value" "+3V3"
+			(property "Value" "+3.3V"
 				(at 0 3.556 0)
 				(effects
 					(font
@@ -3855,7 +3975,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 				(at 0 0 0)
 				(effects
 					(font
@@ -3873,7 +3993,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "+3V3_0_1"
+			(symbol "+3.3V_0_1"
 				(polyline
 					(pts
 						(xy -0.762 1.27) (xy 0 2.54)
@@ -3911,7 +4031,7 @@
 					)
 				)
 			)
-			(symbol "+3V3_1_1"
+			(symbol "+3.3V_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
@@ -4377,15 +4497,6 @@
 			(type solid)
 		)
 		(uuid "6c4d1646-6b7e-43dd-9a9a-6ba9c94d0562")
-	)
-	(bus_entry
-		(at 255.27 110.49)
-		(size -2.54 2.54)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "7089ce84-7c98-45e1-8811-dc69a20e22e3")
 	)
 	(bus_entry
 		(at 121.92 67.31)
@@ -5614,16 +5725,6 @@
 		)
 		(uuid "843bbbee-b9dc-44ce-bb7f-b47668040152")
 	)
-	(bus
-		(pts
-			(xy 255.27 107.95) (xy 255.27 110.49)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "85400327-3ff7-4c52-bbfb-9de57e3f576e")
-	)
 	(wire
 		(pts
 			(xy 240.03 33.02) (xy 240.03 53.34)
@@ -5973,16 +6074,6 @@
 			(type default)
 		)
 		(uuid "aa576d14-53e9-4812-a873-e2f3273bd80a")
-	)
-	(bus
-		(pts
-			(xy 256.54 107.95) (xy 255.27 107.95)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "ad659501-a134-445c-80b7-87ebfb46021b")
 	)
 	(wire
 		(pts
@@ -7139,17 +7230,6 @@
 		)
 		(uuid "79a93488-aeeb-446a-86ba-c6595fcf285f")
 	)
-	(label "OTG_ID"
-		(at 252.73 113.03 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "839913df-b150-4400-ace0-769d9f70655d")
-	)
 	(label "CAN.SCK"
 		(at 238.76 60.96 180)
 		(fields_autoplaced yes)
@@ -7646,18 +7726,6 @@
 		)
 		(uuid "034dc7ba-c281-48fe-9001-3c0034b820d3")
 	)
-	(hierarchical_label "{OTG_USB}"
-		(shape bidirectional)
-		(at 256.54 107.95 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "1c300c43-f348-4563-bab7-45243819b15e")
-	)
 	(hierarchical_label "CAM_GPIO1"
 		(shape output)
 		(at 54.61 135.89 180)
@@ -8025,7 +8093,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
+		(lib_id "Hatlabs:+3.3VCMx")
 		(at 114.3 30.48 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8043,7 +8111,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "CMx_3V3"
+		(property "Value" "+3.3VCMx"
 			(at 116.84 29.2099 0)
 			(effects
 				(font
@@ -8070,7 +8138,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+		(property "Description" "Power symbol driven by the CMx module +3.3V output"
 			(at 114.3 30.48 0)
 			(effects
 				(font
@@ -8159,7 +8227,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
+		(lib_id "Hatlabs:+3.3VCMx")
 		(at 83.82 25.4 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8177,7 +8245,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "CMx_3V3"
+		(property "Value" "+3.3VCMx"
 			(at 86.36 24.1299 0)
 			(effects
 				(font
@@ -8204,7 +8272,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+		(property "Description" "Power symbol driven by the CMx module +3.3V output"
 			(at 83.82 25.4 0)
 			(effects
 				(font
@@ -9011,7 +9079,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3V3")
+		(lib_id "power:+3.3V")
 		(at 231.14 33.02 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9019,7 +9087,7 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "b3df99b7-e3d3-4304-87cc-a5ccfb522760")
+		(uuid "dcc538b2-2607-4463-b76b-601d049ed0e2")
 		(property "Reference" "#PWR0207"
 			(at 231.14 36.83 0)
 			(effects
@@ -9029,7 +9097,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "CMx_3V3"
+		(property "Value" "+3.3V"
 			(at 231.14 27.94 0)
 			(effects
 				(font
@@ -9055,7 +9123,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 231.14 33.02 0)
 			(effects
 				(font
@@ -9065,10 +9133,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "9779f484-2620-4fe3-bd54-574065d97f82")
+			(uuid "b3e04bc1-e64a-4c5b-b587-6a1386b64554")
 		)
 		(instances
-			(project "HALPI2"
+			(project ""
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/7c248bd3-8232-4777-a40c-eab53460cf85"
 					(reference "#PWR0207")
 					(unit 1)

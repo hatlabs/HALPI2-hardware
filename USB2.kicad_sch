@@ -1649,11 +1649,11 @@
 	(bus_alias "I2C"
 		(members "SDA" "SCL")
 	)
-	(bus_alias "OTG_USB"
-		(members "D+" "D-" "OTG_ID")
-	)
 	(bus_alias "USB"
 		(members "D+" "D-")
+	)
+	(bus_alias "USB2"
+		(members "D+" "D-" "OTG_ID")
 	)
 	(junction
 		(at 147.32 74.93)
@@ -1682,7 +1682,7 @@
 		(uuid "8abfce97-9962-4fe6-97a5-7a1610feae83")
 	)
 	(no_connect
-		(at 176.53 119.38)
+		(at 176.53 124.46)
 		(uuid "a0db0494-9a81-4f9e-8080-602ebc19ee2c")
 	)
 	(bus_entry
@@ -1704,7 +1704,7 @@
 		(uuid "5c219ce9-fbac-4b11-9b5f-dc55e47f0436")
 	)
 	(bus_entry
-		(at 142.24 116.84)
+		(at 142.24 121.92)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -1713,7 +1713,7 @@
 		(uuid "7505e0d8-64c7-4c28-97e5-ad44f75eceb5")
 	)
 	(bus_entry
-		(at 142.24 111.76)
+		(at 142.24 116.84)
 		(size 2.54 2.54)
 		(stroke
 			(width 0)
@@ -1743,7 +1743,7 @@
 	)
 	(bus
 		(pts
-			(xy 142.24 116.84) (xy 142.24 118.11)
+			(xy 142.24 121.92) (xy 142.24 123.19)
 		)
 		(stroke
 			(width 0)
@@ -1793,7 +1793,7 @@
 	)
 	(polyline
 		(pts
-			(xy 186.69 135.89) (xy 106.68 135.89)
+			(xy 186.69 139.7) (xy 107.315 139.7)
 		)
 		(stroke
 			(width 0)
@@ -1823,7 +1823,7 @@
 	)
 	(bus
 		(pts
-			(xy 142.24 111.76) (xy 129.54 111.76)
+			(xy 142.24 116.84) (xy 129.54 116.84)
 		)
 		(stroke
 			(width 0)
@@ -1843,7 +1843,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 119.38) (xy 151.13 119.38)
+			(xy 144.78 124.46) (xy 151.13 124.46)
 		)
 		(stroke
 			(width 0)
@@ -1923,7 +1923,7 @@
 	)
 	(polyline
 		(pts
-			(xy 186.69 40.64) (xy 186.69 135.89)
+			(xy 186.69 40.64) (xy 186.69 139.7)
 		)
 		(stroke
 			(width 0)
@@ -1933,7 +1933,7 @@
 	)
 	(polyline
 		(pts
-			(xy 107.315 135.89) (xy 107.315 40.64)
+			(xy 107.315 139.7) (xy 107.315 40.64)
 		)
 		(stroke
 			(width 0)
@@ -1983,7 +1983,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 114.3) (xy 176.53 114.3)
+			(xy 182.88 119.38) (xy 176.53 119.38)
 		)
 		(stroke
 			(width 0)
@@ -2053,7 +2053,7 @@
 	)
 	(bus
 		(pts
-			(xy 142.24 111.76) (xy 142.24 116.84)
+			(xy 142.24 116.84) (xy 142.24 121.92)
 		)
 		(stroke
 			(width 0)
@@ -2063,7 +2063,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 114.3) (xy 151.13 114.3)
+			(xy 144.78 119.38) (xy 151.13 119.38)
 		)
 		(stroke
 			(width 0)
@@ -2083,7 +2083,7 @@
 		(uuid "81f25331-317b-4864-9a3d-6e1ea2b18260")
 	)
 	(label "VBUS"
-		(at 182.88 114.3 180)
+		(at 182.88 119.38 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2116,7 +2116,7 @@
 		(uuid "7e223afb-6f2d-483d-ba96-ec9aae3656f3")
 	)
 	(label "D-"
-		(at 146.05 119.38 0)
+		(at 146.05 124.46 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2127,7 +2127,7 @@
 		(uuid "8b548e26-ae49-4eac-b200-89274945b8e0")
 	)
 	(label "D+"
-		(at 146.05 114.3 0)
+		(at 146.05 119.38 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2137,8 +2137,8 @@
 		)
 		(uuid "9185226a-aa19-4d59-a29a-c721bb329e40")
 	)
-	(label "{OTG_USB}"
-		(at 129.54 111.76 0)
+	(label "{USB2}"
+		(at 129.54 116.84 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2148,7 +2148,7 @@
 		)
 		(uuid "9e6062ae-e8cb-45c3-b0fc-a515a5a9a1d3")
 	)
-	(label "{OTG_USB}"
+	(label "{USB2}"
 		(at 121.92 83.82 0)
 		(fields_autoplaced yes)
 		(effects
@@ -2291,6 +2291,15 @@
 			)
 		)
 		(property "LCSC" "C25905"
+			(at 138.43 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
 			(at 138.43 68.58 0)
 			(effects
 				(font
@@ -2449,7 +2458,7 @@
 	(symbol
 		(lib_name "Yellow:TPD4EUSB30_1")
 		(lib_id "Yellow:TPD4EUSB30")
-		(at 163.83 116.84 0)
+		(at 163.83 121.92 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2457,7 +2466,7 @@
 		(dnp no)
 		(uuid "4fa28d56-e6eb-4acb-8f25-f5070cc274d8")
 		(property "Reference" "U301"
-			(at 163.83 104.14 0)
+			(at 163.83 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2465,7 +2474,7 @@
 			)
 		)
 		(property "Value" "TPD4EUSB30"
-			(at 163.83 106.68 0)
+			(at 163.83 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2473,7 +2482,7 @@
 			)
 		)
 		(property "Footprint" "Package_SON:USON-10_2.5x1.0mm_P0.5mm"
-			(at 139.7 127 0)
+			(at 139.7 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2482,7 +2491,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tpd2eusb30a.pdf"
-			(at 163.83 116.84 0)
+			(at 163.83 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2491,7 +2500,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 163.83 116.84 0)
+			(at 163.83 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2500,7 +2509,7 @@
 			)
 		)
 		(property "Manufacturer" "Texas Instruments"
-			(at 163.83 116.84 0)
+			(at 163.83 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2509,7 +2518,7 @@
 			)
 		)
 		(property "PartNumber" "TPD4EUSB30DQAR"
-			(at 163.83 116.84 0)
+			(at 163.83 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2518,7 +2527,16 @@
 			)
 		)
 		(property "LCSC" "C558427"
-			(at 163.83 116.84 0)
+			(at 163.83 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 163.83 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2621,6 +2639,15 @@
 			)
 		)
 		(property "LCSC" "C13167"
+			(at 119.38 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
 			(at 119.38 66.04 0)
 			(effects
 				(font
@@ -2771,6 +2798,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 138.43 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "82bb2564-1b17-4a11-b01f-423e6c55dc00")
 		)
@@ -2866,6 +2902,15 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 165.1 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "A1"
 			(uuid "2152a7e0-4298-415b-967a-c8936eaecfb8")
 		)
@@ -2928,7 +2973,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 163.83 129.54 0)
+		(at 163.83 134.62 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2936,7 +2981,7 @@
 		(dnp no)
 		(uuid "fcf02a2a-cd66-4b50-bf82-b275d146e21a")
 		(property "Reference" "#PWR0303"
-			(at 163.83 135.89 0)
+			(at 163.83 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2945,7 +2990,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 167.132 129.794 0)
+			(at 167.132 134.874 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2953,7 +2998,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 163.83 129.54 0)
+			(at 163.83 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2962,7 +3007,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 163.83 129.54 0)
+			(at 163.83 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2971,7 +3016,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 163.83 129.54 0)
+			(at 163.83 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)

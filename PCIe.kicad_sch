@@ -1728,6 +1728,24 @@
 						)
 					)
 				)
+				(pin power_in line
+					(at 0 -48.26 90)
+					(length 2.54) hide
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "MP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
 		)
 		(symbol "Mechanical:MountingHole_Pad"
@@ -2056,6 +2074,12 @@
 		(uuid "0edb1032-dda3-4ecd-9422-aa63aea26782")
 	)
 	(junction
+		(at 152.4 35.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1d021743-7b3a-482c-aec7-2f42f6bedefd")
+	)
+	(junction
 		(at 119.38 27.94)
 		(diameter 0.9144)
 		(color 0 0 0 0)
@@ -2068,6 +2092,12 @@
 		(uuid "520fd06c-b6b9-4c42-9bfc-5c3d2d29f14b")
 	)
 	(junction
+		(at 152.4 27.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "73044274-3323-45e8-a864-8c89970a309b")
+	)
+	(junction
 		(at 130.81 35.56)
 		(diameter 0.9144)
 		(color 0 0 0 0)
@@ -2078,6 +2108,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a17113db-a8bc-4b14-bae4-f6fa9744710d")
+	)
+	(junction
+		(at 140.97 27.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "efb33e1b-075c-4be6-a042-57e9c519e1b7")
 	)
 	(no_connect
 		(at 88.9 114.3)
@@ -2417,6 +2453,16 @@
 	)
 	(wire
 		(pts
+			(xy 163.83 34.29) (xy 163.83 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a9dafba-cf0a-4e94-82fc-475e339a8e18")
+	)
+	(wire
+		(pts
 			(xy 119.38 34.29) (xy 119.38 35.56)
 		)
 		(stroke
@@ -2444,6 +2490,16 @@
 			(type solid)
 		)
 		(uuid "9d745344-efe0-4435-a2c5-df3065c41f00")
+	)
+	(wire
+		(pts
+			(xy 163.83 29.21) (xy 163.83 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a363a022-2ed7-4e88-900f-8826ce6812cb")
 	)
 	(wire
 		(pts
@@ -2487,6 +2543,16 @@
 	)
 	(wire
 		(pts
+			(xy 152.4 35.56) (xy 140.97 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b43fd857-cb2e-4d0a-8233-d9c447dfcb04")
+	)
+	(wire
+		(pts
 			(xy 144.78 76.2) (xy 144.78 81.28)
 		)
 		(stroke
@@ -2497,6 +2563,16 @@
 	)
 	(wire
 		(pts
+			(xy 152.4 27.94) (xy 140.97 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7e0d48e-6b5a-4b09-b499-00fd7b535279")
+	)
+	(wire
+		(pts
 			(xy 114.3 27.94) (xy 114.3 43.18)
 		)
 		(stroke
@@ -2504,6 +2580,26 @@
 			(type solid)
 		)
 		(uuid "b825203d-fa72-4cfe-8395-27a58fdad7f2")
+	)
+	(wire
+		(pts
+			(xy 152.4 34.29) (xy 152.4 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bdbf8775-46d8-4d9e-bc5e-e9d6064d315e")
+	)
+	(wire
+		(pts
+			(xy 163.83 27.94) (xy 152.4 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d030cd5f-8413-43ad-94dc-310f0989f247")
 	)
 	(bus
 		(pts
@@ -2615,9 +2711,28 @@
 		)
 		(uuid "f67705d4-637d-45d9-abb2-d78760ca70b4")
 	)
+	(wire
+		(pts
+			(xy 163.83 35.56) (xy 152.4 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fba5118e-d225-47ca-9e68-41ad0dbf21f6")
+	)
+	(wire
+		(pts
+			(xy 152.4 27.94) (xy 152.4 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ffa0755d-15f5-4405-b9f6-4bd2ab1220f4")
+	)
 	(label "PCIe.CLK-"
-		(at 76.2 129.54 0)
-		(fields_autoplaced yes)
+		(at 76.2 127 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2628,7 +2743,6 @@
 	)
 	(label "PCIe.~{CLKREQ}"
 		(at 74.93 50.8 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2639,7 +2753,6 @@
 	)
 	(label "PCIe.RX-"
 		(at 74.93 66.04 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2650,7 +2763,6 @@
 	)
 	(label "PCIe.RX+"
 		(at 74.93 63.5 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2660,8 +2772,7 @@
 		(uuid "89ff1350-8220-4279-83c2-ab3b13412526")
 	)
 	(label "PCIe.TX-"
-		(at 74.93 60.96 0)
-		(fields_autoplaced yes)
+		(at 74.93 58.42 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2672,7 +2783,6 @@
 	)
 	(label "PCIe.~{RST}"
 		(at 74.93 48.26 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2682,8 +2792,7 @@
 		(uuid "a1ff7461-f7ed-4c9c-baba-8e3448925b66")
 	)
 	(label "PCIe.TX+"
-		(at 74.93 58.42 0)
-		(fields_autoplaced yes)
+		(at 74.93 60.96 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2693,8 +2802,7 @@
 		(uuid "ebf530e5-9176-44f0-9d72-17539435a961")
 	)
 	(label "PCIe.CLK+"
-		(at 76.2 127 0)
-		(fields_autoplaced yes)
+		(at 76.2 129.54 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2706,7 +2814,6 @@
 	(hierarchical_label "PCIe{PCIe}"
 		(shape bidirectional)
 		(at 63.5 43.18 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2724,7 +2831,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "030e6ae8-452c-47f5-b669-7c02c683dee4")
-		(property "Reference" "C501"
+		(property "Reference" "C701"
 			(at 121.7042 30.6006 0)
 			(effects
 				(font
@@ -2778,15 +2885,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 119.38 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "9f56867b-ed57-4e8d-919a-faf460c78ea3")
 		)
@@ -2796,7 +2894,7 @@
 		(instances
 			(project "Yellow"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/a1a835e0-c072-4609-9cb4-4b95bf746f54"
-					(reference "C501")
+					(reference "C701")
 					(unit 1)
 				)
 			)
@@ -2811,7 +2909,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "08197240-4e46-42ca-bbbb-6a1c3e242b9e")
-		(property "Reference" "C502"
+		(property "Reference" "C702"
 			(at 133.1342 30.6006 0)
 			(effects
 				(font
@@ -2865,15 +2963,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 130.81 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "14747f6c-8e0b-4ccc-a6f4-3c01e8cec3de")
 		)
@@ -2883,7 +2972,7 @@
 		(instances
 			(project "Yellow"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/a1a835e0-c072-4609-9cb4-4b95bf746f54"
-					(reference "C502")
+					(reference "C702")
 					(unit 1)
 				)
 			)
@@ -2898,7 +2987,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1247548e-da2d-4da5-8e9d-cdb0bd0eeb39")
-		(property "Reference" "J501"
+		(property "Reference" "J701"
 			(at 92.71 44.45 0)
 			(effects
 				(font
@@ -2914,7 +3003,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Hatlabs:FOXCONN_AS0BC21-S30BM-7H_Bus_M.2_M_H4.2mm_P0.5mm_2280_Horizontal"
+		(property "Footprint" "Hatlabs:M.2 M Key socket"
 			(at 114.3 64.77 0)
 			(effects
 				(font
@@ -2960,15 +3049,6 @@
 			)
 		)
 		(property "LCSC" "C2832351"
-			(at 114.3 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" ""
 			(at 114.3 91.44 0)
 			(effects
 				(font
@@ -3178,10 +3258,13 @@
 		(pin "9"
 			(uuid "1ccf94e9-47dc-43c8-abed-86fa3d785550")
 		)
+		(pin "MP"
+			(uuid "ceb38422-39aa-49be-bcef-2833b65f869e")
+		)
 		(instances
 			(project "Yellow"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/a1a835e0-c072-4609-9cb4-4b95bf746f54"
-					(reference "J501")
+					(reference "J701")
 					(unit 1)
 				)
 			)
@@ -3196,7 +3279,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "14257d11-70b4-4524-bbc7-c9c364d35ee5")
-		(property "Reference" "D501"
+		(property "Reference" "D701"
 			(at 147.32 92.71 90)
 			(effects
 				(font
@@ -3277,15 +3360,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 144.78 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "986fea82-d283-4097-89b5-cea6e973e8e3")
 		)
@@ -3295,7 +3369,86 @@
 		(instances
 			(project "Yellow"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/a1a835e0-c072-4609-9cb4-4b95bf746f54"
-					(reference "D501")
+					(reference "D701")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 163.83 31.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1cef46e7-4d4f-4b7a-8390-5c238e901d90")
+		(property "Reference" "C705"
+			(at 166.37 30.4862 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF"
+			(at 166.37 33.0262 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 163.83 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 163.83 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 163.83 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C15850"
+			(at 163.83 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "848aff30-1151-4ea1-ac94-847a089e19f6")
+		)
+		(pin "2"
+			(uuid "27bbc383-d613-4d30-9cd7-8f8c4b2093a5")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/a1a835e0-c072-4609-9cb4-4b95bf746f54"
+					(reference "C705")
 					(unit 1)
 				)
 			)
@@ -3310,7 +3463,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3cb7ff53-4608-4cba-9509-e4f5fd9c579d")
-		(property "Reference" "#PWR0502"
+		(property "Reference" "#PWR0706"
 			(at 102.87 175.26 0)
 			(effects
 				(font
@@ -3360,7 +3513,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/a1a835e0-c072-4609-9cb4-4b95bf746f54"
-					(reference "#PWR0502")
+					(reference "#PWR0706")
 					(unit 1)
 				)
 			)
@@ -3376,7 +3529,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4032110a-114c-4b8f-a546-57a52cae8e60")
-		(property "Reference" "H501"
+		(property "Reference" "H701"
 			(at 86.614 162.5599 0)
 			(effects
 				(font
@@ -3448,22 +3601,13 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 83.82 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "cafab619-656b-48ab-a5cb-21f0cfbdb6da")
 		)
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/a1a835e0-c072-4609-9cb4-4b95bf746f54"
-					(reference "H501")
+					(reference "H701")
 					(unit 1)
 				)
 			)
@@ -3479,7 +3623,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "45d22029-2f68-4b40-8f8a-fb9443f9f66f")
-		(property "Reference" "H504"
+		(property "Reference" "H704"
 			(at 143.764 162.5599 0)
 			(effects
 				(font
@@ -3551,22 +3695,13 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 140.97 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "468a8126-014f-47fd-8c59-8055e00c2823")
 		)
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/a1a835e0-c072-4609-9cb4-4b95bf746f54"
-					(reference "H504")
+					(reference "H704")
 					(unit 1)
 				)
 			)
@@ -3581,7 +3716,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4b914544-3671-4aaa-8703-443bfb3e468f")
-		(property "Reference" "C503"
+		(property "Reference" "C703"
 			(at 143.2942 30.6006 0)
 			(effects
 				(font
@@ -3635,15 +3770,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 140.97 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "8d4f753e-c5e6-4a9c-a2fa-9844a432e154")
 		)
@@ -3653,7 +3779,7 @@
 		(instances
 			(project "Yellow"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/a1a835e0-c072-4609-9cb4-4b95bf746f54"
-					(reference "C503")
+					(reference "C703")
 					(unit 1)
 				)
 			)
@@ -3669,7 +3795,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "585470f6-08b9-4d2f-8e7d-7d353aa1cc8c")
-		(property "Reference" "#PWR0508"
+		(property "Reference" "#PWR0703"
 			(at 144.78 80.01 0)
 			(effects
 				(font
@@ -3719,7 +3845,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/a1a835e0-c072-4609-9cb4-4b95bf746f54"
-					(reference "#PWR0508")
+					(reference "#PWR0703")
 					(unit 1)
 				)
 			)
@@ -3735,7 +3861,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5b4d48b6-dd64-4bb6-96c0-543791f054a9")
-		(property "Reference" "#PWR0503"
+		(property "Reference" "#PWR0701"
 			(at 114.3 30.48 0)
 			(effects
 				(font
@@ -3785,7 +3911,7 @@
 		(instances
 			(project ""
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/a1a835e0-c072-4609-9cb4-4b95bf746f54"
-					(reference "#PWR0503")
+					(reference "#PWR0701")
 					(unit 1)
 				)
 			)
@@ -3800,7 +3926,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5b8b037f-ca81-48f3-8275-7d782584ea4f")
-		(property "Reference" "R501"
+		(property "Reference" "R701"
 			(at 147.32 82.55 0)
 			(effects
 				(font
@@ -3863,15 +3989,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 144.78 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "6ffa4b19-60c8-4fb6-884e-63aa1e7e6b93")
 		)
@@ -3881,7 +3998,7 @@
 		(instances
 			(project "Yellow"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/a1a835e0-c072-4609-9cb4-4b95bf746f54"
-					(reference "R501")
+					(reference "R701")
 					(unit 1)
 				)
 			)
@@ -3896,7 +4013,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6dfd0d64-3cae-410b-8ef3-88c16ab8ee5b")
-		(property "Reference" "#PWR0506"
+		(property "Reference" "#PWR0702"
 			(at 140.97 43.18 0)
 			(effects
 				(font
@@ -3946,7 +4063,7 @@
 		(instances
 			(project "Yellow"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/a1a835e0-c072-4609-9cb4-4b95bf746f54"
-					(reference "#PWR0506")
+					(reference "#PWR0702")
 					(unit 1)
 				)
 			)
@@ -3962,7 +4079,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8d316ec1-7188-4969-a1d2-78f026a3430f")
-		(property "Reference" "H502"
+		(property "Reference" "H702"
 			(at 105.664 162.5599 0)
 			(effects
 				(font
@@ -4034,22 +4151,13 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 102.87 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "13c65ec5-6eb4-4b99-8d4c-295488fb5969")
 		)
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/a1a835e0-c072-4609-9cb4-4b95bf746f54"
-					(reference "H502")
+					(reference "H702")
 					(unit 1)
 				)
 			)
@@ -4064,7 +4172,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a3b154a7-75cd-45ef-9545-0e559d2f4924")
-		(property "Reference" "#PWR0507"
+		(property "Reference" "#PWR0708"
 			(at 140.97 175.26 0)
 			(effects
 				(font
@@ -4114,7 +4222,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/a1a835e0-c072-4609-9cb4-4b95bf746f54"
-					(reference "#PWR0507")
+					(reference "#PWR0708")
 					(unit 1)
 				)
 			)
@@ -4130,7 +4238,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b229e370-51f7-4c87-bc8f-5a0675d97e88")
-		(property "Reference" "H503"
+		(property "Reference" "H703"
 			(at 124.714 162.5599 0)
 			(effects
 				(font
@@ -4202,22 +4310,13 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 121.92 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "76f61425-0b34-40dc-a3cb-b04cfbbc223f")
 		)
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/a1a835e0-c072-4609-9cb4-4b95bf746f54"
-					(reference "H503")
+					(reference "H703")
 					(unit 1)
 				)
 			)
@@ -4232,7 +4331,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "cefbbabc-ed4b-4547-9555-130f39ae4688")
-		(property "Reference" "#PWR0505"
+		(property "Reference" "#PWR0707"
 			(at 121.92 175.26 0)
 			(effects
 				(font
@@ -4282,7 +4381,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/a1a835e0-c072-4609-9cb4-4b95bf746f54"
-					(reference "#PWR0505")
+					(reference "#PWR0707")
 					(unit 1)
 				)
 			)
@@ -4297,7 +4396,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "dd686e77-5f50-4b8a-b290-4912af16b0bc")
-		(property "Reference" "#PWR0501"
+		(property "Reference" "#PWR0705"
 			(at 83.82 175.26 0)
 			(effects
 				(font
@@ -4347,7 +4446,86 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/a1a835e0-c072-4609-9cb4-4b95bf746f54"
-					(reference "#PWR0501")
+					(reference "#PWR0705")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 152.4 31.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e8387109-948f-461a-a1cf-50eccf83c8f2")
+		(property "Reference" "C704"
+			(at 154.94 30.4862 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF"
+			(at 154.94 33.0262 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 152.4 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 152.4 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 152.4 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C15850"
+			(at 152.4 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "693b888b-9ecf-4c3d-aedc-53e6eceee8ad")
+		)
+		(pin "2"
+			(uuid "4f3553ea-bb10-473b-b331-41fb989a9bf8")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/a1a835e0-c072-4609-9cb4-4b95bf746f54"
+					(reference "C704")
 					(unit 1)
 				)
 			)
@@ -4362,7 +4540,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fdf8bb7f-7888-44c2-aeb0-0bd1b640c3bf")
-		(property "Reference" "#PWR0504"
+		(property "Reference" "#PWR0704"
 			(at 114.3 148.59 0)
 			(effects
 				(font
@@ -4412,7 +4590,7 @@
 		(instances
 			(project "Yellow"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/a1a835e0-c072-4609-9cb4-4b95bf746f54"
-					(reference "#PWR0504")
+					(reference "#PWR0704")
 					(unit 1)
 				)
 			)

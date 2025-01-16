@@ -718,7 +718,6 @@
 	)
 	(label "Vin"
 		(at 45.72 36.83 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -730,7 +729,6 @@
 	(hierarchical_label "Iin"
 		(shape output)
 		(at 133.35 40.64 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -742,7 +740,6 @@
 	(hierarchical_label "EN5V"
 		(shape input)
 		(at 184.15 73.66 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -754,7 +751,6 @@
 	(hierarchical_label "Vin_prot"
 		(shape output)
 		(at 88.9 30.48 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -766,7 +762,6 @@
 	(hierarchical_label "EN5V"
 		(shape input)
 		(at 184.15 40.64 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -778,7 +773,6 @@
 	(hierarchical_label "Vcap"
 		(shape output)
 		(at 146.05 31.75 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -796,7 +790,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "04d90ee1-dcb4-45a2-8b0b-243222e27005")
-		(property "Reference" "#PWR0601"
+		(property "Reference" "#PWR0901"
 			(at 215.9 36.83 0)
 			(effects
 				(font
@@ -847,7 +841,7 @@
 		(instances
 			(project "Yellow"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42"
-					(reference "#PWR0601")
+					(reference "#PWR0901")
 					(unit 1)
 				)
 			)
@@ -862,7 +856,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8377f278-ab9c-4c87-95b8-3c27cdf4f255")
-		(property "Reference" "J601"
+		(property "Reference" "J901"
 			(at 36.3728 47.4218 0)
 			(effects
 				(font
@@ -878,7 +872,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Phoenix_MC:PhoenixContact_MC_1,5_2-G-3.81_1x02_P3.81mm_Horizontal"
+		(property "Footprint" "Connector_Phoenix_MC:PhoenixContact_MCV_1,5_2-G-3.81_1x02_P3.81mm_Vertical"
 			(at 34.29 39.37 0)
 			(effects
 				(font
@@ -905,7 +899,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C8387"
+		(property "LCSC" "C8396"
 			(at 34.29 39.37 0)
 			(effects
 				(font
@@ -914,16 +908,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB_CORRECTION" "1.905;0;0"
-			(at 34.29 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" ""
+		(property "JLCPCB_CORRECTION" ""
 			(at 34.29 39.37 0)
 			(effects
 				(font
@@ -941,7 +926,7 @@
 		(instances
 			(project "Yellow"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42"
-					(reference "J601")
+					(reference "J901")
 					(unit 1)
 				)
 			)
@@ -957,7 +942,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f4a8ef86-0607-469c-b46f-da0f5cd6b2ca")
-		(property "Reference" "#PWR0602"
+		(property "Reference" "#PWR0902"
 			(at 215.9 69.85 0)
 			(effects
 				(font
@@ -1008,7 +993,7 @@
 		(instances
 			(project ""
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42"
-					(reference "#PWR0602")
+					(reference "#PWR0902")
 					(unit 1)
 				)
 			)

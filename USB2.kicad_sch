@@ -1823,17 +1823,7 @@
 	)
 	(bus
 		(pts
-			(xy 142.24 116.84) (xy 129.54 116.84)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "3ffb4b2b-abdb-4533-8f59-360c0e393e1d")
-	)
-	(bus
-		(pts
-			(xy 134.62 83.82) (xy 121.92 83.82)
+			(xy 134.62 83.82) (xy 133.35 83.82)
 		)
 		(stroke
 			(width 0)
@@ -1920,6 +1910,16 @@
 			(type solid)
 		)
 		(uuid "9ec5b0e9-6f24-4919-b4ae-f2a72b9cbdc3")
+	)
+	(bus
+		(pts
+			(xy 142.24 116.84) (xy 140.97 116.84)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "a7036153-e9c8-4460-8ff4-47ea74d77d3c")
 	)
 	(polyline
 		(pts
@@ -2082,9 +2082,28 @@
 		)
 		(uuid "81f25331-317b-4864-9a3d-6e1ea2b18260")
 	)
+	(label "CC1"
+		(at 144.78 66.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "006d5dd6-276f-49e6-ae9b-faad9baa7613")
+	)
+	(label "CC2"
+		(at 144.78 68.58 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1452e354-4548-4147-9080-1e2cb4e0442e")
+	)
 	(label "VBUS"
 		(at 182.88 119.38 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2093,9 +2112,8 @@
 		)
 		(uuid "3bd1964c-244c-4b53-b4ef-b1325a92ec29")
 	)
-	(label "D+"
-		(at 139.7 74.93 0)
-		(fields_autoplaced yes)
+	(label "USB.D+"
+		(at 137.16 80.01 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2106,7 +2124,6 @@
 	)
 	(label "VBUS"
 		(at 144.78 60.96 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2115,9 +2132,8 @@
 		)
 		(uuid "7e223afb-6f2d-483d-ba96-ec9aae3656f3")
 	)
-	(label "D-"
-		(at 146.05 124.46 0)
-		(fields_autoplaced yes)
+	(label "USB.D-"
+		(at 144.78 119.38 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2126,9 +2142,8 @@
 		)
 		(uuid "8b548e26-ae49-4eac-b200-89274945b8e0")
 	)
-	(label "D+"
-		(at 146.05 119.38 0)
-		(fields_autoplaced yes)
+	(label "USB.D+"
+		(at 144.78 124.46 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2137,31 +2152,8 @@
 		)
 		(uuid "9185226a-aa19-4d59-a29a-c721bb329e40")
 	)
-	(label "{USB2}"
-		(at 129.54 116.84 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "9e6062ae-e8cb-45c3-b0fc-a515a5a9a1d3")
-	)
-	(label "{USB2}"
-		(at 121.92 83.82 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e260b5e3-f207-441e-b920-69b2608fa2f5")
-	)
-	(label "D-"
-		(at 139.7 80.01 0)
-		(fields_autoplaced yes)
+	(label "USB.D-"
+		(at 137.16 74.93 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2169,6 +2161,28 @@
 			(justify left bottom)
 		)
 		(uuid "f8dfb990-14af-4423-aef9-2f477d27801a")
+	)
+	(hierarchical_label "USB{USB2}"
+		(shape bidirectional)
+		(at 133.35 83.82 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4e7974f8-c64d-47bd-aaf5-8e40b0ed6cb6")
+	)
+	(hierarchical_label "USB{USB2}"
+		(shape bidirectional)
+		(at 140.97 116.84 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "564b25ea-6d55-4454-ba5d-ef1b4c74ed19")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -2180,7 +2194,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0d57f83d-5e1f-4683-8303-029e4913f777")
-		(property "Reference" "#PWR0302"
+		(property "Reference" "#PWR0301"
 			(at 130.81 73.66 0)
 			(effects
 				(font
@@ -2231,7 +2245,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/aa1d8d83-5167-420c-9ee7-3e4dcc942bfc"
-					(reference "#PWR0302")
+					(reference "#PWR0301")
 					(unit 1)
 				)
 			)
@@ -2299,15 +2313,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 138.43 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "346ef230-69a8-435b-a7c2-ad0df294d9f5")
 		)
@@ -2333,7 +2338,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1bc1ebea-0cf7-4c95-b95c-b851777dc5fc")
-		(property "Reference" "#PWR0304"
+		(property "Reference" "#PWR0303"
 			(at 165.1 106.68 0)
 			(effects
 				(font
@@ -2383,7 +2388,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/aa1d8d83-5167-420c-9ee7-3e4dcc942bfc"
-					(reference "#PWR0304")
+					(reference "#PWR0303")
 					(unit 1)
 				)
 			)
@@ -2398,7 +2403,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "349ad891-a3dc-4f5b-a26f-1b5ec5da411f")
-		(property "Reference" "#PWR0306"
+		(property "Reference" "#PWR0304"
 			(at 172.72 106.68 0)
 			(effects
 				(font
@@ -2449,7 +2454,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/aa1d8d83-5167-420c-9ee7-3e4dcc942bfc"
-					(reference "#PWR0306")
+					(reference "#PWR0304")
 					(unit 1)
 				)
 			)
@@ -2473,7 +2478,7 @@
 				)
 			)
 		)
-		(property "Value" "TPD4EUSB30"
+		(property "Value" "RCLAMP0524P"
 			(at 163.83 111.76 0)
 			(effects
 				(font
@@ -2526,16 +2531,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C558427"
-			(at 163.83 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" ""
+		(property "LCSC" "C907837"
 			(at 163.83 121.92 0)
 			(effects
 				(font
@@ -2647,15 +2643,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 119.38 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "8b055c3c-d527-4955-b2c4-9c3a141b2d97")
 		)
@@ -2680,7 +2667,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8d65e662-9c1d-46df-a042-fe884941fd43")
-		(property "Reference" "#PWR0301"
+		(property "Reference" "#PWR0302"
 			(at 119.38 77.47 0)
 			(effects
 				(font
@@ -2730,7 +2717,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/aa1d8d83-5167-420c-9ee7-3e4dcc942bfc"
-					(reference "#PWR0301")
+					(reference "#PWR0302")
 					(unit 1)
 				)
 			)
@@ -2790,15 +2777,6 @@
 			)
 		)
 		(property "LCSC" "C25905"
-			(at 138.43 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" ""
 			(at 138.43 66.04 0)
 			(effects
 				(font
@@ -2902,15 +2880,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 165.1 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "A1"
 			(uuid "2152a7e0-4298-415b-967a-c8936eaecfb8")
 		)
@@ -2980,7 +2949,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fcf02a2a-cd66-4b50-bf82-b275d146e21a")
-		(property "Reference" "#PWR0303"
+		(property "Reference" "#PWR0305"
 			(at 163.83 140.97 0)
 			(effects
 				(font
@@ -3030,7 +2999,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/aa1d8d83-5167-420c-9ee7-3e4dcc942bfc"
-					(reference "#PWR0303")
+					(reference "#PWR0305")
 					(unit 1)
 				)
 			)

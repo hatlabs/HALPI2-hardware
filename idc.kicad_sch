@@ -14,108 +14,6 @@
 		(comment 3 "HALPI2 is licensed under CC BY 4.0.")
 	)
 	(lib_symbols
-		(symbol "Connector:TestPoint"
-			(pin_numbers hide)
-			(pin_names
-				(offset 0.762) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "TP"
-				(at 0 6.858 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "TestPoint"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 5.08 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 5.08 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "test point"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "test point tp"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Pin* Test*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "TestPoint_0_1"
-				(circle
-					(center 0 3.302)
-					(radius 0.762)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "TestPoint_1_1"
-				(pin passive line
-					(at 0 0 90)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Device:R_Small"
 			(pin_numbers hide)
 			(pin_names
@@ -509,12 +407,6 @@
 		(uuid "2f2e8a6a-cf1f-48f9-890e-a8482704ad51")
 	)
 	(junction
-		(at 154.94 100.33)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5646272f-25ef-49c5-a338-18cf42aec52f")
-	)
-	(junction
 		(at 146.05 118.11)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -644,23 +536,13 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 100.33) (xy 154.94 102.87)
+			(xy 154.94 97.79) (xy 154.94 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "a7ad048b-17e3-4ecb-ad6c-1471af036fa6")
-	)
-	(wire
-		(pts
-			(xy 154.94 97.79) (xy 154.94 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b274d517-ac62-48f6-9117-e6e6efb164e9")
 	)
 	(wire
 		(pts
@@ -754,10 +636,19 @@
 		)
 		(uuid "429bd61a-350b-4322-882b-8e25db67a1d1")
 	)
+	(label "B"
+		(at 142.24 97.79 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4b13afb3-525e-4b61-a778-b5d3696b4e19")
+	)
 	(hierarchical_label "CATHODE"
 		(shape input)
 		(at 158.75 83.82 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -769,7 +660,6 @@
 	(hierarchical_label "ANODE"
 		(shape input)
 		(at 130.81 83.82 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -781,7 +671,6 @@
 	(hierarchical_label "GND"
 		(shape input)
 		(at 146.05 124.46 270)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -793,7 +682,6 @@
 	(hierarchical_label "GATE"
 		(shape input)
 		(at 144.78 82.55 90)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -802,80 +690,51 @@
 		)
 		(uuid "b4428f3e-716f-4cf4-8e10-6d5ecd7c061e")
 	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 154.94 100.33 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 149.86 102.87 180)
 		(fields_autoplaced yes)
-		(uuid "4d093d88-b482-4c80-bfb0-aafc66bcc3db")
-		(property "Reference" "TP2101"
-			(at 160.02 99.0599 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "688b780b-5a7b-4d11-9037-5f62dc99f450")
+		(property "Netclass" "Analog"
+			(at 150.749 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
+					(italic yes)
 				)
 				(justify left)
+				(hide yes)
 			)
 		)
-		(property "Value" "TestPoint"
-			(at 160.02 101.5999 90)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 138.43 100.33 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d9cd933f-dc9b-4e29-a1e3-6b555dfc80fa")
+		(property "Netclass" "Analog"
+			(at 139.319 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
+					(italic yes)
 				)
 				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 154.94 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 154.94 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 154.94 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" ""
-			(at 154.94 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "80aa1d38-8be4-44a6-a884-c870630a0cb5")
-		)
-		(instances
-			(project "HALPI2"
-				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/850df4bf-e40a-4082-adc2-76804638b949/941fe792-02c8-46de-a01c-95bb6b865738"
-					(reference "TP2101")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -889,7 +748,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7fd79c81-c8cf-40c9-b000-35ca94591c6f")
-		(property "Reference" "R2102"
+		(property "Reference" "R2402"
 			(at 157.48 107.9499 0)
 			(effects
 				(font
@@ -943,15 +802,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 154.94 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "e2c772f0-1b96-485c-83cc-0f25d1e90630")
 		)
@@ -961,7 +811,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/850df4bf-e40a-4082-adc2-76804638b949/941fe792-02c8-46de-a01c-95bb6b865738"
-					(reference "R2102")
+					(reference "R2402")
 					(unit 1)
 				)
 			)
@@ -977,7 +827,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8d9e88af-cfaa-426a-9594-aa7dc8015c53")
-		(property "Reference" "R2101"
+		(property "Reference" "R2401"
 			(at 137.16 107.9499 0)
 			(effects
 				(font
@@ -1031,15 +881,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 134.62 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "efd42ddb-a767-4bca-9ac1-f61686c2c625")
 		)
@@ -1049,107 +890,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/850df4bf-e40a-4082-adc2-76804638b949/941fe792-02c8-46de-a01c-95bb6b865738"
-					(reference "R2101")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_BJT:MMDT5401")
-		(at 137.16 92.71 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "93632cd6-69bc-44fd-8e80-502243218a09")
-		(property "Reference" "Q?"
-			(at 132.08 91.4399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MMDT5401"
-			(at 132.08 93.9799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
-			(at 132.08 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.diodes.com/_files/datasheets/ds30169.pdf"
-			(at 137.16 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "200mA IC, 160V Vce, Dual PNP/PNP Transistors, SOT-363"
-			(at 137.16 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" ""
-			(at 137.16 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C2919802"
-			(at 137.16 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "564a5045-0c70-4aef-bb29-2fb124b31d9e")
-		)
-		(pin "3"
-			(uuid "eb4ae792-8c50-466f-8290-a138c910619d")
-		)
-		(pin "1"
-			(uuid "38528f4e-7a28-4370-81f0-43bf416b0efa")
-		)
-		(pin "2"
-			(uuid "a62dd880-18f2-422d-9883-ae60eb27c936")
-		)
-		(pin "6"
-			(uuid "43d644c5-74e9-4a71-b70b-9743a46873d2")
-		)
-		(pin "5"
-			(uuid "b51dd38b-3be9-4fa3-b4cf-e2b1de23ec18")
-		)
-		(instances
-			(project "HALPI2"
-				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/850df4bf-e40a-4082-adc2-76804638b949/941fe792-02c8-46de-a01c-95bb6b865738"
-					(reference "Q?")
+					(reference "R2401")
 					(unit 1)
 				)
 			)
@@ -1158,15 +899,15 @@
 	(symbol
 		(lib_id "Transistor_BJT:MMDT5401")
 		(at 152.4 92.71 0)
-		(unit 1)
+		(mirror x)
+		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d8db1208-e459-41b8-a734-7c38d0776306")
-		(property "Reference" "Q2102"
-			(at 157.48 91.4399 0)
+		(uuid "b68986a9-8edc-46d8-9286-040df6e0e52c")
+		(property "Reference" "Q2401"
+			(at 157.48 93.9801 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1175,7 +916,7 @@
 			)
 		)
 		(property "Value" "MMDT5401"
-			(at 157.48 93.9799 0)
+			(at 157.48 91.4401 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1184,7 +925,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
-			(at 157.48 90.17 0)
+			(at 157.48 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1210,46 +951,109 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 152.4 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C2919802"
-			(at 152.4 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "5e493be8-351f-49e3-9f2f-9ee2a7ecbe5a")
-		)
-		(pin "3"
-			(uuid "c9e58758-ed05-46ed-9f8d-93d3204643a3")
-		)
-		(pin "1"
-			(uuid "db334ee9-1a50-4534-bd02-59db7fd8ec93")
+		(pin "6"
+			(uuid "b72222c0-ef62-4228-a975-a11de3178b01")
 		)
 		(pin "2"
-			(uuid "142a7842-990c-4874-81f2-e67061d574d4")
+			(uuid "2d383c48-850a-40a2-a2d3-e38acfdbb5a5")
 		)
-		(pin "6"
-			(uuid "f7033a87-fa58-43bd-bb85-fbef6c9c5b8e")
+		(pin "1"
+			(uuid "c135db3e-0e30-4dca-800d-5642ac83a105")
 		)
 		(pin "5"
-			(uuid "fc1a4a03-754d-494a-8da9-c9386446ab46")
+			(uuid "8a53665b-7e29-4049-8c5f-b2854962e4e2")
+		)
+		(pin "3"
+			(uuid "32c31d38-0cda-4f4e-9ff5-802b0f68256c")
+		)
+		(pin "4"
+			(uuid "f0b03734-377e-4cfc-82c2-09324aac8f67")
 		)
 		(instances
-			(project "HALPI2"
+			(project ""
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/850df4bf-e40a-4082-adc2-76804638b949/941fe792-02c8-46de-a01c-95bb6b865738"
-					(reference "Q2102")
+					(reference "Q2401")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_BJT:MMDT5401")
+		(at 137.16 92.71 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "faaa225c-d8e4-4ffd-a5e2-cd388ba92de6")
+		(property "Reference" "Q2401"
+			(at 132.08 93.9801 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MMDT5401"
+			(at 132.08 91.4401 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-363_SC-70-6"
+			(at 132.08 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.diodes.com/_files/datasheets/ds30169.pdf"
+			(at 137.16 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "200mA IC, 160V Vce, Dual PNP/PNP Transistors, SOT-363"
+			(at 137.16 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "6"
+			(uuid "b72222c0-ef62-4228-a975-a11de3178b02")
+		)
+		(pin "2"
+			(uuid "2d383c48-850a-40a2-a2d3-e38acfdbb5a6")
+		)
+		(pin "1"
+			(uuid "c135db3e-0e30-4dca-800d-5642ac83a106")
+		)
+		(pin "5"
+			(uuid "8a53665b-7e29-4049-8c5f-b2854962e4e3")
+		)
+		(pin "3"
+			(uuid "32c31d38-0cda-4f4e-9ff5-802b0f68256d")
+		)
+		(pin "4"
+			(uuid "f0b03734-377e-4cfc-82c2-09324aac8f68")
+		)
+		(instances
+			(project ""
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/850df4bf-e40a-4082-adc2-76804638b949/941fe792-02c8-46de-a01c-95bb6b865738"
+					(reference "Q2401")
 					(unit 1)
 				)
 			)

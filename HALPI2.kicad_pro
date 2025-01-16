@@ -49,7 +49,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.0
+          "min_clearance": 0.1
         }
       },
       "diff_pair_dimensions": [
@@ -57,26 +57,6 @@
           "gap": 0.0,
           "via_gap": 0.0,
           "width": 0.0
-        },
-        {
-          "gap": 0.21,
-          "via_gap": 0.13,
-          "width": 0.127
-        },
-        {
-          "gap": 0.127,
-          "via_gap": 0.13,
-          "width": 0.131
-        },
-        {
-          "gap": 0.127,
-          "via_gap": 0.13,
-          "width": 0.149
-        },
-        {
-          "gap": 0.127,
-          "via_gap": 0.13,
-          "width": 0.238
         }
       ],
       "drc_exclusions": [],
@@ -139,7 +119,7 @@
         "allow_blind_buried_vias": false,
         "allow_microvias": false,
         "max_error": 0.005,
-        "min_clearance": 0.125,
+        "min_clearance": 0.1,
         "min_connection": 0.0,
         "min_copper_edge_clearance": 0.3,
         "min_hole_clearance": 0.127,
@@ -151,7 +131,7 @@
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.2,
-        "min_track_width": 0.125,
+        "min_track_width": 0.1,
         "min_via_annular_width": 0.125,
         "min_via_diameter": 0.45,
         "solder_mask_to_copper_clearance": 0.0,
@@ -202,17 +182,12 @@
       ],
       "track_widths": [
         0.0,
-        0.127,
         0.15,
         0.2,
-        0.238,
-        0.25,
         0.3,
         0.4,
         0.6,
         1.0,
-        1.2,
-        1.5,
         2.0
       ],
       "tuning_pattern_settings": {
@@ -248,15 +223,15 @@
         },
         {
           "diameter": 0.45,
-          "drill": 0.2
-        },
-        {
-          "diameter": 0.6,
           "drill": 0.3
         },
         {
-          "diameter": 0.8,
+          "diameter": 0.6,
           "drill": 0.4
+        },
+        {
+          "diameter": 1.0,
+          "drill": 0.5
         }
       ],
       "zones_allow_external_fillets": false,
@@ -500,104 +475,53 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.127,
-        "diff_pair_gap": 0.127,
+        "clearance": 0.4695,
+        "diff_pair_gap": 0.4,
         "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.154,
+        "diff_pair_width": 0.2,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.127,
+        "track_width": 0.1565,
         "via_diameter": 0.45,
-        "via_drill": 0.2,
-        "wire_width": 5
-      },
-      {
-        "bus_width": 12,
-        "clearance": 0.127,
-        "diff_pair_gap": 0.127,
-        "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.154,
-        "line_style": 0,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
-        "name": "diff_100",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.154,
-        "via_diameter": 0.45,
-        "via_drill": 0.2,
-        "wire_width": 5
-      },
-      {
-        "bus_width": 12,
-        "clearance": 0.127,
-        "diff_pair_gap": 0.127,
-        "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.238,
-        "line_style": 0,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
-        "name": "diff_85",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.238,
-        "via_diameter": 0.45,
-        "via_drill": 0.2,
-        "wire_width": 5
-      },
-      {
-        "bus_width": 12,
-        "clearance": 0.127,
-        "diff_pair_gap": 0.127,
-        "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.206,
-        "line_style": 0,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
-        "name": "diff_90",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.206,
-        "via_diameter": 0.45,
-        "via_drill": 0.2,
-        "wire_width": 5
-      },
-      {
-        "bus_width": 12,
-        "clearance": 0.8,
-        "diff_pair_gap": 0.0,
-        "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.0,
-        "line_style": 0,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
-        "name": "poe_hv",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.25,
-        "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 5
       },
       {
         "bus_width": 12,
-        "clearance": 0.2,
-        "diff_pair_gap": 0.0,
+        "clearance": 0.3,
+        "diff_pair_gap": 0.4,
         "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.0,
+        "diff_pair_width": 0.2,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
-        "name": "sing_50",
+        "name": "Analog",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.293,
+        "schematic_color": "rgb(0, 0, 194)",
+        "track_width": 0.3,
         "via_diameter": 0.45,
-        "via_drill": 0.2,
+        "via_drill": 0.3,
+        "wire_width": 5
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.3,
+        "diff_pair_gap": 0.4,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Power",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgb(194, 0, 0)",
+        "track_width": 1.0,
+        "via_diameter": 1.0,
+        "via_drill": 0.5,
         "wire_width": 5
       }
     ],
@@ -605,183 +529,137 @@
       "version": 3
     },
     "net_colors": null,
-    "netclass_assignments": null,
+    "netclass_assignments": {
+      "/CAN bus/CANH": "Analog",
+      "/CAN bus/CANH_": "Analog",
+      "/CAN bus/CANL": "Analog",
+      "/CAN bus/CANL_": "Analog",
+      "/CAN bus/OSC1": "Analog",
+      "/CAN bus/OSC2": "Analog",
+      "/Controller/G": "Analog",
+      "/Controller/Ideal Diode Controller/B": "Analog",
+      "/Controller/ORed": "Power",
+      "/Controller/RTC/OSCI": "Analog",
+      "/Controller/RTC/OSCO": "Analog",
+      "/Controller/RTC/VDD": "Power",
+      "/Controller/VCC": "Power",
+      "/Controller/VcapS": "Analog",
+      "/Controller/VinS": "Analog",
+      "/Iin": "Analog",
+      "/Power/Buck converter 10V/B1_VIN": "HV",
+      "/Power/Buck converter 10V/BOOT": "Analog",
+      "/Power/Buck converter 10V/CCSB1": "HV",
+      "/Power/Buck converter 10V/CCSC1": "Analog",
+      "/Power/Buck converter 10V/CCSE2": "Analog",
+      "/Power/Buck converter 10V/DA-": "Analog",
+      "/Power/Buck converter 10V/DAO": "Analog",
+      "/Power/Buck converter 10V/FB": "Analog",
+      "/Power/Buck converter 10V/FVSS": "Analog",
+      "/Power/Buck converter 10V/I1A9": "Analog",
+      "/Power/Buck converter 10V/I2A9": "Analog",
+      "/Power/Buck converter 10V/PG": "Analog",
+      "/Power/Buck converter 10V/VCC": "Analog",
+      "/Power/Buck converter 10V/VF-": "Analog",
+      "/Power/Buck converter 10V/VFO": "Analog",
+      "/Power/Buck converter 3.3V/BOOT_": "Analog",
+      "/Power/Buck converter 3.3V/FB": "Analog",
+      "/Power/Buck converter 3.3V/PG": "Analog",
+      "/Power/Buck converter 3.3V/VCC": "Analog",
+      "/Power/Buck converter 5V/BOOT_": "Analog",
+      "/Power/Buck converter 5V/FB": "Analog",
+      "/Power/Buck converter 5V/PG": "Analog",
+      "/Power/Buck converter 5V/VCC": "Analog",
+      "/Power/Supercaps/Supercap stage1/BO2-": "Analog",
+      "/Power/Supercaps/Supercap stage1/BO3+": "Analog",
+      "/Power/Supercaps/Supercap stage1/BO3o": "Analog",
+      "/Power/Supercaps/Supercap stage1/C+": "Power",
+      "/Power/Supercaps/Supercap stage1/R+": "Analog",
+      "/Power/Supercaps/Supercap stage2/BO2-": "Analog",
+      "/Power/Supercaps/Supercap stage2/BO3+": "Analog",
+      "/Power/Supercaps/Supercap stage2/BO3o": "Analog",
+      "/Power/Supercaps/Supercap stage2/C+": "Power",
+      "/Power/Supercaps/Supercap stage2/R+": "Analog",
+      "/Power/Supercaps/Supercap stage3/BO2-": "Analog",
+      "/Power/Supercaps/Supercap stage3/BO3+": "Analog",
+      "/Power/Supercaps/Supercap stage3/BO3o": "Analog",
+      "/Power/Supercaps/Supercap stage3/C+": "Power",
+      "/Power/Supercaps/Supercap stage3/R+": "Analog",
+      "/Power/Supercaps/Supercap stage4/BO2-": "Analog",
+      "/Power/Supercaps/Supercap stage4/BO3+": "Analog",
+      "/Power/Supercaps/Supercap stage4/BO3o": "Analog",
+      "/RS-485/RS485_RX_A": "Analog",
+      "/RS-485/RS485_RX_A_C": "Analog",
+      "/RS-485/RS485_RX_B": "Analog",
+      "/RS-485/RS485_RX_B_C": "Analog",
+      "/RS-485/RS485_TX_A": "Analog",
+      "/RS-485/RS485_TX_A_C": "Analog",
+      "/RS-485/RS485_TX_B": "Analog",
+      "/RS-485/RS485_TX_B_C": "Analog",
+      "/SDCard/+3.3VSD": "Power",
+      "/USB3/USB3 Hub/AVDD33": "Power",
+      "/USB3/USB3 Hub/ILIM": "Analog",
+      "/USB3/USB3 Hub/NGDRV": "Analog",
+      "/USB3/USB3 Hub/PGATE": "Analog",
+      "/USB3/USB3 Hub/PGDRV": "Analog",
+      "/USB3/USB3 Hub/RREF": "Analog",
+      "/USB3/USB3 Hub/SW": "Analog",
+      "/USB3/USB3 Hub/USB3 Interface1/VBUS": "Power",
+      "/USB3/USB3 Hub/USB3 Interface1/VBUS_": "Power",
+      "/USB3/USB3 Hub/USB3 Interface2/VBUS": "Power",
+      "/USB3/USB3 Hub/USB3 Interface2/VBUS_": "Power",
+      "/USB3/USB3 Hub/USB3 Interface3/VBUS": "Power",
+      "/USB3/USB3 Hub/USB3 Interface3/VBUS_": "Power",
+      "/USB3/USB3 Hub/USB3 Interface4/VBUS": "Power",
+      "/USB3/USB3 Hub/USB3 Interface4/VBUS_": "Power",
+      "/USB3/USB3 Hub/V10FB": "Analog",
+      "/USB3/USB3 Hub/XT1": "Analog",
+      "/USB3/USB3 Hub/XT2": "Analog",
+      "/USB3/USB3 Interface/VBUS": "Power",
+      "/USB3/USB3 Interface/VBUS_": "Power",
+      "/VBAT": "Power",
+      "/Vcap": "Power",
+      "/Vin_prot": "Power",
+      "Net-(C2110-Pad1)": "Analog",
+      "Net-(C2111-Pad1)": "Analog",
+      "Net-(C2112-Pad1)": "Analog",
+      "Net-(C2113-Pad1)": "Analog",
+      "Net-(C2635-Pad1)": "Analog",
+      "Net-(D2103-A1)": "Analog",
+      "Net-(D2103-A2)": "Analog",
+      "Net-(D2105-A)": "Analog",
+      "Net-(D2106-A)": "Analog",
+      "Net-(J2101-Pin_2)": "Analog",
+      "Net-(J2101-Pin_3)": "Analog",
+      "Net-(JP1601-B)": "Analog"
+    },
     "netclass_patterns": [
       {
-        "netclass": "diff_100",
-        "pattern": "/CM4/ETH.TD1+"
+        "netclass": "Power",
+        "pattern": "GND*"
       },
       {
-        "netclass": "diff_100",
-        "pattern": "/CM4/ETH.TD1-"
+        "netclass": "Power",
+        "pattern": "\\+.*"
       },
       {
-        "netclass": "diff_100",
-        "pattern": "/CM4/ETH.TD2+"
+        "netclass": "Power",
+        "pattern": "/Power/*/Vin*"
       },
       {
-        "netclass": "diff_100",
-        "pattern": "/CM4/ETH.TD2-"
+        "netclass": "Power",
+        "pattern": "/Power/*/GND*"
       },
       {
-        "netclass": "diff_100",
-        "pattern": "/CM4/ETH.TD3+"
+        "netclass": "Power",
+        "pattern": "/Power/*/*VIN*"
       },
       {
-        "netclass": "diff_100",
-        "pattern": "/CM4/ETH.TD3-"
+        "netclass": "Power",
+        "pattern": "/Power/Vin*"
       },
       {
-        "netclass": "diff_100",
-        "pattern": "/CM4/ETH.TD4+"
-      },
-      {
-        "netclass": "diff_100",
-        "pattern": "/CM4/ETH.TD4-"
-      },
-      {
-        "netclass": "diff_100",
-        "pattern": "/CM4/HDMI.CLK+"
-      },
-      {
-        "netclass": "diff_100",
-        "pattern": "/CM4/HDMI.CLK-"
-      },
-      {
-        "netclass": "diff_100",
-        "pattern": "/CM4/HDMI.D0+"
-      },
-      {
-        "netclass": "diff_100",
-        "pattern": "/CM4/HDMI.D0-"
-      },
-      {
-        "netclass": "diff_100",
-        "pattern": "/CM4/HDMI.D1+"
-      },
-      {
-        "netclass": "diff_100",
-        "pattern": "/CM4/HDMI.D1-"
-      },
-      {
-        "netclass": "diff_100",
-        "pattern": "/CM4/HDMI.D2+"
-      },
-      {
-        "netclass": "diff_100",
-        "pattern": "/CM4/HDMI.D2-"
-      },
-      {
-        "netclass": "diff_85",
-        "pattern": "/CM4/PCIe.CLK+"
-      },
-      {
-        "netclass": "diff_85",
-        "pattern": "/CM4/PCIe.CLK-"
-      },
-      {
-        "netclass": "diff_85",
-        "pattern": "/CM4/PCIe.RX+"
-      },
-      {
-        "netclass": "diff_85",
-        "pattern": "/CM4/PCIe.RX-"
-      },
-      {
-        "netclass": "diff_85",
-        "pattern": "/CM4/PCIe.TX+"
-      },
-      {
-        "netclass": "diff_85",
-        "pattern": "/CM4/PCIe.TX-"
-      },
-      {
-        "netclass": "diff_90",
-        "pattern": "/CM4/CM4_USB_D+"
-      },
-      {
-        "netclass": "diff_90",
-        "pattern": "/CM4/CM4_USB_D-"
-      },
-      {
-        "netclass": "diff_90",
-        "pattern": "/USB/CP.D+"
-      },
-      {
-        "netclass": "diff_90",
-        "pattern": "/USB/CP.D-"
-      },
-      {
-        "netclass": "diff_90",
-        "pattern": "/USB/HUB.D+"
-      },
-      {
-        "netclass": "diff_90",
-        "pattern": "/USB/HUB.D-"
-      },
-      {
-        "netclass": "diff_90",
-        "pattern": "/USB/OTG.D+"
-      },
-      {
-        "netclass": "diff_90",
-        "pattern": "/USB/OTG.D-"
-      },
-      {
-        "netclass": "diff_90",
-        "pattern": "/USB/USB-C.D+"
-      },
-      {
-        "netclass": "diff_90",
-        "pattern": "/USB/USB-C.D-"
-      },
-      {
-        "netclass": "diff_90",
-        "pattern": "/USB/USB0.D+"
-      },
-      {
-        "netclass": "diff_90",
-        "pattern": "/USB/USB0.D-"
-      },
-      {
-        "netclass": "diff_90",
-        "pattern": "/USB/USB1.D+"
-      },
-      {
-        "netclass": "diff_90",
-        "pattern": "/USB/USB1.D-"
-      },
-      {
-        "netclass": "poe_hv",
-        "pattern": "/Ethernet/VC1"
-      },
-      {
-        "netclass": "poe_hv",
-        "pattern": "/Ethernet/VC2"
-      },
-      {
-        "netclass": "poe_hv",
-        "pattern": "/Ethernet/VC3"
-      },
-      {
-        "netclass": "poe_hv",
-        "pattern": "/Ethernet/VC4"
-      },
-      {
-        "netclass": "poe_hv",
-        "pattern": "/PoE/POE_IN_N"
-      },
-      {
-        "netclass": "poe_hv",
-        "pattern": "/PoE/POE_IN_P"
-      },
-      {
-        "netclass": "poe_hv",
-        "pattern": "ETH_SHLD"
-      },
-      {
-        "netclass": "sing_50",
-        "pattern": "/802.15.4 Radio/RF_SIGNAL"
+        "netclass": "Power",
+        "pattern": "/Vin_prot"
       }
     ]
   },
@@ -1049,6 +927,10 @@
       "Root"
     ],
     [
+      "c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42",
+      "Power"
+    ],
+    [
       "7c248bd3-8232-4777-a40c-eab53460cf85",
       "CM4 GPIO"
     ],
@@ -1077,12 +959,8 @@
       "USB3 Interface3"
     ],
     [
-      "c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42",
-      "Power"
-    ],
-    [
-      "441a9908-1e74-440b-b462-bdf6815583fe",
-      "Control - RTC"
+      "d4876730-9038-4f8b-92bc-bcbb3a62ccf0",
+      "DPHY1"
     ],
     [
       "67ada73c-6692-4fd8-8c20-5be89f2b8650",
@@ -1151,6 +1029,46 @@
     [
       "306b39c2-3d43-4872-bf23-cfec09993877",
       "USB3 Hub"
+    ],
+    [
+      "7441bc5f-8874-43c2-af8a-50459ea25028",
+      "RGB LEDs"
+    ],
+    [
+      "1b14d1cb-dda2-44c5-97d1-a618f21bed66",
+      "Fan Connectors"
+    ],
+    [
+      "e502b11a-b887-47b5-9ff1-f210171ce142",
+      "RTC"
+    ],
+    [
+      "3f9b067f-2b82-4260-ad8a-665c0f191623",
+      "Supercap stage2"
+    ],
+    [
+      "98212110-a878-47c3-ba60-a4b4dcdefdc6",
+      "Supercap stage3"
+    ],
+    [
+      "1e769c60-9395-4585-ba88-98ef14b595bd",
+      "Supercap stage4"
+    ],
+    [
+      "814ce5bc-699b-4608-b12b-d1ea1de7e475",
+      "Supercap stage1"
+    ],
+    [
+      "49314faa-db35-4ef5-b0c8-5c327f44891d",
+      "HDMI1"
+    ],
+    [
+      "10568cce-38f9-4351-82fd-0cb3bf8ca49d",
+      "DPHY0"
+    ],
+    [
+      "890900ed-b859-477a-afc8-e6aecd491b67",
+      "HDMI0"
     ]
   ],
   "text_variables": {}

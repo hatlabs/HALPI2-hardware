@@ -194,7 +194,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "13141f38-1921-4d87-8451-e2cfd1b27bf3")
-		(property "Reference" "P2005"
+		(property "Reference" "IMG2305"
 			(at 52.07 92.7099 0)
 			(effects
 				(font
@@ -212,7 +212,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SH-RPi:HL_pictogram_6.3mm"
+		(property "Footprint" "Symbol:WEEE-Logo_8.4x12mm_SilkScreen"
 			(at 45.72 91.44 0)
 			(effects
 				(font
@@ -239,19 +239,10 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 45.72 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/e4643111-53ad-48d1-8ad1-a500e184f609"
-					(reference "P2005")
+					(reference "IMG2305")
 					(unit 1)
 				)
 			)
@@ -267,7 +258,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1e6ebc15-136a-4d65-b3df-d9355b567a1e")
-		(property "Reference" "P2002"
+		(property "Reference" "IMG2302"
 			(at 52.07 50.7999 0)
 			(effects
 				(font
@@ -285,7 +276,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SH-RPi:HL_pictogram_6.3mm"
+		(property "Footprint" "Hatlabs:Hat_Labs_25.4mm"
 			(at 45.72 49.53 0)
 			(effects
 				(font
@@ -312,19 +303,10 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 45.72 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/e4643111-53ad-48d1-8ad1-a500e184f609"
-					(reference "P2002")
+					(reference "IMG2302")
 					(unit 1)
 				)
 			)
@@ -340,7 +322,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "51cfcc96-44ab-413b-8520-9467daa27508")
-		(property "Reference" "P2003"
+		(property "Reference" "IMG2303"
 			(at 52.07 64.7699 0)
 			(effects
 				(font
@@ -358,7 +340,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SH-RPi:HL_pictogram_6.3mm"
+		(property "Footprint" "Symbol:OSHW-Logo2_14.6x12mm_SilkScreen"
 			(at 45.72 63.5 0)
 			(effects
 				(font
@@ -385,307 +367,10 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 45.72 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/e4643111-53ad-48d1-8ad1-a500e184f609"
-					(reference "P2003")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 76.2 148.59 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "57a2c0f6-7382-4a57-bd70-818e0749289d")
-		(property "Reference" "H2006"
-			(at 78.7401 147.4406 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 78.7401 149.7393 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5"
-			(at 76.2 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 76.2 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 76.2 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" ""
-			(at 76.2 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "HALPI2"
-				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/e4643111-53ad-48d1-8ad1-a500e184f609"
-					(reference "H2006")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 58.42 148.59 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "5cbd34a0-018e-4323-b9fb-c2ae0c8f8a9b")
-		(property "Reference" "H2004"
-			(at 60.9601 147.4406 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 60.9601 149.7393 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5"
-			(at 58.42 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 58.42 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 58.42 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" ""
-			(at 58.42 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "HALPI2"
-				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/e4643111-53ad-48d1-8ad1-a500e184f609"
-					(reference "H2004")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 40.64 140.97 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "601688e4-8e17-4130-aee1-65a7cb88a2a1")
-		(property "Reference" "H2001"
-			(at 43.1801 139.8206 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 43.1801 142.1193 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5"
-			(at 40.64 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 40.64 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 40.64 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" ""
-			(at 40.64 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "HALPI2"
-				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/e4643111-53ad-48d1-8ad1-a500e184f609"
-					(reference "H2001")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole")
-		(at 40.64 148.59 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "6a2df697-bbe5-4f70-b4c2-2e95ce84ef1f")
-		(property "Reference" "H2002"
-			(at 43.1801 147.4406 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole"
-			(at 43.1801 149.7393 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5"
-			(at 40.64 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 40.64 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 40.64 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" ""
-			(at 40.64 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "HALPI2"
-				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/e4643111-53ad-48d1-8ad1-a500e184f609"
-					(reference "H2002")
+					(reference "IMG2303")
 					(unit 1)
 				)
 			)
@@ -699,8 +384,8 @@
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
-		(uuid "7e6a7221-8637-49f6-a8a0-45ecfe1939a7")
-		(property "Reference" "H2005"
+		(uuid "57a2c0f6-7382-4a57-bd70-818e0749289d")
+		(property "Reference" "H2302"
 			(at 78.7401 139.8206 0)
 			(effects
 				(font
@@ -745,8 +430,62 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 76.2 140.97 0)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/e4643111-53ad-48d1-8ad1-a500e184f609"
+					(reference "H2302")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 58.42 148.59 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "5cbd34a0-018e-4323-b9fb-c2ae0c8f8a9b")
+		(property "Reference" "H2304"
+			(at 60.9601 147.4406 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 60.9601 149.7393 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5"
+			(at 58.42 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 58.42 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 58.42 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -757,7 +496,133 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/e4643111-53ad-48d1-8ad1-a500e184f609"
-					(reference "H2005")
+					(reference "H2304")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 40.64 148.59 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "6a2df697-bbe5-4f70-b4c2-2e95ce84ef1f")
+		(property "Reference" "H2303"
+			(at 43.1801 147.4406 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 43.1801 149.7393 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5"
+			(at 40.64 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 40.64 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 40.64 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/e4643111-53ad-48d1-8ad1-a500e184f609"
+					(reference "H2303")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 40.64 156.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "7e6a7221-8637-49f6-a8a0-45ecfe1939a7")
+		(property "Reference" "H2306"
+			(at 43.1801 155.0606 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 43.1801 157.3593 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5"
+			(at 40.64 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 40.64 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 40.64 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/e4643111-53ad-48d1-8ad1-a500e184f609"
+					(reference "H2306")
 					(unit 1)
 				)
 			)
@@ -773,7 +638,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9acbff18-9e8c-4580-bd10-4fe29fd8f16c")
-		(property "Reference" "P2004"
+		(property "Reference" "IMG2304"
 			(at 52.07 78.7399 0)
 			(effects
 				(font
@@ -782,7 +647,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "cc-by logo"
+		(property "Value" "cc-by-sa logo"
 			(at 52.07 81.2799 0)
 			(effects
 				(font
@@ -791,7 +656,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SH-RPi:HL_pictogram_6.3mm"
+		(property "Footprint" "Hatlabs:cc-by-sa_silkscreen"
 			(at 45.72 77.47 0)
 			(effects
 				(font
@@ -818,19 +683,10 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 45.72 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/e4643111-53ad-48d1-8ad1-a500e184f609"
-					(reference "P2004")
+					(reference "IMG2304")
 					(unit 1)
 				)
 			)
@@ -838,15 +694,15 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 93.98 140.97 0)
+		(at 58.42 156.21 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "a65fee2f-b724-4e58-be07-5b2822288f7f")
-		(property "Reference" "H2007"
-			(at 96.5201 139.8206 0)
+		(property "Reference" "H2307"
+			(at 60.9601 155.0606 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -855,7 +711,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 96.5201 142.1193 0)
+			(at 60.9601 157.3593 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -864,7 +720,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5"
-			(at 93.98 140.97 0)
+			(at 58.42 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -873,7 +729,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 93.98 140.97 0)
+			(at 58.42 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -882,16 +738,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 93.98 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" ""
-			(at 93.98 140.97 0)
+			(at 58.42 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -902,7 +749,70 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/e4643111-53ad-48d1-8ad1-a500e184f609"
-					(reference "H2007")
+					(reference "H2307")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 76.2 156.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "b1c81f1c-dd1d-43f8-9a98-98cdf5f23095")
+		(property "Reference" "H2308"
+			(at 78.7401 155.0606 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 78.7401 157.3593 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5"
+			(at 76.2 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 76.2 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 76.2 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/e4643111-53ad-48d1-8ad1-a500e184f609"
+					(reference "H2308")
 					(unit 1)
 				)
 			)
@@ -917,7 +827,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b8935306-58ce-4522-baec-7eef4d8a5908")
-		(property "Reference" "H2003"
+		(property "Reference" "H2301"
 			(at 60.9601 139.8206 0)
 			(effects
 				(font
@@ -962,19 +872,10 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 58.42 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/e4643111-53ad-48d1-8ad1-a500e184f609"
-					(reference "H2003")
+					(reference "H2301")
 					(unit 1)
 				)
 			)
@@ -990,7 +891,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ec8a8fd4-a9a1-4c32-a655-45598d99f154")
-		(property "Reference" "P2001"
+		(property "Reference" "IMG2301"
 			(at 52.07 36.8299 0)
 			(effects
 				(font
@@ -1008,7 +909,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SH-RPi:HL_pictogram_6.3mm"
+		(property "Footprint" "Hatlabs:HL_pictogram_6.3mm"
 			(at 45.72 35.56 0)
 			(effects
 				(font
@@ -1035,19 +936,10 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 45.72 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/e4643111-53ad-48d1-8ad1-a500e184f609"
-					(reference "P2001")
+					(reference "IMG2301")
 					(unit 1)
 				)
 			)
@@ -1063,7 +955,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f43d649d-ffa9-4b1c-aa5a-91e318e40d46")
-		(property "Reference" "P2006"
+		(property "Reference" "IMG2306"
 			(at 52.07 106.6799 0)
 			(effects
 				(font
@@ -1081,7 +973,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SH-RPi:HL_pictogram_6.3mm"
+		(property "Footprint" "Symbol:CE-Logo_11.2x8mm_SilkScreen"
 			(at 45.72 105.41 0)
 			(effects
 				(font
@@ -1108,19 +1000,10 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 45.72 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/e4643111-53ad-48d1-8ad1-a500e184f609"
-					(reference "P2006")
+					(reference "IMG2306")
 					(unit 1)
 				)
 			)
@@ -1128,15 +1011,15 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole")
-		(at 93.98 148.59 0)
+		(at 76.2 148.59 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "fc19e54b-a6b6-4353-ba45-6da2b18364a3")
-		(property "Reference" "H2008"
-			(at 96.5201 147.4406 0)
+		(property "Reference" "H2305"
+			(at 78.7401 147.4406 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1145,7 +1028,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 96.5201 149.7393 0)
+			(at 78.7401 149.7393 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1154,7 +1037,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5"
-			(at 93.98 148.59 0)
+			(at 76.2 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1163,7 +1046,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 93.98 148.59 0)
+			(at 76.2 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1172,16 +1055,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 93.98 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" ""
-			(at 93.98 148.59 0)
+			(at 76.2 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1192,7 +1066,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/e4643111-53ad-48d1-8ad1-a500e184f609"
-					(reference "H2008")
+					(reference "H2305")
 					(unit 1)
 				)
 			)

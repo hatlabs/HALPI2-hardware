@@ -577,16 +577,6 @@
 	)
 	(wire
 		(pts
-			(xy 149.225 93.98) (xy 151.13 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "07b27635-9bda-4e4c-9d84-7dd734af612d")
-	)
-	(wire
-		(pts
 			(xy 80.01 83.82) (xy 80.01 86.36)
 		)
 		(stroke
@@ -657,6 +647,16 @@
 	)
 	(wire
 		(pts
+			(xy 148.59 93.98) (xy 151.13 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a57910f4-8c77-4bfa-83b1-9ded560fd023")
+	)
+	(wire
+		(pts
 			(xy 128.27 93.98) (xy 130.81 93.98)
 		)
 		(stroke
@@ -685,6 +685,17 @@
 		)
 		(uuid "f43d649a-86d6-4a18-9bf6-6906a991e1cf")
 	)
+	(text "Note the crossed signals"
+		(exclude_from_sim no)
+		(at 80.772 98.298 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d0deed19-10ae-4243-977c-69d5bd4c29a1")
+	)
 	(text "Invert EN for USB3-0"
 		(exclude_from_sim no)
 		(at 67.056 71.12 0)
@@ -696,9 +707,18 @@
 		)
 		(uuid "d3a1e08c-eea3-47c7-b3f1-a0085a406f48")
 	)
+	(label "B"
+		(at 72.39 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "08d43b82-ca3c-4e2f-8219-158fa3f78e8c")
+	)
 	(label "~{EN}"
 		(at 90.17 92.71 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -720,7 +740,6 @@
 	(hierarchical_label "USB3-0{USB3}"
 		(shape bidirectional)
 		(at 128.27 87.63 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -732,7 +751,6 @@
 	(hierarchical_label "VBUS_EN"
 		(shape input)
 		(at 176.53 93.98 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -744,7 +762,6 @@
 	(hierarchical_label "VBUS_EN"
 		(shape input)
 		(at 63.5 99.06 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -753,10 +770,9 @@
 		)
 		(uuid "a5848b2d-4d81-4bbf-9d06-ad7e0e2d2391")
 	)
-	(hierarchical_label "USB3-0{USB3}"
+	(hierarchical_label "USB3-1{USB3}"
 		(shape bidirectional)
 		(at 176.53 87.63 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -775,7 +791,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "11515889-18b8-419a-9114-d44cef799ec8")
-		(property "Reference" "Q2302"
+		(property "Reference" "Q2201"
 			(at 82.55 96.5199 0)
 			(effects
 				(font
@@ -871,7 +887,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/b774f543-305e-4249-92c3-c3de7e8a285e"
-					(reference "Q2302")
+					(reference "Q2201")
 					(unit 1)
 				)
 			)
@@ -887,7 +903,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6e930928-fd1e-41c2-af2e-c97dab99f051")
-		(property "Reference" "R2320"
+		(property "Reference" "R2201"
 			(at 82.55 87.6299 0)
 			(effects
 				(font
@@ -950,7 +966,7 @@
 		(instances
 			(project ""
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/b774f543-305e-4249-92c3-c3de7e8a285e"
-					(reference "R2320")
+					(reference "R2201")
 					(unit 1)
 				)
 			)
@@ -966,7 +982,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "732e4cd9-f967-445c-8512-9a0c6446e838")
-		(property "Reference" "#PWR02335"
+		(property "Reference" "#PWR02201"
 			(at 80.01 87.63 0)
 			(effects
 				(font
@@ -1016,7 +1032,7 @@
 		(instances
 			(project ""
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/b774f543-305e-4249-92c3-c3de7e8a285e"
-					(reference "#PWR02335")
+					(reference "#PWR02201")
 					(unit 1)
 				)
 			)
@@ -1032,7 +1048,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "93afb447-f812-4cec-93eb-193366dfe926")
-		(property "Reference" "#PWR02334"
+		(property "Reference" "#PWR02202"
 			(at 80.01 114.3 0)
 			(effects
 				(font
@@ -1082,7 +1098,7 @@
 		(instances
 			(project ""
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/b774f543-305e-4249-92c3-c3de7e8a285e"
-					(reference "#PWR02334")
+					(reference "#PWR02202")
 					(unit 1)
 				)
 			)
@@ -1098,7 +1114,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b16c80b4-0ec0-4dae-91c0-f2d999eab501")
-		(property "Reference" "R2321"
+		(property "Reference" "R2202"
 			(at 68.58 93.98 90)
 			(effects
 				(font
@@ -1159,7 +1175,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/b774f543-305e-4249-92c3-c3de7e8a285e"
-					(reference "R2321")
+					(reference "R2202")
 					(unit 1)
 				)
 			)
@@ -1225,7 +1241,7 @@
 	)
 	(sheet
 		(at 130.81 83.82)
-		(size 18.415 13.97)
+		(size 17.78 13.97)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -1274,7 +1290,7 @@
 			(uuid "b5228843-84e8-42ec-a0ba-84ea35163b1d")
 		)
 		(pin "~{OC}" output
-			(at 149.225 93.98 0)
+			(at 148.59 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)

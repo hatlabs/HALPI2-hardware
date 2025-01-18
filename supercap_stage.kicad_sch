@@ -192,108 +192,6 @@
 				)
 			)
 		)
-		(symbol "Connector:TestPoint"
-			(pin_numbers hide)
-			(pin_names
-				(offset 0.762) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "TP"
-				(at 0 6.858 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "TestPoint"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 5.08 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 5.08 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "test point"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "test point tp"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Pin* Test*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "TestPoint_0_1"
-				(circle
-					(center 0 3.302)
-					(radius 0.762)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "TestPoint_1_1"
-				(pin passive line
-					(at 0 0 90)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Device:C"
 			(pin_numbers hide)
 			(pin_names
@@ -1208,12 +1106,6 @@
 		(uuid "d2c8443e-820e-4e64-ae7d-63b51594d754")
 	)
 	(junction
-		(at 189.23 83.82)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d5a02c4a-cfd9-4264-95cd-3a14e6c88602")
-	)
-	(junction
 		(at 157.48 107.95)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1459,7 +1351,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 83.82) (xy 189.23 90.17)
+			(xy 189.23 80.01) (xy 189.23 90.17)
 		)
 		(stroke
 			(width 0)
@@ -1516,16 +1408,6 @@
 			(type default)
 		)
 		(uuid "bc09fa65-d590-4556-9737-ea538cabf8bc")
-	)
-	(wire
-		(pts
-			(xy 189.23 80.01) (xy 189.23 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dcad4a15-2326-4109-bb3a-fe41e94cc5fa")
 	)
 	(wire
 		(pts
@@ -1946,86 +1828,6 @@
 				)
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/07643414-c558-4752-92d9-19f7e64f0193/98212110-a878-47c3-ba60-a4b4dcdefdc6"
 					(reference "C3102")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 189.23 83.82 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "350cfe52-cc9a-4871-8c94-e6fd20eb83a6")
-		(property "Reference" "TP3201"
-			(at 194.31 82.5499 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "VSC"
-			(at 194.31 85.0899 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 189.23 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 189.23 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 189.23 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "fbf71ee1-45a9-4b0d-b1a2-f2ecf3f48615")
-		)
-		(instances
-			(project "HALPI2"
-				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/07643414-c558-4752-92d9-19f7e64f0193/1e769c60-9395-4585-ba88-98ef14b595bd"
-					(reference "TP3201")
-					(unit 1)
-				)
-				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/07643414-c558-4752-92d9-19f7e64f0193/3f9b067f-2b82-4260-ad8a-665c0f191623"
-					(reference "TP3002")
-					(unit 1)
-				)
-				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/07643414-c558-4752-92d9-19f7e64f0193/814ce5bc-699b-4608-b12b-d1ea1de7e475"
-					(reference "TP3001")
-					(unit 1)
-				)
-				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/07643414-c558-4752-92d9-19f7e64f0193/98212110-a878-47c3-ba60-a4b4dcdefdc6"
-					(reference "TP3101")
 					(unit 1)
 				)
 			)

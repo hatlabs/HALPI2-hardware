@@ -49,7 +49,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.1
+          "min_clearance": 0.2
         }
       },
       "diff_pair_dimensions": [
@@ -188,6 +188,7 @@
         0.4,
         0.6,
         1.0,
+        1.5,
         2.0
       ],
       "tuning_pattern_settings": {
@@ -220,6 +221,14 @@
         {
           "diameter": 0.0,
           "drill": 0.0
+        },
+        {
+          "diameter": 0.4,
+          "drill": 0.3
+        },
+        {
+          "diameter": 0.45,
+          "drill": 0.2
         },
         {
           "diameter": 0.45,
@@ -475,7 +484,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.4695,
+        "clearance": 0.3,
         "diff_pair_gap": 0.4,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -485,7 +494,7 @@
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.1565,
+        "track_width": 0.3,
         "via_diameter": 0.45,
         "via_drill": 0.3,
         "wire_width": 5
@@ -502,7 +511,7 @@
         "name": "Analog",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgb(0, 0, 194)",
-        "track_width": 0.3,
+        "track_width": 0.4,
         "via_diameter": 0.45,
         "via_drill": 0.3,
         "wire_width": 5
@@ -548,7 +557,7 @@
       "/Iin": "Analog",
       "/Power/Buck converter 10V/B1_VIN": "HV",
       "/Power/Buck converter 10V/BOOT": "Analog",
-      "/Power/Buck converter 10V/CCSB1": "HV",
+      "/Power/Buck converter 10V/CCSB1": "Analog",
       "/Power/Buck converter 10V/CCSC1": "Analog",
       "/Power/Buck converter 10V/CCSE2": "Analog",
       "/Power/Buck converter 10V/DA-": "Analog",
@@ -564,11 +573,15 @@
       "/Power/Buck converter 3.3V/BOOT_": "Analog",
       "/Power/Buck converter 3.3V/FB": "Analog",
       "/Power/Buck converter 3.3V/PG": "Analog",
+      "/Power/Buck converter 3.3V/SW": "Power",
       "/Power/Buck converter 3.3V/VCC": "Analog",
       "/Power/Buck converter 5V/BOOT_": "Analog",
       "/Power/Buck converter 5V/FB": "Analog",
       "/Power/Buck converter 5V/PG": "Analog",
+      "/Power/Buck converter 5V/SW": "Power",
       "/Power/Buck converter 5V/VCC": "Analog",
+      "/Power/Input Protection/G": "Analog",
+      "/Power/Input Protection/VCAP": "Power",
       "/Power/Supercaps/Supercap stage1/BO2-": "Analog",
       "/Power/Supercaps/Supercap stage1/BO3+": "Analog",
       "/Power/Supercaps/Supercap stage1/BO3o": "Analog",
@@ -612,8 +625,6 @@
       "/USB3/USB3 Hub/USB3 Interface4/VBUS": "Power",
       "/USB3/USB3 Hub/USB3 Interface4/VBUS_": "Power",
       "/USB3/USB3 Hub/V10FB": "Analog",
-      "/USB3/USB3 Hub/XT1": "Analog",
-      "/USB3/USB3 Hub/XT2": "Analog",
       "/USB3/USB3 Interface/VBUS": "Power",
       "/USB3/USB3 Interface/VBUS_": "Power",
       "/VBAT": "Power",
@@ -623,7 +634,6 @@
       "Net-(C2111-Pad1)": "Analog",
       "Net-(C2112-Pad1)": "Analog",
       "Net-(C2113-Pad1)": "Analog",
-      "Net-(C2635-Pad1)": "Analog",
       "Net-(D2103-A1)": "Analog",
       "Net-(D2103-A2)": "Analog",
       "Net-(D2105-A)": "Analog",

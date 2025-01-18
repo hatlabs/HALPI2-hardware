@@ -82,12 +82,23 @@
     (constraint clearance (min 0.1mm)))
 
 ########################################################################################
+## Vias
+
+(rule "gnd_via_clearance"
+    (condition "A.Type == 'Via' && A.NetName == 'GND'")
+    (constraint clearance (min 0.1mm)))
+
+########################################################################################
 ## Neck-downs
 
 # Required to allow traces to neck-down when connecting to a component.
 
+#(rule "neck_down"
+#    (condition "A.intersectsCourtyard('*')")
+#    (constraint clearance (min 0.1mm)))
+
 (rule "neck_down"
-    (condition "A.intersectsCourtyard('*')")
+    (condition "A.intersectsCourtyard('J*') || A.intersectsCourtyard('U*')")
     (constraint clearance (min 0.1mm)))
 
 #(rule "neck_down"

@@ -1,7 +1,7 @@
 (footprint "USB-3.0-TH_USB-302LD-ARW"
-	(version 20240108)
+	(version 20241228)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
 		(at 0 -4.75 0)
@@ -21,18 +21,6 @@
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "0875a29c-b312-4f9a-a68f-a9ed1bb6bf49")
-		(effects
-			(font
-				(size 1.27 1.27)
 				(thickness 0.15)
 			)
 		)
@@ -141,7 +129,7 @@
 			(width 0.05)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.CrtYd")
 		(uuid "31adbff4-546b-441d-beb6-acdd9cb86084")
 	)
@@ -304,15 +292,16 @@
 		(remove_unused_layers no)
 		(uuid "22beb5d0-e29e-4e7b-9850-0cc307a99c2a")
 	)
-	(model "${KICAD_3RD_PARTY}/EasyEDA.3dshapes/USB-3.0-TH_USB-302LD-ARW.wrl"
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/Hatlabs.3dshapes/USB-3.0-TH_USB-302LD-ARW.step"
 		(offset
-			(xyz 0 -0.65 0)
+			(xyz 0 -0.65 7)
 		)
 		(scale
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz 0 0 0)
+			(xyz -0 -0 -0)
 		)
 	)
 )

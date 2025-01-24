@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "d446268e-5990-4529-9840-35522d509779")
 	(paper "A4")
 	(title_block
@@ -99,24 +99,6 @@
 					)
 				)
 				(pin power_in line
-					(at -2.54 -7.62 90)
-					(length 3.81)
-					(name "V-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
 					(at -2.54 7.62 270)
 					(length 3.81)
 					(name "V+"
@@ -127,6 +109,24 @@
 						)
 					)
 					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 -7.62 90)
+					(length 3.81)
+					(name "V-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -191,9 +191,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:C"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0.254)
 			)
@@ -266,7 +269,7 @@
 			(symbol "C_0_1"
 				(polyline
 					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
+						(xy -2.032 0.762) (xy 2.032 0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -278,7 +281,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -327,9 +330,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:C_Polarized"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0.254)
 			)
@@ -485,9 +491,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -606,11 +615,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Diode:SS34"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -678,10 +692,10 @@
 			(symbol "SS34_0_1"
 				(polyline
 					(pts
-						(xy 1.27 0) (xy -1.27 0)
+						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
 					)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -702,10 +716,10 @@
 				)
 				(polyline
 					(pts
-						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+						(xy 1.27 0) (xy -1.27 0)
 					)
 					(stroke
-						(width 0.254)
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -751,10 +765,13 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Transistor_BJT:MMBT5551L"
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -827,6 +844,18 @@
 			(symbol "MMBT5551L_0_1"
 				(polyline
 					(pts
+						(xy 0.635 1.905) (xy 0.635 -1.905) (xy 0.635 -1.905)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
 						(xy 0.635 0.635) (xy 2.54 2.54)
 					)
 					(stroke
@@ -849,12 +878,11 @@
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy 0.635 1.905) (xy 0.635 -1.905) (xy 0.635 -1.905)
-					)
+				(circle
+					(center 1.27 0)
+					(radius 2.8194)
 					(stroke
-						(width 0.508)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -873,17 +901,6 @@
 						(type outline)
 					)
 				)
-				(circle
-					(center 1.27 0)
-					(radius 2.8194)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 			)
 			(symbol "MMBT5551L_1_1"
 				(pin input line
@@ -897,24 +914,6 @@
 						)
 					)
 					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "E"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -940,13 +939,36 @@
 						)
 					)
 				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "E"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:PWR_FLAG"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1037,6 +1059,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 	)
 	(junction
@@ -1675,7 +1698,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0314f64c-3222-4817-bc09-e0cdbef204df")
-		(property "Reference" "#FLG03201"
+		(property "Reference" "#FLG03002"
 			(at 152.4 78.105 0)
 			(effects
 				(font
@@ -1752,7 +1775,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1e6d00ba-afaa-411c-970f-9137474375b6")
-		(property "Reference" "C3202"
+		(property "Reference" "C3004"
 			(at 192.2272 92.8116 0)
 			(effects
 				(font
@@ -1770,7 +1793,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D16.0mm_P7.50mm"
+		(property "Footprint" "Hatlabs:CP_Radial_D16.0mm_P7.50mm"
 			(at 190.1952 97.79 0)
 			(effects
 				(font
@@ -1804,6 +1827,23 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Characteristics" ""
+			(at 189.23 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 189.23 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -1843,7 +1883,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "530e203f-c2c1-4457-92ce-ea79ea217aa8")
-		(property "Reference" "R3201"
+		(property "Reference" "R3006"
 			(at 85.09 92.7099 0)
 			(effects
 				(font
@@ -1897,6 +1937,23 @@
 				(hide yes)
 			)
 		)
+		(property "Characteristics" ""
+			(at 82.55 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 82.55 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "581140c7-c000-4e19-be3c-6b570c87d2a4")
 		)
@@ -1934,7 +1991,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "547dea41-f74c-4229-8d76-685103c4cef7")
-		(property "Reference" "C3201"
+		(property "Reference" "C3003"
 			(at 161.29 86.3599 0)
 			(effects
 				(font
@@ -1988,6 +2045,23 @@
 				(hide yes)
 			)
 		)
+		(property "Characteristics" ""
+			(at 157.48 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 157.48 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "706458dd-2f58-4225-b0b1-ac9fd7b9e951")
 		)
@@ -2025,7 +2099,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "59a187d3-8121-4d96-9a66-d273a88f02e5")
-		(property "Reference" "R3204"
+		(property "Reference" "R3009"
 			(at 107.95 85.0899 0)
 			(effects
 				(font
@@ -2079,6 +2153,23 @@
 				(hide yes)
 			)
 		)
+		(property "Characteristics" ""
+			(at 105.41 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 105.41 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "81af5b71-223d-4c54-9b45-df64a1998be9")
 		)
@@ -2115,7 +2206,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7b0e308b-a842-459d-af81-fcfa8303a5ca")
-		(property "Reference" "Q3201"
+		(property "Reference" "Q3002"
 			(at 134.3914 92.8116 0)
 			(effects
 				(font
@@ -2144,7 +2235,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "www.onsemi.com/pub/Collateral/MMBT5550LT1-D.PDF"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2303221100_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--SS8050-RANGE-200-350_C2150.pdf"
 			(at 129.54 93.98 0)
 			(effects
 				(font
@@ -2179,6 +2270,23 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Characteristics" ""
+			(at 129.54 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 129.54 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -2221,7 +2329,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "94188221-ad6e-43a9-a773-e60ff3e98a45")
-		(property "Reference" "R3205"
+		(property "Reference" "R3010"
 			(at 107.95 100.3299 0)
 			(effects
 				(font
@@ -2275,6 +2383,23 @@
 				(hide yes)
 			)
 		)
+		(property "Characteristics" ""
+			(at 105.41 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 105.41 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "8519335d-593e-4b8e-888e-54d9d4f4ddbc")
 		)
@@ -2312,7 +2437,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "99ae09cb-b478-4f2c-864b-a3bc18c3c938")
-		(property "Reference" "R3202"
+		(property "Reference" "R3007"
 			(at 96.52 85.0899 0)
 			(effects
 				(font
@@ -2366,6 +2491,23 @@
 				(hide yes)
 			)
 		)
+		(property "Characteristics" ""
+			(at 93.98 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 93.98 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "102c03de-6bfe-4fe4-bd51-1646a0521a51")
 		)
@@ -2403,7 +2545,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "aa5716a3-b4ac-4e76-bbe0-e921ec5e3c90")
-		(property "Reference" "R3203"
+		(property "Reference" "R3008"
 			(at 96.52 97.7899 0)
 			(effects
 				(font
@@ -2457,6 +2599,23 @@
 				(hide yes)
 			)
 		)
+		(property "Characteristics" ""
+			(at 93.98 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 93.98 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "63f958c3-dd97-4b91-8ad0-33b2e1554c6b")
 		)
@@ -2493,7 +2652,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b3b3871f-9022-4e45-9ee9-b79a9288bdb0")
-		(property "Reference" "U3201"
+		(property "Reference" "U3002"
 			(at 120.65 86.36 0)
 			(effects
 				(font
@@ -2555,6 +2714,23 @@
 				(hide yes)
 			)
 		)
+		(property "Characteristics" ""
+			(at 116.84 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 116.84 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "b1650ba2-b3b5-4612-b7b0-8ee16297c25a")
 		)
@@ -2601,7 +2777,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dee30bb6-fed1-4798-9356-86c0701b1fc8")
-		(property "Reference" "D3201"
+		(property "Reference" "D3002"
 			(at 149.86 97.4724 90)
 			(effects
 				(font
@@ -2653,6 +2829,23 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Characteristics" ""
+			(at 147.32 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 147.32 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"

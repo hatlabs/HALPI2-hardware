@@ -1,7 +1,7 @@
 (footprint "SMTSO2515CTJ"
-	(version 20240108)
+	(version 20241228)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
 		(at 0 -7.2 0)
@@ -23,18 +23,6 @@
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "d7560d8c-c475-4602-aab2-24ca8924a868")
-		(effects
-			(font
-				(size 1.27 1.27)
 				(thickness 0.15)
 			)
 		)
@@ -149,7 +137,7 @@
 	(pad "1" smd custom
 		(at -1.75 -1.75)
 		(size 0.1 0.1)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(zone_connect 1)
 		(thermal_bridge_width 0.5)
 		(thermal_bridge_angle 90)
@@ -176,7 +164,7 @@
 	(pad "1" smd custom
 		(at -1.75 1.75 90)
 		(size 0.1 0.1)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(zone_connect 1)
 		(thermal_bridge_width 0.5)
 		(thermal_bridge_angle 90)
@@ -203,7 +191,7 @@
 	(pad "1" smd custom
 		(at 1.75 -1.75)
 		(size 0.1 0.1)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(zone_connect 1)
 		(thermal_bridge_width 0.5)
 		(thermal_bridge_angle 90)
@@ -230,7 +218,7 @@
 	(pad "1" smd custom
 		(at 1.75 1.75 180)
 		(size 0.1 0.1)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(zone_connect 1)
 		(thermal_bridge_width 0.5)
 		(thermal_bridge_angle 90)
@@ -253,5 +241,17 @@
 			)
 		)
 		(uuid "5d9bf457-126c-4df9-b60a-f288c709a3d1")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/Hatlabs.3dshapes/SMD_BD5.6-D4.1.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 0.5)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
 	)
 )

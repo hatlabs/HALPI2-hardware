@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "435d6099-f375-40ee-a2b8-9b8a09c29be3")
 	(paper "A4")
 	(title_block
@@ -16,9 +16,13 @@
 	(lib_symbols
 		(symbol "power:GND"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -109,7 +113,31 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(rectangle
+		(start 27.305 13.97)
+		(end 135.89 194.945)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 37f3f531-e9f0-4936-b54c-9cb89d69c615)
+	)
+	(text "Supercapacitor balancing circuit modeled after\nhttps://www.eevblog.com/forum/renewable-energy/supercapacitor-balancer/"
+		(exclude_from_sim no)
+		(at 29.972 19.812 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ecbe1836-0fcb-41b3-bdc4-5638e0005f87")
 	)
 	(junction
 		(at 60.96 50.8)
@@ -396,29 +424,6 @@
 			(type default)
 		)
 		(uuid "f1e98eca-79dd-4624-b62e-5182cda522d8")
-	)
-	(rectangle
-		(start 27.305 13.97)
-		(end 135.89 194.945)
-		(stroke
-			(width 0)
-			(type dash)
-		)
-		(fill
-			(type none)
-		)
-		(uuid 37f3f531-e9f0-4936-b54c-9cb89d69c615)
-	)
-	(text "Supercapacitor balancing circuit modeled after\nhttps://www.eevblog.com/forum/renewable-energy/supercapacitor-balancer/"
-		(exclude_from_sim no)
-		(at 29.972 19.812 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "ecbe1836-0fcb-41b3-bdc4-5638e0005f87")
 	)
 	(hierarchical_label "Vcap"
 		(shape bidirectional)
@@ -734,6 +739,10 @@
 	(sheet
 		(at 63.5 58.42)
 		(size 31.75 18.415)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -763,43 +772,43 @@
 		)
 		(pin "R+" bidirectional
 			(at 63.5 62.23 180)
+			(uuid "2680f652-080e-49ed-81f4-f077625f2869")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "2680f652-080e-49ed-81f4-f077625f2869")
 		)
 		(pin "R-" bidirectional
 			(at 63.5 72.39 180)
+			(uuid "1ed88608-37b2-492f-81f0-519b97c7018a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "1ed88608-37b2-492f-81f0-519b97c7018a")
 		)
 		(pin "C+" bidirectional
 			(at 95.25 62.23 0)
+			(uuid "fb0c7f54-2e4a-411f-9215-041d2ca80f9c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "fb0c7f54-2e4a-411f-9215-041d2ca80f9c")
 		)
 		(pin "C-" bidirectional
 			(at 95.25 72.39 0)
+			(uuid "308501cb-5411-44df-b0d0-a7cb19ef2341")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "308501cb-5411-44df-b0d0-a7cb19ef2341")
 		)
 		(instances
 			(project "HALPI2"
@@ -812,6 +821,10 @@
 	(sheet
 		(at 63.5 104.14)
 		(size 31.75 18.415)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -841,43 +854,43 @@
 		)
 		(pin "R+" bidirectional
 			(at 63.5 107.95 180)
+			(uuid "896f8ce8-2594-4f36-890d-2eab5a329f60")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "896f8ce8-2594-4f36-890d-2eab5a329f60")
 		)
 		(pin "R-" bidirectional
 			(at 63.5 118.11 180)
+			(uuid "b1219c5c-2645-49d6-97a9-cba45dfedcc1")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "b1219c5c-2645-49d6-97a9-cba45dfedcc1")
 		)
 		(pin "C+" bidirectional
 			(at 95.25 107.95 0)
+			(uuid "8c733083-aa25-47e9-be9c-de1191d90ee7")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "8c733083-aa25-47e9-be9c-de1191d90ee7")
 		)
 		(pin "C-" bidirectional
 			(at 95.25 118.11 0)
+			(uuid "19be7c94-0de6-4fa9-83a4-abfdd3d8c2f5")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "19be7c94-0de6-4fa9-83a4-abfdd3d8c2f5")
 		)
 		(instances
 			(project "HALPI2"
@@ -890,6 +903,10 @@
 	(sheet
 		(at 63.5 127)
 		(size 31.75 18.415)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -919,43 +936,43 @@
 		)
 		(pin "R+" bidirectional
 			(at 63.5 130.81 180)
+			(uuid "9af8d57d-0642-48cd-8cf5-70884400c41e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "9af8d57d-0642-48cd-8cf5-70884400c41e")
 		)
 		(pin "R-" bidirectional
 			(at 63.5 140.97 180)
+			(uuid "e0dd9338-de11-413d-8a5f-ec3d66548d42")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "e0dd9338-de11-413d-8a5f-ec3d66548d42")
 		)
 		(pin "C+" bidirectional
 			(at 95.25 130.81 0)
+			(uuid "c33b176c-8708-41aa-b0c2-337ed6acab03")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "c33b176c-8708-41aa-b0c2-337ed6acab03")
 		)
 		(pin "C-" bidirectional
 			(at 95.25 140.97 0)
+			(uuid "a3da8180-4437-471a-8a08-481081885833")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "a3da8180-4437-471a-8a08-481081885833")
 		)
 		(instances
 			(project "HALPI2"
@@ -968,6 +985,10 @@
 	(sheet
 		(at 63.5 81.28)
 		(size 31.75 18.415)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -996,43 +1017,43 @@
 		)
 		(pin "R+" bidirectional
 			(at 63.5 85.09 180)
+			(uuid "60584b56-f1ca-45e4-b532-69979b2347fe")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "60584b56-f1ca-45e4-b532-69979b2347fe")
 		)
 		(pin "R-" bidirectional
 			(at 63.5 95.25 180)
+			(uuid "21232edc-01e8-4601-afe6-6ad24b1acadf")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "21232edc-01e8-4601-afe6-6ad24b1acadf")
 		)
 		(pin "C+" bidirectional
 			(at 95.25 85.09 0)
+			(uuid "261cae9e-1583-4ace-84c3-bf0f23b2c5cd")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "261cae9e-1583-4ace-84c3-bf0f23b2c5cd")
 		)
 		(pin "C-" bidirectional
 			(at 95.25 95.25 0)
+			(uuid "5385f8da-438c-46f9-b45c-901f1bd050a6")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "5385f8da-438c-46f9-b45c-901f1bd050a6")
 		)
 		(instances
 			(project "HALPI2"

@@ -4,35 +4,21 @@
 ## General design rules
 
 (rule "pad_clearance"
-    (condition "A.Type == 'Pad'")
-    (constraint clearance (min 0.1mm)))
+    (condition "(A.Type == 'Pad')")
+    (constraint clearance (min 0.2mm)))
+
+(rule "pad_zone_clearance"
+    (condition "(A.Type == 'Pad') && (B.Type == 'Zone')")
+    (constraint clearance (min 0.3mm)))
+
 
 ########################################################################################
 ## Single-ended signal traces
 
-# Calculated using the JLCPCB Impedance Calculator.
-
-# Clearance is set to 2W.
-
-(rule "single_50ohm_layer1"
-    (condition "(A.Type == 'Track') && (A.NetClass == 'Default') && A.existsOnLayer('F.Cu')")
-    (constraint track_width (opt 0.1565mm))
-    (constraint clearance (min 0.313mm)))
-
-(rule "single_50ohm_layer3"
-    (condition "(A.Type == 'Track') && (A.NetClass == 'Default') && A.existsOnLayer('In2.Cu')")
-    (constraint track_width (opt 0.1425mm))
-    (constraint clearance (min 0.285mm)))
-
-(rule "single_50ohm_layer5"
-    (condition "(A.Type == 'Track') && (A.NetClass == 'Default') && A.existsOnLayer('In4.Cu')")
-    (constraint track_width (opt 0.1318mm))
-    (constraint clearance (min 0.2636mm)))
-
-(rule "single_50ohm_layer6"
-    (condition "(A.Type == 'Track') && (A.NetClass == 'Default') && A.existsOnLayer('B.Cu')")
-    (constraint track_width (opt 0.1565mm))
-    (constraint clearance (min 0.313mm)))
+(rule "digital"
+    (condition "(A.hasNetClass('Digital'))")
+    (constraint track_width (min 0.1mm) (opt 0.15mm) (max 0.3mm))
+    (constraint clearance (min 0.3mm)))
 
 ########################################################################################
 ## Differential pairs
@@ -59,6 +45,12 @@
     (constraint clearance (min 0.4038mm))
     (constraint diff_pair_gap (min 0.1mm) (opt 0.2mm) (max 0.25mm)))
 
+(rule diff_90ohm_layer6
+    (condition "(A.Type == 'Track') && (A.inDiffPair('*/PCIe*') || A.inDiffPair('*/USB*')) && A.existsOnLayer('B.Cu')")
+    (constraint track_width (opt 0.1575mm))
+    (constraint clearance (min 0.315mm))
+    (constraint diff_pair_gap (min 0.1mm) (opt 0.2mm) (max 0.25mm)))
+
 (rule "diff_100ohm_layer1"
     (condition "(A.Type == 'Track') && (A.inDiffPair('*/ETH*') || A.inDiffPair('*/HDMI*') || A.inDiffPair('*/DPHY*')) && A.existsOnLayer('F.Cu')")
     (constraint track_width (opt 0.1326mm))
@@ -77,6 +69,12 @@
     (constraint clearance (min 0.339mm))
     (constraint diff_pair_gap (min 0.1mm) (opt 0.25mm) (max 0.28mm)))
 
+(rule "diff_100ohm_layer1"
+    (condition "(A.Type == 'Track') && (A.inDiffPair('*/ETH*') || A.inDiffPair('*/HDMI*') || A.inDiffPair('*/DPHY*')) && A.existsOnLayer('B.Cu')")
+    (constraint track_width (opt 0.1326mm))
+    (constraint clearance (opt 0.3978mm))
+    (constraint diff_pair_gap (min 0.1mm) (opt 0.25mm) (max 0.28mm)))
+
 (rule "ignore_diff_pair_member_clearance"
     (condition "AB.isCoupledDiffPair()")
     (constraint clearance (min 0.1mm)))
@@ -85,7 +83,7 @@
 ## Vias
 
 (rule "gnd_via_clearance"
-    (condition "A.Type == 'Via' && A.NetName == 'GND'")
+    (condition "A.Type == 'Via' && (A.hasNetclass('GND'))")
     (constraint clearance (min 0.1mm)))
 
 ########################################################################################
@@ -93,14 +91,26 @@
 
 # Required to allow traces to neck-down when connecting to a component.
 
-#(rule "neck_down"
-#    (condition "A.intersectsCourtyard('*')")
+#(rule "neckdown"
+#    (condition "((A.Type == 'Track' ) || (A.Type == 'Via')) && (A.intersectsCourtyard('${Class:fine_pitch}'))")
 #    (constraint clearance (min 0.1mm)))
 
-(rule "neck_down"
-    (condition "A.intersectsCourtyard('J*') || A.intersectsCourtyard('U*')")
+# This also affects pad clearance
+
+(rule "neckdown"
+    (condition "(A.Type != 'Zone') && (A.intersectsCourtyard('${Class:fine_pitch}'))")
     (constraint clearance (min 0.1mm)))
 
-#(rule "neck_down"
-#    (condition "A.Type == 'Track' && B.Type == 'Pad'")
-#    (constraint clearance (min 0.1mm)))
+########################################################################################
+## Zones
+
+(rule "isolated_zone_clearance"
+    (condition "A.NetName == 'GND' && (B.NetName == 'GND_CAN' || B.NetName == 'GND_RS485')")
+    (constraint clearance (min 1.0mm)))
+
+########################################################################################
+## Other netclasses
+
+(rule "HV_clearance"
+    (condition "A.hasNetClass('HV') && !B.hasNetClass('HV')")
+    (constraint clearance (min 1.0mm)))

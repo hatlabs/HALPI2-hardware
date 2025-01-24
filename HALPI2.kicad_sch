@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "abc482bd-3f17-4d35-80db-1da3dcdb5c27")
 	(paper "A4")
 	(title_block
@@ -14,6 +14,28 @@
 		(comment 3 "HALPI2 is licensed under CC BY 4.0.")
 	)
 	(lib_symbols)
+	(text "Connectors\n-------\nHDMI 0\nHDMI 1\nDPHY 0\nDPHY 1"
+		(exclude_from_sim no)
+		(at 130.048 97.536 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4bf8a8d5-9f88-49ef-9663-9c163085ac61")
+	)
+	(text "Connectors\n-------\n40way RPI\nJumpers"
+		(exclude_from_sim no)
+		(at 133.096 44.704 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4fd238d0-f3c3-4bab-93f0-7f4050d42d72")
+	)
 	(bus
 		(pts
 			(xy 160.02 116.84) (xy 162.56 116.84)
@@ -143,6 +165,16 @@
 			(type default)
 		)
 		(uuid "4eead23a-1c1b-4d18-b973-c93a35ceeb99")
+	)
+	(bus
+		(pts
+			(xy 203.2 120.65) (xy 205.74 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50d538b6-3f34-4f4b-a953-bc58e76462c6")
 	)
 	(wire
 		(pts
@@ -484,28 +516,6 @@
 		)
 		(uuid "fb8c7d56-3e68-4ec4-a165-4a5833cbeff2")
 	)
-	(text "Connectors\n-------\nHDMI 0\nHDMI 1\nDPHY 0\nDPHY 1"
-		(exclude_from_sim no)
-		(at 130.048 97.536 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "4bf8a8d5-9f88-49ef-9663-9c163085ac61")
-	)
-	(text "Connectors\n-------\n40way RPI\nJumpers"
-		(exclude_from_sim no)
-		(at 133.096 44.704 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "4fd238d0-f3c3-4bab-93f0-7f4050d42d72")
-	)
 	(label "EN5V"
 		(at 33.02 123.19 180)
 		(effects
@@ -566,7 +576,7 @@
 		)
 		(uuid "179a2fb1-6cd4-4669-96ad-fa76b03cb52d")
 	)
-	(label "RS485{UART}"
+	(label "RS485{RS485}"
 		(at 203.2 69.85 180)
 		(effects
 			(font
@@ -686,7 +696,7 @@
 		)
 		(uuid "4fcf96d0-c032-41d8-afb4-2f3d10ab2388")
 	)
-	(label "RS485{UART}"
+	(label "RS485{RS485}"
 		(at 162.56 44.45 0)
 		(effects
 			(font
@@ -906,6 +916,16 @@
 		)
 		(uuid "db4ef89e-cde0-41eb-8f22-1a5aab85ba15")
 	)
+	(label "I2C0{I2C}"
+		(at 203.2 120.65 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e0e46b15-a5f2-4224-98c4-a6a8de94b032")
+	)
 	(label "CAN{SPI}"
 		(at 162.56 41.91 0)
 		(effects
@@ -949,6 +969,10 @@
 	(sheet
 		(at 205.74 66.04)
 		(size 35.56 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -976,15 +1000,15 @@
 				(justify left top)
 			)
 		)
-		(pin "RS485{UART}" bidirectional
+		(pin "RS485{RS485}" bidirectional
 			(at 205.74 69.85 180)
+			(uuid "a0405307-8be1-4f86-b211-786c38cb5856")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "a0405307-8be1-4f86-b211-786c38cb5856")
 		)
 		(instances
 			(project "HALPI2"
@@ -997,6 +1021,10 @@
 	(sheet
 		(at 35.56 62.23)
 		(size 35.56 20.32)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(stroke
 			(width 0)
 			(type solid)
@@ -1026,13 +1054,13 @@
 		)
 		(pin "ETH{ETH}" bidirectional
 			(at 71.12 64.77 0)
+			(uuid "e973e03f-2fde-4b73-a423-476755a06004")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "e973e03f-2fde-4b73-a423-476755a06004")
 		)
 		(instances
 			(project "HALPI2"
@@ -1045,6 +1073,10 @@
 	(sheet
 		(at 205.74 44.45)
 		(size 35.56 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -1074,13 +1106,13 @@
 		)
 		(pin "CAN{SPI}" input
 			(at 205.74 49.53 180)
+			(uuid "84e9dc5f-0969-451d-99fb-94b43fd9a282")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "84e9dc5f-0969-451d-99fb-94b43fd9a282")
 		)
 		(instances
 			(project "HALPI2"
@@ -1093,6 +1125,10 @@
 	(sheet
 		(at 205.74 87.63)
 		(size 35.56 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(stroke
 			(width 0)
 			(type solid)
@@ -1122,13 +1158,13 @@
 		)
 		(pin "SD{SD}" bidirectional
 			(at 205.74 90.17 180)
+			(uuid "e2b751d7-ef65-4871-b115-de56ee6bf2fd")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "e2b751d7-ef65-4871-b115-de56ee6bf2fd")
 		)
 		(instances
 			(project "HALPI2"
@@ -1141,6 +1177,10 @@
 	(sheet
 		(at 115.57 34.29)
 		(size 44.45 29.21)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(stroke
 			(width 0)
 			(type solid)
@@ -1170,163 +1210,163 @@
 		)
 		(pin "ETH{ETH}" bidirectional
 			(at 115.57 55.88 180)
+			(uuid "c8965626-ebb7-4b9c-a885-bb7cc1519729")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "c8965626-ebb7-4b9c-a885-bb7cc1519729")
 		)
 		(pin "I2C0{I2C}" bidirectional
 			(at 115.57 60.96 180)
+			(uuid "eeccd782-552b-4985-a4f0-737b74060318")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "eeccd782-552b-4985-a4f0-737b74060318")
 		)
 		(pin "SD{SD}" bidirectional
 			(at 160.02 46.99 0)
+			(uuid "54e675ac-4be0-4c7a-bac9-c760d208b4a2")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "54e675ac-4be0-4c7a-bac9-c760d208b4a2")
 		)
 		(pin "~{LED_PWR}" output
 			(at 160.02 60.96 0)
+			(uuid "e68109dc-ed5b-4115-b10c-86e3e1cd8f5e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "e68109dc-ed5b-4115-b10c-86e3e1cd8f5e")
 		)
 		(pin "~{LED_ACT}" output
 			(at 160.02 58.42 0)
+			(uuid "08a4315f-d715-4c5d-bb7b-db9b1e5d6917")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "08a4315f-d715-4c5d-bb7b-db9b1e5d6917")
 		)
 		(pin "FAN_PWM" output
 			(at 160.02 38.1 0)
+			(uuid "9fdef8b1-1ed1-4a09-9c65-439d27d4943e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "9fdef8b1-1ed1-4a09-9c65-439d27d4943e")
 		)
 		(pin "CAN{SPI}" bidirectional
 			(at 160.02 41.91 0)
+			(uuid "bb1eb8e9-663c-4ee6-822e-c8213cde126f")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "bb1eb8e9-663c-4ee6-822e-c8213cde126f")
 		)
 		(pin "Console{UART}" bidirectional
 			(at 160.02 50.8 0)
+			(uuid "a601971e-69ed-471a-a3f6-c87cb66240fe")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "a601971e-69ed-471a-a3f6-c87cb66240fe")
 		)
 		(pin "Prg{UART}" bidirectional
 			(at 160.02 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
 			(uuid "5872f80f-7a08-4323-ae2f-a8136ca33813")
-		)
-		(pin "RS485{UART}" bidirectional
-			(at 160.02 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
+		)
+		(pin "RS485{RS485}" bidirectional
+			(at 160.02 44.45 0)
 			(uuid "61bb6bd1-c8ab-48f3-8b74-d3cfba09a4b9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
 		)
 		(pin "I2C{I2C}" bidirectional
 			(at 115.57 58.42 180)
+			(uuid "c26d3dc2-1a72-4a80-8b5e-8fed763fa00a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "c26d3dc2-1a72-4a80-8b5e-8fed763fa00a")
 		)
 		(pin "CAM_GPIO0" output
 			(at 134.62 63.5 270)
+			(uuid "f4afc624-0806-4ec4-92ed-c9436441c8a7")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "f4afc624-0806-4ec4-92ed-c9436441c8a7")
 		)
 		(pin "ID{I2C}" bidirectional
 			(at 142.24 63.5 270)
+			(uuid "1c04c330-0ebe-43eb-bfff-f46d92894ca7")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "1c04c330-0ebe-43eb-bfff-f46d92894ca7")
 		)
 		(pin "CAM_GPIO1" output
 			(at 137.16 63.5 270)
+			(uuid "0652c008-41f4-4ebc-a789-a02ef1d7d11f")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "0652c008-41f4-4ebc-a789-a02ef1d7d11f")
 		)
 		(pin "PWR_BUTTON" input
 			(at 115.57 44.45 180)
+			(uuid "72b1157c-40aa-4142-9714-baba978b9ea4")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "72b1157c-40aa-4142-9714-baba978b9ea4")
 		)
 		(pin "VBAT" input
 			(at 115.57 46.99 180)
+			(uuid "227de73b-ec81-4e33-bda5-a76201cbef2e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "227de73b-ec81-4e33-bda5-a76201cbef2e")
 		)
 		(instances
 			(project "HALPI2"
@@ -1339,6 +1379,10 @@
 	(sheet
 		(at 115.57 114.3)
 		(size 44.45 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -1368,123 +1412,123 @@
 		)
 		(pin "Prg{UART}" bidirectional
 			(at 160.02 116.84 0)
+			(uuid "619c3057-d3b3-4c25-bdf3-843835f158a3")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "619c3057-d3b3-4c25-bdf3-843835f158a3")
 		)
 		(pin "Console{UART}" bidirectional
 			(at 160.02 119.38 0)
+			(uuid "7806cee0-3fd9-4afa-84ac-e2286e60a82e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "7806cee0-3fd9-4afa-84ac-e2286e60a82e")
 		)
 		(pin "Vin_prot" input
 			(at 115.57 127 180)
+			(uuid "6b4f1da1-0804-4a5f-ab9b-d4f85225dfb7")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "6b4f1da1-0804-4a5f-ab9b-d4f85225dfb7")
 		)
 		(pin "Vcap" input
 			(at 115.57 129.54 180)
+			(uuid "d7ad14e1-d8a9-4175-bc55-388038823b54")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "d7ad14e1-d8a9-4175-bc55-388038823b54")
 		)
 		(pin "I2C0{I2C}" bidirectional
 			(at 115.57 137.16 180)
+			(uuid "44f71200-75c3-4d8c-a3b4-4bad737d66c0")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "44f71200-75c3-4d8c-a3b4-4bad737d66c0")
 		)
 		(pin "EN5V" output
 			(at 160.02 121.92 0)
+			(uuid "68ef7b1d-79e5-43ea-b3e1-b6a081af97ac")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "68ef7b1d-79e5-43ea-b3e1-b6a081af97ac")
 		)
 		(pin "RTC_INT" input
 			(at 115.57 124.46 180)
+			(uuid "c07331c5-cf28-4283-9f96-ad620e0baa8f")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "c07331c5-cf28-4283-9f96-ad620e0baa8f")
 		)
 		(pin "Iin" input
 			(at 115.57 132.08 180)
+			(uuid "6c00fd8b-dcb1-4f46-aab9-8f07454b2be2")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "6c00fd8b-dcb1-4f46-aab9-8f07454b2be2")
 		)
 		(pin "~{LED_PWR}" input
 			(at 115.57 116.84 180)
+			(uuid "8c7b2072-0025-43af-a48f-4de59d38e911")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "8c7b2072-0025-43af-a48f-4de59d38e911")
 		)
 		(pin "~{LED_ACT}" input
 			(at 115.57 119.38 180)
+			(uuid "3cffec15-f956-464e-9ef1-8ba5d3256a10")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "3cffec15-f956-464e-9ef1-8ba5d3256a10")
 		)
 		(pin "PWR_BTN_OUT" output
 			(at 160.02 124.46 0)
+			(uuid "1a36131c-9218-4a37-b18f-7ac990a87254")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "1a36131c-9218-4a37-b18f-7ac990a87254")
 		)
 		(pin "VBAT" output
 			(at 115.57 121.92 180)
+			(uuid "9b8199d8-dfc2-488e-a0a6-2c9aa0a3c51a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "9b8199d8-dfc2-488e-a0a6-2c9aa0a3c51a")
 		)
 		(instances
 			(project "HALPI2"
@@ -1497,6 +1541,10 @@
 	(sheet
 		(at 115.57 72.39)
 		(size 44.45 26.67)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -1526,93 +1574,93 @@
 		)
 		(pin "I2C0{I2C}" bidirectional
 			(at 115.57 96.52 180)
+			(uuid "ca8d61cd-bed4-4add-ae7d-5190d4937e5b")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "ca8d61cd-bed4-4add-ae7d-5190d4937e5b")
 		)
 		(pin "CAM_GPIO0" input
 			(at 134.62 72.39 90)
+			(uuid "9b065063-36a3-448c-89db-5827217f7e6a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "9b065063-36a3-448c-89db-5827217f7e6a")
 		)
 		(pin "CAM_GPIO1" input
 			(at 137.16 72.39 90)
+			(uuid "193cf731-9228-4281-8c23-346188144365")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "193cf731-9228-4281-8c23-346188144365")
 		)
 		(pin "PCIe{PCIe}" bidirectional
 			(at 160.02 76.2 0)
+			(uuid "c56a734d-86ec-442a-a8e4-483ac036398d")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "c56a734d-86ec-442a-a8e4-483ac036398d")
 		)
 		(pin "ID{I2C}" bidirectional
 			(at 142.24 72.39 90)
+			(uuid "aed199e2-c3f1-45d7-92d2-9a1b3d0cd9f2")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "aed199e2-c3f1-45d7-92d2-9a1b3d0cd9f2")
 		)
 		(pin "USB{USB2}" bidirectional
 			(at 115.57 92.71 180)
+			(uuid "fa8d416c-4d1b-47f5-8189-5a1275bc060f")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "fa8d416c-4d1b-47f5-8189-5a1275bc060f")
 		)
 		(pin "USB3-1{USB3}" bidirectional
 			(at 160.02 95.25 0)
+			(uuid "cda24ff6-4f18-4791-919d-49ad062a8981")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "cda24ff6-4f18-4791-919d-49ad062a8981")
 		)
 		(pin "USB3-0{USB3}" bidirectional
 			(at 160.02 92.71 0)
+			(uuid "c1b51c74-7bf1-41f2-b807-eeaa639132b1")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "c1b51c74-7bf1-41f2-b807-eeaa639132b1")
 		)
 		(pin "VBUS_EN" output
 			(at 160.02 90.17 0)
+			(uuid "06f14df6-95d7-45fb-be95-74c0671f9ed9")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "06f14df6-95d7-45fb-be95-74c0671f9ed9")
 		)
 		(instances
 			(project "HALPI2"
@@ -1625,6 +1673,10 @@
 	(sheet
 		(at 205.74 22.86)
 		(size 35.56 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(stroke
 			(width 0)
 			(type solid)
@@ -1654,13 +1706,13 @@
 		)
 		(pin "PCIe{PCIe}" bidirectional
 			(at 205.74 33.02 180)
+			(uuid "664aff06-563e-4a62-8313-6186ba1b95cd")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "664aff06-563e-4a62-8313-6186ba1b95cd")
 		)
 		(instances
 			(project "HALPI2"
@@ -1673,6 +1725,10 @@
 	(sheet
 		(at 35.56 30.48)
 		(size 35.56 22.86)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(stroke
 			(width 0)
 			(type solid)
@@ -1702,13 +1758,13 @@
 		)
 		(pin "USB{USB2}" bidirectional
 			(at 71.12 36.83 0)
+			(uuid "bb9eaf46-9245-473c-aa30-30550fb5e9c9")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "bb9eaf46-9245-473c-aa30-30550fb5e9c9")
 		)
 		(instances
 			(project "HALPI2"
@@ -1721,6 +1777,10 @@
 	(sheet
 		(at 205.74 108.585)
 		(size 35.56 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -1750,33 +1810,43 @@
 		)
 		(pin "USB3-0{USB3}" bidirectional
 			(at 205.74 113.03 180)
+			(uuid "bd1e6d4c-fae8-4f6d-972d-9075d0fce7ae")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "bd1e6d4c-fae8-4f6d-972d-9075d0fce7ae")
 		)
 		(pin "USB3-1{USB3}" bidirectional
 			(at 205.74 115.57 180)
+			(uuid "4a176a28-97a9-4472-8b3c-ad2567601c81")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "4a176a28-97a9-4472-8b3c-ad2567601c81")
 		)
 		(pin "VBUS_EN" input
 			(at 205.74 118.11 180)
+			(uuid "2353ca64-cbe2-400f-8803-77d3d6e7ec0b")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "2353ca64-cbe2-400f-8803-77d3d6e7ec0b")
+		)
+		(pin "I2C0{I2C}" bidirectional
+			(at 205.74 120.65 180)
+			(uuid "466448cc-888b-42ec-a34e-10d26a7a16a3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
 		)
 		(instances
 			(project "HALPI2"
@@ -1789,6 +1859,10 @@
 	(sheet
 		(at 35.56 120.65)
 		(size 35.56 22.86)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(stroke
 			(width 0)
 			(type solid)
@@ -1818,43 +1892,43 @@
 		)
 		(pin "Iin" output
 			(at 71.12 140.97 0)
+			(uuid "7df0faba-ef1b-4f01-bdc7-9e88667d9af7")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "7df0faba-ef1b-4f01-bdc7-9e88667d9af7")
 		)
 		(pin "EN5V" input
 			(at 35.56 123.19 180)
+			(uuid "43ddbb20-ba71-449d-88d3-9f5bbed43853")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "43ddbb20-ba71-449d-88d3-9f5bbed43853")
 		)
 		(pin "Vcap" output
 			(at 71.12 138.43 0)
+			(uuid "deacb2d3-f6c4-48f5-a033-087db85660fe")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "deacb2d3-f6c4-48f5-a033-087db85660fe")
 		)
 		(pin "Vin_prot" output
 			(at 71.12 135.89 0)
+			(uuid "66410a0a-80bf-41fd-ac75-1d59563fdd17")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "66410a0a-80bf-41fd-ac75-1d59563fdd17")
 		)
 		(instances
 			(project "HALPI2"
@@ -1867,6 +1941,10 @@
 	(sheet
 		(at 205.74 135.255)
 		(size 35.56 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -1907,4 +1985,5 @@
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )

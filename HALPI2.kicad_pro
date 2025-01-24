@@ -49,7 +49,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.2
+          "min_clearance": 0.5
         }
       },
       "diff_pair_dimensions": [
@@ -57,6 +57,11 @@
           "gap": 0.0,
           "via_gap": 0.0,
           "width": 0.0
+        },
+        {
+          "gap": 0.3,
+          "via_gap": 0.3,
+          "width": 0.2
         }
       ],
       "drc_exclusions": [],
@@ -70,16 +75,19 @@
         "copper_edge_clearance": "error",
         "copper_sliver": "warning",
         "courtyards_overlap": "ignore",
+        "creepage": "error",
         "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
         "drill_out_of_range": "error",
         "duplicate_footprints": "warning",
         "extra_footprint": "warning",
         "footprint": "error",
+        "footprint_filters_mismatch": "ignore",
         "footprint_symbol_mismatch": "warning",
         "footprint_type_mismatch": "error",
         "hole_clearance": "error",
         "hole_near_hole": "error",
+        "hole_to_hole": "error",
         "holes_co_located": "warning",
         "invalid_outline": "error",
         "isolated_copper": "warning",
@@ -90,9 +98,11 @@
         "lib_footprint_mismatch": "warning",
         "malformed_courtyard": "error",
         "microvia_drill_out_of_range": "error",
+        "mirrored_text_on_front_layer": "warning",
         "missing_courtyard": "ignore",
         "missing_footprint": "warning",
         "net_conflict": "warning",
+        "nonmirrored_text_on_back_layer": "warning",
         "npth_inside_courtyard": "ignore",
         "padstack": "error",
         "pth_inside_courtyard": "ignore",
@@ -107,7 +117,9 @@
         "text_thickness": "warning",
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
+        "track_angle": "error",
         "track_dangling": "warning",
+        "track_segment_length": "error",
         "track_width": "error",
         "tracks_crossing": "error",
         "unconnected_items": "error",
@@ -120,8 +132,9 @@
         "allow_microvias": false,
         "max_error": 0.005,
         "min_clearance": 0.1,
-        "min_connection": 0.0,
+        "min_connection": 0.1,
         "min_copper_edge_clearance": 0.3,
+        "min_groove_width": 0.0,
         "min_hole_clearance": 0.127,
         "min_hole_to_hole": 0.254,
         "min_microvia_diameter": 0.2,
@@ -132,23 +145,24 @@
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.2,
         "min_track_width": 0.1,
-        "min_via_annular_width": 0.125,
+        "min_via_annular_width": 0.05,
         "min_via_diameter": 0.45,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
         {
-          "td_onpadsmd": true,
+          "td_onpthpad": true,
           "td_onroundshapesonly": false,
+          "td_onsmdpad": true,
           "td_ontrackend": false,
-          "td_onviapad": true
+          "td_onvia": true
         }
       ],
       "teardrop_parameters": [
         {
           "td_allow_use_two_tracks": true,
-          "td_curve_segcount": 0,
+          "td_curve_segcount": 1,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -159,7 +173,7 @@
         },
         {
           "td_allow_use_two_tracks": true,
-          "td_curve_segcount": 0,
+          "td_curve_segcount": 1,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -170,7 +184,7 @@
         },
         {
           "td_allow_use_two_tracks": true,
-          "td_curve_segcount": 0,
+          "td_curve_segcount": 1,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -206,7 +220,7 @@
           "max_amplitude": 1.0,
           "min_amplitude": 0.2,
           "single_sided": false,
-          "spacing": 0.6
+          "spacing": 0.5
         },
         "single_track_defaults": {
           "corner_radius_percentage": 80,
@@ -253,6 +267,23 @@
       "mfg": "",
       "mpn": ""
     },
+    "layer_pairs": [
+      {
+        "bottomLayer": 2,
+        "enabled": true,
+        "topLayer": 0
+      },
+      {
+        "bottomLayer": 6,
+        "enabled": true,
+        "topLayer": 0
+      },
+      {
+        "bottomLayer": 2,
+        "enabled": true,
+        "topLayer": 6
+      }
+    ],
     "layer_presets": [],
     "viewports": []
   },
@@ -448,10 +479,15 @@
       "duplicate_sheet_names": "error",
       "endpoint_off_grid": "warning",
       "extra_units": "error",
+      "footprint_filter": "ignore",
+      "footprint_link_issues": "warning",
+      "four_way_junction": "ignore",
       "global_label_dangling": "warning",
       "hier_label_mismatch": "error",
       "label_dangling": "error",
+      "label_multiple_wires": "warning",
       "lib_symbol_issues": "warning",
+      "lib_symbol_mismatch": "warning",
       "missing_bidi_pin": "warning",
       "missing_input_pin": "warning",
       "missing_power_pin": "error",
@@ -464,9 +500,14 @@
       "pin_not_driven": "error",
       "pin_to_pin": "error",
       "power_pin_not_driven": "error",
+      "same_local_global_label": "warning",
+      "similar_label_and_power": "warning",
       "similar_labels": "warning",
+      "similar_power": "warning",
       "simulation_model_issue": "ignore",
+      "single_global_label": "ignore",
       "unannotated": "error",
+      "unconnected_wire_endpoint": "warning",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
       "wire_dangling": "error"
@@ -478,14 +519,14 @@
   },
   "meta": {
     "filename": "HALPI2.kicad_pro",
-    "version": 1
+    "version": 3
   },
   "net_settings": {
     "classes": [
       {
         "bus_width": 12,
         "clearance": 0.3,
-        "diff_pair_gap": 0.4,
+        "diff_pair_gap": 0.2,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
         "line_style": 0,
@@ -493,6 +534,7 @@
         "microvia_drill": 0.1,
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.3,
         "via_diameter": 0.45,
@@ -503,13 +545,13 @@
         "bus_width": 12,
         "clearance": 0.3,
         "diff_pair_gap": 0.4,
-        "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "Analog",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 5,
         "schematic_color": "rgb(0, 0, 194)",
         "track_width": 0.4,
         "via_diameter": 0.45,
@@ -517,134 +559,1091 @@
         "wire_width": 5
       },
       {
+        "name": "Diff100ohm",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgb(255, 141, 141)"
+      },
+      {
+        "name": "Diff90ohm",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgb(255, 141, 141)"
+      },
+      {
+        "clearance": 0.3,
+        "name": "Digital",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2,
+        "schematic_color": "rgb(132, 132, 0)",
+        "track_width": 0.15,
+        "via_diameter": 0.4,
+        "via_drill": 0.3
+      },
+      {
+        "name": "GND",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 4,
+        "schematic_color": "rgba(0, 0, 0, 0.000)"
+      },
+      {
+        "name": "HV",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 3,
+        "schematic_color": "rgb(255, 153, 0)"
+      },
+      {
         "bus_width": 12,
         "clearance": 0.3,
         "diff_pair_gap": 0.4,
-        "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "Power",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 6,
         "schematic_color": "rgb(194, 0, 0)",
-        "track_width": 1.0,
-        "via_diameter": 1.0,
-        "via_drill": 0.5,
+        "track_width": 0.4,
+        "via_diameter": 0.6,
+        "via_drill": 0.4,
         "wire_width": 5
       }
     ],
     "meta": {
-      "version": 3
+      "version": 4
     },
     "net_colors": null,
     "netclass_assignments": {
-      "/CAN bus/CANH": "Analog",
-      "/CAN bus/CANH_": "Analog",
-      "/CAN bus/CANL": "Analog",
-      "/CAN bus/CANL_": "Analog",
-      "/CAN bus/OSC1": "Analog",
-      "/CAN bus/OSC2": "Analog",
-      "/Controller/G": "Analog",
-      "/Controller/Ideal Diode Controller/B": "Analog",
-      "/Controller/ORed": "Power",
-      "/Controller/RTC/OSCI": "Analog",
-      "/Controller/RTC/OSCO": "Analog",
-      "/Controller/RTC/VDD": "Power",
-      "/Controller/VCC": "Power",
-      "/Controller/VcapS": "Analog",
-      "/Controller/VinS": "Analog",
-      "/Iin": "Analog",
-      "/Power/Buck converter 10V/B1_VIN": "HV",
-      "/Power/Buck converter 10V/BOOT": "Analog",
-      "/Power/Buck converter 10V/CCSB1": "Analog",
-      "/Power/Buck converter 10V/CCSC1": "Analog",
-      "/Power/Buck converter 10V/CCSE2": "Analog",
-      "/Power/Buck converter 10V/DA-": "Analog",
-      "/Power/Buck converter 10V/DAO": "Analog",
-      "/Power/Buck converter 10V/FB": "Analog",
-      "/Power/Buck converter 10V/FVSS": "Analog",
-      "/Power/Buck converter 10V/I1A9": "Analog",
-      "/Power/Buck converter 10V/I2A9": "Analog",
-      "/Power/Buck converter 10V/PG": "Analog",
-      "/Power/Buck converter 10V/VCC": "Analog",
-      "/Power/Buck converter 10V/VF-": "Analog",
-      "/Power/Buck converter 10V/VFO": "Analog",
-      "/Power/Buck converter 3.3V/BOOT_": "Analog",
-      "/Power/Buck converter 3.3V/FB": "Analog",
-      "/Power/Buck converter 3.3V/PG": "Analog",
-      "/Power/Buck converter 3.3V/SW": "Power",
-      "/Power/Buck converter 3.3V/VCC": "Analog",
-      "/Power/Buck converter 5V/BOOT_": "Analog",
-      "/Power/Buck converter 5V/FB": "Analog",
-      "/Power/Buck converter 5V/PG": "Analog",
-      "/Power/Buck converter 5V/SW": "Power",
-      "/Power/Buck converter 5V/VCC": "Analog",
-      "/Power/Input Protection/G": "Analog",
-      "/Power/Input Protection/VCAP": "Power",
-      "/Power/Supercaps/Supercap stage1/BO2-": "Analog",
-      "/Power/Supercaps/Supercap stage1/BO3+": "Analog",
-      "/Power/Supercaps/Supercap stage1/BO3o": "Analog",
-      "/Power/Supercaps/Supercap stage1/C+": "Power",
-      "/Power/Supercaps/Supercap stage1/R+": "Analog",
-      "/Power/Supercaps/Supercap stage2/BO2-": "Analog",
-      "/Power/Supercaps/Supercap stage2/BO3+": "Analog",
-      "/Power/Supercaps/Supercap stage2/BO3o": "Analog",
-      "/Power/Supercaps/Supercap stage2/C+": "Power",
-      "/Power/Supercaps/Supercap stage2/R+": "Analog",
-      "/Power/Supercaps/Supercap stage3/BO2-": "Analog",
-      "/Power/Supercaps/Supercap stage3/BO3+": "Analog",
-      "/Power/Supercaps/Supercap stage3/BO3o": "Analog",
-      "/Power/Supercaps/Supercap stage3/C+": "Power",
-      "/Power/Supercaps/Supercap stage3/R+": "Analog",
-      "/Power/Supercaps/Supercap stage4/BO2-": "Analog",
-      "/Power/Supercaps/Supercap stage4/BO3+": "Analog",
-      "/Power/Supercaps/Supercap stage4/BO3o": "Analog",
-      "/RS-485/RS485_RX_A": "Analog",
-      "/RS-485/RS485_RX_A_C": "Analog",
-      "/RS-485/RS485_RX_B": "Analog",
-      "/RS-485/RS485_RX_B_C": "Analog",
-      "/RS-485/RS485_TX_A": "Analog",
-      "/RS-485/RS485_TX_A_C": "Analog",
-      "/RS-485/RS485_TX_B": "Analog",
-      "/RS-485/RS485_TX_B_C": "Analog",
-      "/SDCard/+3.3VSD": "Power",
-      "/USB3/USB3 Hub/AVDD33": "Power",
-      "/USB3/USB3 Hub/ILIM": "Analog",
-      "/USB3/USB3 Hub/NGDRV": "Analog",
-      "/USB3/USB3 Hub/PGATE": "Analog",
-      "/USB3/USB3 Hub/PGDRV": "Analog",
-      "/USB3/USB3 Hub/RREF": "Analog",
-      "/USB3/USB3 Hub/SW": "Analog",
-      "/USB3/USB3 Hub/USB3 Interface1/VBUS": "Power",
-      "/USB3/USB3 Hub/USB3 Interface1/VBUS_": "Power",
-      "/USB3/USB3 Hub/USB3 Interface2/VBUS": "Power",
-      "/USB3/USB3 Hub/USB3 Interface2/VBUS_": "Power",
-      "/USB3/USB3 Hub/USB3 Interface3/VBUS": "Power",
-      "/USB3/USB3 Hub/USB3 Interface3/VBUS_": "Power",
-      "/USB3/USB3 Hub/USB3 Interface4/VBUS": "Power",
-      "/USB3/USB3 Hub/USB3 Interface4/VBUS_": "Power",
-      "/USB3/USB3 Hub/V10FB": "Analog",
-      "/USB3/USB3 Interface/VBUS": "Power",
-      "/USB3/USB3 Interface/VBUS_": "Power",
-      "/VBAT": "Power",
-      "/Vcap": "Power",
-      "/Vin_prot": "Power",
-      "Net-(C2110-Pad1)": "Analog",
-      "Net-(C2111-Pad1)": "Analog",
-      "Net-(C2112-Pad1)": "Analog",
-      "Net-(C2113-Pad1)": "Analog",
-      "Net-(D2103-A1)": "Analog",
-      "Net-(D2103-A2)": "Analog",
-      "Net-(D2105-A)": "Analog",
-      "Net-(D2106-A)": "Analog",
-      "Net-(J2101-Pin_2)": "Analog",
-      "Net-(J2101-Pin_3)": "Analog",
-      "Net-(JP1601-B)": "Analog"
+      "/CAN bus/CANH": [
+        "Analog"
+      ],
+      "/CAN bus/CANH_": [
+        "Analog"
+      ],
+      "/CAN bus/CANL": [
+        "Analog"
+      ],
+      "/CAN bus/CANL_": [
+        "Analog"
+      ],
+      "/CAN bus/RXCAN": [
+        "Digital"
+      ],
+      "/CAN bus/RXD": [
+        "Digital"
+      ],
+      "/CAN bus/TXCAN": [
+        "Digital"
+      ],
+      "/CAN bus/TXD": [
+        "Digital"
+      ],
+      "/CAN bus/Vin_": [
+        "Power"
+      ],
+      "/CAN bus/Vout_": [
+        "Power"
+      ],
+      "/CAN.CS": [
+        "Digital"
+      ],
+      "/CAN.INT": [
+        "Digital"
+      ],
+      "/CAN.SCK": [
+        "Digital"
+      ],
+      "/CAN.SDI": [
+        "Digital"
+      ],
+      "/CAN.SDO": [
+        "Digital"
+      ],
+      "/CM4 GPIO/CAM_GPIO0": [
+        "Digital"
+      ],
+      "/CM4 GPIO/CAM_GPIO1": [
+        "Digital"
+      ],
+      "/CM4 GPIO/CM5_FAN_PWM": [
+        "Digital"
+      ],
+      "/CM4 GPIO/EEPROM_nWP": [
+        "Digital"
+      ],
+      "/CM4 GPIO/FAN_TACHO": [
+        "Digital"
+      ],
+      "/CM4 GPIO/GPIO16": [
+        "Digital"
+      ],
+      "/CM4 GPIO/GPIO19": [
+        "Digital"
+      ],
+      "/CM4 GPIO/GPIO2": [
+        "Digital"
+      ],
+      "/CM4 GPIO/GPIO20": [
+        "Digital"
+      ],
+      "/CM4 GPIO/GPIO21": [
+        "Digital"
+      ],
+      "/CM4 GPIO/GPIO24": [
+        "Digital"
+      ],
+      "/CM4 GPIO/GPIO25": [
+        "Digital"
+      ],
+      "/CM4 GPIO/GPIO26": [
+        "Digital"
+      ],
+      "/CM4 GPIO/GPIO27": [
+        "Digital"
+      ],
+      "/CM4 GPIO/GPIO3": [
+        "Digital"
+      ],
+      "/CM4 GPIO/GPIO4": [
+        "Digital"
+      ],
+      "/CM4 GPIO/GPIO7": [
+        "Digital"
+      ],
+      "/CM4 GPIO/GPIO8": [
+        "Digital"
+      ],
+      "/CM4 GPIO/ID.SCL": [
+        "Digital"
+      ],
+      "/CM4 GPIO/ID.SDA": [
+        "Digital"
+      ],
+      "/CM4 GPIO/PMIC_ENABLE": [
+        "Digital"
+      ],
+      "/CM4 GPIO/SYNC_OUT": [
+        "Digital"
+      ],
+      "/CM4 GPIO/nRPIBOOT": [
+        "Digital"
+      ],
+      "/CM4 Highspeed/DPHY0.C+": [
+        "Diff100ohm"
+      ],
+      "/CM4 Highspeed/DPHY0.C-": [
+        "Diff100ohm"
+      ],
+      "/CM4 Highspeed/DPHY0.D0+": [
+        "Diff100ohm"
+      ],
+      "/CM4 Highspeed/DPHY0.D0-": [
+        "Diff100ohm"
+      ],
+      "/CM4 Highspeed/DPHY0.D1+": [
+        "Diff100ohm"
+      ],
+      "/CM4 Highspeed/DPHY0.D1-": [
+        "Diff100ohm"
+      ],
+      "/CM4 Highspeed/DPHY0.D2+": [
+        "Diff100ohm"
+      ],
+      "/CM4 Highspeed/DPHY0.D2-": [
+        "Diff100ohm"
+      ],
+      "/CM4 Highspeed/DPHY0.D3+": [
+        "Diff100ohm"
+      ],
+      "/CM4 Highspeed/DPHY0.D3-": [
+        "Diff100ohm"
+      ],
+      "/CM4 Highspeed/DPHY1.C+": [
+        "Diff100ohm"
+      ],
+      "/CM4 Highspeed/DPHY1.C-": [
+        "Diff100ohm"
+      ],
+      "/CM4 Highspeed/DPHY1.D0+": [
+        "Diff100ohm"
+      ],
+      "/CM4 Highspeed/DPHY1.D0-": [
+        "Diff100ohm"
+      ],
+      "/CM4 Highspeed/DPHY1.D1+": [
+        "Diff100ohm"
+      ],
+      "/CM4 Highspeed/DPHY1.D1-": [
+        "Diff100ohm"
+      ],
+      "/CM4 Highspeed/DPHY1.D2+": [
+        "Diff100ohm"
+      ],
+      "/CM4 Highspeed/DPHY1.D2-": [
+        "Diff100ohm"
+      ],
+      "/CM4 Highspeed/DPHY1.D3+": [
+        "Diff100ohm"
+      ],
+      "/CM4 Highspeed/DPHY1.D3-": [
+        "Diff100ohm"
+      ],
+      "/CM4 Highspeed/DPHY1/CAM_GPIO0": [
+        "Digital"
+      ],
+      "/CM4 Highspeed/HDMI0.CEC": [
+        "Diff100ohm"
+      ],
+      "/CM4 Highspeed/HDMI0.CLK+": [
+        "Diff100ohm"
+      ],
+      "/CM4 Highspeed/HDMI0.CLK-": [
+        "Diff100ohm"
+      ],
+      "/CM4 Highspeed/HDMI0.D0+": [
+        "Diff100ohm"
+      ],
+      "/CM4 Highspeed/HDMI0.D0-": [
+        "Diff100ohm"
+      ],
+      "/CM4 Highspeed/HDMI0.D1+": [
+        "Diff100ohm"
+      ],
+      "/CM4 Highspeed/HDMI0.D1-": [
+        "Diff100ohm"
+      ],
+      "/CM4 Highspeed/HDMI0.D2+": [
+        "Diff100ohm"
+      ],
+      "/CM4 Highspeed/HDMI0.D2-": [
+        "Diff100ohm"
+      ],
+      "/CM4 Highspeed/HDMI0.HPD": [
+        "Diff100ohm"
+      ],
+      "/CM4 Highspeed/HDMI0.SCL": [
+        "Diff100ohm"
+      ],
+      "/CM4 Highspeed/HDMI0.SDA": [
+        "Diff100ohm"
+      ],
+      "/CM4 Highspeed/HDMI0/+5V_HDMI": [
+        "Power"
+      ],
+      "/CM4 Highspeed/HDMI1.CEC": [
+        "Diff100ohm"
+      ],
+      "/CM4 Highspeed/HDMI1.CLK+": [
+        "Diff100ohm"
+      ],
+      "/CM4 Highspeed/HDMI1.CLK-": [
+        "Diff100ohm"
+      ],
+      "/CM4 Highspeed/HDMI1.D0+": [
+        "Diff100ohm"
+      ],
+      "/CM4 Highspeed/HDMI1.D0-": [
+        "Diff100ohm"
+      ],
+      "/CM4 Highspeed/HDMI1.D1+": [
+        "Diff100ohm"
+      ],
+      "/CM4 Highspeed/HDMI1.D1-": [
+        "Diff100ohm"
+      ],
+      "/CM4 Highspeed/HDMI1.D2+": [
+        "Diff100ohm"
+      ],
+      "/CM4 Highspeed/HDMI1.D2-": [
+        "Diff100ohm"
+      ],
+      "/CM4 Highspeed/HDMI1.HPD": [
+        "Diff100ohm"
+      ],
+      "/CM4 Highspeed/HDMI1.SCL": [
+        "Diff100ohm"
+      ],
+      "/CM4 Highspeed/HDMI1.SDA": [
+        "Diff100ohm"
+      ],
+      "/CM4 Highspeed/HDMI1/+5V_HDMI": [
+        "Power"
+      ],
+      "/Console.RXD": [
+        "Digital"
+      ],
+      "/Console.TXD": [
+        "Digital"
+      ],
+      "/Controller/EN5V_MCU": [
+        "Digital"
+      ],
+      "/Controller/G": [
+        "Analog"
+      ],
+      "/Controller/Ideal Diode Controller/B": [
+        "Analog"
+      ],
+      "/Controller/ORed": [
+        "Power"
+      ],
+      "/Controller/PB0": [
+        "Digital"
+      ],
+      "/Controller/PB5": [
+        "Digital"
+      ],
+      "/Controller/PWR_BTN_IN": [
+        "Digital"
+      ],
+      "/Controller/RESET": [
+        "Digital"
+      ],
+      "/Controller/RGB LEDs/DIN2": [
+        "Digital"
+      ],
+      "/Controller/RGB LEDs/DIN3": [
+        "Digital"
+      ],
+      "/Controller/RGB LEDs/DIN4": [
+        "Digital"
+      ],
+      "/Controller/RGB LEDs/DIN5": [
+        "Digital"
+      ],
+      "/Controller/RGBLED": [
+        "Digital"
+      ],
+      "/Controller/RTC/CC": [
+        "Power"
+      ],
+      "/Controller/RTC/OSCI": [
+        "Analog"
+      ],
+      "/Controller/RTC/OSCO": [
+        "Analog"
+      ],
+      "/Controller/RTC/VDD": [
+        "Power"
+      ],
+      "/Controller/RXD": [
+        "Digital"
+      ],
+      "/Controller/TXD": [
+        "Digital"
+      ],
+      "/Controller/USER": [
+        "Digital"
+      ],
+      "/Controller/VCC": [
+        "Power"
+      ],
+      "/Controller/VcapS": [
+        "Analog"
+      ],
+      "/Controller/VinS": [
+        "Analog"
+      ],
+      "/EN5V": [
+        "Digital"
+      ],
+      "/ETH.TD1+": [
+        "Diff100ohm"
+      ],
+      "/ETH.TD1-": [
+        "Diff100ohm"
+      ],
+      "/ETH.TD2+": [
+        "Diff100ohm"
+      ],
+      "/ETH.TD2-": [
+        "Diff100ohm"
+      ],
+      "/ETH.TD3+": [
+        "Diff100ohm"
+      ],
+      "/ETH.TD3-": [
+        "Diff100ohm"
+      ],
+      "/ETH.TD4+": [
+        "Diff100ohm"
+      ],
+      "/ETH.TD4-": [
+        "Diff100ohm"
+      ],
+      "/Ethernet/MX1+": [
+        "HV"
+      ],
+      "/Ethernet/MX1-": [
+        "HV"
+      ],
+      "/Ethernet/MX2+": [
+        "HV"
+      ],
+      "/Ethernet/MX2-": [
+        "HV"
+      ],
+      "/Ethernet/MX3+": [
+        "HV"
+      ],
+      "/Ethernet/MX3-": [
+        "HV"
+      ],
+      "/Ethernet/MX4+": [
+        "HV"
+      ],
+      "/Ethernet/MX4-": [
+        "HV"
+      ],
+      "/Ethernet/PR12": [
+        "HV",
+        "Power"
+      ],
+      "/Ethernet/PR36": [
+        "HV",
+        "Power"
+      ],
+      "/Ethernet/PR45": [
+        "HV",
+        "Power"
+      ],
+      "/Ethernet/PR78": [
+        "HV",
+        "Power"
+      ],
+      "/FAN_PWM": [
+        "Digital"
+      ],
+      "/I2C.SCL": [
+        "Digital"
+      ],
+      "/I2C.SDA": [
+        "Digital"
+      ],
+      "/I2C0.SCL": [
+        "Digital"
+      ],
+      "/I2C0.SDA": [
+        "Digital"
+      ],
+      "/Iin": [
+        "Analog"
+      ],
+      "/PCIe.CLK+": [
+        "Diff90ohm"
+      ],
+      "/PCIe.CLK-": [
+        "Diff90ohm"
+      ],
+      "/PCIe.RX+": [
+        "Diff90ohm"
+      ],
+      "/PCIe.RX-": [
+        "Diff90ohm"
+      ],
+      "/PCIe.TX+": [
+        "Diff90ohm"
+      ],
+      "/PCIe.TX-": [
+        "Diff90ohm"
+      ],
+      "/PCIe.~{CLKREQ}": [
+        "Diff90ohm"
+      ],
+      "/PCIe.~{RST}": [
+        "Diff90ohm"
+      ],
+      "/PWR_BUTTON": [
+        "Digital"
+      ],
+      "/Power/Buck converter 10V/B1_VIN": [
+        "HV"
+      ],
+      "/Power/Buck converter 10V/BOOT": [
+        "Analog"
+      ],
+      "/Power/Buck converter 10V/CCSB1": [
+        "Analog"
+      ],
+      "/Power/Buck converter 10V/CCSC1": [
+        "Analog"
+      ],
+      "/Power/Buck converter 10V/CCSE2": [
+        "Analog"
+      ],
+      "/Power/Buck converter 10V/DA-": [
+        "Analog"
+      ],
+      "/Power/Buck converter 10V/DAO": [
+        "Analog"
+      ],
+      "/Power/Buck converter 10V/FB": [
+        "Analog"
+      ],
+      "/Power/Buck converter 10V/FVSS": [
+        "Analog"
+      ],
+      "/Power/Buck converter 10V/I1A9": [
+        "Analog"
+      ],
+      "/Power/Buck converter 10V/I2A9": [
+        "Analog"
+      ],
+      "/Power/Buck converter 10V/PG": [
+        "Analog"
+      ],
+      "/Power/Buck converter 10V/SW": [
+        "Power"
+      ],
+      "/Power/Buck converter 10V/VCC": [
+        "Analog"
+      ],
+      "/Power/Buck converter 10V/VF-": [
+        "Analog"
+      ],
+      "/Power/Buck converter 10V/VFO": [
+        "Analog"
+      ],
+      "/Power/Buck converter 3.3V/BOOT_": [
+        "Analog"
+      ],
+      "/Power/Buck converter 3.3V/FB": [
+        "Analog"
+      ],
+      "/Power/Buck converter 3.3V/PG": [
+        "Analog"
+      ],
+      "/Power/Buck converter 3.3V/SW": [
+        "Power"
+      ],
+      "/Power/Buck converter 3.3V/VCC": [
+        "Analog"
+      ],
+      "/Power/Buck converter 5V/BOOT_": [
+        "Analog"
+      ],
+      "/Power/Buck converter 5V/FB": [
+        "Analog"
+      ],
+      "/Power/Buck converter 5V/PG": [
+        "Analog"
+      ],
+      "/Power/Buck converter 5V/SW": [
+        "Power"
+      ],
+      "/Power/Buck converter 5V/VCC": [
+        "Analog"
+      ],
+      "/Power/Input Protection/G": [
+        "Analog"
+      ],
+      "/Power/Input Protection/VCAP": [
+        "Power"
+      ],
+      "/Power/Supercaps/Supercap stage1/BO2-": [
+        "Analog"
+      ],
+      "/Power/Supercaps/Supercap stage1/BO3+": [
+        "Analog"
+      ],
+      "/Power/Supercaps/Supercap stage1/BO3o": [
+        "Analog"
+      ],
+      "/Power/Supercaps/Supercap stage1/C+": [
+        "Power"
+      ],
+      "/Power/Supercaps/Supercap stage1/R+": [
+        "Analog"
+      ],
+      "/Power/Supercaps/Supercap stage2/BO2-": [
+        "Analog"
+      ],
+      "/Power/Supercaps/Supercap stage2/BO3+": [
+        "Analog"
+      ],
+      "/Power/Supercaps/Supercap stage2/BO3o": [
+        "Analog"
+      ],
+      "/Power/Supercaps/Supercap stage2/C+": [
+        "Power"
+      ],
+      "/Power/Supercaps/Supercap stage2/R+": [
+        "Analog"
+      ],
+      "/Power/Supercaps/Supercap stage3/BO2-": [
+        "Analog"
+      ],
+      "/Power/Supercaps/Supercap stage3/BO3+": [
+        "Analog"
+      ],
+      "/Power/Supercaps/Supercap stage3/BO3o": [
+        "Analog"
+      ],
+      "/Power/Supercaps/Supercap stage3/C+": [
+        "Power"
+      ],
+      "/Power/Supercaps/Supercap stage3/R+": [
+        "Analog"
+      ],
+      "/Power/Supercaps/Supercap stage4/BO2-": [
+        "Analog"
+      ],
+      "/Power/Supercaps/Supercap stage4/BO3+": [
+        "Analog"
+      ],
+      "/Power/Supercaps/Supercap stage4/BO3o": [
+        "Analog"
+      ],
+      "/Prg.RXD": [
+        "Digital"
+      ],
+      "/Prg.TXD": [
+        "Digital"
+      ],
+      "/RS-485/RX": [
+        "Digital"
+      ],
+      "/RS-485/RX_A": [
+        "Analog"
+      ],
+      "/RS-485/RX_A_": [
+        "Analog"
+      ],
+      "/RS-485/RX_A_C": [
+        "Analog"
+      ],
+      "/RS-485/RX_A_C_": [
+        "Analog"
+      ],
+      "/RS-485/RX_B": [
+        "Analog"
+      ],
+      "/RS-485/RX_B_": [
+        "Analog"
+      ],
+      "/RS-485/RX_B_C": [
+        "Analog"
+      ],
+      "/RS-485/RX_B_C_": [
+        "Analog"
+      ],
+      "/RS-485/TX": [
+        "Digital"
+      ],
+      "/RS-485/TX_A": [
+        "Analog"
+      ],
+      "/RS-485/TX_A_": [
+        "Analog"
+      ],
+      "/RS-485/TX_A_C": [
+        "Analog"
+      ],
+      "/RS-485/TX_A_C_": [
+        "Analog"
+      ],
+      "/RS-485/TX_B": [
+        "Analog"
+      ],
+      "/RS-485/TX_B_": [
+        "Analog"
+      ],
+      "/RS-485/TX_B_C": [
+        "Analog"
+      ],
+      "/RS-485/TX_B_C_": [
+        "Analog"
+      ],
+      "/RS-485/Vin_": [
+        "Power"
+      ],
+      "/RS-485/Vout_": [
+        "Power"
+      ],
+      "/RS485.EN": [
+        "Digital"
+      ],
+      "/RS485.RXD": [
+        "Digital"
+      ],
+      "/RS485.TXD": [
+        "Digital"
+      ],
+      "/RTC_INT": [
+        "Digital"
+      ],
+      "/SD.CLK": [
+        "Digital"
+      ],
+      "/SD.CMD": [
+        "Digital"
+      ],
+      "/SD.D0": [
+        "Digital"
+      ],
+      "/SD.D1": [
+        "Digital"
+      ],
+      "/SD.D2": [
+        "Digital"
+      ],
+      "/SD.D3": [
+        "Digital"
+      ],
+      "/SD.PWR": [
+        "Digital"
+      ],
+      "/SDCard/+3.3VSD": [
+        "Power"
+      ],
+      "/USB 2.0 Peripheral Interface/CC1": [
+        "Digital"
+      ],
+      "/USB 2.0 Peripheral Interface/CC2": [
+        "Digital"
+      ],
+      "/USB 2.0 Peripheral Interface/VBUS": [
+        "Power"
+      ],
+      "/USB.D+": [
+        "Diff90ohm"
+      ],
+      "/USB.D-": [
+        "Diff90ohm"
+      ],
+      "/USB3-0.D+": [
+        "Diff90ohm"
+      ],
+      "/USB3-0.D-": [
+        "Diff90ohm"
+      ],
+      "/USB3-0.RX+": [
+        "Diff90ohm"
+      ],
+      "/USB3-0.RX-": [
+        "Diff90ohm"
+      ],
+      "/USB3-0.TX+": [
+        "Diff90ohm"
+      ],
+      "/USB3-0.TX-": [
+        "Diff90ohm"
+      ],
+      "/USB3-1.D+": [
+        "Diff90ohm"
+      ],
+      "/USB3-1.D-": [
+        "Diff90ohm"
+      ],
+      "/USB3-1.RX+": [
+        "Diff90ohm"
+      ],
+      "/USB3-1.RX-": [
+        "Diff90ohm"
+      ],
+      "/USB3-1.TX+": [
+        "Diff90ohm"
+      ],
+      "/USB3-1.TX-": [
+        "Diff90ohm"
+      ],
+      "/USB3/B": [
+        "Digital"
+      ],
+      "/USB3/DIS0": [
+        "Digital"
+      ],
+      "/USB3/DIS1": [
+        "Digital"
+      ],
+      "/USB3/DIS2": [
+        "Digital"
+      ],
+      "/USB3/DIS3": [
+        "Digital"
+      ],
+      "/USB3/NC_GPIO": [
+        "Digital"
+      ],
+      "/USB3/USB3 Hub/AVDD33": [
+        "Power"
+      ],
+      "/USB3/USB3 Hub/BUSSEL": [
+        "Digital"
+      ],
+      "/USB3/USB3 Hub/ILIM": [
+        "Analog"
+      ],
+      "/USB3/USB3 Hub/LED1B": [
+        "Digital"
+      ],
+      "/USB3/USB3 Hub/NGDRV": [
+        "Analog"
+      ],
+      "/USB3/USB3 Hub/OCI1B": [
+        "Digital"
+      ],
+      "/USB3/USB3 Hub/OCI2B": [
+        "Digital"
+      ],
+      "/USB3/USB3 Hub/OCI3B": [
+        "Digital"
+      ],
+      "/USB3/USB3 Hub/OCI4B": [
+        "Digital"
+      ],
+      "/USB3/USB3 Hub/PGATE": [
+        "Analog"
+      ],
+      "/USB3/USB3 Hub/PGDRV": [
+        "Analog"
+      ],
+      "/USB3/USB3 Hub/PPON1B": [
+        "Digital"
+      ],
+      "/USB3/USB3 Hub/PPON2B": [
+        "Digital"
+      ],
+      "/USB3/USB3 Hub/PPON3B": [
+        "Digital"
+      ],
+      "/USB3/USB3 Hub/PPON4B": [
+        "Digital"
+      ],
+      "/USB3/USB3 Hub/RESETB": [
+        "Digital"
+      ],
+      "/USB3/USB3 Hub/RREF": [
+        "Analog"
+      ],
+      "/USB3/USB3 Hub/SPICSB": [
+        "Digital"
+      ],
+      "/USB3/USB3 Hub/SPISCK": [
+        "Digital"
+      ],
+      "/USB3/USB3 Hub/SPISI": [
+        "Digital"
+      ],
+      "/USB3/USB3 Hub/SPISO": [
+        "Digital"
+      ],
+      "/USB3/USB3 Hub/SW": [
+        "Analog"
+      ],
+      "/USB3/USB3 Hub/U31.D+": [
+        "Diff90ohm"
+      ],
+      "/USB3/USB3 Hub/U31.D-": [
+        "Diff90ohm"
+      ],
+      "/USB3/USB3 Hub/U31.RX+": [
+        "Diff90ohm"
+      ],
+      "/USB3/USB3 Hub/U31.RX-": [
+        "Diff90ohm"
+      ],
+      "/USB3/USB3 Hub/U31.TX+": [
+        "Diff90ohm"
+      ],
+      "/USB3/USB3 Hub/U31.TX-": [
+        "Diff90ohm"
+      ],
+      "/USB3/USB3 Hub/U32.D+": [
+        "Diff90ohm"
+      ],
+      "/USB3/USB3 Hub/U32.D-": [
+        "Diff90ohm"
+      ],
+      "/USB3/USB3 Hub/U32.RX+": [
+        "Diff90ohm"
+      ],
+      "/USB3/USB3 Hub/U32.RX-": [
+        "Diff90ohm"
+      ],
+      "/USB3/USB3 Hub/U32.TX+": [
+        "Diff90ohm"
+      ],
+      "/USB3/USB3 Hub/U32.TX-": [
+        "Diff90ohm"
+      ],
+      "/USB3/USB3 Hub/U33.D+": [
+        "Diff90ohm"
+      ],
+      "/USB3/USB3 Hub/U33.D-": [
+        "Diff90ohm"
+      ],
+      "/USB3/USB3 Hub/U33.RX+": [
+        "Diff90ohm"
+      ],
+      "/USB3/USB3 Hub/U33.RX-": [
+        "Diff90ohm"
+      ],
+      "/USB3/USB3 Hub/U33.TX+": [
+        "Diff90ohm"
+      ],
+      "/USB3/USB3 Hub/U33.TX-": [
+        "Diff90ohm"
+      ],
+      "/USB3/USB3 Hub/U34.D+": [
+        "Diff90ohm"
+      ],
+      "/USB3/USB3 Hub/U34.D-": [
+        "Diff90ohm"
+      ],
+      "/USB3/USB3 Hub/U34.RX+": [
+        "Diff90ohm"
+      ],
+      "/USB3/USB3 Hub/U34.RX-": [
+        "Diff90ohm"
+      ],
+      "/USB3/USB3 Hub/U34.TX+": [
+        "Diff90ohm"
+      ],
+      "/USB3/USB3 Hub/U34.TX-": [
+        "Diff90ohm"
+      ],
+      "/USB3/USB3 Hub/USB3 Interface1/SSTX+": [
+        "Diff90ohm"
+      ],
+      "/USB3/USB3 Hub/USB3 Interface1/SSTX-": [
+        "Diff90ohm"
+      ],
+      "/USB3/USB3 Hub/USB3 Interface1/VBUS": [
+        "Power"
+      ],
+      "/USB3/USB3 Hub/USB3 Interface1/VBUS_": [
+        "Power"
+      ],
+      "/USB3/USB3 Hub/USB3 Interface1/~{ENAND}": [
+        "Digital"
+      ],
+      "/USB3/USB3 Hub/USB3 Interface2/SSTX+": [
+        "Diff90ohm"
+      ],
+      "/USB3/USB3 Hub/USB3 Interface2/SSTX-": [
+        "Diff90ohm"
+      ],
+      "/USB3/USB3 Hub/USB3 Interface2/VBUS": [
+        "Power"
+      ],
+      "/USB3/USB3 Hub/USB3 Interface2/VBUS_": [
+        "Power"
+      ],
+      "/USB3/USB3 Hub/USB3 Interface2/~{ENAND}": [
+        "Digital"
+      ],
+      "/USB3/USB3 Hub/USB3 Interface3/SSTX+": [
+        "Diff90ohm"
+      ],
+      "/USB3/USB3 Hub/USB3 Interface3/SSTX-": [
+        "Diff90ohm"
+      ],
+      "/USB3/USB3 Hub/USB3 Interface3/VBUS": [
+        "Power"
+      ],
+      "/USB3/USB3 Hub/USB3 Interface3/VBUS_": [
+        "Power"
+      ],
+      "/USB3/USB3 Hub/USB3 Interface3/~{ENAND}": [
+        "Digital"
+      ],
+      "/USB3/USB3 Hub/USB3 Interface4/VBUS": [
+        "Power"
+      ],
+      "/USB3/USB3 Hub/USB3 Interface4/VBUS_": [
+        "Power"
+      ],
+      "/USB3/USB3 Hub/V10FB": [
+        "Analog"
+      ],
+      "/USB3/USB3 Hub/XT1": [
+        "Digital"
+      ],
+      "/USB3/USB3 Hub/XT2": [
+        "Digital"
+      ],
+      "/USB3/USB3 Interface/SSTX+": [
+        "Diff90ohm"
+      ],
+      "/USB3/USB3 Interface/SSTX-": [
+        "Diff90ohm"
+      ],
+      "/USB3/USB3 Interface/VBUS": [
+        "Power"
+      ],
+      "/USB3/USB3 Interface/VBUS_": [
+        "Power"
+      ],
+      "/USB3/USB3 Interface/~{ENAND}": [
+        "Digital"
+      ],
+      "/USB3/~{EN}": [
+        "Digital"
+      ],
+      "/VBAT": [
+        "Power"
+      ],
+      "/VBUS_EN": [
+        "Digital"
+      ],
+      "/Vcap": [
+        "Power"
+      ],
+      "/Vin_prot": [
+        "HV",
+        "Power"
+      ],
+      "/~{LED_ACT}": [
+        "Digital"
+      ],
+      "/~{LED_PWR}": [
+        "Digital"
+      ],
+      "Net-(C1807-Pad1)": [
+        "Analog"
+      ],
+      "Net-(C1808-Pad1)": [
+        "Analog"
+      ],
+      "Net-(C1809-Pad1)": [
+        "Analog"
+      ],
+      "Net-(C1810-Pad1)": [
+        "Analog"
+      ],
+      "Net-(C1811-Pad1)": [
+        "HV"
+      ],
+      "Net-(C1812-Pad2)": [
+        "HV"
+      ],
+      "Net-(C1813-Pad2)": [
+        "HV"
+      ],
+      "Net-(C1814-Pad2)": [
+        "HV"
+      ],
+      "Net-(C1815-Pad2)": [
+        "HV"
+      ],
+      "Net-(C2635-Pad1)": [
+        "Digital"
+      ],
+      "Net-(D2105-A)": [
+        "Analog"
+      ],
+      "Net-(D2106-A)": [
+        "Analog"
+      ],
+      "Net-(JP1601-B)": [
+        "Analog"
+      ]
     },
     "netclass_patterns": [
       {
-        "netclass": "Power",
+        "netclass": "GND",
         "pattern": "GND*"
       },
       {
@@ -754,42 +1753,6 @@
         },
         {
           "group_by": false,
-          "label": "Config",
-          "name": "Config",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Field4",
-          "name": "Field4",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Field5",
-          "name": "Field5",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Field6",
-          "name": "Field6",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Field7",
-          "name": "Field7",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Field8",
-          "name": "Field8",
-          "show": false
-        },
-        {
-          "group_by": false,
           "label": "JLCPCB_CORRECTION",
           "name": "JLCPCB_CORRECTION",
           "show": false
@@ -808,12 +1771,6 @@
         },
         {
           "group_by": false,
-          "label": "Manufacturer",
-          "name": "Manufacturer",
-          "show": false
-        },
-        {
-          "group_by": false,
           "label": "Note",
           "name": "Note",
           "show": false
@@ -828,18 +1785,6 @@
           "group_by": false,
           "label": "Part",
           "name": "Part",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Part Description",
-          "name": "Part Description",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "PartNumber",
-          "name": "PartNumber",
           "show": false
         },
         {
@@ -871,13 +1816,20 @@
           "label": "Sim.Enable",
           "name": "Sim.Enable",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Component Class",
+          "name": "Component Class",
+          "show": true
         }
       ],
       "filter_string": "",
       "group_symbols": true,
+      "include_excluded_from_bom": false,
       "name": "",
       "sort_asc": true,
-      "sort_field": "Reference"
+      "sort_field": "LCSC"
     },
     "connection_grid_size": 50.0,
     "drawing": {
@@ -921,6 +1873,7 @@
     },
     "page_layout_descr_file": "",
     "plot_directory": "output-v1.3b/",
+    "space_save_all_events": true,
     "spice_adjust_passive_values": false,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
@@ -1003,10 +1956,6 @@
     [
       "850df4bf-e40a-4082-adc2-76804638b949",
       "Controller"
-    ],
-    [
-      "f085ea1d-216a-45ed-b619-64a6d253c666",
-      "USB3 Interface4"
     ],
     [
       "851e7ce4-d5b0-47f7-ace9-4a347f172348",

@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "046f148a-683d-4966-93a7-652c6b86a00f")
 	(paper "A4")
 	(title_block
@@ -15,9 +15,13 @@
 	)
 	(lib_symbols
 		(symbol "Connector:TestPoint"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0.762) hide)
+				(offset 0.762)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -115,9 +119,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:C"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0.254)
 			)
@@ -190,7 +197,7 @@
 			(symbol "C_0_1"
 				(polyline
 					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
+						(xy -2.032 0.762) (xy 2.032 0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -202,7 +209,7 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
 					)
 					(stroke
 						(width 0.508)
@@ -251,9 +258,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:C_Polarized"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0.254)
 			)
@@ -409,11 +419,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:L"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -480,32 +495,8 @@
 			)
 			(symbol "L_0_1"
 				(arc
-					(start 0 -2.54)
-					(mid 0.6323 -1.905)
-					(end 0 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -1.27)
-					(mid 0.6323 -0.635)
-					(end 0 0)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 0)
-					(mid 0.6323 0.635)
+					(start 0 2.54)
+					(mid 0.6323 1.905)
 					(end 0 1.27)
 					(stroke
 						(width 0)
@@ -517,8 +508,32 @@
 				)
 				(arc
 					(start 0 1.27)
-					(mid 0.6323 1.905)
-					(end 0 2.54)
+					(mid 0.6323 0.635)
+					(end 0 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 0)
+					(mid 0.6323 -0.635)
+					(end 0 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -1.27)
+					(mid 0.6323 -1.905)
+					(end 0 -2.54)
 					(stroke
 						(width 0)
 						(type default)
@@ -566,9 +581,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -687,6 +705,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Hatlabs:TPS566238RQFR"
 			(pin_names
@@ -767,17 +786,35 @@
 				)
 			)
 			(symbol "TPS566238RQFR_0_1"
-				(pin input line
-					(at 20.32 -5.08 180)
+				(pin power_in line
+					(at -20.32 10.16 0)
 					(length 5.08)
-					(name "FB"
+					(name "VIN"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "2"
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -20.32 5.08 0)
+					(length 5.08)
+					(name "VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -821,35 +858,17 @@
 						)
 					)
 				)
-				(pin power_in line
-					(at -20.32 10.16 0)
+				(pin input line
+					(at 20.32 -5.08 180)
 					(length 5.08)
-					(name "VIN"
+					(name "FB"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -20.32 5.08 0)
-					(length 5.08)
-					(name "VIN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -881,6 +900,24 @@
 						)
 					)
 					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -20.32 -10.16 0)
+					(length 5.08)
+					(name "PG"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -924,31 +961,18 @@
 						)
 					)
 				)
-				(pin output line
-					(at -20.32 -10.16 0)
-					(length 5.08)
-					(name "PG"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1039,12 +1063,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:PWR_FLAG"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1135,7 +1164,52 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(text "FB voltage divider designed to have\na 5.1V voltage at Vout"
+		(exclude_from_sim no)
+		(at 214.63 93.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1952bb39-e3e5-4ba5-bd7d-48e99d7bf6b3")
+	)
+	(text "Vin at max. 10.0V"
+		(exclude_from_sim no)
+		(at 24.13 59.69 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "41467414-e25a-4f21-bbba-3d1ed978aef1")
+	)
+	(text "f_{sw} = 600 kHz"
+		(exclude_from_sim no)
+		(at 116.84 105.156 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b440ac58-8844-42a7-bd6a-4b1e5884db46")
+	)
+	(text "Buck converter dropping the supercap voltage\ndown to 5V for the CM4/5 module input and\nUSBs"
+		(exclude_from_sim no)
+		(at 81.28 34.798 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "becd7339-af12-4c94-8ab7-67e012ceed51")
 	)
 	(junction
 		(at 195.58 72.39)
@@ -1697,50 +1771,6 @@
 		)
 		(uuid "fe6d2ee0-c74e-41c0-bb2e-2b38096f61e0")
 	)
-	(text "FB voltage divider designed to have\na 5.1V voltage at Vout"
-		(exclude_from_sim no)
-		(at 214.63 93.98 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "1952bb39-e3e5-4ba5-bd7d-48e99d7bf6b3")
-	)
-	(text "Vin at max. 10.0V"
-		(exclude_from_sim no)
-		(at 24.13 59.69 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "41467414-e25a-4f21-bbba-3d1ed978aef1")
-	)
-	(text "f_{sw} = 600 kHz"
-		(exclude_from_sim no)
-		(at 116.84 105.156 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b440ac58-8844-42a7-bd6a-4b1e5884db46")
-	)
-	(text "Buck converter dropping the supercap voltage\ndown to 5V for the CM4/5 module input and\nUSBs"
-		(exclude_from_sim no)
-		(at 81.28 34.798 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "becd7339-af12-4c94-8ab7-67e012ceed51")
-	)
 	(label "VCC"
 		(at 69.85 77.47 0)
 		(effects
@@ -1963,7 +1993,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "01dcfb03-fc2e-4df6-a3cd-6ebf23910e25")
-		(property "Reference" "#PWR0207"
+		(property "Reference" "#PWR01504"
 			(at 191.77 96.52 0)
 			(effects
 				(font
@@ -2034,7 +2064,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "035d3ebb-6756-44da-9563-6ae52837cf1b")
-		(property "Reference" "#PWR0209"
+		(property "Reference" "#PWR01508"
 			(at 204.47 101.6 0)
 			(effects
 				(font
@@ -2167,6 +2197,23 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Characteristics" ""
+			(at 162.56 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 162.56 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -2312,6 +2359,23 @@
 				(hide yes)
 			)
 		)
+		(property "Characteristics" ""
+			(at 76.2 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 76.2 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "815e255f-6226-4048-b232-9b29f656ee2f")
 		)
@@ -2337,7 +2401,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "23db976b-110b-40a6-8037-76d3bc95aea4")
-		(property "Reference" "#FLG0203"
+		(property "Reference" "#FLG01501"
 			(at 195.58 70.485 0)
 			(effects
 				(font
@@ -2453,6 +2517,23 @@
 				(hide yes)
 			)
 		)
+		(property "Characteristics" ""
+			(at 222.25 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 222.25 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "4c35e41e-573d-4e90-ad2f-26c5d3da2348")
 		)
@@ -2529,6 +2610,31 @@
 				(hide yes)
 			)
 		)
+		(property "Characteristics" ""
+			(at 102.87 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Component Class" "fine_pitch"
+			(at 102.87 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 102.87 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "ccc76d43-8871-4552-aeaf-fc5f27df3bd8")
 		)
@@ -2574,7 +2680,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "73581ead-4557-4b4c-8267-a1fc2ea1ffeb")
-		(property "Reference" "R206"
+		(property "Reference" "R1503"
 			(at 206.248 89.0016 0)
 			(effects
 				(font
@@ -2626,6 +2732,23 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Characteristics" ""
+			(at 204.47 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 204.47 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -2794,6 +2917,23 @@
 				(hide yes)
 			)
 		)
+		(property "Characteristics" ""
+			(at 154.94 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 154.94 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "818fda21-1aa9-4c4c-b324-c4a6f3074ff9")
 		)
@@ -2818,7 +2958,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "82f9be0e-522c-4873-a188-02eb7c76757b")
-		(property "Reference" "R204"
+		(property "Reference" "R1501"
 			(at 208.28 77.47 0)
 			(effects
 				(font
@@ -2870,6 +3010,23 @@
 				(hide yes)
 			)
 		)
+		(property "Characteristics" ""
+			(at 204.47 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 204.47 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ae6e2107-db6a-4e85-9a2f-9ad7d9ff205a")
 		)
@@ -2901,7 +3058,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8313bf36-a3e5-4f75-b9ea-564c98ef221c")
-		(property "Reference" "#PWR0201"
+		(property "Reference" "#PWR01501"
 			(at 36.83 93.98 0)
 			(effects
 				(font
@@ -2972,7 +3129,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "856fae51-9063-4750-ac8e-38082ce79e32")
-		(property "Reference" "TP201"
+		(property "Reference" "TP1501"
 			(at 137.16 74.4219 0)
 			(effects
 				(font
@@ -3015,6 +3172,23 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Characteristics" ""
+			(at 134.62 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 134.62 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -3107,6 +3281,23 @@
 				(hide yes)
 			)
 		)
+		(property "Characteristics" ""
+			(at 215.9 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 215.9 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "13581c24-3c32-499e-9ae6-faeaf49c01ad")
 		)
@@ -3131,7 +3322,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "97d7ff4b-b0bf-4390-b37b-14ea6942b7f7")
-		(property "Reference" "C203"
+		(property "Reference" "C1501"
 			(at 146.05 60.96 90)
 			(effects
 				(font
@@ -3181,6 +3372,23 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Characteristics" ""
+			(at 140.97 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 140.97 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -3277,6 +3485,23 @@
 				(hide yes)
 			)
 		)
+		(property "Characteristics" ""
+			(at 191.77 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 191.77 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "d5763a0e-26c2-4979-aa33-79152cf8faa3")
 		)
@@ -3356,6 +3581,23 @@
 				(hide yes)
 			)
 		)
+		(property "Characteristics" ""
+			(at 67.31 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 67.31 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "68573346-2361-4f5b-9622-13a42864a678")
 		)
@@ -3433,6 +3675,23 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Characteristics" ""
+			(at 50.8 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 50.8 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -3525,7 +3784,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "da2ac14b-b5e1-44e8-ae35-2258733c9514")
-		(property "Reference" "C201"
+		(property "Reference" "C1502"
 			(at 33.909 75.0316 0)
 			(effects
 				(font
@@ -3577,6 +3836,23 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Characteristics" ""
+			(at 36.83 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 36.83 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -3793,6 +4069,23 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Characteristics" ""
+			(at 172.72 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 172.72 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"

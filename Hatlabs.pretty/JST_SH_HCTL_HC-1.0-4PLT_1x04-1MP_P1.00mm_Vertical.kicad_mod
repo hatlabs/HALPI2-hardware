@@ -1,7 +1,7 @@
 (footprint "JST_SH_HCTL_HC-1.0-4PLT_1x04-1MP_P1.00mm_Vertical"
-	(version 20240108)
+	(version 20241228)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(descr "JST SH series connector, BM04B-SRSS-TB (http://www.jst-mfg.com/product/pdf/eng/eSH.pdf), generated with kicad-footprint-generator")
 	(tags "connector JST SH vertical")
@@ -23,19 +23,6 @@
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "e1f924d5-777e-43ef-b4e7-b68c2a1e30f6")
-		(effects
-			(font
-				(size 1.27 1.27)
 				(thickness 0.15)
 			)
 		)
@@ -401,48 +388,49 @@
 	(pad "1" smd rect
 		(at -1.5 1.495)
 		(size 0.7 1.71)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "362e3333-7a0a-481c-ba7f-f995bcf86057")
 	)
 	(pad "2" smd rect
 		(at -0.5 1.495)
 		(size 0.7 1.71)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "7acf3ec8-874c-4c5d-986b-b57c89489a27")
 	)
 	(pad "3" smd rect
 		(at 0.5 1.495)
 		(size 0.7 1.71)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "c5cdb84d-370c-427f-ab1c-28a3348de147")
 	)
 	(pad "4" smd rect
 		(at 1.5 1.495)
 		(size 0.7 1.71)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "315006dd-fbb1-45d7-880a-e6d1741fe4dc")
 	)
 	(pad "MP" smd rect
 		(at -2.61 -1.02)
 		(size 1.2 2.5)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "fe4c62c7-4433-4f1e-a22b-0c44b28127e6")
 	)
 	(pad "MP" smd rect
 		(at 2.61 -1.02)
 		(size 1.2 2.5)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(uuid "9cf6044a-210b-4625-b367-69f3bb8ed8cb")
 	)
-	(model "${KICAD8_3DMODEL_DIR}/Connector_JST.3dshapes/JST_SH_BM04B-SRSS-TB_1x04-1MP_P1.00mm_Vertical.wrl"
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/Hatlabs.3dshapes/CONN-SMD_4P-P1.00_HC-1.0-4PLT.step"
 		(offset
-			(xyz 0 0 0)
+			(xyz 0 0.3 0)
 		)
 		(scale
 			(xyz 1 1 1)
 		)
 		(rotate
-			(xyz 0 0 0)
+			(xyz -0 -0 -180)
 		)
 	)
 )

@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "7563390d-2b26-4f42-babb-ee1d9f58d701")
 	(paper "A4")
 	(title_block
@@ -16,7 +16,9 @@
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_01x02"
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -83,14 +85,14 @@
 			)
 			(symbol "Conn_01x02_1_1"
 				(rectangle
-					(start -1.27 -2.413)
-					(end 0 -2.667)
+					(start -1.27 1.27)
+					(end 1.27 -3.81)
 					(stroke
-						(width 0.1524)
+						(width 0.254)
 						(type default)
 					)
 					(fill
-						(type none)
+						(type background)
 					)
 				)
 				(rectangle
@@ -105,14 +107,14 @@
 					)
 				)
 				(rectangle
-					(start -1.27 1.27)
-					(end 1.27 -3.81)
+					(start -1.27 -2.413)
+					(end 0 -2.667)
 					(stroke
-						(width 0.254)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
-						(type background)
+						(type none)
 					)
 				)
 				(pin passive line
@@ -152,12 +154,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+3.3V"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -229,7 +236,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -241,7 +248,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -272,12 +279,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+5V"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -349,7 +361,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -361,7 +373,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -392,7 +404,96 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(text "10-32V"
+		(exclude_from_sim no)
+		(at 90.424 27.432 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0012bfd5-c9e0-4d65-896d-c16e1cc44429")
+	)
+	(text "10-32V"
+		(exclude_from_sim no)
+		(at 33.02 31.75 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "131ea2bd-a8d5-4905-b966-f61e512e084a")
+	)
+	(text "3.3V / 3A\nPCIe only\n"
+		(exclude_from_sim no)
+		(at 187.198 86.868 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "439546fc-d9a1-47b6-ac2c-7dcab4ff7374")
+	)
+	(text "4 * 2.7V supercaps\nand balancing circuit"
+		(exclude_from_sim no)
+		(at 146.05 86.868 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "768e0a7f-0613-411c-ba01-40bae73450b2")
+	)
+	(text "5-10.0V\n0-5V at startup"
+		(exclude_from_sim no)
+		(at 144.78 27.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a01e7007-5847-4597-be2e-259948ef5967")
+	)
+	(text "5.1V / 4A\nPi CM module\nUSB outputs"
+		(exclude_from_sim no)
+		(at 187.452 54.61 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a83c82ef-36b0-4df8-bb74-de9eb2791544")
+	)
+	(text "Fuse\nTVS\nReverse polarity prot.\nReverse current prot.\nEMI filtering"
+		(exclude_from_sim no)
+		(at 55.118 55.372 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "aca9f77f-02f9-4043-89e9-70a0529ca519")
+	)
+	(text "Drop input to 10.0V\nLimit input current to 0.8A"
+		(exclude_from_sim no)
+		(at 101.854 55.372 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e7c0623f-6f0b-4bba-995c-e265243f8943")
 	)
 	(junction
 		(at 87.63 36.83)
@@ -628,94 +729,6 @@
 		)
 		(uuid "c02dea00-6c83-431d-8b7c-b42c34120633")
 	)
-	(text "10-32V"
-		(exclude_from_sim no)
-		(at 90.424 27.432 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "0012bfd5-c9e0-4d65-896d-c16e1cc44429")
-	)
-	(text "10-32V"
-		(exclude_from_sim no)
-		(at 33.02 31.75 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "131ea2bd-a8d5-4905-b966-f61e512e084a")
-	)
-	(text "3.3V / 3A\nPCIe only\n"
-		(exclude_from_sim no)
-		(at 187.198 86.868 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "439546fc-d9a1-47b6-ac2c-7dcab4ff7374")
-	)
-	(text "4 * 2.7V supercaps\nand balancing circuit"
-		(exclude_from_sim no)
-		(at 146.05 86.868 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "768e0a7f-0613-411c-ba01-40bae73450b2")
-	)
-	(text "5-10.0V\n0-5V at startup"
-		(exclude_from_sim no)
-		(at 144.78 27.94 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a01e7007-5847-4597-be2e-259948ef5967")
-	)
-	(text "5.1V / 4A\nPi CM module\nUSB outputs"
-		(exclude_from_sim no)
-		(at 187.452 54.61 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a83c82ef-36b0-4df8-bb74-de9eb2791544")
-	)
-	(text "Fuse\nTVS\nReverse polarity prot.\nReverse current prot.\nEMI filtering"
-		(exclude_from_sim no)
-		(at 55.118 55.372 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "aca9f77f-02f9-4043-89e9-70a0529ca519")
-	)
-	(text "Drop input to 10.0V\nLimit input current to 0.8A"
-		(exclude_from_sim no)
-		(at 101.854 55.372 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e7c0623f-6f0b-4bba-995c-e265243f8943")
-	)
 	(label "Vin"
 		(at 45.72 36.83 0)
 		(effects
@@ -917,6 +930,23 @@
 				(hide yes)
 			)
 		)
+		(property "Characteristics" ""
+			(at 34.29 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 34.29 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "c5219e93-3bb1-4fbf-8f8b-56bb92a4b7dd")
 		)
@@ -1002,6 +1032,10 @@
 	(sheet
 		(at 143.51 63.5)
 		(size 30.48 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -1031,13 +1065,13 @@
 		)
 		(pin "Vcap" bidirectional
 			(at 143.51 68.58 180)
+			(uuid "4cf6675c-3e6f-4eba-a7b3-c0bd87a92bf5")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "4cf6675c-3e6f-4eba-a7b3-c0bd87a92bf5")
 		)
 		(instances
 			(project "HALPI2"
@@ -1050,6 +1084,10 @@
 	(sheet
 		(at 185.42 31.75)
 		(size 30.48 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -1079,33 +1117,33 @@
 		)
 		(pin "Vout" output
 			(at 215.9 36.83 0)
+			(uuid "cee940b4-8e3c-42f0-b46b-57f3c7c7c0f1")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "cee940b4-8e3c-42f0-b46b-57f3c7c7c0f1")
 		)
 		(pin "Vin" input
 			(at 185.42 36.83 180)
+			(uuid "c60b90c1-6065-40c3-b9f5-2ad760014595")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "c60b90c1-6065-40c3-b9f5-2ad760014595")
 		)
 		(pin "EN" input
 			(at 185.42 40.64 180)
+			(uuid "42915dc6-b437-403e-90b3-8f98ef7f7184")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "42915dc6-b437-403e-90b3-8f98ef7f7184")
 		)
 		(instances
 			(project "HALPI2"
@@ -1118,6 +1156,10 @@
 	(sheet
 		(at 100.33 31.75)
 		(size 30.48 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -1147,33 +1189,33 @@
 		)
 		(pin "Vin" input
 			(at 100.33 36.83 180)
+			(uuid "980fcf83-91fa-4e56-8089-ce957438cf1f")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "980fcf83-91fa-4e56-8089-ce957438cf1f")
 		)
 		(pin "Iin" output
 			(at 130.81 40.64 0)
+			(uuid "4b6cd139-dfab-444a-b747-39c69f45bc61")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "4b6cd139-dfab-444a-b747-39c69f45bc61")
 		)
 		(pin "Vout" output
 			(at 130.81 36.83 0)
+			(uuid "c62ab8bd-2db4-49e6-9ef9-3e46484068d9")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "c62ab8bd-2db4-49e6-9ef9-3e46484068d9")
 		)
 		(instances
 			(project "HALPI2"
@@ -1186,6 +1228,10 @@
 	(sheet
 		(at 53.34 31.75)
 		(size 30.48 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -1215,33 +1261,33 @@
 		)
 		(pin "Vin_protected" output
 			(at 83.82 36.83 0)
+			(uuid "9fb7bd0c-738b-4ce9-a502-b008c9eac166")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "9fb7bd0c-738b-4ce9-a502-b008c9eac166")
 		)
 		(pin "Vin" input
 			(at 53.34 36.83 180)
+			(uuid "4c869169-8fd3-42e3-880b-53fac7806946")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "4c869169-8fd3-42e3-880b-53fac7806946")
 		)
 		(pin "GND_in" input
 			(at 53.34 39.37 180)
+			(uuid "3bd774a1-3310-46c5-b509-b5e802f7bce0")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "3bd774a1-3310-46c5-b509-b5e802f7bce0")
 		)
 		(instances
 			(project "HALPI2"
@@ -1254,6 +1300,10 @@
 	(sheet
 		(at 185.42 63.5)
 		(size 30.48 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -1283,33 +1333,33 @@
 		)
 		(pin "Vin" input
 			(at 185.42 69.85 180)
+			(uuid "a6784874-36be-4537-a401-36134a62914f")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "a6784874-36be-4537-a401-36134a62914f")
 		)
 		(pin "Vout" output
 			(at 215.9 69.85 0)
+			(uuid "a796e4a4-d368-4aec-89eb-1fb585588fa9")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "a796e4a4-d368-4aec-89eb-1fb585588fa9")
 		)
 		(pin "EN" input
 			(at 185.42 73.66 180)
+			(uuid "c421fb6d-6418-4880-94b7-f6dfc95daa65")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "c421fb6d-6418-4880-94b7-f6dfc95daa65")
 		)
 		(instances
 			(project "HALPI2"

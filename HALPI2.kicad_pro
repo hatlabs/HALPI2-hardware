@@ -551,7 +551,7 @@
         "microvia_drill": 0.1,
         "name": "Analog",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 5,
+        "priority": 6,
         "schematic_color": "rgb(0, 0, 194)",
         "track_width": 0.4,
         "via_diameter": 0.45,
@@ -561,20 +561,20 @@
       {
         "name": "Diff100ohm",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
+        "priority": 1,
         "schematic_color": "rgb(255, 141, 141)"
       },
       {
         "name": "Diff90ohm",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 1,
+        "priority": 2,
         "schematic_color": "rgb(255, 141, 141)"
       },
       {
         "clearance": 0.3,
         "name": "Digital",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 2,
+        "priority": 3,
         "schematic_color": "rgb(132, 132, 0)",
         "track_width": 0.15,
         "via_diameter": 0.4,
@@ -584,7 +584,7 @@
         "clearance": 0.3,
         "name": "GND",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 4,
+        "priority": 5,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.4,
         "via_diameter": 0.6,
@@ -593,8 +593,15 @@
       {
         "name": "HV",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 3,
+        "priority": 4,
         "schematic_color": "rgb(255, 153, 0)"
+      },
+      {
+        "name": "PoETap",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgb(204, 102, 0)",
+        "track_width": 0.6
       },
       {
         "bus_width": 12,
@@ -606,7 +613,7 @@
         "microvia_drill": 0.1,
         "name": "Power",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 6,
+        "priority": 7,
         "schematic_color": "rgb(194, 0, 0)",
         "track_width": 0.4,
         "via_diameter": 0.6,
@@ -1020,18 +1027,22 @@
       ],
       "/Ethernet/PR12": [
         "HV",
+        "PoETap",
         "Power"
       ],
       "/Ethernet/PR36": [
         "HV",
+        "PoETap",
         "Power"
       ],
       "/Ethernet/PR45": [
         "HV",
+        "PoETap",
         "Power"
       ],
       "/Ethernet/PR78": [
         "HV",
+        "PoETap",
         "Power"
       ],
       "/FAN_PWM": [

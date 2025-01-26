@@ -111,11 +111,18 @@
 ########################################################################################
 ## Other netclasses
 
-(rule "HV_clearance"
+(rule "HV_clearance_outer"
     (condition "A.hasNetClass('HV') && !B.hasNetClass('HV')")
+    (layer outer)
     (constraint clearance (min 1.0mm)))
 
-(rule "PoE_tap"
-    (condition "(A.hasNetClass('PoETap'))")
-    (constraint track_width (min 0.4mm) (opt 0.6mm))
+(rule "HV_clearance"
+    (condition "A.hasNetClass('HV') && !B.hasNetClass('HV')")
+    (layer inner)
     (constraint clearance (min 0.3mm)))
+
+# Route PoE taps close to each other
+
+(rule "PoE_tap"
+    (condition "A.hasNetClass('PoETap') && B.hasNetClass('PoETap')")
+    (constraint clearance (min 0.15mm)))

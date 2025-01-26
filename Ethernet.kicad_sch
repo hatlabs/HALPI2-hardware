@@ -1479,7 +1479,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0.635 0.889) (xy -0.635 0.889)
+						(xy 0.635 0.889) (xy 1.016 1.143)
 					)
 					(stroke
 						(width 0)
@@ -1491,7 +1491,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0.635 0.889) (xy 1.016 1.143)
+						(xy 0.635 0.889) (xy -0.635 0.889)
 					)
 					(stroke
 						(width 0)
@@ -4609,18 +4609,6 @@
 						(type outline)
 					)
 				)
-				(polyline
-					(pts
-						(xy 0 -6.604) (xy 0 -7.62)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(circle
 					(center 0 -6.604)
 					(radius 0.2794)
@@ -4634,7 +4622,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0.635 0.889) (xy -0.635 0.889)
+						(xy 0 -6.604) (xy 0 -7.62)
 					)
 					(stroke
 						(width 0)
@@ -4647,6 +4635,18 @@
 				(polyline
 					(pts
 						(xy 0.635 0.889) (xy 1.016 1.143)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 0.889) (xy -0.635 0.889)
 					)
 					(stroke
 						(width 0)
@@ -5259,7 +5259,7 @@
 	)
 	(text "PoE Header"
 		(exclude_from_sim no)
-		(at 207.01 98.806 0)
+		(at 198.12 94.996 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6480,7 +6480,7 @@
 		(uuid "0af54d78-a663-4e68-a3b3-92925cbdfc37")
 	)
 	(label "PR45"
-		(at 213.36 109.22 0)
+		(at 204.47 105.41 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6540,7 +6540,7 @@
 		(uuid "46aa8f13-ac9b-4342-be0f-61a930dc11d6")
 	)
 	(label "PR12"
-		(at 200.66 111.76 180)
+		(at 191.77 107.95 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6600,7 +6600,7 @@
 		(uuid "6e265206-aa3f-446a-aaa5-cd393a67bda8")
 	)
 	(label "PR78"
-		(at 213.36 111.76 0)
+		(at 204.47 107.95 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6640,7 +6640,7 @@
 		(uuid "7ce1f9d5-57a1-47f1-8505-a5a704f8915f")
 	)
 	(label "PR36"
-		(at 200.66 109.22 180)
+		(at 191.77 105.41 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6824,21 +6824,6 @@
 	(rule_area
 		(polyline
 			(pts
-				(xy 125.73 104.14) (xy 107.95 104.14) (xy 107.95 101.6) (xy 125.73 101.6)
-			)
-			(stroke
-				(width 0)
-				(type dash)
-			)
-			(fill
-				(type none)
-			)
-			(uuid 1464143b-07ab-4f6e-8600-90789ef7fe49)
-		)
-	)
-	(rule_area
-		(polyline
-			(pts
 				(xy 167.64 43.18) (xy 167.64 134.62) (xy 133.35 134.62) (xy 133.35 43.18)
 			)
 			(stroke
@@ -6848,7 +6833,7 @@
 			(fill
 				(type none)
 			)
-			(uuid 4805b7b4-b8b0-4815-90a5-baf431e0295d)
+			(uuid 0e2bdd82-50a9-40de-89e7-da93c9b50a5b)
 		)
 	)
 	(rule_area
@@ -6863,7 +6848,22 @@
 			(fill
 				(type none)
 			)
-			(uuid 7229bf49-f18f-4f59-8d2c-5108651947b7)
+			(uuid a92c9e46-3070-498c-8919-b411f05f6edf)
+		)
+	)
+	(rule_area
+		(polyline
+			(pts
+				(xy 125.73 104.14) (xy 107.95 104.14) (xy 107.95 101.6) (xy 125.73 101.6)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type none)
+			)
+			(uuid c5e71f07-84cf-4099-adea-baa4a1c1425f)
 		)
 	)
 	(netclass_flag ""
@@ -7774,7 +7774,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 165.1 101.6 0)
 			(effects
 				(font
@@ -7801,7 +7801,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C1525"
+		(property "LCSC" "C313083"
 			(at 165.1 101.6 0)
 			(effects
 				(font
@@ -7870,7 +7870,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 154.94 111.76 0)
 			(effects
 				(font
@@ -7897,7 +7897,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C1525"
+		(property "LCSC" "C313083"
 			(at 154.94 111.76 0)
 			(effects
 				(font
@@ -8139,7 +8139,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 149.86 116.84 0)
 			(effects
 				(font
@@ -8166,7 +8166,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C1525"
+		(property "LCSC" "C313083"
 			(at 149.86 116.84 0)
 			(effects
 				(font
@@ -9308,7 +9308,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 160.02 106.68 0)
 			(effects
 				(font
@@ -9335,7 +9335,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C1525"
+		(property "LCSC" "C313083"
 			(at 160.02 106.68 0)
 			(effects
 				(font
@@ -9443,7 +9443,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_02x02_Odd_Even")
-		(at 205.74 109.22 0)
+		(at 196.85 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9452,7 +9452,7 @@
 		(fields_autoplaced yes)
 		(uuid "edb451ea-3baa-478b-be76-cefcb2d20f05")
 		(property "Reference" "J2006"
-			(at 207.01 102.87 0)
+			(at 198.12 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9460,7 +9460,7 @@
 			)
 		)
 		(property "Value" "PoE"
-			(at 207.01 105.41 0)
+			(at 198.12 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9468,7 +9468,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical"
-			(at 205.74 109.22 0)
+			(at 196.85 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9477,7 +9477,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 205.74 109.22 0)
+			(at 196.85 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9486,7 +9486,7 @@
 			)
 		)
 		(property "Description" "Generic connector, double row, 02x02, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 205.74 109.22 0)
+			(at 196.85 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9495,7 +9495,7 @@
 			)
 		)
 		(property "LCSC" "C492419"
-			(at 205.74 109.22 0)
+			(at 196.85 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9504,7 +9504,7 @@
 			)
 		)
 		(property "Characteristics" ""
-			(at 205.74 109.22 0)
+			(at 196.85 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9513,7 +9513,7 @@
 			)
 		)
 		(property "Sim.Enable" ""
-			(at 205.74 109.22 0)
+			(at 196.85 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)

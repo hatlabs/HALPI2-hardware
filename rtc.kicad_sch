@@ -721,7 +721,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 1.27) (xy -1.905 1.27)
+						(xy -1.27 1.27) (xy -1.27 -1.27)
 					)
 					(stroke
 						(width 0)
@@ -733,7 +733,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 1.27) (xy -1.27 -1.27)
+						(xy -1.27 1.27) (xy -1.905 1.27)
 					)
 					(stroke
 						(width 0)
@@ -804,7 +804,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 1.27) (xy 1.27 -1.27)
+						(xy 1.27 1.27) (xy 1.905 1.27)
 					)
 					(stroke
 						(width 0)
@@ -816,7 +816,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 1.27) (xy 1.905 1.27)
+						(xy 1.27 1.27) (xy 1.27 -1.27)
 					)
 					(stroke
 						(width 0)
@@ -1738,12 +1738,6 @@
 		(uuid "de8ea4b8-b385-4303-9a9d-153a98281e9e")
 	)
 	(junction
-		(at 151.13 114.3)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "045fb267-3493-4177-8e7a-ee6e6b38d103")
-	)
-	(junction
 		(at 137.16 82.55)
 		(diameter 1.016)
 		(color 0 0 0 0)
@@ -1823,26 +1817,6 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 109.22) (xy 154.94 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "09326da3-48f4-4dc7-bae2-b52893772be5")
-	)
-	(wire
-		(pts
-			(xy 151.13 106.68) (xy 151.13 114.3)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "0c45d730-7f0f-4448-910e-b0460071673a")
-	)
-	(wire
-		(pts
 			(xy 187.96 101.6) (xy 185.42 101.6)
 		)
 		(stroke
@@ -1863,7 +1837,17 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 114.3) (xy 151.13 115.57)
+			(xy 154.94 109.22) (xy 154.94 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2712ebeb-9724-4de8-a796-800c8a789753")
+	)
+	(wire
+		(pts
+			(xy 151.13 106.68) (xy 151.13 115.57)
 		)
 		(stroke
 			(width 0)
@@ -1883,16 +1867,6 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 123.19) (xy 151.13 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2d421358-36a5-4aef-be0b-8eb4bfe51492")
-	)
-	(wire
-		(pts
 			(xy 146.05 101.6) (xy 154.94 101.6)
 		)
 		(stroke
@@ -1900,16 +1874,6 @@
 			(type solid)
 		)
 		(uuid "38147b28-ff2c-41b0-a122-d0670b61ea52")
-	)
-	(wire
-		(pts
-			(xy 140.97 114.3) (xy 151.13 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5e3e6f29-b5f1-4639-8d0c-8ffc7e2fd5ec")
 	)
 	(wire
 		(pts
@@ -2061,16 +2025,6 @@
 		)
 		(uuid "d755e14f-ba8f-4a69-a369-00f895663202")
 	)
-	(wire
-		(pts
-			(xy 125.73 114.3) (xy 135.89 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d87c9d1f-5fba-47bc-bb99-99342d66081f")
-	)
 	(bus
 		(pts
 			(xy 143.51 104.14) (xy 143.51 105.41)
@@ -2110,6 +2064,16 @@
 			(type solid)
 		)
 		(uuid "e876b4dd-394c-4c18-ae48-9da9a4c11832")
+	)
+	(wire
+		(pts
+			(xy 151.13 123.19) (xy 154.94 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8c02679-3031-4554-8ab2-2e7643b055b5")
 	)
 	(wire
 		(pts
@@ -2162,12 +2126,12 @@
 		(uuid "1d6358f9-c35c-4d52-8585-d276e3a46891")
 	)
 	(label "OSCI"
-		(at 143.51 114.3 0)
+		(at 151.13 111.76 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "39f075ec-cd98-49b6-961e-bba79d18ff04")
 	)
@@ -2247,30 +2211,6 @@
 	(netclass_flag ""
 		(length 2.54)
 		(shape round)
-		(at 149.86 114.3 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "2a127ea0-59d8-42e1-b4e0-d269a15cfff5")
-		(property "Netclass" "Analog"
-			(at 150.749 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(netclass_flag ""
-		(length 2.54)
-		(shape round)
 		(at 105.41 97.79 90)
 		(fields_autoplaced yes)
 		(effects
@@ -2288,6 +2228,39 @@
 					(italic yes)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 151.13 113.03 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4d300661-cf76-4fea-9001-2e125821f0ef")
+		(property "Netclass" "Digital"
+			(at 148.59 112.141 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Component Class" ""
+			(at -71.12 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
 				(hide yes)
 			)
 		)
@@ -2327,15 +2300,24 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "b3fe64ce-71ed-48df-b882-b98283bd9884")
-		(property "Netclass" "Analog"
+		(uuid "aee7db05-bfa0-4d7a-aeaf-4fbd521f47a9")
+		(property "Netclass" "Digital"
 			(at 157.48 113.411 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Component Class" ""
+			(at -67.31 3.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 					(italic yes)
 				)
-				(justify left)
 				(hide yes)
 			)
 		)
@@ -2382,7 +2364,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "X1A000061000200"
+		(property "Value" "32.768kHz 7pF"
 			(at 147.32 120.6499 90)
 			(effects
 				(font
@@ -2391,7 +2373,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Crystal:Crystal_SMD_2012-2Pin_2.0x1.2mm"
+		(property "Footprint" "Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm"
 			(at 151.13 119.38 0)
 			(effects
 				(font
@@ -2418,7 +2400,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C55208"
+		(property "LCSC" "C48615"
 			(at 151.13 119.38 90)
 			(effects
 				(font
@@ -2429,6 +2411,23 @@
 		)
 		(property "Characteristics" ""
 			(at 151.13 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PartNumber" ""
+			(at 151.13 119.38 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" "Q13FC13500002"
+			(at 151.13 119.38 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2454,72 +2453,6 @@
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/850df4bf-e40a-4082-adc2-76804638b949/e502b11a-b887-47b5-9ff1-f210171ce142"
 					(reference "Y2901")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 125.73 114.3 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "15fbfd85-4567-4062-b9a5-f1b44e605d12")
-		(property "Reference" "#PWR02906"
-			(at 125.73 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 125.73 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 125.73 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 125.73 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 125.73 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ed40009b-3fa1-466a-b596-9bf2c967d835")
-		)
-		(instances
-			(project "HALPI2"
-				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/850df4bf-e40a-4082-adc2-76804638b949/e502b11a-b887-47b5-9ff1-f210171ce142"
-					(reference "#PWR02906")
 					(unit 1)
 				)
 			)
@@ -3143,6 +3076,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Enable" ""
@@ -3736,99 +3670,6 @@
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/850df4bf-e40a-4082-adc2-76804638b949/e502b11a-b887-47b5-9ff1-f210171ce142"
 					(reference "#PWR02903")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 138.43 114.3 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f2fb16ba-7969-42f1-a960-a0df9b710e57")
-		(property "Reference" "C2903"
-			(at 138.4363 107.95 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "22pF C0G"
-			(at 138.4363 110.49 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 138.43 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 138.43 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 138.43 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C1653"
-			(at 138.43 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Characteristics" ""
-			(at 138.43 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" ""
-			(at 138.43 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "6e617695-cad2-47ea-9b18-4252b2fa5034")
-		)
-		(pin "2"
-			(uuid "b64436a8-2ec8-439c-920c-eb186ab51125")
-		)
-		(instances
-			(project "HALPI2"
-				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/850df4bf-e40a-4082-adc2-76804638b949/e502b11a-b887-47b5-9ff1-f210171ce142"
-					(reference "C2903")
 					(unit 1)
 				)
 			)

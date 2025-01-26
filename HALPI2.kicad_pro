@@ -49,7 +49,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.5
+          "min_clearance": 0.0
         }
       },
       "diff_pair_dimensions": [
@@ -581,10 +581,14 @@
         "via_drill": 0.3
       },
       {
+        "clearance": 0.3,
         "name": "GND",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 4,
-        "schematic_color": "rgba(0, 0, 0, 0.000)"
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.4,
+        "via_diameter": 0.6,
+        "via_drill": 0.4
       },
       {
         "name": "HV",
@@ -690,6 +694,12 @@
       "/CM4 GPIO/GPIO21": [
         "Digital"
       ],
+      "/CM4 GPIO/GPIO22": [
+        "Digital"
+      ],
+      "/CM4 GPIO/GPIO23": [
+        "Digital"
+      ],
       "/CM4 GPIO/GPIO24": [
         "Digital"
       ],
@@ -708,10 +718,22 @@
       "/CM4 GPIO/GPIO4": [
         "Digital"
       ],
+      "/CM4 GPIO/GPIO5": [
+        "Digital"
+      ],
+      "/CM4 GPIO/GPIO6": [
+        "Digital"
+      ],
       "/CM4 GPIO/GPIO7": [
         "Digital"
       ],
       "/CM4 GPIO/GPIO8": [
+        "Digital"
+      ],
+      "/CM4 GPIO/I2C1.SCL": [
+        "Digital"
+      ],
+      "/CM4 GPIO/I2C1.SDA": [
         "Digital"
       ],
       "/CM4 GPIO/ID.SCL": [
@@ -919,10 +941,10 @@
         "Power"
       ],
       "/Controller/RTC/OSCI": [
-        "Analog"
+        "Digital"
       ],
       "/Controller/RTC/OSCO": [
-        "Analog"
+        "Digital"
       ],
       "/Controller/RTC/VDD": [
         "Power"
@@ -1204,6 +1226,9 @@
       "/RS-485/RX": [
         "Digital"
       ],
+      "/RS-485/RXD_": [
+        "Digital"
+      ],
       "/RS-485/RX_A": [
         "Analog"
       ],
@@ -1255,6 +1280,9 @@
       "/RS-485/TX_B_C_": [
         "Analog"
       ],
+      "/RS-485/U_EN": [
+        "Digital"
+      ],
       "/RS-485/Vin_": [
         "Power"
       ],
@@ -1268,6 +1296,9 @@
         "Digital"
       ],
       "/RS485.TXD": [
+        "Digital"
+      ],
+      "/RS485.~{EN}": [
         "Digital"
       ],
       "/RTC_INT": [
@@ -1639,6 +1670,9 @@
       ],
       "Net-(JP1601-B)": [
         "Analog"
+      ],
+      "unconnected-(U201-GPIO19-Pad26)": [
+        "Digital"
       ]
     },
     "netclass_patterns": [
@@ -1822,6 +1856,18 @@
           "label": "Component Class",
           "name": "Component Class",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "PartNumber",
+          "name": "PartNumber",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Field8",
+          "name": "Field8",
+          "show": false
         }
       ],
       "filter_string": "",

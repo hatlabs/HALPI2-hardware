@@ -338,131 +338,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Hatlabs:+3.3VCMx"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "+3.3VCMx"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol driven by the CMx module +3.3V output"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "+3.3VCMx_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+3.3VCMx_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Hatlabs:RaspberryPi-CM45Lite-B"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2424,10 +2299,9 @@
 				)
 			)
 			(symbol "SilkScreenImage_0_1"
-				(polyline
-					(pts
-						(xy -5.08 2.54) (xy 5.08 -7.62)
-					)
+				(rectangle
+					(start -5.08 2.54)
+					(end 5.08 -7.62)
 					(stroke
 						(width 0)
 						(type default)
@@ -2436,9 +2310,10 @@
 						(type none)
 					)
 				)
-				(rectangle
-					(start -5.08 2.54)
-					(end 5.08 -7.62)
+				(polyline
+					(pts
+						(xy -5.08 2.54) (xy 5.08 -7.62)
+					)
 					(stroke
 						(width 0)
 						(type default)
@@ -2457,6 +2332,131 @@
 					)
 					(fill
 						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:+3.3V"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+3.3V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+3.3V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3.3V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
 					)
 				)
 			)
@@ -5993,21 +5993,6 @@
 	(rule_area
 		(polyline
 			(pts
-				(xy 107.95 49.53) (xy 107.95 73.66) (xy 105.41 73.66) (xy 105.41 49.53)
-			)
-			(stroke
-				(width 0)
-				(type dash)
-			)
-			(fill
-				(type none)
-			)
-			(uuid 10c5cfab-3b2e-4f6c-a86f-55f7872b0ee1)
-		)
-	)
-	(rule_area
-		(polyline
-			(pts
 				(xy 107.95 74.93) (xy 107.95 93.98) (xy 105.41 93.98) (xy 105.41 74.93)
 			)
 			(stroke
@@ -6017,22 +6002,7 @@
 			(fill
 				(type none)
 			)
-			(uuid 1a0bcf8d-8534-47f1-b960-324984da5215)
-		)
-	)
-	(rule_area
-		(polyline
-			(pts
-				(xy 163.83 97.79) (xy 163.83 114.3) (xy 166.37 114.3) (xy 166.37 97.79)
-			)
-			(stroke
-				(width 0)
-				(type dash)
-			)
-			(fill
-				(type none)
-			)
-			(uuid 2fc68244-737f-467e-af27-a779f5d1999d)
+			(uuid 15f1e90e-768e-488d-a3bd-5d88edc8db4f)
 		)
 	)
 	(rule_area
@@ -6047,13 +6017,13 @@
 			(fill
 				(type none)
 			)
-			(uuid 323cf559-f861-4ee6-a5e8-6ca3eae25250)
+			(uuid 94c64aad-41d3-468d-b29f-56d44bea631a)
 		)
 	)
 	(rule_area
 		(polyline
 			(pts
-				(xy 163.83 142.24) (xy 163.83 115.57) (xy 166.37 115.57) (xy 166.37 142.24)
+				(xy 163.83 97.79) (xy 163.83 114.3) (xy 166.37 114.3) (xy 166.37 97.79)
 			)
 			(stroke
 				(width 0)
@@ -6062,7 +6032,22 @@
 			(fill
 				(type none)
 			)
-			(uuid 469e73a7-2450-4ef0-a993-041624606202)
+			(uuid 98cf83a1-ff23-41ff-80f1-a8965f411075)
+		)
+	)
+	(rule_area
+		(polyline
+			(pts
+				(xy 107.95 49.53) (xy 107.95 73.66) (xy 105.41 73.66) (xy 105.41 49.53)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type none)
+			)
+			(uuid 9a40218e-bea1-4319-b29a-dde3ec756382)
 		)
 	)
 	(rule_area
@@ -6077,7 +6062,7 @@
 			(fill
 				(type none)
 			)
-			(uuid 4c8c08c5-2236-4c03-b8e4-bcd333a69d26)
+			(uuid a7f8382f-a1c7-4551-9562-096de2b81cb3)
 		)
 	)
 	(rule_area
@@ -6092,7 +6077,22 @@
 			(fill
 				(type none)
 			)
-			(uuid 65e83db6-a244-4f51-a84a-0a01c6d63e00)
+			(uuid beb3a9cc-bae2-4d17-b219-6d673031ab63)
+		)
+	)
+	(rule_area
+		(polyline
+			(pts
+				(xy 163.83 142.24) (xy 163.83 115.57) (xy 166.37 115.57) (xy 166.37 142.24)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type none)
+			)
+			(uuid cdebfa70-12ab-448c-ab6d-304e03399ff2)
 		)
 	)
 	(netclass_flag ""
@@ -6230,7 +6230,7 @@
 	(netclass_flag ""
 		(length 2.54)
 		(shape round)
-		(at 33.02 67.31 180)
+		(at 31.75 67.31 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6240,7 +6240,7 @@
 		)
 		(uuid "b1163b50-c9eb-48e6-a354-5dc4fcbdee63")
 		(property "Netclass" "Digital"
-			(at 33.909 69.85 0)
+			(at 32.639 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6250,7 +6250,7 @@
 			)
 		)
 		(property "Component Class" ""
-			(at 0 0 0)
+			(at -1.27 0 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6356,6 +6356,72 @@
 					(italic yes)
 				)
 				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 20.32 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1ce1da87-6dfb-465b-a845-f2996f080d0a")
+		(property "Reference" "#PWR01901"
+			(at 20.32 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 20.32 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 20.32 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 20.32 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 20.32 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "129aae64-8f9c-495a-be30-4729ef149caa")
+		)
+		(instances
+			(project ""
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/851e7ce4-d5b0-47f7-ace9-4a347f172348"
+					(reference "#PWR01901")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -6917,71 +6983,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Hatlabs:+3.3VCMx")
-		(at 20.32 63.5 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "73b5637d-9794-4cfd-b5ea-658073a1fa1b")
-		(property "Reference" "#PWR02129"
-			(at 20.32 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3VCMx"
-			(at 20.32 59.944 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 20.32 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 20.32 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol driven by the CMx module +3.3V output"
-			(at 20.32 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "774924f1-fe89-4f58-97a9-701a814037b3")
-		)
-		(instances
-			(project "HALPI2"
-				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/851e7ce4-d5b0-47f7-ace9-4a347f172348"
-					(reference "#PWR02129")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector_Generic:Conn_02x02_Odd_Even")
 		(at 35.56 93.98 0)
 		(unit 1)
@@ -7178,7 +7179,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Hatlabs:+3.3VCMx")
+		(lib_id "power:+3.3V")
 		(at 35.56 78.74 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7186,8 +7187,8 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "b5d56056-38b2-46a7-b8f4-560b1a7f6cb3")
-		(property "Reference" "#PWR02011"
+		(uuid "d333a6f1-9048-4133-bf1c-b662a2baae63")
+		(property "Reference" "#PWR01902"
 			(at 35.56 82.55 0)
 			(effects
 				(font
@@ -7196,7 +7197,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3.3VCMx"
+		(property "Value" "+3.3V"
 			(at 35.56 73.66 0)
 			(effects
 				(font
@@ -7222,7 +7223,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol driven by the CMx module +3.3V output"
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 			(at 35.56 78.74 0)
 			(effects
 				(font
@@ -7232,12 +7233,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "e1cc8095-dda0-4d69-94ad-99ce7eec6b7b")
+			(uuid "7f2ee43c-2d27-4d63-a33c-4813c55aad47")
 		)
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/851e7ce4-d5b0-47f7-ace9-4a347f172348"
-					(reference "#PWR02011")
+					(reference "#PWR01902")
 					(unit 1)
 				)
 			)

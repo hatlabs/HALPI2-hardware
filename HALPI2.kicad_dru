@@ -28,49 +28,49 @@
 # Differential pair clearance is 3W.
 
 (rule diff_90ohm_layer1
-    (condition "(A.Type == 'Track') && (A.inDiffPair('*/PCIe*') || A.inDiffPair('*/USB*')) && A.existsOnLayer('F.Cu')")
+    (condition "(A.Type == 'Track') && (A.hasNetclass('Diff90ohm'))")
     (constraint track_width (opt 0.1575mm))
     (constraint clearance (min 0.315mm))
     (constraint diff_pair_gap (min 0.1mm) (opt 0.2mm) (max 0.25mm)))
 
 (rule diff_90ohm_layer3
-    (condition "(A.Type == 'Track') && (A.inDiffPair('*/PCIe*') || A.inDiffPair('*/USB*')) && A.existsOnLayer('In2.Cu')")
+    (condition "(A.Type == 'Track') && (A.hasNetclass('Diff90ohm'))")
     (constraint track_width (opt 0.1430mm))
     (constraint clearance (min 0.429mm))
     (constraint diff_pair_gap (min 0.1mm) (opt 0.2mm) (max 0.25mm)))
 
 (rule diff_90ohm_layer5
-    (condition "(A.Type == 'Track') && (A.inDiffPair('*/PCIe*') || A.inDiffPair('*/USB*')) && A.existsOnLayer('In4.Cu')")
+    (condition "(A.Type == 'Track') && (A.hasNetclass('Diff90ohm'))")
     (constraint track_width (opt 0.1346mm))
     (constraint clearance (min 0.4038mm))
     (constraint diff_pair_gap (min 0.1mm) (opt 0.2mm) (max 0.25mm)))
 
 (rule diff_90ohm_layer6
-    (condition "(A.Type == 'Track') && (A.inDiffPair('*/PCIe*') || A.inDiffPair('*/USB*')) && A.existsOnLayer('B.Cu')")
+    (condition "(A.Type == 'Track') && (A.hasNetclass('Diff90ohm'))")
     (constraint track_width (opt 0.1575mm))
     (constraint clearance (min 0.315mm))
     (constraint diff_pair_gap (min 0.1mm) (opt 0.2mm) (max 0.25mm)))
 
 (rule "diff_100ohm_layer1"
-    (condition "(A.Type == 'Track') && (A.inDiffPair('*/ETH*') || A.inDiffPair('*/HDMI*') || A.inDiffPair('*/DPHY*')) && A.existsOnLayer('F.Cu')")
+    (condition "(A.Type == 'Track') && (A.hasNetclass('Diff100ohm'))")
     (constraint track_width (opt 0.1326mm))
     (constraint clearance (opt 0.3978mm))
     (constraint diff_pair_gap (min 0.1mm) (opt 0.25mm) (max 0.28mm)))
 
 (rule "diff_100ohm_layer3"
-    (condition "(A.Type == 'Track') && (A.inDiffPair('*/ETH*') || A.inDiffPair('*/HDMI*') || A.inDiffPair('*/DPHY*')) && A.existsOnLayer('In2.Cu')")
+    (condition "(A.Type == 'Track') && (A.hasNetclass('Diff100ohm'))")
     (constraint track_width (opt 0.1204mm))
     (constraint clearance (min 0.3612mm))
     (constraint diff_pair_gap (min 0.1mm) (opt 0.25mm) (max 0.28mm)))
 
 (rule "diff_100ohm_layer5"
-    (condition "(A.Type == 'Track') && (A.inDiffPair('*/ETH*') || A.inDiffPair('*/HDMI*') || A.inDiffPair('*/DPHY*')) && A.existsOnLayer('In4.Cu')")
+    (condition "(A.Type == 'Track') && (A.hasNetclass('Diff100ohm'))")
     (constraint track_width (opt 0.1130mm))
     (constraint clearance (min 0.339mm))
     (constraint diff_pair_gap (min 0.1mm) (opt 0.25mm) (max 0.28mm)))
 
 (rule "diff_100ohm_layer1"
-    (condition "(A.Type == 'Track') && (A.inDiffPair('*/ETH*') || A.inDiffPair('*/HDMI*') || A.inDiffPair('*/DPHY*')) && A.existsOnLayer('B.Cu')")
+    (condition "(A.Type == 'Track') && (A.hasNetclass('Diff100ohm'))")
     (constraint track_width (opt 0.1326mm))
     (constraint clearance (opt 0.3978mm))
     (constraint diff_pair_gap (min 0.1mm) (opt 0.25mm) (max 0.28mm)))

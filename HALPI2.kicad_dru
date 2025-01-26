@@ -114,3 +114,8 @@
 (rule "HV_clearance"
     (condition "A.hasNetClass('HV') && !B.hasNetClass('HV')")
     (constraint clearance (min 1.0mm)))
+
+(rule "PoE_tap"
+    (condition "(A.hasNetClass('PoETap'))")
+    (constraint track_width (min 0.4mm) (opt 0.6mm))
+    (constraint clearance (min 0.3mm)))

@@ -286,7 +286,7 @@
 						(type default)
 					)
 					(fill
-						(type outline)
+						(type none)
 					)
 				)
 				(arc
@@ -298,7 +298,7 @@
 						(type default)
 					)
 					(fill
-						(type none)
+						(type outline)
 					)
 				)
 				(polyline
@@ -360,17 +360,6 @@
 						(type none)
 					)
 				)
-				(circle
-					(center 0 -5.842)
-					(radius 1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
 				(polyline
 					(pts
 						(xy 0 -5.842) (xy 0 4.318)
@@ -381,6 +370,17 @@
 					)
 					(fill
 						(type none)
+					)
+				)
+				(circle
+					(center 0 -5.842)
+					(radius 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
 					)
 				)
 				(rectangle
@@ -838,7 +838,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Yellow:TPD4EUSB30_1"
+		(symbol "Hatlabs:RCLAMP0524P"
 			(pin_names
 				(offset 0)
 			)
@@ -853,7 +853,7 @@
 					)
 				)
 			)
-			(property "Value" "TPD4EUSB30"
+			(property "Value" "RCLAMP0524P"
 				(at 8.89 -10.16 0)
 				(effects
 					(font
@@ -861,7 +861,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Package_SON:USON-10_2.5x1.0mm_P0.5mm"
+			(property "Footprint" "Package_DFN_QFN:Diodes_UDFN-10_1.0x2.5mm_P0.5mm"
 				(at -24.13 -10.16 0)
 				(effects
 					(font
@@ -870,7 +870,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tpd2eusb30a.pdf"
+			(property "Datasheet" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -879,7 +879,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "4-Channel ESD Protection for Super-Speed USB 3.0 Interface, USON-10"
+			(property "Description" "4-Channel Low Capacitance TVS Diode Array, DFN-10"
 				(at 0 0 0)
 				(effects
 					(font
@@ -888,7 +888,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "ESD protection USB 3.0"
+			(property "ki_keywords" "ESD protection TVS"
 				(at 0 0 0)
 				(effects
 					(font
@@ -897,7 +897,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "USON*2.5x1.0mm*P0.5mm*"
+			(property "ki_fp_filters" "Diodes*UDFN*1.0x2.5mm*P0.5mm*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -906,7 +906,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "TPD4EUSB30_1_0_0"
+			(symbol "RCLAMP0524P_0_0"
 				(rectangle
 					(start -5.715 6.477)
 					(end 5.715 -6.604)
@@ -932,7 +932,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 6.477) (xy 0 -6.604)
+						(xy 0.127 6.477) (xy 0.127 -6.604)
 					)
 					(stroke
 						(width 0)
@@ -955,7 +955,7 @@
 					)
 				)
 			)
-			(symbol "TPD4EUSB30_1_0_1"
+			(symbol "RCLAMP0524P_0_1"
 				(polyline
 					(pts
 						(xy -7.747 2.54) (xy -3.175 2.54)
@@ -1133,7 +1133,7 @@
 				)
 				(polyline
 					(pts
-						(xy -0.635 0.889) (xy -1.016 0.635)
+						(xy -0.508 0.889) (xy -0.889 0.635)
 					)
 					(stroke
 						(width 0)
@@ -1179,7 +1179,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0.635 0.889) (xy -0.635 0.889)
+						(xy 0.762 0.889) (xy 1.143 1.143)
 					)
 					(stroke
 						(width 0)
@@ -1191,7 +1191,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0.635 0.889) (xy 1.016 1.143)
+						(xy 0.762 0.889) (xy -0.508 0.889)
 					)
 					(stroke
 						(width 0)
@@ -1203,7 +1203,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0.635 -0.381) (xy -0.635 -0.381) (xy 0 0.889) (xy 0.635 -0.381)
+						(xy 0.762 -0.381) (xy -0.508 -0.381) (xy 0.127 0.889) (xy 0.762 -0.381)
 					)
 					(stroke
 						(width 0)
@@ -1378,30 +1378,12 @@
 					)
 				)
 			)
-			(symbol "TPD4EUSB30_1_1_1"
-				(pin passive line
-					(at -12.7 2.54 0)
-					(length 5.08)
-					(name "D1+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 2.54 0)
+			(symbol "RCLAMP0524P_1_1"
+				(pin no_connect line
+					(at -12.7 7.62 0)
 					(length 5.08)
 					(hide yes)
-					(name "D1+"
+					(name "NC"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1417,9 +1399,27 @@
 					)
 				)
 				(pin passive line
+					(at -12.7 2.54 0)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
 					(at -12.7 -2.54 0)
 					(length 5.08)
-					(name "D1-"
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1434,11 +1434,11 @@
 						)
 					)
 				)
-				(pin passive line
-					(at -12.7 -2.54 0)
+				(pin no_connect line
+					(at -12.7 -7.62 0)
 					(length 5.08)
 					(hide yes)
-					(name "D1-"
+					(name "NC"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1456,7 +1456,7 @@
 				(pin power_in line
 					(at 0 -12.7 90)
 					(length 5.08)
-					(name "GND"
+					(name "VSS"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1475,7 +1475,7 @@
 					(at 0 -12.7 90)
 					(length 5.08)
 					(hide yes)
-					(name "GND"
+					(name "VSS"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1490,29 +1490,11 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 12.7 2.54 180)
-					(length 5.08)
-					(name "D2+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 12.7 2.54 180)
+				(pin no_connect line
+					(at 12.7 7.62 180)
 					(length 5.08)
 					(hide yes)
-					(name "D2+"
+					(name "NC"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1528,9 +1510,27 @@
 					)
 				)
 				(pin passive line
+					(at 12.7 2.54 180)
+					(length 5.08)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
 					(at 12.7 -2.54 180)
 					(length 5.08)
-					(name "D2-"
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1545,11 +1545,11 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 12.7 -2.54 180)
+				(pin no_connect line
+					(at 12.7 -7.62 180)
 					(length 5.08)
 					(hide yes)
-					(name "D2-"
+					(name "NC"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2219,7 +2219,7 @@
 			(fill
 				(type none)
 			)
-			(uuid f081ce3e-33b5-41f5-b823-c59a9b931471)
+			(uuid 5446b8e0-8b31-4043-a1f5-f39f3b23063c)
 		)
 	)
 	(netclass_flag ""
@@ -2426,14 +2426,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 138.43 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "346ef230-69a8-435b-a7c2-ad0df294d9f5")
 		)
@@ -2582,8 +2574,7 @@
 		)
 	)
 	(symbol
-		(lib_name "Yellow:TPD4EUSB30_1")
-		(lib_id "Yellow:TPD4EUSB30")
+		(lib_id "Hatlabs:RCLAMP0524P")
 		(at 163.83 121.92 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2607,7 +2598,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SON:USON-10_2.5x1.0mm_P0.5mm"
+		(property "Footprint" "Package_DFN_QFN:Diodes_UDFN-10_1.0x2.5mm_P0.5mm"
 			(at 139.7 132.08 0)
 			(effects
 				(font
@@ -2625,7 +2616,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "4-Channel Low Capacitance TVS Diode Array, DFN-10"
 			(at 163.83 121.92 0)
 			(effects
 				(font
@@ -2658,14 +2649,7 @@
 				(font
 					(size 1.27 1.27)
 				)
-			)
-		)
-		(property "Sim.Enable" ""
-			(at 163.83 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -2778,14 +2762,6 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
-			)
-		)
-		(property "Sim.Enable" ""
-			(at 119.38 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "1"
@@ -2939,14 +2915,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 138.43 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "82bb2564-1b17-4a11-b01f-423e6c55dc00")
 		)
@@ -3034,14 +3002,6 @@
 			)
 		)
 		(property "Component Class" "fine_pitch"
-			(at 165.1 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Enable" ""
 			(at 165.1 76.2 0)
 			(effects
 				(font

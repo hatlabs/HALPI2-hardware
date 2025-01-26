@@ -1284,12 +1284,6 @@
 		(uuid "deee1dca-29a7-41e2-8901-4445c03ac911")
 	)
 	(junction
-		(at 69.85 62.23)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e1fa6a1b-a7f0-4c19-b577-af6979723c3e")
-	)
-	(junction
 		(at 222.25 78.74)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1529,16 +1523,6 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 62.23) (xy 71.12 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "96ffe658-a063-4862-97a4-4c6533f96318")
-	)
-	(wire
-		(pts
 			(xy 233.68 77.47) (xy 233.68 78.74)
 		)
 		(stroke
@@ -1649,7 +1633,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 62.23) (xy 69.85 62.23)
+			(xy 57.15 62.23) (xy 71.12 62.23)
 		)
 		(stroke
 			(width 0)
@@ -2287,14 +2271,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 233.68 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "13581c24-3c32-499e-9ae6-faeaf49c01ad")
 		)
@@ -2376,82 +2352,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 69.85 62.23 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "41dec1b4-f6ba-47d4-af98-9b28f5d7d384")
-		(property "Reference" "#FLG01701"
-			(at 69.85 60.325 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 69.85 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 69.85 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 69.85 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 69.85 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "21776fc8-88d4-4827-b764-24dbb4653365")
-		)
-		(instances
-			(project "SH-RPi"
-				(path "/4c14904e-48eb-4243-8cbd-3afad8250b85/00000000-0000-0000-0000-00005ca73f16"
-					(reference "#FLG0201")
-					(unit 1)
-				)
-			)
-			(project "SH-RPi"
-				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/531e3be9-7113-42c4-b43f-4c940587f1bb"
-					(reference "#FLG0201")
-					(unit 1)
-				)
-				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/e9d5ec1c-aaca-4440-9248-34d6a57da48f"
-					(reference "#FLG01701")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 161.29 59.69 270)
 		(unit 1)
@@ -2519,14 +2419,6 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
-			)
-		)
-		(property "Sim.Enable" ""
-			(at 161.29 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "1"
@@ -2617,14 +2509,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 240.03 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "4c35e41e-573d-4e90-ad2f-26c5d3da2348")
 		)
@@ -2705,14 +2589,6 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
-			)
-		)
-		(property "Sim.Enable" ""
-			(at 222.25 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "1"
@@ -2813,14 +2689,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 71.12 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "1c755425-f4d4-4ff3-b38d-ab523c78c055")
 		)
@@ -2918,14 +2786,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 182.88 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "be484a86-747a-4b6e-a1dc-80c7a96325eb")
 		)
@@ -3011,14 +2871,6 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
-			)
-		)
-		(property "Sim.Enable" ""
-			(at 222.25 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "1"
@@ -3120,14 +2972,6 @@
 			)
 		)
 		(property "Component Class" "fine_pitch"
-			(at 123.19 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Enable" ""
 			(at 123.19 72.39 0)
 			(effects
 				(font
@@ -3244,14 +3088,6 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
-			)
-		)
-		(property "Sim.Enable" ""
-			(at 95.25 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "2"
@@ -3506,14 +3342,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 212.09 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "9e76448a-d8a7-4a02-b727-3278bb9e60ce")
 		)
@@ -3600,14 +3428,6 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
-			)
-		)
-		(property "Sim.Enable" ""
-			(at 57.15 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "1"
@@ -3840,14 +3660,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 195.58 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "75089456-f014-4fae-a02e-9c23136fccb9")
 		)
@@ -4027,14 +3839,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 175.26 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "18e64cb4-c6d3-4e75-9909-587df257d3f6")
 		)
@@ -4121,14 +3925,6 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
-			)
-		)
-		(property "Sim.Enable" ""
-			(at 154.94 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "1"
@@ -4224,14 +4020,6 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
-			)
-		)
-		(property "Sim.Enable" ""
-			(at 87.63 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "1"

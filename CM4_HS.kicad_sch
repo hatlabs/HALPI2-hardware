@@ -2299,9 +2299,10 @@
 				)
 			)
 			(symbol "SilkScreenImage_0_1"
-				(rectangle
-					(start -5.08 2.54)
-					(end 5.08 -7.62)
+				(polyline
+					(pts
+						(xy -5.08 2.54) (xy 5.08 -7.62)
+					)
 					(stroke
 						(width 0)
 						(type default)
@@ -2310,10 +2311,9 @@
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy -5.08 2.54) (xy 5.08 -7.62)
-					)
+				(rectangle
+					(start -5.08 2.54)
+					(end 5.08 -7.62)
 					(stroke
 						(width 0)
 						(type default)
@@ -2662,8 +2662,8 @@
 		(uuid "38da4749-2710-4a7a-b63f-6a2a75325787")
 	)
 	(no_connect
-		(at 35.56 62.23)
-		(uuid "70be0a6d-674a-49c9-bd47-0c39c006c85d")
+		(at 38.1 62.23)
+		(uuid "becf8cfe-d8f3-471d-97a2-1f1c3930ab9f")
 	)
 	(no_connect
 		(at 110.49 41.91)
@@ -3369,16 +3369,6 @@
 		)
 		(uuid "05c21719-ad33-4e20-9b41-fd11621d826b")
 	)
-	(wire
-		(pts
-			(xy 35.56 62.23) (xy 38.1 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "067da20f-5f02-4a6e-9098-817fbdcbf920")
-	)
 	(polyline
 		(pts
 			(xy 72.39 15.24) (xy 72.39 107.95)
@@ -3979,6 +3969,16 @@
 		)
 		(uuid "60e1e0c3-c39b-45ca-8d84-bb8ff016968d")
 	)
+	(bus
+		(pts
+			(xy 35.56 26.67) (xy 38.1 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "615f2ff0-e34e-4f8b-b0be-aa04ad0e1d6a")
+	)
 	(wire
 		(pts
 			(xy 92.71 46.99) (xy 110.49 46.99)
@@ -4479,16 +4479,6 @@
 		)
 		(uuid "a80a9709-e650-4459-b835-337a21d033bb")
 	)
-	(wire
-		(pts
-			(xy 35.56 30.48) (xy 38.1 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a817ecd2-add8-46bd-9fc5-c54ca6d03b10")
-	)
 	(bus
 		(pts
 			(xy 175.26 100.33) (xy 175.26 102.87)
@@ -4578,6 +4568,16 @@
 			(type default)
 		)
 		(uuid "af2362b1-1fde-47f5-95e0-600161060dd7")
+	)
+	(bus
+		(pts
+			(xy 35.56 30.48) (xy 38.1 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af64b5ea-5e60-4e02-a7ba-44da9bb289d1")
 	)
 	(wire
 		(pts
@@ -4998,16 +4998,6 @@
 			(type solid)
 		)
 		(uuid "f038b08c-7918-4b5b-ba4b-6acda3f2c8e9")
-	)
-	(wire
-		(pts
-			(xy 35.56 26.67) (xy 38.1 26.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f32e32f6-a9f2-4add-b109-c8eac6449d41")
 	)
 	(bus
 		(pts
@@ -5499,6 +5489,16 @@
 		)
 		(uuid "5d5f1fbf-371b-4f95-8922-1b33fde46628")
 	)
+	(label "I2C_DPHY1{I2C}"
+		(at 35.56 55.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5f3f0013-f094-4939-9e1e-da4c9858838f")
+	)
 	(label "DPHY0{DPHY}"
 		(at 92.71 114.3 270)
 		(effects
@@ -5779,6 +5779,16 @@
 		)
 		(uuid "d348e0ab-d065-47eb-8032-37f8b39c41e9")
 	)
+	(label "I2C_DPHY1{I2C}"
+		(at 63.5 88.9 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d7539363-425a-4e46-a14a-44a29734529e")
+	)
 	(label "DPHY1.C+"
 		(at 161.29 120.65 0)
 		(effects
@@ -5869,17 +5879,6 @@
 		)
 		(uuid "fdcedbb3-d917-4452-a1ce-a872f8eee96a")
 	)
-	(hierarchical_label "I2C_DPHY1{I2C}"
-		(shape bidirectional)
-		(at 35.56 55.88 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "42093dcf-a45c-4e01-91f6-115aa8fedcae")
-	)
 	(hierarchical_label "USB3-0{USB3}"
 		(shape bidirectional)
 		(at 87.63 77.47 270)
@@ -5946,17 +5945,6 @@
 		)
 		(uuid "a9102d02-c293-4c76-97c5-f75ace7561c5")
 	)
-	(hierarchical_label "I2C_DPHY1{I2C}"
-		(shape bidirectional)
-		(at 63.5 88.9 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "c0ad30ec-db36-40ed-a58e-c8c1fabdeedd")
-	)
 	(hierarchical_label "VBUS_EN"
 		(shape output)
 		(at 106.68 34.29 180)
@@ -6002,67 +5990,7 @@
 			(fill
 				(type none)
 			)
-			(uuid 15f1e90e-768e-488d-a3bd-5d88edc8db4f)
-		)
-	)
-	(rule_area
-		(polyline
-			(pts
-				(xy 107.95 43.18) (xy 107.95 48.26) (xy 105.41 48.26) (xy 105.41 43.18)
-			)
-			(stroke
-				(width 0)
-				(type dash)
-			)
-			(fill
-				(type none)
-			)
-			(uuid 94c64aad-41d3-468d-b29f-56d44bea631a)
-		)
-	)
-	(rule_area
-		(polyline
-			(pts
-				(xy 163.83 97.79) (xy 163.83 114.3) (xy 166.37 114.3) (xy 166.37 97.79)
-			)
-			(stroke
-				(width 0)
-				(type dash)
-			)
-			(fill
-				(type none)
-			)
-			(uuid 98cf83a1-ff23-41ff-80f1-a8965f411075)
-		)
-	)
-	(rule_area
-		(polyline
-			(pts
-				(xy 107.95 49.53) (xy 107.95 73.66) (xy 105.41 73.66) (xy 105.41 49.53)
-			)
-			(stroke
-				(width 0)
-				(type dash)
-			)
-			(fill
-				(type none)
-			)
-			(uuid 9a40218e-bea1-4319-b29a-dde3ec756382)
-		)
-	)
-	(rule_area
-		(polyline
-			(pts
-				(xy 166.37 29.21) (xy 166.37 96.52) (xy 163.83 96.52) (xy 163.83 29.21)
-			)
-			(stroke
-				(width 0)
-				(type dash)
-			)
-			(fill
-				(type none)
-			)
-			(uuid a7f8382f-a1c7-4551-9562-096de2b81cb3)
+			(uuid 1075107c-1633-481d-9c66-1650bad36255)
 		)
 	)
 	(rule_area
@@ -6077,7 +6005,67 @@
 			(fill
 				(type none)
 			)
-			(uuid beb3a9cc-bae2-4d17-b219-6d673031ab63)
+			(uuid 43d5ef14-d55d-4a4b-9824-5124c833ac7b)
+		)
+	)
+	(rule_area
+		(polyline
+			(pts
+				(xy 163.83 97.79) (xy 163.83 114.3) (xy 166.37 114.3) (xy 166.37 97.79)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type none)
+			)
+			(uuid 5bed5da1-3a8c-4e03-bf16-c8c19871c8fb)
+		)
+	)
+	(rule_area
+		(polyline
+			(pts
+				(xy 166.37 29.21) (xy 166.37 96.52) (xy 163.83 96.52) (xy 163.83 29.21)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type none)
+			)
+			(uuid 65162270-65c2-4bc9-97e3-e69c370be880)
+		)
+	)
+	(rule_area
+		(polyline
+			(pts
+				(xy 107.95 49.53) (xy 107.95 73.66) (xy 105.41 73.66) (xy 105.41 49.53)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type none)
+			)
+			(uuid 7ca82d7c-ba67-4b1f-a3f0-5790e55e4cb8)
+		)
+	)
+	(rule_area
+		(polyline
+			(pts
+				(xy 107.95 43.18) (xy 107.95 48.26) (xy 105.41 48.26) (xy 105.41 43.18)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type none)
+			)
+			(uuid ba050980-82ea-4e0d-af66-9a8e57cdae62)
 		)
 	)
 	(rule_area
@@ -6092,7 +6080,7 @@
 			(fill
 				(type none)
 			)
-			(uuid cdebfa70-12ab-448c-ab6d-304e03399ff2)
+			(uuid d423fa77-5fb8-403a-bbc0-b92a6db96c81)
 		)
 	)
 	(netclass_flag ""
@@ -6498,14 +6486,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 53.34 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "0c0c2e70-630c-4456-a9cf-97b536257c3b")
 		)
@@ -6658,14 +6638,6 @@
 			)
 		)
 		(property "Component Class" "fine_pitch"
-			(at 135.89 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Enable" ""
 			(at 135.89 87.63 0)
 			(effects
 				(font
@@ -7053,14 +7025,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 35.56 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "0f923867-450d-4eb7-9c05-fa092104bd38")
 		)
@@ -7153,14 +7117,6 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
-			)
-		)
-		(property "Sim.Enable" ""
-			(at 45.72 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "1"
@@ -7306,14 +7262,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 134.62 176.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(instances
 			(project ""
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/851e7ce4-d5b0-47f7-ace9-4a347f172348"
@@ -7392,14 +7340,6 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
-			)
-		)
-		(property "Sim.Enable" ""
-			(at 26.67 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "1"

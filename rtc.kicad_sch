@@ -721,7 +721,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 1.27) (xy -1.27 -1.27)
+						(xy -1.27 1.27) (xy -1.905 1.27)
 					)
 					(stroke
 						(width 0)
@@ -733,7 +733,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 1.27) (xy -1.905 1.27)
+						(xy -1.27 1.27) (xy -1.27 -1.27)
 					)
 					(stroke
 						(width 0)
@@ -1124,7 +1124,7 @@
 					(at 0 -10.16 90)
 					(length 2.54)
 					(hide yes)
-					(name ""
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1142,7 +1142,7 @@
 				(pin power_in line
 					(at 0 -10.16 90)
 					(length 2.54)
-					(name "VSS"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1807,16 +1807,6 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 99.06) (xy 154.94 99.06)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "0608b67e-50f7-4d09-8322-95bee1236492")
-	)
-	(wire
-		(pts
 			(xy 187.96 101.6) (xy 185.42 101.6)
 		)
 		(stroke
@@ -1871,9 +1861,9 @@
 		)
 		(stroke
 			(width 0)
-			(type solid)
+			(type default)
 		)
-		(uuid "38147b28-ff2c-41b0-a122-d0670b61ea52")
+		(uuid "3f99d9be-83a9-4ec5-90eb-627cfcb6dfe4")
 	)
 	(wire
 		(pts
@@ -2077,6 +2067,16 @@
 	)
 	(wire
 		(pts
+			(xy 146.05 99.06) (xy 154.94 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef1a3adc-2031-451c-8810-7edafbab4730")
+	)
+	(wire
+		(pts
 			(xy 146.05 102.87) (xy 148.59 102.87)
 		)
 		(stroke
@@ -2115,7 +2115,7 @@
 		)
 		(uuid "fff9467a-f23a-4c31-8a8f-571e9dc17818")
 	)
-	(label "I2C0.SDA"
+	(label "I2C1.SDA"
 		(at 146.05 101.6 0)
 		(effects
 			(font
@@ -2155,7 +2155,7 @@
 		)
 		(uuid "d462d3ab-a57a-4c48-89b8-4ea81ad5c114")
 	)
-	(label "I2C0.SCL"
+	(label "I2C1.SCL"
 		(at 146.05 99.06 0)
 		(effects
 			(font
@@ -2186,7 +2186,7 @@
 		)
 		(uuid "a8a951c5-4fcb-4502-ad1d-c976462533fe")
 	)
-	(hierarchical_label "I2C0{I2C}"
+	(hierarchical_label "I2C1{I2C}"
 		(shape bidirectional)
 		(at 139.7 105.41 180)
 		(effects
@@ -2435,14 +2435,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 151.13 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "72a07d69-9775-4791-b71a-eab9ff6a1a0e")
 		)
@@ -2598,14 +2590,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 111.76 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "d4b9d294-7bfb-4a25-9455-3da3e5b8cf08")
 		)
@@ -2752,14 +2736,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 185.42 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "678a2b3e-e870-48ea-9715-50ea4b129e6d")
 		)
@@ -2842,14 +2818,6 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
-			)
-		)
-		(property "Sim.Enable" ""
-			(at 111.76 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "1"
@@ -3077,14 +3045,6 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
-			)
-		)
-		(property "Sim.Enable" ""
-			(at 167.64 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "6"
@@ -3398,14 +3358,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 105.41 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "09938637-7c54-4b47-b93b-a4e551005147")
 		)
@@ -3490,14 +3442,6 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
-			)
-		)
-		(property "Sim.Enable" ""
-			(at 129.54 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "2"
@@ -3585,14 +3529,6 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
-			)
-		)
-		(property "Sim.Enable" ""
-			(at 137.16 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(pin "1"

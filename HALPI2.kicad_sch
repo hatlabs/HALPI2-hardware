@@ -48,7 +48,7 @@
 	)
 	(bus
 		(pts
-			(xy 113.03 60.96) (xy 115.57 60.96)
+			(xy 113.03 58.42) (xy 115.57 58.42)
 		)
 		(stroke
 			(width 0)
@@ -78,7 +78,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 123.825) (xy 205.74 123.825)
+			(xy 203.2 123.19) (xy 205.74 123.19)
 		)
 		(stroke
 			(width 0)
@@ -168,7 +168,7 @@
 	)
 	(bus
 		(pts
-			(xy 203.2 126.365) (xy 205.74 126.365)
+			(xy 203.2 125.73) (xy 205.74 125.73)
 		)
 		(stroke
 			(width 0)
@@ -238,7 +238,7 @@
 	)
 	(bus
 		(pts
-			(xy 203.2 121.285) (xy 205.74 121.285)
+			(xy 203.2 120.65) (xy 205.74 120.65)
 		)
 		(stroke
 			(width 0)
@@ -288,7 +288,7 @@
 	)
 	(bus
 		(pts
-			(xy 203.2 118.745) (xy 205.74 118.745)
+			(xy 203.2 118.11) (xy 205.74 118.11)
 		)
 		(stroke
 			(width 0)
@@ -308,7 +308,7 @@
 	)
 	(bus
 		(pts
-			(xy 113.03 92.71) (xy 115.57 92.71)
+			(xy 113.03 90.17) (xy 115.57 90.17)
 		)
 		(stroke
 			(width 0)
@@ -355,16 +355,6 @@
 			(type default)
 		)
 		(uuid "ca72bd1d-bf8d-42f6-9e86-3b483ef7a605")
-	)
-	(bus
-		(pts
-			(xy 113.03 58.42) (xy 115.57 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ce7a0b2b-6ad3-4db0-9ab2-64573d38b52f")
 	)
 	(bus
 		(pts
@@ -436,6 +426,16 @@
 		)
 		(uuid "de1e6e08-2499-4531-b886-96feafb46433")
 	)
+	(bus
+		(pts
+			(xy 113.03 60.96) (xy 115.57 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df0941fc-aba9-4515-92d4-63f6a84c0ffe")
+	)
 	(wire
 		(pts
 			(xy 113.03 121.92) (xy 115.57 121.92)
@@ -478,7 +478,7 @@
 	)
 	(bus
 		(pts
-			(xy 113.03 96.52) (xy 115.57 96.52)
+			(xy 113.03 93.98) (xy 115.57 93.98)
 		)
 		(stroke
 			(width 0)
@@ -537,7 +537,7 @@
 		(uuid "033d42b8-ec0a-464e-ba57-40cb8a16086f")
 	)
 	(label "I2C0{I2C}"
-		(at 113.03 60.96 180)
+		(at 113.03 58.42 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -547,7 +547,7 @@
 		(uuid "1293c695-1c68-4e1b-8bfa-e6d5de63338a")
 	)
 	(label "USB{USB2}"
-		(at 113.03 92.71 180)
+		(at 113.03 90.17 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -587,7 +587,7 @@
 		(uuid "17cd0dad-b67b-4096-af02-5bed1355aed9")
 	)
 	(label "VBUS_EN"
-		(at 203.2 123.825 180)
+		(at 203.2 123.19 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -636,7 +636,7 @@
 		)
 		(uuid "2c34752d-8046-48b1-a4f1-76cbd5bec31c")
 	)
-	(label "I2C0{I2C}"
+	(label "I2C1{I2C}"
 		(at 113.03 137.16 180)
 		(effects
 			(font
@@ -675,16 +675,6 @@
 			(justify right bottom)
 		)
 		(uuid "4b7a0618-6495-4a87-bf7e-d034837036ef")
-	)
-	(label "I2C{I2C}"
-		(at 113.03 58.42 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "4ecbdf8a-2bc3-40e5-952c-9f7131e698b4")
 	)
 	(label "VBAT"
 		(at 113.03 121.92 180)
@@ -727,7 +717,7 @@
 		(uuid "56d4676f-f57a-461b-8f02-404a86e4ca2f")
 	)
 	(label "USB3-1{USB3}"
-		(at 203.2 121.285 180)
+		(at 203.2 120.65 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -787,7 +777,7 @@
 		(uuid "67e50c83-d63c-440e-ae94-97433e83e204")
 	)
 	(label "USB3-0{USB3}"
-		(at 203.2 118.745 180)
+		(at 203.2 118.11 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -806,7 +796,7 @@
 		)
 		(uuid "71b9f624-9757-4125-8679-b477454b97ff")
 	)
-	(label "Vcap"
+	(label "Vscap"
 		(at 73.66 138.43 0)
 		(effects
 			(font
@@ -857,7 +847,7 @@
 		(uuid "995eb13d-c92e-40cc-8d33-d8f39b4909c6")
 	)
 	(label "I2C0{I2C}"
-		(at 113.03 96.52 180)
+		(at 113.03 93.98 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -906,6 +896,16 @@
 		)
 		(uuid "c6ef4462-5147-41ab-8fba-71b28b5e7183")
 	)
+	(label "I2C1{I2C}"
+		(at 113.03 60.96 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d6fe2081-aef6-46a7-8812-a20f23e00462")
+	)
 	(label "ETH{ETH}"
 		(at 73.66 64.77 0)
 		(effects
@@ -917,7 +917,7 @@
 		(uuid "db4ef89e-cde0-41eb-8f22-1a5aab85ba15")
 	)
 	(label "I2C0{I2C}"
-		(at 203.2 126.365 180)
+		(at 203.2 125.73 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -936,7 +936,7 @@
 		)
 		(uuid "e8c1ca9e-13a1-4089-9a10-cbffb6dacb1b")
 	)
-	(label "Vcap"
+	(label "Vscap"
 		(at 113.03 129.54 180)
 		(effects
 			(font
@@ -1219,7 +1219,7 @@
 			)
 		)
 		(pin "I2C0{I2C}" bidirectional
-			(at 115.57 60.96 180)
+			(at 115.57 58.42 180)
 			(uuid "eeccd782-552b-4985-a4f0-737b74060318")
 			(effects
 				(font
@@ -1308,16 +1308,6 @@
 				(justify right)
 			)
 		)
-		(pin "I2C{I2C}" bidirectional
-			(at 115.57 58.42 180)
-			(uuid "c26d3dc2-1a72-4a80-8b5e-8fed763fa00a")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "CAM_GPIO0" output
 			(at 134.62 63.5 270)
 			(uuid "f4afc624-0806-4ec4-92ed-c9436441c8a7")
@@ -1361,6 +1351,16 @@
 		(pin "VBAT" input
 			(at 115.57 46.99 180)
 			(uuid "227de73b-ec81-4e33-bda5-a76201cbef2e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "I2C1{I2C}" bidirectional
+			(at 115.57 60.96 180)
+			(uuid "b5520b1c-b232-4224-b856-ab194bade271")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1440,19 +1440,9 @@
 				(justify left)
 			)
 		)
-		(pin "Vcap" input
+		(pin "Vscap" input
 			(at 115.57 129.54 180)
 			(uuid "d7ad14e1-d8a9-4175-bc55-388038823b54")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "I2C0{I2C}" bidirectional
-			(at 115.57 137.16 180)
-			(uuid "44f71200-75c3-4d8c-a3b4-4bad737d66c0")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1530,6 +1520,16 @@
 				(justify left)
 			)
 		)
+		(pin "I2C1{I2C}" bidirectional
+			(at 115.57 137.16 180)
+			(uuid "44e618fc-3578-40b1-8b28-e12a22e89f59")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27"
@@ -1573,7 +1573,7 @@
 			)
 		)
 		(pin "I2C0{I2C}" bidirectional
-			(at 115.57 96.52 180)
+			(at 115.57 93.98 180)
 			(uuid "ca8d61cd-bed4-4add-ae7d-5190d4937e5b")
 			(effects
 				(font
@@ -1623,7 +1623,7 @@
 			)
 		)
 		(pin "USB{USB2}" bidirectional
-			(at 115.57 92.71 180)
+			(at 115.57 90.17 180)
 			(uuid "fa8d416c-4d1b-47f5-8189-5a1275bc060f")
 			(effects
 				(font
@@ -1809,7 +1809,7 @@
 			)
 		)
 		(pin "USB3-0{USB3}" bidirectional
-			(at 205.74 118.745 180)
+			(at 205.74 118.11 180)
 			(uuid "bd1e6d4c-fae8-4f6d-972d-9075d0fce7ae")
 			(effects
 				(font
@@ -1819,7 +1819,7 @@
 			)
 		)
 		(pin "USB3-1{USB3}" bidirectional
-			(at 205.74 121.285 180)
+			(at 205.74 120.65 180)
 			(uuid "4a176a28-97a9-4472-8b3c-ad2567601c81")
 			(effects
 				(font
@@ -1829,7 +1829,7 @@
 			)
 		)
 		(pin "VBUS_EN" input
-			(at 205.74 123.825 180)
+			(at 205.74 123.19 180)
 			(uuid "2353ca64-cbe2-400f-8803-77d3d6e7ec0b")
 			(effects
 				(font
@@ -1839,7 +1839,7 @@
 			)
 		)
 		(pin "I2C0{I2C}" bidirectional
-			(at 205.74 126.365 180)
+			(at 205.74 125.73 180)
 			(uuid "466448cc-888b-42ec-a34e-10d26a7a16a3")
 			(effects
 				(font
@@ -1910,7 +1910,7 @@
 				(justify left)
 			)
 		)
-		(pin "Vcap" output
+		(pin "Vscap" output
 			(at 71.12 138.43 0)
 			(uuid "deacb2d3-f6c4-48f5-a033-087db85660fe")
 			(effects

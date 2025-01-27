@@ -5240,6 +5240,16 @@
 	)
 	(wire
 		(pts
+			(xy 130.81 142.24) (xy 130.81 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ae25790-248b-4e1a-a9a5-db1797a1d60a")
+	)
+	(wire
+		(pts
 			(xy 21.59 116.84) (xy 21.59 114.3)
 		)
 		(stroke
@@ -5320,7 +5330,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 140.97) (xy 130.81 140.97)
+			(xy 128.27 142.24) (xy 130.81 142.24)
 		)
 		(stroke
 			(width 0)
@@ -6278,6 +6288,16 @@
 		)
 		(uuid "527139fc-c75e-4176-b454-0dddd2e2d3b1")
 	)
+	(label "RTC_INT"
+		(at 128.27 142.24 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5700c32f-9af5-4957-9f27-3d47288c0183")
+	)
 	(label "VscapS"
 		(at 85.09 115.57 0)
 		(effects
@@ -6479,17 +6499,6 @@
 		)
 		(uuid "22142c8d-6e06-4b72-94ab-f873d5f7e416")
 	)
-	(hierarchical_label "RTC_INT"
-		(shape input)
-		(at 128.27 140.97 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "36ce7ab6-aaa1-4fb6-802f-d1ae6f092a5c")
-	)
 	(hierarchical_label "~{LED_PWR}"
 		(shape input)
 		(at 165.1 123.19 0)
@@ -6625,7 +6634,7 @@
 	(rule_area
 		(polyline
 			(pts
-				(xy 129.54 142.24) (xy 129.54 134.62) (xy 127 134.62) (xy 127 142.24)
+				(xy 129.54 142.875) (xy 129.54 134.62) (xy 127 134.62) (xy 127 142.875)
 			)
 			(stroke
 				(width 0)
@@ -6634,7 +6643,7 @@
 			(fill
 				(type none)
 			)
-			(uuid c5609068-2b21-4a37-8f38-f0ab37380399)
+			(uuid 0242a2f9-fb36-4b80-836f-cb96095e7cb8)
 		)
 	)
 	(rule_area
@@ -6649,7 +6658,7 @@
 			(fill
 				(type none)
 			)
-			(uuid c58a2133-a532-4bc2-a6b4-622d0eef0e73)
+			(uuid 4d2db1f8-538b-4f55-ab71-235e7c08e8e6)
 		)
 	)
 	(netclass_flag ""
@@ -13003,7 +13012,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/850df4bf-e40a-4082-adc2-76804638b949"
-					(page "24")
+					(page "14")
 				)
 			)
 		)
@@ -13085,7 +13094,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/850df4bf-e40a-4082-adc2-76804638b949"
-					(page "21")
+					(page "13")
 				)
 			)
 		)
@@ -13157,7 +13166,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/850df4bf-e40a-4082-adc2-76804638b949"
-					(page "26")
+					(page "15")
 				)
 			)
 		)

@@ -956,6 +956,9 @@
       "/Controller/RTC/VDD": [
         "Power"
       ],
+      "/Controller/RTC_INT": [
+        "Digital"
+      ],
       "/Controller/RXD": [
         "Digital"
       ],
@@ -1963,42 +1966,6 @@
       "Power"
     ],
     [
-      "7c248bd3-8232-4777-a40c-eab53460cf85",
-      "CM4 GPIO"
-    ],
-    [
-      "aa1d8d83-5167-420c-9ee7-3e4dcc942bfc",
-      "USB 2.0 Peripheral Interface"
-    ],
-    [
-      "e617d703-41d6-4d5d-b15c-837f07b15d4f",
-      "USB3 Interface1"
-    ],
-    [
-      "1c37afa8-c046-40b3-bf09-b501c4bc3ed0",
-      "USB3 Interface2"
-    ],
-    [
-      "18c18357-12fa-4472-a108-e954e5bd7840",
-      "Ethernet"
-    ],
-    [
-      "a1a835e0-c072-4609-9cb4-4b95bf746f54",
-      "PCIe"
-    ],
-    [
-      "281eb1e2-ca3e-4103-b349-ba6d0f6fe106",
-      "USB3 Interface3"
-    ],
-    [
-      "d4876730-9038-4f8b-92bc-bcbb3a62ccf0",
-      "DPHY1"
-    ],
-    [
-      "67ada73c-6692-4fd8-8c20-5be89f2b8650",
-      "SDCard"
-    ],
-    [
       "b9ac802e-51d9-4be8-a7d3-5b5fa2c8bb97",
       "Input Protection"
     ],
@@ -2011,60 +1978,8 @@
       "Supercaps"
     ],
     [
-      "531e3be9-7113-42c4-b43f-4c940587f1bb",
-      "Buck converter 5V"
-    ],
-    [
-      "30f1d4da-1daa-4049-adbf-96a0145bcc97",
-      "CAN bus"
-    ],
-    [
-      "e9d5ec1c-aaca-4440-9248-34d6a57da48f",
-      "Buck converter 3.3V"
-    ],
-    [
-      "850df4bf-e40a-4082-adc2-76804638b949",
-      "Controller"
-    ],
-    [
-      "851e7ce4-d5b0-47f7-ace9-4a347f172348",
-      "CM4 Highspeed"
-    ],
-    [
-      "172ccc7f-ed6f-4221-b391-d1a2607d00a7",
-      "RS-485"
-    ],
-    [
-      "b774f543-305e-4249-92c3-c3de7e8a285e",
-      "USB3"
-    ],
-    [
-      "e4643111-53ad-48d1-8ad1-a500e184f609",
-      "PCB"
-    ],
-    [
-      "941fe792-02c8-46de-a01c-95bb6b865738",
-      "Ideal Diode Controller"
-    ],
-    [
-      "9178e39f-02b3-4dd8-9663-588305087cb1",
-      "USB3 Interface"
-    ],
-    [
-      "306b39c2-3d43-4872-bf23-cfec09993877",
-      "USB3 Hub"
-    ],
-    [
-      "7441bc5f-8874-43c2-af8a-50459ea25028",
-      "RGB LEDs"
-    ],
-    [
-      "1b14d1cb-dda2-44c5-97d1-a618f21bed66",
-      "Fan Connectors"
-    ],
-    [
-      "e502b11a-b887-47b5-9ff1-f210171ce142",
-      "RTC"
+      "814ce5bc-699b-4608-b12b-d1ea1de7e475",
+      "Supercap stage1"
     ],
     [
       "3f9b067f-2b82-4260-ad8a-665c0f191623",
@@ -2079,20 +1994,108 @@
       "Supercap stage4"
     ],
     [
-      "814ce5bc-699b-4608-b12b-d1ea1de7e475",
-      "Supercap stage1"
+      "531e3be9-7113-42c4-b43f-4c940587f1bb",
+      "Buck converter 5V"
     ],
     [
-      "49314faa-db35-4ef5-b0c8-5c327f44891d",
-      "HDMI1"
+      "e9d5ec1c-aaca-4440-9248-34d6a57da48f",
+      "Buck converter 3.3V"
+    ],
+    [
+      "850df4bf-e40a-4082-adc2-76804638b949",
+      "Controller"
+    ],
+    [
+      "941fe792-02c8-46de-a01c-95bb6b865738",
+      "Ideal Diode Controller"
+    ],
+    [
+      "7441bc5f-8874-43c2-af8a-50459ea25028",
+      "RGB LEDs"
+    ],
+    [
+      "e502b11a-b887-47b5-9ff1-f210171ce142",
+      "RTC"
+    ],
+    [
+      "7c248bd3-8232-4777-a40c-eab53460cf85",
+      "CM4 GPIO"
+    ],
+    [
+      "1b14d1cb-dda2-44c5-97d1-a618f21bed66",
+      "Fan Connectors"
+    ],
+    [
+      "851e7ce4-d5b0-47f7-ace9-4a347f172348",
+      "CM4 Highspeed"
     ],
     [
       "10568cce-38f9-4351-82fd-0cb3bf8ca49d",
       "DPHY0"
     ],
     [
+      "d4876730-9038-4f8b-92bc-bcbb3a62ccf0",
+      "DPHY1"
+    ],
+    [
       "890900ed-b859-477a-afc8-e6aecd491b67",
       "HDMI0"
+    ],
+    [
+      "49314faa-db35-4ef5-b0c8-5c327f44891d",
+      "HDMI1"
+    ],
+    [
+      "18c18357-12fa-4472-a108-e954e5bd7840",
+      "Ethernet"
+    ],
+    [
+      "b774f543-305e-4249-92c3-c3de7e8a285e",
+      "USB3"
+    ],
+    [
+      "9178e39f-02b3-4dd8-9663-588305087cb1",
+      "USB3 Interface"
+    ],
+    [
+      "306b39c2-3d43-4872-bf23-cfec09993877",
+      "USB3 Hub"
+    ],
+    [
+      "e617d703-41d6-4d5d-b15c-837f07b15d4f",
+      "USB3 Interface1"
+    ],
+    [
+      "1c37afa8-c046-40b3-bf09-b501c4bc3ed0",
+      "USB3 Interface2"
+    ],
+    [
+      "281eb1e2-ca3e-4103-b349-ba6d0f6fe106",
+      "USB3 Interface3"
+    ],
+    [
+      "a1a835e0-c072-4609-9cb4-4b95bf746f54",
+      "PCIe"
+    ],
+    [
+      "67ada73c-6692-4fd8-8c20-5be89f2b8650",
+      "SDCard"
+    ],
+    [
+      "aa1d8d83-5167-420c-9ee7-3e4dcc942bfc",
+      "USB 2.0 Peripheral Interface"
+    ],
+    [
+      "30f1d4da-1daa-4049-adbf-96a0145bcc97",
+      "CAN bus"
+    ],
+    [
+      "172ccc7f-ed6f-4221-b391-d1a2607d00a7",
+      "RS-485"
+    ],
+    [
+      "e4643111-53ad-48d1-8ad1-a500e184f609",
+      "PCB"
     ]
   ],
   "text_variables": {}

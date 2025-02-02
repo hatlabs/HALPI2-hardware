@@ -1116,7 +1116,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0.762 0.889) (xy -0.508 0.889)
+						(xy 0.762 0.889) (xy 1.143 1.143)
 					)
 					(stroke
 						(width 0)
@@ -1128,7 +1128,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0.762 0.889) (xy 1.143 1.143)
+						(xy 0.762 0.889) (xy -0.508 0.889)
 					)
 					(stroke
 						(width 0)
@@ -1316,25 +1316,6 @@
 				)
 			)
 			(symbol "RCLAMP0524P_1_1"
-				(pin no_connect line
-					(at -12.7 7.62 0)
-					(length 5.08)
-					(hide yes)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin passive line
 					(at -12.7 2.54 0)
 					(length 5.08)
@@ -1346,6 +1327,25 @@
 						)
 					)
 					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin free line
+					(at -12.7 2.54 0)
+					(length 5.08)
+					(hide yes)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1371,8 +1371,8 @@
 						)
 					)
 				)
-				(pin no_connect line
-					(at -12.7 -7.62 0)
+				(pin free line
+					(at -12.7 -2.54 0)
 					(length 5.08)
 					(hide yes)
 					(name "NC"
@@ -1427,25 +1427,6 @@
 						)
 					)
 				)
-				(pin no_connect line
-					(at 12.7 7.62 180)
-					(length 5.08)
-					(hide yes)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin passive line
 					(at 12.7 2.54 180)
 					(length 5.08)
@@ -1457,6 +1438,25 @@
 						)
 					)
 					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin free line
+					(at 12.7 2.54 180)
+					(length 5.08)
+					(hide yes)
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1482,8 +1482,8 @@
 						)
 					)
 				)
-				(pin no_connect line
-					(at 12.7 -7.62 180)
+				(pin free line
+					(at 12.7 -2.54 180)
 					(length 5.08)
 					(hide yes)
 					(name "NC"
@@ -1769,7 +1769,7 @@
 	)
 	(no_connect
 		(at 102.87 140.97)
-		(uuid "39ae64a8-2f21-4349-b0d7-18417d1e30e7")
+		(uuid "641b6a56-2cbf-40c7-8b33-f6c5d3003045")
 	)
 	(bus_entry
 		(at 60.96 41.91)

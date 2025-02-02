@@ -153,31 +153,33 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:D_TVS"
+		(symbol "Device:C_Small"
 			(pin_numbers
 				(hide yes)
 			)
 			(pin_names
-				(offset 1.016)
+				(offset 0.254)
 				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "D"
-				(at 0 2.54 0)
+			(property "Reference" "C"
+				(at 0.254 1.778 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Value" "D_TVS"
-				(at 0 -2.54 0)
+			(property "Value" "C_Small"
+				(at 0.254 -2.032 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -198,7 +200,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Bidirectional transient-voltage-suppression diode"
+			(property "Description" "Unpolarized capacitor, small symbol"
 				(at 0 0 0)
 				(effects
 					(font
@@ -207,7 +209,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "diode TVS thyrector"
+			(property "ki_keywords" "capacitor cap"
 				(at 0 0 0)
 				(effects
 					(font
@@ -216,7 +218,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+			(property "ki_fp_filters" "C_*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -225,13 +227,13 @@
 					(hide yes)
 				)
 			)
-			(symbol "D_TVS_0_1"
+			(symbol "C_Small_0_1"
 				(polyline
 					(pts
-						(xy -2.54 1.27) (xy -2.54 -1.27) (xy 2.54 1.27) (xy 2.54 -1.27) (xy -2.54 1.27)
+						(xy -1.524 0.508) (xy 1.524 0.508)
 					)
 					(stroke
-						(width 0.254)
+						(width 0.3048)
 						(type default)
 					)
 					(fill
@@ -240,22 +242,10 @@
 				)
 				(polyline
 					(pts
-						(xy 0.508 1.27) (xy 0 1.27) (xy 0 -1.27) (xy -0.508 -1.27)
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
 					)
 					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy -1.27 0)
-					)
-					(stroke
-						(width 0)
+						(width 0.3302)
 						(type default)
 					)
 					(fill
@@ -263,11 +253,11 @@
 					)
 				)
 			)
-			(symbol "D_TVS_1_1"
+			(symbol "C_Small_1_1"
 				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "A1"
+					(at 0 2.54 270)
+					(length 2.032)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -283,9 +273,9 @@
 					)
 				)
 				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "A2"
+					(at 0 -2.54 90)
+					(length 2.032)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1086,7 +1076,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Hatlabs:HL3400"
+		(symbol "Hatlabs:FDS3672"
 			(pin_names
 				(hide yes)
 			)
@@ -1102,7 +1092,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "HL3400"
+			(property "Value" "FDS3672"
 				(at 5.08 0 0)
 				(effects
 					(font
@@ -1111,7 +1101,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(property "Footprint" "Package_SO:SOP-8_3.9x4.9mm_P1.27mm"
 				(at 5.08 -1.905 0)
 				(effects
 					(font
@@ -1122,7 +1112,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2406191433_hongjiacheng-HL3400_C22469448.pdf"
+			(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2409291234_JSMSEMI-FDS3672_C5296734.pdf"
 				(at 5.08 -3.81 0)
 				(effects
 					(font
@@ -1132,7 +1122,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "30V 5.6A 1.2W 21mΩ@10V,5.6A 900mV@250uA 1 N-Channel SOT-23 MOSFETs ROHS"
+			(property "Description" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -1141,12 +1131,13 @@
 					(hide yes)
 				)
 			)
-			(property "LCSC" "C22469448"
+			(property "LCSC" "C5296734"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(hide yes)
 				)
 			)
 			(property "ki_keywords" "N-Channel Switching MOSFET"
@@ -1167,7 +1158,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "HL3400_0_1"
+			(symbol "FDS3672_0_1"
 				(polyline
 					(pts
 						(xy 0.254 1.905) (xy 0.254 -1.905)
@@ -1334,7 +1325,7 @@
 					)
 				)
 			)
-			(symbol "HL3400_1_1"
+			(symbol "FDS3672_1_1"
 				(pin input line
 					(at -5.08 0 0)
 					(length 2.54)
@@ -1345,7 +1336,7 @@
 							)
 						)
 					)
-					(number "1"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1363,7 +1354,64 @@
 							)
 						)
 					)
-					(number "3"
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(hide yes)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(hide yes)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(hide yes)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1381,7 +1429,545 @@
 							)
 						)
 					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(hide yes)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(hide yes)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "PCM_Diode_TVS_AKL:SMBJ26A"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SMBJ26A"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "PCM_Diode_SMD_AKL:D_SMB"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.tme.eu/Document/0b6222bec7e12d83185b51d73cb6a54d/SMBJ_ser.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "SMB Unidirectional TVS diode, 26V, 600W, Alternate KiCAD Library"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode unidirectional TVS SMBJ-A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SMBJ26A_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27) (xy 1.27 0) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SMBJ26A_0_2"
+				(polyline
+					(pts
+						(xy -2.54 -2.54) (xy 2.54 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.889 -0.889) (xy -1.778 0) (xy 0.889 0.889) (xy 0 -1.778) (xy -0.889 -0.889)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.778) (xy 1.778 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.778) (xy -0.381 1.397)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SMBJ26A_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "SMBJ26A_1_2"
+				(pin passive line
+					(at -2.54 -2.54 0)
+					(length 0)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 2.54 180)
+					(length 0)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "PCM_Diode_TVS_AKL:SMBJ58A"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SMBJ58A"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "PCM_Diode_SMD_AKL:D_SMB"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.tme.eu/Document/0b6222bec7e12d83185b51d73cb6a54d/SMBJ_ser.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "SMB Unidirectional TVS diode, 58V, 600W, Alternate KiCAD Library"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode unidirectional TVS SMBJ-A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SMBJ58A_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27) (xy 1.27 0) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SMBJ58A_0_2"
+				(polyline
+					(pts
+						(xy -2.54 -2.54) (xy 2.54 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.889 -0.889) (xy -1.778 0) (xy 0.889 0.889) (xy 0 -1.778) (xy -0.889 -0.889)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.778) (xy -0.381 1.397)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.778) (xy 1.778 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SMBJ58A_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "SMBJ58A_1_2"
+				(pin passive line
+					(at -2.54 -2.54 0)
+					(length 0)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 2.54 180)
+					(length 0)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1840,23 +2426,43 @@
 		)
 		(uuid "e9ef1cb9-b6c8-47bb-87cd-aae982ab151b")
 	)
+	(text_box "Note on the TVS diode arrangement: The back-to-back layout is taken from the LM74700 datasheet.\n\nThe datasheet suggests SMBJ58A as the top part to prevent it from conducting. Instead, ESD pulses would be absorbed by the capacitors and larger ones \"ridden out\". I adapted the design to have the TVS start conducting below 60V, helping the LM74700 and the buck converter to weather the voltage."
+		(exclude_from_sim no)
+		(at 46.355 106.045 0)
+		(size 48.895 26.035)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "cbcee575-f46f-4e3a-92d7-ea3c0aa74026")
+	)
 	(junction
-		(at 82.55 93.98)
+		(at 91.44 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "14887caa-8706-4abc-9abb-46fb8e401be3")
-	)
-	(junction
-		(at 55.88 93.98)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1800d785-d8d5-4ab2-bf94-c08f73ae4465")
 	)
 	(junction
 		(at 129.54 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "21ccebb2-9338-47a8-82c3-0a3e10ab7ef6")
+	)
+	(junction
+		(at 52.07 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "281ed344-1d37-4299-8941-cb2a56707754")
 	)
 	(junction
 		(at 140.97 93.98)
@@ -1871,12 +2477,6 @@
 		(uuid "3812bcd0-7040-480b-ab0c-70bc90dac50b")
 	)
 	(junction
-		(at 55.88 53.34)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3b78bba5-d27a-491f-883f-4bf14b5a3bb3")
-	)
-	(junction
 		(at 140.97 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1889,25 +2489,37 @@
 		(uuid "577e6b18-60e2-41fb-bffb-accf61b57ad7")
 	)
 	(junction
-		(at 67.31 59.69)
+		(at 76.2 59.69)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "675e41cf-241f-44ad-aff3-40b556269680")
 	)
 	(junction
-		(at 77.47 53.34)
+		(at 52.07 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "7c685a9c-967f-43c0-bbd3-39f3e8b8a88a")
+		(uuid "851a9c2f-51f3-4223-9dcd-8a3253e1345c")
 	)
 	(junction
-		(at 74.93 59.69)
+		(at 83.82 59.69)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "872e2fcc-26b6-4ac8-88a8-fb9b5a34d2bb")
 	)
 	(junction
-		(at 87.63 53.34)
+		(at 86.36 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "874e0fa9-66a4-433d-825e-45ab62ef9e73")
+	)
+	(junction
+		(at 66.04 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "97a528a5-a2e0-4217-81bb-33b44a23da61")
+	)
+	(junction
+		(at 96.52 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "993dc679-bb0d-4467-b06a-cc02ab63d733")
@@ -1943,6 +2555,12 @@
 		(uuid "c49784de-16ef-4aac-9cfb-3fa972afe12e")
 	)
 	(junction
+		(at 66.04 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cc5d7964-c10e-47ad-a9e1-83d9f76150f3")
+	)
+	(junction
 		(at 236.22 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1972,7 +2590,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 73.66) (xy 67.31 71.12)
+			(xy 76.2 73.66) (xy 76.2 71.12)
 		)
 		(stroke
 			(width 0)
@@ -1982,7 +2600,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 53.34) (xy 77.47 59.69)
+			(xy 86.36 53.34) (xy 86.36 59.69)
 		)
 		(stroke
 			(width 0)
@@ -1992,7 +2610,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 76.2) (xy 62.23 76.2)
+			(xy 78.74 76.2) (xy 71.12 76.2)
 		)
 		(stroke
 			(width 0)
@@ -2002,23 +2620,13 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 59.69) (xy 74.93 59.69)
+			(xy 76.2 59.69) (xy 83.82 59.69)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "0c4fed8e-1bca-447d-8f2e-de0d6419e4b7")
-	)
-	(wire
-		(pts
-			(xy 58.42 53.34) (xy 77.47 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "11480aa1-d3f8-46e5-965c-c67e446bc3a6")
 	)
 	(wire
 		(pts
@@ -2052,7 +2660,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 63.5) (xy 67.31 59.69)
+			(xy 76.2 63.5) (xy 76.2 59.69)
 		)
 		(stroke
 			(width 0)
@@ -2072,7 +2680,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 59.69) (xy 67.31 59.69)
+			(xy 71.12 59.69) (xy 76.2 59.69)
 		)
 		(stroke
 			(width 0)
@@ -2102,7 +2710,7 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 81.28) (xy 82.55 93.98)
+			(xy 91.44 81.28) (xy 91.44 93.98)
 		)
 		(stroke
 			(width 0)
@@ -2162,13 +2770,13 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 53.34) (xy 58.42 53.34)
+			(xy 96.52 53.34) (xy 129.54 53.34)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "409c0d83-5a03-45d5-87e6-b9b1fc9fe04f")
+		(uuid "4262944b-0991-438c-94c1-eb2abdf9f547")
 	)
 	(polyline
 		(pts
@@ -2192,6 +2800,16 @@
 	)
 	(wire
 		(pts
+			(xy 58.42 53.34) (xy 66.04 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4862b44d-754b-41cf-8138-37cd1b94b101")
+	)
+	(wire
+		(pts
 			(xy 236.22 63.5) (xy 241.3 63.5)
 		)
 		(stroke
@@ -2199,16 +2817,6 @@
 			(type default)
 		)
 		(uuid "4975b0e0-d8b7-469b-a935-cb97b41d9747")
-	)
-	(wire
-		(pts
-			(xy 87.63 53.34) (xy 129.54 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "56b61b64-8b9b-4874-a6d0-4d582a310b7b")
 	)
 	(wire
 		(pts
@@ -2222,6 +2830,16 @@
 	)
 	(wire
 		(pts
+			(xy 58.42 93.98) (xy 66.04 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58b7ffd7-d5ce-4359-974b-d4763cbf3a5e")
+	)
+	(wire
+		(pts
 			(xy 176.53 66.04) (xy 170.18 66.04)
 		)
 		(stroke
@@ -2232,7 +2850,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 60.96) (xy 74.93 59.69)
+			(xy 83.82 60.96) (xy 83.82 59.69)
 		)
 		(stroke
 			(width 0)
@@ -2242,7 +2860,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 53.34) (xy 87.63 59.69)
+			(xy 96.52 53.34) (xy 96.52 59.69)
 		)
 		(stroke
 			(width 0)
@@ -2259,6 +2877,16 @@
 			(type default)
 		)
 		(uuid "6614dd5d-630c-4896-b025-4a4b84719b43")
+	)
+	(wire
+		(pts
+			(xy 66.04 53.34) (xy 86.36 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "668c99a1-b6f2-4c5e-8332-9552732a27eb")
 	)
 	(wire
 		(pts
@@ -2282,13 +2910,13 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 93.98) (xy 58.42 93.98)
+			(xy 52.07 53.34) (xy 46.99 53.34)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7b648245-3f11-4e56-8d48-b27e43eaf2b8")
+		(uuid "73550628-1fe8-47da-a558-182dcbef442d")
 	)
 	(wire
 		(pts
@@ -2302,16 +2930,6 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 59.69) (xy 55.88 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7c73d04d-4fe6-4a79-b849-2dc4da40a940")
-	)
-	(wire
-		(pts
 			(xy 170.18 53.34) (xy 185.42 53.34)
 		)
 		(stroke
@@ -2322,13 +2940,13 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 93.98) (xy 55.88 93.98)
+			(xy 52.07 78.74) (xy 52.07 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "83120e49-cb4b-4b9a-ad9b-b4d1e7df7997")
+		(uuid "871711ab-5d79-4c84-b63d-11c2e1278c88")
 	)
 	(wire
 		(pts
@@ -2342,7 +2960,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 53.34) (xy 46.99 53.34)
+			(xy 52.07 53.34) (xy 58.42 53.34)
 		)
 		(stroke
 			(width 0)
@@ -2422,7 +3040,7 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 93.98) (xy 55.88 93.98)
+			(xy 31.75 93.98) (xy 52.07 93.98)
 		)
 		(stroke
 			(width 0)
@@ -2439,6 +3057,16 @@
 			(type default)
 		)
 		(uuid "a95e104c-7690-4ae9-bbd9-586d5df56609")
+	)
+	(wire
+		(pts
+			(xy 66.04 93.98) (xy 91.44 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a967b765-12c2-42d4-90e3-6074c886533d")
 	)
 	(polyline
 		(pts
@@ -2462,13 +3090,23 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 93.98) (xy 82.55 93.98)
+			(xy 129.54 93.98) (xy 91.44 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "be40e8ae-cca7-4cfc-81d9-147552483db9")
+	)
+	(wire
+		(pts
+			(xy 66.04 85.09) (xy 66.04 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bec2ee1e-4c41-48f2-bbe8-d19ddb81b581")
 	)
 	(polyline
 		(pts
@@ -2522,7 +3160,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 59.69) (xy 87.63 59.69)
+			(xy 99.06 59.69) (xy 96.52 59.69)
 		)
 		(stroke
 			(width 0)
@@ -2532,7 +3170,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 73.66) (xy 67.31 73.66)
+			(xy 78.74 73.66) (xy 76.2 73.66)
 		)
 		(stroke
 			(width 0)
@@ -2572,7 +3210,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 59.69) (xy 77.47 59.69)
+			(xy 83.82 59.69) (xy 86.36 59.69)
 		)
 		(stroke
 			(width 0)
@@ -2582,7 +3220,37 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 76.2) (xy 62.23 59.69)
+			(xy 52.07 93.98) (xy 58.42 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e801000b-c2c2-4644-8a32-8a2b89914f37")
+	)
+	(wire
+		(pts
+			(xy 66.04 53.34) (xy 66.04 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8d147ad-14dc-4419-a96a-0c0b06d04bbc")
+	)
+	(wire
+		(pts
+			(xy 52.07 63.5) (xy 52.07 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e98d98ce-01a1-4dc5-9105-fbcb068ad234")
+	)
+	(wire
+		(pts
+			(xy 71.12 76.2) (xy 71.12 59.69)
 		)
 		(stroke
 			(width 0)
@@ -2622,7 +3290,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 60.96) (xy 90.17 59.69)
+			(xy 99.06 60.96) (xy 99.06 59.69)
 		)
 		(stroke
 			(width 0)
@@ -2640,16 +3308,6 @@
 		)
 		(uuid "fb58f4d5-c0cb-4038-a08e-907c5e935861")
 	)
-	(wire
-		(pts
-			(xy 55.88 67.31) (xy 55.88 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fefc27af-a2ab-4754-957f-866eccf832fc")
-	)
 	(label "Vin_diff"
 		(at 198.12 53.34 0)
 		(effects
@@ -2661,7 +3319,7 @@
 		(uuid "05d43fde-61ba-4e84-a92b-d8c9c3774fc6")
 	)
 	(label "G"
-		(at 82.55 60.96 0)
+		(at 91.44 60.96 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2691,7 +3349,7 @@
 		(uuid "bbef6bb4-ec86-4578-84a4-45064f817d47")
 	)
 	(label "VCAP"
-		(at 67.31 73.66 90)
+		(at 76.2 73.66 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2701,7 +3359,7 @@
 		(uuid "c6707670-2ca8-42e4-bd47-9c96b47696e0")
 	)
 	(label "Vin_fused"
-		(at 60.96 53.34 0)
+		(at 69.85 53.34 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2709,6 +3367,16 @@
 			(justify left bottom)
 		)
 		(uuid "c9037fff-9de8-47a9-b7d8-543e3626c396")
+	)
+	(label "TVS_A"
+		(at 52.07 71.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cd57f4cc-921b-44fc-9225-eb0b2b594dd5")
 	)
 	(hierarchical_label "Vin"
 		(shape input)
@@ -2746,7 +3414,7 @@
 	(netclass_flag ""
 		(length 2.54)
 		(shape round)
-		(at 82.55 60.96 90)
+		(at 91.44 60.96 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2756,7 +3424,7 @@
 		)
 		(uuid "21e61cf6-fd89-4439-9ea6-26edd80d9099")
 		(property "Netclass" "Analog"
-			(at 80.01 60.071 90)
+			(at 88.9 60.071 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2770,7 +3438,7 @@
 	(netclass_flag ""
 		(length 2.54)
 		(shape round)
-		(at 68.58 73.66 0)
+		(at 77.47 73.66 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2780,7 +3448,7 @@
 		)
 		(uuid "8a9c28d8-886b-46bb-8a6a-f874e2d214f7")
 		(property "Netclass" "Power"
-			(at 69.469 71.12 0)
+			(at 78.359 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2788,100 +3456,6 @@
 				)
 				(justify left)
 				(hide yes)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_TVS")
-		(at 55.88 63.5 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005e5a3ffe")
-		(property "Reference" "D301"
-			(at 53.8734 62.3316 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "5.0SMDJ33CA"
-			(at 53.8734 64.643 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Diode_SMD:D_SMC"
-			(at 55.88 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 55.88 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 55.88 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C2913642"
-			(at 55.88 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Characteristics" ""
-			(at 55.88 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "76cc9736-8949-41dc-9239-23f780c76902")
-		)
-		(pin "2"
-			(uuid "17652d41-bf00-4084-960d-f0882fea9252")
-		)
-		(instances
-			(project "SH-RPi"
-				(path "/4c14904e-48eb-4243-8cbd-3afad8250b85/00000000-0000-0000-0000-00005e460e30"
-					(reference "D701")
-					(unit 1)
-				)
-			)
-			(project "SH-RPi"
-				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/b9ac802e-51d9-4be8-a7d3-5b5fa2c8bb97"
-					(reference "D301")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -3397,6 +3971,84 @@
 		)
 	)
 	(symbol
+		(lib_id "PCM_Diode_TVS_AKL:SMBJ58A")
+		(at 52.07 67.31 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "28ee9052-c4c5-4d2d-ae40-f2d2cb6a671b")
+		(property "Reference" "D302"
+			(at 49.53 66.0399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SMBJ48A"
+			(at 49.53 68.5799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PCM_Diode_SMD_AKL:D_SMB"
+			(at 52.07 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tme.eu/Document/0b6222bec7e12d83185b51d73cb6a54d/SMBJ_ser.pdf"
+			(at 52.07 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SMB Unidirectional TVS diode, 48V, 600W, Alternate KiCAD Library"
+			(at 52.07 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7495262"
+			(at 52.07 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "32d81fff-b29b-40be-8c65-40640c895d63")
+		)
+		(pin "1"
+			(uuid "c67e4151-cd80-4c31-a22e-165a6424a589")
+		)
+		(instances
+			(project ""
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/b9ac802e-51d9-4be8-a7d3-5b5fa2c8bb97"
+					(reference "D302")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 176.53 72.39 0)
 		(unit 1)
@@ -3557,6 +4209,163 @@
 			(project "SH-RPi"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/b9ac802e-51d9-4be8-a7d3-5b5fa2c8bb97"
 					(reference "R301")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Diode_TVS_AKL:SMBJ26A")
+		(at 52.07 74.93 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "391e7a53-4d85-42fd-bfdf-4f5e4da4b5de")
+		(property "Reference" "D303"
+			(at 49.53 73.6599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "SMBJ26A"
+			(at 49.53 76.1999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "PCM_Diode_SMD_AKL:D_SMB"
+			(at 52.07 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.tme.eu/Document/0b6222bec7e12d83185b51d73cb6a54d/SMBJ_ser.pdf"
+			(at 52.07 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "SMB Unidirectional TVS diode, 26V, 600W, Alternate KiCAD Library"
+			(at 52.07 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C908802"
+			(at 52.07 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "aeddc14e-974b-4526-83fb-4a8ae4ccf403")
+		)
+		(pin "2"
+			(uuid "b9141dc6-e9bb-4e9b-8fe3-0c023cc1d2e3")
+		)
+		(instances
+			(project ""
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/b9ac802e-51d9-4be8-a7d3-5b5fa2c8bb97"
+					(reference "D303")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 66.04 82.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "46376b1b-2e87-4c26-b8d6-c7b2713b73da")
+		(property "Reference" "C309"
+			(at 68.58 81.2862 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF/50V"
+			(at 68.58 83.8262 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+			(at 66.04 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 66.04 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 66.04 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C1848"
+			(at 66.04 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cc190feb-6c51-4d59-95ec-ae7abb667763")
+		)
+		(pin "2"
+			(uuid "ad7c0d8a-ad38-4062-aa08-4d81522377f8")
+		)
+		(instances
+			(project ""
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/b9ac802e-51d9-4be8-a7d3-5b5fa2c8bb97"
+					(reference "C309")
 					(unit 1)
 				)
 			)
@@ -4013,7 +4822,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF/50V"
+		(property "Value" "1uF/50V"
 			(at 115.57 64.77 0)
 			(effects
 				(font
@@ -4049,7 +4858,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C14663"
+		(property "LCSC" "C15849"
 			(at 129.54 63.5 0)
 			(effects
 				(font
@@ -4156,7 +4965,7 @@
 	)
 	(symbol
 		(lib_id "Power_Management:LM74700")
-		(at 82.55 71.12 0)
+		(at 91.44 71.12 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4165,7 +4974,7 @@
 		(fields_autoplaced yes)
 		(uuid "d01a3f5c-3deb-451d-bc48-aa2862e86769")
 		(property "Reference" "U301"
-			(at 93.98 69.8499 0)
+			(at 102.87 69.8499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4174,7 +4983,7 @@
 			)
 		)
 		(property "Value" "LM74700"
-			(at 93.98 72.3899 0)
+			(at 102.87 72.3899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4183,7 +4992,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-6"
-			(at 73.025 80.01 0)
+			(at 81.915 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4192,7 +5001,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/gpn/LM74700-Q1"
-			(at 73.025 80.01 0)
+			(at 81.915 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4201,7 +5010,7 @@
 			)
 		)
 		(property "Description" "Low Iq reverse battery protection ideal diode controller, SOT-23-6"
-			(at 82.55 71.12 0)
+			(at 91.44 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4210,7 +5019,7 @@
 			)
 		)
 		(property "LCSC" "C2941042"
-			(at 82.55 71.12 0)
+			(at 91.44 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4219,7 +5028,7 @@
 			)
 		)
 		(property "Characteristics" ""
-			(at 82.55 71.12 0)
+			(at 91.44 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4346,7 +5155,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Hatlabs:L_CMF7060F"
+		(property "Footprint" "Hatlabs:FILTER-SMD_4P-L7.0-W6.0-TL-A"
 			(at 165.1 63.5 0)
 			(effects
 				(font
@@ -4419,8 +5228,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Hatlabs:HL3400")
-		(at 82.55 55.88 270)
+		(lib_id "Hatlabs:FDS3672")
+		(at 91.44 55.88 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4430,23 +5239,23 @@
 		(fields_autoplaced yes)
 		(uuid "dfe16fb6-8b05-470c-8cc2-0c50ee7ff544")
 		(property "Reference" "Q301"
-			(at 82.55 46.99 90)
+			(at 91.44 46.99 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "HL3400"
-			(at 82.55 49.53 90)
+		(property "Value" "FDS3672"
+			(at 91.44 49.53 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 80.645 50.8 0)
+		(property "Footprint" "Package_SO:SOP-8_3.9x4.9mm_P1.27mm"
+			(at 89.535 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4456,8 +5265,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2406191433_hongjiacheng-HL3400_C22469448.pdf"
-			(at 78.74 50.8 0)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2409291234_JSMSEMI-FDS3672_C5296734.pdf"
+			(at 87.63 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4466,8 +5275,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "30V 5.6A 1.2W 21mΩ@10V,5.6A 900mV@250uA 1 N-Channel SOT-23 MOSFETs ROHS"
-			(at 82.55 55.88 0)
+		(property "Description" "100V 8A 20mΩ@10V,8A 3.3W 2.5V 1 N-channel SOP-8 MOSFETs ROHS"
+			(at 91.44 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4475,8 +5284,8 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C22469448"
-			(at 82.55 49.53 90)
+		(property "LCSC" "C5296734"
+			(at 91.44 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4485,7 +5294,7 @@
 			)
 		)
 		(property "Characteristics" ""
-			(at 82.55 55.88 0)
+			(at 91.44 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4501,6 +5310,21 @@
 		)
 		(pin "2"
 			(uuid "3915c34b-64b8-4779-8d9d-7013b48b7575")
+		)
+		(pin "5"
+			(uuid "b61108a8-1e77-47fb-9fa8-5d1f012d40bf")
+		)
+		(pin "6"
+			(uuid "4c14cecf-65d1-44c5-a703-d9169a44fdb2")
+		)
+		(pin "7"
+			(uuid "4a1a7f35-0d14-41dd-baff-d173d73b46fe")
+		)
+		(pin "8"
+			(uuid "9b0125ce-7aef-40b6-a712-99a0730291dd")
+		)
+		(pin "4"
+			(uuid "562bd1cb-e815-4514-a450-eedeb84c2bed")
 		)
 		(instances
 			(project ""
@@ -4652,7 +5476,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 67.31 67.31 0)
+		(at 76.2 67.31 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4661,7 +5485,7 @@
 		(dnp no)
 		(uuid "fe335d01-8f15-4281-95fa-caab3b83dd97")
 		(property "Reference" "C301"
-			(at 63.5 66.0399 0)
+			(at 72.39 66.0399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4669,8 +5493,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF/50V"
-			(at 63.5 68.5799 0)
+		(property "Value" "1uF/50V"
+			(at 72.39 68.5799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4679,7 +5503,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 66.3448 71.12 0)
+			(at 75.2348 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4688,7 +5512,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 67.31 67.31 0)
+			(at 76.2 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4697,7 +5521,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 67.31 67.31 0)
+			(at 76.2 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4705,8 +5529,8 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C14663"
-			(at 67.31 67.31 0)
+		(property "LCSC" "C15849"
+			(at 76.2 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4715,7 +5539,7 @@
 			)
 		)
 		(property "Characteristics" ""
-			(at 67.31 67.31 0)
+			(at 76.2 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)

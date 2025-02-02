@@ -6268,16 +6268,6 @@
 		)
 		(uuid "4f4881a3-e7fa-474b-b7ae-c09700a31259")
 	)
-	(label "PB5"
-		(at 165.1 149.86 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "51ede559-0cd7-4e54-82c5-d944beb33a09")
-	)
 	(label "RGBLED"
 		(at 184.15 121.92 0)
 		(effects
@@ -6317,6 +6307,16 @@
 			(justify left bottom)
 		)
 		(uuid "5f14be65-6943-4727-800f-c4832621d543")
+	)
+	(label "PB5"
+		(at 165.1 149.86 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6e768123-88a9-4bd4-8058-b65426ab9600")
 	)
 	(label "EN5V_MCU"
 		(at 234.95 30.48 180)
@@ -6367,16 +6367,6 @@
 			(justify right bottom)
 		)
 		(uuid "871783fb-c6b6-4160-b250-78659d4a7bc9")
-	)
-	(label "PB5"
-		(at 237.49 87.63 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "8cc85ddc-a328-47d3-9d6a-603a8bb50a84")
 	)
 	(label "I2C1.SDA"
 		(at 161.29 115.57 0)
@@ -6447,6 +6437,16 @@
 			(justify right bottom)
 		)
 		(uuid "ca27b3fd-e7db-4f47-beeb-a5772cbce5ba")
+	)
+	(label "PB5"
+		(at 237.49 87.63 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "cdc0fdd1-8286-4bfc-b797-d6c8b17326e5")
 	)
 	(label "ORed"
 		(at 160.02 54.61 0)
@@ -6634,21 +6634,6 @@
 	(rule_area
 		(polyline
 			(pts
-				(xy 129.54 142.875) (xy 129.54 134.62) (xy 127 134.62) (xy 127 142.875)
-			)
-			(stroke
-				(width 0)
-				(type dash)
-			)
-			(fill
-				(type none)
-			)
-			(uuid 0242a2f9-fb36-4b80-836f-cb96095e7cb8)
-		)
-	)
-	(rule_area
-		(polyline
-			(pts
 				(xy 161.29 134.62) (xy 161.29 151.13) (xy 163.83 151.13) (xy 163.83 134.62)
 			)
 			(stroke
@@ -6658,7 +6643,22 @@
 			(fill
 				(type none)
 			)
-			(uuid 4d2db1f8-538b-4f55-ab71-235e7c08e8e6)
+			(uuid 234ea7b8-520b-4139-ba8e-132853dc828a)
+		)
+	)
+	(rule_area
+		(polyline
+			(pts
+				(xy 129.54 142.875) (xy 129.54 134.62) (xy 127 134.62) (xy 127 142.875)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type none)
+			)
+			(uuid 66742b4b-78cb-4a33-9d87-da6c212719a4)
 		)
 	)
 	(netclass_flag ""

@@ -7,11 +7,6 @@
     (condition "(A.Type == 'Pad')")
     (constraint clearance (min 0.2mm)))
 
-(rule "pad_zone_clearance"
-    (condition "(A.Type == 'Pad') && (B.Type == 'Zone')")
-    (constraint clearance (min 0.3mm)))
-
-
 ########################################################################################
 ## Single-ended signal traces
 
@@ -29,38 +24,50 @@
 
 (rule diff_90ohm_layer1
     (condition "(A.Type == 'Track') && (A.hasNetclass('Diff90ohm'))")
+    (layer F.Cu)
     (constraint track_width (opt 0.1575mm))
     (constraint clearance (min 0.315mm))
+    (constraint diff_pair_uncoupled (max 5.0mm))
     (constraint diff_pair_gap (min 0.18mm) (opt 0.2mm) (max 0.25mm)))
 
 (rule diff_90ohm_layer3
     (condition "(A.Type == 'Track') && (A.hasNetclass('Diff90ohm'))")
+    (layer In2.Cu)
     (constraint track_width (opt 0.1430mm))
     (constraint clearance (min 0.429mm))
+    (constraint diff_pair_uncoupled (max 5.0mm))
     (constraint diff_pair_gap (min 0.18mm) (opt 0.2mm) (max 0.25mm)))
 
 (rule diff_90ohm_layer6
     (condition "(A.Type == 'Track') && (A.hasNetclass('Diff90ohm'))")
+    (layer B.Cu)
     (constraint track_width (opt 0.1575mm))
     (constraint clearance (min 0.315mm))
+    (constraint diff_pair_uncoupled (max 5.0mm))
     (constraint diff_pair_gap (min 0.18mm) (opt 0.2mm) (max 0.25mm)))
 
 (rule "diff_100ohm_layer1"
     (condition "(A.Type == 'Track') && (A.hasNetclass('Diff100ohm'))")
+    (layer F.Cu)
     (constraint track_width (opt 0.1326mm))
     (constraint clearance (opt 0.3978mm))
+    (constraint diff_pair_uncoupled (max 5.0mm))
     (constraint diff_pair_gap (min 0.23mm) (opt 0.25mm) (max 0.28mm)))
 
 (rule "diff_100ohm_layer3"
     (condition "(A.Type == 'Track') && (A.hasNetclass('Diff100ohm'))")
+    (layer In2.Cu)
     (constraint track_width (opt 0.1204mm))
     (constraint clearance (min 0.3612mm))
+    (constraint diff_pair_uncoupled (max 5.0mm))
     (constraint diff_pair_gap (min 0.23mm) (opt 0.25mm) (max 0.28mm)))
 
 (rule "diff_100ohm_layer6"
     (condition "(A.Type == 'Track') && (A.hasNetclass('Diff100ohm'))")
+    (layer B.Cu)
     (constraint track_width (opt 0.1326mm))
     (constraint clearance (opt 0.3978mm))
+    (constraint diff_pair_uncoupled (max 5.0mm))
     (constraint diff_pair_gap (min 0.23mm) (opt 0.25mm) (max 0.28mm)))
 
 (rule "ignore_diff_pair_member_clearance"
@@ -71,12 +78,27 @@
     (condition "AB.isCoupledDiffPair() && B.Tuning_Mode=='Diff pair skew'")
     (constraint diff_pair_gap (max 1.5mm)))
 
+(rule "max_skew"
+    (condition "AB.isCoupledDiffPair()")
+    (constraint skew (max 0.1mm)))
+
 ########################################################################################
 ## Vias
 
 (rule "gnd_via_clearance"
     (condition "A.Type == 'Via' && (A.hasNetclass('GND'))")
     (constraint clearance (min 0.1mm)))
+
+########################################################################################
+## Zones
+
+(rule "isolated_zone_clearance"
+    (condition "A.NetName == 'GND' && (B.NetName == 'GND_CAN' || B.NetName == 'GND_RS485')")
+    (constraint clearance (min 1.0mm)))
+
+(rule "pad_zone_clearance"
+    (condition "(A.Type == 'Pad') && (B.Type == 'Zone')")
+    (constraint clearance (min 0.20mm)))
 
 ########################################################################################
 ## Neck-downs
@@ -87,23 +109,23 @@
 #    (condition "((A.Type == 'Track' ) || (A.Type == 'Via')) && (A.intersectsCourtyard('${Class:fine_pitch}'))")
 #    (constraint clearance (min 0.1mm)))
 
+(rule "front_neckdown"
+    (condition "(A.Type != 'Zone') && (A.intersectsFrontCourtyard('*'))")
+    (layer F.Cu)
+    (constraint clearance (min 0.1mm)))
+
+(rule "back_neckdown"
+    (condition "(A.Type != 'Zone') && (A.intersectsBackCourtyard('*'))")
+    (layer B.Cu)
+    (constraint clearance (min 0.1mm)))
+
+# Routing vias gets difficult unless we allow tight spacing inside fine_pitch components.
+
 # This also affects pad clearance
 
 (rule "class_neckdown"
     (condition "(A.Type != 'Zone') && (A.intersectsCourtyard('${Class:fine_pitch}'))")
     (constraint clearance (min 0.1mm)))
-
-(rule "smd_neckdown"
-    (condition "(A.Type != 'Zone') && (A.intersectsCourtyard('*'))")
-    (constraint clearance (min 0.1mm)))
-
-
-########################################################################################
-## Zones
-
-(rule "isolated_zone_clearance"
-    (condition "A.NetName == 'GND' && (B.NetName == 'GND_CAN' || B.NetName == 'GND_RS485')")
-    (constraint clearance (min 1.0mm)))
 
 ########################################################################################
 ## Other netclasses
@@ -116,7 +138,7 @@
 (rule "HV_clearance"
     (condition "A.hasNetClass('HV') && !B.hasNetClass('HV')")
     (layer inner)
-    (constraint clearance (min 0.3mm)))
+    (constraint clearance (min 0.25mm)))
 
 # Route PoE taps close to each other
 

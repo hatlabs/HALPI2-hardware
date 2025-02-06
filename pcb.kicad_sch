@@ -64,10 +64,9 @@
 				)
 			)
 			(symbol "SilkScreenImage_0_1"
-				(polyline
-					(pts
-						(xy -5.08 2.54) (xy 5.08 -7.62)
-					)
+				(rectangle
+					(start -5.08 2.54)
+					(end 5.08 -7.62)
 					(stroke
 						(width 0)
 						(type default)
@@ -76,9 +75,10 @@
 						(type none)
 					)
 				)
-				(rectangle
-					(start -5.08 2.54)
-					(end 5.08 -7.62)
+				(polyline
+					(pts
+						(xy -5.08 2.54) (xy 5.08 -7.62)
+					)
 					(stroke
 						(width 0)
 						(type default)
@@ -981,79 +981,6 @@
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/e4643111-53ad-48d1-8ad1-a500e184f609"
 					(reference "H3502")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Hatlabs:SilkScreenImage")
-		(at 45.72 77.47 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9acbff18-9e8c-4580-bd10-4fe29fd8f16c")
-		(property "Reference" "IMG3504"
-			(at 52.07 78.7399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "cc-by-sa logo"
-			(at 52.07 81.2799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Hatlabs:cc-by-sa_silkscreen"
-			(at 45.72 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 45.72 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 45.72 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Characteristics" ""
-			(at 45.72 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "HALPI2"
-				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/e4643111-53ad-48d1-8ad1-a500e184f609"
-					(reference "IMG3504")
 					(unit 1)
 				)
 			)

@@ -1454,6 +1454,18 @@
 						(type outline)
 					)
 				)
+				(polyline
+					(pts
+						(xy 0 -6.604) (xy 0 -7.62)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(circle
 					(center 0 -6.604)
 					(radius 0.2794)
@@ -1467,7 +1479,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -6.604) (xy 0 -7.62)
+						(xy 0.762 0.889) (xy -0.508 0.889)
 					)
 					(stroke
 						(width 0)
@@ -1480,18 +1492,6 @@
 				(polyline
 					(pts
 						(xy 0.762 0.889) (xy 1.143 1.143)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 0.889) (xy -0.508 0.889)
 					)
 					(stroke
 						(width 0)
@@ -6095,21 +6095,6 @@
 	(rule_area
 		(polyline
 			(pts
-				(xy 167.64 43.18) (xy 167.64 134.62) (xy 133.35 134.62) (xy 133.35 43.18)
-			)
-			(stroke
-				(width 0)
-				(type dash)
-			)
-			(fill
-				(type none)
-			)
-			(uuid 57c740d7-dad6-48ce-a983-97af214085f5)
-		)
-	)
-	(rule_area
-		(polyline
-			(pts
 				(xy 125.73 104.14) (xy 107.95 104.14) (xy 107.95 101.6) (xy 125.73 101.6)
 			)
 			(stroke
@@ -6119,7 +6104,22 @@
 			(fill
 				(type none)
 			)
-			(uuid 7ceb99c9-d228-4595-a4ac-280acbc91606)
+			(uuid 419be9e9-1162-4d11-84e7-8d0dc4eb963f)
+		)
+	)
+	(rule_area
+		(polyline
+			(pts
+				(xy 167.64 43.18) (xy 167.64 134.62) (xy 133.35 134.62) (xy 133.35 43.18)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type none)
+			)
+			(uuid 61c19ebe-2650-4422-b6a3-23ef2e0b4a04)
 		)
 	)
 	(rule_area
@@ -6134,7 +6134,7 @@
 			(fill
 				(type none)
 			)
-			(uuid 8ab02d9d-04f1-4538-be47-4b4c3a08d79a)
+			(uuid bc908ee3-faea-4ee4-a30c-a1a261480bf8)
 		)
 	)
 	(netclass_flag ""
@@ -8594,13 +8594,13 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_02x02_Odd_Even")
-		(at 196.85 105.41 0)
+		(at 199.39 105.41 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "edb451ea-3baa-478b-be76-cefcb2d20f05")
 		(property "Reference" "J2302"
 			(at 198.12 99.06 0)
@@ -8618,8 +8618,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical"
-			(at 196.85 105.41 0)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_2x02_P2.54mm_Vertical"
+			(at 199.39 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8628,7 +8628,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 196.85 105.41 0)
+			(at 199.39 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8637,7 +8637,7 @@
 			)
 		)
 		(property "Description" "Generic connector, double row, 02x02, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 196.85 105.41 0)
+			(at 199.39 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8645,8 +8645,8 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C492419"
-			(at 196.85 105.41 0)
+		(property "LCSC" "C2977590"
+			(at 199.39 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8655,7 +8655,7 @@
 			)
 		)
 		(property "Characteristics" ""
-			(at 196.85 105.41 0)
+			(at 199.39 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)

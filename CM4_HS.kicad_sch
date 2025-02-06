@@ -2299,10 +2299,9 @@
 				)
 			)
 			(symbol "SilkScreenImage_0_1"
-				(polyline
-					(pts
-						(xy -5.08 2.54) (xy 5.08 -7.62)
-					)
+				(rectangle
+					(start -5.08 2.54)
+					(end 5.08 -7.62)
 					(stroke
 						(width 0)
 						(type default)
@@ -2311,9 +2310,10 @@
 						(type none)
 					)
 				)
-				(rectangle
-					(start -5.08 2.54)
-					(end 5.08 -7.62)
+				(polyline
+					(pts
+						(xy -5.08 2.54) (xy 5.08 -7.62)
+					)
 					(stroke
 						(width 0)
 						(type default)
@@ -5981,66 +5981,6 @@
 	(rule_area
 		(polyline
 			(pts
-				(xy 163.83 142.24) (xy 163.83 115.57) (xy 166.37 115.57) (xy 166.37 142.24)
-			)
-			(stroke
-				(width 0)
-				(type dash)
-			)
-			(fill
-				(type none)
-			)
-			(uuid 7c6fa19a-409c-4bd7-87e2-005d9a6e14d0)
-		)
-	)
-	(rule_area
-		(polyline
-			(pts
-				(xy 107.95 49.53) (xy 107.95 73.66) (xy 105.41 73.66) (xy 105.41 49.53)
-			)
-			(stroke
-				(width 0)
-				(type dash)
-			)
-			(fill
-				(type none)
-			)
-			(uuid 975a7f2f-f920-4e06-a4bd-7cd7ffa27e9b)
-		)
-	)
-	(rule_area
-		(polyline
-			(pts
-				(xy 166.37 29.21) (xy 166.37 96.52) (xy 163.83 96.52) (xy 163.83 29.21)
-			)
-			(stroke
-				(width 0)
-				(type dash)
-			)
-			(fill
-				(type none)
-			)
-			(uuid a656434f-f9d2-4f84-af1a-af284f488857)
-		)
-	)
-	(rule_area
-		(polyline
-			(pts
-				(xy 163.83 97.79) (xy 163.83 114.3) (xy 166.37 114.3) (xy 166.37 97.79)
-			)
-			(stroke
-				(width 0)
-				(type dash)
-			)
-			(fill
-				(type none)
-			)
-			(uuid c2758f9c-f341-4010-9f90-f3d5a36b0e20)
-		)
-	)
-	(rule_area
-		(polyline
-			(pts
 				(xy 107.95 113.03) (xy 107.95 143.51) (xy 105.41 143.51) (xy 105.41 113.03)
 			)
 			(stroke
@@ -6050,22 +5990,7 @@
 			(fill
 				(type none)
 			)
-			(uuid c60f031a-7944-49b4-908f-822a0e590629)
-		)
-	)
-	(rule_area
-		(polyline
-			(pts
-				(xy 107.95 74.93) (xy 107.95 93.98) (xy 105.41 93.98) (xy 105.41 74.93)
-			)
-			(stroke
-				(width 0)
-				(type dash)
-			)
-			(fill
-				(type none)
-			)
-			(uuid ef4bec3f-5855-4f9f-bd86-b61883b5af0d)
+			(uuid 114d6b07-4938-4db6-96a0-eb0253f3f0dd)
 		)
 	)
 	(rule_area
@@ -6080,13 +6005,103 @@
 			(fill
 				(type none)
 			)
-			(uuid fc8f4afc-4bd4-47ec-a64a-49b3eae09b49)
+			(uuid 1bbda48b-e091-4c92-8e74-c5a4c8c5cce0)
+		)
+	)
+	(rule_area
+		(polyline
+			(pts
+				(xy 163.83 97.79) (xy 163.83 114.3) (xy 166.37 114.3) (xy 166.37 97.79)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type none)
+			)
+			(uuid 48437467-dfc8-4662-b233-dcb02e4c30e7)
+		)
+	)
+	(rule_area
+		(polyline
+			(pts
+				(xy 107.95 74.93) (xy 107.95 93.98) (xy 105.41 93.98) (xy 105.41 74.93)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type none)
+			)
+			(uuid 8037ab4c-fdbb-4dff-86c4-78b730fc167f)
+		)
+	)
+	(rule_area
+		(polyline
+			(pts
+				(xy 166.37 29.21) (xy 166.37 96.52) (xy 163.83 96.52) (xy 163.83 29.21)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type none)
+			)
+			(uuid 98049c96-327e-40cf-9ee1-9a1ae672680d)
+		)
+	)
+	(rule_area
+		(polyline
+			(pts
+				(xy 163.83 142.24) (xy 163.83 115.57) (xy 166.37 115.57) (xy 166.37 142.24)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type none)
+			)
+			(uuid 982e2d6e-4633-49e0-a15a-45285c50023f)
+		)
+	)
+	(rule_area
+		(polyline
+			(pts
+				(xy 107.95 58.42) (xy 107.95 73.66) (xy 105.41 73.66) (xy 105.41 58.42)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type none)
+			)
+			(uuid c40c7114-d383-4769-9efc-0d2dff828451)
+		)
+	)
+	(rule_area
+		(polyline
+			(pts
+				(xy 105.41 53.34) (xy 107.95 53.34) (xy 107.95 58.42) (xy 105.41 58.42)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type none)
+			)
+			(uuid f0e9404c-dd19-49ae-9676-fc782ac31195)
 		)
 	)
 	(netclass_flag ""
 		(length 2.54)
 		(shape round)
-		(at 105.41 50.8 90)
+		(at 105.41 73.66 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6096,7 +6111,7 @@
 		)
 		(uuid "3f7c891c-368e-48d8-925c-500b1390f33c")
 		(property "Netclass" "Diff90ohm"
-			(at 102.87 49.911 90)
+			(at 102.87 72.771 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6106,7 +6121,7 @@
 			)
 		)
 		(property "Component Class" ""
-			(at -1.27 7.62 0)
+			(at -1.27 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6344,6 +6359,38 @@
 					(italic yes)
 				)
 				(hide yes)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 106.68 53.34 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f262629e-8119-47af-8746-a47277124b1c")
+		(property "Netclass" "Digital"
+			(at 107.569 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Component Class" ""
+			(at -49.53 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
 			)
 		)
 	)

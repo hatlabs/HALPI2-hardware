@@ -1751,7 +1751,7 @@
 				)
 				(polyline
 					(pts
-						(xy -5.08 -2.03) (xy -5.08 0) (xy 0 0) (xy 0 -2.03)
+						(xy -5.08 -2.03) (xy -5.33 -1.02)
 					)
 					(stroke
 						(width 0)
@@ -1775,7 +1775,7 @@
 				)
 				(polyline
 					(pts
-						(xy -5.08 -2.03) (xy -5.33 -1.02)
+						(xy -5.08 -2.03) (xy -5.08 0) (xy 0 0) (xy 0 -2.03)
 					)
 					(stroke
 						(width 0)
@@ -1822,7 +1822,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -2.03) (xy 0.25 -1.02)
+						(xy 0 -2.03) (xy -0.25 -1.02)
 					)
 					(stroke
 						(width 0)
@@ -1834,7 +1834,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -2.03) (xy -0.25 -1.02)
+						(xy 0 -2.03) (xy 0.25 -1.02)
 					)
 					(stroke
 						(width 0)
@@ -7577,7 +7577,7 @@
 		(uuid "409cc6c8-d261-450e-b04e-8bf2bafd1796")
 	)
 	(label "ETH.LED_GREEN"
-		(at 114.3 64.77 0)
+		(at 114.3 67.31 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7827,7 +7827,7 @@
 		(uuid "865d95e8-0bfc-4c1c-87e7-6e5a9a5cf241")
 	)
 	(label "ETH.LED_YELLOW"
-		(at 114.3 67.31 0)
+		(at 114.3 64.77 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8441,7 +8441,7 @@
 	(rule_area
 		(polyline
 			(pts
-				(xy 44.45 39.37) (xy 46.99 39.37) (xy 46.99 64.77) (xy 44.45 64.77)
+				(xy 113.03 143.51) (xy 110.49 143.51) (xy 110.49 68.58) (xy 113.03 68.58)
 			)
 			(stroke
 				(width 0)
@@ -8450,7 +8450,7 @@
 			(fill
 				(type none)
 			)
-			(uuid 13a900c0-7e19-415b-9a06-dc373e572fd9)
+			(uuid 0993bcbe-a657-4d2f-9d6c-2a67d39c079a)
 		)
 	)
 	(rule_area
@@ -8465,7 +8465,7 @@
 			(fill
 				(type none)
 			)
-			(uuid 3c770de8-7546-400f-96b2-1ed7b626abcf)
+			(uuid 1a16ed03-aa12-4ca2-a70f-6151b1f7c2fd)
 		)
 	)
 	(rule_area
@@ -8480,13 +8480,13 @@
 			(fill
 				(type none)
 			)
-			(uuid 665be1f1-0941-4f09-98eb-fe49720f3f40)
+			(uuid 23841c00-f499-445e-a9bf-8c08ae7ca1b2)
 		)
 	)
 	(rule_area
 		(polyline
 			(pts
-				(xy 113.03 143.51) (xy 110.49 143.51) (xy 110.49 68.58) (xy 113.03 68.58)
+				(xy 44.45 39.37) (xy 46.99 39.37) (xy 46.99 64.77) (xy 44.45 64.77)
 			)
 			(stroke
 				(width 0)
@@ -8495,7 +8495,7 @@
 			(fill
 				(type none)
 			)
-			(uuid 9b9d43af-3a25-41fd-b9f9-7fd615c854cb)
+			(uuid 5e609104-0d71-4917-afcc-d9f3e6395d5e)
 		)
 	)
 	(netclass_flag ""
@@ -8780,6 +8780,72 @@
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/7c248bd3-8232-4777-a40c-eab53460cf85"
 					(reference "JP1601")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Hatlabs:+3.3VCMx")
+		(at 231.14 33.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "24a86f81-fdfa-4a63-a755-3f54b1a45bba")
+		(property "Reference" "#PWR01612"
+			(at 231.14 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3VCMx"
+			(at 231.14 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 231.14 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 231.14 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol driven by the CMx module +3.3V output"
+			(at 231.14 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "eaaba838-0bbe-4b0c-b2f8-87af55953e6d")
+		)
+		(instances
+			(project ""
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/7c248bd3-8232-4777-a40c-eab53460cf85"
+					(reference "#PWR01612")
 					(unit 1)
 				)
 			)
@@ -10282,72 +10348,6 @@
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/7c248bd3-8232-4777-a40c-eab53460cf85"
 					(reference "#PWR02311")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 231.14 33.02 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "dcc538b2-2607-4463-b76b-601d049ed0e2")
-		(property "Reference" "#PWR01607"
-			(at 231.14 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 231.14 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 231.14 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 231.14 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 231.14 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b3e04bc1-e64a-4c5b-b587-6a1386b64554")
-		)
-		(instances
-			(project ""
-				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/7c248bd3-8232-4777-a40c-eab53460cf85"
-					(reference "#PWR01607")
 					(unit 1)
 				)
 			)

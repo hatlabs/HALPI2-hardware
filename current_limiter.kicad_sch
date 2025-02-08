@@ -2512,12 +2512,6 @@
 		(uuid "442c8ff3-49fe-4777-9a15-41ccc69d0b8e")
 	)
 	(junction
-		(at 100.33 80.01)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4b55a5b8-3c21-44c1-bb94-be44c6724b2b")
-	)
-	(junction
 		(at 59.69 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2965,13 +2959,13 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 80.01) (xy 105.41 80.01)
+			(xy 106.68 60.96) (xy 106.68 58.42)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "65ee9800-3fc1-4fbe-a07f-79d3a1ddf1b9")
+		(uuid "6ce361af-f049-4e2e-802d-cb10e46978f9")
 	)
 	(wire
 		(pts
@@ -3235,7 +3229,7 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 80.01) (xy 100.33 83.82)
+			(xy 100.33 78.74) (xy 100.33 83.82)
 		)
 		(stroke
 			(width 0)
@@ -3272,16 +3266,6 @@
 			(type default)
 		)
 		(uuid "ac31a79c-5327-4cd5-8c71-9e96fd9ba107")
-	)
-	(wire
-		(pts
-			(xy 100.33 80.01) (xy 100.33 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aefdb8a7-8012-40dd-a1d8-0e7dcba7b0da")
 	)
 	(wire
 		(pts
@@ -3632,6 +3616,16 @@
 			(justify left bottom)
 		)
 		(uuid "30303ced-4df5-41f0-b3b0-3618c38952bf")
+	)
+	(label "FVSS"
+		(at 106.68 60.96 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3ecd3323-a18c-416e-93dd-3f29b595106f")
 	)
 	(label "CCSC1"
 		(at 50.8 90.17 180)
@@ -4033,71 +4027,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 106.68 58.42 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "151732bc-4b25-4baf-81b2-31c427a380f0")
-		(property "Reference" "#PWR03603"
-			(at 106.68 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 110.49 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 106.68 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 106.68 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 106.68 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "abb6b1e7-5d47-448c-80cd-b26058d99013")
-		)
-		(instances
-			(project "HALPI2"
-				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69/ceedefa9-b0a1-435b-ac8f-bf0512726438"
-					(reference "#PWR03603")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector_Generic:Conn_02x02_Odd_Even")
 		(at 233.68 83.82 90)
 		(mirror x)
@@ -4325,7 +4254,7 @@
 				)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "1uF"
 			(at 152.4 74.93 90)
 			(effects
 				(font
@@ -4360,7 +4289,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C1525"
+		(property "LCSC" "C52923"
 			(at 152.4 80.01 0)
 			(effects
 				(font
@@ -4739,71 +4668,6 @@
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69/ceedefa9-b0a1-435b-ac8f-bf0512726438"
 					(reference "#PWR03609")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 105.41 87.63 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "43a622d5-4b18-4045-8e10-f4a3db9d1166")
-		(property "Reference" "#PWR03602"
-			(at 105.41 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 105.537 92.0242 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 105.41 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 105.41 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 105.41 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9123b9f9-6d41-4770-b164-5cd51298eeaf")
-		)
-		(instances
-			(project "HALPI2"
-				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69/ceedefa9-b0a1-435b-ac8f-bf0512726438"
-					(reference "#PWR03602")
 					(unit 1)
 				)
 			)
@@ -5495,92 +5359,6 @@
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69/ceedefa9-b0a1-435b-ac8f-bf0512726438"
 					(reference "R411")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 105.41 83.82 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "80936589-7c00-419d-acf9-c8bd50c1e356")
-		(property "Reference" "C408"
-			(at 110.49 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100nF"
-			(at 111.76 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 106.3752 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 105.41 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 105.41 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C1525"
-			(at 105.41 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Characteristics" ""
-			(at 105.41 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6c7a1365-d965-4499-bbcb-887b1d00ad1b")
-		)
-		(pin "2"
-			(uuid "34bab45f-1751-417c-b865-294f16986555")
-		)
-		(instances
-			(project "HALPI2"
-				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69/ceedefa9-b0a1-435b-ac8f-bf0512726438"
-					(reference "C408")
 					(unit 1)
 				)
 			)
@@ -6917,7 +6695,7 @@
 				)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "1uF"
 			(at 113.03 57.15 0)
 			(effects
 				(font
@@ -6952,7 +6730,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C1525"
+		(property "LCSC" "C52923"
 			(at 106.68 55.88 0)
 			(effects
 				(font

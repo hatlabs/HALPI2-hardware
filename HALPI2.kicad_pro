@@ -164,6 +164,30 @@
         [
           "hole_clearance|73106271|120006271|515f1bdb-36c9-4841-a2db-be89c60cf7b9|a6a5cd97-2fa9-4533-91bc-4247496cacea",
           ""
+        ],
+        [
+          "silk_edge_clearance|162400000|30500000|bb690bc1-98be-45e0-9377-ca164b5a6071|611f242b-9870-45b0-b0c4-86ac617e8588",
+          ""
+        ],
+        [
+          "silk_edge_clearance|184000000|30500000|bb690bc1-98be-45e0-9377-ca164b5a6071|198aa916-a860-4add-aefd-de8b15c55bf6",
+          ""
+        ],
+        [
+          "silk_edge_clearance|211609499|37296477|38b1cc13-da10-410b-8a8e-b421e61eff6a|5cc8feab-9296-4351-9e9e-05e645c3090d",
+          ""
+        ],
+        [
+          "silk_edge_clearance|219435714|114964042|20a1a53a-73fd-4220-ae4e-7b9c45480f25|d63711c2-fe2e-43ac-a796-c605f55a022c",
+          ""
+        ],
+        [
+          "silk_edge_clearance|219518028|124912000|20a1a53a-73fd-4220-ae4e-7b9c45480f25|810596d8-3593-4a59-b68b-af127679eb67",
+          ""
+        ],
+        [
+          "silk_edge_clearance|219518028|80879001|20a1a53a-73fd-4220-ae4e-7b9c45480f25|d63d3e98-8134-491f-b46c-71c7d30cd6ca",
+          ""
         ]
       ],
       "meta": {
@@ -319,9 +343,9 @@
           "corner_radius_percentage": 80,
           "corner_style": 1,
           "max_amplitude": 1.0,
-          "min_amplitude": 0.2,
+          "min_amplitude": 0.1,
           "single_sided": false,
-          "spacing": 0.6
+          "spacing": 0.3
         },
         "single_track_defaults": {
           "corner_radius_percentage": 80,
@@ -342,16 +366,12 @@
           "drill": 0.3
         },
         {
-          "diameter": 0.45,
-          "drill": 0.2
-        },
-        {
-          "diameter": 0.45,
+          "diameter": 0.5,
           "drill": 0.3
         },
         {
           "diameter": 0.6,
-          "drill": 0.4
+          "drill": 0.3
         },
         {
           "diameter": 1.0,
@@ -393,20 +413,7 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [
-      [
-        "no_connect_connected|1028700|1409700|a8e5bac9-4e79-4bff-b6fd-917567e4b13e|641b6a56-2cbf-40c7-8b33-f6c5d3003045|/abc482bd-3f17-4d35-80db-1da3dcdb5c27/851e7ce4-d5b0-47f7-ace9-4a347f172348/d4876730-9038-4f8b-92bc-bcbb3a62ccf0|/abc482bd-3f17-4d35-80db-1da3dcdb5c27/851e7ce4-d5b0-47f7-ace9-4a347f172348/d4876730-9038-4f8b-92bc-bcbb3a62ccf0|",
-        ""
-      ],
-      [
-        "no_connect_connected|1600200|1282700|b723237a-c0e6-450b-a506-3fc9e6fb62fc|30448012-78a7-47bf-b312-71df3a50be7c|/abc482bd-3f17-4d35-80db-1da3dcdb5c27/b774f543-305e-4249-92c3-c3de7e8a285e/306b39c2-3d43-4872-bf23-cfec09993877/281eb1e2-ca3e-4103-b349-ba6d0f6fe106|/abc482bd-3f17-4d35-80db-1da3dcdb5c27/b774f543-305e-4249-92c3-c3de7e8a285e/306b39c2-3d43-4872-bf23-cfec09993877/281eb1e2-ca3e-4103-b349-ba6d0f6fe106|",
-        ""
-      ],
-      [
-        "no_connect_connected|1765300|1244600|ffc68fe6-0dba-4bd0-b728-8c5e7079f7f8|a0db0494-9a81-4f9e-8080-602ebc19ee2c|/abc482bd-3f17-4d35-80db-1da3dcdb5c27/aa1d8d83-5167-420c-9ee7-3e4dcc942bfc|/abc482bd-3f17-4d35-80db-1da3dcdb5c27/aa1d8d83-5167-420c-9ee7-3e4dcc942bfc|",
-        ""
-      ]
-    ],
+    "erc_exclusions": [],
     "meta": {
       "version": 0
     },
@@ -651,7 +658,7 @@
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.3,
-        "via_diameter": 0.45,
+        "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 5
       },
@@ -668,7 +675,7 @@
         "priority": 6,
         "schematic_color": "rgb(0, 0, 194)",
         "track_width": 0.4,
-        "via_diameter": 0.45,
+        "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 5
       },
@@ -691,7 +698,7 @@
         "priority": 3,
         "schematic_color": "rgb(132, 132, 0)",
         "track_width": 0.15,
-        "via_diameter": 0.45,
+        "via_diameter": 0.5,
         "via_drill": 0.3
       },
       {
@@ -702,7 +709,7 @@
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.4,
         "via_diameter": 0.6,
-        "via_drill": 0.4
+        "via_drill": 0.3
       },
       {
         "name": "HV",
@@ -731,7 +738,7 @@
         "schematic_color": "rgb(194, 0, 0)",
         "track_width": 0.4,
         "via_diameter": 0.6,
-        "via_drill": 0.4,
+        "via_drill": 0.3,
         "wire_width": 5
       }
     ],
@@ -2124,6 +2131,12 @@
           "group_by": false,
           "label": "Field8",
           "name": "Field8",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "LCSC Part",
+          "name": "LCSC Part",
           "show": false
         }
       ],

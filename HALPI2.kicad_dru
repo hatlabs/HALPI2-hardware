@@ -113,12 +113,12 @@
 #    (constraint clearance (min 0.1mm)))
 
 (rule "front_neckdown"
-    (condition "(A.Type != 'Zone') && (A.intersectsFrontCourtyard('*'))")
+    (condition "(A.Type != 'Zone') && (B.Type != 'Zone') && (A.intersectsFrontCourtyard('*'))")
     (layer F.Cu)
     (constraint clearance (min 0.1mm)))
 
 (rule "back_neckdown"
-    (condition "(A.Type != 'Zone') && (A.intersectsBackCourtyard('*'))")
+    (condition "(A.Type != 'Zone') && (B.Type != 'Zone') && (A.intersectsBackCourtyard('*'))")
     (layer B.Cu)
     (constraint clearance (min 0.1mm)))
 
@@ -127,7 +127,7 @@
 # This also affects pad clearance
 
 (rule "class_neckdown"
-    (condition "(A.Type != 'Zone') && (A.intersectsCourtyard('${Class:fine_pitch}'))")
+    (condition "(A.Type != 'Zone') && (B.Type != 'Zone') && (A.intersectsCourtyard('${Class:fine_pitch}'))")
     (constraint clearance (min 0.1mm)))
 
 ########################################################################################

@@ -507,6 +507,89 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim yes)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+5V"
 			(power)
 			(pin_numbers
@@ -1411,7 +1494,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71C104KA88-01.pdf"
+		(property "Datasheet" "~"
 			(at 121.92 120.65 0)
 			(effects
 				(font
@@ -1420,7 +1503,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 121.92 120.65 0)
 			(effects
 				(font
@@ -1457,6 +1540,70 @@
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/850df4bf-e40a-4082-adc2-76804638b949/7441bc5f-8874-43c2-af8a-50459ea25028"
 					(reference "C1403")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 97.79 154.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0721b9f4-4309-45c3-9865-98bb6eee0649")
+		(property "Reference" "H1402"
+			(at 100.33 153.6699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 100.33 156.2099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 97.79 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 97.79 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 97.79 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/850df4bf-e40a-4082-adc2-76804638b949/7441bc5f-8874-43c2-af8a-50459ea25028"
+					(reference "H1402")
 					(unit 1)
 				)
 			)
@@ -1565,7 +1712,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71C104KA88-01.pdf"
+		(property "Datasheet" "~"
 			(at 152.4 120.65 0)
 			(effects
 				(font
@@ -1574,7 +1721,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 152.4 120.65 0)
 			(effects
 				(font
@@ -1654,7 +1801,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71C104KA88-01.pdf"
+		(property "Datasheet" "~"
 			(at 137.16 120.65 0)
 			(effects
 				(font
@@ -1663,7 +1810,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 137.16 120.65 0)
 			(effects
 				(font
@@ -2003,7 +2150,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 97.79 120.65 0)
 			(effects
 				(font
@@ -2012,7 +2159,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 97.79 120.65 0)
 			(effects
 				(font
@@ -2049,6 +2196,70 @@
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/850df4bf-e40a-4082-adc2-76804638b949/7441bc5f-8874-43c2-af8a-50459ea25028"
 					(reference "C1401")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 97.79 147.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "67115f54-5d8e-45a5-a076-073dacc2701f")
+		(property "Reference" "H1401"
+			(at 100.33 146.0499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 100.33 148.5899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 97.79 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 97.79 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 97.79 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project ""
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/850df4bf-e40a-4082-adc2-76804638b949/7441bc5f-8874-43c2-af8a-50459ea25028"
+					(reference "H1401")
 					(unit 1)
 				)
 			)
@@ -2147,7 +2358,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Hatlabs:LED-SMD_4P-L4.0-W1.4_SK6805SIDE-S"
+		(property "Footprint" "Hatlabs:LED_WS2812E-4020_PLCC4_4.0x2.0mm_P0.85mm"
 			(at 125.73 100.33 0)
 			(effects
 				(font
@@ -2156,7 +2367,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2110250930_OPSCO-Optoelectronics-SK6805MICRO-J_C2909056.pdf"
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
 			(at 120.65 100.33 0)
 			(effects
 				(font
@@ -2306,7 +2517,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Hatlabs:LED-SMD_4P-L4.0-W1.4_SK6805SIDE-S"
+		(property "Footprint" "Hatlabs:LED_WS2812E-4020_PLCC4_4.0x2.0mm_P0.85mm"
 			(at 156.21 100.33 0)
 			(effects
 				(font
@@ -2315,7 +2526,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2110250930_OPSCO-Optoelectronics-SK6805MICRO-J_C2909056.pdf"
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
 			(at 151.13 100.33 0)
 			(effects
 				(font
@@ -2410,7 +2621,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71C104KA88-01.pdf"
+		(property "Datasheet" "~"
 			(at 167.64 120.65 0)
 			(effects
 				(font
@@ -2419,7 +2630,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 167.64 120.65 0)
 			(effects
 				(font
@@ -2499,7 +2710,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM155R71C104KA88-01.pdf"
+		(property "Datasheet" "~"
 			(at 106.68 120.65 0)
 			(effects
 				(font
@@ -2508,7 +2719,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 106.68 120.65 0)
 			(effects
 				(font
@@ -2578,7 +2789,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Hatlabs:LED-SMD_4P-L4.0-W1.4_SK6805SIDE-S"
+		(property "Footprint" "Hatlabs:LED_WS2812E-4020_PLCC4_4.0x2.0mm_P0.85mm"
 			(at 140.97 100.33 0)
 			(effects
 				(font
@@ -2587,7 +2798,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2110250930_OPSCO-Optoelectronics-SK6805MICRO-J_C2909056.pdf"
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
 			(at 135.89 100.33 0)
 			(effects
 				(font
@@ -2672,7 +2883,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Hatlabs:LED-SMD_4P-L4.0-W1.4_SK6805SIDE-S"
+		(property "Footprint" "Hatlabs:LED_WS2812E-4020_PLCC4_4.0x2.0mm_P0.85mm"
 			(at 171.45 100.33 0)
 			(effects
 				(font
@@ -2681,7 +2892,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2110250930_OPSCO-Optoelectronics-SK6805MICRO-J_C2909056.pdf"
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
 			(at 166.37 100.33 0)
 			(effects
 				(font
@@ -2766,7 +2977,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Hatlabs:LED-SMD_4P-L4.0-W1.4_SK6805SIDE-S"
+		(property "Footprint" "Hatlabs:LED_WS2812E-4020_PLCC4_4.0x2.0mm_P0.85mm"
 			(at 110.49 100.33 0)
 			(effects
 				(font
@@ -2775,7 +2986,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2110250930_OPSCO-Optoelectronics-SK6805MICRO-J_C2909056.pdf"
+		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
 			(at 105.41 100.33 0)
 			(effects
 				(font
@@ -2892,6 +3103,70 @@
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/850df4bf-e40a-4082-adc2-76804638b949/7441bc5f-8874-43c2-af8a-50459ea25028"
 					(reference "#PWR01404")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 97.79 162.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fb74dfcd-f16b-45da-adac-d88103dfc413")
+		(property "Reference" "H1403"
+			(at 100.33 161.2899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 100.33 163.8299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 97.79 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 97.79 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 97.79 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/850df4bf-e40a-4082-adc2-76804638b949/7441bc5f-8874-43c2-af8a-50459ea25028"
+					(reference "H1403")
 					(unit 1)
 				)
 			)

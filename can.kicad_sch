@@ -816,6 +816,15 @@
 					(hide yes)
 				)
 			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
 			(property "ki_keywords" "LED diode"
 				(at 0 0 0)
 				(effects
@@ -5948,21 +5957,6 @@
 	(rule_area
 		(polyline
 			(pts
-				(xy 93.98 119.38) (xy 93.98 127) (xy 91.44 127) (xy 91.44 119.38)
-			)
-			(stroke
-				(width 0)
-				(type dash)
-			)
-			(fill
-				(type none)
-			)
-			(uuid 70d0573d-f289-4029-9ec4-e7ca9ba22fda)
-		)
-	)
-	(rule_area
-		(polyline
-			(pts
 				(xy 156.21 120.65) (xy 156.21 127) (xy 153.67 127) (xy 153.67 120.65)
 			)
 			(stroke
@@ -5972,7 +5966,22 @@
 			(fill
 				(type none)
 			)
-			(uuid f67c1714-d396-4a3a-bee6-48309e4e56a5)
+			(uuid 8931b0d3-0ff6-49eb-a6f1-12e3997a5c0f)
+		)
+	)
+	(rule_area
+		(polyline
+			(pts
+				(xy 93.98 119.38) (xy 93.98 127) (xy 91.44 127) (xy 91.44 119.38)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type none)
+			)
+			(uuid c6d6a0e8-9302-4c67-8473-7de3b9d8aa6c)
 		)
 	)
 	(netclass_flag ""
@@ -6321,7 +6330,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 104.14 52.07 0)
 			(effects
 				(font
@@ -6435,7 +6444,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 250.19 50.8 0)
 			(effects
 				(font
@@ -6539,7 +6548,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Inductor"
 			(at 111.76 49.53 0)
 			(effects
 				(font
@@ -6654,7 +6663,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 118.11 52.07 0)
 			(effects
 				(font
@@ -7122,7 +7131,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 250.19 45.72 0)
 			(effects
 				(font
@@ -7228,7 +7237,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Light emitting diode"
 			(at 217.17 50.8 0)
 			(effects
 				(font
@@ -7255,7 +7264,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Pins" ""
+		(property "Sim.Pins" "1=K 2=A"
 			(at 217.17 50.8 0)
 			(effects
 				(font
@@ -7539,7 +7548,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Light emitting diode"
 			(at 205.74 50.8 0)
 			(effects
 				(font
@@ -7566,7 +7575,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Pins" ""
+		(property "Sim.Pins" "1=K 2=A"
 			(at 205.74 50.8 0)
 			(effects
 				(font
@@ -7643,7 +7652,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2303300930_JGHC-S3240000121040B5_C5380554.pdf"
+		(property "Datasheet" "~"
 			(at 44.45 151.13 0)
 			(effects
 				(font
@@ -8031,7 +8040,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 35.56 162.56 0)
 			(effects
 				(font
@@ -8109,7 +8118,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.littelfuse.com/~/media/electronics/datasheets/tvs_diode_arrays/littelfuse_tvs_diode_array_sm712_datasheet.pdf.pdf"
 			(at 215.9 133.35 0)
 			(effects
 				(font
@@ -8118,7 +8127,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "7V/12V, 600W Asymmetrical TVS Diode Array, SOT-23"
 			(at 212.09 133.35 0)
 			(effects
 				(font
@@ -8300,7 +8309,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 135.89 60.96 0)
 			(effects
 				(font
@@ -8394,7 +8403,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "PCM_Capacitor_SMD_AKL:C_0402_1005Metric"
 			(at 68.58 110.7948 0)
 			(effects
 				(font
@@ -8631,7 +8640,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 153.67 107.95 0)
 			(effects
 				(font
@@ -8959,7 +8968,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 205.74 43.18 0)
 			(effects
 				(font
@@ -9140,7 +9149,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 115.57 113.03 0)
 			(effects
 				(font
@@ -9526,7 +9535,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 175.26 95.25 0)
 			(effects
 				(font
@@ -9782,7 +9791,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 152.4 52.07 0)
 			(effects
 				(font
@@ -9897,7 +9906,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor, small symbol"
 			(at 166.37 52.07 0)
 			(effects
 				(font
@@ -10787,7 +10796,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Inductor"
 			(at 157.48 49.53 0)
 			(effects
 				(font
@@ -11203,7 +11212,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 53.34 162.56 0)
 			(effects
 				(font
@@ -11406,7 +11415,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 217.17 43.18 0)
 			(effects
 				(font

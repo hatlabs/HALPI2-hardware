@@ -342,7 +342,7 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
+			(property "Reference" "J"
 				(at -20.32 58.42 0)
 				(effects
 					(font
@@ -2249,26 +2249,27 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Hatlabs:SilkScreenImage"
-			(exclude_from_sim no)
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim yes)
 			(in_bom no)
 			(on_board yes)
-			(property "Reference" "IMG"
-				(at 6.35 -1.2699 0)
+			(property "Reference" "H"
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Value" "Silk Screen Image"
-				(at 6.35 -3.8099 0)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -2280,7 +2281,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" ""
+			(property "Datasheet" "~"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2289,7 +2290,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" ""
+			(property "Description" "Mounting Hole without connection"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2298,36 +2299,30 @@
 					(hide yes)
 				)
 			)
-			(symbol "SilkScreenImage_0_1"
-				(rectangle
-					(start -5.08 2.54)
-					(end 5.08 -7.62)
-					(stroke
-						(width 0)
-						(type default)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
-					(fill
-						(type none)
-					)
+					(hide yes)
 				)
-				(polyline
-					(pts
-						(xy -5.08 2.54) (xy 5.08 -7.62)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
+					(hide yes)
 				)
-				(polyline
-					(pts
-						(xy 5.08 2.54) (xy -5.08 -7.62)
-					)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
 					(stroke
-						(width 0)
+						(width 1.27)
 						(type default)
 					)
 					(fill
@@ -5981,7 +5976,7 @@
 	(rule_area
 		(polyline
 			(pts
-				(xy 163.83 142.24) (xy 163.83 115.57) (xy 166.37 115.57) (xy 166.37 142.24)
+				(xy 163.83 64.77) (xy 166.37 64.77) (xy 166.37 76.2) (xy 163.83 76.2)
 			)
 			(stroke
 				(width 0)
@@ -5990,13 +5985,13 @@
 			(fill
 				(type none)
 			)
-			(uuid 0540be36-88ed-4fb7-93b7-60a26aa7af45)
+			(uuid 08efb032-d034-48ce-baa3-c40c94e3ee50)
 		)
 	)
 	(rule_area
 		(polyline
 			(pts
-				(xy 105.41 53.34) (xy 107.95 53.34) (xy 107.95 58.42) (xy 105.41 58.42)
+				(xy 163.83 31.75) (xy 166.37 31.75) (xy 166.37 43.18) (xy 163.83 43.18)
 			)
 			(stroke
 				(width 0)
@@ -6005,13 +6000,13 @@
 			(fill
 				(type none)
 			)
-			(uuid 204739a7-7208-4ef9-8dda-c27e929aff02)
+			(uuid 09404aca-668b-4c39-b58d-336fded0b128)
 		)
 	)
 	(rule_area
 		(polyline
 			(pts
-				(xy 166.37 29.21) (xy 166.37 96.52) (xy 163.83 96.52) (xy 163.83 29.21)
+				(xy 57.15 97.79) (xy 54.61 97.79) (xy 54.61 92.71) (xy 57.15 92.71)
 			)
 			(stroke
 				(width 0)
@@ -6020,13 +6015,13 @@
 			(fill
 				(type none)
 			)
-			(uuid 22e11546-8751-47f8-ac04-cc339191dc2d)
+			(uuid 0df134cb-ba0e-48b0-aa63-2efa16199c77)
 		)
 	)
 	(rule_area
 		(polyline
 			(pts
-				(xy 107.95 113.03) (xy 107.95 143.51) (xy 105.41 143.51) (xy 105.41 113.03)
+				(xy 166.37 76.2) (xy 166.37 96.52) (xy 163.83 96.52) (xy 163.83 76.2)
 			)
 			(stroke
 				(width 0)
@@ -6035,7 +6030,7 @@
 			(fill
 				(type none)
 			)
-			(uuid 4052dc72-52ff-440b-b783-d0f14eea32af)
+			(uuid 21fe11cb-914c-46aa-b730-883f6e944339)
 		)
 	)
 	(rule_area
@@ -6050,13 +6045,13 @@
 			(fill
 				(type none)
 			)
-			(uuid b6b28df0-fb6f-4856-b460-a4caa030daba)
+			(uuid 4ed898ea-eb09-47a9-8b88-87ca7c1d9c35)
 		)
 	)
 	(rule_area
 		(polyline
 			(pts
-				(xy 107.95 74.93) (xy 107.95 93.98) (xy 105.41 93.98) (xy 105.41 74.93)
+				(xy 163.83 142.24) (xy 163.83 115.57) (xy 166.37 115.57) (xy 166.37 142.24)
 			)
 			(stroke
 				(width 0)
@@ -6065,7 +6060,7 @@
 			(fill
 				(type none)
 			)
-			(uuid d07ffb1e-e43b-4365-9498-7cdccdc348a9)
+			(uuid 53132ed9-6e21-4943-9a9d-b480a126c413)
 		)
 	)
 	(rule_area
@@ -6080,7 +6075,52 @@
 			(fill
 				(type none)
 			)
-			(uuid e0d3d346-25ce-4754-982d-3a22a95edb90)
+			(uuid 93b80148-08b8-4e7d-b4a4-1fcb4db4094d)
+		)
+	)
+	(rule_area
+		(polyline
+			(pts
+				(xy 166.37 43.18) (xy 166.37 63.5) (xy 163.83 63.5) (xy 163.83 43.18)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type none)
+			)
+			(uuid 99965380-014c-4eb1-b277-16d84cd0c77c)
+		)
+	)
+	(rule_area
+		(polyline
+			(pts
+				(xy 107.95 76.2) (xy 107.95 93.98) (xy 105.41 93.98) (xy 105.41 76.2)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type none)
+			)
+			(uuid 9add2fc7-6b89-41fe-8308-ebb7a9ff9945)
+		)
+	)
+	(rule_area
+		(polyline
+			(pts
+				(xy 107.95 113.03) (xy 107.95 143.51) (xy 105.41 143.51) (xy 105.41 113.03)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type none)
+			)
+			(uuid bbf468d3-da7e-46bc-a898-12353ffe0cf1)
 		)
 	)
 	(rule_area
@@ -6095,7 +6135,22 @@
 			(fill
 				(type none)
 			)
-			(uuid ee71291b-1b04-44f0-af85-3b56b5856487)
+			(uuid df3ef27f-7a38-49a2-876f-b22f635579c3)
+		)
+	)
+	(rule_area
+		(polyline
+			(pts
+				(xy 105.41 53.34) (xy 107.95 53.34) (xy 107.95 58.42) (xy 105.41 58.42)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type none)
+			)
+			(uuid e3f81569-d789-4e52-853a-284d315a024e)
 		)
 	)
 	(netclass_flag ""
@@ -6134,7 +6189,7 @@
 	(netclass_flag ""
 		(length 2.54)
 		(shape round)
-		(at 165.1 29.21 0)
+		(at 165.1 31.75 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6142,9 +6197,9 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "4cf1ab92-9e76-4d07-b8fc-0b50854e6b40")
-		(property "Netclass" "Diff100ohm"
-			(at 165.989 26.67 0)
+		(uuid "406c2c05-d207-40b6-8c8e-e9bbbe9b7f54")
+		(property "Netclass" "Digital"
+			(at 165.989 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6154,7 +6209,71 @@
 			)
 		)
 		(property "Component Class" ""
-			(at 60.96 -80.01 0)
+			(at 8.89 -3.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 55.88 97.79 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "48d145c4-ff17-4ffd-9646-2f0a894a121f")
+		(property "Netclass" "Digital"
+			(at 56.769 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Component Class" ""
+			(at -100.33 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 166.37 96.52 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4cf1ab92-9e76-4d07-b8fc-0b50854e6b40")
+		(property "Netclass" "Diff100ohm"
+			(at 168.91 95.631 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Component Class" ""
+			(at 62.23 -12.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6332,6 +6451,38 @@
 	(netclass_flag ""
 		(length 2.54)
 		(shape round)
+		(at 163.83 64.77 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "df8e1301-5dc5-4a96-b6fe-dc3c73bc58cc")
+		(property "Netclass" "Digital"
+			(at 161.29 63.881 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Component Class" ""
+			(at 7.62 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
 		(at 105.41 76.2 90)
 		(fields_autoplaced yes)
 		(effects
@@ -6391,6 +6542,39 @@
 					(size 1.27 1.27)
 					(italic yes)
 				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 166.37 63.5 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f7704c19-4d2c-4ad1-9411-8376d75e157e")
+		(property "Netclass" "Diff100ohm"
+			(at 168.91 62.611 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Component Class" ""
+			(at 62.23 -45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
 			)
 		)
 	)
@@ -6497,7 +6681,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://fscdn.rohm.com/en/products/databook/datasheet/passive/resistor/chip_resistor/mcr-e.pdf"
+		(property "Datasheet" "~"
 			(at 53.34 85.09 0)
 			(effects
 				(font
@@ -6506,7 +6690,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 53.34 85.09 0)
 			(effects
 				(font
@@ -6623,7 +6807,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4c46bee9-6a53-4c79-a3cd-3c6dd939a279")
-		(property "Reference" "U1801"
+		(property "Reference" "J1802"
 			(at 135.89 25.4 0)
 			(effects
 				(font
@@ -6995,7 +7179,7 @@
 		(instances
 			(project ""
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/851e7ce4-d5b0-47f7-ace9-4a347f172348"
-					(reference "U1801")
+					(reference "J1802")
 					(unit 1)
 				)
 			)
@@ -7130,7 +7314,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://fscdn.rohm.com/en/products/databook/datasheet/passive/resistor/chip_resistor/mcr-e.pdf"
+		(property "Datasheet" "~"
 			(at 45.72 85.09 0)
 			(effects
 				(font
@@ -7139,7 +7323,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 45.72 85.09 0)
 			(effects
 				(font
@@ -7248,7 +7432,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Hatlabs:SilkScreenImage")
+		(lib_id "Mechanical:MountingHole")
 		(at 134.62 176.53 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7257,20 +7441,22 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d33ed883-4e6b-4156-b7e7-8adc5dc630b2")
-		(property "Reference" "IMG1801"
-			(at 134.62 168.91 0)
+		(property "Reference" "H1801"
+			(at 137.16 175.2599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "Silk Screen Image"
-			(at 134.62 171.45 0)
+		(property "Value" "Compute Module Outline"
+			(at 137.16 177.7999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Hatlabs:RaspberryPi-CM4-Layout"
@@ -7291,7 +7477,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CM4 module outline"
+		(property "Description" "Mounting Hole without connection"
 			(at 134.62 176.53 0)
 			(effects
 				(font
@@ -7312,7 +7498,7 @@
 		(instances
 			(project ""
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/851e7ce4-d5b0-47f7-ace9-4a347f172348"
-					(reference "IMG1801")
+					(reference "H1801")
 					(unit 1)
 				)
 			)
@@ -7353,7 +7539,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://fscdn.rohm.com/en/products/databook/datasheet/passive/resistor/chip_resistor/mcr-e.pdf"
+		(property "Datasheet" "~"
 			(at 26.67 67.31 0)
 			(effects
 				(font
@@ -7362,7 +7548,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 26.67 67.31 0)
 			(effects
 				(font

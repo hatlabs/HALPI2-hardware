@@ -844,34 +844,22 @@
 			(symbol "MMBT5551L_0_1"
 				(polyline
 					(pts
-						(xy 0.635 1.905) (xy 0.635 -1.905) (xy 0.635 -1.905)
+						(xy -2.54 0) (xy 0.635 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 1.905) (xy 0.635 -1.905)
 					)
 					(stroke
 						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 0.635) (xy 2.54 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 -0.635) (xy 2.54 -2.54) (xy 2.54 -2.54)
-					)
-					(stroke
-						(width 0)
 						(type default)
 					)
 					(fill
@@ -889,9 +877,35 @@
 						(type none)
 					)
 				)
+			)
+			(symbol "MMBT5551L_1_1"
 				(polyline
 					(pts
-						(xy 1.27 -1.778) (xy 1.778 -1.27) (xy 2.286 -2.286) (xy 1.27 -1.778) (xy 1.27 -1.778)
+						(xy 0.635 0.635) (xy 2.54 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 -0.635) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.778) (xy 1.778 -1.27) (xy 2.286 -2.286) (xy 1.27 -1.778)
 					)
 					(stroke
 						(width 0)
@@ -901,11 +915,9 @@
 						(type outline)
 					)
 				)
-			)
-			(symbol "MMBT5551L_1_1"
 				(pin input line
 					(at -5.08 0 0)
-					(length 5.715)
+					(length 2.54)
 					(name "B"
 						(effects
 							(font
@@ -1811,7 +1823,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Polarized capacitor"
 			(at 189.23 93.98 0)
 			(effects
 				(font
@@ -1911,7 +1923,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 82.55 93.98 0)
 			(effects
 				(font
@@ -2011,7 +2023,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 157.48 87.63 0)
 			(effects
 				(font
@@ -2111,7 +2123,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 105.41 86.36 0)
 			(effects
 				(font
@@ -2203,7 +2215,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2303221100_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--SS8050-RANGE-200-350_C2150.pdf"
+		(property "Datasheet" "www.onsemi.com/pub/Collateral/MMBT5550LT1-D.PDF"
 			(at 129.54 93.98 0)
 			(effects
 				(font
@@ -2213,7 +2225,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "0.6A Ic, 160V Vce, NPN Transistor, SOT-23"
 			(at 129.54 93.98 0)
 			(effects
 				(font
@@ -2325,7 +2337,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 105.41 101.6 0)
 			(effects
 				(font
@@ -2425,7 +2437,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 93.98 86.36 0)
 			(effects
 				(font
@@ -2623,7 +2635,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Low-Voltage Rail-to-Rail Output Operational Amplifiers, SOT-23-5/SC-70-5"
 			(at 116.84 93.98 0)
 			(effects
 				(font
@@ -2723,7 +2735,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-123"
+		(property "Footprint" "Diode_SMD:D_SMA"
 			(at 142.875 99.06 0)
 			(effects
 				(font

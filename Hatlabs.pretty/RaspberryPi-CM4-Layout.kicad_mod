@@ -1,7 +1,7 @@
 (footprint "RaspberryPi-CM4-Layout"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(descr "RaspberryPi Compute Module 4, https://datasheets.raspberrypi.org/cm4/cm4-datasheet.pdf#page=11")
 	(tags "Compute Module 4")
@@ -23,18 +23,6 @@
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "31829a4d-c49d-44ce-a12a-158a5b2d9df2")
-		(effects
-			(font
-				(size 1.27 1.27)
 				(thickness 0.15)
 			)
 		)
@@ -275,7 +263,7 @@
 			(width 0.05)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.CrtYd")
 		(uuid "616e1669-c383-4428-b554-aa77d8b42b4d")
 	)
@@ -286,7 +274,7 @@
 			(width 0.05)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.CrtYd")
 		(uuid "634cdf00-5c6d-4cab-904d-850302f48f5e")
 	)
@@ -297,7 +285,7 @@
 			(width 0.05)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.CrtYd")
 		(uuid "85e35dfa-f229-4a57-bf45-093ee88936f1")
 	)
@@ -308,7 +296,7 @@
 			(width 0.05)
 			(type default)
 		)
-		(fill none)
+		(fill no)
 		(layer "F.CrtYd")
 		(uuid "caaa0ea0-dc04-48a7-a39d-4b8b12220a2b")
 	)
@@ -321,6 +309,16 @@
 		)
 		(layer "F.Fab")
 		(uuid "2b7b8f67-27e3-4e7d-9d69-028da4c0aae7")
+	)
+	(fp_line
+		(start -20 0)
+		(end 20 0)
+		(stroke
+			(width 0.1)
+			(type dash)
+		)
+		(layer "F.Fab")
+		(uuid "38cddadd-b4b4-4ed2-8751-7f887ce0e28f")
 	)
 	(fp_line
 		(start -18.44 -8.8)
@@ -381,6 +379,16 @@
 		)
 		(layer "F.Fab")
 		(uuid "b37d161e-d4e4-4b7d-acc5-9cc537f2e94e")
+	)
+	(fp_line
+		(start 0 27.5)
+		(end 0 -27.5)
+		(stroke
+			(width 0.1)
+			(type dash)
+		)
+		(layer "F.Fab")
+		(uuid "a35c0495-c82f-4d7b-a18c-6e1443a43680")
 	)
 	(fp_line
 		(start 15.56 -8.8)
@@ -516,6 +524,7 @@
 		(zone_connect 1)
 		(uuid "f5f3138c-681d-4ca0-b436-72ed5e073bc9")
 	)
+	(embedded_fonts no)
 	(model "${KIPRJMOD}/Yellow.3dshapes/RaspberryPi-CM4.wrl"
 		(offset
 			(xyz 36 -27.5 1.6)

@@ -1710,6 +1710,15 @@
 					(hide yes)
 				)
 			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
 			(property "ki_keywords" "LED diode"
 				(at 0 0 0)
 				(effects
@@ -4097,6 +4106,16 @@
 			(type default)
 		)
 		(uuid "08bf3db6-f77c-4f41-8bc9-2265e048194b")
+	)
+	(bus
+		(pts
+			(xy 132.08 172.72) (xy 134.62 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09eca057-a77e-424e-b99a-40367bd173f4")
 	)
 	(wire
 		(pts
@@ -6622,6 +6641,17 @@
 	)
 	(hierarchical_label "I2C1{I2C}"
 		(shape bidirectional)
+		(at 132.08 172.72 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d9c699b2-3544-4a9e-b25d-c40e0fb04172")
+	)
+	(hierarchical_label "I2C1{I2C}"
+		(shape bidirectional)
 		(at 171.45 110.49 0)
 		(effects
 			(font
@@ -6643,7 +6673,7 @@
 			(fill
 				(type none)
 			)
-			(uuid 12d80989-1b08-4f77-9f8c-a87b87c4d65c)
+			(uuid 54437f7b-b6a7-40e6-93e5-0204267669d7)
 		)
 	)
 	(rule_area
@@ -6658,7 +6688,7 @@
 			(fill
 				(type none)
 			)
-			(uuid fb3325a6-ff7f-4830-a4cc-5d1135bc8bcd)
+			(uuid 79a46e10-309e-490b-8946-8cd2553649bd)
 		)
 	)
 	(netclass_flag ""
@@ -7038,7 +7068,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 142.24 100.33 0)
 			(effects
 				(font
@@ -7202,7 +7232,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 165.1 101.6 0)
 			(effects
 				(font
@@ -7295,7 +7325,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 21.59 110.49 0)
 			(effects
 				(font
@@ -7388,7 +7418,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 21.59 123.19 0)
 			(effects
 				(font
@@ -7552,7 +7582,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 36.83 123.19 0)
 			(effects
 				(font
@@ -7716,7 +7746,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 68.58 121.92 0)
 			(effects
 				(font
@@ -7880,7 +7910,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 68.58 109.22 0)
 			(effects
 				(font
@@ -7973,12 +8003,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Light emitting diode"
 			(at 54.61 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "LCSC" "C2286"
@@ -7991,6 +8022,15 @@
 			)
 		)
 		(property "JLCPCB_CORRECTION" ""
+			(at 54.61 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 54.61 173.99 0)
 			(effects
 				(font
@@ -8059,7 +8099,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 55.88 39.37 0)
 			(effects
 				(font
@@ -8152,7 +8192,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 71.12 39.37 0)
 			(effects
 				(font
@@ -8243,7 +8283,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Ferrite bead"
 			(at 63.5 30.48 0)
 			(effects
 				(font
@@ -8567,7 +8607,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Bidirectional transient-voltage-suppression diode"
 			(at 40.64 38.1 0)
 			(effects
 				(font
@@ -8662,7 +8702,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Bidirectional transient-voltage-suppression diode"
 			(at 115.57 68.58 0)
 			(effects
 				(font
@@ -8908,7 +8948,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 184.15 130.81 0)
 			(effects
 				(font
@@ -9150,12 +9190,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 54.61 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "LCSC" "C4109"
@@ -9263,6 +9304,15 @@
 			)
 		)
 		(property "Characteristics" ""
+			(at 245.11 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Component Class" "fine_pitch"
 			(at 245.11 78.74 0)
 			(effects
 				(font
@@ -10365,12 +10415,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 96.52 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "LCSC" "C4109"
@@ -10658,7 +10709,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 30.48 166.37 0)
 			(effects
 				(font
@@ -10743,7 +10794,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Push button switch, generic, two pins"
 			(at 26.67 66.04 0)
 			(effects
 				(font
@@ -10839,12 +10890,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Light emitting diode"
 			(at 96.52 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "LCSC" "C2286"
@@ -10857,6 +10909,15 @@
 			)
 		)
 		(property "JLCPCB_CORRECTION" ""
+			(at 96.52 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 96.52 177.8 0)
 			(effects
 				(font
@@ -10925,7 +10986,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 55.88 69.85 0)
 			(effects
 				(font
@@ -11089,7 +11150,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 243.84 30.48 0)
 			(effects
 				(font
@@ -11319,7 +11380,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Light emitting diode"
 			(at 74.93 180.34 0)
 			(effects
 				(font
@@ -11346,7 +11407,7 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Pins" ""
+		(property "Sim.Pins" "1=K 2=A"
 			(at 74.93 180.34 0)
 			(effects
 				(font
@@ -11698,7 +11759,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Ferrite bead"
 			(at 63.5 60.96 0)
 			(effects
 				(font
@@ -11792,7 +11853,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Bidirectional transient-voltage-suppression diode"
 			(at 40.64 68.58 0)
 			(effects
 				(font
@@ -12095,7 +12156,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor, small symbol"
 			(at 228.6 71.12 0)
 			(effects
 				(font
@@ -12188,12 +12249,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 74.93 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "LCSC" "C25867"
@@ -12265,7 +12327,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 251.46 36.83 0)
 			(effects
 				(font
@@ -12425,7 +12487,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 71.12 69.85 0)
 			(effects
 				(font
@@ -12519,7 +12581,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "20MHz, 16kB Flash, 2kB SRAM, 256B EEPROM, VQFN-20"
 			(at 146.05 130.81 0)
 			(effects
 				(font
@@ -12903,7 +12965,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Generic connector, double row, 02x02, top/bottom pin numbering scheme (row 1: 1...pins_per_row, row2: pins_per_row+1 ... num_pins), script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 20.32 45.72 0)
 			(effects
 				(font
@@ -13096,6 +13158,58 @@
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/850df4bf-e40a-4082-adc2-76804638b949"
 					(page "13")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 134.62 168.91)
+		(size 22.86 16.51)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "9861be37-489a-48fe-bd2d-f1fa1d01f4aa")
+		(property "Sheetname" "Temperature Sensor"
+			(at 134.62 168.1984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "temp_sensor.kicad_sch"
+			(at 134.62 186.0046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "I2C1{I2C}" bidirectional
+			(at 134.62 172.72 180)
+			(uuid "50e32a2c-2062-4e78-867f-3d778dbab4f4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/850df4bf-e40a-4082-adc2-76804638b949"
+					(page "39")
 				)
 			)
 		)

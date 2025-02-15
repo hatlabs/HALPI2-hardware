@@ -1312,6 +1312,15 @@
 					(hide yes)
 				)
 			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
 			(property "ki_keywords" "LED diode"
 				(at 0 0 0)
 				(effects
@@ -1685,7 +1694,7 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
+			(property "Reference" "SW"
 				(at 0 11.43 0)
 				(effects
 					(font
@@ -1721,15 +1730,6 @@
 			)
 			(property "Description" ""
 				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "LCSC Part" "C3008584"
-				(at 0 -17.78 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2055,7 +2055,7 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
+			(property "Reference" "J"
 				(at -20.32 58.42 0)
 				(effects
 					(font
@@ -7437,7 +7437,7 @@
 		(uuid "1fdbd542-99b5-45e1-83ac-972fab3d53ec")
 	)
 	(label "ETH.TD4+"
-		(at 114.3 57.15 0)
+		(at 114.3 59.69 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7517,7 +7517,7 @@
 		(uuid "38bb11cd-5de8-43ed-bfd5-f50f0d832d62")
 	)
 	(label "ETH.TD2+"
-		(at 114.3 46.99 0)
+		(at 114.3 49.53 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7597,7 +7597,7 @@
 		(uuid "4a0638dd-f2a5-4bd6-bfd9-757e275b076b")
 	)
 	(label "ETH.TD4-"
-		(at 114.3 59.69 0)
+		(at 114.3 57.15 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8199,7 +8199,7 @@
 		(uuid "f5398d5e-651f-41bd-b2f8-0176ac330df9")
 	)
 	(label "ETH.TD2-"
-		(at 114.3 49.53 0)
+		(at 114.3 46.99 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8441,36 +8441,6 @@
 	(rule_area
 		(polyline
 			(pts
-				(xy 124.46 36.83) (xy 127 36.83) (xy 127 60.96) (xy 124.46 60.96)
-			)
-			(stroke
-				(width 0)
-				(type dash)
-			)
-			(fill
-				(type none)
-			)
-			(uuid 902f5760-fcfc-43a7-84f7-abd191c36a51)
-		)
-	)
-	(rule_area
-		(polyline
-			(pts
-				(xy 44.45 39.37) (xy 46.99 39.37) (xy 46.99 64.77) (xy 44.45 64.77)
-			)
-			(stroke
-				(width 0)
-				(type dash)
-			)
-			(fill
-				(type none)
-			)
-			(uuid bcb42f10-c059-4b18-80b0-021114de0fc1)
-		)
-	)
-	(rule_area
-		(polyline
-			(pts
 				(xy 113.03 143.51) (xy 110.49 143.51) (xy 110.49 68.58) (xy 113.03 68.58)
 			)
 			(stroke
@@ -8480,7 +8450,7 @@
 			(fill
 				(type none)
 			)
-			(uuid c951cff9-e9d1-4fa7-9618-e71b1e187a35)
+			(uuid 0cfd6449-2296-48e0-93c9-1b647cb17034)
 		)
 	)
 	(rule_area
@@ -8495,7 +8465,37 @@
 			(fill
 				(type none)
 			)
-			(uuid d803f3d2-25d8-4891-bffb-6bd29f2f86c4)
+			(uuid 1c6b1909-e407-44d1-8d96-dc1f19411365)
+		)
+	)
+	(rule_area
+		(polyline
+			(pts
+				(xy 44.45 39.37) (xy 46.99 39.37) (xy 46.99 64.77) (xy 44.45 64.77)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type none)
+			)
+			(uuid 31c249da-e0ca-47d2-8741-de7d84dea19d)
+		)
+	)
+	(rule_area
+		(polyline
+			(pts
+				(xy 124.46 36.83) (xy 127 36.83) (xy 127 60.96) (xy 124.46 60.96)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type none)
+			)
+			(uuid 82a1ff50-f1fc-497d-842b-a62b72cb1c1b)
 		)
 	)
 	(netclass_flag ""
@@ -8795,7 +8795,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "24a86f81-fdfa-4a63-a755-3f54b1a45bba")
-		(property "Reference" "#PWR01612"
+		(property "Reference" "#PWR01606"
 			(at 231.14 36.83 0)
 			(effects
 				(font
@@ -8845,7 +8845,7 @@
 		(instances
 			(project ""
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/7c248bd3-8232-4777-a40c-eab53460cf85"
-					(reference "#PWR01612")
+					(reference "#PWR01606")
 					(unit 1)
 				)
 			)
@@ -8860,7 +8860,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "385b9dc9-2c93-468f-bfac-4d1f1056dbca")
-		(property "Reference" "#PWR01609"
+		(property "Reference" "#PWR01610"
 			(at 256.54 88.9 0)
 			(effects
 				(font
@@ -8910,7 +8910,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/7c248bd3-8232-4777-a40c-eab53460cf85"
-					(reference "#PWR01609")
+					(reference "#PWR01610")
 					(unit 1)
 				)
 			)
@@ -9070,7 +9070,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4bcf2027-0bcd-4935-a807-80301452e446")
-		(property "Reference" "#PWR01611"
+		(property "Reference" "#PWR01612"
 			(at 266.7 120.65 0)
 			(effects
 				(font
@@ -9120,7 +9120,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/7c248bd3-8232-4777-a40c-eab53460cf85"
-					(reference "#PWR01611")
+					(reference "#PWR01612")
 					(unit 1)
 				)
 			)
@@ -9136,7 +9136,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "52a20f42-dafb-4a93-8f63-4128b66cb7cb")
-		(property "Reference" "#PWR01610"
+		(property "Reference" "#PWR01611"
 			(at 261.62 36.83 0)
 			(effects
 				(font
@@ -9186,7 +9186,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/7c248bd3-8232-4777-a40c-eab53460cf85"
-					(reference "#PWR01610")
+					(reference "#PWR01611")
 					(unit 1)
 				)
 			)
@@ -9293,7 +9293,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
 			(at 247.65 55.88 0)
 			(effects
 				(font
@@ -9302,7 +9302,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Generic connector, double row, 02x20, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 247.65 55.88 0)
 			(effects
 				(font
@@ -9477,7 +9477,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7c1c3e4d-0056-442a-822e-1ecae14cd57f")
-		(property "Reference" "D2303"
+		(property "Reference" "D1601"
 			(at 236.22 106.9974 90)
 			(effects
 				(font
@@ -9513,15 +9513,25 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Light emitting diode"
 			(at 232.41 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "LCSC" "C72038"
+			(at 232.41 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
 			(at 232.41 106.68 0)
 			(effects
 				(font
@@ -9539,7 +9549,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/7c248bd3-8232-4777-a40c-eab53460cf85"
-					(reference "D2303")
+					(reference "D1601")
 					(unit 1)
 				)
 			)
@@ -9555,7 +9565,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "873aab5d-5289-4aff-a025-4cbbc7903ade")
-		(property "Reference" "U1602"
+		(property "Reference" "SW1601"
 			(at 257.81 100.33 90)
 			(effects
 				(font
@@ -9598,21 +9608,13 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" "C3008584"
-			(at 240.03 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "LCSC" "C3008584"
 			(at 257.81 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "3"
@@ -9630,7 +9632,7 @@
 		(instances
 			(project ""
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/7c248bd3-8232-4777-a40c-eab53460cf85"
-					(reference "U1602")
+					(reference "SW1601")
 					(unit 1)
 				)
 			)
@@ -9776,7 +9778,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9c0c6766-418a-4f53-bc83-ccad02bd7685")
-		(property "Reference" "U1601"
+		(property "Reference" "J1601"
 			(at 83.4741 147.32 0)
 			(effects
 				(font
@@ -10151,7 +10153,7 @@
 		(instances
 			(project ""
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/7c248bd3-8232-4777-a40c-eab53460cf85"
-					(reference "U1601")
+					(reference "J1601")
 					(unit 1)
 				)
 			)
@@ -10268,7 +10270,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Raspberry Pi HAT Outline"
+		(property "Description" "Mounting Hole without connection"
 			(at 207.01 40.64 0)
 			(effects
 				(font
@@ -10305,7 +10307,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c8031ae9-b77c-447b-9bc2-ccfa339a2329")
-		(property "Reference" "#PWR02311"
+		(property "Reference" "#PWR01607"
 			(at 232.41 106.68 0)
 			(effects
 				(font
@@ -10355,7 +10357,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/7c248bd3-8232-4777-a40c-eab53460cf85"
-					(reference "#PWR02311")
+					(reference "#PWR01607")
 					(unit 1)
 				)
 			)
@@ -10371,7 +10373,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e3e5176c-e728-4fae-bcdf-f1e8a2227488")
-		(property "Reference" "R2307"
+		(property "Reference" "R1602"
 			(at 234.95 113.0299 0)
 			(effects
 				(font
@@ -10407,12 +10409,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 232.41 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "LCSC" "C4109"
@@ -10433,7 +10436,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/7c248bd3-8232-4777-a40c-eab53460cf85"
-					(reference "R2307")
+					(reference "R1602")
 					(unit 1)
 				)
 			)
@@ -10513,7 +10516,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fa63b1c6-e4da-416c-a9c7-73282ab5bc51")
-		(property "Reference" "#PWR01606"
+		(property "Reference" "#PWR01609"
 			(at 250.19 125.73 0)
 			(effects
 				(font
@@ -10563,7 +10566,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/7c248bd3-8232-4777-a40c-eab53460cf85"
-					(reference "#PWR01606")
+					(reference "#PWR01609")
 					(unit 1)
 				)
 			)

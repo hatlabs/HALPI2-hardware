@@ -893,7 +893,7 @@
 			(symbol "MMBTA42_0_1"
 				(polyline
 					(pts
-						(xy 0 0) (xy 0.635 0)
+						(xy -2.54 0) (xy 0.635 0)
 					)
 					(stroke
 						(width 0)
@@ -905,34 +905,10 @@
 				)
 				(polyline
 					(pts
-						(xy 0.635 1.905) (xy 0.635 -1.905) (xy 0.635 -1.905)
+						(xy 0.635 1.905) (xy 0.635 -1.905)
 					)
 					(stroke
 						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 0.635) (xy 2.54 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 -0.635) (xy 2.54 -2.54) (xy 2.54 -2.54)
-					)
-					(stroke
-						(width 0)
 						(type default)
 					)
 					(fill
@@ -950,9 +926,35 @@
 						(type none)
 					)
 				)
+			)
+			(symbol "MMBTA42_1_1"
 				(polyline
 					(pts
-						(xy 1.27 -1.778) (xy 1.778 -1.27) (xy 2.286 -2.286) (xy 1.27 -1.778) (xy 1.27 -1.778)
+						(xy 0.635 0.635) (xy 2.54 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 -0.635) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.778) (xy 1.778 -1.27) (xy 2.286 -2.286) (xy 1.27 -1.778)
 					)
 					(stroke
 						(width 0)
@@ -962,11 +964,9 @@
 						(type outline)
 					)
 				)
-			)
-			(symbol "MMBTA42_1_1"
 				(pin input line
 					(at -5.08 0 0)
-					(length 5.08)
+					(length 2.54)
 					(name "B"
 						(effects
 							(font
@@ -1981,7 +1981,7 @@
 		)
 		(uuid "31a8706e-7d5d-4f84-af20-2ee1fab6640f")
 	)
-	(label "I2C0.SCL"
+	(label "I2C1.SCL"
 		(at 82.55 123.19 180)
 		(effects
 			(font
@@ -2041,7 +2041,7 @@
 		)
 		(uuid "a5657f9f-6eec-4d12-99d8-f1003d4c5c2a")
 	)
-	(label "I2C0.SDA"
+	(label "I2C1.SDA"
 		(at 82.55 120.65 180)
 		(effects
 			(font
@@ -2103,7 +2103,7 @@
 		)
 		(uuid "2edee5b0-0839-4fcc-919f-33e7d1ae46ca")
 	)
-	(hierarchical_label "I2C0{I2C}"
+	(hierarchical_label "I2C1{I2C}"
 		(shape bidirectional)
 		(at 72.39 115.57 180)
 		(effects
@@ -2392,7 +2392,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/MMBTA42LT1-D.PDF"
 			(at 97.79 64.77 0)
 			(effects
 				(font
@@ -2402,7 +2402,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "0.5A Ic, 300V Vce, NPN High Voltage Transistor, SOT-23"
 			(at 97.79 64.77 0)
 			(effects
 				(font

@@ -1,19 +1,19 @@
 (version 1)
 
 ########################################################################################
-## General design rules
-
-(rule "pad_clearance"
-    (condition "(A.Type == 'Pad')")
-    (constraint clearance (min 0.2mm)))
-
-########################################################################################
 ## Single-ended signal traces
 
 (rule "digital"
     (condition "(A.hasNetClass('Digital'))")
     (constraint track_width (min 0.1mm) (opt 0.15mm) (max 0.3mm))
     (constraint clearance (min 0.3mm)))
+
+########################################################################################
+## General design rules
+
+(rule "pad_clearance"
+    (condition "(A.Type == 'Pad')")
+    (constraint clearance (min 0.2mm)))
 
 ########################################################################################
 ## Differential pairs
@@ -27,66 +27,72 @@
     (layer F.Cu)
     (constraint track_width (opt 0.1575mm))
     (constraint clearance (min 0.315mm))
-    (constraint diff_pair_uncoupled (max 5.0mm))
-    (constraint diff_pair_gap (min 0.18mm) (opt 0.2mm) (max 0.25mm)))
+    (constraint diff_pair_gap (opt 0.2mm)))
+
+(rule diff_90ohm_layer1_pair_clearance
+    (condition "(AB.isCoupledDiffPair()) && (A.hasNetclass('Diff90ohm'))")
+    (layer F.Cu)
+    (constraint clearance (min 0.19mm)))
 
 (rule diff_90ohm_layer3
     (condition "(A.Type == 'Track') && (A.hasNetclass('Diff90ohm'))")
     (layer In2.Cu)
     (constraint track_width (opt 0.1430mm))
     (constraint clearance (min 0.429mm))
-    (constraint diff_pair_uncoupled (max 5.0mm))
-    (constraint diff_pair_gap (min 0.18mm) (opt 0.2mm) (max 0.25mm)))
+    (constraint diff_pair_gap (opt 0.2mm)))
 
 (rule diff_90ohm_layer6
     (condition "(A.Type == 'Track') && (A.hasNetclass('Diff90ohm'))")
     (layer B.Cu)
     (constraint track_width (opt 0.1575mm))
     (constraint clearance (min 0.315mm))
-    (constraint diff_pair_uncoupled (max 5.0mm))
-    (constraint diff_pair_gap (min 0.18mm) (opt 0.2mm) (max 0.25mm)))
+    (constraint diff_pair_gap (opt 0.2mm)))
 
 (rule "diff_100ohm_layer1"
     (condition "(A.Type == 'Track') && (A.hasNetclass('Diff100ohm'))")
     (layer F.Cu)
     (constraint track_width (opt 0.1326mm))
     (constraint clearance (opt 0.3978mm))
-    (constraint diff_pair_uncoupled (max 5.0mm))
-    (constraint diff_pair_gap (min 0.23mm) (opt 0.25mm) (max 0.28mm)))
+    (constraint diff_pair_gap (opt 0.25mm)))
 
 (rule "diff_100ohm_layer3"
     (condition "(A.Type == 'Track') && (A.hasNetclass('Diff100ohm'))")
     (layer In2.Cu)
     (constraint track_width (opt 0.1204mm))
     (constraint clearance (min 0.3612mm))
-    (constraint diff_pair_uncoupled (max 5.0mm))
-    (constraint diff_pair_gap (min 0.23mm) (opt 0.25mm) (max 0.28mm)))
+    (constraint diff_pair_gap (opt 0.25mm)))
 
 (rule "diff_100ohm_layer6"
     (condition "(A.Type == 'Track') && (A.hasNetclass('Diff100ohm'))")
     (layer B.Cu)
     (constraint track_width (opt 0.1326mm))
     (constraint clearance (opt 0.3978mm))
-    (constraint diff_pair_uncoupled (max 5.0mm))
-    (constraint diff_pair_gap (min 0.23mm) (opt 0.25mm) (max 0.28mm)))
+    (constraint diff_pair_gap (opt 0.25mm)))
 
-(rule "ignore_diff_pair_member_clearance"
-    (condition "AB.isCoupledDiffPair()")
-    (constraint clearance (min 0.1mm)))
+(rule diff_90ohm_layer1_clearance
+    (condition "(AB.isCoupledDiffPair()) && (A.hasNetclass('Diff90ohm'))")
+    (layer B.Cu)
+    (constraint clearance (min 0.19mm)))
+
+#(rule "ignore_diff_pair_member_clearance"
+#    (condition "AB.isCoupledDiffPair()")
+#    (constraint clearance (min 0.1mm)))
 
 (rule "ignore_diff_pattern_tuning_pair_gap"
     (condition "AB.isCoupledDiffPair() && B.Tuning_Mode=='Diff pair skew'")
     (constraint diff_pair_gap (max 1.5mm)))
 
 (rule "max_skew"
-    (constraint skew (max 0.1mm) (within_diff_pairs)))
+    (constraint skew (min -0.2mm) (opt 0.0mm) (max 0.2mm) (within_diff_pairs)))
 
 ########################################################################################
 ## Vias
 
-(rule "gnd_via_clearance"
-    (condition "A.Type == 'Via' && (A.hasNetclass('GND'))")
-    (constraint clearance (min 0.1mm)))
+# Drop clearance requirements for vias
+
+(rule "via_clearance"
+    (condition "A.Type == 'Via'")
+    (constraint clearance (min 0.15mm)))
 
 ########################################################################################
 ## Zones
@@ -101,7 +107,7 @@
 
 (rule "pad_zone_clearance"
     (condition "(A.Type == 'Pad') && (B.Type == 'Zone')")
-    (constraint clearance (min 0.20mm)))
+    (constraint clearance (min 0.30mm)))
 
 ########################################################################################
 ## Neck-downs
@@ -127,8 +133,12 @@
 # This also affects pad clearance
 
 (rule "class_neckdown"
-    (condition "(A.Type != 'Zone') && (B.Type != 'Zone') && (A.intersectsCourtyard('${Class:fine_pitch}'))")
+    (condition "((A.Type == 'Track' ) || (A.Type == 'Via' || (A.Type=='Pad'))) && (B.Type != 'Zone') && (A.intersectsCourtyard('${Class:fine_pitch}'))")
     (constraint clearance (min 0.1mm)))
+
+#(rule "pad_neckdown"
+#    (condition "(A.Type == 'Pad') && (A.intersectsCourtyard('${Class:fine_pitch}'))")
+#    (constraint clearance (min 0.1mm)))
 
 ########################################################################################
 ## Other netclasses

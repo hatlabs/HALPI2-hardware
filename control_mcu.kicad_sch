@@ -3614,7 +3614,7 @@
 		(uuid 61fe127e-82a0-4bc2-a824-061fd8b82894)
 	)
 	(rectangle
-		(start 15.24 157.48)
+		(start 15.24 156.21)
 		(end 110.49 195.58)
 		(stroke
 			(width 0)
@@ -3781,7 +3781,7 @@
 	)
 	(text "PB0 used to detect\nwhether the CM5 has\nshut down."
 		(exclude_from_sim no)
-		(at 196.342 131.318 0)
+		(at 196.088 133.604 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3830,7 +3830,7 @@
 		(uuid "0ab8dfc9-a8f8-449a-906f-f1858acd022c")
 	)
 	(junction
-		(at 181.61 120.65)
+		(at 177.8 120.65)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "13e7841a-342c-47d0-919e-d48b49297782")
@@ -3968,6 +3968,18 @@
 		(uuid "a3d3ab98-bdd2-4792-8d5e-fcd454a9b267")
 	)
 	(junction
+		(at 146.05 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a7893247-c6cf-4019-8893-3a931e16a7fc")
+	)
+	(junction
+		(at 179.07 54.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e2d63661-3e6d-4381-9921-f7d926758873")
+	)
+	(junction
 		(at 40.64 60.96)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3981,7 +3993,7 @@
 	)
 	(no_connect
 		(at 38.1 187.96)
-		(uuid "07719b33-d440-4007-8942-a65728efc004")
+		(uuid "4afd5f0c-12db-449c-a8b6-91031ac53f24")
 	)
 	(bus_entry
 		(at 260.35 85.09)
@@ -4169,7 +4181,7 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 125.73) (xy 165.1 125.73)
+			(xy 161.29 125.73) (xy 196.85 125.73)
 		)
 		(stroke
 			(width 0)
@@ -4249,7 +4261,7 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 143.51) (xy 128.27 143.51)
+			(xy 130.81 143.51) (xy 118.11 143.51)
 		)
 		(stroke
 			(width 0)
@@ -4289,7 +4301,7 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 121.92) (xy 182.88 121.92)
+			(xy 180.34 121.92) (xy 179.07 121.92)
 		)
 		(stroke
 			(width 0)
@@ -4409,7 +4421,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 120.65) (xy 181.61 120.65)
+			(xy 179.07 120.65) (xy 177.8 120.65)
 		)
 		(stroke
 			(width 0)
@@ -4489,7 +4501,7 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 135.89) (xy 184.15 135.89)
+			(xy 161.29 135.89) (xy 173.99 135.89)
 		)
 		(stroke
 			(width 0)
@@ -4999,6 +5011,16 @@
 	)
 	(wire
 		(pts
+			(xy 195.58 123.19) (xy 203.2 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "690c0d9e-ea5d-4822-8bf8-3d52b20a8d5c")
+	)
+	(wire
+		(pts
 			(xy 260.35 139.7) (xy 260.35 138.43)
 		)
 		(stroke
@@ -5059,7 +5081,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 121.92) (xy 182.88 120.65)
+			(xy 179.07 121.92) (xy 179.07 120.65)
 		)
 		(stroke
 			(width 0)
@@ -5259,6 +5281,16 @@
 	)
 	(wire
 		(pts
+			(xy 179.07 54.61) (xy 186.69 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a8f7531-0211-4624-8916-57936a860f1d")
+	)
+	(wire
+		(pts
 			(xy 130.81 142.24) (xy 130.81 140.97)
 		)
 		(stroke
@@ -5266,6 +5298,16 @@
 			(type default)
 		)
 		(uuid "8ae25790-248b-4e1a-a9a5-db1797a1d60a")
+	)
+	(wire
+		(pts
+			(xy 182.88 135.89) (xy 181.61 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8bbbbbf1-bb79-44dd-9aed-818b86c5a0e0")
 	)
 	(wire
 		(pts
@@ -5389,6 +5431,16 @@
 	)
 	(wire
 		(pts
+			(xy 146.05 77.47) (xy 146.05 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d8ef22c-634b-46dd-82d5-64c6ded4ce3e")
+	)
+	(wire
+		(pts
 			(xy 146.05 66.04) (xy 146.05 68.58)
 		)
 		(stroke
@@ -5466,16 +5518,6 @@
 			(type dash)
 		)
 		(uuid "a6d1ff9e-4e2d-4b2e-bfd8-865d047be6cf")
-	)
-	(wire
-		(pts
-			(xy 184.15 135.89) (xy 184.15 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a94edf8f-cf89-4c96-aba3-7916728fb9c1")
 	)
 	(wire
 		(pts
@@ -5589,7 +5631,7 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 120.65) (xy 161.29 120.65)
+			(xy 177.8 120.65) (xy 161.29 120.65)
 		)
 		(stroke
 			(width 0)
@@ -5749,7 +5791,17 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 68.58) (xy 146.05 100.33)
+			(xy 201.93 125.73) (xy 203.2 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca884614-79ef-4b75-b042-1d916c3bc9b3")
+	)
+	(wire
+		(pts
+			(xy 146.05 68.58) (xy 146.05 77.47)
 		)
 		(stroke
 			(width 0)
@@ -5799,7 +5851,7 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 54.61) (xy 186.69 54.61)
+			(xy 173.99 54.61) (xy 179.07 54.61)
 		)
 		(stroke
 			(width 0)
@@ -5859,7 +5911,7 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 123.19) (xy 165.1 123.19)
+			(xy 161.29 123.19) (xy 190.5 123.19)
 		)
 		(stroke
 			(width 0)
@@ -5936,6 +5988,16 @@
 			(type default)
 		)
 		(uuid "e4a3a28c-9271-466a-a171-5c77bda8f654")
+	)
+	(wire
+		(pts
+			(xy 113.03 143.51) (xy 109.22 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e574af90-2a34-4470-8532-7509542a3535")
 	)
 	(wire
 		(pts
@@ -6039,7 +6101,7 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 166.37) (xy 35.56 166.37)
+			(xy 26.67 166.37) (xy 35.56 166.37)
 		)
 		(stroke
 			(width 0)
@@ -6277,7 +6339,7 @@
 		)
 		(uuid "4a91c73a-b52c-429a-84da-b61a1fff7091")
 	)
-	(label "EN5V_MCU"
+	(label "VCCEN_"
 		(at 165.1 147.32 0)
 		(effects
 			(font
@@ -6288,7 +6350,7 @@
 		(uuid "4f4881a3-e7fa-474b-b7ae-c09700a31259")
 	)
 	(label "RGBLED"
-		(at 184.15 121.92 0)
+		(at 180.34 121.92 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6297,7 +6359,7 @@
 		)
 		(uuid "527139fc-c75e-4176-b454-0dddd2e2d3b1")
 	)
-	(label "RTC_INT"
+	(label "~{RTC_INT}"
 		(at 128.27 142.24 180)
 		(effects
 			(font
@@ -6337,7 +6399,7 @@
 		)
 		(uuid "6e768123-88a9-4bd4-8058-b65426ab9600")
 	)
-	(label "EN5V_MCU"
+	(label "VCCEN_"
 		(at 234.95 30.48 180)
 		(effects
 			(font
@@ -6397,7 +6459,7 @@
 		)
 		(uuid "91d22ffd-6ff0-49c2-9181-8b817748a044")
 	)
-	(label "RTC_INT"
+	(label "~{RTC_INT}"
 		(at 261.62 139.7 0)
 		(effects
 			(font
@@ -6447,7 +6509,7 @@
 		)
 		(uuid "bcbc4da2-57f3-4a75-b62f-ab60b4e57fdb")
 	)
-	(label "EN5V"
+	(label "VCCEN"
 		(at 237.49 77.47 180)
 		(effects
 			(font
@@ -6520,7 +6582,7 @@
 	)
 	(hierarchical_label "~{LED_PWR}"
 		(shape input)
-		(at 165.1 123.19 0)
+		(at 203.2 123.19 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6553,7 +6615,7 @@
 	)
 	(hierarchical_label "~{LED_ACT}"
 		(shape input)
-		(at 165.1 125.73 0)
+		(at 203.2 125.73 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6608,7 +6670,7 @@
 	)
 	(hierarchical_label "Iin"
 		(shape input)
-		(at 128.27 143.51 180)
+		(at 109.22 143.51 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6628,7 +6690,7 @@
 		)
 		(uuid "aaaf0905-6f8b-45b6-a480-9f25d1c1f525")
 	)
-	(hierarchical_label "EN5V"
+	(hierarchical_label "VCCEN"
 		(shape output)
 		(at 262.89 30.48 0)
 		(effects
@@ -6664,21 +6726,6 @@
 	(rule_area
 		(polyline
 			(pts
-				(xy 161.29 134.62) (xy 161.29 151.13) (xy 163.83 151.13) (xy 163.83 134.62)
-			)
-			(stroke
-				(width 0)
-				(type dash)
-			)
-			(fill
-				(type none)
-			)
-			(uuid 54437f7b-b6a7-40e6-93e5-0204267669d7)
-		)
-	)
-	(rule_area
-		(polyline
-			(pts
 				(xy 129.54 142.875) (xy 129.54 134.62) (xy 127 134.62) (xy 127 142.875)
 			)
 			(stroke
@@ -6688,7 +6735,22 @@
 			(fill
 				(type none)
 			)
-			(uuid 79a46e10-309e-490b-8946-8cd2553649bd)
+			(uuid 4c6f7de3-bf15-494f-9313-c0343854df65)
+		)
+	)
+	(rule_area
+		(polyline
+			(pts
+				(xy 161.29 134.62) (xy 161.29 151.13) (xy 163.83 151.13) (xy 163.83 134.62)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type none)
+			)
+			(uuid f2e29065-a15b-4455-8dbb-f052f5914d2d)
 		)
 	)
 	(netclass_flag ""
@@ -6850,17 +6912,17 @@
 	(netclass_flag ""
 		(length 2.54)
 		(shape round)
-		(at 177.8 120.65 180)
+		(at 173.99 120.65 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "7ddbac90-fd79-4eeb-a9dd-7d81dd2b3c00")
 		(property "Netclass" "Digital"
-			(at 178.689 123.19 0)
+			(at 174.879 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6870,7 +6932,7 @@
 			)
 		)
 		(property "Component Class" ""
-			(at 49.53 -13.97 0)
+			(at 45.72 -13.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7095,6 +7157,22 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 142.24 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 142.24 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "e0b07fb0-ab67-4f32-be9d-d4786b0953ed")
 		)
@@ -7259,6 +7337,22 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 165.1 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 165.1 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ee81d837-503a-47a4-b98e-90379f3a627a")
 		)
@@ -7352,6 +7446,22 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 21.59 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 21.59 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "57345b72-2944-4ec6-bbb8-b98df6fbb1a2")
 		)
@@ -7443,6 +7553,22 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 21.59 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 21.59 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -7609,6 +7735,22 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 36.83 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 36.83 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "162149d4-3a3a-4def-9b32-3a6c627f3eb2")
 		)
@@ -7771,6 +7913,22 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 68.58 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 68.58 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -7937,6 +8095,22 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 68.58 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 68.58 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "c4e76b61-4bfd-4339-9dc3-ecf572711d01")
 		)
@@ -8039,6 +8213,22 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 54.61 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 54.61 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "56916073-92ce-4e28-bf3b-99b2ffc4a09f")
 		)
@@ -8124,6 +8314,22 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 55.88 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 55.88 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -8219,6 +8425,22 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 71.12 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 71.12 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "8264ab4a-7e1e-402b-905b-317242adb079")
 		)
@@ -8308,6 +8530,22 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 63.5 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 63.5 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -8474,6 +8712,97 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 146.05 77.47 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "06be021d-85b8-4ffa-be5e-e2597a2ac5ca")
+		(property "Reference" "TP1204"
+			(at 142.748 72.39 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 142.748 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 146.05 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 146.05 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 146.05 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Characteristics" ""
+			(at 146.05 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 146.05 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 146.05 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2773a936-e9e5-4846-8e14-cbe8c19436de")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/850df4bf-e40a-4082-adc2-76804638b949"
+					(reference "TP1204")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:D_Schottky_Small")
 		(at 146.05 38.1 90)
 		(unit 1)
@@ -8544,6 +8873,22 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 146.05 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 146.05 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -8632,6 +8977,22 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 40.64 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 40.64 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -8729,6 +9090,22 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 115.57 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 115.57 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f1e4ea0d-4ad7-4ec6-8866-63f806c086ae")
 		)
@@ -8813,6 +9190,22 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 76.2 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 76.2 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -8905,33 +9298,32 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 184.15 130.81 0)
+		(at 177.8 135.89 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "19e04ce4-2c38-4ee2-a0c1-1167182efc3b")
 		(property "Reference" "R1212"
-			(at 185.928 129.6416 0)
+			(at 177.8 129.54 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "10k"
-			(at 185.928 131.953 0)
+			(at 177.8 132.08 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 182.372 130.81 90)
+			(at 177.8 134.112 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8940,7 +9332,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 184.15 130.81 0)
+			(at 177.8 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8949,7 +9341,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 184.15 130.81 0)
+			(at 177.8 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8958,7 +9350,7 @@
 			)
 		)
 		(property "LCSC" "C25744"
-			(at 184.15 130.81 0)
+			(at 177.8 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8967,12 +9359,28 @@
 			)
 		)
 		(property "Characteristics" ""
-			(at 184.15 130.81 0)
+			(at 177.8 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 177.8 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 177.8 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -9058,44 +9466,33 @@
 		)
 	)
 	(symbol
-		(lib_id "74xGxx:74LVC1G07")
-		(at 40.64 177.8 0)
+		(lib_id "Device:R_Small")
+		(at 115.57 143.51 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "1f877467-6d62-44ac-b6b8-4f436e072051")
-		(property "Reference" "U1201"
-			(at 37.7033 166.37 0)
+		(uuid "219b4c0f-38e3-42b4-acc4-b532c5163aa5")
+		(property "Reference" "R1218"
+			(at 115.57 138.43 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "74LVC1G07"
-			(at 37.7033 168.91 0)
+		(property "Value" "1k"
+			(at 115.57 140.97 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-			(at 40.64 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc1g07.pdf"
-			(at 40.64 177.8 0)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 115.57 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9103,8 +9500,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Single Buffer Gate, Open Drain, Low-Voltage CMOS"
-			(at 40.64 177.8 0)
+		(property "Datasheet" "~"
+			(at 115.57 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9112,8 +9509,8 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C7394033"
-			(at 40.64 177.8 0)
+		(property "Description" "Resistor, small symbol"
+			(at 115.57 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9121,25 +9518,50 @@
 				(hide yes)
 			)
 		)
-		(pin "4"
-			(uuid "42789b41-1b59-4a2d-8553-780dcad91754")
+		(property "LCSC" "C11702"
+			(at 115.57 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
-		(pin "2"
-			(uuid "23ec79ae-2893-47ba-8e95-6e958dab2314")
+		(property "Characteristics" ""
+			(at 115.57 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 115.57 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 115.57 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
 		(pin "1"
-			(uuid "4f99711d-02f1-46ca-8d12-543feb12d63e")
+			(uuid "45ad0a26-36f5-48f8-b901-7190d3c510b2")
 		)
-		(pin "5"
-			(uuid "8c99334b-3e89-4a4b-a144-26d9fa7211a4")
-		)
-		(pin "3"
-			(uuid "bf5b268a-f857-4723-bc6e-390417858296")
+		(pin "2"
+			(uuid "3964dda3-cdbd-4270-b3b7-84dbb9b7eadc")
 		)
 		(instances
-			(project ""
+			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/850df4bf-e40a-4082-adc2-76804638b949"
-					(reference "U1201")
+					(reference "R1218")
 					(unit 1)
 				)
 			)
@@ -9215,6 +9637,22 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 54.61 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 54.61 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -9321,6 +9759,22 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 245.11 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 245.11 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ef48bac3-f644-44e6-84f0-c628048571e1")
 		)
@@ -9379,6 +9833,99 @@
 			(project "SH-RPi"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/850df4bf-e40a-4082-adc2-76804638b949"
 					(reference "J1202")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "74xGxx:74LVC1G07")
+		(at 40.64 177.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3542d53a-d37b-48f9-8f4b-7c0d02798471")
+		(property "Reference" "U1201"
+			(at 47.244 181.356 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SN74LVC1G07DCKR"
+			(at 47.244 183.896 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-353_SC-70-5"
+			(at 40.64 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc1g07.pdf"
+			(at 40.64 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single Buffer Gate, Open Drain, Low-Voltage CMOS"
+			(at 40.64 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7830"
+			(at 40.64 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 40.64 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "dc542368-88b6-41ae-90e2-b33b73959b3f")
+		)
+		(pin "4"
+			(uuid "8c8a321b-a2f4-4004-a9fc-18800b26826b")
+		)
+		(pin "2"
+			(uuid "ca6cbe6d-3e29-449b-b50b-5ee988b5b0f1")
+		)
+		(pin "5"
+			(uuid "651f39db-263a-49de-a391-2856ab7608a9")
+		)
+		(pin "3"
+			(uuid "1a66230b-8ba2-4a34-b9cd-5e00f63c98d2")
+		)
+		(instances
+			(project ""
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/850df4bf-e40a-4082-adc2-76804638b949"
+					(reference "U1201")
 					(unit 1)
 				)
 			)
@@ -9455,6 +10002,22 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 121.92 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 121.92 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -9547,6 +10110,22 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 143.51 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 143.51 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -9915,6 +10494,22 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 176.53 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 176.53 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "c57b78b0-bfb5-4305-ad96-8cdcd2a9bab6")
 		)
@@ -9936,12 +10531,12 @@
 	(symbol
 		(lib_id "power:+3.3V")
 		(at 35.56 162.56 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "50b92461-70a6-4bd8-9d1e-5014e140faf6")
 		(property "Reference" "#PWR01204"
 			(at 35.56 166.37 0)
@@ -9953,7 +10548,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 38.1 161.2899 0)
+			(at 33.02 161.2899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10142,6 +10737,22 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 76.2 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 76.2 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "5173d575-d73c-4b14-b49f-10be4e288ec3")
 		)
@@ -10230,7 +10841,7 @@
 	)
 	(symbol
 		(lib_id "Hatlabs:+3.3VCMx")
-		(at 184.15 127 0)
+		(at 182.88 135.89 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10238,7 +10849,7 @@
 		(dnp no)
 		(uuid "5c91be90-92ce-4c68-894e-8ce88c94a392")
 		(property "Reference" "#PWR01224"
-			(at 184.15 130.81 0)
+			(at 182.88 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10247,7 +10858,7 @@
 			)
 		)
 		(property "Value" "+3.3VCMx"
-			(at 189.992 124.968 0)
+			(at 188.722 133.858 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10255,7 +10866,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 184.15 127 0)
+			(at 182.88 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10264,7 +10875,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 184.15 127 0)
+			(at 182.88 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10273,7 +10884,7 @@
 			)
 		)
 		(property "Description" "Power symbol driven by the CMx module +3.3V output"
-			(at 184.15 127 0)
+			(at 182.88 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10295,7 +10906,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 181.61 120.65 0)
+		(at 177.8 120.65 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10305,7 +10916,7 @@
 		(fields_autoplaced yes)
 		(uuid "5dc7b09a-e7f6-4b2d-b29b-df284693c20c")
 		(property "Reference" "TP1203"
-			(at 184.15 116.0779 0)
+			(at 180.34 116.0779 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10314,7 +10925,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 184.15 118.6179 0)
+			(at 180.34 118.6179 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10323,7 +10934,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 176.53 120.65 0)
+			(at 172.72 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10332,7 +10943,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 176.53 120.65 0)
+			(at 172.72 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10341,7 +10952,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 181.61 120.65 0)
+			(at 177.8 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10350,12 +10961,28 @@
 			)
 		)
 		(property "Characteristics" ""
-			(at 181.61 120.65 0)
+			(at 177.8 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 177.8 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 177.8 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -10440,6 +11067,22 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 96.52 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 96.52 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -10666,7 +11309,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 30.48 166.37 270)
+		(at 22.86 166.37 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10676,7 +11319,7 @@
 		(fields_autoplaced yes)
 		(uuid "733483c9-08a4-46c9-8744-e4724b265793")
 		(property "Reference" "C1202"
-			(at 30.48 158.75 90)
+			(at 22.86 158.75 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10684,7 +11327,7 @@
 			)
 		)
 		(property "Value" "1uF"
-			(at 30.48 161.29 90)
+			(at 22.86 161.29 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10692,7 +11335,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 26.67 165.4048 0)
+			(at 19.05 165.4048 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10701,7 +11344,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 30.48 166.37 0)
+			(at 22.86 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10710,7 +11353,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 30.48 166.37 0)
+			(at 22.86 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10719,7 +11362,7 @@
 			)
 		)
 		(property "LCSC" "C52923"
-			(at 30.48 166.37 0)
+			(at 22.86 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10728,12 +11371,28 @@
 			)
 		)
 		(property "Characteristics" ""
-			(at 30.48 166.37 0)
+			(at 22.86 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 22.86 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 22.86 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -10830,6 +11489,22 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 26.67 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 26.67 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "c18ca4a0-6eea-40cc-874d-d2d362c15bbe")
 		)
@@ -10840,6 +11515,108 @@
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/850df4bf-e40a-4082-adc2-76804638b949"
 					(reference "SW1201")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 193.04 123.19 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "749981b8-4129-4aa8-8b58-b7d005cb3730")
+		(property "Reference" "R1216"
+			(at 193.04 118.11 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 193.04 120.65 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 193.04 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 193.04 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 193.04 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C11702"
+			(at 193.04 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Characteristics" ""
+			(at 193.04 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 193.04 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 193.04 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "395275f7-08ef-40b0-bcef-1a9f46652266")
+		)
+		(pin "2"
+			(uuid "c1afc889-6e1d-43e5-a550-edfe87977ef7")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/850df4bf-e40a-4082-adc2-76804638b949"
+					(reference "R1216")
 					(unit 1)
 				)
 			)
@@ -10924,6 +11701,22 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 96.52 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 96.52 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -11013,6 +11806,22 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 55.88 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 55.88 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "99a184f1-97a3-43a2-9f92-96c727829d06")
 		)
@@ -11100,99 +11909,6 @@
 			(project "SH-RPi"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/850df4bf-e40a-4082-adc2-76804638b949"
 					(reference "#PWR01226")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 243.84 30.48 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "7b19b4b8-46fa-4500-99c3-405597cb93a4")
-		(property "Reference" "R1214"
-			(at 242.6716 28.702 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 244.983 28.702 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 243.84 32.258 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 243.84 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 243.84 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C25744"
-			(at 243.84 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Characteristics" ""
-			(at 243.84 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "953f0d5d-dfdb-4501-a192-707d72e33197")
-		)
-		(pin "2"
-			(uuid "d12e12bf-5f49-4916-be1a-47802b61d1fa")
-		)
-		(instances
-			(project "SH-RPi"
-				(path "/4c14904e-48eb-4243-8cbd-3afad8250b85/00000000-0000-0000-0000-00005c33ff90"
-					(reference "R409")
-					(unit 1)
-				)
-			)
-			(project "SH-RPi"
-				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/850df4bf-e40a-4082-adc2-76804638b949"
-					(reference "R1214")
 					(unit 1)
 				)
 			)
@@ -11434,6 +12150,22 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 74.93 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 74.93 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f4641acb-989f-45b6-a92e-4d30c96fa5c3")
 		)
@@ -11521,8 +12253,110 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 199.39 125.73 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8d7eab57-a701-481c-867d-e58e099d6b92")
+		(property "Reference" "R1217"
+			(at 199.39 120.65 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 199.39 123.19 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 199.39 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 199.39 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 199.39 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C11702"
+			(at 199.39 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Characteristics" ""
+			(at 199.39 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 199.39 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 199.39 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d6fbb49d-1cb1-4437-976a-dc0cfc26a1d7")
+		)
+		(pin "2"
+			(uuid "cbe05a59-6b02-45c2-9927-75a373c357c5")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/850df4bf-e40a-4082-adc2-76804638b949"
+					(reference "R1217")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 26.67 166.37 0)
+		(at 19.05 166.37 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11530,7 +12364,7 @@
 		(dnp no)
 		(uuid "8f05f18e-ae0b-456c-bbdb-c5f77bc15144")
 		(property "Reference" "#PWR01203"
-			(at 26.67 172.72 0)
+			(at 19.05 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11539,7 +12373,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 26.797 170.7642 0)
+			(at 19.177 170.7642 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11547,7 +12381,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 26.67 166.37 0)
+			(at 19.05 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11556,7 +12390,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 26.67 166.37 0)
+			(at 19.05 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11565,7 +12399,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 26.67 166.37 0)
+			(at 19.05 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11786,6 +12620,22 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 63.5 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 63.5 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f5a10a87-13da-4fd5-b751-77d98b159271")
 		)
@@ -11880,6 +12730,22 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 40.64 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 40.64 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "3ba5c088-7052-4452-a859-c44391389d04")
 		)
@@ -11962,6 +12828,22 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 80.01 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 80.01 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -12183,6 +13065,22 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 228.6 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 228.6 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "e00c54fd-68b1-4d99-b5f9-849d53d06418")
 		)
@@ -12265,6 +13163,22 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 74.93 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 74.93 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -12352,6 +13266,22 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 251.46 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 251.46 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -12443,6 +13373,108 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 243.84 30.48 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "db75d6db-30ef-48ac-8694-731671311649")
+		(property "Reference" "R1219"
+			(at 243.84 24.13 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 243.84 26.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 243.84 32.258 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 243.84 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 243.84 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C11702"
+			(at 243.84 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Characteristics" ""
+			(at 243.84 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 243.84 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 243.84 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1751d8e9-c9a4-479c-983b-94fce781e3f2")
+		)
+		(pin "2"
+			(uuid "688c5226-fc3a-4d8d-86d8-ded24f7cdf6c")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/850df4bf-e40a-4082-adc2-76804638b949"
+					(reference "R1219")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 71.12 69.85 0)
 		(unit 1)
@@ -12512,6 +13544,22 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 71.12 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 71.12 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -12624,6 +13672,22 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 146.05 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 146.05 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -12907,6 +13971,22 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 27.94 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 27.94 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ef9482f8-3837-41e1-b843-0608f675c96d")
 		)
@@ -13001,6 +14081,22 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 20.32 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 20.32 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "36edcb4c-1ade-4fa9-a3bb-f2f7f5129f56")
 		)
@@ -13023,6 +14119,99 @@
 			(project "SH-RPi"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/850df4bf-e40a-4082-adc2-76804638b949"
 					(reference "J1201")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 179.07 54.61 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f622eedf-47f5-47bf-b1e4-a142b46d973c")
+		(property "Reference" "TP1205"
+			(at 176.53 56.6419 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 176.53 59.1819 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 184.15 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 184.15 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 179.07 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Characteristics" ""
+			(at 179.07 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 179.07 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 179.07 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ec824145-7534-4742-b166-a2428f01a8b9")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/850df4bf-e40a-4082-adc2-76804638b949"
+					(reference "TP1205")
 					(unit 1)
 				)
 			)
@@ -13258,7 +14447,7 @@
 				(justify left)
 			)
 		)
-		(pin "RTC_INT" output
+		(pin "~{RTC_INT}" output
 			(at 259.08 138.43 0)
 			(uuid "7a1a4842-643d-4a99-aa4d-62ede0ff5ba3")
 			(effects

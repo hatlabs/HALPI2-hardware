@@ -14,6 +14,113 @@
 		(comment 3 "HALPI2 is licensed under CERN-OHL-S v2.")
 	)
 	(lib_symbols
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -153,7 +260,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Hatlabs:Worldsemi_WS2812E-4020"
+		(symbol "Hatlabs:SK6805SIDE-G"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -165,7 +272,7 @@
 					)
 				)
 			)
-			(property "Value" "Worldsemi_WS2812E-4020"
+			(property "Value" "SK6805SIDE-G"
 				(at 0 7.62 0)
 				(effects
 					(font
@@ -173,7 +280,34 @@
 					)
 				)
 			)
-			(property "Footprint" "Hatlabs:LED_WS2812E-4020_PLCC4_4.0x2.0mm_P0.85mm"
+			(property "Footprint" "Hatlabs:LED-SMD_4P-L3.5-W1.55_SK6805SIDE-G"
+				(at 0 17.018 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411220031_OPSCO-Optoelectronics-SK6805SIDE-G-003_C31452139.pdf"
+				(at 0 17.018 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "SMD,1.6x3.5mm RGB LEDs(Built-in IC) ROHS"
+				(at 0 17.018 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "led RGB digital plcc4"
 				(at 0 0 0)
 				(effects
 					(font
@@ -182,34 +316,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Digital RGB LED, PLCC-4 4.0x2.0mm Horizontal, Alternate KiCad Library"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "led RGB digital plcc4 5.0x5.0"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Worldsemi_WS2812E-4020_0_1"
+			(symbol "SK6805SIDE-G_0_1"
 				(polyline
 					(pts
 						(xy 0 3.81) (xy 1.27 3.81)
@@ -371,7 +478,7 @@
 					)
 				)
 			)
-			(symbol "Worldsemi_WS2812E-4020_1_1"
+			(symbol "SK6805SIDE-G_1_1"
 				(arc
 					(start 5.08 6.35)
 					(mid 7.7103 0)
@@ -442,7 +549,7 @@
 							)
 						)
 					)
-					(number "1"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -478,7 +585,7 @@
 							)
 						)
 					)
-					(number "2"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -496,7 +603,7 @@
 							)
 						)
 					)
-					(number "3"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -899,10 +1006,6 @@
 		(color 0 0 0 0)
 		(uuid "ffbb005c-6521-4ddf-bf3b-a9fffcbc73ed")
 	)
-	(no_connect
-		(at 172.72 109.22)
-		(uuid "999849a3-c64b-4dd9-9a21-bba3c0bef425")
-	)
 	(wire
 		(pts
 			(xy 167.64 116.84) (xy 152.4 116.84)
@@ -1135,6 +1238,16 @@
 	)
 	(wire
 		(pts
+			(xy 172.72 109.22) (xy 172.72 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b2fe0eb-0a27-443a-820d-8109bbfb7180")
+	)
+	(wire
+		(pts
 			(xy 124.46 110.49) (xy 124.46 109.22)
 		)
 		(stroke
@@ -1235,6 +1348,16 @@
 	)
 	(wire
 		(pts
+			(xy 172.72 110.49) (xy 181.61 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e24da504-b04f-47de-a433-ef24ba20d6fe")
+	)
+	(wire
+		(pts
 			(xy 129.54 109.22) (xy 129.54 114.3)
 		)
 		(stroke
@@ -1282,6 +1405,16 @@
 			(justify left bottom)
 		)
 		(uuid "39373a4f-2a8d-4a94-a61b-28f0e09cfc03")
+	)
+	(label "DOUT"
+		(at 176.53 110.49 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7201f6bd-880e-45f1-b4d2-1ad66b98445c")
 	)
 	(label "DIN4"
 		(at 146.05 110.49 0)
@@ -1348,6 +1481,39 @@
 		)
 		(property "Component Class" ""
 			(at -10.16 -24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 179.07 110.49 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3c4bd889-3a02-4076-b887-aeba400f6338")
+		(property "Netclass" "Digital"
+			(at 179.959 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Component Class" ""
+			(at 50.8 -24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1530,6 +1696,22 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 121.92 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 121.92 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "409ce452-1ab1-48d0-92ee-0e0af3e661aa")
 		)
@@ -1598,6 +1780,22 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 97.79 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 97.79 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(instances
@@ -1748,6 +1946,22 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 152.4 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 152.4 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ecd3182c-9cb0-4f0e-8ed5-2f49d049901f")
 		)
@@ -1837,6 +2051,22 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 137.16 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 137.16 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a8bd00c2-3531-4b6f-9048-2a73da6eb7b6")
 		)
@@ -1912,6 +2142,99 @@
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/850df4bf-e40a-4082-adc2-76804638b949/7441bc5f-8874-43c2-af8a-50459ea25028"
 					(reference "#PWR01406")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 181.61 110.49 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2e5bd016-f0cb-4b42-84e5-eccb7206f381")
+		(property "Reference" "TP1207"
+			(at 186.69 109.2199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 186.69 111.7599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 181.61 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 181.61 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 181.61 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Characteristics" ""
+			(at 181.61 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 181.61 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 181.61 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ed59b7cb-9898-46f1-b3f2-2a5e86558d4a")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/850df4bf-e40a-4082-adc2-76804638b949/7441bc5f-8874-43c2-af8a-50459ea25028"
+					(reference "TP1207")
 					(unit 1)
 				)
 			)
@@ -2186,6 +2509,22 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 97.79 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 97.79 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "3af4e4a6-6fba-43e3-91c0-b55814337603")
 		)
@@ -2254,6 +2593,22 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 97.79 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 97.79 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(instances
@@ -2331,44 +2686,34 @@
 		)
 	)
 	(symbol
-		(lib_id "Hatlabs:Worldsemi_WS2812E-4020")
+		(lib_id "Hatlabs:SK6805SIDE-G")
 		(at 125.73 100.33 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "94e2358b-0f8f-4c6f-b51d-f544b9adb1fe")
 		(property "Reference" "LED1402"
-			(at 124.4599 90.17 0)
+			(at 116.332 78.74 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "SK6805MICRO-J"
-			(at 126.9999 90.17 0)
+		(property "Value" "SK6805SIDE-G-003"
+			(at 116.332 81.28 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Footprint" "Hatlabs:LED_WS2812E-4020_PLCC4_4.0x2.0mm_P0.85mm"
-			(at 125.73 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
-			(at 120.65 100.33 0)
+		(property "Footprint" "Hatlabs:LED-SMD_4P-L3.5-W1.55_SK6805SIDE-G"
+			(at 108.712 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2376,8 +2721,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Digital RGB LED, PLCC-4 4.0x2.0mm Horizontal, Alternate KiCad Library"
-			(at 123.19 100.33 0)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411220031_OPSCO-Optoelectronics-SK6805SIDE-G-003_C31452139.pdf"
+			(at 108.712 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2385,7 +2730,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2909057"
+		(property "Description" "SMD,1.6x3.5mm RGB LEDs(Built-in IC) ROHS"
+			(at 108.712 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C31452139"
 			(at 125.73 100.33 0)
 			(effects
 				(font
@@ -2401,6 +2755,22 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 125.73 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 125.73 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -2490,44 +2860,34 @@
 		)
 	)
 	(symbol
-		(lib_id "Hatlabs:Worldsemi_WS2812E-4020")
+		(lib_id "Hatlabs:SK6805SIDE-G")
 		(at 156.21 100.33 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "acfb8757-c555-4bca-bb94-2ade5ff930bc")
 		(property "Reference" "LED1404"
-			(at 154.9399 90.17 0)
+			(at 148.082 78.74 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "SK6805MICRO-J"
-			(at 157.4799 90.17 0)
+		(property "Value" "SK6805SIDE-G-003"
+			(at 148.082 81.28 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Footprint" "Hatlabs:LED_WS2812E-4020_PLCC4_4.0x2.0mm_P0.85mm"
-			(at 156.21 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
-			(at 151.13 100.33 0)
+		(property "Footprint" "Hatlabs:LED-SMD_4P-L3.5-W1.55_SK6805SIDE-G"
+			(at 139.192 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2535,8 +2895,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Digital RGB LED, PLCC-4 4.0x2.0mm Horizontal, Alternate KiCad Library"
-			(at 153.67 100.33 0)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411220031_OPSCO-Optoelectronics-SK6805SIDE-G-003_C31452139.pdf"
+			(at 139.192 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2544,7 +2904,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2909057"
+		(property "Description" "SMD,1.6x3.5mm RGB LEDs(Built-in IC) ROHS"
+			(at 139.192 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C31452139"
 			(at 156.21 100.33 0)
 			(effects
 				(font
@@ -2560,6 +2929,22 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 156.21 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 156.21 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -2657,6 +3042,22 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 167.64 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 167.64 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "cb68b157-91de-41b2-912a-ae017ac820c5")
 		)
@@ -2746,6 +3147,22 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part" ""
+			(at 106.68 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 106.68 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "c68f08f8-4550-4df1-b536-1891010d578b")
 		)
@@ -2762,44 +3179,34 @@
 		)
 	)
 	(symbol
-		(lib_id "Hatlabs:Worldsemi_WS2812E-4020")
+		(lib_id "Hatlabs:SK6805SIDE-G")
 		(at 140.97 100.33 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "c71cfa94-607b-477e-abee-ff64e5bc6eb1")
 		(property "Reference" "LED1403"
-			(at 139.6999 90.17 0)
+			(at 131.572 84.836 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "SK6805MICRO-J"
-			(at 142.2399 90.17 0)
+		(property "Value" "SK6805SIDE-G-003"
+			(at 131.572 87.376 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Footprint" "Hatlabs:LED_WS2812E-4020_PLCC4_4.0x2.0mm_P0.85mm"
-			(at 140.97 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
-			(at 135.89 100.33 0)
+		(property "Footprint" "Hatlabs:LED-SMD_4P-L3.5-W1.55_SK6805SIDE-G"
+			(at 123.952 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2807,8 +3214,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Digital RGB LED, PLCC-4 4.0x2.0mm Horizontal, Alternate KiCad Library"
-			(at 138.43 100.33 0)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411220031_OPSCO-Optoelectronics-SK6805SIDE-G-003_C31452139.pdf"
+			(at 123.952 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2816,7 +3223,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2909057"
+		(property "Description" "SMD,1.6x3.5mm RGB LEDs(Built-in IC) ROHS"
+			(at 123.952 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C31452139"
 			(at 140.97 100.33 0)
 			(effects
 				(font
@@ -2832,6 +3248,22 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 140.97 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 140.97 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -2856,44 +3288,34 @@
 		)
 	)
 	(symbol
-		(lib_id "Hatlabs:Worldsemi_WS2812E-4020")
+		(lib_id "Hatlabs:SK6805SIDE-G")
 		(at 171.45 100.33 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "d74ffbdb-4403-4023-a44b-0f8c0ce94b7e")
 		(property "Reference" "LED1405"
-			(at 170.1799 90.17 0)
+			(at 166.116 85.09 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "SK6805MICRO-J"
-			(at 172.7199 90.17 0)
+		(property "Value" "SK6805SIDE-G-003"
+			(at 166.116 87.63 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Footprint" "Hatlabs:LED_WS2812E-4020_PLCC4_4.0x2.0mm_P0.85mm"
-			(at 171.45 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
-			(at 166.37 100.33 0)
+		(property "Footprint" "Hatlabs:LED-SMD_4P-L3.5-W1.55_SK6805SIDE-G"
+			(at 154.432 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2901,8 +3323,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Digital RGB LED, PLCC-4 4.0x2.0mm Horizontal, Alternate KiCad Library"
-			(at 168.91 100.33 0)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411220031_OPSCO-Optoelectronics-SK6805SIDE-G-003_C31452139.pdf"
+			(at 154.432 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2910,7 +3332,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2909057"
+		(property "Description" "SMD,1.6x3.5mm RGB LEDs(Built-in IC) ROHS"
+			(at 154.432 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C31452139"
 			(at 171.45 100.33 0)
 			(effects
 				(font
@@ -2926,6 +3357,22 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 171.45 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 171.45 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -2950,44 +3397,34 @@
 		)
 	)
 	(symbol
-		(lib_id "Hatlabs:Worldsemi_WS2812E-4020")
+		(lib_id "Hatlabs:SK6805SIDE-G")
 		(at 110.49 100.33 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "e70d10f9-6fc8-490c-9663-25c41a1d9d03")
 		(property "Reference" "LED1401"
-			(at 109.2199 90.17 0)
+			(at 100.584 84.074 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "SK6805MICRO-J"
-			(at 111.7599 90.17 0)
+		(property "Value" "SK6805SIDE-G-003"
+			(at 100.584 86.614 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Footprint" "Hatlabs:LED_WS2812E-4020_PLCC4_4.0x2.0mm_P0.85mm"
-			(at 110.49 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
-			(at 105.41 100.33 0)
+		(property "Footprint" "Hatlabs:LED-SMD_4P-L3.5-W1.55_SK6805SIDE-G"
+			(at 93.472 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2995,8 +3432,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Digital RGB LED, PLCC-4 4.0x2.0mm Horizontal, Alternate KiCad Library"
-			(at 107.95 100.33 0)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2411220031_OPSCO-Optoelectronics-SK6805SIDE-G-003_C31452139.pdf"
+			(at 93.472 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3004,7 +3441,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2909057"
+		(property "Description" "SMD,1.6x3.5mm RGB LEDs(Built-in IC) ROHS"
+			(at 93.472 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C31452139"
 			(at 110.49 100.33 0)
 			(effects
 				(font
@@ -3020,6 +3466,22 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 110.49 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 110.49 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -3161,6 +3623,22 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 97.79 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 97.79 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(instances

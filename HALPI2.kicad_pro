@@ -703,6 +703,18 @@
       "/CM4 GPIO/FAN_TACHO": [
         "Digital"
       ],
+      "/CM4 GPIO/GPIO12": [
+        "Digital"
+      ],
+      "/CM4 GPIO/GPIO13": [
+        "Digital"
+      ],
+      "/CM4 GPIO/GPIO14": [
+        "Digital"
+      ],
+      "/CM4 GPIO/GPIO15": [
+        "Digital"
+      ],
       "/CM4 GPIO/GPIO16": [
         "Digital"
       ],
@@ -937,6 +949,39 @@
       "/Controller/G": [
         "Analog"
       ],
+      "/Controller/GPIO10": [
+        "Digital"
+      ],
+      "/Controller/GPIO12": [
+        "Digital"
+      ],
+      "/Controller/GPIO13": [
+        "Digital"
+      ],
+      "/Controller/GPIO14": [
+        "Digital"
+      ],
+      "/Controller/GPIO20": [
+        "Digital"
+      ],
+      "/Controller/GPIO21": [
+        "Digital"
+      ],
+      "/Controller/GPIO22": [
+        "Digital"
+      ],
+      "/Controller/GPIO6": [
+        "Digital"
+      ],
+      "/Controller/GPIO7": [
+        "Digital"
+      ],
+      "/Controller/I2Cm.SCL": [
+        "Digital"
+      ],
+      "/Controller/I2Cm.SDA": [
+        "Digital"
+      ],
       "/Controller/Ideal Diode Controller/B": [
         "Analog"
       ],
@@ -950,6 +995,24 @@
         "Digital"
       ],
       "/Controller/PWR_BTN_IN": [
+        "Digital"
+      ],
+      "/Controller/QSPI_SCLK": [
+        "Digital"
+      ],
+      "/Controller/QSPI_SD0": [
+        "Digital"
+      ],
+      "/Controller/QSPI_SD1": [
+        "Digital"
+      ],
+      "/Controller/QSPI_SD2": [
+        "Digital"
+      ],
+      "/Controller/QSPI_SD3": [
+        "Digital"
+      ],
+      "/Controller/QSPI_SS": [
         "Digital"
       ],
       "/Controller/RESET": [
@@ -991,10 +1054,25 @@
       "/Controller/RXD": [
         "Digital"
       ],
+      "/Controller/SWCLK": [
+        "Digital"
+      ],
+      "/Controller/SWD": [
+        "Digital"
+      ],
       "/Controller/TXD": [
         "Digital"
       ],
+      "/Controller/USB_D+": [
+        "Diff90ohm"
+      ],
+      "/Controller/USB_D-": [
+        "Diff90ohm"
+      ],
       "/Controller/USER": [
+        "Digital"
+      ],
+      "/Controller/USER_BTN": [
         "Digital"
       ],
       "/Controller/VCC": [
@@ -1013,6 +1091,18 @@
         "Analog"
       ],
       "/Controller/~{RTC_INT}": [
+        "Digital"
+      ],
+      "/DIS_USB0": [
+        "Digital"
+      ],
+      "/DIS_USB1": [
+        "Digital"
+      ],
+      "/DIS_USB2": [
+        "Digital"
+      ],
+      "/DIS_USB3": [
         "Digital"
       ],
       "/EN5V": [
@@ -1771,6 +1861,9 @@
       "/~{LED_PWR}": [
         "Digital"
       ],
+      "MUSB_5V": [
+        "Power"
+      ],
       "Net-(C1807-Pad1)": [
         "Analog"
       ],
@@ -1851,6 +1944,24 @@
       ],
       "Net-(R417-Pad2)": [
         "Analog"
+      ],
+      "Net-(U1203-GPIO15)": [
+        "Digital"
+      ],
+      "Net-(U1203-GPIO25)": [
+        "Digital"
+      ],
+      "Net-(U1203-GPIO8)": [
+        "Digital"
+      ],
+      "Net-(U1203-GPIO9)": [
+        "Digital"
+      ],
+      "Net-(U1203-USB_DM)": [
+        "Diff90ohm"
+      ],
+      "Net-(U1203-USB_DP)": [
+        "Diff90ohm"
       ],
       "unconnected-(U201-GPIO19-Pad26)": [
         "Digital"
@@ -2173,10 +2284,6 @@
       "Controller"
     ],
     [
-      "941fe792-02c8-46de-a01c-95bb6b865738",
-      "Ideal Diode Controller"
-    ],
-    [
       "7441bc5f-8874-43c2-af8a-50459ea25028",
       "RGB LEDs"
     ],
@@ -2279,6 +2386,10 @@
     [
       "9861be37-489a-48fe-bd2d-f1fa1d01f4aa",
       "Temperature Sensor"
+    ],
+    [
+      "91cc707d-e26c-4ece-92aa-858b9215776e",
+      "MCU LEDs"
     ]
   ],
   "text_variables": {}

@@ -2197,10 +2197,6 @@
 		(uuid "efb33e1b-075c-4be6-a042-57e9c519e1b7")
 	)
 	(no_connect
-		(at 88.9 114.3)
-		(uuid "0f4cee02-9454-4e4e-8245-a14730c298a5")
-	)
-	(no_connect
 		(at 139.7 111.76)
 		(uuid "4811d492-d355-4283-8c0b-e9bfc829e58a")
 	)
@@ -2531,6 +2527,16 @@
 			(type default)
 		)
 		(uuid "841393cd-9ac3-4d03-87b5-cc47279a29ae")
+	)
+	(wire
+		(pts
+			(xy 86.36 114.3) (xy 88.9 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85c6a9a3-4473-4df6-ad29-2f3b0c561a05")
 	)
 	(wire
 		(pts
@@ -2902,6 +2908,17 @@
 			(justify right)
 		)
 		(uuid "10e89e50-332a-4452-8af0-4035ef2c94f0")
+	)
+	(hierarchical_label "DEVSLP"
+		(shape input)
+		(at 86.36 114.3 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2847f385-7cbf-42b0-9bc8-98844624d536")
 	)
 	(symbol
 		(lib_id "Device:C_Small")

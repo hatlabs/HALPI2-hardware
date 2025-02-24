@@ -2537,12 +2537,6 @@
 		(uuid "aee57a7a-ec20-4eb3-8da8-11dfdeedbc45")
 	)
 	(junction
-		(at 176.53 71.12)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "aff07ad6-2acc-4e40-ab26-9d2db8932141")
-	)
-	(junction
 		(at 185.42 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3020,23 +3014,13 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 66.04) (xy 176.53 71.12)
+			(xy 176.53 66.04) (xy 176.53 72.39)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "a37479b4-bbb9-4d5a-90e0-089bec1026f0")
-	)
-	(wire
-		(pts
-			(xy 176.53 72.39) (xy 176.53 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a39f2d72-fd11-47d5-bc35-15f294588a3b")
 	)
 	(wire
 		(pts
@@ -5586,73 +5570,6 @@
 			(project ""
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/b9ac802e-51d9-4be8-a7d3-5b5fa2c8bb97"
 					(reference "Q301")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 176.53 71.12 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fa5d9d25-c975-4228-bf26-8ccfc2d664aa")
-		(property "Reference" "#FLG0303"
-			(at 174.625 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 172.72 71.1199 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 176.53 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 176.53 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 176.53 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ce07a784-ff96-441e-8765-0b7b9a15a817")
-		)
-		(instances
-			(project "HALPI2"
-				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/b9ac802e-51d9-4be8-a7d3-5b5fa2c8bb97"
-					(reference "#FLG0303")
 					(unit 1)
 				)
 			)

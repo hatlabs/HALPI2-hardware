@@ -649,6 +649,9 @@
       "/CAN bus/CANH_": [
         "Analog"
       ],
+      "/CAN bus/CANHt": [
+        "Analog"
+      ],
       "/CAN bus/CANL": [
         "Analog"
       ],
@@ -943,6 +946,9 @@
       "/Console.TXD": [
         "Digital"
       ],
+      "/Controller/CM_ON": [
+        "Digital"
+      ],
       "/Controller/EN5V_MCU": [
         "Digital"
       ],
@@ -961,17 +967,20 @@
       "/Controller/GPIO14": [
         "Digital"
       ],
-      "/Controller/GPIO20": [
+      "/Controller/GPIO16": [
         "Digital"
       ],
-      "/Controller/GPIO21": [
+      "/Controller/GPIO17": [
         "Digital"
       ],
       "/Controller/GPIO22": [
         "Digital"
       ],
-      "/Controller/GPIO6": [
+      "/Controller/GPIO25": [
         "Digital"
+      ],
+      "/Controller/GPIO29_ADC3": [
+        "Analog"
       ],
       "/Controller/GPIO7": [
         "Digital"
@@ -985,6 +994,12 @@
       "/Controller/Ideal Diode Controller/B": [
         "Analog"
       ],
+      "/Controller/Iinx": [
+        "Analog"
+      ],
+      "/Controller/LDO_OUT": [
+        "Power"
+      ],
       "/Controller/ORed": [
         "Power"
       ],
@@ -992,6 +1007,12 @@
         "Digital"
       ],
       "/Controller/PB5": [
+        "Digital"
+      ],
+      "/Controller/PG_3V3": [
+        "Digital"
+      ],
+      "/Controller/PG_5V": [
         "Digital"
       ],
       "/Controller/PWR_BTN_IN": [
@@ -1069,6 +1090,12 @@
       "/Controller/USB_D-": [
         "Diff90ohm"
       ],
+      "/Controller/USB_DN": [
+        "Diff90ohm"
+      ],
+      "/Controller/USB_DP": [
+        "Diff90ohm"
+      ],
       "/Controller/USER": [
         "Digital"
       ],
@@ -1081,6 +1108,9 @@
       "/Controller/VCCEN_": [
         "Digital"
       ],
+      "/Controller/VENx": [
+        "Digital"
+      ],
       "/Controller/VcapS": [
         "Analog"
       ],
@@ -1090,7 +1120,22 @@
       "/Controller/VscapS": [
         "Analog"
       ],
+      "/Controller/~{CLEN}": [
+        "Digital"
+      ],
+      "/Controller/~{LED_ACTx}": [
+        "Digital"
+      ],
+      "/Controller/~{LED_PWRx}": [
+        "Digital"
+      ],
+      "/Controller/~{RESET}": [
+        "Digital"
+      ],
       "/Controller/~{RTC_INT}": [
+        "Digital"
+      ],
+      "/Controller/~{SHDN_3V3E}": [
         "Digital"
       ],
       "/DIS_USB0": [
@@ -1200,6 +1245,9 @@
       "/Iin": [
         "Analog"
       ],
+      "/PCIESLEEP": [
+        "Digital"
+      ],
       "/PCIe.CLK+": [
         "Diff90ohm"
       ],
@@ -1224,8 +1272,20 @@
       "/PCIe.~{RST}": [
         "Digital"
       ],
+      "/PG_3V3": [
+        "Digital"
+      ],
+      "/PG_5V": [
+        "Digital"
+      ],
+      "/PG_Scap": [
+        "Digital"
+      ],
       "/PWR_BUTTON": [
         "Digital"
+      ],
+      "/Power/B1_VIN": [
+        "Power"
       ],
       "/Power/Buck converter 10V/B1_VIN": [
         "HV"
@@ -1239,10 +1299,16 @@
       "/Power/Buck converter 10V/Buck 10V IC/BOOT_": [
         "Analog"
       ],
+      "/Power/Buck converter 10V/Buck 10V IC/BOOTx": [
+        "Analog"
+      ],
       "/Power/Buck converter 10V/Buck 10V IC/COMP": [
         "Analog"
       ],
       "/Power/Buck converter 10V/Buck 10V IC/COMP_": [
+        "Analog"
+      ],
+      "/Power/Buck converter 10V/Buck 10V IC/COMPx": [
         "Analog"
       ],
       "/Power/Buck converter 10V/Buck 10V IC/EN": [
@@ -1276,6 +1342,9 @@
         "Analog"
       ],
       "/Power/Buck converter 10V/Buck 10V IC/VSNS_": [
+        "Analog"
+      ],
+      "/Power/Buck converter 10V/Buck 10V IC/VSNSy": [
         "Analog"
       ],
       "/Power/Buck converter 10V/CCSB1": [
@@ -1353,6 +1422,9 @@
       "/Power/Buck converter 3.3V/BOOT_": [
         "Analog"
       ],
+      "/Power/Buck converter 3.3V/BST": [
+        "Analog"
+      ],
       "/Power/Buck converter 3.3V/FB": [
         "Analog"
       ],
@@ -1368,6 +1440,9 @@
       "/Power/Buck converter 5V/BOOT_": [
         "Analog"
       ],
+      "/Power/Buck converter 5V/BST": [
+        "Analog"
+      ],
       "/Power/Buck converter 5V/FB": [
         "Analog"
       ],
@@ -1379,6 +1454,9 @@
       ],
       "/Power/Buck converter 5V/VCC": [
         "Analog"
+      ],
+      "/Power/Early 3.3V/LDO_OUT": [
+        "Power"
       ],
       "/Power/Input Protection/G": [
         "Analog"
@@ -1845,6 +1923,9 @@
       "/VCCEN": [
         "Digital"
       ],
+      "/VEN": [
+        "Digital"
+      ],
       "/Vcap": [
         "Power"
       ],
@@ -1859,6 +1940,9 @@
         "Digital"
       ],
       "/~{LED_PWR}": [
+        "Digital"
+      ],
+      "/~{SHDN_3V3E}": [
         "Digital"
       ],
       "MUSB_5V": [
@@ -1891,6 +1975,33 @@
       "Net-(C1815-Pad2)": [
         "HV"
       ],
+      "Net-(C2201-Pad1)": [
+        "Analog"
+      ],
+      "Net-(C2202-Pad1)": [
+        "Analog"
+      ],
+      "Net-(C2203-Pad1)": [
+        "Analog"
+      ],
+      "Net-(C2204-Pad1)": [
+        "Analog"
+      ],
+      "Net-(C2205-Pad2)": [
+        "HV"
+      ],
+      "Net-(C2206-Pad2)": [
+        "HV"
+      ],
+      "Net-(C2207-Pad1)": [
+        "HV"
+      ],
+      "Net-(C2208-Pad2)": [
+        "HV"
+      ],
+      "Net-(C2209-Pad2)": [
+        "HV"
+      ],
       "Net-(C2301-Pad1)": [
         "Analog"
       ],
@@ -1918,6 +2029,9 @@
       "Net-(C2309-Pad2)": [
         "HV"
       ],
+      "Net-(C2505-Pad1)": [
+        "Digital"
+      ],
       "Net-(C2605-Pad1)": [
         "Digital"
       ],
@@ -1930,6 +2044,12 @@
       "Net-(D2106-A)": [
         "Analog"
       ],
+      "Net-(D3305-A)": [
+        "Analog"
+      ],
+      "Net-(D3306-A)": [
+        "Analog"
+      ],
       "Net-(D3405-A)": [
         "Analog"
       ],
@@ -1939,28 +2059,37 @@
       "Net-(JP1601-B)": [
         "Analog"
       ],
+      "Net-(JP3201-B)": [
+        "Analog"
+      ],
       "Net-(JP3301-B)": [
         "Analog"
       ],
       "Net-(R417-Pad2)": [
         "Analog"
       ],
-      "Net-(U1203-GPIO15)": [
+      "Net-(U1001-PG)": [
         "Digital"
       ],
-      "Net-(U1203-GPIO25)": [
+      "Net-(U1101-PG)": [
         "Digital"
       ],
-      "Net-(U1203-GPIO8)": [
+      "Net-(U1202-GPIO15)": [
         "Digital"
       ],
-      "Net-(U1203-GPIO9)": [
+      "Net-(U1202-GPIO25)": [
         "Digital"
       ],
-      "Net-(U1203-USB_DM)": [
+      "Net-(U1202-GPIO8)": [
+        "Digital"
+      ],
+      "Net-(U1202-GPIO9)": [
+        "Digital"
+      ],
+      "Net-(U1202-USB_DM)": [
         "Diff90ohm"
       ],
-      "Net-(U1203-USB_DP)": [
+      "Net-(U1202-USB_DP)": [
         "Diff90ohm"
       ],
       "unconnected-(U201-GPIO19-Pad26)": [
@@ -2284,6 +2413,10 @@
       "Controller"
     ],
     [
+      "8e6a478f-fb3c-4be6-a57a-6d17571606cc",
+      "Early 3.3V"
+    ],
+    [
       "7441bc5f-8874-43c2-af8a-50459ea25028",
       "RGB LEDs"
     ],
@@ -2374,10 +2507,6 @@
     [
       "ceedefa9-b0a1-435b-ac8f-bf0512726438",
       "Current Limiter"
-    ],
-    [
-      "0d843d07-83df-4f55-a68d-3751ed9e506d",
-      "LDO 3.3V"
     ],
     [
       "71cb3fa2-93c3-4e2e-bb44-1fabbacadff2",

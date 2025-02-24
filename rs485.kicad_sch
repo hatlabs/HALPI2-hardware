@@ -4743,7 +4743,7 @@
 	)
 	(text "Select between manual\nand auto-enable"
 		(exclude_from_sim no)
-		(at 49.022 187.452 0)
+		(at 49.022 193.04 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4853,6 +4853,12 @@
 		(uuid "514f1209-2b3a-43d8-9f18-b900f6873ef8")
 	)
 	(junction
+		(at 50.8 158.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5b2e36f1-fafd-4189-ba3e-0b32300e3335")
+	)
+	(junction
 		(at 120.65 62.23)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4881,6 +4887,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8e24be3b-57e7-4a82-a042-30dad9e64838")
+	)
+	(junction
+		(at 63.5 158.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "957e3123-7de5-43c8-a761-2b2a04069290")
 	)
 	(junction
 		(at 64.77 67.31)
@@ -4971,6 +4983,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e2b8e6ad-836c-4b09-99b4-2fc575fbd744")
+	)
+	(junction
+		(at 53.34 173.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "eaafa799-7352-4c14-a8a9-daacc427ed13")
 	)
 	(junction
 		(at 99.06 120.65)
@@ -5840,6 +5858,16 @@
 		)
 		(uuid "8a3f2298-94da-496e-bf59-da3a0d8b8376")
 	)
+	(wire
+		(pts
+			(xy 50.8 158.75) (xy 53.34 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8be79998-c9bb-475a-aed6-8c6fa9108550")
+	)
 	(bus
 		(pts
 			(xy 36.83 156.21) (xy 36.83 162.56)
@@ -6192,7 +6220,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 158.75) (xy 53.34 158.75)
+			(xy 39.37 158.75) (xy 50.8 158.75)
 		)
 		(stroke
 			(width 0)
@@ -7055,7 +7083,7 @@
 			(fill
 				(type none)
 			)
-			(uuid 4165916f-3db0-4af9-80ae-ce004b055acc)
+			(uuid 0367cab4-da8e-4d07-be01-d1028736f1fd)
 		)
 	)
 	(rule_area
@@ -7070,7 +7098,7 @@
 			(fill
 				(type none)
 			)
-			(uuid 4d0df7dd-828c-475a-b12a-6a3dae7df882)
+			(uuid bb8cd5b1-17b1-4b8c-afb9-b0650be20a27)
 		)
 	)
 	(netclass_flag ""
@@ -8345,6 +8373,91 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 53.34 173.99 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "10487e13-5918-45cf-8a01-69652663e65b")
+		(property "Reference" "TP1210"
+			(at 55.88 169.4179 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 55.88 171.9579 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 48.26 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 48.26 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 53.34 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Characteristics" ""
+			(at 53.34 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 53.34 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e908ad33-f618-4224-bba9-56826ddb1629")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/172ccc7f-ed6f-4221-b391-d1a2607d00a7"
+					(reference "TP1210")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 60.96 96.52 0)
 		(unit 1)
@@ -8482,7 +8595,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" " C8391"
+		(property "LCSC" "C8391"
 			(at 264.16 125.73 0)
 			(effects
 				(font
@@ -10669,6 +10782,89 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 50.8 158.75 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6f4287f7-dcb4-4e21-af20-efc85b10a302")
+		(property "Reference" "TP1211"
+			(at 52.832 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 52.832 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 45.72 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 45.72 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 50.8 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Characteristics" ""
+			(at 50.8 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 50.8 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f802dc7e-8a6b-4600-843e-2141d5b7e201")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/172ccc7f-ed6f-4221-b391-d1a2607d00a7"
+					(reference "TP1211")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:LED")
 		(at 241.3 55.88 90)
 		(unit 1)
@@ -10793,6 +10989,90 @@
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/172ccc7f-ed6f-4221-b391-d1a2607d00a7"
 					(reference "D3405")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 63.5 158.75 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7155fc07-6d7c-4dd7-9386-7b3bbbe1c0c8")
+		(property "Reference" "TP1212"
+			(at 65.532 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 65.532 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 58.42 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 58.42 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 63.5 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Characteristics" ""
+			(at 63.5 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 63.5 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "94adb4f0-fe3c-49af-ac4a-d80a4af01d1a")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/172ccc7f-ed6f-4221-b391-d1a2607d00a7"
+					(reference "TP1212")
 					(unit 1)
 				)
 			)
@@ -15675,10 +15955,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "ffa05153-bf62-4640-b30b-9f3c938bbc5f")
 		(property "Reference" "JP3402"
-			(at 58.42 153.67 0)
+			(at 53.594 151.892 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15686,7 +15965,7 @@
 			)
 		)
 		(property "Value" "Jumper_2_Bridged"
-			(at 58.42 156.21 0)
+			(at 53.594 154.432 0)
 			(effects
 				(font
 					(size 1.27 1.27)

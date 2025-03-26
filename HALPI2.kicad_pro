@@ -49,7 +49,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.2
+          "min_clearance": 0.3
         }
       },
       "diff_pair_dimensions": [
@@ -66,23 +66,63 @@
       ],
       "drc_exclusions": [
         [
-          "hole_clearance|131448381|120882500|f7de7249-8a04-42c4-850b-ced3b96957f2|12dab4aa-58c3-4495-95a5-f096d3d81d1b",
+          "courtyards_overlap|151980000|75575000|b4278332-8b0f-4eab-8116-91af8b04636b|ba5a2846-d504-416f-87e2-426164edf770",
           ""
         ],
         [
-          "hole_clearance|143448381|120882500|2abfd2a1-45a4-40f8-8d58-95dbb90f8881|bb5575c5-d32a-4b96-8e44-ab424242d092",
+          "courtyards_overlap|151980000|79235000|8036536a-afa2-491c-99aa-9e4b06dcd397|b4278332-8b0f-4eab-8116-91af8b04636b",
           ""
         ],
         [
-          "hole_clearance|161448381|120882500|a1862e4b-ec1e-43a2-b4cf-4718bd7d1d30|04f22884-a651-43a9-9e3a-568069d1c2e0",
+          "courtyards_overlap|151980000|80375000|b4278332-8b0f-4eab-8116-91af8b04636b|db5261e3-f5ea-4552-872f-074d9d2b4194",
           ""
         ],
         [
-          "hole_clearance|181448381|120882500|ac3e3225-bbb9-4ed5-9c80-871d4f4f6801|be607041-19f7-4aee-b832-a987c3777564",
+          "courtyards_overlap|164055000|72237500|08bdd0ab-7781-400b-b4f3-dfbfd170c455|abf40693-958c-4d1e-9ec0-e00a9c14502b",
           ""
         ],
         [
-          "hole_clearance|71550000|118450000|afa3b001-52e3-421a-b02b-1a40e7ccd0cc|96e98eef-915e-4696-ac93-c601fe40276b",
+          "courtyards_overlap|167885000|46607500|8e03445c-5e38-494c-9d4f-352d8af9c2c2|e9bb3b49-8203-48a5-8a49-8a2906cb72c5",
+          ""
+        ],
+        [
+          "courtyards_overlap|193870306|115545000|a9eaf7d1-3f6c-4826-9636-6324978b96d7|ccb09212-4ef0-4f76-934c-5a98c24f9d0d",
+          ""
+        ],
+        [
+          "courtyards_overlap|202040000|57910000|1235b2ea-9977-4366-82e7-f929104ef29b|c541e760-e03a-407a-be00-c5ba0bfb1c34",
+          ""
+        ],
+        [
+          "courtyards_overlap|209225000|53400000|535a082f-5e0f-410f-b4c3-8b8c618945d8|f278acaf-489d-4c00-9a51-8c1b206e003e",
+          ""
+        ],
+        [
+          "courtyards_overlap|47590612|82405000|62fdd489-c431-404c-8f8a-903fad062523|b06cfa3f-0b75-4c12-bf1a-e1f57410f60e",
+          ""
+        ],
+        [
+          "courtyards_overlap|53447500|107225000|4c2781f9-5c9f-4f70-a157-0c011a227036|4c43ed2f-9855-4a97-9e5e-9ebf4540fd7b",
+          ""
+        ],
+        [
+          "courtyards_overlap|64590612|82405000|62fdd489-c431-404c-8f8a-903fad062523|baafd597-5cf1-4f16-b1c5-c540fd9e5261",
+          ""
+        ],
+        [
+          "courtyards_overlap|66055000|84855000|175a48fe-5f9a-4d18-9633-ed3a892e06a7|62fdd489-c431-404c-8f8a-903fad062523",
+          ""
+        ],
+        [
+          "courtyards_overlap|66055000|94375000|175a48fe-5f9a-4d18-9633-ed3a892e06a7|39d06e0b-7dab-482d-8fdb-74c8f7e5bf54",
+          ""
+        ],
+        [
+          "courtyards_overlap|66055000|96375000|175a48fe-5f9a-4d18-9633-ed3a892e06a7|4d57b95a-4f07-4c4a-a1eb-6e0c2100fea6",
+          ""
+        ],
+        [
+          "courtyards_overlap|97795000|62995000|72961c0b-3da0-49b7-b2d3-213338c06543|e21cfdd2-8054-46d9-be0e-d05737a753cb",
           ""
         ]
       ],
@@ -95,7 +135,7 @@
         "connection_width": "warning",
         "copper_edge_clearance": "error",
         "copper_sliver": "warning",
-        "courtyards_overlap": "ignore",
+        "courtyards_overlap": "error",
         "creepage": "error",
         "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
@@ -164,7 +204,7 @@
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
-        "min_through_hole_diameter": 0.2,
+        "min_through_hole_diameter": 0.3,
         "min_track_width": 0.1,
         "min_via_annular_width": 0.05,
         "min_via_diameter": 0.4,
@@ -2135,7 +2175,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "HALPI2-export_lite_0.0.1.step",
+      "step": "HALPI2-export_0.1.0_2.step",
       "svg": "",
       "vrml": ""
     },

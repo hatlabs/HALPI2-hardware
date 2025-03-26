@@ -1,5 +1,5 @@
 (footprint "BAT-TH_BS-02-A1AJ010"
-	(version 20241228)
+	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
 	(layer "F.Cu")
@@ -177,28 +177,20 @@
 		)
 	)
 	(pad "1" thru_hole circle
-		(at -10 0)
-		(size 1.8 1.8)
-		(drill 1.199998)
-		(layers "*.Cu" "*.Mask" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu" "In9.Cu" "In10.Cu"
-			"In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu" "In16.Cu" "In17.Cu"
-			"In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu" "In23.Cu" "In24.Cu"
-			"In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu" "In30.Cu"
-		)
-		(remove_unused_layers no)
-		(uuid "326b91cf-f7e4-4432-87ca-ad435cc00a76")
-	)
-	(pad "2" thru_hole circle
 		(at 10 0)
 		(size 1.8 1.8)
 		(drill 1.199998)
-		(layers "*.Cu" "*.Mask" "In5.Cu" "In6.Cu" "In7.Cu" "In8.Cu" "In9.Cu" "In10.Cu"
-			"In11.Cu" "In12.Cu" "In13.Cu" "In14.Cu" "In15.Cu" "In16.Cu" "In17.Cu"
-			"In18.Cu" "In19.Cu" "In20.Cu" "In21.Cu" "In22.Cu" "In23.Cu" "In24.Cu"
-			"In25.Cu" "In26.Cu" "In27.Cu" "In28.Cu" "In29.Cu" "In30.Cu"
-		)
+		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
 		(uuid "707f32c2-a118-4bc8-a82d-c82b082cd443")
+	)
+	(pad "2" thru_hole circle
+		(at -10 0)
+		(size 1.8 1.8)
+		(drill 1.199998)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "326b91cf-f7e4-4432-87ca-ad435cc00a76")
 	)
 	(embedded_fonts no)
 	(model "${KIPRJMOD}/Hatlabs.3dshapes/BAT-TH_BS-02-A1AJ010.step"

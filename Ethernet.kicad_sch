@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "HALPI2")
-		(date "2025-02-26")
-		(rev "v0.1.0")
+		(date "2025-03-27")
+		(rev "v0.2.0")
 		(company "Hat Labs Oy")
 		(comment 1 "https://ohwr.org/cern_ohl_s_v2.pdf")
 		(comment 2 "To view a copy of this license, visit ")
@@ -373,7 +373,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector_Generic:Conn_02x02_Odd_Even"
+		(symbol "Connector_Generic:Conn_01x04"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -382,15 +382,15 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "J"
-				(at 1.27 2.54 0)
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "Conn_02x02_Odd_Even"
-				(at 1.27 -5.08 0)
+			(property "Value" "Conn_01x04"
+				(at 0 -7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -415,7 +415,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Generic connector, double row, 02x02, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(effects
 					(font
@@ -433,7 +433,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "Connector*:*_2x??_*"
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -442,16 +442,27 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_02x02_Odd_Even_1_1"
+			(symbol "Conn_01x04_1_1"
 				(rectangle
-					(start -1.27 1.27)
-					(end 3.81 -3.81)
+					(start -1.27 3.81)
+					(end 1.27 -6.35)
 					(stroke
 						(width 0.254)
 						(type default)
 					)
 					(fill
 						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
 					)
 				)
 				(rectangle
@@ -477,19 +488,8 @@
 					)
 				)
 				(rectangle
-					(start 3.81 0.127)
-					(end 2.54 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 3.81 -2.413)
-					(end 2.54 -2.667)
+					(start -1.27 -4.953)
+					(end 0 -5.207)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -499,7 +499,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 0 0)
+					(at -5.08 2.54 0)
 					(length 3.81)
 					(name "Pin_1"
 						(effects
@@ -509,6 +509,24 @@
 						)
 					)
 					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -535,25 +553,7 @@
 					)
 				)
 				(pin passive line
-					(at 7.62 0 180)
-					(length 3.81)
-					(name "Pin_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 -2.54 180)
+					(at -5.08 -5.08 0)
 					(length 3.81)
 					(name "Pin_4"
 						(effects
@@ -4539,7 +4539,7 @@
 	)
 	(text "PoE Header"
 		(exclude_from_sim no)
-		(at 198.12 94.996 0)
+		(at 187.96 86.36 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5131,7 +5131,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 90.17) (xy 165.1 90.17)
+			(xy 182.88 90.17) (xy 165.1 90.17)
 		)
 		(stroke
 			(width 0)
@@ -5351,7 +5351,7 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 95.25) (xy 177.8 95.25)
+			(xy 154.94 95.25) (xy 182.88 95.25)
 		)
 		(stroke
 			(width 0)
@@ -5391,7 +5391,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 97.79) (xy 177.8 97.79)
+			(xy 149.86 97.79) (xy 182.88 97.79)
 		)
 		(stroke
 			(width 0)
@@ -5571,7 +5571,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 92.71) (xy 177.8 92.71)
+			(xy 160.02 92.71) (xy 182.88 92.71)
 		)
 		(stroke
 			(width 0)
@@ -5759,16 +5759,6 @@
 		)
 		(uuid "0af54d78-a663-4e68-a3b3-92925cbdfc37")
 	)
-	(label "PR45"
-		(at 204.47 105.41 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "0df5d857-b8ed-46f7-bece-a0a4dfbb5aa4")
-	)
 	(label "ETH.TD1+"
 		(at 96.52 52.07 0)
 		(effects
@@ -5818,16 +5808,6 @@
 			(justify right bottom)
 		)
 		(uuid "46aa8f13-ac9b-4342-be0f-61a930dc11d6")
-	)
-	(label "PR12"
-		(at 191.77 107.95 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "492de037-f7f4-494a-94b6-75bcbded362a")
 	)
 	(label "MX4-"
 		(at 147.32 87.63 0)
@@ -5879,16 +5859,6 @@
 		)
 		(uuid "6e265206-aa3f-446a-aaa5-cd393a67bda8")
 	)
-	(label "PR78"
-		(at 204.47 107.95 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "6fcfd672-85ba-4b0c-9800-ca207bb41424")
-	)
 	(label "ETH.TD1+"
 		(at 22.86 53.34 0)
 		(effects
@@ -5918,16 +5888,6 @@
 			(justify left bottom)
 		)
 		(uuid "7ce1f9d5-57a1-47f1-8505-a5a704f8915f")
-	)
-	(label "PR36"
-		(at 191.77 105.41 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "89a79a2c-b4c3-4d08-b58b-238d06302d57")
 	)
 	(label "MX3-"
 		(at 147.32 77.47 0)
@@ -6104,21 +6064,6 @@
 	(rule_area
 		(polyline
 			(pts
-				(xy 167.64 43.18) (xy 167.64 134.62) (xy 133.35 134.62) (xy 133.35 43.18)
-			)
-			(stroke
-				(width 0)
-				(type dash)
-			)
-			(fill
-				(type none)
-			)
-			(uuid 8aff404e-13a4-4a49-b344-916d288d3787)
-		)
-	)
-	(rule_area
-		(polyline
-			(pts
 				(xy 125.73 104.14) (xy 107.95 104.14) (xy 107.95 101.6) (xy 125.73 101.6)
 			)
 			(stroke
@@ -6128,7 +6073,7 @@
 			(fill
 				(type none)
 			)
-			(uuid f4ac4f1b-2422-4e9b-9d19-3f1ef9d3dae3)
+			(uuid 05afa56c-f0c5-4dc2-8a5a-5754469d7840)
 		)
 	)
 	(rule_area
@@ -6143,7 +6088,22 @@
 			(fill
 				(type none)
 			)
-			(uuid fe15b527-8399-43df-a2a4-0e3c9fe6b57e)
+			(uuid 187b4b00-4975-4513-8515-b8fd39c8d884)
+		)
+	)
+	(rule_area
+		(polyline
+			(pts
+				(xy 167.64 43.18) (xy 167.64 134.62) (xy 133.35 134.62) (xy 133.35 43.18)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type none)
+			)
+			(uuid ee77d67a-b431-4fd8-922e-23212656e2f8)
 		)
 	)
 	(netclass_flag ""
@@ -8259,6 +8219,82 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x04")
+		(at 187.96 92.71 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c1689bbe-bea9-47da-8694-5d33c4a2a437")
+		(property "Reference" "J1"
+			(at 190.5 92.7099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "PoE"
+			(at 190.5 95.2499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical_SMD_Pin1Left"
+			(at 187.96 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 187.96 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 187.96 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "d4927b76-a3dd-4448-b9a6-e053205ff4cf")
+		)
+		(pin "1"
+			(uuid "16138c22-9894-4529-8984-c52544263f6c")
+		)
+		(pin "2"
+			(uuid "3c07a09d-4301-466d-ad23-1899d36f6db4")
+		)
+		(pin "4"
+			(uuid "6f5693ab-ac6d-4ca4-8aef-3bfb79691ebb")
+		)
+		(instances
+			(project ""
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/18c18357-12fa-4472-a108-e954e5bd7840"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 119.38 134.62 0)
 		(unit 1)
@@ -8765,115 +8801,6 @@
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/18c18357-12fa-4472-a108-e954e5bd7840"
 					(reference "#PWR02306")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_02x02_Odd_Even")
-		(at 199.39 105.41 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "edb451ea-3baa-478b-be76-cefcb2d20f05")
-		(property "Reference" "J2302"
-			(at 198.12 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PoE"
-			(at 198.12 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_2x02_P2.54mm_Vertical"
-			(at 199.39 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 199.39 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, double row, 02x02, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 199.39 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C2977590"
-			(at 199.39 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Characteristics" ""
-			(at 199.39 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" ""
-			(at 199.39 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "JLCPCB_CORRECTION" "-1.27;1.27;90"
-			(at 199.39 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e9b40619-2d2f-42c7-bad7-d0d01be8b814")
-		)
-		(pin "2"
-			(uuid "de7b8a2c-7080-4ea3-aa2d-0a513b66b961")
-		)
-		(pin "3"
-			(uuid "00f0e3e3-f53b-4fae-894c-d608ca09732f")
-		)
-		(pin "4"
-			(uuid "f9f63642-684e-4931-b00b-58badbd96108")
-		)
-		(instances
-			(project "HALPI2"
-				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/18c18357-12fa-4472-a108-e954e5bd7840"
-					(reference "J2302")
 					(unit 1)
 				)
 			)

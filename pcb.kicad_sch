@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "HALPI2")
-		(date "2025-02-26")
-		(rev "v0.1.0")
+		(date "2025-03-27")
+		(rev "v0.2.0")
 		(company "Hat Labs Oy")
 		(comment 1 "https://ohwr.org/cern_ohl_s_v2.pdf")
 		(comment 2 "To view a copy of this license, visit ")
@@ -321,6 +321,26 @@
 		)
 		(uuid "1aba8a5e-ce8a-4591-8848-cd87489871be")
 	)
+	(text "Board end mounting holes"
+		(exclude_from_sim no)
+		(at 51.562 128.524 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "592c5983-1b7a-4cab-a0ff-c37980c66e70")
+	)
+	(text "Board corner mounting holes"
+		(exclude_from_sim no)
+		(at 102.87 128.524 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "9a0bc231-b69e-4d85-9ed4-1925f5381fbd")
+	)
 	(junction
 		(at 59.69 156.21)
 		(diameter 0)
@@ -334,6 +354,12 @@
 		(uuid "192e6ecf-d62f-4712-858a-5d3a398023b9")
 	)
 	(junction
+		(at 104.14 140.97)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "40f8d09b-8839-46f0-9778-b5ddbe335307")
+	)
+	(junction
 		(at 38.1 156.21)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -344,6 +370,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bb49b257-5bcd-4a5f-9219-54493328d90a")
+	)
+	(junction
+		(at 104.14 151.13)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f482ae7e-27f1-4912-92b0-be4d7b01a56a")
 	)
 	(wire
 		(pts
@@ -357,6 +389,16 @@
 	)
 	(wire
 		(pts
+			(xy 100.33 151.13) (xy 104.14 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "381ba43d-8bdb-40e1-b381-87547fd485e5")
+	)
+	(wire
+		(pts
 			(xy 59.69 156.21) (xy 59.69 166.37)
 		)
 		(stroke
@@ -367,6 +409,16 @@
 	)
 	(wire
 		(pts
+			(xy 104.14 166.37) (xy 104.14 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46f37ebc-55ef-42d5-afa4-c00f7d6ac2ae")
+	)
+	(wire
+		(pts
 			(xy 118.11 63.5) (xy 118.11 62.23)
 		)
 		(stroke
@@ -374,6 +426,36 @@
 			(type default)
 		)
 		(uuid "510aa90f-4bc6-4425-9768-f173dc3e3d76")
+	)
+	(wire
+		(pts
+			(xy 104.14 140.97) (xy 107.95 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8db15a55-5898-4689-8fac-7d58b82dc48e")
+	)
+	(wire
+		(pts
+			(xy 104.14 140.97) (xy 100.33 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e53498d-07b7-42fd-9a6b-19c80024834f")
+	)
+	(wire
+		(pts
+			(xy 104.14 151.13) (xy 104.14 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98a602e8-d6c0-455b-afa4-79392a51d750")
 	)
 	(wire
 		(pts
@@ -397,6 +479,16 @@
 	)
 	(wire
 		(pts
+			(xy 104.14 151.13) (xy 107.95 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2db4d19-a1c5-4e5c-81e7-7c040e1c2962")
+	)
+	(wire
+		(pts
 			(xy 38.1 156.21) (xy 38.1 166.37)
 		)
 		(stroke
@@ -414,6 +506,88 @@
 			(type default)
 		)
 		(uuid "d502680e-e75c-4108-8055-ac4642ad2a3d")
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 97.79 140.97 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "0efebe90-09e4-4b0d-be0f-f07a4d1bfa79")
+		(property "Reference" "H3508"
+			(at 96.52 134.62 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 96.52 137.16 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4_Pad"
+			(at 97.79 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 97.79 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 97.79 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Characteristics" ""
+			(at 97.79 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 97.79 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d5bcb68d-1355-42eb-84fa-b9be5ccb75a6")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/e4643111-53ad-48d1-8ad1-a500e184f609"
+					(reference "H3508")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Hatlabs:SilkScreenImage")
@@ -524,7 +698,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4_Pad_Via"
+		(property "Footprint" "MountingHole:MountingHole_4.3x6.2mm_M4_Pad_Via"
 			(at 62.23 156.21 0)
 			(effects
 				(font
@@ -689,7 +863,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4_Pad_Via"
+		(property "Footprint" "MountingHole:MountingHole_4.3x6.2mm_M4_Pad_Via"
 			(at 62.23 140.97 0)
 			(effects
 				(font
@@ -773,7 +947,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4_Pad_Via"
+		(property "Footprint" "MountingHole:MountingHole_4.3x6.2mm_M4_Pad_Via"
 			(at 62.23 148.59 0)
 			(effects
 				(font
@@ -922,7 +1096,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4_Pad_Via"
+		(property "Footprint" "MountingHole:MountingHole_4.3x6.2mm_M4_Pad_Via"
 			(at 40.64 148.59 0)
 			(effects
 				(font
@@ -973,6 +1147,72 @@
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/e4643111-53ad-48d1-8ad1-a500e184f609"
 					(reference "H3502")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 104.14 166.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6eff4d8c-bda3-4f92-b4cc-ce0780a9f70d")
+		(property "Reference" "#PWR03504"
+			(at 104.14 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 104.14 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 104.14 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 104.14 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 104.14 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3361e2dc-83bf-49b0-9428-52dbb26546b7")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/e4643111-53ad-48d1-8ad1-a500e184f609"
+					(reference "#PWR03504")
 					(unit 1)
 				)
 			)
@@ -1039,6 +1279,87 @@
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/e4643111-53ad-48d1-8ad1-a500e184f609"
 					(reference "#PWR03502")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 110.49 140.97 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "97cc0d5c-b8d9-4ba7-b6aa-763e26de62b1")
+		(property "Reference" "H3509"
+			(at 111.76 134.62 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 111.76 137.16 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4_Pad"
+			(at 110.49 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 110.49 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 110.49 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Characteristics" ""
+			(at 110.49 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 110.49 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "87a7a03b-48f6-4d72-ae9b-d3ae3c703b8b")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/e4643111-53ad-48d1-8ad1-a500e184f609"
+					(reference "H3509")
 					(unit 1)
 				)
 			)
@@ -1244,7 +1565,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4_Pad_Via"
+		(property "Footprint" "MountingHole:MountingHole_4.3x6.2mm_M4_Pad_Via"
 			(at 40.64 140.97 0)
 			(effects
 				(font
@@ -1449,6 +1770,87 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
+		(at 110.49 151.13 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "ee8aabe5-b006-41cd-873a-a51dfe21017c")
+		(property "Reference" "H3511"
+			(at 111.76 144.78 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 111.76 147.32 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4_Pad"
+			(at 110.49 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 110.49 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 110.49 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Characteristics" ""
+			(at 110.49 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 110.49 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "dccaf6b7-7182-41de-8a39-9f53f9a97120")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/e4643111-53ad-48d1-8ad1-a500e184f609"
+					(reference "H3511")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
 		(at 40.64 156.21 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1473,7 +1875,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4_Pad_Via"
+		(property "Footprint" "MountingHole:MountingHole_4.3x6.2mm_M4_Pad_Via"
 			(at 40.64 156.21 0)
 			(effects
 				(font
@@ -1605,6 +2007,88 @@
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/e4643111-53ad-48d1-8ad1-a500e184f609"
 					(reference "IMG3504")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 97.79 151.13 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "f4ca8854-db19-42f9-ac87-fa089dd16545")
+		(property "Reference" "H3510"
+			(at 96.52 144.78 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 96.52 147.32 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4_Pad"
+			(at 97.79 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 97.79 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 97.79 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Characteristics" ""
+			(at 97.79 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 97.79 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ebdb0c62-fb31-4be2-b674-263d334c2239")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/e4643111-53ad-48d1-8ad1-a500e184f609"
+					(reference "H3510")
 					(unit 1)
 				)
 			)

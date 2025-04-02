@@ -114,6 +114,7 @@
         "solder_mask_bridge": "error",
         "starved_thermal": "error",
         "text_height": "ignore",
+        "text_on_edge_cuts": "error",
         "text_thickness": "ignore",
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
@@ -1924,6 +1925,9 @@
       "/~{SHDN_3V3E}": [
         "Digital"
       ],
+      "GND": [
+        "HV"
+      ],
       "MUSB_5V": [
         "Power"
       ],
@@ -2072,6 +2076,9 @@
         "Diff90ohm"
       ],
       "unconnected-(U201-GPIO19-Pad26)": [
+        "Digital"
+      ],
+      "unconnected-(U2601-SUSPEND{slash}NRDCLKO-Pad1)": [
         "Digital"
       ]
     },

@@ -651,6 +651,16 @@
 	)
 	(wire
 		(pts
+			(xy 80.01 40.64) (xy 100.33 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f5ec608-719c-4d8e-9ab5-f0e08734fb13")
+	)
+	(wire
+		(pts
 			(xy 143.51 36.83) (xy 143.51 68.58)
 		)
 		(stroke
@@ -864,7 +874,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "04d90ee1-dcb4-45a2-8b0b-243222e27005")
-		(property "Reference" "#PWR0201"
+		(property "Reference" "#PWR01"
 			(at 220.98 36.83 0)
 			(effects
 				(font
@@ -915,7 +925,7 @@
 		(instances
 			(project "Yellow"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42"
-					(reference "#PWR0201")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -930,7 +940,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8377f278-ab9c-4c87-95b8-3c27cdf4f255")
-		(property "Reference" "J201"
+		(property "Reference" "J1"
 			(at 32.5628 47.4218 0)
 			(effects
 				(font
@@ -1017,7 +1027,7 @@
 		(instances
 			(project "Yellow"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42"
-					(reference "J201")
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -1033,7 +1043,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f4a8ef86-0607-469c-b46f-da0f5cd6b2ca")
-		(property "Reference" "#PWR0202"
+		(property "Reference" "#PWR02"
 			(at 220.98 69.85 0)
 			(effects
 				(font
@@ -1084,7 +1094,7 @@
 		(instances
 			(project ""
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42"
-					(reference "#PWR0202")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -1360,6 +1370,16 @@
 				(justify right)
 			)
 		)
+		(pin "VIN_OVP" input
+			(at 100.33 40.64 180)
+			(uuid "9d88e76d-acf5-4259-b672-36dddf824cb3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42"
@@ -1430,6 +1450,16 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(pin "VIN_OVP" output
+			(at 80.01 40.64 0)
+			(uuid "40b1ab5e-7244-44a0-9528-d189e842ecac")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances

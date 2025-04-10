@@ -49,7 +49,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.3
+          "min_clearance": 0.2
         }
       },
       "diff_pair_dimensions": [
@@ -701,6 +701,12 @@
       "/CM4 GPIO/GPIO16": [
         "Digital"
       ],
+      "/CM4 GPIO/GPIO17": [
+        "Digital"
+      ],
+      "/CM4 GPIO/GPIO18": [
+        "Digital"
+      ],
       "/CM4 GPIO/GPIO19": [
         "Digital"
       ],
@@ -934,6 +940,18 @@
       ],
       "/Controller/G": [
         "Analog"
+      ],
+      "/Controller/GPIO05": [
+        "Digital"
+      ],
+      "/Controller/GPIO06": [
+        "Digital"
+      ],
+      "/Controller/GPIO07": [
+        "Digital"
+      ],
+      "/Controller/GPIO08": [
+        "Digital"
       ],
       "/Controller/GPIO10": [
         "Digital"
@@ -1399,6 +1417,9 @@
       "/Power/Buck converter 10V/VFO": [
         "Analog"
       ],
+      "/Power/Buck converter 10V/VIN_OVP": [
+        "Power"
+      ],
       "/Power/Buck converter 3.3V/BOOT_": [
         "Analog"
       ],
@@ -1442,6 +1463,12 @@
         "Analog"
       ],
       "/Power/Input Protection/VCAP": [
+        "Power"
+      ],
+      "/Power/Input Protection/VIN_OVP": [
+        "Power"
+      ],
+      "/Power/Input Protection/VS": [
         "Power"
       ],
       "/Power/Supercaps/Supercap stage1/BO2-": [
@@ -1870,6 +1897,9 @@
       "/USB3/USB3 Hub/V10FB": [
         "Analog"
       ],
+      "/USB3/USB3 Hub/V33OUT": [
+        "Power"
+      ],
       "/USB3/USB3 Hub/XT1": [
         "Digital"
       ],
@@ -2021,6 +2051,51 @@
       "Net-(C2635-Pad1)": [
         "Digital"
       ],
+      "Net-(C70-Pad1)": [
+        "Analog"
+      ],
+      "Net-(C71-Pad1)": [
+        "Analog"
+      ],
+      "Net-(C72-Pad1)": [
+        "Analog"
+      ],
+      "Net-(C73-Pad1)": [
+        "Analog"
+      ],
+      "Net-(C74-Pad1)": [
+        "Analog"
+      ],
+      "Net-(C74-Pad2)": [
+        "HV"
+      ],
+      "Net-(C75-Pad2)": [
+        "HV"
+      ],
+      "Net-(C76-Pad1)": [
+        "HV"
+      ],
+      "Net-(C76-Pad2)": [
+        "HV"
+      ],
+      "Net-(C77-Pad1)": [
+        "HV"
+      ],
+      "Net-(C77-Pad2)": [
+        "HV"
+      ],
+      "Net-(C78-Pad2)": [
+        "HV"
+      ],
+      "Net-(C79-Pad2)": [
+        "HV"
+      ],
+      "Net-(C87-Pad1)": [
+        "Digital"
+      ],
+      "Net-(C88-Pad1)": [
+        "Digital"
+      ],
       "Net-(D2105-A)": [
         "Analog"
       ],
@@ -2037,6 +2112,15 @@
         "Analog"
       ],
       "Net-(D3406-A)": [
+        "Analog"
+      ],
+      "Net-(D35-A)": [
+        "Analog"
+      ],
+      "Net-(D36-A)": [
+        "Analog"
+      ],
+      "Net-(D37-A)": [
         "Analog"
       ],
       "Net-(JP1601-B)": [
@@ -2075,10 +2159,22 @@
       "Net-(U1202-USB_DP)": [
         "Diff90ohm"
       ],
+      "Net-(U6-PG)": [
+        "Digital"
+      ],
+      "Net-(U7-PG)": [
+        "Digital"
+      ],
       "unconnected-(U201-GPIO19-Pad26)": [
         "Digital"
       ],
       "unconnected-(U2601-SUSPEND{slash}NRDCLKO-Pad1)": [
+        "Digital"
+      ],
+      "unconnected-(U33-SUSPEND{slash}NRDCLKO-Pad1)": [
+        "Digital"
+      ],
+      "unconnected-(U34-SUSPEND{slash}NRDCLKO-Pad1)": [
         "Digital"
       ]
     },
@@ -2405,10 +2501,6 @@
     [
       "7441bc5f-8874-43c2-af8a-50459ea25028",
       "RGB LEDs"
-    ],
-    [
-      "e502b11a-b887-47b5-9ff1-f210171ce142",
-      "RTC"
     ],
     [
       "7c248bd3-8232-4777-a40c-eab53460cf85",

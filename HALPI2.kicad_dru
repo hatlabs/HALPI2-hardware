@@ -22,9 +22,9 @@
 
 # Differential pair clearance is 3W.
 
-(rule diff_90ohm_layer1
+(rule diff_90ohm_outer
     (condition "(A.Type == 'Track') && (A.hasNetclass('Diff90ohm'))")
-    (layer F.Cu)
+    (layer outer)
     (constraint track_width (opt 0.1575mm))
     (constraint clearance (min 0.315mm))
     (constraint diff_pair_gap (opt 0.2mm)))
@@ -41,16 +41,9 @@
     (constraint clearance (min 0.429mm))
     (constraint diff_pair_gap (opt 0.2mm)))
 
-(rule diff_90ohm_layer6
-    (condition "(A.Type == 'Track') && (A.hasNetclass('Diff90ohm'))")
-    (layer B.Cu)
-    (constraint track_width (opt 0.1575mm))
-    (constraint clearance (min 0.315mm))
-    (constraint diff_pair_gap (opt 0.2mm)))
-
-(rule "diff_100ohm_layer1"
+(rule "diff_100ohm_outer"
     (condition "(A.Type == 'Track') && (A.hasNetclass('Diff100ohm'))")
-    (layer F.Cu)
+    (layer outer)
     (constraint track_width (opt 0.1326mm))
     (constraint clearance (opt 0.3978mm))
     (constraint diff_pair_gap (opt 0.25mm)))
@@ -61,22 +54,6 @@
     (constraint track_width (opt 0.1204mm))
     (constraint clearance (min 0.3612mm))
     (constraint diff_pair_gap (opt 0.25mm)))
-
-(rule "diff_100ohm_layer6"
-    (condition "(A.Type == 'Track') && (A.hasNetclass('Diff100ohm'))")
-    (layer B.Cu)
-    (constraint track_width (opt 0.1326mm))
-    (constraint clearance (opt 0.3978mm))
-    (constraint diff_pair_gap (opt 0.25mm)))
-
-(rule diff_90ohm_layer1_clearance
-    (condition "(AB.isCoupledDiffPair()) && (A.hasNetclass('Diff90ohm'))")
-    (layer B.Cu)
-    (constraint clearance (min 0.19mm)))
-
-#(rule "ignore_diff_pair_member_clearance"
-#    (condition "AB.isCoupledDiffPair()")
-#    (constraint clearance (min 0.1mm)))
 
 (rule "ignore_diff_pattern_tuning_pair_gap"
     (condition "AB.isCoupledDiffPair() && B.Tuning_Mode=='Diff pair skew'")

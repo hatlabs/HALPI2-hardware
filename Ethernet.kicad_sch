@@ -1032,21 +1032,19 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "R"
-				(at 0.762 0.508 0)
+				(at 0 0 90)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.016 1.016)
 					)
-					(justify left)
 				)
 			)
 			(property "Value" "R_Small"
-				(at 0.762 -1.016 0)
+				(at 1.778 0 90)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -5111,7 +5109,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 129.54) (xy 157.48 127)
+			(xy 157.48 132.08) (xy 157.48 127)
 		)
 		(stroke
 			(width 0)
@@ -5691,6 +5689,16 @@
 	)
 	(wire
 		(pts
+			(xy 157.48 138.43) (xy 157.48 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9b45d51-d86d-4810-8e02-6fe697851714")
+	)
+	(wire
+		(pts
 			(xy 58.42 91.44) (xy 68.58 91.44)
 		)
 		(stroke
@@ -6073,22 +6081,7 @@
 			(fill
 				(type none)
 			)
-			(uuid 471a9163-cab9-4736-82c4-f7dbf6665a3b)
-		)
-	)
-	(rule_area
-		(polyline
-			(pts
-				(xy 125.73 104.14) (xy 107.95 104.14) (xy 107.95 101.6) (xy 125.73 101.6)
-			)
-			(stroke
-				(width 0)
-				(type dash)
-			)
-			(fill
-				(type none)
-			)
-			(uuid 5fd2d4f5-2e56-4c01-991f-1d3de6d93fed)
+			(uuid 4a640d05-4dbe-471a-90a6-077948c7bcf2)
 		)
 	)
 	(rule_area
@@ -6103,7 +6096,22 @@
 			(fill
 				(type none)
 			)
-			(uuid c43d6b25-9492-4f80-ac14-555d0c016da8)
+			(uuid 5b6d60d4-8df4-4c06-aa17-0ac8570607d7)
+		)
+	)
+	(rule_area
+		(polyline
+			(pts
+				(xy 125.73 104.14) (xy 107.95 104.14) (xy 107.95 101.6) (xy 125.73 101.6)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type none)
+			)
+			(uuid e7399432-3f36-402c-8c93-56106c3a3331)
 		)
 	)
 	(netclass_flag ""
@@ -6244,7 +6252,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "035db198-9f26-4df1-8c04-e6867feac62a")
-		(property "Reference" "R2302"
+		(property "Reference" "R59"
 			(at 116.84 162.8775 90)
 			(effects
 				(font
@@ -6305,7 +6313,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/18c18357-12fa-4472-a108-e954e5bd7840"
-					(reference "R2302")
+					(reference "R59")
 					(unit 1)
 				)
 			)
@@ -6313,7 +6321,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 157.48 132.08 0)
+		(at 157.48 134.62 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6322,16 +6330,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "04fd614c-9143-457f-99e8-884da78a4334")
-		(property "Reference" "C2307"
-			(at 160.02 130.8162 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "1nF/2kV"
+		(property "Reference" "C77"
 			(at 160.02 133.3562 0)
 			(effects
 				(font
@@ -6340,8 +6339,17 @@
 				(justify right)
 			)
 		)
+		(property "Value" "1nF/2kV"
+			(at 160.02 135.8962 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 157.48 132.08 0)
+			(at 157.48 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6350,7 +6358,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 157.48 132.08 0)
+			(at 157.48 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6359,7 +6367,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 157.48 132.08 0)
+			(at 157.48 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6368,7 +6376,7 @@
 			)
 		)
 		(property "LCSC" "C9196"
-			(at 157.48 132.08 0)
+			(at 157.48 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6377,7 +6385,7 @@
 			)
 		)
 		(property "Characteristics" ""
-			(at 157.48 132.08 0)
+			(at 157.48 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6386,7 +6394,7 @@
 			)
 		)
 		(property "LCSC Part" ""
-			(at 157.48 132.08 0)
+			(at 157.48 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6402,7 +6410,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/18c18357-12fa-4472-a108-e954e5bd7840"
-					(reference "C2307")
+					(reference "C77")
 					(unit 1)
 				)
 			)
@@ -6418,7 +6426,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "050ea99f-3409-4111-b640-72535f2ed0f5")
-		(property "Reference" "R2301"
+		(property "Reference" "R58"
 			(at 116.84 151.4475 90)
 			(effects
 				(font
@@ -6479,7 +6487,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/18c18357-12fa-4472-a108-e954e5bd7840"
-					(reference "R2301")
+					(reference "R58")
 					(unit 1)
 				)
 			)
@@ -6494,7 +6502,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "052e8005-4b68-4f45-9d60-b6bbaf236726")
-		(property "Reference" "J2301"
+		(property "Reference" "J19"
 			(at 194.31 71.1201 0)
 			(effects
 				(font
@@ -6595,7 +6603,7 @@
 		(instances
 			(project ""
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/18c18357-12fa-4472-a108-e954e5bd7840"
-					(reference "J2301")
+					(reference "J19")
 					(unit 1)
 				)
 			)
@@ -6611,7 +6619,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0a67c58f-82bf-4731-87df-0acd477c4299")
-		(property "Reference" "D2302"
+		(property "Reference" "D21"
 			(at 125.4125 162.56 0)
 			(effects
 				(font
@@ -6681,7 +6689,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/18c18357-12fa-4472-a108-e954e5bd7840"
-					(reference "D2302")
+					(reference "D21")
 					(unit 1)
 				)
 			)
@@ -6689,15 +6697,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 157.48 134.62 0)
+		(at 157.48 138.43 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "0f313252-3935-44b4-82b1-16933c146421")
-		(property "Reference" "#PWR02309"
-			(at 157.48 140.97 0)
+		(property "Reference" "#PWR0158"
+			(at 157.48 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6706,7 +6714,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 157.607 139.0142 0)
+			(at 157.607 142.8242 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6714,7 +6722,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 157.48 134.62 0)
+			(at 157.48 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6723,7 +6731,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 157.48 134.62 0)
+			(at 157.48 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6732,7 +6740,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 157.48 134.62 0)
+			(at 157.48 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6746,7 +6754,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/18c18357-12fa-4472-a108-e954e5bd7840"
-					(reference "#PWR02309")
+					(reference "#PWR0158")
 					(unit 1)
 				)
 			)
@@ -6761,7 +6769,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1463dc6e-3d36-4ddc-8d90-e524916bc15b")
-		(property "Reference" "C2304"
+		(property "Reference" "C74"
 			(at 121.92 110.998 0)
 			(effects
 				(font
@@ -6841,7 +6849,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/18c18357-12fa-4472-a108-e954e5bd7840"
-					(reference "C2304")
+					(reference "C74")
 					(unit 1)
 				)
 			)
@@ -6857,7 +6865,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1cc080ba-23d4-4489-90fb-1007c4d41fbd")
-		(property "Reference" "TR2301"
+		(property "Reference" "TR1"
 			(at 137.16 44.45 0)
 			(effects
 				(font
@@ -7010,7 +7018,7 @@
 		(instances
 			(project ""
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/18c18357-12fa-4472-a108-e954e5bd7840"
-					(reference "TR2301")
+					(reference "TR1")
 					(unit 1)
 				)
 			)
@@ -7026,7 +7034,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1f7f423c-01d6-42fb-976f-f5514c3f2d68")
-		(property "Reference" "C2309"
+		(property "Reference" "C79"
 			(at 162.56 100.838 0)
 			(effects
 				(font
@@ -7106,7 +7114,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/18c18357-12fa-4472-a108-e954e5bd7840"
-					(reference "C2309")
+					(reference "C79")
 					(unit 1)
 				)
 			)
@@ -7122,7 +7130,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "27fe7d5d-a6e9-45bd-aef1-15f7a112338d")
-		(property "Reference" "C2306"
+		(property "Reference" "C76"
 			(at 152.4 110.998 0)
 			(effects
 				(font
@@ -7202,7 +7210,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/18c18357-12fa-4472-a108-e954e5bd7840"
-					(reference "C2306")
+					(reference "C76")
 					(unit 1)
 				)
 			)
@@ -7217,7 +7225,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3e6b465e-e7f6-45c4-b0e8-c4e15c11088d")
-		(property "Reference" "R2306"
+		(property "Reference" "R63"
 			(at 167.64 107.442 0)
 			(effects
 				(font
@@ -7288,7 +7296,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/18c18357-12fa-4472-a108-e954e5bd7840"
-					(reference "R2306")
+					(reference "R63")
 					(unit 1)
 				)
 			)
@@ -7304,7 +7312,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "40a7b79c-fba2-4e22-b29b-e2008993681e")
-		(property "Reference" "R2303"
+		(property "Reference" "R60"
 			(at 152.4 122.682 0)
 			(effects
 				(font
@@ -7375,7 +7383,7 @@
 		(instances
 			(project ""
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/18c18357-12fa-4472-a108-e954e5bd7840"
-					(reference "R2303")
+					(reference "R60")
 					(unit 1)
 				)
 			)
@@ -7391,7 +7399,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4c6f7ccf-596d-473d-aabe-45e9ba83fe32")
-		(property "Reference" "C2305"
+		(property "Reference" "C75"
 			(at 147.32 116.078 0)
 			(effects
 				(font
@@ -7471,7 +7479,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/18c18357-12fa-4472-a108-e954e5bd7840"
-					(reference "C2305")
+					(reference "C75")
 					(unit 1)
 				)
 			)
@@ -7487,7 +7495,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4f6e6d93-8198-4777-ab6f-4edc3d246858")
-		(property "Reference" "#PWR02301"
+		(property "Reference" "#PWR0150"
 			(at 45.72 74.93 0)
 			(effects
 				(font
@@ -7537,7 +7545,7 @@
 		(instances
 			(project "Yellow"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/18c18357-12fa-4472-a108-e954e5bd7840"
-					(reference "#PWR02301")
+					(reference "#PWR0150")
 					(unit 1)
 				)
 			)
@@ -7552,7 +7560,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5a8b766d-1b68-496b-9d3a-df1d0e3cffd8")
-		(property "Reference" "U2302"
+		(property "Reference" "U29"
 			(at 45.72 76.2 0)
 			(effects
 				(font
@@ -7672,7 +7680,7 @@
 		(instances
 			(project "Yellow"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/18c18357-12fa-4472-a108-e954e5bd7840"
-					(reference "U2302")
+					(reference "U29")
 					(unit 1)
 				)
 			)
@@ -7688,7 +7696,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "630a293c-94c1-4692-a769-e50fab57e9f3")
-		(property "Reference" "D2301"
+		(property "Reference" "D20"
 			(at 125.4125 151.13 0)
 			(effects
 				(font
@@ -7758,7 +7766,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/18c18357-12fa-4472-a108-e954e5bd7840"
-					(reference "D2301")
+					(reference "D20")
 					(unit 1)
 				)
 			)
@@ -7774,7 +7782,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7666ba6f-6295-4d04-b3e0-5f75524f8dd8")
-		(property "Reference" "#PWR02307"
+		(property "Reference" "#PWR0156"
 			(at 137.16 160.02 0)
 			(effects
 				(font
@@ -7824,7 +7832,7 @@
 		(instances
 			(project ""
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/18c18357-12fa-4472-a108-e954e5bd7840"
-					(reference "#PWR02307")
+					(reference "#PWR0156")
 					(unit 1)
 				)
 			)
@@ -7839,7 +7847,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "80733c75-d43f-4e36-be3b-920e82b951b7")
-		(property "Reference" "#PWR02310"
+		(property "Reference" "#PWR0159"
 			(at 190.5 58.42 0)
 			(effects
 				(font
@@ -7889,7 +7897,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/18c18357-12fa-4472-a108-e954e5bd7840"
-					(reference "#PWR02310")
+					(reference "#PWR0159")
 					(unit 1)
 				)
 			)
@@ -7905,7 +7913,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8273b0a0-9ed3-44d3-be1c-0ed37dffe60b")
-		(property "Reference" "C2301"
+		(property "Reference" "C71"
 			(at 106.68 126.238 0)
 			(effects
 				(font
@@ -7985,7 +7993,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/18c18357-12fa-4472-a108-e954e5bd7840"
-					(reference "C2301")
+					(reference "C71")
 					(unit 1)
 				)
 			)
@@ -8000,7 +8008,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8fcfcb95-71c2-4351-bc3b-4e83d6d16f15")
-		(property "Reference" "C2303"
+		(property "Reference" "C73"
 			(at 116.84 116.078 0)
 			(effects
 				(font
@@ -8080,7 +8088,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/18c18357-12fa-4472-a108-e954e5bd7840"
-					(reference "C2303")
+					(reference "C73")
 					(unit 1)
 				)
 			)
@@ -8096,7 +8104,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bfd59301-5bb8-40fa-83c6-cb0f92dc2c65")
-		(property "Reference" "#PWR02302"
+		(property "Reference" "#PWR0151"
 			(at 45.72 107.95 0)
 			(effects
 				(font
@@ -8146,7 +8154,7 @@
 		(instances
 			(project "Yellow"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/18c18357-12fa-4472-a108-e954e5bd7840"
-					(reference "#PWR02302")
+					(reference "#PWR0151")
 					(unit 1)
 				)
 			)
@@ -8162,7 +8170,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c04e7a16-2a82-4a17-a6c5-ec7a61fc3723")
-		(property "Reference" "#PWR02308"
+		(property "Reference" "#PWR0157"
 			(at 137.16 171.45 0)
 			(effects
 				(font
@@ -8212,7 +8220,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/18c18357-12fa-4472-a108-e954e5bd7840"
-					(reference "#PWR02308")
+					(reference "#PWR0157")
 					(unit 1)
 				)
 			)
@@ -8228,7 +8236,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c1689bbe-bea9-47da-8694-5d33c4a2a437")
-		(property "Reference" "J1"
+		(property "Reference" "J20"
 			(at 190.5 92.7099 0)
 			(effects
 				(font
@@ -8288,7 +8296,7 @@
 		(instances
 			(project ""
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/18c18357-12fa-4472-a108-e954e5bd7840"
-					(reference "J1")
+					(reference "J20")
 					(unit 1)
 				)
 			)
@@ -8303,7 +8311,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c3f06315-89ba-417a-bede-8c3cbecda574")
-		(property "Reference" "#PWR02305"
+		(property "Reference" "#PWR0154"
 			(at 119.38 140.97 0)
 			(effects
 				(font
@@ -8353,7 +8361,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/18c18357-12fa-4472-a108-e954e5bd7840"
-					(reference "#PWR02305")
+					(reference "#PWR0154")
 					(unit 1)
 				)
 			)
@@ -8368,7 +8376,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ca1ff01e-f4c0-4d16-a746-a49150db38fe")
-		(property "Reference" "R2304"
+		(property "Reference" "R61"
 			(at 157.48 117.602 0)
 			(effects
 				(font
@@ -8439,7 +8447,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/18c18357-12fa-4472-a108-e954e5bd7840"
-					(reference "R2304")
+					(reference "R61")
 					(unit 1)
 				)
 			)
@@ -8454,7 +8462,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "cab21cf5-02d1-4415-8f47-c31f2794f0af")
-		(property "Reference" "U2301"
+		(property "Reference" "U28"
 			(at 45.72 43.18 0)
 			(effects
 				(font
@@ -8574,7 +8582,7 @@
 		(instances
 			(project "Yellow"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/18c18357-12fa-4472-a108-e954e5bd7840"
-					(reference "U2301")
+					(reference "U28")
 					(unit 1)
 				)
 			)
@@ -8589,7 +8597,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d3a78e9a-de73-443b-9984-0213905acb22")
-		(property "Reference" "#PWR02304"
+		(property "Reference" "#PWR0153"
 			(at 114.3 140.97 0)
 			(effects
 				(font
@@ -8639,7 +8647,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/18c18357-12fa-4472-a108-e954e5bd7840"
-					(reference "#PWR02304")
+					(reference "#PWR0153")
 					(unit 1)
 				)
 			)
@@ -8655,7 +8663,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e4724f14-7e7a-49ff-b926-60f62e7f0616")
-		(property "Reference" "C2308"
+		(property "Reference" "C78"
 			(at 157.48 105.918 0)
 			(effects
 				(font
@@ -8735,7 +8743,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/18c18357-12fa-4472-a108-e954e5bd7840"
-					(reference "C2308")
+					(reference "C78")
 					(unit 1)
 				)
 			)
@@ -8750,7 +8758,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ec3d8942-8de8-4edd-9302-b39e7d2d4e6a")
-		(property "Reference" "#PWR02306"
+		(property "Reference" "#PWR0155"
 			(at 124.46 140.97 0)
 			(effects
 				(font
@@ -8800,7 +8808,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/18c18357-12fa-4472-a108-e954e5bd7840"
-					(reference "#PWR02306")
+					(reference "#PWR0155")
 					(unit 1)
 				)
 			)
@@ -8815,7 +8823,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f160c7c5-5b70-4cbf-b573-7686968b580f")
-		(property "Reference" "C2302"
+		(property "Reference" "C72"
 			(at 111.76 121.158 0)
 			(effects
 				(font
@@ -8895,7 +8903,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/18c18357-12fa-4472-a108-e954e5bd7840"
-					(reference "C2302")
+					(reference "C72")
 					(unit 1)
 				)
 			)
@@ -8910,7 +8918,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f3d6f7b6-df44-4dbc-bb02-8f09750cc029")
-		(property "Reference" "#PWR02303"
+		(property "Reference" "#PWR0152"
 			(at 109.22 140.97 0)
 			(effects
 				(font
@@ -8960,7 +8968,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/18c18357-12fa-4472-a108-e954e5bd7840"
-					(reference "#PWR02303")
+					(reference "#PWR0152")
 					(unit 1)
 				)
 			)
@@ -8975,7 +8983,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f5a2f0ef-7d91-4196-8dd6-215dd5557fd6")
-		(property "Reference" "R2305"
+		(property "Reference" "R62"
 			(at 162.56 112.522 0)
 			(effects
 				(font
@@ -9046,7 +9054,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/18c18357-12fa-4472-a108-e954e5bd7840"
-					(reference "R2305")
+					(reference "R62")
 					(unit 1)
 				)
 			)

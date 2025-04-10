@@ -138,16 +138,6 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 22.86) (xy 151.13 22.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "47719fc4-99a2-469b-ad4b-62db54338f05")
-	)
-	(wire
-		(pts
 			(xy 153.67 80.01) (xy 151.13 80.01)
 		)
 		(stroke
@@ -165,16 +155,6 @@
 			(type default)
 		)
 		(uuid "5b83f614-42ec-4a20-90da-9179920ec64a")
-	)
-	(wire
-		(pts
-			(xy 104.14 31.75) (xy 106.68 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "632b63d3-00af-49da-8f81-637c99d4afdf")
 	)
 	(wire
 		(pts
@@ -496,16 +476,6 @@
 		)
 		(uuid "df0941fc-aba9-4515-92d4-63f6a84c0ffe")
 	)
-	(wire
-		(pts
-			(xy 69.85 74.93) (xy 67.31 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e61f2686-05cf-4a03-9411-28a02e9843b0")
-	)
 	(bus
 		(pts
 			(xy 104.14 41.91) (xy 106.68 41.91)
@@ -726,16 +696,6 @@
 		)
 		(uuid "4b7a0618-6495-4a87-bf7e-d034837036ef")
 	)
-	(label "VBAT"
-		(at 69.85 74.93 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "4fcf96d0-c032-41d8-afb4-2f3d10ab2388")
-	)
 	(label "RS485{RS485}"
 		(at 153.67 29.21 0)
 		(effects
@@ -785,16 +745,6 @@
 			(justify left bottom)
 		)
 		(uuid "5fe2689f-5239-4cdf-a274-7e3484890e11")
-	)
-	(label "VBAT"
-		(at 104.14 31.75 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "63769cb0-7ac2-4e25-a91a-34978da4ae6e")
 	)
 	(label "DIS_USB[0..3]"
 		(at 184.15 69.85 180)
@@ -945,16 +895,6 @@
 			(justify left bottom)
 		)
 		(uuid "adc1d97c-8708-4079-8777-4b2b1caf8c9f")
-	)
-	(label "FAN_PWM"
-		(at 153.67 22.86 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c6ef4462-5147-41ab-8fba-71b28b5e7183")
 	)
 	(label "PG_5V"
 		(at 29.21 91.44 180)
@@ -1338,16 +1278,6 @@
 				(justify right)
 			)
 		)
-		(pin "FAN_PWM" output
-			(at 151.13 22.86 0)
-			(uuid "9fdef8b1-1ed1-4a09-9c65-439d27d4943e")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "CAN{SPI}" bidirectional
 			(at 151.13 26.67 0)
 			(uuid "bb1eb8e9-663c-4ee6-822e-c8213cde126f")
@@ -1401,16 +1331,6 @@
 		(pin "PWR_BUTTON" input
 			(at 106.68 29.21 180)
 			(uuid "72b1157c-40aa-4142-9714-baba978b9ea4")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "VBAT" input
-			(at 106.68 31.75 180)
-			(uuid "227de73b-ec81-4e33-bda5-a76201cbef2e")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1533,16 +1453,6 @@
 		(pin "PWR_BTN_OUT" output
 			(at 67.31 71.12 0)
 			(uuid "1a36131c-9218-4a37-b18f-7ac990a87254")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "VBAT" output
-			(at 67.31 74.93 0)
-			(uuid "9b8199d8-dfc2-488e-a0a6-2c9aa0a3c51a")
 			(effects
 				(font
 					(size 1.27 1.27)

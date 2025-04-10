@@ -576,6 +576,16 @@
 	)
 	(wire
 		(pts
+			(xy 121.92 102.87) (xy 127 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5def1d61-9514-4af6-b7c1-0778df906181")
+	)
+	(wire
+		(pts
 			(xy 92.71 95.25) (xy 95.25 95.25)
 		)
 		(stroke
@@ -747,6 +757,17 @@
 		)
 		(uuid "862af4b4-c420-41b4-bccb-43ed90cde78d")
 	)
+	(hierarchical_label "VIN_OVP"
+		(shape input)
+		(at 121.92 102.87 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "867dc071-7636-45b5-82fb-52b8fa455196")
+	)
 	(hierarchical_label "Iin"
 		(shape output)
 		(at 160.02 64.77 0)
@@ -809,7 +830,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005f365fdd")
-		(property "Reference" "R401"
+		(property "Reference" "R5"
 			(at 99.06 97.79 90)
 			(effects
 				(font
@@ -893,7 +914,7 @@
 			)
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "R401")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -909,7 +930,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1ad8092a-88ba-46b1-b44d-a007e5d7e61a")
-		(property "Reference" "J401"
+		(property "Reference" "J2"
 			(at 88.9 106.6799 90)
 			(effects
 				(font
@@ -977,6 +998,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -994,7 +1016,7 @@
 		(instances
 			(project ""
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "J401")
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -1010,7 +1032,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "caa2e387-fed2-4532-8d73-f0f7db066902")
-		(property "Reference" "#PWR0401"
+		(property "Reference" "#PWR08"
 			(at 83.82 123.19 0)
 			(effects
 				(font
@@ -1060,7 +1082,7 @@
 		(instances
 			(project ""
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "#PWR0401")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -1076,7 +1098,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d30c81b2-72ed-413c-9ff7-4d91f4e933c9")
-		(property "Reference" "#PWR0402"
+		(property "Reference" "#PWR09"
 			(at 86.36 123.19 0)
 			(effects
 				(font
@@ -1126,7 +1148,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69"
-					(reference "#PWR0402")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -1204,6 +1226,16 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+		(pin "VIN_OVP" input
+			(at 127 102.87 180)
+			(uuid "53b84093-338d-4fd4-a625-68f029dc47c8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances

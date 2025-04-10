@@ -14,206 +14,6 @@
 		(comment 3 "HALPI2 is licensed under CERN-OHL-S v2.")
 	)
 	(lib_symbols
-		(symbol "Connector_Generic:Conn_01x04"
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Conn_01x04"
-				(at 0 -7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "connector"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Conn_01x04_1_1"
-				(rectangle
-					(start -1.27 3.81)
-					(end 1.27 -6.35)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(rectangle
-					(start -1.27 2.667)
-					(end 0 2.413)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 0.127)
-					(end 0 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 -2.413)
-					(end 0 -2.667)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 -4.953)
-					(end 0 -5.207)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 2.54 0)
-					(length 3.81)
-					(name "Pin_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name "Pin_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -2.54 0)
-					(length 3.81)
-					(name "Pin_3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -5.08 0)
-					(length 3.81)
-					(name "Pin_4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Connector_Generic_MountingPin:Conn_01x04_MountingPin"
 			(pin_names
 				(offset 1.016)
@@ -830,29 +630,7 @@
 		)
 		(uuid "5072aab0-5ecd-4b9c-b374-766da27279c8")
 	)
-	(text "Yellow\nFAN connector\n"
-		(exclude_from_sim no)
-		(at 116.84 95.25 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "61388198-88ae-4f1f-a3ad-e8c94928afd7")
-	)
-	(text "CM5 FAN connector\n"
-		(exclude_from_sim no)
-		(at 146.685 85.09 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "97a38772-6830-41dc-92df-46e4703e5dbc")
-	)
-	(text "Provide both a Pi 5 style and an old-school Molex fan connector"
+	(text "Provide fan connectors on both top and bottom side of the board"
 		(exclude_from_sim no)
 		(at 160.782 71.882 0)
 		(effects
@@ -869,10 +647,16 @@
 		(uuid "177db275-92da-4afe-929b-b4ddb51b7485")
 	)
 	(junction
-		(at 111.76 87.63)
+		(at 105.41 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "775d6fbc-fe85-4ea6-8cdf-38216a142f15")
+		(uuid "2a23b983-07fe-498f-9174-f0ce39d7f207")
+	)
+	(junction
+		(at 111.76 110.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a5066930-eda6-43cc-a00f-b888a88bcb67")
 	)
 	(junction
 		(at 111.76 82.55)
@@ -900,9 +684,29 @@
 		)
 		(uuid "0258e544-2965-4ce2-be8f-2fa87dd37093")
 	)
+	(wire
+		(pts
+			(xy 111.76 109.22) (xy 111.76 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08e5890f-5b86-4c07-a7d6-c2fb44912ea7")
+	)
+	(wire
+		(pts
+			(xy 132.08 121.92) (xy 132.08 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a514a2a-2844-460e-97fc-4005ca77aae4")
+	)
 	(polyline
 		(pts
-			(xy 85.09 119.38) (xy 85.09 68.58)
+			(xy 85.09 148.59) (xy 85.09 68.58)
 		)
 		(stroke
 			(width 0)
@@ -912,7 +716,7 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 92.71) (xy 152.4 92.71)
+			(xy 134.62 93.98) (xy 133.35 93.98)
 		)
 		(stroke
 			(width 0)
@@ -932,23 +736,43 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 101.6) (xy 111.76 101.6)
+			(xy 99.06 110.49) (xy 105.41 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f237f3e-c3a7-40bf-9a3c-9fef0e03a52c")
+	)
+	(wire
+		(pts
+			(xy 111.76 110.49) (xy 111.76 116.84)
 		)
 		(stroke
 			(width 0)
 			(type solid)
 		)
-		(uuid "4200ad0b-51ac-4644-a322-51be0a9a5f07")
+		(uuid "3b9cb185-4190-4f5d-a3c2-7932431b58bd")
 	)
 	(wire
 		(pts
-			(xy 111.76 82.55) (xy 111.76 87.63)
+			(xy 111.76 82.55) (xy 111.76 88.9)
 		)
 		(stroke
 			(width 0)
 			(type solid)
 		)
 		(uuid "744eca24-326a-4e09-b041-14d990c7fd16")
+	)
+	(wire
+		(pts
+			(xy 132.08 121.92) (xy 134.62 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "757571b0-4d31-46db-af11-73270bfff792")
 	)
 	(wire
 		(pts
@@ -962,7 +786,7 @@
 	)
 	(polyline
 		(pts
-			(xy 194.31 119.38) (xy 85.09 119.38)
+			(xy 194.31 148.59) (xy 85.09 148.59)
 		)
 		(stroke
 			(width 0)
@@ -972,17 +796,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 87.63) (xy 111.76 101.6)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "984bddc3-8246-459e-ad7b-3b197a0c370a")
-	)
-	(wire
-		(pts
-			(xy 111.76 87.63) (xy 153.67 87.63)
+			(xy 111.76 88.9) (xy 134.62 88.9)
 		)
 		(stroke
 			(width 0)
@@ -990,19 +804,9 @@
 		)
 		(uuid "b9d3b066-38bc-4d3d-9638-0de553d225a5")
 	)
-	(wire
-		(pts
-			(xy 118.11 99.06) (xy 116.84 99.06)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "c81c84aa-cd18-44fe-9a87-176b313e9c49")
-	)
 	(polyline
 		(pts
-			(xy 194.31 68.58) (xy 194.31 119.38)
+			(xy 194.31 68.58) (xy 194.31 148.59)
 		)
 		(stroke
 			(width 0)
@@ -1012,7 +816,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 90.17) (xy 153.67 90.17)
+			(xy 128.27 119.38) (xy 134.62 119.38)
 		)
 		(stroke
 			(width 0)
@@ -1022,17 +826,7 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 99.06) (xy 116.84 110.49)
-		)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(uuid "d63ba9fa-71ad-48c6-afa1-e3d8e9715b0f")
-	)
-	(wire
-		(pts
-			(xy 152.4 92.71) (xy 152.4 100.33)
+			(xy 133.35 93.98) (xy 133.35 101.6)
 		)
 		(stroke
 			(width 0)
@@ -1042,7 +836,47 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 95.25) (xy 153.67 95.25)
+			(xy 111.76 116.84) (xy 134.62 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1e71355-b290-4450-87fc-83561830af73")
+	)
+	(wire
+		(pts
+			(xy 105.41 110.49) (xy 111.76 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e84a37a5-e27a-4f13-b872-a8602b21de9e")
+	)
+	(wire
+		(pts
+			(xy 128.27 96.52) (xy 134.62 96.52)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "f02725c3-f4ef-4e76-b920-f73c4e6dc85e")
+	)
+	(wire
+		(pts
+			(xy 128.27 91.44) (xy 134.62 91.44)
+		)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(uuid "f512934e-5234-4611-8167-ed4f1ea6e61f")
+	)
+	(wire
+		(pts
+			(xy 128.27 124.46) (xy 134.62 124.46)
 		)
 		(stroke
 			(width 0)
@@ -1052,7 +886,7 @@
 	)
 	(hierarchical_label "FAN_PWM"
 		(shape input)
-		(at 149.86 90.17 180)
+		(at 128.27 119.38 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1063,29 +897,18 @@
 	)
 	(hierarchical_label "FAN_PWM"
 		(shape input)
-		(at 118.11 106.68 180)
+		(at 128.27 91.44 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "3069f7f0-df37-446c-a9ab-0f8111e17ffd")
+		(uuid "0c6ade04-5588-4904-bc1a-627d5c660826")
 	)
 	(hierarchical_label "FAN_TACHO"
 		(shape output)
-		(at 118.11 104.14 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "6c585315-5cc4-4492-8987-6ac0cb700765")
-	)
-	(hierarchical_label "FAN_TACHO"
-		(shape output)
-		(at 143.51 95.25 180)
+		(at 128.27 124.46 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1093,6 +916,17 @@
 			(justify right)
 		)
 		(uuid "75eca169-db02-4ec1-ad5a-e1627aac2d74")
+	)
+	(hierarchical_label "FAN_TACHO"
+		(shape output)
+		(at 128.27 96.52 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e95135eb-9565-40d4-b052-7c4b34c622d6")
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -1103,7 +937,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "16c79eed-23c1-4deb-9dd1-aed11e062597")
-		(property "Reference" "C1702"
+		(property "Reference" "C63"
 			(at 108.331 85.1916 0)
 			(effects
 				(font
@@ -1183,7 +1017,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/7c248bd3-8232-4777-a40c-eab53460cf85/1b14d1cb-dda2-44c5-97d1-a618f21bed66"
-					(reference "C1702")
+					(reference "C63")
 					(unit 1)
 				)
 			)
@@ -1191,15 +1025,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 152.4 100.33 0)
+		(at 133.35 101.6 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "190d61ed-3f66-49e6-86cf-532f8eabe684")
-		(property "Reference" "#PWR01705"
-			(at 152.4 106.68 0)
+		(property "Reference" "#PWR0106"
+			(at 133.35 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1208,7 +1042,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 152.527 104.7242 0)
+			(at 133.477 105.9942 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1216,7 +1050,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 152.4 100.33 0)
+			(at 133.35 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1225,7 +1059,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 152.4 100.33 0)
+			(at 133.35 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1234,7 +1068,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 152.4 100.33 0)
+			(at 133.35 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1248,7 +1082,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/7c248bd3-8232-4777-a40c-eab53460cf85/1b14d1cb-dda2-44c5-97d1-a618f21bed66"
-					(reference "#PWR01705")
+					(reference "#PWR0106")
 					(unit 1)
 				)
 			)
@@ -1264,7 +1098,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2402ec1d-260b-46e2-81a1-71fe5426eef8")
-		(property "Reference" "C1701"
+		(property "Reference" "C62"
 			(at 96.139 85.1916 0)
 			(effects
 				(font
@@ -1344,7 +1178,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/7c248bd3-8232-4777-a40c-eab53460cf85/1b14d1cb-dda2-44c5-97d1-a618f21bed66"
-					(reference "C1701")
+					(reference "C62")
 					(unit 1)
 				)
 			)
@@ -1359,7 +1193,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "24482a64-0751-41ce-b1e1-12a3ad67c639")
-		(property "Reference" "#PWR01702"
+		(property "Reference" "#PWR0102"
 			(at 105.41 96.52 0)
 			(effects
 				(font
@@ -1409,7 +1243,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/7c248bd3-8232-4777-a40c-eab53460cf85/1b14d1cb-dda2-44c5-97d1-a618f21bed66"
-					(reference "#PWR01702")
+					(reference "#PWR0102")
 					(unit 1)
 				)
 			)
@@ -1424,7 +1258,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "394b9944-254a-49da-a07a-ea8374fa2302")
-		(property "Reference" "#PWR01701"
+		(property "Reference" "#PWR0101"
 			(at 99.06 96.52 0)
 			(effects
 				(font
@@ -1474,41 +1308,23 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/7c248bd3-8232-4777-a40c-eab53460cf85/1b14d1cb-dda2-44c5-97d1-a618f21bed66"
-					(reference "#PWR01701")
+					(reference "#PWR0101")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x04")
-		(at 123.19 101.6 0)
+		(lib_id "power:GND")
+		(at 105.41 118.11 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "72adcfa3-f122-4645-b7e2-537eb1296a8f")
-		(property "Reference" "J1701"
-			(at 121.285 109.855 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Molex 470531000"
-			(at 120.65 112.395 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector:FanPinHeader_1x04_P2.54mm_Vertical"
-			(at 123.19 101.6 0)
+		(uuid "46aaedf1-cbe3-41bf-ad51-51a22ea10f0d")
+		(property "Reference" "#PWR0355"
+			(at 105.41 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1516,8 +1332,16 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 123.19 101.6 0)
+		(property "Value" "GND"
+			(at 105.537 122.5042 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 105.41 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1525,8 +1349,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 123.19 101.6 0)
+		(property "Datasheet" ""
+			(at 105.41 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1534,34 +1358,8 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2982033"
-			(at 123.19 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Characteristics" ""
-			(at 123.19 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" ""
-			(at 123.19 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "JLCPCB_CORRECTION" "3.81;0;0"
-			(at 123.19 101.6 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 105.41 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1570,21 +1368,237 @@
 			)
 		)
 		(pin "1"
-			(uuid "69dba2a6-5137-461d-ae71-7bdce62ab9e6")
-		)
-		(pin "2"
-			(uuid "53f34c01-9d26-4374-8882-808585e0260d")
-		)
-		(pin "3"
-			(uuid "ed665d92-dcc5-4506-891d-c018cfdc872b")
-		)
-		(pin "4"
-			(uuid "e89241b3-eb96-47b2-ad83-0e7b51b9cc3c")
+			(uuid "19622e7a-f8f5-4ba8-bbab-a449bb66df31")
 		)
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/7c248bd3-8232-4777-a40c-eab53460cf85/1b14d1cb-dda2-44c5-97d1-a618f21bed66"
-					(reference "J1701")
+					(reference "#PWR0355")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 105.41 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "79ff4319-911e-4fad-b7aa-b306457ce9c8")
+		(property "Reference" "C185"
+			(at 108.331 113.1316 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uF"
+			(at 108.331 115.443 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 106.3752 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 105.41 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 105.41 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C19702"
+			(at 105.41 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Characteristics" ""
+			(at 105.41 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 105.41 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8c049be3-e9c4-405b-8341-1748ca53fe76")
+		)
+		(pin "2"
+			(uuid "56278087-9cdd-4eca-b73f-ffd44ec5f3aa")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/7c248bd3-8232-4777-a40c-eab53460cf85/1b14d1cb-dda2-44c5-97d1-a618f21bed66"
+					(reference "C185")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 132.08 129.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "87b75301-510a-4deb-a980-3e8de0f70d2f")
+		(property "Reference" "#PWR0104"
+			(at 132.08 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 132.207 133.9342 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 132.08 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 132.08 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ded000d8-f487-4c56-b769-6c422fb10f79")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/7c248bd3-8232-4777-a40c-eab53460cf85/1b14d1cb-dda2-44c5-97d1-a618f21bed66"
+					(reference "#PWR0104")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 99.06 118.11 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "99f279cc-c722-418b-858c-6431283e81dc")
+		(property "Reference" "#PWR0354"
+			(at 99.06 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 99.187 122.5042 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 99.06 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 99.06 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "20e06ea8-478f-460e-852f-b905edac978d")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/7c248bd3-8232-4777-a40c-eab53460cf85/1b14d1cb-dda2-44c5-97d1-a618f21bed66"
+					(reference "#PWR0354")
 					(unit 1)
 				)
 			)
@@ -1600,7 +1614,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9b2ce855-ce54-4b00-b1ca-416689063dea")
-		(property "Reference" "#PWR01703"
+		(property "Reference" "#PWR0103"
 			(at 111.76 85.09 0)
 			(effects
 				(font
@@ -1650,23 +1664,24 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/7c248bd3-8232-4777-a40c-eab53460cf85/1b14d1cb-dda2-44c5-97d1-a618f21bed66"
-					(reference "#PWR01703")
+					(reference "#PWR0103")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 158.75 100.33 0)
+		(lib_id "power:+5V")
+		(at 111.76 109.22 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "daea3883-1fad-42cf-a871-51c138b59e58")
-		(property "Reference" "#PWR01706"
-			(at 158.75 106.68 0)
+		(fields_autoplaced yes)
+		(uuid "d39643cf-d573-4070-a0d2-a15e961dee49")
+		(property "Reference" "#PWR0356"
+			(at 111.76 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1674,8 +1689,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 158.877 104.7242 0)
+		(property "Value" "+5V"
+			(at 111.76 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1683,7 +1698,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 158.75 100.33 0)
+			(at 111.76 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1692,7 +1707,72 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 158.75 100.33 0)
+			(at 111.76 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 111.76 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f031d521-9fd6-4cd1-adb1-6f506cd9df5e")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/7c248bd3-8232-4777-a40c-eab53460cf85/1b14d1cb-dda2-44c5-97d1-a618f21bed66"
+					(reference "#PWR0356")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 139.7 101.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "daea3883-1fad-42cf-a871-51c138b59e58")
+		(property "Reference" "#PWR0107"
+			(at 139.7 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 139.827 105.9942 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 139.7 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 139.7 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1701,7 +1781,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 158.75 100.33 0)
+			(at 139.7 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1715,89 +1795,24 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/7c248bd3-8232-4777-a40c-eab53460cf85/1b14d1cb-dda2-44c5-97d1-a618f21bed66"
-					(reference "#PWR01706")
+					(reference "#PWR0107")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 116.84 110.49 0)
+		(lib_id "Device:C")
+		(at 99.06 114.3 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "e6431aef-a94d-4d56-b79d-11d0473dd8d3")
-		(property "Reference" "#PWR01704"
-			(at 116.84 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 116.967 114.8842 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 116.84 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 116.84 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 116.84 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1721e906-3015-41c5-a94e-693e2c103b69")
-		)
-		(instances
-			(project "HALPI2"
-				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/7c248bd3-8232-4777-a40c-eab53460cf85/1b14d1cb-dda2-44c5-97d1-a618f21bed66"
-					(reference "#PWR01704")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic_MountingPin:Conn_01x04_MountingPin")
-		(at 158.75 90.17 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "eb60cb75-1123-40db-838a-735f2888703c")
-		(property "Reference" "J1702"
-			(at 161.29 90.5255 0)
+		(uuid "dffdb4fd-ef13-4d37-968a-714fcbe8ed38")
+		(property "Reference" "C184"
+			(at 96.139 113.1316 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1805,8 +1820,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "HC-1.0-4PLT"
-			(at 161.29 93.0655 0)
+		(property "Value" "1uF"
+			(at 96.139 115.443 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1814,8 +1829,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Hatlabs:JST_SH_HCTL_HC-1.0-4PLT_1x04-1MP_P1.00mm_Vertical"
-			(at 158.75 90.17 0)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 98.0948 118.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1824,7 +1839,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 158.75 90.17 0)
+			(at 99.06 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1832,8 +1847,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connectable mounting pin connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 158.75 90.17 0)
+		(property "Description" "Unpolarized capacitor"
+			(at 99.06 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1841,8 +1856,8 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2845372"
-			(at 158.75 90.17 0)
+		(property "LCSC" "C52923"
+			(at 99.06 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1851,7 +1866,7 @@
 			)
 		)
 		(property "Characteristics" ""
-			(at 158.75 90.17 0)
+			(at 99.06 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1860,7 +1875,103 @@
 			)
 		)
 		(property "LCSC Part" ""
-			(at 158.75 90.17 0)
+			(at 99.06 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6ec1b573-d8af-40f5-b68b-fd1bcfd6fc3c")
+		)
+		(pin "2"
+			(uuid "5c018d61-f79c-4907-8195-6cd1729934ea")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/7c248bd3-8232-4777-a40c-eab53460cf85/1b14d1cb-dda2-44c5-97d1-a618f21bed66"
+					(reference "C184")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic_MountingPin:Conn_01x04_MountingPin")
+		(at 139.7 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "eb60cb75-1123-40db-838a-735f2888703c")
+		(property "Reference" "J13"
+			(at 142.24 91.7955 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "HC-1.0-4PLT"
+			(at 142.24 94.3355 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Hatlabs:JST_SH_HCTL_HC-1.0-4PLT_1x04-1MP_P1.00mm_Vertical"
+			(at 139.7 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 139.7 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connectable mounting pin connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 139.7 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2845372"
+			(at 139.7 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Characteristics" ""
+			(at 139.7 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 139.7 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1868,7 +1979,7 @@
 			)
 		)
 		(property "JLCPCB_CORRECTION" "0;0.635;180"
-			(at 158.75 90.17 0)
+			(at 139.7 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1894,7 +2005,184 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/7c248bd3-8232-4777-a40c-eab53460cf85/1b14d1cb-dda2-44c5-97d1-a618f21bed66"
-					(reference "J1702")
+					(reference "J13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic_MountingPin:Conn_01x04_MountingPin")
+		(at 139.7 119.38 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ec368704-ebd9-42e4-8359-dab5cdc152fb")
+		(property "Reference" "J12"
+			(at 139.7 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "HC-1.0-4PLT"
+			(at 139.7 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Hatlabs:JST_SH_HCTL_HC-1.0-4PLT_1x04-1MP_P1.00mm_Vertical"
+			(at 139.7 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 139.7 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connectable mounting pin connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 139.7 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2845372"
+			(at 139.7 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Characteristics" ""
+			(at 139.7 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 139.7 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB_CORRECTION" "0;0.635;180"
+			(at 139.7 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0de6615d-08f2-49ec-b64e-fe56f3b0f96e")
+		)
+		(pin "2"
+			(uuid "c1377889-bc44-40ad-84a9-40a927792494")
+		)
+		(pin "3"
+			(uuid "a4e5cea0-39a3-4317-b2fe-10a9c9843ae7")
+		)
+		(pin "4"
+			(uuid "38685b5d-4338-4214-a72d-194d2278eaf3")
+		)
+		(pin "MP"
+			(uuid "64e9c894-f899-4d3f-91b8-7f590b295ead")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/7c248bd3-8232-4777-a40c-eab53460cf85/1b14d1cb-dda2-44c5-97d1-a618f21bed66"
+					(reference "J12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 139.7 129.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f67bd90c-b15e-45d7-a28a-f05f90743b7c")
+		(property "Reference" "#PWR0105"
+			(at 139.7 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 139.827 133.9342 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 139.7 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 139.7 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 139.7 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "72b4f650-3eb1-4b05-87a5-aaae36f2f9cc")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/7c248bd3-8232-4777-a40c-eab53460cf85/1b14d1cb-dda2-44c5-97d1-a618f21bed66"
+					(reference "#PWR0105")
 					(unit 1)
 				)
 			)

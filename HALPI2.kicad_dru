@@ -31,7 +31,7 @@
 
 (rule diff_90ohm_layer1_pair_clearance
     (condition "(AB.isCoupledDiffPair()) && (A.hasNetclass('Diff90ohm'))")
-    (layer F.Cu)
+    (layer outer)
     (constraint clearance (min 0.19mm)))
 
 (rule diff_90ohm_layer3
@@ -95,15 +95,15 @@
 #    (condition "((A.Type == 'Track' ) || (A.Type == 'Via')) && (A.intersectsCourtyard('${Class:fine_pitch}'))")
 #    (constraint clearance (min 0.1mm)))
 
-(rule "front_neckdown"
-    (condition "(A.Type != 'Zone') && (B.Type != 'Zone') && (A.intersectsFrontCourtyard('*'))")
-    (layer F.Cu)
-    (constraint clearance (min 0.1mm)))
-
-(rule "back_neckdown"
-    (condition "(A.Type != 'Zone') && (B.Type != 'Zone') && (A.intersectsBackCourtyard('*'))")
-    (layer B.Cu)
-    (constraint clearance (min 0.1mm)))
+#(rule "front_neckdown"
+#    (condition "(A.Type != 'Zone') && (B.Type != 'Zone') && (A.intersectsFrontCourtyard('*'))")
+#    (layer F.Cu)
+#    (constraint clearance (min 0.1mm)))
+#
+#(rule "back_neckdown"
+#    (condition "(A.Type != 'Zone') && (B.Type != 'Zone') && (A.intersectsBackCourtyard('*'))")
+#    (layer B.Cu)
+#    (constraint clearance (min 0.1mm)))
 
 # Routing vias gets difficult unless we allow tight spacing inside fine_pitch components.
 

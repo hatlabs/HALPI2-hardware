@@ -1435,6 +1435,176 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:D_Small"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at -1.27 2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "D_Small"
+				(at -3.81 -2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Diode, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "D"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "D_Small_0_1"
+				(polyline
+					(pts
+						(xy -0.762 0) (xy 0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.762 -1.016) (xy -0.762 1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -1.016) (xy -0.762 0) (xy 0.762 1.016) (xy 0.762 -1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_Small_1_1"
+				(pin passive line
+					(at -2.54 0 0)
+					(length 1.778)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 0 180)
+					(length 1.778)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:LED"
 			(pin_numbers
 				(hide yes)
@@ -4846,6 +5016,12 @@
 		(color 0 0 0 0)
 		(uuid "c8a9fcee-70ef-4a7f-a4ad-f6568f24acb3")
 	)
+	(junction
+		(at 232.41 121.92)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d5c2bd01-d051-4d21-956c-f1a90b6d89b5")
+	)
 	(no_connect
 		(at 55.88 67.31)
 		(uuid "07cccf30-509d-43e1-af9f-a007f311b4c2")
@@ -5754,6 +5930,16 @@
 			(type default)
 		)
 		(uuid "3cf16fe6-becf-4497-a67a-21cbb23b34b5")
+	)
+	(wire
+		(pts
+			(xy 229.87 121.92) (xy 232.41 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d1be7b0-8fa4-40b6-9be7-17bbb39d5f1e")
 	)
 	(polyline
 		(pts
@@ -7916,7 +8102,7 @@
 		(uuid "c6c95371-640e-47ab-8ae1-60f13de662d6")
 	)
 	(label "nRPIBOOT"
-		(at 232.41 121.92 180)
+		(at 224.79 121.92 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8256,21 +8442,6 @@
 	(rule_area
 		(polyline
 			(pts
-				(xy 44.45 39.37) (xy 46.99 39.37) (xy 46.99 64.77) (xy 44.45 64.77)
-			)
-			(stroke
-				(width 0)
-				(type dash)
-			)
-			(fill
-				(type none)
-			)
-			(uuid 3d16f144-23e7-4783-8b0b-7cbfecaf3a70)
-		)
-	)
-	(rule_area
-		(polyline
-			(pts
 				(xy 113.03 143.51) (xy 110.49 143.51) (xy 110.49 68.58) (xy 113.03 68.58)
 			)
 			(stroke
@@ -8280,7 +8451,7 @@
 			(fill
 				(type none)
 			)
-			(uuid 7da4ea13-5cbf-4ae7-9c75-699e1e5ae149)
+			(uuid 5725e603-2b6f-4ffc-847d-7a8c253c5f58)
 		)
 	)
 	(rule_area
@@ -8295,7 +8466,22 @@
 			(fill
 				(type none)
 			)
-			(uuid d9288a2b-a38a-4449-8c1d-4f6f822cc705)
+			(uuid a8ff59a7-10b0-42eb-8828-2785ce2a8dcc)
+		)
+	)
+	(rule_area
+		(polyline
+			(pts
+				(xy 44.45 39.37) (xy 46.99 39.37) (xy 46.99 64.77) (xy 44.45 64.77)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type none)
+			)
+			(uuid aff10242-fd9f-4065-b593-e4059915e43b)
 		)
 	)
 	(rule_area
@@ -8310,7 +8496,7 @@
 			(fill
 				(type none)
 			)
-			(uuid df341a21-a9d6-4a5d-91f4-6809f6e7b267)
+			(uuid fc422959-d03f-4d9f-8d19-808ea0a8a1c5)
 		)
 	)
 	(netclass_flag ""
@@ -8745,6 +8931,30 @@
 				)
 			)
 		)
+		(property "Field8" ""
+			(at 195.58 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartNumber" ""
+			(at 195.58 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 195.58 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "fc797724-1230-4f21-9a10-8c17fca99dd1")
 		)
@@ -9046,6 +9256,30 @@
 				)
 			)
 		)
+		(property "Field8" ""
+			(at 247.65 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartNumber" ""
+			(at 247.65 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 247.65 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "4e86201d-1017-4c4b-9a7c-bad84092a98d")
 		)
@@ -9256,6 +9490,30 @@
 				)
 			)
 		)
+		(property "Field8" ""
+			(at 232.41 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartNumber" ""
+			(at 232.41 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 232.41 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "b25d06a1-5705-482a-ad05-6760e2fd445b")
 		)
@@ -9334,6 +9592,30 @@
 			)
 		)
 		(property "LCSC Part" ""
+			(at 257.81 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" ""
+			(at 257.81 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartNumber" ""
+			(at 257.81 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
 			(at 257.81 113.03 0)
 			(effects
 				(font
@@ -9583,6 +9865,30 @@
 			)
 		)
 		(property "JLCPCB_CORRECTION" ""
+			(at 81.28 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" ""
+			(at 81.28 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartNumber" ""
+			(at 81.28 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
 			(at 81.28 87.63 0)
 			(effects
 				(font
@@ -10101,10 +10407,170 @@
 				)
 			)
 		)
+		(property "Field8" ""
+			(at 207.01 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartNumber" ""
+			(at 207.01 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 207.01 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(instances
 			(project ""
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/7c248bd3-8232-4777-a40c-eab53460cf85"
 					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Small")
+		(at 227.33 121.92 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c6beaf3d-dfee-42ba-82b4-3c3e35f9a54c")
+		(property "Reference" "D43"
+			(at 227.33 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N4148WT"
+			(at 227.33 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-523"
+			(at 227.33 121.92 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 227.33 121.92 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Diode, small symbol"
+			(at 227.33 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 227.33 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 227.33 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C7420320"
+			(at 227.33 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Characteristics" ""
+			(at 227.33 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 227.33 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" ""
+			(at 227.33 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartNumber" ""
+			(at 227.33 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 227.33 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "8a3db582-eff6-4c0e-a50c-5ed775e87d5a")
+		)
+		(pin "1"
+			(uuid "272a4172-6af4-458e-83bd-d1cac76c912d")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/7c248bd3-8232-4777-a40c-eab53460cf85"
+					(reference "D43")
 					(unit 1)
 				)
 			)
@@ -10248,6 +10714,30 @@
 				)
 			)
 		)
+		(property "Field8" ""
+			(at 232.41 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartNumber" ""
+			(at 232.41 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 232.41 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "41c99eba-a1bb-4e86-8043-3002e77434d3")
 		)
@@ -10337,6 +10827,30 @@
 			)
 		)
 		(property "LCSC Part" ""
+			(at 246.38 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" ""
+			(at 246.38 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartNumber" ""
+			(at 246.38 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
 			(at 246.38 147.32 0)
 			(effects
 				(font

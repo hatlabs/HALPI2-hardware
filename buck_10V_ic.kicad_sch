@@ -1581,6 +1581,17 @@
 		)
 		(uuid "346a69c9-5cf7-4daa-a102-e51d5325ace8")
 	)
+	(text "Power save enabled,\ninternal regulator\nenabled"
+		(exclude_from_sim no)
+		(at 100.33 135.636 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "388c0e8e-93f6-44fa-b3fe-8578e804da70")
+	)
 	(text "FB voltage divider designed to have\nVout of 10.25V"
 		(exclude_from_sim no)
 		(at 190.754 76.454 0)
@@ -1591,6 +1602,26 @@
 			(justify left bottom)
 		)
 		(uuid "39b7a288-f0bd-464c-9074-70b1bd35016d")
+	)
+	(text "Soft start time\nabout 16 ms"
+		(exclude_from_sim no)
+		(at 138.43 137.668 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "9adcf22f-c34c-48a1-a6cd-730ac7bc848a")
+	)
+	(text "Snubber circuit"
+		(exclude_from_sim no)
+		(at 180.34 130.556 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "bf52ef58-9fae-4456-b076-c0bac6dddb15")
 	)
 	(text "First stage buck converter"
 		(exclude_from_sim no)
@@ -1605,13 +1636,19 @@
 	)
 	(text "Startup at 9.8V"
 		(exclude_from_sim no)
-		(at 73.66 169.926 0)
+		(at 78.232 168.91 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
 		(uuid "da4c958e-de0a-4ea9-8ab8-40ff581b2593")
+	)
+	(junction
+		(at 92.71 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0fdc3997-626b-4ba0-917f-b632aa7df8bc")
 	)
 	(junction
 		(at 162.56 85.09)
@@ -1626,12 +1663,6 @@
 		(uuid "36f29067-d8c7-4323-b6cb-91ff231bf3e4")
 	)
 	(junction
-		(at 72.39 81.28)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4ad47eee-2152-4bee-85a6-8f249c8b7373")
-	)
-	(junction
 		(at 203.2 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1644,22 +1675,10 @@
 		(uuid "60b5a519-4a87-4cc7-b456-1d0d57b1257a")
 	)
 	(junction
-		(at 95.25 81.28)
+		(at 81.28 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "6598f79e-9d82-4c23-8104-c424995faa4f")
-	)
-	(junction
-		(at 91.44 81.28)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "69c5ce95-96c3-4aea-a9a5-22aa4d315a08")
-	)
-	(junction
-		(at 66.04 81.28)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "750d4dcd-4c8c-4b2b-8ad1-2c2cdf3a14f6")
+		(uuid "7168cd37-9b3d-44bb-96ae-44edaa4dd104")
 	)
 	(junction
 		(at 195.58 97.79)
@@ -1680,6 +1699,12 @@
 		(uuid "78fd1fa8-7564-4b3c-aa49-21aac7339efa")
 	)
 	(junction
+		(at 87.63 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8a089993-43c5-4037-b409-ab0a0010c1b5")
+	)
+	(junction
 		(at 231.14 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1692,7 +1717,7 @@
 		(uuid "9fbb0dd8-1841-4f83-bca9-ad41e1fe7084")
 	)
 	(junction
-		(at 59.69 81.28)
+		(at 59.69 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b278ee22-174d-4f23-acc3-ebf7eba5011e")
@@ -1716,10 +1741,16 @@
 		(uuid "ceabdd0a-d79d-40e8-bda9-f858def33405")
 	)
 	(junction
-		(at 85.09 81.28)
+		(at 72.39 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "f4306744-9e9f-4bf3-8beb-43b974a1ffb2")
+		(uuid "e3d94a89-8ce8-4167-bc06-bfa66745d240")
+	)
+	(junction
+		(at 66.04 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e6bc7107-dc05-48af-8407-3f4fc9fa619c")
 	)
 	(no_connect
 		(at 149.86 100.33)
@@ -1841,7 +1872,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 81.28) (xy 59.69 81.28)
+			(xy 57.15 85.09) (xy 59.69 85.09)
 		)
 		(stroke
 			(width 0)
@@ -1878,6 +1909,16 @@
 			(type default)
 		)
 		(uuid "1b67fc04-d247-4c35-8f43-9374cc193328")
+	)
+	(wire
+		(pts
+			(xy 81.28 81.28) (xy 92.71 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "202cfd59-3771-47b3-8af5-5ea407111684")
 	)
 	(wire
 		(pts
@@ -2011,7 +2052,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 100.33) (xy 91.44 101.6)
+			(xy 92.71 93.98) (xy 92.71 101.6)
 		)
 		(stroke
 			(width 0)
@@ -2031,6 +2072,16 @@
 	)
 	(wire
 		(pts
+			(xy 72.39 88.9) (xy 72.39 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "499d0c78-2921-454f-8784-41381081a337")
+	)
+	(wire
+		(pts
 			(xy 138.43 156.21) (xy 138.43 153.67)
 		)
 		(stroke
@@ -2041,16 +2092,6 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 81.28) (xy 100.33 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "53bcde4d-e6d8-458b-99a2-e59242d9586c")
-	)
-	(wire
-		(pts
 			(xy 231.14 101.6) (xy 231.14 102.87)
 		)
 		(stroke
@@ -2058,16 +2099,6 @@
 			(type default)
 		)
 		(uuid "5781b61a-de66-43aa-8b7e-d1b93c827e65")
-	)
-	(wire
-		(pts
-			(xy 85.09 92.71) (xy 85.09 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "58991cd6-d25d-46a8-9f7a-ae4d02f71e88")
 	)
 	(wire
 		(pts
@@ -2091,16 +2122,6 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 81.28) (xy 72.39 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6583a628-8735-4a4a-9f77-2571432e310d")
-	)
-	(wire
-		(pts
 			(xy 162.56 90.17) (xy 165.1 90.17)
 		)
 		(stroke
@@ -2121,7 +2142,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 81.28) (xy 85.09 81.28)
+			(xy 72.39 85.09) (xy 81.28 85.09)
 		)
 		(stroke
 			(width 0)
@@ -2141,6 +2162,16 @@
 	)
 	(wire
 		(pts
+			(xy 180.34 142.24) (xy 180.34 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ea1d132-3894-411d-b43c-37823f5863db")
+	)
+	(wire
+		(pts
 			(xy 109.22 143.51) (xy 109.22 146.05)
 		)
 		(stroke
@@ -2151,7 +2182,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 81.28) (xy 66.04 81.28)
+			(xy 59.69 85.09) (xy 66.04 85.09)
 		)
 		(stroke
 			(width 0)
@@ -2211,7 +2242,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 92.71) (xy 66.04 101.6)
+			(xy 66.04 96.52) (xy 66.04 101.6)
 		)
 		(stroke
 			(width 0)
@@ -2251,16 +2282,6 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 81.28) (xy 66.04 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "94761a38-77ab-4a00-b506-c0b52bd153ed")
-	)
-	(wire
-		(pts
 			(xy 245.11 100.33) (xy 245.11 102.87)
 		)
 		(stroke
@@ -2271,23 +2292,13 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 81.28) (xy 91.44 81.28)
+			(xy 81.28 85.09) (xy 81.28 81.28)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9b4b993f-1b45-4747-820c-df1848588686")
-	)
-	(wire
-		(pts
-			(xy 85.09 100.33) (xy 85.09 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9d019451-6bfe-4ec1-8e3f-f30173344be2")
+		(uuid "9bd149d0-efac-4317-80bd-4e3718fb4a27")
 	)
 	(wire
 		(pts
@@ -2371,17 +2382,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 81.28) (xy 95.25 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c017b9ad-c728-4abb-8c43-d9fdfb7c09fc")
-	)
-	(wire
-		(pts
-			(xy 72.39 92.71) (xy 72.39 101.6)
+			(xy 72.39 96.52) (xy 72.39 101.6)
 		)
 		(stroke
 			(width 0)
@@ -2401,7 +2402,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 81.28) (xy 72.39 81.28)
+			(xy 66.04 85.09) (xy 72.39 85.09)
 		)
 		(stroke
 			(width 0)
@@ -2418,6 +2419,46 @@
 			(type default)
 		)
 		(uuid "c8423b2d-6c28-409c-a142-61b9edb9b624")
+	)
+	(wire
+		(pts
+			(xy 66.04 88.9) (xy 66.04 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9fc457b-f01e-4ffc-bed1-77db47f39a7f")
+	)
+	(wire
+		(pts
+			(xy 87.63 93.98) (xy 87.63 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca69c13c-d3d5-40e3-ad1b-4e2faa4acf8c")
+	)
+	(wire
+		(pts
+			(xy 180.34 152.4) (xy 180.34 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cbafcc24-b865-4c3b-9559-5a0f4b81133d")
+	)
+	(wire
+		(pts
+			(xy 87.63 85.09) (xy 114.3 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cfddcfd6-a06f-4bc5-ab17-01d7f6ffef91")
 	)
 	(wire
 		(pts
@@ -2461,13 +2502,13 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 81.28) (xy 95.25 85.09)
+			(xy 92.71 81.28) (xy 100.33 81.28)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "dd405c7c-dc82-4025-9313-938899a0854d")
+		(uuid "df20591c-9ba9-4a98-ade7-78f905ec7e27")
 	)
 	(wire
 		(pts
@@ -2511,7 +2552,7 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 85.09) (xy 114.3 85.09)
+			(xy 81.28 85.09) (xy 87.63 85.09)
 		)
 		(stroke
 			(width 0)
@@ -2541,7 +2582,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 92.71) (xy 91.44 81.28)
+			(xy 92.71 86.36) (xy 92.71 81.28)
 		)
 		(stroke
 			(width 0)
@@ -2608,6 +2649,16 @@
 			(justify left bottom)
 		)
 		(uuid "242337f7-068a-4efd-a78e-2daf6fa25398")
+	)
+	(label "SNUB_"
+		(at 180.34 144.78 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "299405ba-636e-4b85-940a-ee70eaff989d")
 	)
 	(label "MODE"
 		(at 110.49 100.33 180)
@@ -2809,6 +2860,16 @@
 		)
 		(uuid "ede2fcd0-386f-47e3-9dcc-bde846fc1050")
 	)
+	(label "SW"
+		(at 180.34 134.62 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f151981f-87ee-425d-ab42-db62157b5ee1")
+	)
 	(hierarchical_label "FB"
 		(shape input)
 		(at 210.82 97.79 0)
@@ -2855,7 +2916,7 @@
 	)
 	(hierarchical_label "Vin"
 		(shape input)
-		(at 57.15 81.28 180)
+		(at 57.15 85.09 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3337,6 +3398,30 @@
 				)
 			)
 		)
+		(property "Field8" ""
+			(at 76.2 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartNumber" ""
+			(at 76.2 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 76.2 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "bc6b9170-d0e9-4047-825b-efc265383015")
 		)
@@ -3426,6 +3511,30 @@
 			)
 		)
 		(property "LCSC Part" ""
+			(at 46.99 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" ""
+			(at 46.99 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartNumber" ""
+			(at 46.99 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
 			(at 46.99 152.4 0)
 			(effects
 				(font
@@ -3527,6 +3636,30 @@
 				)
 			)
 		)
+		(property "Field8" ""
+			(at 146.05 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartNumber" ""
+			(at 146.05 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 146.05 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "66759c82-c99c-46ac-98c2-854c82cb529c")
 		)
@@ -3609,7 +3742,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 91.44 101.6 0)
+		(at 92.71 101.6 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3617,7 +3750,7 @@
 		(dnp no)
 		(uuid "0e55657b-dcbb-423c-953e-3a3be50d210d")
 		(property "Reference" "#PWR0332"
-			(at 91.44 107.95 0)
+			(at 92.71 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3626,7 +3759,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 91.567 105.9942 0)
+			(at 92.837 105.9942 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3634,7 +3767,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 91.44 101.6 0)
+			(at 92.71 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3643,7 +3776,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 91.44 101.6 0)
+			(at 92.71 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3652,7 +3785,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 91.44 101.6 0)
+			(at 92.71 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3823,7 +3956,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "33nF"
+		(property "Value" "100nF"
 			(at 142.24 151.1299 0)
 			(effects
 				(font
@@ -3859,7 +3992,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "0603"
+		(property "LCSC" "C14663"
 			(at 138.43 149.86 0)
 			(effects
 				(font
@@ -3877,7 +4010,23 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part" ""
+		(property "Field8" ""
+			(at 138.43 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartNumber" ""
+			(at 138.43 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
 			(at 138.43 149.86 0)
 			(effects
 				(font
@@ -3902,7 +4051,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 72.39 88.9 0)
+		(at 72.39 92.71 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3911,7 +4060,7 @@
 		(fields_autoplaced yes)
 		(uuid "23d75357-ee40-4cb5-ac07-69fbbedf9d64")
 		(property "Reference" "C172"
-			(at 76.2 87.6299 0)
+			(at 76.2 91.4399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3920,7 +4069,7 @@
 			)
 		)
 		(property "Value" "10uF/50V"
-			(at 76.2 90.1699 0)
+			(at 76.2 93.9799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3929,7 +4078,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
-			(at 73.3552 92.71 0)
+			(at 73.3552 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3938,7 +4087,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 72.39 88.9 0)
+			(at 72.39 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3947,7 +4096,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 72.39 88.9 0)
+			(at 72.39 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3956,7 +4105,7 @@
 			)
 		)
 		(property "LCSC" "C13585"
-			(at 72.39 88.9 0)
+			(at 72.39 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3965,7 +4114,7 @@
 			)
 		)
 		(property "Characteristics" ""
-			(at 72.39 88.9 0)
+			(at 72.39 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3974,7 +4123,31 @@
 			)
 		)
 		(property "LCSC Part" ""
-			(at 72.39 88.9 0)
+			(at 72.39 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" ""
+			(at 72.39 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartNumber" ""
+			(at 72.39 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 72.39 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3991,72 +4164,6 @@
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69/71cb3fa2-93c3-4e2e-bb44-1fabbacadff2"
 					(reference "C172")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 85.09 101.6 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "2799473d-d88a-4c30-b77c-8498adeaf95f")
-		(property "Reference" "#PWR0331"
-			(at 85.09 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 84.963 105.9942 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 85.09 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 85.09 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 85.09 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3097a6c7-3a6c-4e83-a30f-90417efcfb71")
-		)
-		(instances
-			(project "HALPI2"
-				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69/71cb3fa2-93c3-4e2e-bb44-1fabbacadff2"
-					(reference "#PWR0331")
 					(unit 1)
 				)
 			)
@@ -4153,6 +4260,30 @@
 				)
 			)
 		)
+		(property "Field8" ""
+			(at 245.11 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartNumber" ""
+			(at 245.11 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 245.11 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f5f5d266-b6cb-40e1-8f6c-80e96cd718a6")
 		)
@@ -4242,6 +4373,30 @@
 			)
 		)
 		(property "LCSC Part" ""
+			(at 76.2 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" ""
+			(at 76.2 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartNumber" ""
+			(at 76.2 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
 			(at 76.2 144.78 0)
 			(effects
 				(font
@@ -4485,6 +4640,30 @@
 				)
 			)
 		)
+		(property "Field8" ""
+			(at 231.14 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartNumber" ""
+			(at 231.14 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 231.14 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "2fb831f8-6467-4142-b7ae-3be35a14c18b")
 		)
@@ -4502,7 +4681,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Polarized")
-		(at 66.04 88.9 0)
+		(at 66.04 92.71 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4511,7 +4690,7 @@
 		(dnp no)
 		(uuid "381bc581-5099-4831-9e03-3f1f47343113")
 		(property "Reference" "C170"
-			(at 62.23 86.7409 0)
+			(at 62.23 90.5509 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4520,7 +4699,7 @@
 			)
 		)
 		(property "Value" "47uF/50V"
-			(at 62.23 89.2809 0)
+			(at 62.23 93.0909 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4528,8 +4707,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 65.0748 92.71 0)
+		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x7.7"
+			(at 65.0748 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4538,7 +4717,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 66.04 88.9 0)
+			(at 66.04 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4547,12 +4726,45 @@
 			)
 		)
 		(property "Description" "Polarized capacitor"
-			(at 66.04 88.9 0)
+			(at 66.04 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "LCSC" "C44606723"
+			(at 66.04 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field8" ""
+			(at 66.04 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartNumber" ""
+			(at 66.04 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 66.04 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -4572,7 +4784,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 91.44 96.52 0)
+		(at 92.71 90.17 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4581,7 +4793,7 @@
 		(fields_autoplaced yes)
 		(uuid "3df30de5-ff6c-4b88-98ee-b0eda114d16d")
 		(property "Reference" "C174"
-			(at 95.25 95.2499 0)
+			(at 96.52 88.8999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4590,7 +4802,7 @@
 			)
 		)
 		(property "Value" "1uF/50V"
-			(at 95.25 97.7899 0)
+			(at 96.52 91.4399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4599,7 +4811,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 92.4052 100.33 0)
+			(at 93.6752 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4608,7 +4820,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 91.44 96.52 0)
+			(at 92.71 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4617,7 +4829,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 91.44 96.52 0)
+			(at 92.71 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4626,7 +4838,7 @@
 			)
 		)
 		(property "LCSC" "C15849"
-			(at 91.44 96.52 0)
+			(at 92.71 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4635,7 +4847,7 @@
 			)
 		)
 		(property "Characteristics" ""
-			(at 91.44 96.52 0)
+			(at 92.71 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4644,7 +4856,31 @@
 			)
 		)
 		(property "LCSC Part" ""
-			(at 91.44 96.52 0)
+			(at 92.71 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" ""
+			(at 92.71 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartNumber" ""
+			(at 92.71 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 92.71 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4745,6 +4981,30 @@
 				)
 			)
 		)
+		(property "Field8" ""
+			(at 158.75 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartNumber" ""
+			(at 158.75 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 158.75 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "94942c9b-bdef-431d-a18e-e1ee88cce275")
 		)
@@ -4831,6 +5091,30 @@
 			)
 		)
 		(property "LCSC Part" ""
+			(at 158.75 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" ""
+			(at 158.75 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartNumber" ""
+			(at 158.75 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
 			(at 158.75 93.98 0)
 			(effects
 				(font
@@ -4986,7 +5270,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 59.69 81.28 0)
+		(at 59.69 85.09 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4995,7 +5279,7 @@
 		(dnp no)
 		(uuid "579790c3-a0f5-42a1-b633-03c7b230d391")
 		(property "Reference" "TP44"
-			(at 62.23 79.2481 0)
+			(at 62.23 83.0581 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5004,7 +5288,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 62.23 76.7081 0)
+			(at 62.23 80.5181 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5013,7 +5297,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 54.61 81.28 0)
+			(at 54.61 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5022,7 +5306,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 54.61 81.28 0)
+			(at 54.61 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5031,7 +5315,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 59.69 81.28 0)
+			(at 59.69 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5040,7 +5324,7 @@
 			)
 		)
 		(property "Characteristics" ""
-			(at 59.69 81.28 0)
+			(at 59.69 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5049,7 +5333,31 @@
 			)
 		)
 		(property "LCSC Part" ""
-			(at 59.69 81.28 0)
+			(at 59.69 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" ""
+			(at 59.69 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartNumber" ""
+			(at 59.69 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 59.69 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5139,6 +5447,30 @@
 			)
 		)
 		(property "LCSC Part" ""
+			(at 181.61 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" ""
+			(at 181.61 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartNumber" ""
+			(at 181.61 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
 			(at 181.61 90.17 0)
 			(effects
 				(font
@@ -5302,6 +5634,30 @@
 			)
 		)
 		(property "LCSC Part" ""
+			(at 132.08 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" ""
+			(at 132.08 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartNumber" ""
+			(at 132.08 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
 			(at 132.08 96.52 0)
 			(effects
 				(font
@@ -5554,6 +5910,30 @@
 				)
 			)
 		)
+		(property "Field8" ""
+			(at 121.92 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartNumber" ""
+			(at 121.92 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 121.92 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "3bb041f9-21f6-4601-8756-64a626d19665")
 		)
@@ -5643,6 +6023,30 @@
 			)
 		)
 		(property "LCSC Part" ""
+			(at 67.31 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" ""
+			(at 67.31 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartNumber" ""
+			(at 67.31 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
 			(at 67.31 154.94 0)
 			(effects
 				(font
@@ -5746,6 +6150,30 @@
 				)
 			)
 		)
+		(property "Field8" ""
+			(at 195.58 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartNumber" ""
+			(at 195.58 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 195.58 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a3e5e205-0281-4252-8dc5-a0887e69f4e0")
 		)
@@ -5756,6 +6184,71 @@
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69/71cb3fa2-93c3-4e2e-bb44-1fabbacadff2"
 					(reference "R129")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 87.63 101.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "95890d92-79d9-4776-98dd-600b6d4fd403")
+		(property "Reference" "#PWR0354"
+			(at 87.63 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 87.757 105.9942 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 87.63 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 87.63 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 87.63 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "407b905c-cdfa-4b18-871d-1fa6ada2a9c1")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69/71cb3fa2-93c3-4e2e-bb44-1fabbacadff2"
+					(reference "#PWR0354")
 					(unit 1)
 				)
 			)
@@ -5905,6 +6398,30 @@
 				)
 			)
 		)
+		(property "Field8" ""
+			(at 168.91 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartNumber" ""
+			(at 168.91 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 168.91 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f09edb2e-b125-494e-9b47-477515f87b0a")
 		)
@@ -6016,6 +6533,30 @@
 				)
 			)
 		)
+		(property "Field8" ""
+			(at 175.26 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartNumber" ""
+			(at 175.26 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 175.26 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "4fe6403e-c592-413b-9f28-14f9071ce760")
 		)
@@ -6103,6 +6644,30 @@
 				)
 			)
 		)
+		(property "Field8" ""
+			(at 203.2 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartNumber" ""
+			(at 203.2 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 203.2 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "bb8f6208-70d7-4d5d-a177-91cd2d359d82")
 		)
@@ -6110,6 +6675,125 @@
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69/71cb3fa2-93c3-4e2e-bb44-1fabbacadff2"
 					(reference "TP46")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 180.34 148.59 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(uuid "a4eb0113-c4fa-447b-87ca-afe33084d935")
+		(property "Reference" "C188"
+			(at 183.261 147.4216 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1nF"
+			(at 183.261 149.733 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 181.3052 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 180.34 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 180.34 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 180.34 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Characteristics" ""
+			(at 180.34 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 180.34 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" ""
+			(at 180.34 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartNumber" ""
+			(at 180.34 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 180.34 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "abc1ffc9-8bf6-4591-84e6-115a5e788dd9")
+		)
+		(pin "2"
+			(uuid "a708a7ea-7dca-4c7c-9361-fba071514842")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69/71cb3fa2-93c3-4e2e-bb44-1fabbacadff2"
+					(reference "C188")
 					(unit 1)
 				)
 			)
@@ -6189,6 +6873,30 @@
 			)
 		)
 		(property "LCSC Part" ""
+			(at 109.22 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" ""
+			(at 109.22 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartNumber" ""
+			(at 109.22 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
 			(at 109.22 149.86 0)
 			(effects
 				(font
@@ -6357,6 +7065,30 @@
 				)
 			)
 		)
+		(property "Field8" ""
+			(at 195.58 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartNumber" ""
+			(at 195.58 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 195.58 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "0e003469-98ef-4b43-8be6-679e9e1f0417")
 		)
@@ -6503,6 +7235,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 180.34 156.21 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c4c7f65a-dbbe-43f2-9ccf-809563c882b2")
+		(property "Reference" "#PWR0355"
+			(at 180.34 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 180.467 160.6042 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 180.34 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 180.34 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 180.34 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "50778517-df62-44ea-99f9-4b4a7a845534")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69/71cb3fa2-93c3-4e2e-bb44-1fabbacadff2"
+					(reference "#PWR0355")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 132.08 59.69 180)
 		(unit 1)
@@ -6576,6 +7373,30 @@
 			)
 		)
 		(property "LCSC Part" ""
+			(at 132.08 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" ""
+			(at 132.08 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartNumber" ""
+			(at 132.08 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
 			(at 132.08 59.69 0)
 			(effects
 				(font
@@ -6679,6 +7500,30 @@
 				)
 			)
 		)
+		(property "Field8" ""
+			(at 161.29 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartNumber" ""
+			(at 161.29 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 161.29 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "c2893a6b-db56-4ded-a547-ced2df31c8ab")
 		)
@@ -6760,6 +7605,126 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 180.34 138.43 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "d3211d2b-9dab-45a4-911f-55dc3675739b")
+		(property "Reference" "R135"
+			(at 182.88 137.1599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "0R"
+			(at 182.88 139.6999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 182.118 138.43 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 180.34 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 180.34 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 180.34 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Characteristics" ""
+			(at 180.34 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 180.34 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" ""
+			(at 180.34 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartNumber" ""
+			(at 180.34 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 180.34 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d5c870c7-4587-4500-a87e-655bc955199c")
+		)
+		(pin "2"
+			(uuid "3dc3f536-1239-4497-b113-2c5ffaafce43")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69/71cb3fa2-93c3-4e2e-bb44-1fabbacadff2"
+					(reference "R135")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 132.08 53.34 270)
 		(unit 1)
@@ -6824,6 +7789,30 @@
 			)
 		)
 		(property "LCSC Part" ""
+			(at 132.08 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" ""
+			(at 132.08 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartNumber" ""
+			(at 132.08 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
 			(at 132.08 53.34 0)
 			(effects
 				(font
@@ -6925,6 +7914,30 @@
 				)
 			)
 		)
+		(property "Field8" ""
+			(at 95.25 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartNumber" ""
+			(at 95.25 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 95.25 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "3a753927-8940-4780-aef3-38e957af6cd6")
 		)
@@ -6935,6 +7948,126 @@
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69/71cb3fa2-93c3-4e2e-bb44-1fabbacadff2"
 					(reference "C175")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 87.63 97.79 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "efa6e119-6097-4cce-8845-8275781466f4")
+		(property "Reference" "C187"
+			(at 83.82 96.5199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF/50V"
+			(at 83.82 99.0599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 86.6648 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 87.63 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 87.63 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C15849"
+			(at 87.63 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Characteristics" ""
+			(at 87.63 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 87.63 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" ""
+			(at 87.63 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartNumber" ""
+			(at 87.63 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 87.63 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5dc124b3-a351-41d8-9c32-696b8f2fa14e")
+		)
+		(pin "2"
+			(uuid "7ce06c6e-8fd8-4a65-949f-5119e3971d06")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69/71cb3fa2-93c3-4e2e-bb44-1fabbacadff2"
+					(reference "C187")
 					(unit 1)
 				)
 			)
@@ -7021,6 +8154,30 @@
 				)
 			)
 		)
+		(property "Field8" ""
+			(at 161.29 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartNumber" ""
+			(at 161.29 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 161.29 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "bea51b24-23fe-49d8-9b9a-06a6372c2862")
 		)
@@ -7031,101 +8188,6 @@
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69/71cb3fa2-93c3-4e2e-bb44-1fabbacadff2"
 					(reference "C179")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 85.09 96.52 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "faeb4516-77de-4061-8d53-30041cb035fc")
-		(property "Reference" "C173"
-			(at 81.28 95.2499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "1uF/50V"
-			(at 81.28 97.7899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 86.0552 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 85.09 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 85.09 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C15849"
-			(at 85.09 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Characteristics" ""
-			(at 85.09 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" ""
-			(at 85.09 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "278daac8-ddf3-4dc4-ac0b-e60a29aecf69")
-		)
-		(pin "2"
-			(uuid "e07935e3-ac96-4eb2-adc5-14e30622bc23")
-		)
-		(instances
-			(project "HALPI2"
-				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69/71cb3fa2-93c3-4e2e-bb44-1fabbacadff2"
-					(reference "C173")
 					(unit 1)
 				)
 			)

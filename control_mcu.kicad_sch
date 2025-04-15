@@ -4853,17 +4853,6 @@
 		)
 		(uuid "0209c79d-a724-4d3b-b3d0-281f49befb0a")
 	)
-	(text "TODO: Rescale"
-		(exclude_from_sim no)
-		(at 36.83 77.724 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 245 0 0 1)
-			)
-		)
-		(uuid "20ed5657-596e-44bc-8d2d-29dadca38525")
-	)
 	(text "Scale Vin down to ADC input"
 		(exclude_from_sim no)
 		(at 18.288 71.628 0)
@@ -4932,7 +4921,7 @@
 	)
 	(text "Detect whether the\nCM has shut down"
 		(exclude_from_sim no)
-		(at 196.85 102.87 0)
+		(at 197.358 106.934 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5297,14 +5286,6 @@
 		(at 162.56 68.58)
 		(uuid "94bb103c-3b19-4958-8418-1a9b7fd8dcf0")
 	)
-	(no_connect
-		(at 162.56 106.68)
-		(uuid "b2aa5280-c543-4cb8-9b65-f9d71c0d9925")
-	)
-	(no_connect
-		(at 162.56 109.22)
-		(uuid "c78bf98a-6c91-4560-ab20-d9c5dffa89c5")
-	)
 	(bus_entry
 		(at 40.64 187.96)
 		(size -2.54 2.54)
@@ -5584,6 +5565,16 @@
 			(type default)
 		)
 		(uuid "0f188a47-9067-4fd0-9faa-79f7054656fc")
+	)
+	(wire
+		(pts
+			(xy 162.56 106.68) (xy 162.56 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f2355a3-4492-4a1b-a279-0f54e7300865")
 	)
 	(wire
 		(pts
@@ -5897,6 +5888,16 @@
 	)
 	(wire
 		(pts
+			(xy 162.56 107.95) (xy 163.83 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37eef013-b3cb-4dc0-bf1d-6cc8853b5f58")
+	)
+	(wire
+		(pts
 			(xy 83.82 73.66) (xy 86.36 73.66)
 		)
 		(stroke
@@ -5934,6 +5935,16 @@
 			(type default)
 		)
 		(uuid "394759ad-d3da-4637-ac82-f00dc538d71f")
+	)
+	(wire
+		(pts
+			(xy 162.56 110.49) (xy 163.83 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "395715f8-70b1-4675-bc50-a99d22b36b5b")
 	)
 	(wire
 		(pts
@@ -7687,6 +7698,16 @@
 	)
 	(wire
 		(pts
+			(xy 162.56 109.22) (xy 162.56 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4b3fba4-e545-44b8-ab3d-170f997c5a4b")
+	)
+	(wire
+		(pts
 			(xy 33.02 149.86) (xy 21.59 149.86)
 		)
 		(stroke
@@ -7815,6 +7836,16 @@
 		)
 		(uuid "11170e1d-837f-43c1-8bc6-93d6d0a48240")
 	)
+	(label "GPIO17"
+		(at 247.65 123.19 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "13dd3d62-af23-4589-b8ef-65c7464eba43")
+	)
 	(label "QSPI_SD3"
 		(at 110.49 96.52 180)
 		(effects
@@ -7864,6 +7895,16 @@
 			(justify left bottom)
 		)
 		(uuid "1865af64-fb69-4f37-8389-eb267d383387")
+	)
+	(label "GPIO16"
+		(at 247.65 118.11 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "20699caa-d18c-4057-ad0a-8f586945aed5")
 	)
 	(label "USER_BTN"
 		(at 53.34 36.83 0)
@@ -8135,6 +8176,16 @@
 		)
 		(uuid "92dd7447-1d47-4a2e-a54b-5e8cd7c50a12")
 	)
+	(label "GPIO16"
+		(at 163.83 107.95 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9ab61d0e-c799-4be7-9946-ea198c6ff361")
+	)
 	(label "PWR_BTN_IN"
 		(at 53.34 34.29 0)
 		(effects
@@ -8314,6 +8365,16 @@
 			(justify left bottom)
 		)
 		(uuid "cb664332-233a-4c3a-95ac-b18bb436e58d")
+	)
+	(label "GPIO17"
+		(at 163.83 110.49 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cbd7f746-64b9-4608-a3a5-ad63a5e8aa55")
 	)
 	(label "QSPI_SD0"
 		(at 88.9 175.26 0)
@@ -9367,7 +9428,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "180k"
+		(property "Value" "200k"
 			(at 24.638 90.043 0)
 			(effects
 				(font
@@ -9403,7 +9464,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C22827"
+		(property "LCSC" ""
 			(at 22.86 88.9 0)
 			(effects
 				(font
@@ -9688,7 +9749,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "20k"
+		(property "Value" "18k"
 			(at 39.878 102.743 0)
 			(effects
 				(font
@@ -9724,7 +9785,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C4184"
+		(property "LCSC" ""
 			(at 38.1 101.6 0)
 			(effects
 				(font
@@ -13308,6 +13369,107 @@
 			(project ""
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/850df4bf-e40a-4082-adc2-76804638b949"
 					(reference "#PWR043")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 247.65 118.11 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "61c7090d-d7b5-4ec3-b84c-c6c6ea85259f")
+		(property "Reference" "TP66"
+			(at 252.73 116.8399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 252.73 119.3799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 247.65 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 247.65 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 247.65 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Characteristics" ""
+			(at 247.65 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 247.65 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" ""
+			(at 247.65 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartNumber" ""
+			(at 247.65 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "73e1dab3-715e-4f90-843a-3d537ceb4f65")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/850df4bf-e40a-4082-adc2-76804638b949"
+					(reference "TP66")
 					(unit 1)
 				)
 			)
@@ -17505,6 +17667,107 @@
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/850df4bf-e40a-4082-adc2-76804638b949"
 					(reference "D12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 247.65 123.19 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e728fe71-e820-4ea2-9e4b-a5ed82259c6f")
+		(property "Reference" "TP67"
+			(at 252.73 121.9199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 252.73 124.4599 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 247.65 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 247.65 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 247.65 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Characteristics" ""
+			(at 247.65 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 247.65 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" ""
+			(at 247.65 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartNumber" ""
+			(at 247.65 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a52dddf6-fcc6-4904-b524-eaee4766cd65")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/850df4bf-e40a-4082-adc2-76804638b949"
+					(reference "TP67")
 					(unit 1)
 				)
 			)

@@ -4159,6 +4159,12 @@
 		(uuid "3b080bc5-d224-4d47-83d9-afed779f6c83")
 	)
 	(junction
+		(at 97.79 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3bea7d11-531d-4b28-b416-dddf6a8f90b9")
+	)
+	(junction
 		(at 238.76 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5067,6 +5073,16 @@
 			(type default)
 		)
 		(uuid "2313bfef-2fd0-4cf8-be27-cacd94553838")
+	)
+	(wire
+		(pts
+			(xy 97.79 50.8) (xy 104.14 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "233dfcca-7238-4cd0-971d-fa1f19b874db")
 	)
 	(wire
 		(pts
@@ -6050,7 +6066,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 50.8) (xy 104.14 50.8)
+			(xy 95.25 50.8) (xy 97.79 50.8)
 		)
 		(stroke
 			(width 0)
@@ -8161,7 +8177,7 @@
 	)
 	(hierarchical_label "EN"
 		(shape input)
-		(at 102.87 50.8 180)
+		(at 95.25 50.8 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -11424,6 +11440,104 @@
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/b774f543-305e-4249-92c3-c3de7e8a285e/306b39c2-3d43-4872-bf23-cfec09993877"
 					(reference "NT1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 97.79 50.8 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3bd06556-250a-4ae9-9394-699a1ecbf541")
+		(property "Reference" "TP36"
+			(at 102.87 43.434 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 100.33 43.434 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 92.71 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 92.71 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 97.79 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Characteristics" ""
+			(at 97.79 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 97.79 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" ""
+			(at 97.79 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartNumber" ""
+			(at 97.79 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1c347c9d-9fdc-47ee-a6e5-20d00b48b421")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/b774f543-305e-4249-92c3-c3de7e8a285e/306b39c2-3d43-4872-bf23-cfec09993877"
+					(reference "TP36")
 					(unit 1)
 				)
 			)

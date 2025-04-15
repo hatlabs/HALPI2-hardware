@@ -4934,6 +4934,12 @@
 		(uuid "22b596ef-4078-46aa-b346-6c722c94349d")
 	)
 	(junction
+		(at 191.77 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "26146f13-5347-472f-9af6-3640d5a1bb71")
+	)
+	(junction
 		(at 187.96 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4974,12 +4980,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "514f1209-2b3a-43d8-9f18-b900f6873ef8")
-	)
-	(junction
-		(at 50.8 158.75)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5b2e36f1-fafd-4189-ba3e-0b32300e3335")
 	)
 	(junction
 		(at 120.65 62.23)
@@ -5343,7 +5343,7 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 62.23) (xy 199.39 62.23)
+			(xy 189.23 62.23) (xy 191.77 62.23)
 		)
 		(stroke
 			(width 0)
@@ -5410,6 +5410,16 @@
 			(type default)
 		)
 		(uuid "2e198a06-f913-4b26-89a2-4ecf527e0cc2")
+	)
+	(wire
+		(pts
+			(xy 191.77 62.23) (xy 199.39 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2eaf585c-4fe6-4c39-8274-d772d639bc0e")
 	)
 	(bus
 		(pts
@@ -5983,7 +5993,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 158.75) (xy 53.34 158.75)
+			(xy 39.37 158.75) (xy 53.34 158.75)
 		)
 		(stroke
 			(width 0)
@@ -6340,16 +6350,6 @@
 			(type default)
 		)
 		(uuid "c96b4317-7fb5-4e30-848a-28e18725d952")
-	)
-	(wire
-		(pts
-			(xy 39.37 158.75) (xy 50.8 158.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c9b576a4-7f6a-41c5-b279-f62f04a2c66a")
 	)
 	(wire
 		(pts
@@ -6933,7 +6933,7 @@
 		(uuid "72a88452-aba8-4d37-bfea-04e941c6c221")
 	)
 	(label "EN"
-		(at 194.31 62.23 180)
+		(at 189.23 62.23 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9425,6 +9425,107 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 191.77 62.23 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "38d181f7-977d-48e9-8d45-f18157160f2e")
+		(property "Reference" "TP47"
+			(at 189.23 64.2619 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 189.23 66.8019 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 196.85 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 196.85 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 191.77 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Characteristics" ""
+			(at 191.77 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 191.77 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" ""
+			(at 191.77 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartNumber" ""
+			(at 191.77 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6b6555b3-716d-46e2-a280-45d6a494d40a")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/172ccc7f-ed6f-4221-b391-d1a2607d00a7"
+					(reference "TP47")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:Polyfuse")
 		(at 222.25 143.51 270)
 		(mirror x)
@@ -9573,6 +9674,106 @@
 			(project "Yellow"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/172ccc7f-ed6f-4221-b391-d1a2607d00a7"
 					(reference "F5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 114.3 176.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3aa8324a-5905-4f36-85ef-dd191ec2d4ff")
+		(property "Reference" "TP68"
+			(at 116.84 171.9579 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 116.84 174.4979 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
+			(at 119.38 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 119.38 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 114.3 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Characteristics" ""
+			(at 114.3 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 114.3 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" ""
+			(at 114.3 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartNumber" ""
+			(at 114.3 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "48d55f0f-c8c5-47da-a1f7-ac4be2fdd63d")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/172ccc7f-ed6f-4221-b391-d1a2607d00a7"
+					(reference "TP68")
 					(unit 1)
 				)
 			)
@@ -10049,7 +10250,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2k"
+		(property "Value" "3.3k"
 			(at 243.078 46.863 0)
 			(effects
 				(font
@@ -10085,7 +10286,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25879"
+		(property "LCSC" "C25890"
 			(at 241.3 45.72 0)
 			(effects
 				(font
@@ -11230,113 +11431,6 @@
 			(project "Yellow"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/172ccc7f-ed6f-4221-b391-d1a2607d00a7"
 					(reference "R107")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 50.8 158.75 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6f4287f7-dcb4-4e21-af20-efc85b10a302")
-		(property "Reference" "TP36"
-			(at 52.832 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "TestPoint"
-			(at 52.832 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 45.72 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 45.72 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 50.8 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Characteristics" ""
-			(at 50.8 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" ""
-			(at 50.8 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Field8" ""
-			(at 50.8 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "PartNumber" ""
-			(at 50.8 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Enable" ""
-			(at 50.8 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f802dc7e-8a6b-4600-843e-2141d5b7e201")
-		)
-		(instances
-			(project "HALPI2"
-				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/172ccc7f-ed6f-4221-b391-d1a2607d00a7"
-					(reference "TP36")
 					(unit 1)
 				)
 			)
@@ -13543,6 +13637,72 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 114.3 176.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "96266cf2-7fa6-4bb2-9b2e-c5d1f212daee")
+		(property "Reference" "#PWR0331"
+			(at 114.3 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND_RS485"
+			(at 114.3 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 114.3 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 114.3 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 114.3 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "639f10f5-1831-49f6-a7d9-668ebea8c806")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/172ccc7f-ed6f-4221-b391-d1a2607d00a7"
+					(reference "#PWR0331")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 196.85 121.92 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13691,7 +13851,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2k"
+		(property "Value" "3.3k"
 			(at 258.318 46.863 0)
 			(effects
 				(font
@@ -13727,7 +13887,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25879"
+		(property "LCSC" "C25890"
 			(at 256.54 45.72 0)
 			(effects
 				(font

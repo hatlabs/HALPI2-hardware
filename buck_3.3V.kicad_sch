@@ -1575,12 +1575,6 @@
 		(uuid "5be1e26c-6d86-479a-9181-1f31c1199e0b")
 	)
 	(junction
-		(at 154.94 67.31)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5ef80895-5c8d-4e59-9e92-61d6cd24f51f")
-	)
-	(junction
 		(at 207.01 67.31)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1693,16 +1687,6 @@
 			(type default)
 		)
 		(uuid "12a0031c-d869-444f-b833-7e54ddaec7cb")
-	)
-	(wire
-		(pts
-			(xy 154.94 67.31) (xy 165.1 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "12c587c8-2729-4d83-812a-b0873e214679")
 	)
 	(wire
 		(pts
@@ -1846,7 +1830,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 67.31) (xy 154.94 67.31)
+			(xy 143.51 67.31) (xy 165.1 67.31)
 		)
 		(stroke
 			(width 0)
@@ -4798,123 +4782,6 @@
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/e9d5ec1c-aaca-4440-9248-34d6a57da48f"
 					(reference "#PWR031")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 154.94 67.31 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e78c1ee9-f0b2-4f84-b18e-004e8583cafe")
-		(property "Reference" "TP15"
-			(at 157.48 69.3419 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "SW3"
-			(at 157.48 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 149.86 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 149.86 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 154.94 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Characteristics" ""
-			(at 154.94 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" ""
-			(at 154.94 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Field8" ""
-			(at 154.94 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "PartNumber" ""
-			(at 154.94 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Enable" ""
-			(at 154.94 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "95adfb15-cd34-409f-b335-15ca92684199")
-		)
-		(instances
-			(project "SH-RPi"
-				(path "/4c14904e-48eb-4243-8cbd-3afad8250b85/00000000-0000-0000-0000-00005ca73f16"
-					(reference "TP201")
-					(unit 1)
-				)
-			)
-			(project "SH-RPi"
-				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/531e3be9-7113-42c4-b43f-4c940587f1bb"
-					(reference "TP201")
-					(unit 1)
-				)
-				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/e9d5ec1c-aaca-4440-9248-34d6a57da48f"
-					(reference "TP15")
 					(unit 1)
 				)
 			)

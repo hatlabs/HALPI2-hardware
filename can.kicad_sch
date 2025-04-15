@@ -7172,6 +7172,105 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
+		(at 213.36 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1d91be56-5ada-4b45-be23-9bc33ab35ca3")
+		(property "Reference" "TP69"
+			(at 210.82 74.1681 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 210.82 71.6281 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
+			(at 218.44 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 218.44 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 213.36 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Characteristics" ""
+			(at 213.36 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 213.36 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" ""
+			(at 213.36 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartNumber" ""
+			(at 213.36 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fa5cf5d3-70fd-40f8-8728-5f556916301f")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/30f1d4da-1daa-4049-adbf-96a0145bcc97"
+					(reference "TP69")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
 		(at 168.91 129.54 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8983,7 +9082,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Capacitor_SMD_AKL:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 68.58 110.7948 0)
 			(effects
 				(font
@@ -9001,7 +9100,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "SMD 0402 MLCC capacitor, Alternate KiCad Library"
+		(property "Description" ""
 			(at 64.77 111.76 0)
 			(effects
 				(font
@@ -9649,7 +9748,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2k"
+		(property "Value" "3.3k"
 			(at 207.518 44.323 0)
 			(effects
 				(font
@@ -9685,7 +9784,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25879"
+		(property "LCSC" "C25890"
 			(at 205.74 43.18 0)
 			(effects
 				(font
@@ -10927,7 +11026,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "TestPoint"
+		(property "Value" "TXCAN"
 			(at 109.22 140.4619 0)
 			(effects
 				(font
@@ -12489,7 +12588,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2k"
+		(property "Value" "3.3k"
 			(at 218.948 44.323 0)
 			(effects
 				(font
@@ -12525,7 +12624,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25879"
+		(property "LCSC" "C25890"
 			(at 217.17 43.18 0)
 			(effects
 				(font
@@ -12618,6 +12717,72 @@
 		)
 	)
 	(symbol
+		(lib_id "Hatlabs:GND_CAN")
+		(at 213.36 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f981f24e-ff31-47d5-92e6-9e73df485868")
+		(property "Reference" "#PWR0356"
+			(at 213.36 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND_CAN"
+			(at 213.36 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 213.36 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 213.36 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND_CAN\" , ground"
+			(at 213.36 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b0086e35-4480-469f-98b4-18a0be7ab58e")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/30f1d4da-1daa-4049-adbf-96a0145bcc97"
+					(reference "#PWR0356")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 124.46 49.53 0)
 		(unit 1)
@@ -12700,7 +12865,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "TestPoint"
+		(property "Value" "RXCAN"
 			(at 111.76 134.1119 0)
 			(effects
 				(font

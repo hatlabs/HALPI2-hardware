@@ -14,6 +14,113 @@
 		(comment 3 "HALPI2 is licensed under CERN-OHL-S v2.")
 	)
 	(lib_symbols
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -2710,12 +2817,8 @@
 		(uuid "38da4749-2710-4a7a-b63f-6a2a75325787")
 	)
 	(no_connect
-		(at 40.64 85.09)
-		(uuid "6967d3ca-1b17-47f0-b355-218bdb9ff32c")
-	)
-	(no_connect
 		(at 40.64 95.25)
-		(uuid "8f3f936f-d8bf-47fa-95c8-699824c2e826")
+		(uuid "6967d3ca-1b17-47f0-b355-218bdb9ff32c")
 	)
 	(no_connect
 		(at 38.1 62.23)
@@ -3424,6 +3527,16 @@
 			(type default)
 		)
 		(uuid "05c21719-ad33-4e20-9b41-fd11621d826b")
+	)
+	(wire
+		(pts
+			(xy 43.18 85.09) (xy 40.64 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06813764-0782-4eb1-a0a6-e5cbc56ffa4a")
 	)
 	(polyline
 		(pts
@@ -5107,6 +5220,16 @@
 	)
 	(wire
 		(pts
+			(xy 43.18 100.33) (xy 43.18 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb318ef9-3d90-4093-86ad-25cd6100aac1")
+	)
+	(wire
+		(pts
 			(xy 161.29 59.69) (xy 172.72 59.69)
 		)
 		(stroke
@@ -5454,6 +5577,16 @@
 			(justify left bottom)
 		)
 		(uuid "4f1cf174-2fa3-46d9-a452-ab12c1f0db8c")
+	)
+	(label "DPHY1_DIS"
+		(at 43.18 100.33 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "514a6cf8-9244-4432-86d1-03084ada0af2")
 	)
 	(label "HDMI0{HDMI}"
 		(at 177.8 63.5 270)
@@ -6710,6 +6843,107 @@
 			(project ""
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/851e7ce4-d5b0-47f7-ace9-4a347f172348"
 					(reference "#PWR0107")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 43.18 100.33 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "26d7a9e7-1af1-46ce-96db-d2bcca69c1d8")
+		(property "Reference" "TP65"
+			(at 40.64 102.3619 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 40.64 104.9019 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 48.26 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 48.26 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 43.18 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Characteristics" ""
+			(at 43.18 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part" ""
+			(at 43.18 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Field8" ""
+			(at 43.18 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "PartNumber" ""
+			(at 43.18 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "763b034c-8708-4bd5-92d4-20a35e6e1764")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/851e7ce4-d5b0-47f7-ace9-4a347f172348"
+					(reference "TP65")
 					(unit 1)
 				)
 			)

@@ -1565,12 +1565,6 @@
 		(uuid "5be1e26c-6d86-479a-9181-1f31c1199e0b")
 	)
 	(junction
-		(at 134.62 72.39)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5ef80895-5c8d-4e59-9e92-61d6cd24f51f")
-	)
-	(junction
 		(at 229.87 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1659,16 +1653,6 @@
 			(type default)
 		)
 		(uuid "12a0031c-d869-444f-b833-7e54ddaec7cb")
-	)
-	(wire
-		(pts
-			(xy 134.62 72.39) (xy 144.78 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "12c587c8-2729-4d83-812a-b0873e214679")
 	)
 	(wire
 		(pts
@@ -1832,7 +1816,7 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 72.39) (xy 134.62 72.39)
+			(xy 123.19 72.39) (xy 144.78 72.39)
 		)
 		(stroke
 			(width 0)
@@ -3910,119 +3894,6 @@
 			(project "SH-RPi"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/531e3be9-7113-42c4-b43f-4c940587f1bb"
 					(reference "#PWR012")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 134.62 72.39 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "856fae51-9063-4750-ac8e-38082ce79e32")
-		(property "Reference" "TP13"
-			(at 137.16 74.4219 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "SW3"
-			(at 137.16 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 129.54 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 129.54 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 134.62 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Characteristics" ""
-			(at 134.62 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part" ""
-			(at 134.62 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Field8" ""
-			(at 134.62 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "PartNumber" ""
-			(at 134.62 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Enable" ""
-			(at 134.62 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "95adfb15-cd34-409f-b335-15ca92684199")
-		)
-		(instances
-			(project "SH-RPi"
-				(path "/4c14904e-48eb-4243-8cbd-3afad8250b85/00000000-0000-0000-0000-00005ca73f16"
-					(reference "TP201")
-					(unit 1)
-				)
-			)
-			(project "SH-RPi"
-				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/531e3be9-7113-42c4-b43f-4c940587f1bb"
-					(reference "TP13")
 					(unit 1)
 				)
 			)

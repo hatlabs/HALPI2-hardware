@@ -4546,12 +4546,6 @@
 		(uuid "b79dc420-0949-45f8-86f3-a4b996b8cdfc")
 	)
 	(junction
-		(at 154.94 95.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "23d2ed35-2128-4699-8042-225f4fceb819")
-	)
-	(junction
 		(at 160.02 127)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4564,10 +4558,10 @@
 		(uuid "747dabf8-12ad-4c19-b47a-3a61cc13c3ae")
 	)
 	(junction
-		(at 160.02 92.71)
+		(at 165.1 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "959104e2-e694-4d5e-8c47-e269e690b109")
+		(uuid "7cbcf8fd-c562-43d4-baf1-6f8e5f1be67a")
 	)
 	(junction
 		(at 149.86 97.79)
@@ -4576,16 +4570,22 @@
 		(uuid "9b2052cc-fc58-4a14-b1ca-c467ccb9afdd")
 	)
 	(junction
-		(at 165.1 90.17)
+		(at 160.02 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "a065c91c-9072-44a2-97ea-1e0f6fc174da")
+		(uuid "abcc1859-cba6-4b6f-8f02-386096f69f87")
 	)
 	(junction
 		(at 157.48 127)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f8b760fd-a5a4-411c-9ddd-4749f393b56e")
+	)
+	(junction
+		(at 154.94 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fa0ab030-f5f9-4346-a0b4-d19178fe5f8a")
 	)
 	(bus_entry
 		(at 93.98 49.53)
@@ -4696,16 +4696,6 @@
 			(type default)
 		)
 		(uuid "071ee88c-3207-49d9-9cf1-87b48604dcb3")
-	)
-	(wire
-		(pts
-			(xy 165.1 54.61) (xy 165.1 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "08410667-8c61-490f-a5f4-f2be9074bafd")
 	)
 	(wire
 		(pts
@@ -5029,16 +5019,6 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 74.93) (xy 154.94 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3fc6d0e4-a2bb-493c-a648-ec2cbb5c5209")
-	)
-	(wire
-		(pts
 			(xy 171.45 77.47) (xy 147.32 77.47)
 		)
 		(stroke
@@ -5117,6 +5097,16 @@
 		)
 		(uuid "587fb06f-d258-4b24-b2d5-7b6b49152193")
 	)
+	(wire
+		(pts
+			(xy 154.94 92.71) (xy 154.94 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a1233e7-28e7-4478-88b3-f68958068a8f")
+	)
 	(bus
 		(pts
 			(xy 93.98 69.85) (xy 93.98 74.93)
@@ -5129,7 +5119,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 90.17) (xy 165.1 90.17)
+			(xy 182.88 95.25) (xy 165.1 95.25)
 		)
 		(stroke
 			(width 0)
@@ -5149,7 +5139,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 64.77) (xy 160.02 92.71)
+			(xy 160.02 64.77) (xy 160.02 90.17)
 		)
 		(stroke
 			(width 0)
@@ -5259,7 +5249,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 90.17) (xy 165.1 99.06)
+			(xy 165.1 54.61) (xy 165.1 95.25)
 		)
 		(stroke
 			(width 0)
@@ -5349,7 +5339,7 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 95.25) (xy 182.88 95.25)
+			(xy 154.94 92.71) (xy 182.88 92.71)
 		)
 		(stroke
 			(width 0)
@@ -5369,7 +5359,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 92.71) (xy 160.02 104.14)
+			(xy 160.02 90.17) (xy 160.02 104.14)
 		)
 		(stroke
 			(width 0)
@@ -5529,6 +5519,16 @@
 	)
 	(wire
 		(pts
+			(xy 154.94 74.93) (xy 154.94 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5a9d848-5f5c-4cae-accb-37bddcd50217")
+	)
+	(wire
+		(pts
 			(xy 175.26 63.5) (xy 172.72 63.5)
 		)
 		(stroke
@@ -5569,7 +5569,17 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 92.71) (xy 182.88 92.71)
+			(xy 165.1 95.25) (xy 165.1 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4bd67bc-a57d-4ad2-9e82-1a8088854ab3")
+	)
+	(wire
+		(pts
+			(xy 160.02 90.17) (xy 182.88 90.17)
 		)
 		(stroke
 			(width 0)
@@ -5679,16 +5689,6 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 109.22) (xy 154.94 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f5d195f7-f168-438b-a9a3-829932c3a2be")
-	)
-	(wire
-		(pts
 			(xy 157.48 138.43) (xy 157.48 137.16)
 		)
 		(stroke
@@ -5748,7 +5748,7 @@
 		(uuid "fdf9455d-563a-4a0f-a8b5-ae3a7da75885")
 	)
 	(label "PR36"
-		(at 177.8 92.71 0)
+		(at 177.8 90.17 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5918,7 +5918,7 @@
 		(uuid "9f81253b-810f-4cc7-8bd6-3806e9a3fee8")
 	)
 	(label "PR45"
-		(at 177.8 95.25 0)
+		(at 156.21 92.71 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5958,7 +5958,7 @@
 		(uuid "b65ef750-6246-41f1-a43d-8b96ccbdd98c")
 	)
 	(label "PR12"
-		(at 177.8 90.17 0)
+		(at 177.8 95.25 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6260,7 +6260,7 @@
 				)
 			)
 		)
-		(property "Value" "2k"
+		(property "Value" "2.7k"
 			(at 116.84 165.4175 90)
 			(effects
 				(font
@@ -6268,7 +6268,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 116.84 170.688 90)
 			(effects
 				(font
@@ -6295,21 +6295,13 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C4109"
+		(property "LCSC" "C13167"
 			(at 116.84 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
-			)
-		)
-		(property "Field8" ""
-			(at 116.84 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(property "PartNumber" ""
@@ -6482,7 +6474,7 @@
 				)
 			)
 		)
-		(property "Value" "1.5k"
+		(property "Value" "2k"
 			(at 116.84 153.9875 90)
 			(effects
 				(font
@@ -6490,7 +6482,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 116.84 159.258 90)
 			(effects
 				(font
@@ -6517,21 +6509,13 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25867"
+		(property "LCSC" "C22975"
 			(at 116.84 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
-			)
-		)
-		(property "Field8" ""
-			(at 116.84 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 			)
 		)
 		(property "PartNumber" ""
@@ -8638,7 +8622,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical_SMD_Pin1Left"
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_2x02_P2.54mm_Vertical_SMD"
 			(at 187.96 92.71 0)
 			(effects
 				(font
@@ -8665,14 +8649,6 @@
 				(hide yes)
 			)
 		)
-		(property "Field8" ""
-			(at 187.96 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "PartNumber" ""
 			(at 187.96 92.71 0)
 			(effects
@@ -8687,6 +8663,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "LCSC" "C5160817"
+			(at 187.96 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "3"

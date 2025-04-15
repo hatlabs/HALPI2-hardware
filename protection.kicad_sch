@@ -14,6 +14,113 @@
 		(comment 3 "HALPI2 is licensed under CERN-OHL-S v2.")
 	)
 	(lib_symbols
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -2742,7 +2849,7 @@
 	)
 	(text "Reverse polarity and\nreverse current\nprotection"
 		(exclude_from_sim no)
-		(at 108.966 41.402 0)
+		(at 108.966 39.37 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2858,10 +2965,28 @@
 		(uuid "3812bcd0-7040-480b-ab0c-70bc90dac50b")
 	)
 	(junction
+		(at 165.1 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "486453b2-13da-4850-a3ec-d7515800fc36")
+	)
+	(junction
 		(at 156.21 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6404665c-a8de-42a8-aabd-eb093a4248be")
+	)
+	(junction
+		(at 63.5 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6cf46482-632a-43ad-9946-c7b8f3dc1106")
+	)
+	(junction
+		(at 71.12 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "73050b1a-3a17-46eb-869d-0f70f22a1a2f")
 	)
 	(junction
 		(at 93.98 77.47)
@@ -2888,10 +3013,22 @@
 		(uuid "872d89b3-73b9-4e75-ae74-5fcfd51dc6cd")
 	)
 	(junction
+		(at 64.77 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "87c344b7-a04e-4867-b262-98fb727c0910")
+	)
+	(junction
 		(at 95.25 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8b1c31bc-7e08-4d8e-8906-4eb1a6043c18")
+	)
+	(junction
+		(at 162.56 129.54)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "98e0db86-33d1-4ef3-8b54-b536cd3e42b1")
 	)
 	(junction
 		(at 134.62 53.34)
@@ -2988,6 +3125,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e0462d1d-008d-40ab-abae-cf7980622c62")
+	)
+	(junction
+		(at 116.84 46.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e3bd3da3-307c-4824-987e-2f9d8d2e94b5")
 	)
 	(junction
 		(at 156.21 53.34)
@@ -3195,7 +3338,7 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 53.34) (xy 170.18 53.34)
+			(xy 156.21 53.34) (xy 165.1 53.34)
 		)
 		(stroke
 			(width 0)
@@ -3305,7 +3448,17 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 43.18) (xy 116.84 53.34)
+			(xy 71.12 53.34) (xy 82.55 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43e8e2d7-0051-4337-adcc-6b270cad79ce")
+	)
+	(wire
+		(pts
+			(xy 116.84 43.18) (xy 116.84 46.99)
 		)
 		(stroke
 			(width 0)
@@ -3325,7 +3478,17 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 114.3) (xy 88.9 114.3)
+			(xy 162.56 129.54) (xy 170.18 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45ab6480-0404-44a1-942c-be9c9fc4086d")
+	)
+	(wire
+		(pts
+			(xy 48.26 114.3) (xy 63.5 114.3)
 		)
 		(stroke
 			(width 0)
@@ -3505,6 +3668,16 @@
 	)
 	(wire
 		(pts
+			(xy 165.1 53.34) (xy 170.18 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6cacd70a-ca88-4089-ac06-5fdef4b476d0")
+	)
+	(wire
+		(pts
 			(xy 22.86 114.3) (xy 34.29 114.3)
 		)
 		(stroke
@@ -3512,16 +3685,6 @@
 			(type default)
 		)
 		(uuid "6e330ff8-f179-47b4-8166-6d60bdcdb78a")
-	)
-	(wire
-		(pts
-			(xy 213.36 129.54) (xy 231.14 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "70fa5201-a148-4f9f-af49-be6af8a25d11")
 	)
 	(wire
 		(pts
@@ -3542,6 +3705,26 @@
 			(type default)
 		)
 		(uuid "73550628-1fe8-47da-a558-182dcbef442d")
+	)
+	(wire
+		(pts
+			(xy 116.84 46.99) (xy 116.84 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74635da4-ab08-489f-84f6-4904b3754b0a")
+	)
+	(wire
+		(pts
+			(xy 213.36 129.54) (xy 231.14 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75a2d600-9811-4562-a2cf-580773a32f49")
 	)
 	(wire
 		(pts
@@ -3675,7 +3858,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 129.54) (xy 170.18 129.54)
+			(xy 157.48 129.54) (xy 162.56 129.54)
 		)
 		(stroke
 			(width 0)
@@ -3845,6 +4028,16 @@
 	)
 	(wire
 		(pts
+			(xy 63.5 114.3) (xy 88.9 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b94c5a72-adaf-4c59-8b45-02c3f7d97e68")
+	)
+	(wire
+		(pts
 			(xy 203.2 139.7) (xy 208.28 139.7)
 		)
 		(stroke
@@ -3925,7 +4118,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 53.34) (xy 82.55 53.34)
+			(xy 59.69 53.34) (xy 71.12 53.34)
 		)
 		(stroke
 			(width 0)
@@ -5212,6 +5405,73 @@
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/b9ac802e-51d9-4be8-a7d3-5b5fa2c8bb97"
 					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 165.1 53.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2191d24a-5c00-4d94-92ae-e4d0c0af075b")
+		(property "Reference" "TP73"
+			(at 167.64 48.7679 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 167.64 51.3079 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 170.18 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 170.18 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 165.1 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bc0b90fe-e7dd-4cd4-96f9-254af7004245")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/b9ac802e-51d9-4be8-a7d3-5b5fa2c8bb97"
+					(reference "TP73")
 					(unit 1)
 				)
 			)
@@ -6613,6 +6873,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 71.12 53.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7a36bb37-848c-41e7-afea-fbe33389608c")
+		(property "Reference" "TP70"
+			(at 73.66 48.7679 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 73.66 51.3079 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 76.2 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 76.2 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 71.12 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ea6224a8-b840-430a-b1bf-839dfb6fb33e")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/b9ac802e-51d9-4be8-a7d3-5b5fa2c8bb97"
+					(reference "TP70")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 74.93 71.12 0)
 		(unit 1)
@@ -7271,6 +7598,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 162.56 129.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a9ee4529-fc78-45c2-8e75-67a98a0874b9")
+		(property "Reference" "TP74"
+			(at 165.1 124.9679 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 165.1 127.5079 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 167.64 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 167.64 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 162.56 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ebcc47c8-c113-4d72-b838-f23df38aaa60")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/b9ac802e-51d9-4be8-a7d3-5b5fa2c8bb97"
+					(reference "TP74")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 170.18 81.28 0)
 		(unit 1)
@@ -7732,6 +8126,71 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 116.84 46.99 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c52b2e37-29bb-4208-a7dd-80e77fc67d32")
+		(property "Reference" "TP72"
+			(at 113.538 41.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 113.538 44.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 116.84 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 116.84 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 116.84 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "72b670ed-dac1-4fad-bbba-7bf54ff0b2d5")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/b9ac802e-51d9-4be8-a7d3-5b5fa2c8bb97"
+					(reference "TP72")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 49.53 53.34 0)
 		(unit 1)
@@ -8031,6 +8490,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 63.5 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dcdf0c4d-3773-42a2-aaa4-8642e40b5125")
+		(property "Reference" "TP13"
+			(at 66.04 109.7279 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 66.04 112.2679 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
+			(at 68.58 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 68.58 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 63.5 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "609e4b1e-7e1c-4347-9739-459a95548640")
+		)
+		(instances
+			(project ""
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/b9ac802e-51d9-4be8-a7d3-5b5fa2c8bb97"
+					(reference "TP13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Transistor_FET:Q_Dual_NMOS_S1G1S2G2D2D1")
 		(at 107.95 55.88 90)
 		(unit 1)
@@ -8137,6 +8663,71 @@
 			(project ""
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/b9ac802e-51d9-4be8-a7d3-5b5fa2c8bb97"
 					(reference "Q1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 64.77 71.12 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f4ea1096-e4a6-4c1c-b364-ce4dc9f5358d")
+		(property "Reference" "TP71"
+			(at 61.468 66.04 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 61.468 68.58 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 64.77 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 64.77 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 64.77 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d5096acd-570b-4af9-9a67-db1ac3c163aa")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/b9ac802e-51d9-4be8-a7d3-5b5fa2c8bb97"
+					(reference "TP71")
 					(unit 1)
 				)
 			)

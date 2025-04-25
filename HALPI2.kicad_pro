@@ -49,7 +49,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.2
+          "min_clearance": 0.3
         }
       },
       "diff_pair_dimensions": [
@@ -74,27 +74,27 @@
           ""
         ],
         [
-          "copper_edge_clearance|215450000|105000000|10cf33ea-729c-4314-b1a2-ba82cf1a8245|e6219a55-5831-47bf-83dd-1ceb794ed851",
+          "copper_edge_clearance|215450000|105000000|10cf33ea-729c-4314-b1a2-ba82cf1a8245|9ab0fb40-816a-4119-ae02-37f64f024631",
           ""
         ],
         [
-          "copper_edge_clearance|215450000|65000000|10cf33ea-729c-4314-b1a2-ba82cf1a8245|18c10d09-3803-486d-aacd-c8be98c77875",
+          "copper_edge_clearance|215450000|65000000|10cf33ea-729c-4314-b1a2-ba82cf1a8245|8441361c-25ef-4cf9-adc1-b4fb9ece64f3",
           ""
         ],
         [
-          "copper_edge_clearance|215450000|85000000|10cf33ea-729c-4314-b1a2-ba82cf1a8245|41a7e605-94c6-447c-8fb2-c3951ab264b1",
+          "copper_edge_clearance|215450000|85000000|10cf33ea-729c-4314-b1a2-ba82cf1a8245|bcf27786-019c-4fde-a639-0aba1d9a3a15",
           ""
         ],
         [
-          "copper_edge_clearance|36550000|105000000|ca4d09ed-e3bb-4e17-b8db-890ef327f825|75fabb61-ca49-4b18-b843-fb72a3785770",
+          "copper_edge_clearance|36550000|105000000|ca4d09ed-e3bb-4e17-b8db-890ef327f825|3eafe9da-5e99-41ca-b712-b8b48daa91e3",
           ""
         ],
         [
-          "copper_edge_clearance|36550000|65000000|ca4d09ed-e3bb-4e17-b8db-890ef327f825|ce1a2b65-fb60-40ef-9dfd-663aabab88bc",
+          "copper_edge_clearance|36550000|65000000|ca4d09ed-e3bb-4e17-b8db-890ef327f825|7bb240a3-a6b6-4d44-b994-f0d1020a6232",
           ""
         ],
         [
-          "copper_edge_clearance|36550000|84997815|ca4d09ed-e3bb-4e17-b8db-890ef327f825|8a6fa28e-8fc4-460f-aa64-2e0f3cbc5f50",
+          "copper_edge_clearance|36550000|84997815|ca4d09ed-e3bb-4e17-b8db-890ef327f825|1d913b4b-4893-4b2d-9011-672b0cc096e0",
           ""
         ],
         [
@@ -195,14 +195,6 @@
         ],
         [
           "items_not_allowed|45500000|27094706|9f7b0bfb-be89-4a99-867a-3659a6d25000|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "skew_out_of_range|112500000|48722500|99367290-8135-4482-a53d-af6e9120b4aa|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "skew_out_of_range|165050000|73800000|7186beef-4dd7-4656-bfc3-99dfefcf69f8|00000000-0000-0000-0000-000000000000",
           ""
         ],
         [
@@ -1160,6 +1152,9 @@
         "Analog"
       ],
       "/Controller/LDO_OUT": [
+        "Power"
+      ],
+      "/Controller/LDO_VIN": [
         "Power"
       ],
       "/Controller/ORed": [
@@ -2233,11 +2228,14 @@
       "Net-(C74-Pad2)": [
         "HV"
       ],
+      "Net-(C75-Pad1)": [
+        "Analog"
+      ],
       "Net-(C75-Pad2)": [
         "HV"
       ],
       "Net-(C76-Pad1)": [
-        "HV"
+        "Analog"
       ],
       "Net-(C76-Pad2)": [
         "HV"
@@ -2251,13 +2249,25 @@
       "Net-(C78-Pad2)": [
         "HV"
       ],
+      "Net-(C79-Pad1)": [
+        "HV"
+      ],
       "Net-(C79-Pad2)": [
+        "HV"
+      ],
+      "Net-(C80-Pad2)": [
+        "HV"
+      ],
+      "Net-(C81-Pad2)": [
         "HV"
       ],
       "Net-(C87-Pad1)": [
         "Digital"
       ],
       "Net-(C88-Pad1)": [
+        "Digital"
+      ],
+      "Net-(C90-Pad1)": [
         "Digital"
       ],
       "Net-(D12-K)": [

@@ -4800,7 +4800,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-0000603c2343")
-		(property "Reference" "C9"
+		(property "Reference" "C11"
 			(at 183.388 137.922 0)
 			(effects
 				(font
@@ -4910,7 +4910,7 @@
 			)
 			(project "SH-RPi"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/b9ac802e-51d9-4be8-a7d3-5b5fa2c8bb97"
-					(reference "C9")
+					(reference "C11")
 					(unit 1)
 				)
 			)
@@ -4996,7 +4996,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-0000603c2351")
-		(property "Reference" "L2"
+		(property "Reference" "L1"
 			(at 191.77 124.714 90)
 			(effects
 				(font
@@ -5104,7 +5104,7 @@
 			)
 			(project "SH-RPi"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/b9ac802e-51d9-4be8-a7d3-5b5fa2c8bb97"
-					(reference "L2")
+					(reference "L1")
 					(unit 1)
 				)
 			)
@@ -5120,7 +5120,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-0000603c2358")
-		(property "Reference" "C10"
+		(property "Reference" "C12"
 			(at 200.279 133.4516 0)
 			(effects
 				(font
@@ -5230,7 +5230,7 @@
 			)
 			(project "SH-RPi"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/b9ac802e-51d9-4be8-a7d3-5b5fa2c8bb97"
-					(reference "C10")
+					(reference "C12")
 					(unit 1)
 				)
 			)
@@ -5420,7 +5420,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2191d24a-5c00-4d94-92ae-e4d0c0af075b")
-		(property "Reference" "TP73"
+		(property "Reference" "TP6"
 			(at 167.64 48.7679 0)
 			(effects
 				(font
@@ -5465,13 +5465,21 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 165.1 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "bc0b90fe-e7dd-4cd4-96f9-254af7004245")
 		)
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/b9ac802e-51d9-4be8-a7d3-5b5fa2c8bb97"
-					(reference "TP73")
+					(reference "TP6")
 					(unit 1)
 				)
 			)
@@ -5700,7 +5708,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2d119e31-1ef9-4225-b108-c1f7416e4145")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR08"
 			(at 213.36 96.52 0)
 			(effects
 				(font
@@ -5756,7 +5764,7 @@
 			)
 			(project "SH-RPi"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/b9ac802e-51d9-4be8-a7d3-5b5fa2c8bb97"
-					(reference "#PWR03")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -5831,14 +5839,6 @@
 				)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 116.84 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "Component Class" "fine_pitch"
 			(at 116.84 87.63 0)
 			(effects
@@ -5846,6 +5846,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Sim.Enable" ""
+			(at 116.84 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "10"
@@ -6252,7 +6260,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4b9280a6-02dd-452a-80ac-14da46a30081")
-		(property "Reference" "C11"
+		(property "Reference" "C13"
 			(at 216.281 133.4516 0)
 			(effects
 				(font
@@ -6356,7 +6364,7 @@
 		(instances
 			(project "Yellow"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/b9ac802e-51d9-4be8-a7d3-5b5fa2c8bb97"
-					(reference "C11")
+					(reference "C13")
 					(unit 1)
 				)
 			)
@@ -6417,7 +6425,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C4154532"
+		(property "LCSC" "C22395540"
 			(at 82.55 76.2 90)
 			(effects
 				(font
@@ -6448,6 +6456,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "JLCPCB_CORRECTION" "0;0;180"
+			(at 82.55 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6659,7 +6676,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6f9a59a6-e772-46af-91bd-e207e2e84780")
-		(property "Reference" "C186"
+		(property "Reference" "C6"
 			(at 152.4 96.5199 0)
 			(effects
 				(font
@@ -6763,7 +6780,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/b9ac802e-51d9-4be8-a7d3-5b5fa2c8bb97"
-					(reference "C186")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -6882,7 +6899,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7a36bb37-848c-41e7-afea-fbe33389608c")
-		(property "Reference" "TP70"
+		(property "Reference" "TP3"
 			(at 73.66 48.7679 0)
 			(effects
 				(font
@@ -6927,13 +6944,21 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 71.12 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ea6224a8-b840-430a-b1bf-839dfb6fb33e")
 		)
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/b9ac802e-51d9-4be8-a7d3-5b5fa2c8bb97"
-					(reference "TP70")
+					(reference "TP3")
 					(unit 1)
 				)
 			)
@@ -7015,7 +7040,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7dde94be-1137-49cb-8dc2-0510ff8d6161")
-		(property "Reference" "C6"
+		(property "Reference" "C10"
 			(at 180.34 80.0099 0)
 			(effects
 				(font
@@ -7125,7 +7150,7 @@
 			)
 			(project "SH-RPi"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/b9ac802e-51d9-4be8-a7d3-5b5fa2c8bb97"
-					(reference "C6")
+					(reference "C10")
 					(unit 1)
 				)
 			)
@@ -7259,7 +7284,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8eb74bfc-c77d-4d0f-b25a-7699d70a8320")
-		(property "Reference" "C8"
+		(property "Reference" "C9"
 			(at 171.196 137.414 0)
 			(effects
 				(font
@@ -7369,7 +7394,7 @@
 			)
 			(project "SH-RPi"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/b9ac802e-51d9-4be8-a7d3-5b5fa2c8bb97"
-					(reference "C8")
+					(reference "C9")
 					(unit 1)
 				)
 			)
@@ -7487,7 +7512,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "985c511f-92f9-453d-a2ac-67158552522d")
-		(property "Reference" "C185"
+		(property "Reference" "C5"
 			(at 152.4 64.7699 0)
 			(effects
 				(font
@@ -7591,7 +7616,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/b9ac802e-51d9-4be8-a7d3-5b5fa2c8bb97"
-					(reference "C185")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -7607,7 +7632,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a9ee4529-fc78-45c2-8e75-67a98a0874b9")
-		(property "Reference" "TP74"
+		(property "Reference" "TP5"
 			(at 165.1 124.9679 0)
 			(effects
 				(font
@@ -7652,13 +7677,21 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 162.56 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "ebcc47c8-c113-4d72-b838-f23df38aaa60")
 		)
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/b9ac802e-51d9-4be8-a7d3-5b5fa2c8bb97"
-					(reference "TP74")
+					(reference "TP5")
 					(unit 1)
 				)
 			)
@@ -7673,7 +7706,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "aa942b9d-5738-4d05-b610-5df72b6ed64c")
-		(property "Reference" "C5"
+		(property "Reference" "C8"
 			(at 166.37 80.0099 0)
 			(effects
 				(font
@@ -7783,7 +7816,7 @@
 			)
 			(project "SH-RPi"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/b9ac802e-51d9-4be8-a7d3-5b5fa2c8bb97"
-					(reference "C5")
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -7902,7 +7935,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b06858f9-0f47-482f-afbc-6a1825389f2e")
-		(property "Reference" "FB7"
+		(property "Reference" "FB2"
 			(at 147.2692 106.68 90)
 			(effects
 				(font
@@ -7987,7 +8020,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/b9ac802e-51d9-4be8-a7d3-5b5fa2c8bb97"
-					(reference "FB7")
+					(reference "FB2")
 					(unit 1)
 				)
 			)
@@ -8069,7 +8102,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c270f973-3f66-49ad-95ed-b199041d87c3")
-		(property "Reference" "#PWR0353"
+		(property "Reference" "#PWR03"
 			(at 147.32 88.9 0)
 			(effects
 				(font
@@ -8119,7 +8152,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/b9ac802e-51d9-4be8-a7d3-5b5fa2c8bb97"
-					(reference "#PWR0353")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -8135,7 +8168,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c52b2e37-29bb-4208-a7dd-80e77fc67d32")
-		(property "Reference" "TP72"
+		(property "Reference" "TP4"
 			(at 113.538 41.91 90)
 			(effects
 				(font
@@ -8178,13 +8211,21 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 116.84 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "72b670ed-dac1-4fad-bbba-7bf54ff0b2d5")
 		)
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/b9ac802e-51d9-4be8-a7d3-5b5fa2c8bb97"
-					(reference "TP72")
+					(reference "TP4")
 					(unit 1)
 				)
 			)
@@ -8266,7 +8307,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d72dbe3b-274a-40b1-be07-9d22a57a7d15")
-		(property "Reference" "L1"
+		(property "Reference" "L2"
 			(at 196.469 88.9 0)
 			(effects
 				(font
@@ -8380,7 +8421,7 @@
 			)
 			(project "SH-RPi"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/b9ac802e-51d9-4be8-a7d3-5b5fa2c8bb97"
-					(reference "L1")
+					(reference "L2")
 					(unit 1)
 				)
 			)
@@ -8499,7 +8540,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dcdf0c4d-3773-42a2-aaa4-8642e40b5125")
-		(property "Reference" "TP13"
+		(property "Reference" "TP1"
 			(at 66.04 109.7279 0)
 			(effects
 				(font
@@ -8544,13 +8585,21 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 63.5 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "609e4b1e-7e1c-4347-9739-459a95548640")
 		)
 		(instances
 			(project ""
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/b9ac802e-51d9-4be8-a7d3-5b5fa2c8bb97"
-					(reference "TP13")
+					(reference "TP1")
 					(unit 1)
 				)
 			)
@@ -8678,7 +8727,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f4ea1096-e4a6-4c1c-b364-ce4dc9f5358d")
-		(property "Reference" "TP71"
+		(property "Reference" "TP2"
 			(at 61.468 66.04 90)
 			(effects
 				(font
@@ -8721,13 +8770,21 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 64.77 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "d5096acd-570b-4af9-9a67-db1ac3c163aa")
 		)
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/b9ac802e-51d9-4be8-a7d3-5b5fa2c8bb97"
-					(reference "TP71")
+					(reference "TP2")
 					(unit 1)
 				)
 			)
@@ -8815,7 +8872,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fc17f7b3-ef9c-49ab-b761-2fa7cca8c0cc")
-		(property "Reference" "FB6"
+		(property "Reference" "FB1"
 			(at 147.2692 45.72 90)
 			(effects
 				(font
@@ -8900,7 +8957,7 @@
 		(instances
 			(project ""
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/b9ac802e-51d9-4be8-a7d3-5b5fa2c8bb97"
-					(reference "FB6")
+					(reference "FB1")
 					(unit 1)
 				)
 			)

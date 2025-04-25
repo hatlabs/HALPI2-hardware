@@ -4973,6 +4973,107 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(bus_alias "DPHY"
 		(members "C+" "C-" "D0+" "D0-" "D1+" "D1-" "D2+" "D2-" "D3+" "D3-")
@@ -5080,6 +5181,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1394e8e7-7128-4579-a3b9-0c3464c48826")
+	)
+	(junction
+		(at 246.38 142.24)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2b6e191d-c8fa-4080-b7da-2248dde749ea")
 	)
 	(junction
 		(at 256.54 68.58)
@@ -8565,36 +8672,6 @@
 	(rule_area
 		(polyline
 			(pts
-				(xy 113.03 143.51) (xy 110.49 143.51) (xy 110.49 68.58) (xy 113.03 68.58)
-			)
-			(stroke
-				(width 0)
-				(type dash)
-			)
-			(fill
-				(type none)
-			)
-			(uuid 5725e603-2b6f-4ffc-847d-7a8c253c5f58)
-		)
-	)
-	(rule_area
-		(polyline
-			(pts
-				(xy 52.07 82.55) (xy 54.61 82.55) (xy 54.61 140.97) (xy 52.07 140.97)
-			)
-			(stroke
-				(width 0)
-				(type dash)
-			)
-			(fill
-				(type none)
-			)
-			(uuid a8ff59a7-10b0-42eb-8828-2785ce2a8dcc)
-		)
-	)
-	(rule_area
-		(polyline
-			(pts
 				(xy 44.45 39.37) (xy 46.99 39.37) (xy 46.99 64.77) (xy 44.45 64.77)
 			)
 			(stroke
@@ -8604,7 +8681,7 @@
 			(fill
 				(type none)
 			)
-			(uuid aff10242-fd9f-4065-b593-e4059915e43b)
+			(uuid 090e8c5f-fdb0-4210-a815-b7687eba32f2)
 		)
 	)
 	(rule_area
@@ -8619,7 +8696,37 @@
 			(fill
 				(type none)
 			)
-			(uuid fc422959-d03f-4d9f-8d19-808ea0a8a1c5)
+			(uuid 301fdb16-e2a8-4aad-89a8-a312ae323bd9)
+		)
+	)
+	(rule_area
+		(polyline
+			(pts
+				(xy 52.07 82.55) (xy 54.61 82.55) (xy 54.61 140.97) (xy 52.07 140.97)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type none)
+			)
+			(uuid 3b1cdc8e-6095-4982-982c-c61215277727)
+		)
+	)
+	(rule_area
+		(polyline
+			(pts
+				(xy 113.03 143.51) (xy 110.49 143.51) (xy 110.49 68.58) (xy 113.03 68.58)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type none)
+			)
+			(uuid e319a189-c35e-461d-aec7-ea62a5da5871)
 		)
 	)
 	(netclass_flag ""
@@ -8787,6 +8894,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 246.38 142.24 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1c6640b4-79ff-4324-a72e-9d2a60a29b68")
+		(property "Reference" "#FLG025"
+			(at 248.285 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 250.19 142.2399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 246.38 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 246.38 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 246.38 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ce12bef4-69c6-4e9d-8977-99fcc1061173")
+		)
+		(instances
+			(project ""
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/7c248bd3-8232-4777-a40c-eab53460cf85"
+					(reference "#FLG025")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Hatlabs:+3.3VCMx")
 		(at 231.14 33.02 0)
 		(unit 1)
@@ -8796,7 +8970,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "24a86f81-fdfa-4a63-a755-3f54b1a45bba")
-		(property "Reference" "#PWR089"
+		(property "Reference" "#PWR090"
 			(at 231.14 36.83 0)
 			(effects
 				(font
@@ -8846,7 +9020,7 @@
 		(instances
 			(project ""
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/7c248bd3-8232-4777-a40c-eab53460cf85"
-					(reference "#PWR089")
+					(reference "#PWR090")
 					(unit 1)
 				)
 			)
@@ -8861,7 +9035,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "385b9dc9-2c93-468f-bfac-4d1f1056dbca")
-		(property "Reference" "#PWR094"
+		(property "Reference" "#PWR095"
 			(at 256.54 88.9 0)
 			(effects
 				(font
@@ -8911,7 +9085,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/7c248bd3-8232-4777-a40c-eab53460cf85"
-					(reference "#PWR094")
+					(reference "#PWR095")
 					(unit 1)
 				)
 			)
@@ -8927,7 +9101,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "39ed3171-840f-4750-9037-889eec5aa8c9")
-		(property "Reference" "#PWR088"
+		(property "Reference" "#PWR089"
 			(at 114.3 34.29 0)
 			(effects
 				(font
@@ -8978,7 +9152,7 @@
 		(instances
 			(project "Yellow"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/7c248bd3-8232-4777-a40c-eab53460cf85"
-					(reference "#PWR088")
+					(reference "#PWR089")
 					(unit 1)
 				)
 			)
@@ -9103,7 +9277,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4bcf2027-0bcd-4935-a807-80301452e446")
-		(property "Reference" "#PWR096"
+		(property "Reference" "#PWR097"
 			(at 266.7 120.65 0)
 			(effects
 				(font
@@ -9153,7 +9327,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/7c248bd3-8232-4777-a40c-eab53460cf85"
-					(reference "#PWR096")
+					(reference "#PWR097")
 					(unit 1)
 				)
 			)
@@ -9169,7 +9343,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "52a20f42-dafb-4a93-8f63-4128b66cb7cb")
-		(property "Reference" "#PWR095"
+		(property "Reference" "#PWR096"
 			(at 261.62 36.83 0)
 			(effects
 				(font
@@ -9219,7 +9393,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/7c248bd3-8232-4777-a40c-eab53460cf85"
-					(reference "#PWR095")
+					(reference "#PWR096")
 					(unit 1)
 				)
 			)
@@ -9235,7 +9409,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5fbf08a5-760e-4abd-a042-994bcd6451ec")
-		(property "Reference" "#PWR086"
+		(property "Reference" "#PWR087"
 			(at 83.82 29.21 0)
 			(effects
 				(font
@@ -9286,7 +9460,7 @@
 		(instances
 			(project "Yellow"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/7c248bd3-8232-4777-a40c-eab53460cf85"
-					(reference "#PWR086")
+					(reference "#PWR087")
 					(unit 1)
 				)
 			)
@@ -9541,7 +9715,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7309bc65-03b2-40c6-8eb7-870f6e91e613")
-		(property "Reference" "TP64"
+		(property "Reference" "TP34"
 			(at 245.11 99.5679 0)
 			(effects
 				(font
@@ -9619,13 +9793,21 @@
 				)
 			)
 		)
+		(property "Sim.Enable" ""
+			(at 247.65 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "84d5bf50-67cb-486b-ac75-1bcd0625da58")
 		)
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/7c248bd3-8232-4777-a40c-eab53460cf85"
-					(reference "TP64")
+					(reference "TP34")
 					(unit 1)
 				)
 			)
@@ -9875,7 +10057,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "94016183-c762-4064-9e2c-ca195c428d79")
-		(property "Reference" "#PWR087"
+		(property "Reference" "#PWR088"
 			(at 109.22 34.29 0)
 			(effects
 				(font
@@ -9925,7 +10107,7 @@
 		(instances
 			(project "Yellow"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/7c248bd3-8232-4777-a40c-eab53460cf85"
-					(reference "#PWR087")
+					(reference "#PWR088")
 					(unit 1)
 				)
 			)
@@ -9940,7 +10122,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "97a4da0e-4832-4910-8fd2-e0b13d27aae6")
-		(property "Reference" "#PWR085"
+		(property "Reference" "#PWR086"
 			(at 81.28 157.48 0)
 			(effects
 				(font
@@ -9990,7 +10172,7 @@
 		(instances
 			(project "Yellow"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/7c248bd3-8232-4777-a40c-eab53460cf85"
-					(reference "#PWR085")
+					(reference "#PWR086")
 					(unit 1)
 				)
 			)
@@ -10436,7 +10618,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a5421c9f-0946-47e0-a085-09e60e4b0419")
-		(property "Reference" "#PWR084"
+		(property "Reference" "#PWR085"
 			(at 78.74 29.21 0)
 			(effects
 				(font
@@ -10486,7 +10668,7 @@
 		(instances
 			(project "Yellow"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/7c248bd3-8232-4777-a40c-eab53460cf85"
-					(reference "#PWR084")
+					(reference "#PWR085")
 					(unit 1)
 				)
 			)
@@ -10501,7 +10683,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b2b17f2c-fc65-4930-ba7f-fa7d6b7502f5")
-		(property "Reference" "#PWR092"
+		(property "Reference" "#PWR093"
 			(at 246.38 157.48 0)
 			(effects
 				(font
@@ -10551,7 +10733,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/7c248bd3-8232-4777-a40c-eab53460cf85"
-					(reference "#PWR092")
+					(reference "#PWR093")
 					(unit 1)
 				)
 			)
@@ -10672,7 +10854,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c6beaf3d-dfee-42ba-82b4-3c3e35f9a54c")
-		(property "Reference" "D43"
+		(property "Reference" "D16"
 			(at 227.33 115.57 0)
 			(effects
 				(font
@@ -10783,6 +10965,14 @@
 				)
 			)
 		)
+		(property "JLCPCB_CORRECTION" "0;0;180"
+			(at 227.33 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "8a3db582-eff6-4c0e-a50c-5ed775e87d5a")
 		)
@@ -10792,7 +10982,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/7c248bd3-8232-4777-a40c-eab53460cf85"
-					(reference "D43")
+					(reference "D16")
 					(unit 1)
 				)
 			)
@@ -10808,7 +10998,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c8031ae9-b77c-447b-9bc2-ccfa339a2329")
-		(property "Reference" "#PWR090"
+		(property "Reference" "#PWR091"
 			(at 232.41 106.68 0)
 			(effects
 				(font
@@ -10858,7 +11048,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/7c248bd3-8232-4777-a40c-eab53460cf85"
-					(reference "#PWR090")
+					(reference "#PWR091")
 					(unit 1)
 				)
 			)
@@ -11104,7 +11294,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "eb7b9118-84f9-4fcc-bb25-58d245499d27")
-		(property "Reference" "#PWR091"
+		(property "Reference" "#PWR092"
 			(at 241.3 88.9 0)
 			(effects
 				(font
@@ -11154,7 +11344,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/7c248bd3-8232-4777-a40c-eab53460cf85"
-					(reference "#PWR091")
+					(reference "#PWR092")
 					(unit 1)
 				)
 			)
@@ -11169,7 +11359,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fa63b1c6-e4da-416c-a9c7-73282ab5bc51")
-		(property "Reference" "#PWR093"
+		(property "Reference" "#PWR094"
 			(at 250.19 125.73 0)
 			(effects
 				(font
@@ -11219,7 +11409,7 @@
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/7c248bd3-8232-4777-a40c-eab53460cf85"
-					(reference "#PWR093")
+					(reference "#PWR094")
 					(unit 1)
 				)
 			)

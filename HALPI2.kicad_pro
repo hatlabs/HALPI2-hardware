@@ -158,7 +158,7 @@
           ""
         ],
         [
-          "footprint_type_mismatch|141900000|104250000|7b0ba0e3-0e7c-45b9-a960-d1df99d6c473|00000000-0000-0000-0000-000000000000",
+          "footprint_type_mismatch|142800000|104250000|7b0ba0e3-0e7c-45b9-a960-d1df99d6c473|00000000-0000-0000-0000-000000000000",
           ""
         ],
         [
@@ -198,11 +198,11 @@
           ""
         ],
         [
-          "starved_thermal|129600000|94250000|926a57b8-8a76-4c50-8172-8c028426f9f2|75d31745-2b78-4247-8926-ad7d57cddf60|F.Cu",
+          "skew_out_of_range|112500000|79642500|f690a3fc-e545-4ebb-b618-014552c7573c|00000000-0000-0000-0000-000000000000",
           ""
         ],
         [
-          "starved_thermal|131140000|95950000|926a57b8-8a76-4c50-8172-8c028426f9f2|2093f5aa-a0fd-42a3-8cb1-b08eadb555cf|F.Cu",
+          "skew_out_of_range|63162500|109500000|7e37e84c-3559-4833-a060-060ec6d5c3af|00000000-0000-0000-0000-000000000000",
           ""
         ],
         [
@@ -998,6 +998,9 @@
       "/CM4 Highspeed/DPHY1/P17": [
         "Digital"
       ],
+      "/CM4 Highspeed/DPHY1/P18": [
+        "Digital"
+      ],
       "/CM4 Highspeed/HDMI0.CEC": [
         "Digital"
       ],
@@ -1535,6 +1538,9 @@
         "Analog"
       ],
       "/Power/Buck converter 10V/Current Limiter/I2A9": [
+        "Analog"
+      ],
+      "/Power/Buck converter 10V/Current Limiter/VF+": [
         "Analog"
       ],
       "/Power/Buck converter 10V/Current Limiter/VF-": [
@@ -2339,10 +2345,16 @@
       "Net-(U1202-USB_DP)": [
         "Diff90ohm"
       ],
+      "Net-(U52-+)": [
+        "Analog"
+      ],
       "Net-(U6-PG)": [
         "Digital"
       ],
       "Net-(U7-PG)": [
+        "Digital"
+      ],
+      "unconnected-(U10-GPIO12-Pad15)": [
         "Digital"
       ],
       "unconnected-(U10-GPIO14-Pad17)": [
@@ -2542,24 +2554,6 @@
           "label": "Component Class",
           "name": "Component Class",
           "show": true
-        },
-        {
-          "group_by": false,
-          "label": "PartNumber",
-          "name": "PartNumber",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Field8",
-          "name": "Field8",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "LCSC Part",
-          "name": "LCSC Part",
-          "show": false
         },
         {
           "group_by": false,

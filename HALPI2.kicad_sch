@@ -78,7 +78,7 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 76.2) (xy 31.75 76.2)
+			(xy 29.21 78.74) (xy 31.75 78.74)
 		)
 		(stroke
 			(width 0)
@@ -96,6 +96,16 @@
 		)
 		(uuid "19b88949-895d-4ece-b5e8-785e183a6549")
 	)
+	(wire
+		(pts
+			(xy 224.79 82.55) (xy 222.25 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b76673b-cd02-4187-8cb7-1d7ec9770aff")
+	)
 	(bus
 		(pts
 			(xy 184.15 104.14) (xy 186.69 104.14)
@@ -108,7 +118,7 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 71.12) (xy 31.75 71.12)
+			(xy 29.21 73.66) (xy 31.75 73.66)
 		)
 		(stroke
 			(width 0)
@@ -286,6 +296,16 @@
 		)
 		(uuid "9ae234bb-349e-41dc-b46e-f89a19e8dd9e")
 	)
+	(wire
+		(pts
+			(xy 29.21 68.58) (xy 31.75 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f0e874a-ddf4-4c3a-b32d-c4f48805f3ca")
+	)
 	(bus
 		(pts
 			(xy 151.13 66.04) (xy 153.67 66.04)
@@ -408,7 +428,7 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 73.66) (xy 31.75 73.66)
+			(xy 29.21 76.2) (xy 31.75 76.2)
 		)
 		(stroke
 			(width 0)
@@ -428,7 +448,7 @@
 	)
 	(bus
 		(pts
-			(xy 29.21 81.28) (xy 31.75 81.28)
+			(xy 29.21 83.82) (xy 31.75 83.82)
 		)
 		(stroke
 			(width 0)
@@ -556,6 +576,16 @@
 		)
 		(uuid "0371c1c1-107c-434b-9bab-e02f957b326b")
 	)
+	(label "~{LED_PCIE}"
+		(at 29.21 68.58 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "06d7979b-d636-48b7-9463-d7a397d6bb1e")
+	)
 	(label "I2C0{I2C}"
 		(at 104.14 44.45 180)
 		(effects
@@ -647,7 +677,7 @@
 		(uuid "26dd03cb-ec24-4a9b-82c8-80e2eb480499")
 	)
 	(label "I2C1{I2C}"
-		(at 29.21 81.28 180)
+		(at 29.21 83.82 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -667,7 +697,7 @@
 		(uuid "4b68380b-32b4-4300-8304-fbc184f9e631")
 	)
 	(label "Vin_prot"
-		(at 29.21 71.12 180)
+		(at 29.21 73.66 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -675,6 +705,16 @@
 			(justify right bottom)
 		)
 		(uuid "4b7a0618-6495-4a87-bf7e-d034837036ef")
+	)
+	(label "~{LED_PCIE}"
+		(at 224.79 82.55 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "51b79f7f-c72b-48e8-9f8a-7168f1c8ce35")
 	)
 	(label "RS485{RS485}"
 		(at 153.67 29.21 0)
@@ -917,7 +957,7 @@
 		(uuid "ec2ee693-4763-49aa-8e34-cdc98d93611d")
 	)
 	(label "Vscap"
-		(at 29.21 73.66 180)
+		(at 29.21 76.2 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -927,7 +967,7 @@
 		(uuid "ef72ad10-9502-4780-8425-cce93ad3ef28")
 	)
 	(label "Iin"
-		(at 29.21 76.2 180)
+		(at 29.21 78.74 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1351,7 +1391,7 @@
 			)
 		)
 		(pin "Vin_prot" input
-			(at 31.75 71.12 180)
+			(at 31.75 73.66 180)
 			(uuid "6b4f1da1-0804-4a5f-ab9b-d4f85225dfb7")
 			(effects
 				(font
@@ -1361,7 +1401,7 @@
 			)
 		)
 		(pin "Vscap" input
-			(at 31.75 73.66 180)
+			(at 31.75 76.2 180)
 			(uuid "d7ad14e1-d8a9-4175-bc55-388038823b54")
 			(effects
 				(font
@@ -1381,7 +1421,7 @@
 			)
 		)
 		(pin "Iin" input
-			(at 31.75 76.2 180)
+			(at 31.75 78.74 180)
 			(uuid "6c00fd8b-dcb1-4f46-aab9-8f07454b2be2")
 			(effects
 				(font
@@ -1421,7 +1461,7 @@
 			)
 		)
 		(pin "I2C1{I2C}" bidirectional
-			(at 31.75 81.28 180)
+			(at 31.75 83.82 180)
 			(uuid "44e618fc-3578-40b1-8b28-e12a22e89f59")
 			(effects
 				(font
@@ -1458,6 +1498,16 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+		(pin "~{LED_PCIE}" input
+			(at 31.75 68.58 180)
+			(uuid "d81fbb31-d9bd-4743-80f1-3616e6b28a0a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -1652,6 +1702,16 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(pin "~{LED_PCIE}" output
+			(at 222.25 82.55 0)
+			(uuid "15e7a393-8d6c-42ed-941d-ce369bda4255")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances

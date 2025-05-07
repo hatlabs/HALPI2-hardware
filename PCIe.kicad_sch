@@ -2200,6 +2200,12 @@
 		(uuid "a17113db-a8bc-4b14-bae4-f6fa9744710d")
 	)
 	(junction
+		(at 144.78 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ab3ba5b9-9478-4c23-bc29-b93eb5572799")
+	)
+	(junction
 		(at 140.97 27.94)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2679,6 +2685,16 @@
 	)
 	(wire
 		(pts
+			(xy 144.78 101.6) (xy 148.59 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc5e4c1e-dc30-4a89-b6d4-5f67df7561fb")
+	)
+	(wire
+		(pts
 			(xy 152.4 34.29) (xy 152.4 35.56)
 		)
 		(stroke
@@ -2928,6 +2944,49 @@
 			(justify right)
 		)
 		(uuid "2847f385-7cbf-42b0-9bc8-98844624d536")
+	)
+	(hierarchical_label "~{LED_PCIE}"
+		(shape output)
+		(at 148.59 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6c593bb9-7054-48b7-a08f-c0fb82433a76")
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
+		(at 147.32 101.6 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "56dbccf3-cf1f-45f9-a437-fdd3bc2d2fdf")
+		(property "Netclass" "Digital"
+			(at 148.209 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Component Class" ""
+			(at -74.93 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Device:C_Small")
@@ -3188,6 +3247,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"

@@ -198,7 +198,7 @@
           ""
         ],
         [
-          "skew_out_of_range|164550000|70082500|66c22f11-2e99-4092-a994-79e5d2aac8a5|00000000-0000-0000-0000-000000000000",
+          "skew_out_of_range|164550000|73800000|f690a3fc-e545-4ebb-b618-014552c7573c|00000000-0000-0000-0000-000000000000",
           ""
         ],
         [
@@ -651,7 +651,7 @@
       "similar_labels": "warning",
       "similar_power": "warning",
       "simulation_model_issue": "ignore",
-      "single_global_label": "ignore",
+      "single_global_label": "warning",
       "unannotated": "error",
       "unconnected_wire_endpoint": "warning",
       "unit_value_mismatch": "error",
@@ -1145,6 +1145,9 @@
         "Digital"
       ],
       "/Controller/Ideal Diode Controller/B": [
+        "Analog"
+      ],
+      "/Controller/Iin_": [
         "Analog"
       ],
       "/Controller/Iinx": [
@@ -2371,10 +2374,16 @@
       "unconnected-(U2601-SUSPEND{slash}NRDCLKO-Pad1)": [
         "Digital"
       ],
+      "unconnected-(U32-SUSPEND{slash}NRDCLKO-Pad1)": [
+        "Digital"
+      ],
       "unconnected-(U33-SUSPEND{slash}NRDCLKO-Pad1)": [
         "Digital"
       ],
       "unconnected-(U34-SUSPEND{slash}NRDCLKO-Pad1)": [
+        "Digital"
+      ],
+      "unconnected-(U9-GPIO12-Pad15)": [
         "Digital"
       ]
     },

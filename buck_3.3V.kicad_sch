@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "HALPI2")
-		(date "2025-03-27")
-		(rev "v0.2.0")
+		(date "2025-05-08")
+		(rev "v0.3.0")
 		(company "Hat Labs Oy")
 		(comment 1 "https://ohwr.org/cern_ohl_s_v2.pdf")
 		(comment 2 "To view a copy of this license, visit ")
@@ -1520,6 +1520,107 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(text "FB voltage divider designed to have\na 3.33V voltage at Vout"
 		(exclude_from_sim no)
@@ -1532,17 +1633,6 @@
 		)
 		(uuid "1952bb39-e3e5-4ba5-bd7d-48e99d7bf6b3")
 	)
-	(text "Reverse current protection.\nThe 3.3V rail must not charge\ndepleted supercaps.\nVin must be higher than Vout_\nfor the FET to conduct."
-		(exclude_from_sim no)
-		(at 220.98 48.26 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "29c9ec66-2cce-4747-a965-6835d485c2f6")
-	)
 	(text "Vin at max. 10.0V"
 		(exclude_from_sim no)
 		(at 27.94 57.15 0)
@@ -1553,6 +1643,17 @@
 			(justify left bottom)
 		)
 		(uuid "41467414-e25a-4f21-bbba-3d1ed978aef1")
+	)
+	(text "Prevent current\nbackflow from 3.3V\nto depleted supercaps."
+		(exclude_from_sim no)
+		(at 226.06 53.34 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6c457c76-e9fd-474c-ac26-3dae8fc94673")
 	)
 	(text "Buck converter for the 3.3V rail"
 		(exclude_from_sim no)
@@ -1591,6 +1692,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "117e5024-cdc6-4d79-b4ff-a72bbbf16a48")
+	)
+	(junction
+		(at 251.46 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "13e2a33e-4d3b-4988-abfc-8ce6dcc4280c")
 	)
 	(junction
 		(at 223.52 81.28)
@@ -1870,7 +1977,7 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 69.85) (xy 256.54 69.85)
+			(xy 240.03 69.85) (xy 251.46 69.85)
 		)
 		(stroke
 			(width 0)
@@ -1887,6 +1994,16 @@
 			(type default)
 		)
 		(uuid "6605691f-8e0a-4c91-b804-5013c6d1531a")
+	)
+	(wire
+		(pts
+			(xy 251.46 69.85) (xy 256.54 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6fd12cc7-0400-44e8-b487-6d50cec2ae5a")
 	)
 	(wire
 		(pts
@@ -2950,6 +3067,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 251.46 69.85 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5349a4f8-1620-4718-a63a-508a6cfc015c")
+		(property "Reference" "#FLG09"
+			(at 251.46 71.755 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 251.46 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 251.46 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 251.46 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 251.46 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0aacfc0e-2e3e-40ce-8c64-7fcf10e7c6ce")
+		)
+		(instances
+			(project ""
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/e9d5ec1c-aaca-4440-9248-34d6a57da48f"
+					(reference "#FLG09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 223.52 81.28 180)
 		(unit 1)
@@ -2958,7 +3141,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "57eb82c3-71c6-4cbd-9f3d-aa07e2c783d9")
-		(property "Reference" "TP20"
+		(property "Reference" "TP21"
 			(at 226.06 83.3119 0)
 			(effects
 				(font
@@ -3018,7 +3201,7 @@
 		(instances
 			(project "Yellow"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/e9d5ec1c-aaca-4440-9248-34d6a57da48f"
-					(reference "TP20")
+					(reference "TP21")
 					(unit 1)
 				)
 			)
@@ -3034,7 +3217,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5f599b68-28fd-410d-a48d-4fc75153a960")
-		(property "Reference" "R31"
+		(property "Reference" "R30"
 			(at 208.28 74.9299 0)
 			(effects
 				(font
@@ -3116,7 +3299,7 @@
 					(unit 1)
 				)
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/e9d5ec1c-aaca-4440-9248-34d6a57da48f"
-					(reference "R31")
+					(reference "R30")
 					(unit 1)
 				)
 			)
@@ -3317,7 +3500,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "79324f3a-6968-4dab-a024-deb1dac77675")
-		(property "Reference" "R32"
+		(property "Reference" "R31"
 			(at 208.28 86.3599 0)
 			(effects
 				(font
@@ -3399,7 +3582,7 @@
 					(unit 1)
 				)
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/e9d5ec1c-aaca-4440-9248-34d6a57da48f"
-					(reference "R32")
+					(reference "R31")
 					(unit 1)
 				)
 			)

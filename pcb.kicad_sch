@@ -380,6 +380,89 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Mechanical:MountingHole_Pad"
 			(pin_numbers
 				(hide yes)
@@ -876,18 +959,6 @@
 		(uuid "0283be2d-f8d3-405a-a2e7-66c4a831bb69")
 	)
 	(junction
-		(at 59.69 156.21)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0c28a189-41c3-4e55-82df-09997789a806")
-	)
-	(junction
-		(at 38.1 148.59)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "192e6ecf-d62f-4712-858a-5d3a398023b9")
-	)
-	(junction
 		(at 229.87 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -910,12 +981,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "329a8c4a-a75e-4553-ae7c-8bb048a8ec76")
-	)
-	(junction
-		(at 104.14 140.97)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "40f8d09b-8839-46f0-9778-b5ddbe335307")
 	)
 	(junction
 		(at 229.87 78.74)
@@ -948,22 +1013,10 @@
 		(uuid "621df082-7d7d-499e-9845-3f3d869ada95")
 	)
 	(junction
-		(at 38.1 156.21)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6379ae12-0425-45b2-869a-add7ad128d07")
-	)
-	(junction
 		(at 229.87 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "66c670d4-8d92-44f0-bcab-dd3fa068af1e")
-	)
-	(junction
-		(at 59.69 148.59)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bb49b257-5bcd-4a5f-9219-54493328d90a")
 	)
 	(junction
 		(at 229.87 119.38)
@@ -984,10 +1037,10 @@
 		(uuid "d0ea3673-9f00-411c-9e28-93ddc9492e25")
 	)
 	(junction
-		(at 104.14 151.13)
+		(at 38.1 156.21)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "f482ae7e-27f1-4912-92b0-be4d7b01a56a")
+		(uuid "d9b08540-6903-4e70-be40-ba3cdda542a5")
 	)
 	(wire
 		(pts
@@ -998,16 +1051,6 @@
 			(type default)
 		)
 		(uuid "0c2da861-4ffd-4db7-805e-33643a857336")
-	)
-	(wire
-		(pts
-			(xy 59.69 148.59) (xy 59.69 156.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0e8406cd-ab5c-40bb-8e66-b5b0231a8a1c")
 	)
 	(wire
 		(pts
@@ -1041,16 +1084,6 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 151.13) (xy 104.14 151.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "381ba43d-8bdb-40e1-b381-87547fd485e5")
-	)
-	(wire
-		(pts
 			(xy 229.87 109.22) (xy 229.87 114.3)
 		)
 		(stroke
@@ -1078,26 +1111,6 @@
 			(type default)
 		)
 		(uuid "416c0dd8-9521-4aa7-97c4-2c2e8876234b")
-	)
-	(wire
-		(pts
-			(xy 59.69 156.21) (xy 59.69 166.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4252da4a-27d6-48c9-b119-5dbb594836f6")
-	)
-	(wire
-		(pts
-			(xy 104.14 166.37) (xy 104.14 151.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "46f37ebc-55ef-42d5-afa4-c00f7d6ac2ae")
 	)
 	(wire
 		(pts
@@ -1151,6 +1164,16 @@
 	)
 	(wire
 		(pts
+			(xy 38.1 148.59) (xy 38.1 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7382c084-6ed0-4cac-ace4-79c6e0186413")
+	)
+	(wire
+		(pts
 			(xy 229.87 83.82) (xy 229.87 88.9)
 		)
 		(stroke
@@ -1201,26 +1224,6 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 140.97) (xy 107.95 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8db15a55-5898-4689-8fac-7d58b82dc48e")
-	)
-	(wire
-		(pts
-			(xy 104.14 140.97) (xy 100.33 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8e53498d-07b7-42fd-9a6b-19c80024834f")
-	)
-	(wire
-		(pts
 			(xy 229.87 104.14) (xy 229.87 109.22)
 		)
 		(stroke
@@ -1228,16 +1231,6 @@
 			(type default)
 		)
 		(uuid "92435a1a-8978-4b9e-b3b4-d91d0281266e")
-	)
-	(wire
-		(pts
-			(xy 104.14 151.13) (xy 104.14 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "98a602e8-d6c0-455b-afa4-79392a51d750")
 	)
 	(wire
 		(pts
@@ -1281,53 +1274,13 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 140.97) (xy 59.69 148.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b05f39cb-69e7-4760-8cf4-ef419eac9e4a")
-	)
-	(wire
-		(pts
-			(xy 38.1 148.59) (xy 38.1 156.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d2d7bc66-365c-4b58-9652-20b182bd31fc")
-	)
-	(wire
-		(pts
-			(xy 104.14 151.13) (xy 107.95 151.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d2db4d19-a1c5-4e5c-81e7-7c040e1c2962")
-	)
-	(wire
-		(pts
 			(xy 38.1 156.21) (xy 38.1 166.37)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d3e1896d-460c-4818-9273-12e214184508")
-	)
-	(wire
-		(pts
-			(xy 38.1 140.97) (xy 38.1 148.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d502680e-e75c-4108-8055-ac4642ad2a3d")
+		(uuid "caa5259b-502b-44c8-9492-c44afb17a6b3")
 	)
 	(wire
 		(pts
@@ -1502,7 +1455,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
+		(lib_id "Mechanical:MountingHole")
 		(at 97.79 140.97 90)
 		(mirror x)
 		(unit 1)
@@ -1527,7 +1480,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4_Pad"
+		(property "Footprint" "HL_MountingHole:MountingHole_4.3mm_M4_Unplated"
 			(at 97.79 140.97 0)
 			(effects
 				(font
@@ -1545,7 +1498,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole with connection"
+		(property "Description" "Mounting Hole without connection"
 			(at 97.79 140.97 0)
 			(effects
 				(font
@@ -1571,9 +1524,6 @@
 				)
 				(hide yes)
 			)
-		)
-		(pin "1"
-			(uuid "d5bcb68d-1355-42eb-84fa-b9be5ccb75a6")
 		)
 		(instances
 			(project "HALPI2"
@@ -1733,7 +1683,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
+		(lib_id "Mechanical:MountingHole")
 		(at 62.23 156.21 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1743,7 +1693,7 @@
 		(fields_autoplaced yes)
 		(uuid "13bc3210-d112-4d0c-98a8-9fc994c178f8")
 		(property "Reference" "H12"
-			(at 66.04 154.9399 90)
+			(at 64.77 154.9399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1752,7 +1702,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 66.04 157.4799 90)
+			(at 64.77 157.4799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1760,7 +1710,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_4.3x6.2mm_M4_Pad_Via"
+		(property "Footprint" "HL_MountingHole:MountingHole_4.3x6.2mm_M4_Unplated"
 			(at 62.23 156.21 0)
 			(effects
 				(font
@@ -1778,7 +1728,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole with connection"
+		(property "Description" "Mounting Hole without connection"
 			(at 62.23 156.21 0)
 			(effects
 				(font
@@ -1804,9 +1754,6 @@
 				)
 				(hide yes)
 			)
-		)
-		(pin "1"
-			(uuid "ce8d8c65-29ae-4d3b-a5b6-5defeacbd39d")
 		)
 		(instances
 			(project "HALPI2"
@@ -3059,7 +3006,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
+		(lib_id "Mechanical:MountingHole")
 		(at 62.23 140.97 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3069,7 +3016,7 @@
 		(fields_autoplaced yes)
 		(uuid "57a2c0f6-7382-4a57-bd70-818e0749289d")
 		(property "Reference" "H10"
-			(at 66.04 139.6999 90)
+			(at 64.77 139.6999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3078,7 +3025,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 66.04 142.2399 90)
+			(at 64.77 142.2399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3086,7 +3033,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_4.3x6.2mm_M4_Pad_Via"
+		(property "Footprint" "HL_MountingHole:MountingHole_4.3x6.2mm_M4_Unplated"
 			(at 62.23 140.97 0)
 			(effects
 				(font
@@ -3104,7 +3051,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole with connection"
+		(property "Description" "Mounting Hole without connection"
 			(at 62.23 140.97 0)
 			(effects
 				(font
@@ -3130,9 +3077,6 @@
 				)
 				(hide yes)
 			)
-		)
-		(pin "1"
-			(uuid "1cc7b748-8687-409e-ab23-0848995aaa6b")
 		)
 		(instances
 			(project "HALPI2"
@@ -3226,7 +3170,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
+		(lib_id "Mechanical:MountingHole")
 		(at 62.23 148.59 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3236,7 +3180,7 @@
 		(fields_autoplaced yes)
 		(uuid "5cbd34a0-018e-4323-b9fb-c2ae0c8f8a9b")
 		(property "Reference" "H11"
-			(at 66.04 147.3199 90)
+			(at 64.77 147.3199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3245,7 +3189,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 66.04 149.8599 90)
+			(at 64.77 149.8599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3253,7 +3197,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_4.3x6.2mm_M4_Pad_Via"
+		(property "Footprint" "HL_MountingHole:MountingHole_4.3x6.2mm_M4_Unplated"
 			(at 62.23 148.59 0)
 			(effects
 				(font
@@ -3271,7 +3215,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole with connection"
+		(property "Description" "Mounting Hole without connection"
 			(at 62.23 148.59 0)
 			(effects
 				(font
@@ -3297,9 +3241,6 @@
 				)
 				(hide yes)
 			)
-		)
-		(pin "1"
-			(uuid "3fc8c6a4-2fd9-498e-b250-48e990a96274")
 		)
 		(instances
 			(project "HALPI2"
@@ -3377,7 +3318,8 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 40.64 148.59 270)
+		(at 35.56 148.59 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -3386,7 +3328,7 @@
 		(fields_autoplaced yes)
 		(uuid "6a2df697-bbe5-4f70-b4c2-2e95ce84ef1f")
 		(property "Reference" "H8"
-			(at 44.45 147.3199 90)
+			(at 31.75 147.3199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3395,7 +3337,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 44.45 149.8599 90)
+			(at 31.75 149.8599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3404,7 +3346,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_4.3x6.2mm_M4_Pad_Via"
-			(at 40.64 148.59 0)
+			(at 35.56 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3413,7 +3355,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 40.64 148.59 0)
+			(at 35.56 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3422,7 +3364,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 40.64 148.59 0)
+			(at 35.56 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3431,7 +3373,7 @@
 			)
 		)
 		(property "Characteristics" ""
-			(at 40.64 148.59 0)
+			(at 35.56 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3440,7 +3382,7 @@
 			)
 		)
 		(property "Sim.Enable" ""
-			(at 40.64 148.59 90)
+			(at 35.56 148.59 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3613,72 +3555,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 104.14 166.37 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6eff4d8c-bda3-4f92-b4cc-ce0780a9f70d")
-		(property "Reference" "#PWR0312"
-			(at 104.14 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 104.14 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 104.14 166.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 104.14 166.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 104.14 166.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3361e2dc-83bf-49b0-9428-52dbb26546b7")
-		)
-		(instances
-			(project "HALPI2"
-				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/e4643111-53ad-48d1-8ad1-a500e184f609"
-					(reference "#PWR0312")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector_Generic:Conn_01x03")
 		(at 161.29 57.15 0)
 		(mirror x)
@@ -3820,72 +3696,6 @@
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/e4643111-53ad-48d1-8ad1-a500e184f609"
 					(reference "#PWR0328")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 59.69 166.37 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "83b90531-14ea-4f33-9b6b-4789d94a03b3")
-		(property "Reference" "#PWR0311"
-			(at 59.69 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 59.69 171.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 59.69 166.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 59.69 166.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 59.69 166.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c0644db9-777e-418f-b1d3-3e2ede32ae80")
-		)
-		(instances
-			(project "HALPI2"
-				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/e4643111-53ad-48d1-8ad1-a500e184f609"
-					(reference "#PWR0311")
 					(unit 1)
 				)
 			)
@@ -4099,7 +3909,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
+		(lib_id "Mechanical:MountingHole")
 		(at 110.49 140.97 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4123,7 +3933,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4_Pad"
+		(property "Footprint" "HL_MountingHole:MountingHole_4.3mm_M4_Unplated"
 			(at 110.49 140.97 0)
 			(effects
 				(font
@@ -4141,7 +3951,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole with connection"
+		(property "Description" "Mounting Hole without connection"
 			(at 110.49 140.97 0)
 			(effects
 				(font
@@ -4167,9 +3977,6 @@
 				)
 				(hide yes)
 			)
-		)
-		(pin "1"
-			(uuid "87a7a03b-48f6-4d72-ae9b-d3ae3c703b8b")
 		)
 		(instances
 			(project "HALPI2"
@@ -4499,8 +4306,9 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
+		(lib_id "Mechanical:MountingHole")
 		(at 40.64 140.97 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -4509,22 +4317,24 @@
 		(fields_autoplaced yes)
 		(uuid "b8935306-58ce-4522-baec-7eef4d8a5908")
 		(property "Reference" "H7"
-			(at 41.91 134.62 90)
+			(at 43.18 139.6999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 41.91 137.16 90)
+			(at 43.18 142.2399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_4.3x6.2mm_M4_Pad_Via"
+		(property "Footprint" "HL_MountingHole:MountingHole_4.3x6.2mm_M4_Unplated"
 			(at 40.64 140.97 0)
 			(effects
 				(font
@@ -4542,7 +4352,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole with connection"
+		(property "Description" "Mounting Hole without connection"
 			(at 40.64 140.97 0)
 			(effects
 				(font
@@ -4568,9 +4378,6 @@
 				)
 				(hide yes)
 			)
-		)
-		(pin "1"
-			(uuid "144ec881-4109-45c4-8867-44d560c6d998")
 		)
 		(instances
 			(project "HALPI2"
@@ -4796,7 +4603,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
+		(lib_id "Mechanical:MountingHole")
 		(at 110.49 151.13 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4820,7 +4627,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4_Pad"
+		(property "Footprint" "HL_MountingHole:MountingHole_4.3mm_M4_Unplated"
 			(at 110.49 151.13 0)
 			(effects
 				(font
@@ -4838,7 +4645,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole with connection"
+		(property "Description" "Mounting Hole without connection"
 			(at 110.49 151.13 0)
 			(effects
 				(font
@@ -4865,9 +4672,6 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "dccaf6b7-7182-41de-8a39-9f53f9a97120")
-		)
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/e4643111-53ad-48d1-8ad1-a500e184f609"
@@ -4879,7 +4683,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 40.64 156.21 270)
+		(at 35.56 156.21 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -4888,7 +4692,7 @@
 		(fields_autoplaced yes)
 		(uuid "f07c78c9-a236-4777-b4a0-a1e4d2a13ddf")
 		(property "Reference" "H9"
-			(at 41.91 160.02 90)
+			(at 34.29 149.86 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4896,7 +4700,7 @@
 			)
 		)
 		(property "Value" "MountingHole"
-			(at 41.91 162.56 90)
+			(at 34.29 152.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4904,7 +4708,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_4.3x6.2mm_M4_Pad_Via"
-			(at 40.64 156.21 0)
+			(at 35.56 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4913,7 +4717,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 40.64 156.21 0)
+			(at 35.56 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4922,7 +4726,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 40.64 156.21 0)
+			(at 35.56 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4931,7 +4735,7 @@
 			)
 		)
 		(property "Characteristics" ""
-			(at 40.64 156.21 0)
+			(at 35.56 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4940,7 +4744,7 @@
 			)
 		)
 		(property "Sim.Enable" ""
-			(at 40.64 156.21 90)
+			(at 35.56 156.21 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5043,7 +4847,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
+		(lib_id "Mechanical:MountingHole")
 		(at 97.79 151.13 90)
 		(mirror x)
 		(unit 1)
@@ -5068,7 +4872,7 @@
 				)
 			)
 		)
-		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4_Pad"
+		(property "Footprint" "HL_MountingHole:MountingHole_4.3mm_M4_Unplated"
 			(at 97.79 151.13 0)
 			(effects
 				(font
@@ -5086,7 +4890,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole with connection"
+		(property "Description" "Mounting Hole without connection"
 			(at 97.79 151.13 0)
 			(effects
 				(font
@@ -5112,9 +4916,6 @@
 				)
 				(hide yes)
 			)
-		)
-		(pin "1"
-			(uuid "ebdb0c62-fb31-4be2-b674-263d334c2239")
 		)
 		(instances
 			(project "HALPI2"

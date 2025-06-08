@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "HALPI2")
-		(date "2025-06-06")
+		(date "2025-06-08")
 		(rev "v0.4.0")
 		(company "Hat Labs Oy")
 		(comment 1 "https://ohwr.org/cern_ohl_s_v2.pdf")
@@ -4525,6 +4525,17 @@
 		)
 		(uuid "b4eb96d8-de7f-4fc5-9e3b-5521fedf87c7")
 	)
+	(text "Add a longish delay\nto release ~{RESET}.\nWe're not so concerned\nabout a small delay as\nabout ultra-reliable\nstartup."
+		(exclude_from_sim no)
+		(at 97.79 26.67 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "bfb63b72-5b5f-4186-acf6-f032f03f20e8")
+	)
 	(text "E"
 		(exclude_from_sim no)
 		(at 148.082 79.502 0)
@@ -4610,6 +4621,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "24cd642e-d076-4618-9570-5bacf924e34c")
+	)
+	(junction
+		(at 81.28 29.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2cf3bd0c-1ef9-44c2-94dd-52c3ef8695c6")
 	)
 	(junction
 		(at 86.36 76.2)
@@ -5553,6 +5570,16 @@
 	)
 	(wire
 		(pts
+			(xy 81.28 27.94) (xy 81.28 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40ac5d73-6f6e-4236-ad06-eb6120762de4")
+	)
+	(wire
+		(pts
 			(xy 73.66 85.09) (xy 76.2 85.09)
 		)
 		(stroke
@@ -5680,6 +5707,16 @@
 			(type default)
 		)
 		(uuid "49305d8a-879f-4809-92fb-9a2463c1c41b")
+	)
+	(wire
+		(pts
+			(xy 81.28 29.21) (xy 88.9 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49424d40-3fc8-455c-a062-f302c4f89b2b")
 	)
 	(polyline
 		(pts
@@ -6871,6 +6908,16 @@
 		)
 		(uuid "cf717232-7041-4904-a43b-fcf6db70b1c3")
 	)
+	(wire
+		(pts
+			(xy 81.28 29.21) (xy 81.28 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d034b3e4-ff83-418b-93be-d3beabfdea1b")
+	)
 	(bus
 		(pts
 			(xy 40.64 185.42) (xy 40.64 187.96)
@@ -7430,6 +7477,16 @@
 			(justify left bottom)
 		)
 		(uuid "1865af64-fb69-4f37-8389-eb267d383387")
+	)
+	(label "~{RESET}"
+		(at 88.9 29.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1e10b127-452e-4b64-86c5-1b915e89bf85")
 	)
 	(label "GPIO16"
 		(at 247.65 118.11 180)
@@ -8207,22 +8264,7 @@
 			(fill
 				(type none)
 			)
-			(uuid 2728e0c8-e94d-4230-a851-6b5afdb8adaa)
-		)
-	)
-	(rule_area
-		(polyline
-			(pts
-				(xy 107.95 100.33) (xy 110.49 100.33) (xy 110.49 82.55) (xy 107.95 82.55)
-			)
-			(stroke
-				(width 0)
-				(type dash)
-			)
-			(fill
-				(type none)
-			)
-			(uuid 295298ae-c8e9-49dd-8df9-2375e49f1388)
+			(uuid 02c5fe56-0973-42f5-8923-d2fa6b624f63)
 		)
 	)
 	(rule_area
@@ -8237,22 +8279,7 @@
 			(fill
 				(type none)
 			)
-			(uuid 4bda1428-5104-4af3-be1e-8c51fa3acef2)
-		)
-	)
-	(rule_area
-		(polyline
-			(pts
-				(xy 163.83 133.35) (xy 166.37 133.35) (xy 166.37 143.51) (xy 163.83 143.51)
-			)
-			(stroke
-				(width 0)
-				(type dash)
-			)
-			(fill
-				(type none)
-			)
-			(uuid 636d56a5-b7de-441e-be4f-df976a664f6c)
+			(uuid 132cd452-5c9a-43d5-b6af-7c39236defc3)
 		)
 	)
 	(rule_area
@@ -8267,7 +8294,7 @@
 			(fill
 				(type none)
 			)
-			(uuid 8a558ead-e12d-499b-89fe-101ed439260e)
+			(uuid 24f8e71f-0272-4396-895c-bf20163b160a)
 		)
 	)
 	(rule_area
@@ -8282,7 +8309,37 @@
 			(fill
 				(type none)
 			)
-			(uuid ba080fee-ab4b-4873-8a73-69d3ffe37eb4)
+			(uuid 3b9a5493-6583-45b0-83d3-a396026895d5)
+		)
+	)
+	(rule_area
+		(polyline
+			(pts
+				(xy 163.83 133.35) (xy 166.37 133.35) (xy 166.37 143.51) (xy 163.83 143.51)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type none)
+			)
+			(uuid 6fbb276a-dc4f-4eab-88aa-02aea6a076d8)
+		)
+	)
+	(rule_area
+		(polyline
+			(pts
+				(xy 107.95 100.33) (xy 110.49 100.33) (xy 110.49 82.55) (xy 107.95 82.55)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type none)
+			)
+			(uuid f47b1500-9c44-4318-b656-09f5046f166e)
 		)
 	)
 	(netclass_flag ""
@@ -10276,6 +10333,71 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 81.28 35.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1b5c0b18-2ff2-4abb-b100-1eea0eb426a4")
+		(property "Reference" "#PWR0323"
+			(at 81.28 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 81.407 39.9542 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 81.28 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 81.28 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "81e15974-35b6-43a8-8435-71668fbf26c4")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/850df4bf-e40a-4082-adc2-76804638b949"
+					(reference "#PWR0323")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 109.22 190.5 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10432,6 +10554,72 @@
 			(project ""
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/850df4bf-e40a-4082-adc2-76804638b949"
 					(reference "J6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 81.28 22.86 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "22b7b779-a89e-4847-b52b-290561f48acd")
+		(property "Reference" "#PWR0312"
+			(at 81.28 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 81.28 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 81.28 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 81.28 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "02fb6b67-2d45-4ac2-88d2-c4c9d428d47c")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/850df4bf-e40a-4082-adc2-76804638b949"
+					(reference "#PWR0312")
 					(unit 1)
 				)
 			)
@@ -12690,6 +12878,94 @@
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/850df4bf-e40a-4082-adc2-76804638b949"
 					(reference "#PWR044")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 81.28 25.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6a5b3785-a716-4f5a-ba59-be80e49d68c3")
+		(property "Reference" "R139"
+			(at 83.82 24.1299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 83.82 26.6699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 81.28 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 81.28 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 81.28 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25804"
+			(at 81.28 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Characteristics" ""
+			(at 81.28 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "41081cbf-357d-4a10-92d9-fc1c3a29b8aa")
+		)
+		(pin "2"
+			(uuid "4dc30bd9-4f6c-4412-a51b-8679152704d6")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/850df4bf-e40a-4082-adc2-76804638b949"
+					(reference "R139")
 					(unit 1)
 				)
 			)
@@ -15989,6 +16265,95 @@
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/850df4bf-e40a-4082-adc2-76804638b949"
 					(reference "TP32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 81.28 33.02 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f48ed0cf-7924-4851-b925-c953e25068d7")
+		(property "Reference" "C186"
+			(at 83.82 31.7562 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "4.7uF"
+			(at 83.82 34.2962 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 81.28 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 81.28 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 81.28 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C19666"
+			(at 81.28 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Characteristics" ""
+			(at 81.28 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "39f8fafc-97df-46dd-a11c-ebf730d15615")
+		)
+		(pin "2"
+			(uuid "da28cd5b-b3cb-4fbd-aac0-b0440be76c92")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/850df4bf-e40a-4082-adc2-76804638b949"
+					(reference "C186")
 					(unit 1)
 				)
 			)

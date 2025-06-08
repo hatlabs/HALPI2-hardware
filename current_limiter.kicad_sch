@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "HALPI2")
-		(date "2025-06-06")
+		(date "2025-06-08")
 		(rev "v0.4.0")
 		(company "Hat Labs Oy")
 		(comment 1 "https://ohwr.org/cern_ohl_s_v2.pdf")
@@ -2584,7 +2584,7 @@
 		)
 		(uuid "69d821f1-f6db-4140-959b-da8428f2524a")
 	)
-	(text "Voltage at Iinx\ncorresponds to\ninput current"
+	(text "Voltage at Iin\ncorresponds to\ninput current"
 		(exclude_from_sim no)
 		(at 110.49 93.98 0)
 		(effects
@@ -2618,7 +2618,7 @@
 	)
 	(text "R_{f}"
 		(exclude_from_sim no)
-		(at 139.7 82.55 0)
+		(at 138.43 82.55 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2671,6 +2671,12 @@
 		(uuid "0b0aaddf-d711-44df-a547-6d23c974d7bd")
 	)
 	(junction
+		(at 120.65 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0f6dfc81-1fd6-4576-8673-b6b63df61167")
+	)
+	(junction
 		(at 171.45 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2711,12 +2717,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "57cf0e0e-cf90-4154-89f0-5c21b2f4e9a9")
-	)
-	(junction
-		(at 154.94 92.71)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "617a101f-b2ff-4098-a853-4bc6356cd805")
 	)
 	(junction
 		(at 175.26 104.14)
@@ -3002,7 +3002,7 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 92.71) (xy 135.89 92.71)
+			(xy 123.19 92.71) (xy 134.62 92.71)
 		)
 		(stroke
 			(width 0)
@@ -3022,7 +3022,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 92.71) (xy 154.94 92.71)
+			(xy 149.86 92.71) (xy 156.21 92.71)
 		)
 		(stroke
 			(width 0)
@@ -3069,16 +3069,6 @@
 			(type default)
 		)
 		(uuid "59bf9bdc-5e3d-4624-be01-934facbd8083")
-	)
-	(wire
-		(pts
-			(xy 154.94 92.71) (xy 156.21 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5cfb7c9d-f57d-45a0-bd78-d81a6451e64c")
 	)
 	(wire
 		(pts
@@ -3132,7 +3122,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 92.71) (xy 147.32 92.71)
+			(xy 142.24 92.71) (xy 147.32 92.71)
 		)
 		(stroke
 			(width 0)
@@ -3189,6 +3179,16 @@
 			(type dash)
 		)
 		(uuid "7d2fd044-6bb8-432f-a5c0-fb5c95b9ad60")
+	)
+	(wire
+		(pts
+			(xy 120.65 80.01) (xy 120.65 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7fc8c986-bce4-4694-bfb9-631976fb65e3")
 	)
 	(wire
 		(pts
@@ -3432,7 +3432,7 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 83.82) (xy 154.94 92.71)
+			(xy 124.46 80.01) (xy 120.65 80.01)
 		)
 		(stroke
 			(width 0)
@@ -3602,7 +3602,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 76.2) (xy 120.65 92.71)
+			(xy 120.65 76.2) (xy 120.65 80.01)
 		)
 		(stroke
 			(width 0)
@@ -3760,7 +3760,7 @@
 		)
 		(uuid "9e004187-fa8a-40cf-b6d8-6bb12a4ffb27")
 	)
-	(label "Iinx"
+	(label "Iin"
 		(at 237.49 91.44 180)
 		(effects
 			(font
@@ -3780,8 +3780,8 @@
 		)
 		(uuid "bfcbaf95-8f80-4e88-a74c-82677fa735d8")
 	)
-	(label "Iinx"
-		(at 120.65 83.82 0)
+	(label "Iinf"
+		(at 152.4 92.71 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3792,7 +3792,7 @@
 	)
 	(hierarchical_label "Iin"
 		(shape output)
-		(at 154.94 83.82 90)
+		(at 124.46 80.01 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4005,7 +4005,7 @@
 	(netclass_flag ""
 		(length 2.54)
 		(shape round)
-		(at 152.4 92.71 0)
+		(at 151.13 92.71 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4015,7 +4015,7 @@
 		)
 		(uuid "93a6b278-67ef-4c57-9aa1-7d4f32cb8030")
 		(property "Netclass" "Analog"
-			(at 153.289 90.17 0)
+			(at 152.019 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6068,7 +6068,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "330nF"
+		(property "Value" "47nF"
 			(at 146.05 100.3299 0)
 			(effects
 				(font
@@ -6104,7 +6104,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C1615"
+		(property "LCSC" "C1622"
 			(at 149.86 99.06 0)
 			(effects
 				(font
@@ -6665,7 +6665,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 139.7 92.71 90)
+		(at 138.43 92.71 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6674,15 +6674,15 @@
 		(fields_autoplaced yes)
 		(uuid "f386fa14-c02f-415b-9a88-ce4604436eda")
 		(property "Reference" "R117"
-			(at 139.7 86.36 90)
+			(at 138.43 86.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "100k"
-			(at 139.7 88.9 90)
+		(property "Value" "51k"
+			(at 138.43 88.9 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6690,7 +6690,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 139.7 94.488 90)
+			(at 138.43 94.488 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6699,7 +6699,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 139.7 92.71 0)
+			(at 138.43 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6708,7 +6708,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 139.7 92.71 0)
+			(at 138.43 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6716,8 +6716,8 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C25803"
-			(at 139.7 92.71 0)
+		(property "LCSC" "C23196"
+			(at 138.43 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6726,7 +6726,7 @@
 			)
 		)
 		(property "Characteristics" ""
-			(at 139.7 92.71 0)
+			(at 138.43 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6735,7 +6735,7 @@
 			)
 		)
 		(property "Sim.Enable" ""
-			(at 139.7 92.71 90)
+			(at 138.43 92.71 90)
 			(effects
 				(font
 					(size 1.27 1.27)

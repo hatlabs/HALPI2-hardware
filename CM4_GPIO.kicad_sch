@@ -5092,7 +5092,7 @@
 		(members "D[0..3]" "CMD" "CLK" "PWR" "DET")
 	)
 	(bus_alias "SPI"
-		(members "SCK" "SDI" "SDO" "CS" "INT")
+		(members "SCK" "MOSI" "MISO" "CS" "INT")
 	)
 	(bus_alias "UART"
 		(members "RXD" "TXD")
@@ -7671,7 +7671,7 @@
 		)
 		(uuid "126c5e4b-e780-4abe-bc00-c79ddd396632")
 	)
-	(label "CAN.SDO"
+	(label "CAN.MISO"
 		(at 119.38 95.25 180)
 		(effects
 			(font
@@ -7901,7 +7901,7 @@
 		)
 		(uuid "4dab2cae-553c-40fd-98ca-9efd99436623")
 	)
-	(label "CAN.SDI"
+	(label "CAN.MOSI"
 		(at 238.76 55.88 180)
 		(effects
 			(font
@@ -8081,7 +8081,7 @@
 		)
 		(uuid "848353ed-b3fb-4048-a791-3dd7712b9cd5")
 	)
-	(label "CAN.SDO"
+	(label "CAN.MISO"
 		(at 238.76 58.42 180)
 		(effects
 			(font
@@ -8241,7 +8241,7 @@
 		)
 		(uuid "a7247e10-29b0-4905-a4f8-3563df42296c")
 	)
-	(label "CAN.SDI"
+	(label "CAN.MOSI"
 		(at 119.38 97.79 180)
 		(effects
 			(font
@@ -8672,7 +8672,7 @@
 	(rule_area
 		(polyline
 			(pts
-				(xy 52.07 82.55) (xy 54.61 82.55) (xy 54.61 140.97) (xy 52.07 140.97)
+				(xy 124.46 36.83) (xy 127 36.83) (xy 127 60.96) (xy 124.46 60.96)
 			)
 			(stroke
 				(width 0)
@@ -8681,7 +8681,7 @@
 			(fill
 				(type none)
 			)
-			(uuid 03c9cc73-197b-4cf5-a808-0c0993225192)
+			(uuid 0638d326-107f-418a-97ea-258fcdf201cb)
 		)
 	)
 	(rule_area
@@ -8696,13 +8696,13 @@
 			(fill
 				(type none)
 			)
-			(uuid 0f67f661-5721-4a26-92c0-a4b83d8d09f2)
+			(uuid 1eac0b07-07ea-44f8-9ed2-ace7d5d8d0d6)
 		)
 	)
 	(rule_area
 		(polyline
 			(pts
-				(xy 124.46 36.83) (xy 127 36.83) (xy 127 60.96) (xy 124.46 60.96)
+				(xy 52.07 82.55) (xy 54.61 82.55) (xy 54.61 140.97) (xy 52.07 140.97)
 			)
 			(stroke
 				(width 0)
@@ -8711,7 +8711,7 @@
 			(fill
 				(type none)
 			)
-			(uuid 4b601428-23ba-479e-a755-f188708273aa)
+			(uuid 43bda7b0-0ee5-4f80-aa59-cceb4715418a)
 		)
 	)
 	(rule_area
@@ -8726,7 +8726,7 @@
 			(fill
 				(type none)
 			)
-			(uuid 7196f9c5-5699-466a-806f-9b9814927c64)
+			(uuid c3852e71-afed-4b05-8f4f-ab7dde9427ac)
 		)
 	)
 	(netclass_flag ""
@@ -9220,15 +9220,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 195.58 77.47 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "fc797724-1230-4f21-9a10-8c17fca99dd1")
 		)
@@ -9522,15 +9513,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 247.65 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "4e86201d-1017-4c4b-9a7c-bad84092a98d")
 		)
@@ -9723,15 +9705,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 247.65 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "84d5bf50-67cb-486b-ac75-1bcd0625da58")
 		)
@@ -9817,15 +9790,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 232.41 106.68 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "b25d06a1-5705-482a-ad05-6760e2fd445b")
 		)
@@ -9897,15 +9861,6 @@
 		)
 		(property "LCSC" "C3008584"
 			(at 257.81 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" ""
-			(at 257.81 113.03 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10152,15 +10107,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-			)
-		)
-		(property "Sim.Enable" ""
-			(at 81.28 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
 			)
 		)
 		(pin "28"
@@ -10666,15 +10612,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 207.01 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(instances
 			(project ""
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/7c248bd3-8232-4777-a40c-eab53460cf85"
@@ -10774,15 +10711,6 @@
 			)
 		)
 		(property "JLCPCB_CORRECTION" "0;0;180"
-			(at 227.33 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" ""
 			(at 227.33 121.92 0)
 			(effects
 				(font
@@ -10936,15 +10864,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 232.41 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "41c99eba-a1bb-4e86-8043-3002e77434d3")
 		)
@@ -11025,15 +10944,6 @@
 			)
 		)
 		(property "Characteristics" ""
-			(at 246.38 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" ""
 			(at 246.38 147.32 0)
 			(effects
 				(font

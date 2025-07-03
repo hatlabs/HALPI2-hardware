@@ -4470,7 +4470,7 @@
 		)
 		(uuid "4b261ad8-778e-46aa-86fa-2fa81ed941bc")
 	)
-	(text "VinS scaled to provide\n3.3V for 33V input"
+	(text "VinS scaled to provide\n3.3V for 40V input"
 		(exclude_from_sim no)
 		(at 26.162 84.074 0)
 		(effects
@@ -4505,7 +4505,7 @@
 	)
 	(text "Detect whether the\nCM has shut down"
 		(exclude_from_sim no)
-		(at 197.358 106.934 0)
+		(at 196.85 101.6 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4535,6 +4535,18 @@
 			(justify left)
 		)
 		(uuid "bfb63b72-5b5f-4186-acf6-f032f03f20e8")
+	)
+	(text "FIXME: Should we measure\nVIN_OVP instead?"
+		(exclude_from_sim no)
+		(at 26.67 74.93 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 0 0 1)
+			)
+			(justify left)
+		)
+		(uuid "c798e609-fff7-4e50-bedb-ff4863fd46f8")
 	)
 	(text "E"
 		(exclude_from_sim no)
@@ -8264,22 +8276,7 @@
 			(fill
 				(type none)
 			)
-			(uuid 49ff3797-f45a-466f-bcee-4f0e587c1727)
-		)
-	)
-	(rule_area
-		(polyline
-			(pts
-				(xy 97.79 72.39) (xy 97.79 77.47) (xy 100.33 77.47) (xy 100.33 72.39)
-			)
-			(stroke
-				(width 0)
-				(type dash)
-			)
-			(fill
-				(type none)
-			)
-			(uuid 60c82eaa-2286-466f-a2ad-82b65a938ebf)
+			(uuid 2599b799-ddad-4a8c-834d-cba9a254e2cb)
 		)
 	)
 	(rule_area
@@ -8294,13 +8291,13 @@
 			(fill
 				(type none)
 			)
-			(uuid 8b861964-a18a-428d-9b55-ee8442312ae8)
+			(uuid 61e347b7-de18-4176-af2b-93788f9cff58)
 		)
 	)
 	(rule_area
 		(polyline
 			(pts
-				(xy 107.95 100.33) (xy 110.49 100.33) (xy 110.49 82.55) (xy 107.95 82.55)
+				(xy 97.79 72.39) (xy 97.79 77.47) (xy 100.33 77.47) (xy 100.33 72.39)
 			)
 			(stroke
 				(width 0)
@@ -8309,7 +8306,7 @@
 			(fill
 				(type none)
 			)
-			(uuid 9b14da97-8e27-4a49-818c-90e3d10f4cea)
+			(uuid 92736d16-73d8-4d7e-9f4e-220aa5fc7848)
 		)
 	)
 	(rule_area
@@ -8324,7 +8321,7 @@
 			(fill
 				(type none)
 			)
-			(uuid df5919ba-357b-48b2-92bf-d10ce628c49c)
+			(uuid c5ab4f54-19d8-42ca-a94b-da65c9389036)
 		)
 	)
 	(rule_area
@@ -8339,7 +8336,22 @@
 			(fill
 				(type none)
 			)
-			(uuid ec6a4a61-10bf-41c7-b4c9-009cc94a31f7)
+			(uuid cd9515a8-33ed-42dd-81e1-546a7c7ddaff)
+		)
+	)
+	(rule_area
+		(polyline
+			(pts
+				(xy 107.95 100.33) (xy 110.49 100.33) (xy 110.49 82.55) (xy 107.95 82.55)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type none)
+			)
+			(uuid e18cb8c5-f9df-4929-98a8-8658e20e1ab4)
 		)
 	)
 	(netclass_flag ""

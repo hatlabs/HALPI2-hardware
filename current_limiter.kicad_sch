@@ -2541,6 +2541,18 @@
 			(embedded_fonts no)
 		)
 	)
+	(rectangle
+		(start 83.82 134.62)
+		(end 144.78 184.15)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 3df59fe4-3bb9-46b3-91c4-9cbf931f90f1)
+	)
 	(text "Switch at 1-2\nincreases input\ncurrent limit\nto 2.5A"
 		(exclude_from_sim no)
 		(at 215.9 99.06 0)
@@ -2572,6 +2584,17 @@
 			(justify left bottom)
 		)
 		(uuid "39ff43b2-0152-456b-b911-070d953993c5")
+	)
+	(text "Voltage follower required\nto provide a low-impedance\nsource for Iin. Otherwise the\nMCU GPIO default pull-downs\naffect Vfb."
+		(exclude_from_sim no)
+		(at 113.03 142.24 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "672be8f6-da84-4999-8de7-7e5672fffb4f")
 	)
 	(text "Voltage follower with \ndiode to prevent the opamp\nfrom pulling FB down"
 		(exclude_from_sim no)
@@ -2671,12 +2694,6 @@
 		(uuid "0b0aaddf-d711-44df-a547-6d23c974d7bd")
 	)
 	(junction
-		(at 120.65 80.01)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0f6dfc81-1fd6-4576-8673-b6b63df61167")
-	)
-	(junction
 		(at 171.45 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2701,6 +2718,12 @@
 		(uuid "30157b9e-74d1-4650-bfc9-b541fcbe64c0")
 	)
 	(junction
+		(at 120.65 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4e57e659-e28b-42a1-a27b-82d9037e360d")
+	)
+	(junction
 		(at 59.69 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2711,6 +2734,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5493b4d9-a4a1-4945-ad1e-9a2c102c5c11")
+	)
+	(junction
+		(at 116.84 166.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "56fbe922-fa67-40a6-a73b-9621b3ef2eb0")
 	)
 	(junction
 		(at 149.86 92.71)
@@ -2761,6 +2790,12 @@
 		(uuid "9e9b8ea1-7fd6-4ab9-9baf-e67b37be775c")
 	)
 	(junction
+		(at 109.22 166.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a499ea7e-9449-4088-aae5-686e1dc92d30")
+	)
+	(junction
 		(at 93.98 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2783,6 +2818,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bd51a491-319b-44bb-83b0-467f0aecad44")
+	)
+	(junction
+		(at 99.06 151.13)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cae3943f-1f5d-4dd8-92ce-949c69ff6adf")
 	)
 	(junction
 		(at 92.71 83.82)
@@ -2890,6 +2931,16 @@
 		)
 		(uuid "15731463-8e16-4ee4-bcee-26df282da70d")
 	)
+	(wire
+		(pts
+			(xy 92.71 180.34) (xy 109.22 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1770fc79-3c75-461e-a8b5-8e17175c0f35")
+	)
 	(polyline
 		(pts
 			(xy 34.29 49.53) (xy 208.28 49.53)
@@ -2909,6 +2960,16 @@
 			(type default)
 		)
 		(uuid "1b82cd56-c74a-4eb3-a8da-bc3033636858")
+	)
+	(wire
+		(pts
+			(xy 99.06 142.24) (xy 99.06 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d303e11-9e27-4619-8d81-a048a2cd15f3")
 	)
 	(wire
 		(pts
@@ -2989,6 +3050,26 @@
 			(type default)
 		)
 		(uuid "2d7d80f2-1c00-4ac6-952d-3450371b46dd")
+	)
+	(wire
+		(pts
+			(xy 92.71 168.91) (xy 92.71 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b712bf1-77f6-4ebc-bfe7-7cce66221a61")
+	)
+	(wire
+		(pts
+			(xy 123.19 82.55) (xy 120.65 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e9544e4-6009-47bf-a723-7e240eb666c8")
 	)
 	(polyline
 		(pts
@@ -3182,7 +3263,7 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 80.01) (xy 120.65 92.71)
+			(xy 120.65 76.2) (xy 120.65 82.55)
 		)
 		(stroke
 			(width 0)
@@ -3229,6 +3310,26 @@
 			(type dash)
 		)
 		(uuid "85b78ad9-11ba-48f2-bea9-42dc232ad347")
+	)
+	(wire
+		(pts
+			(xy 93.98 163.83) (xy 90.17 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87d2821c-d82b-4ff3-bab3-239960b02590")
+	)
+	(wire
+		(pts
+			(xy 109.22 166.37) (xy 116.84 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f85fd19-6fc6-41f3-86aa-5048e0963e11")
 	)
 	(wire
 		(pts
@@ -3400,6 +3501,36 @@
 		)
 		(uuid "b86a3454-58fa-429e-86c0-de2b080bc743")
 	)
+	(wire
+		(pts
+			(xy 116.84 166.37) (xy 123.19 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b98288d8-f563-42f1-ac67-00e06ed9e076")
+	)
+	(wire
+		(pts
+			(xy 109.22 166.37) (xy 109.22 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9a42bdd-25a2-4115-bc66-fd1a64037fe0")
+	)
+	(wire
+		(pts
+			(xy 92.71 168.91) (xy 93.98 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb9abb1e-32e7-414d-8aa3-1e8c3fafe9f2")
+	)
 	(polyline
 		(pts
 			(xy 210.82 49.53) (xy 262.89 49.53)
@@ -3422,6 +3553,16 @@
 	)
 	(wire
 		(pts
+			(xy 100.33 151.13) (xy 99.06 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c36cbf34-1ffc-4970-8b04-596dbc4b54ac")
+	)
+	(wire
+		(pts
 			(xy 92.71 83.82) (xy 96.52 83.82)
 		)
 		(stroke
@@ -3429,16 +3570,6 @@
 			(type default)
 		)
 		(uuid "c473b05c-82d4-409e-a395-da4a780ecfff")
-	)
-	(wire
-		(pts
-			(xy 124.46 80.01) (xy 120.65 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c60390ad-ecf5-4f30-bd56-4d17166b0df9")
 	)
 	(wire
 		(pts
@@ -3519,6 +3650,16 @@
 			(type default)
 		)
 		(uuid "cf554331-9182-4e01-9e01-0b88d71ad834")
+	)
+	(wire
+		(pts
+			(xy 110.49 151.13) (xy 107.95 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d67bb176-c23c-4684-8a9c-2c793440037c")
 	)
 	(polyline
 		(pts
@@ -3602,16 +3743,6 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 76.2) (xy 120.65 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ed9f6511-7451-498f-a064-b471459c688c")
-	)
-	(wire
-		(pts
 			(xy 111.76 71.12) (xy 113.03 71.12)
 		)
 		(stroke
@@ -3629,6 +3760,36 @@
 			(type default)
 		)
 		(uuid "f3de9552-9d15-4b5a-8382-e15dbb62e895")
+	)
+	(wire
+		(pts
+			(xy 110.49 151.13) (xy 110.49 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f44a6964-51e9-492e-813e-ba15b0677cb4")
+	)
+	(wire
+		(pts
+			(xy 120.65 82.55) (xy 120.65 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f71eb97f-0cbd-498f-9f61-8cb2f89f0d68")
+	)
+	(wire
+		(pts
+			(xy 99.06 151.13) (xy 99.06 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7be2b4f-243d-43aa-a265-e33f01fe9747")
 	)
 	(wire
 		(pts
@@ -3730,6 +3891,16 @@
 		)
 		(uuid "6518de60-e1c2-4c3a-bfb2-d4a51d77856b")
 	)
+	(label "IinD"
+		(at 123.19 82.55 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8ffce897-f8a8-48f2-9a21-f5c1b4a7ad91")
+	)
 	(label "CCSB1"
 		(at 59.69 95.25 0)
 		(effects
@@ -3790,16 +3961,26 @@
 		)
 		(uuid "d2ee2ef8-d456-4df0-8131-3f4b6bedba79")
 	)
+	(label "Iinf"
+		(at 90.17 163.83 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "fd032ad1-16b8-43a2-a952-ad9e46720d15")
+	)
 	(hierarchical_label "Iin"
 		(shape output)
-		(at 124.46 80.01 0)
+		(at 123.19 166.37 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "69d2b1fb-c628-4952-8722-096186dc8b86")
+		(uuid "321195f6-305c-4b46-8d0b-dcd537cd46ec")
 	)
 	(hierarchical_label "Shunt+"
 		(shape input)
@@ -4530,6 +4711,93 @@
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69/ceedefa9-b0a1-435b-ac8f-bf0512726438"
 					(reference "D37")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 104.14 151.13 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2801ce7f-5243-4440-a355-856f0d801cea")
+		(property "Reference" "C187"
+			(at 104.14 143.51 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1uF"
+			(at 104.14 146.05 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 100.33 150.1648 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 104.14 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 104.14 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C52923"
+			(at 104.14 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Characteristics" ""
+			(at 104.14 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "949b2d11-1aab-41d8-9013-8526614131dc")
+		)
+		(pin "2"
+			(uuid "9ef9be9f-463d-4798-bb1e-30ec65f147f8")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69/ceedefa9-b0a1-435b-ac8f-bf0512726438"
+					(reference "C187")
 					(unit 1)
 				)
 			)
@@ -5698,6 +5966,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 99.06 173.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "91e723f8-3164-4312-93ca-a3f473d54baa")
+		(property "Reference" "#PWR0367"
+			(at 99.06 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 99.187 178.3842 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 99.06 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 99.06 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dbca3b26-48f2-4af3-8be9-5f1972a386bd")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69/ceedefa9-b0a1-435b-ac8f-bf0512726438"
+					(reference "#PWR0367")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 123.19 92.71 0)
 		(unit 1)
@@ -5768,6 +6101,72 @@
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69/ceedefa9-b0a1-435b-ac8f-bf0512726438"
 					(reference "TP87")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 99.06 142.24 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9aa3ff68-e5a5-4a38-b4ad-b3fe63ed7bf6")
+		(property "Reference" "#PWR0324"
+			(at 99.06 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3VE"
+			(at 99.06 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 99.06 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 99.06 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8f050362-659f-4820-be1e-3afe409c0dd1")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69/ceedefa9-b0a1-435b-ac8f-bf0512726438"
+					(reference "#PWR0324")
 					(unit 1)
 				)
 			)
@@ -5910,6 +6309,110 @@
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69/ceedefa9-b0a1-435b-ac8f-bf0512726438"
 					(reference "TP89")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:LMV321")
+		(at 101.6 166.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ab2d4016-5967-4762-a7ff-9828c667374c")
+		(property "Reference" "U55"
+			(at 105.41 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LMV321-TR"
+			(at 107.95 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+			(at 101.6 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://lcsc.com/datasheet/lcsc_datasheet_2206101816_Gainsil-LMV321-TR_C362273.pdf"
+			(at 101.6 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Low-Voltage Rail-to-Rail Output Operational Amplifiers, SOT-23-5/SC-70-5"
+			(at 101.6 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C362273"
+			(at 101.6 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "JLCPCB_CORRECTION" "0;0;180"
+			(at 101.6 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Characteristics" ""
+			(at 101.6 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a3f2725e-54a3-4d40-b668-4594f2c0d50f")
+		)
+		(pin "5"
+			(uuid "a6fa885f-a8ae-4a96-9d00-f14d3bae5737")
+		)
+		(pin "1"
+			(uuid "80495ce5-a92c-4fcb-b4eb-61627aa89ff9")
+		)
+		(pin "3"
+			(uuid "2dca2a61-08a5-43e4-80fe-59356b21da6b")
+		)
+		(pin "4"
+			(uuid "393527c6-9502-4bc0-a1b0-b2e81ba54892")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69/ceedefa9-b0a1-435b-ac8f-bf0512726438"
+					(reference "U55")
 					(unit 1)
 				)
 			)
@@ -6325,6 +6828,82 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 116.84 166.37 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d3b93d65-fac9-478a-b64e-719e9aac9cb1")
+		(property "Reference" "TP92"
+			(at 119.38 168.4019 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 119.38 170.9419 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 111.76 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 111.76 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 116.84 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Characteristics" ""
+			(at 116.84 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "88f51d3e-740f-46af-8f22-ddd64c43177b")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69/ceedefa9-b0a1-435b-ac8f-bf0512726438"
+					(reference "TP92")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 68.58 110.49 0)
 		(unit 1)
@@ -6384,6 +6963,72 @@
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69/ceedefa9-b0a1-435b-ac8f-bf0512726438"
 					(reference "#PWR0330")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 110.49 153.67 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d5a9d59e-3dcd-4928-a583-1aa7e37c4e54")
+		(property "Reference" "#PWR0366"
+			(at 110.49 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 114.3 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 110.49 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 110.49 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 110.49 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6809f181-7cc5-418d-9e8e-0aff09d7c0b0")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69/ceedefa9-b0a1-435b-ac8f-bf0512726438"
+					(reference "#PWR0366")
 					(unit 1)
 				)
 			)

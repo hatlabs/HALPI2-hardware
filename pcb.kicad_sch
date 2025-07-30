@@ -924,7 +924,7 @@
 	)
 	(text "Mounting nuts for HAT corners"
 		(exclude_from_sim no)
-		(at 97.79 74.93 0)
+		(at 96.52 76.2 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -961,6 +961,16 @@
 			)
 		)
 		(uuid "9a0bc231-b69e-4d85-9ed4-1925f5381fbd")
+	)
+	(text "Mounting nuts for CM5 corners"
+		(exclude_from_sim no)
+		(at 130.81 76.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "d2863dfa-2674-4aa9-95b3-b5c0c7898fec")
 	)
 	(junction
 		(at 229.87 99.06)
@@ -1053,19 +1063,35 @@
 		(uuid "d9b08540-6903-4e70-be40-ba3cdda542a5")
 	)
 	(no_connect
-		(at 97.79 95.25)
+		(at 124.46 96.52)
+		(uuid "0efa71b3-8f84-4038-9ed5-4f2d4d6f9cdf")
+	)
+	(no_connect
+		(at 88.9 96.52)
 		(uuid "19448deb-3dcc-423c-8561-1b0801020705")
 	)
 	(no_connect
-		(at 97.79 85.09)
+		(at 124.46 116.84)
+		(uuid "789ca852-1fbf-42c9-a6c5-50decce3afdd")
+	)
+	(no_connect
+		(at 124.46 106.68)
+		(uuid "942100ed-f3cd-4374-a054-3e19a17b0dd6")
+	)
+	(no_connect
+		(at 88.9 86.36)
 		(uuid "a0b7bd07-1651-4f79-8c20-59d002ed5b35")
 	)
 	(no_connect
-		(at 97.79 105.41)
+		(at 88.9 106.68)
 		(uuid "a1361e0c-7523-4133-8018-33b72f9fc448")
 	)
 	(no_connect
-		(at 97.79 115.57)
+		(at 124.46 86.36)
+		(uuid "dbcea710-f1a9-4fd3-93f8-4127d080b8b4")
+	)
+	(no_connect
+		(at 88.9 116.84)
 		(uuid "f306cffe-0067-48da-8a31-f88a925c52c2")
 	)
 	(wire
@@ -1515,15 +1541,6 @@
 				(hide yes)
 			)
 		)
-		(property "Characteristics" ""
-			(at 97.79 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/e4643111-53ad-48d1-8ad1-a500e184f609"
@@ -1654,15 +1671,6 @@
 				(hide yes)
 			)
 		)
-		(property "Characteristics" ""
-			(at 45.72 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/e4643111-53ad-48d1-8ad1-a500e184f609"
@@ -1727,15 +1735,6 @@
 				(hide yes)
 			)
 		)
-		(property "Characteristics" ""
-			(at 62.23 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/e4643111-53ad-48d1-8ad1-a500e184f609"
@@ -1747,7 +1746,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 97.79 113.03 0)
+		(at 88.9 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1756,7 +1755,7 @@
 		(fields_autoplaced yes)
 		(uuid "14c78538-2007-4c57-9fd1-4742c057faec")
 		(property "Reference" "H21"
-			(at 100.584 110.4899 0)
+			(at 91.694 111.7599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1765,7 +1764,7 @@
 			)
 		)
 		(property "Value" "SMTSO2515CTJ"
-			(at 100.584 113.0299 0)
+			(at 91.694 114.2999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1774,7 +1773,7 @@
 			)
 		)
 		(property "Footprint" "Hatlabs:SMTSO2515CTJ"
-			(at 97.79 113.03 0)
+			(at 88.9 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1783,7 +1782,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 97.79 113.03 0)
+			(at 88.9 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1792,7 +1791,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 97.79 113.03 0)
+			(at 88.9 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1801,16 +1800,7 @@
 			)
 		)
 		(property "LCSC" "C2915629"
-			(at 97.79 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Characteristics" ""
-			(at 97.79 113.03 0)
+			(at 88.9 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2024,6 +2014,82 @@
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/e4643111-53ad-48d1-8ad1-a500e184f609"
 					(reference "TP73")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 124.46 104.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "21a7754b-16a8-4c6f-827c-7d8507d8161e")
+		(property "Reference" "H24"
+			(at 127.254 101.5999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SMTSO2530CTJ"
+			(at 127.254 104.1399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Hatlabs:SMTSO2515CTJ"
+			(at 124.46 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 124.46 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 124.46 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2915631"
+			(at 124.46 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d7a448d1-5e29-445a-98db-5167e2ea61f1")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/e4643111-53ad-48d1-8ad1-a500e184f609"
+					(reference "H24")
 					(unit 1)
 				)
 			)
@@ -2435,7 +2501,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 97.79 92.71 0)
+		(at 88.9 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2444,7 +2510,7 @@
 		(fields_autoplaced yes)
 		(uuid "4297fc26-979a-4123-b77b-03f10c25b91c")
 		(property "Reference" "H19"
-			(at 100.584 90.1699 0)
+			(at 91.694 91.4399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2453,7 +2519,7 @@
 			)
 		)
 		(property "Value" "SMTSO2515CTJ"
-			(at 100.584 92.7099 0)
+			(at 91.694 93.9799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2462,7 +2528,7 @@
 			)
 		)
 		(property "Footprint" "Hatlabs:SMTSO2515CTJ"
-			(at 97.79 92.71 0)
+			(at 88.9 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2471,7 +2537,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 97.79 92.71 0)
+			(at 88.9 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2480,7 +2546,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 97.79 92.71 0)
+			(at 88.9 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2489,16 +2555,7 @@
 			)
 		)
 		(property "LCSC" "C2915629"
-			(at 97.79 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Characteristics" ""
-			(at 97.79 92.71 0)
+			(at 88.9 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2631,15 +2688,6 @@
 			)
 		)
 		(property "Description" ""
-			(at 45.72 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Characteristics" ""
 			(at 45.72 63.5 0)
 			(effects
 				(font
@@ -3112,15 +3160,6 @@
 				(hide yes)
 			)
 		)
-		(property "Characteristics" ""
-			(at 62.23 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/e4643111-53ad-48d1-8ad1-a500e184f609"
@@ -3258,15 +3297,6 @@
 				(hide yes)
 			)
 		)
-		(property "Characteristics" ""
-			(at 62.23 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/e4643111-53ad-48d1-8ad1-a500e184f609"
@@ -3343,7 +3373,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 97.79 102.87 0)
+		(at 88.9 104.14 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3352,7 +3382,7 @@
 		(fields_autoplaced yes)
 		(uuid "65f96e6f-aafc-40bd-982a-eb7d611aba1f")
 		(property "Reference" "H20"
-			(at 100.584 100.3299 0)
+			(at 91.694 101.5999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3361,7 +3391,7 @@
 			)
 		)
 		(property "Value" "SMTSO2515CTJ"
-			(at 100.584 102.8699 0)
+			(at 91.694 104.1399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3370,7 +3400,7 @@
 			)
 		)
 		(property "Footprint" "Hatlabs:SMTSO2515CTJ"
-			(at 97.79 102.87 0)
+			(at 88.9 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3379,7 +3409,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 97.79 102.87 0)
+			(at 88.9 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3388,7 +3418,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 97.79 102.87 0)
+			(at 88.9 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3397,16 +3427,7 @@
 			)
 		)
 		(property "LCSC" "C2915629"
-			(at 97.79 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Characteristics" ""
-			(at 97.79 102.87 0)
+			(at 88.9 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3474,15 +3495,6 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 35.56 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Characteristics" ""
 			(at 35.56 148.59 0)
 			(effects
 				(font
@@ -3705,6 +3717,82 @@
 			(project ""
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/e4643111-53ad-48d1-8ad1-a500e184f609"
 					(reference "J30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 124.46 83.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8000e0aa-ecc9-4834-91d8-af7de5168c76")
+		(property "Reference" "H22"
+			(at 127.254 81.2799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SMTSO2530CTJ"
+			(at 127.254 83.8199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Hatlabs:SMTSO2515CTJ"
+			(at 124.46 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 124.46 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 124.46 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2915631"
+			(at 124.46 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f1d1b490-ad03-4e8a-814b-15d01684ad46")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/e4643111-53ad-48d1-8ad1-a500e184f609"
+					(reference "H22")
 					(unit 1)
 				)
 			)
@@ -4025,8 +4113,45 @@
 				(hide yes)
 			)
 		)
-		(property "Characteristics" ""
-			(at 110.49 140.97 0)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/e4643111-53ad-48d1-8ad1-a500e184f609"
+					(reference "H15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 124.46 114.3 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9a60f15f-ab9a-4561-a85f-b2fa5455690f")
+		(property "Reference" "H25"
+			(at 127.254 111.7599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SMTSO2530CTJ"
+			(at 127.254 114.2999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Hatlabs:SMTSO2515CTJ"
+			(at 124.46 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4034,10 +4159,40 @@
 				(hide yes)
 			)
 		)
+		(property "Datasheet" "~"
+			(at 124.46 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 124.46 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2915631"
+			(at 124.46 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "125ecd5c-d95a-485a-8871-a0a58414ee0d")
+		)
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/e4643111-53ad-48d1-8ad1-a500e184f609"
-					(reference "H15")
+					(reference "H25")
 					(unit 1)
 				)
 			)
@@ -4099,15 +4254,6 @@
 			)
 		)
 		(property "LCSC" "C2915629"
-			(at 118.11 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Characteristics" ""
 			(at 118.11 59.69 0)
 			(effects
 				(font
@@ -4262,6 +4408,82 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 124.46 93.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b154ef93-68ac-4542-8128-f5bd2e91a7a0")
+		(property "Reference" "H23"
+			(at 127.254 91.4399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SMTSO2530CTJ"
+			(at 127.254 93.9799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Hatlabs:SMTSO2515CTJ"
+			(at 124.46 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 124.46 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 124.46 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2915631"
+			(at 124.46 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "62f04adf-d94d-4f3a-83d8-0cecb83f43b7")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/e4643111-53ad-48d1-8ad1-a500e184f609"
+					(reference "H23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Hatlabs:SilkScreenImage")
 		(at 78.74 35.56 0)
 		(unit 1)
@@ -4308,15 +4530,6 @@
 			)
 		)
 		(property "Description" ""
-			(at 78.74 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Characteristics" ""
 			(at 78.74 35.56 0)
 			(effects
 				(font
@@ -4382,15 +4595,6 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 40.64 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Characteristics" ""
 			(at 40.64 140.97 0)
 			(effects
 				(font
@@ -4476,7 +4680,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 97.79 82.55 0)
+		(at 88.9 83.82 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4485,7 +4689,7 @@
 		(fields_autoplaced yes)
 		(uuid "db63744a-33f7-4472-a814-50663269a8c6")
 		(property "Reference" "H18"
-			(at 100.584 80.0099 0)
+			(at 91.694 81.2799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4494,7 +4698,7 @@
 			)
 		)
 		(property "Value" "SMTSO2515CTJ"
-			(at 100.584 82.5499 0)
+			(at 91.694 83.8199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4503,7 +4707,7 @@
 			)
 		)
 		(property "Footprint" "Hatlabs:SMTSO2515CTJ"
-			(at 97.79 82.55 0)
+			(at 88.9 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4512,7 +4716,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 97.79 82.55 0)
+			(at 88.9 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4521,7 +4725,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 97.79 82.55 0)
+			(at 88.9 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4530,16 +4734,7 @@
 			)
 		)
 		(property "LCSC" "C2915629"
-			(at 97.79 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Characteristics" ""
-			(at 97.79 82.55 0)
+			(at 88.9 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4606,15 +4801,6 @@
 			)
 		)
 		(property "Description" ""
-			(at 45.72 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Characteristics" ""
 			(at 45.72 35.56 0)
 			(effects
 				(font
@@ -4750,15 +4936,6 @@
 				(hide yes)
 			)
 		)
-		(property "Characteristics" ""
-			(at 110.49 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/e4643111-53ad-48d1-8ad1-a500e184f609"
@@ -4813,15 +4990,6 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 35.56 156.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Characteristics" ""
 			(at 35.56 156.21 0)
 			(effects
 				(font
@@ -4897,15 +5065,6 @@
 				(hide yes)
 			)
 		)
-		(property "Characteristics" ""
-			(at 45.72 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/e4643111-53ad-48d1-8ad1-a500e184f609"
@@ -4960,15 +5119,6 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
-			(at 97.79 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Characteristics" ""
 			(at 97.79 151.13 0)
 			(effects
 				(font

@@ -2149,12 +2149,6 @@
 		(uuid "238aea38-7c68-4a5d-a081-4e54e05a6a22")
 	)
 	(junction
-		(at 76.2 87.63)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "29e947dd-a37b-418a-984c-70339625030d")
-	)
-	(junction
 		(at 223.52 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2890,16 +2884,6 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 87.63) (xy 76.2 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f2f73cf9-02d2-45f5-ac99-1786e3df536d")
-	)
-	(wire
-		(pts
 			(xy 130.81 62.23) (xy 130.81 64.77)
 		)
 		(stroke
@@ -3335,7 +3319,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical_SMD_Pin1Left"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 76.2 92.71 0)
 			(effects
 				(font
@@ -3362,7 +3346,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5160785"
+		(property "LCSC" "C492401"
 			(at 76.2 92.71 0)
 			(effects
 				(font
@@ -3371,16 +3355,7 @@
 				(hide yes)
 			)
 		)
-		(property "Characteristics" ""
-			(at 76.2 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB_CORRECTION" "0;0;90"
+		(property "JLCPCB_CORRECTION" ""
 			(at 76.2 92.71 0)
 			(effects
 				(font
@@ -3617,15 +3592,6 @@
 				(hide yes)
 			)
 		)
-		(property "Characteristics" ""
-			(at 217.17 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "13581c24-3c32-499e-9ae6-faeaf49c01ad")
 		)
@@ -3636,81 +3602,6 @@
 			(project "Yellow"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/e9d5ec1c-aaca-4440-9248-34d6a57da48f"
 					(reference "C37")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 72.39 87.63 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "3bf53e78-e2cb-4dc3-80b4-81a3774ee611")
-		(property "Reference" "TP36"
-			(at 71.12 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "FB3"
-			(at 71.12 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 67.31 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 67.31 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 72.39 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Characteristics" ""
-			(at 72.39 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "045f91fb-13c2-4ccd-aeb8-543a43fee726")
-		)
-		(instances
-			(project "HALPI2"
-				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/e9d5ec1c-aaca-4440-9248-34d6a57da48f"
-					(reference "TP36")
 					(unit 1)
 				)
 			)
@@ -4006,15 +3897,6 @@
 				(hide yes)
 			)
 		)
-		(property "Characteristics" ""
-			(at 144.78 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "15b420d6-50c8-41d0-ab52-e7ea294cc9a0")
 		)
@@ -4226,15 +4108,6 @@
 				(hide yes)
 			)
 		)
-		(property "Characteristics" ""
-			(at 223.52 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "4c35e41e-573d-4e90-ad2f-26c5d3da2348")
 		)
@@ -4303,15 +4176,6 @@
 			)
 		)
 		(property "LCSC" "C25803"
-			(at 205.74 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Characteristics" ""
 			(at 205.74 76.2 0)
 			(effects
 				(font
@@ -4410,15 +4274,6 @@
 				(hide yes)
 			)
 		)
-		(property "Characteristics" ""
-			(at 38.1 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "1c755425-f4d4-4ff3-b38d-ab523c78c055")
 		)
@@ -4499,15 +4354,6 @@
 			)
 		)
 		(property "LCSC" "C52923"
-			(at 166.37 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Characteristics" ""
 			(at 166.37 82.55 0)
 			(effects
 				(font
@@ -4674,15 +4520,6 @@
 				(hide yes)
 			)
 		)
-		(property "Characteristics" ""
-			(at 205.74 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "ccd25cc6-f350-42f5-9410-c913ed4a4622")
 		)
@@ -4764,15 +4601,6 @@
 			)
 		)
 		(property "LCSC" "C2876603"
-			(at 107.95 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Characteristics" ""
 			(at 107.95 74.93 0)
 			(effects
 				(font
@@ -5119,15 +4947,6 @@
 				(hide yes)
 			)
 		)
-		(property "Characteristics" ""
-			(at 195.58 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "9e76448a-d8a7-4a02-b727-3278bb9e60ce")
 		)
@@ -5287,15 +5106,6 @@
 			)
 		)
 		(property "LCSC" "C13585"
-			(at 31.75 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Characteristics" ""
 			(at 31.75 73.66 0)
 			(effects
 				(font
@@ -5604,15 +5414,6 @@
 				(hide yes)
 			)
 		)
-		(property "Characteristics" ""
-			(at 177.8 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "75089456-f014-4fae-a02e-9c23136fccb9")
 		)
@@ -5680,34 +5481,7 @@
 				(hide yes)
 			)
 		)
-		(property "URL" ""
-			(at 158.75 69.85 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part" ""
-			(at 158.75 69.85 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "LCSC" "C5349701"
-			(at 158.75 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Characteristics" ""
 			(at 158.75 69.85 0)
 			(effects
 				(font
@@ -5928,15 +5702,6 @@
 			)
 		)
 		(property "LCSC" "C52923"
-			(at 48.26 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Characteristics" ""
 			(at 48.26 87.63 0)
 			(effects
 				(font

@@ -330,6 +330,26 @@
 	)
 	(wire
 		(pts
+			(xy 60.96 88.9) (xy 63.5 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3df5e8af-f838-48df-b8bf-b1993f27a6f8")
+	)
+	(wire
+		(pts
+			(xy 60.96 134.62) (xy 63.5 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "452aa64d-a1e0-4f6e-b048-ce33395102b3")
+	)
+	(wire
+		(pts
 			(xy 63.5 62.23) (xy 60.96 62.23)
 		)
 		(stroke
@@ -427,6 +447,16 @@
 			(type default)
 		)
 		(uuid "83bfc725-4a61-4492-927f-501c83b7ca84")
+	)
+	(wire
+		(pts
+			(xy 60.96 111.76) (xy 63.5 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a08fcaf-18fa-4167-9fee-5f3d205f5ce1")
 	)
 	(wire
 		(pts
@@ -548,6 +578,27 @@
 		)
 		(uuid "f1e98eca-79dd-4624-b62e-5182cda522d8")
 	)
+	(wire
+		(pts
+			(xy 60.96 66.04) (xy 63.5 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8f5d488-987a-4319-a792-5ba1c138c6c5")
+	)
+	(hierarchical_label "VscapE"
+		(shape input)
+		(at 60.96 66.04 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "45d7e4b5-a107-4413-9904-a35aefa3eff1")
+	)
 	(hierarchical_label "Vscap"
 		(shape bidirectional)
 		(at 58.42 50.8 180)
@@ -558,6 +609,39 @@
 			(justify right)
 		)
 		(uuid "5db6815a-c20b-4438-a178-33f1e21cbf08")
+	)
+	(hierarchical_label "VscapE"
+		(shape input)
+		(at 60.96 111.76 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a0ea3602-9d73-41af-813d-0546524c69f0")
+	)
+	(hierarchical_label "VscapE"
+		(shape input)
+		(at 60.96 88.9 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "dc3294e0-8afa-409c-a263-481dd868518d")
+	)
+	(hierarchical_label "VscapE"
+		(shape input)
+		(at 60.96 134.62 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ee0aa570-1148-4e80-9fef-fdc8060dc98c")
 	)
 	(netclass_flag ""
 		(length 2.54)
@@ -1000,6 +1084,16 @@
 				(justify right)
 			)
 		)
+		(pin "VscapE" input
+			(at 63.5 66.04 180)
+			(uuid "a1d70c20-b61c-4ee8-a383-fe507be287e1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/07643414-c558-4752-92d9-19f7e64f0193"
@@ -1080,6 +1174,16 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+		(pin "VscapE" input
+			(at 63.5 111.76 180)
+			(uuid "441b2bc4-5383-4d6c-a81e-97477ef4192b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -1164,6 +1268,16 @@
 				(justify right)
 			)
 		)
+		(pin "VscapE" input
+			(at 63.5 134.62 180)
+			(uuid "bbb30685-f210-4d62-9584-20d8508cc801")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/07643414-c558-4752-92d9-19f7e64f0193"
@@ -1243,6 +1357,16 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+		(pin "VscapE" input
+			(at 63.5 88.9 180)
+			(uuid "3a6f2bbd-5de9-4997-b246-4ec6a880029d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances

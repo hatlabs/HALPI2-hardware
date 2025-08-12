@@ -519,6 +519,12 @@
 		(color 0 0 0 0)
 		(uuid "65123903-951a-4f02-8b7c-9c60cb1b543d")
 	)
+	(junction
+		(at 143.51 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e8c2b234-f6a4-4fab-8b49-1416f42e522e")
+	)
 	(wire
 		(pts
 			(xy 87.63 40.64) (xy 100.33 40.64)
@@ -631,6 +637,26 @@
 	)
 	(wire
 		(pts
+			(xy 171.45 99.06) (xy 168.91 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "711da35c-efb6-4374-ba3e-375da7220abe")
+	)
+	(wire
+		(pts
+			(xy 143.51 99.06) (xy 143.51 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7315bcad-a43b-4f8f-a800-0c9e57dcca8b")
+	)
+	(wire
+		(pts
 			(xy 180.34 69.85) (xy 180.34 36.83)
 		)
 		(stroke
@@ -648,6 +674,16 @@
 			(type default)
 		)
 		(uuid "7b441b19-917a-4819-9ee8-3033aa9f644b")
+	)
+	(wire
+		(pts
+			(xy 138.43 72.39) (xy 146.05 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b76c566-44e0-4782-afc7-8a220819cf4b")
 	)
 	(wire
 		(pts
@@ -701,7 +737,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 101.6) (xy 146.05 101.6)
+			(xy 143.51 105.41) (xy 146.05 105.41)
 		)
 		(stroke
 			(width 0)
@@ -751,6 +787,16 @@
 	)
 	(wire
 		(pts
+			(xy 146.05 99.06) (xy 143.51 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6b9dca0-21dd-4f12-b863-a1bdd5439e42")
+	)
+	(wire
+		(pts
 			(xy 180.34 36.83) (xy 190.5 36.83)
 		)
 		(stroke
@@ -760,7 +806,7 @@
 		(uuid "f96e83b5-f65c-4333-a3b0-1ff9b1bef007")
 	)
 	(label "B1_VIN"
-		(at 143.51 101.6 180)
+		(at 143.51 105.41 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -778,6 +824,26 @@
 			(justify left bottom)
 		)
 		(uuid "457c6f7b-b756-4bc1-b48e-a1ac5be18c6d")
+	)
+	(label "VscapE"
+		(at 138.43 72.39 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a87810bf-7a61-482f-9733-978a5f77f54b")
+	)
+	(label "VscapE"
+		(at 171.45 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b9c3f91d-06fd-43bc-81b8-cc5116661238")
 	)
 	(label "B1_VIN"
 		(at 133.35 46.99 0)
@@ -1106,6 +1172,16 @@
 				(justify left)
 			)
 		)
+		(pin "VscapE" input
+			(at 146.05 72.39 180)
+			(uuid "0cce5d59-d809-49bc-a279-98106b9d3bd1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42"
@@ -1197,7 +1273,7 @@
 		)
 	)
 	(sheet
-		(at 146.05 97.79)
+		(at 146.05 95.25)
 		(size 22.86 14.605)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1213,7 +1289,7 @@
 		)
 		(uuid "8e6a478f-fb3c-4be6-a57a-6d17571606cc")
 		(property "Sheetname" "Early 3.3V"
-			(at 146.05 97.0784 0)
+			(at 146.05 94.5384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1222,7 +1298,7 @@
 			)
 		)
 		(property "Sheetfile" "early_3v3.kicad_sch"
-			(at 146.05 112.9796 0)
+			(at 146.05 110.4396 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1231,13 +1307,33 @@
 			)
 		)
 		(pin "Vin" input
-			(at 146.05 101.6 180)
+			(at 146.05 105.41 180)
 			(uuid "294bc635-309a-436b-a13b-fd3fb97e9286")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(pin "Vscap" input
+			(at 146.05 99.06 180)
+			(uuid "db229698-284c-40a6-9c77-db30980227a4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VscapE" output
+			(at 168.91 99.06 0)
+			(uuid "311d725d-a035-4d93-b5bf-65e7bc186203")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances

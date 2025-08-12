@@ -1324,6 +1324,17 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "VscapE is used to ensure the\nsupercap balancing circuit\nop-amps are powered immediately.\n\nDuring undervoltage, TTL op-amps\nmay be at a high state, causing all\nbalancing NPNs to conduct before\nvoltage is increased."
+		(exclude_from_sim no)
+		(at 203.2 115.57 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "303051e1-c921-41fb-ae7e-5d10d7c0f963")
+	)
 	(text "This LDO is required for circuits that need to be\npowered before the stage 2 buck converters are online\n(basically, just the current limiter opamp)."
 		(exclude_from_sim no)
 		(at 144.018 48.768 0)
@@ -1339,6 +1350,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "07884fa1-ae92-47e8-9eee-af267c4b26d4")
+	)
+	(junction
+		(at 184.15 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0e358e7b-25fb-4506-af0b-4f3c335aaf55")
 	)
 	(junction
 		(at 160.02 68.58)
@@ -1359,6 +1376,18 @@
 		(uuid "42791ba1-8fda-4126-9ee9-36de05008109")
 	)
 	(junction
+		(at 201.93 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "883085a8-6c71-41c7-964b-35ac83181bf6")
+	)
+	(junction
+		(at 210.82 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ecc48e24-013c-412c-9eea-c5660363b640")
+	)
+	(junction
 		(at 218.44 62.23)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1373,6 +1402,26 @@
 			(type default)
 		)
 		(uuid "131e6b81-6530-4c92-8748-19693da00a24")
+	)
+	(wire
+		(pts
+			(xy 184.15 86.36) (xy 184.15 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13a3d9af-9b8b-4fea-b004-9b7835efa788")
+	)
+	(wire
+		(pts
+			(xy 184.15 68.58) (xy 190.5 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "183f2883-8d54-4059-8a2c-d2fe80b6ed48")
 	)
 	(wire
 		(pts
@@ -1406,7 +1455,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 68.58) (xy 190.5 68.58)
+			(xy 177.8 68.58) (xy 184.15 68.58)
 		)
 		(stroke
 			(width 0)
@@ -1446,6 +1495,26 @@
 	)
 	(wire
 		(pts
+			(xy 189.23 97.79) (xy 184.15 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "665b1659-5f86-4e7a-b08a-f3a255beb32c")
+	)
+	(wire
+		(pts
+			(xy 201.93 97.79) (xy 210.82 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67cf5fc5-4f0d-4a23-8334-dd4b3593d4a7")
+	)
+	(wire
+		(pts
 			(xy 120.65 68.58) (xy 120.65 69.85)
 		)
 		(stroke
@@ -1453,6 +1522,16 @@
 			(type default)
 		)
 		(uuid "81b133c0-7c68-4552-969c-1c7ed42f5be0")
+	)
+	(wire
+		(pts
+			(xy 189.23 86.36) (xy 184.15 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8943bfb7-2227-4daa-8e6c-1eef32ef5b57")
 	)
 	(wire
 		(pts
@@ -1516,6 +1595,16 @@
 	)
 	(wire
 		(pts
+			(xy 210.82 97.79) (xy 218.44 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc4fffbf-ad0c-4ad4-9664-9e15098d4f7e")
+	)
+	(wire
+		(pts
 			(xy 115.57 68.58) (xy 120.65 68.58)
 		)
 		(stroke
@@ -1523,6 +1612,36 @@
 			(type default)
 		)
 		(uuid "d632317d-3d0b-471b-b6cd-65cfcf971491")
+	)
+	(wire
+		(pts
+			(xy 196.85 97.79) (xy 201.93 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6e27261-3804-4188-9aa9-0cdfde8659df")
+	)
+	(wire
+		(pts
+			(xy 201.93 86.36) (xy 201.93 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e49ca20a-bac2-4e5b-953c-cf71c04a5a07")
+	)
+	(wire
+		(pts
+			(xy 196.85 86.36) (xy 201.93 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f37d2e07-9e8f-4c59-9d27-b1add08742f3")
 	)
 	(wire
 		(pts
@@ -1543,6 +1662,28 @@
 			(justify left bottom)
 		)
 		(uuid "56b9bc4f-a3c2-4a59-aecf-28e2bb084f5c")
+	)
+	(hierarchical_label "Vscap"
+		(shape input)
+		(at 184.15 97.79 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "27d29ed0-1174-4723-adbd-873572f7c0dc")
+	)
+	(hierarchical_label "VscapE"
+		(shape output)
+		(at 218.44 97.79 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "91e41efd-66e9-4c48-b51b-dac6e831ad71")
 	)
 	(hierarchical_label "Vin"
 		(shape input)
@@ -1951,6 +2092,83 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D_Schottky")
+		(at 193.04 86.36 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "41527823-83e9-4fe9-9a42-e08ce9a07869")
+		(property "Reference" "D44"
+			(at 193.3575 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N5819WS"
+			(at 193.3575 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-323"
+			(at 193.04 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 193.04 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Schottky diode"
+			(at 193.04 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C191023"
+			(at 193.04 86.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b50f12a2-1bc6-44ea-aa2e-19d488904b11")
+		)
+		(pin "2"
+			(uuid "885e4701-207f-4475-a79e-32909dd3fa92")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/8e6a478f-fb3c-4be6-a57a-6d17571606cc"
+					(reference "D44")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 120.65 73.66 0)
 		(unit 1)
@@ -2090,6 +2308,72 @@
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/8e6a478f-fb3c-4be6-a57a-6d17571606cc"
 					(reference "#PWR067")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 210.82 97.79 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "489c9425-14b7-436e-aa1f-24bdf388a729")
+		(property "Reference" "#FLG026"
+			(at 210.82 95.885 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 210.82 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 210.82 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 210.82 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 210.82 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a3712205-9b1d-4f38-a3ff-7cd43d0a4b0e")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/8e6a478f-fb3c-4be6-a57a-6d17571606cc"
+					(reference "#FLG026")
 					(unit 1)
 				)
 			)
@@ -2467,6 +2751,83 @@
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/8e6a478f-fb3c-4be6-a57a-6d17571606cc"
 					(reference "#PWR066")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Schottky")
+		(at 193.04 97.79 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "eda3bf04-195d-44d4-a348-a653fe6181be")
+		(property "Reference" "D45"
+			(at 193.3575 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N5819WS"
+			(at 193.3575 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-323"
+			(at 193.04 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 193.04 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Schottky diode"
+			(at 193.04 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C191023"
+			(at 193.04 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "57e89c2e-2ce0-4d1b-bfa8-d64d8993a7e4")
+		)
+		(pin "2"
+			(uuid "3cd23443-ceb3-4a03-8c86-195872381af6")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/8e6a478f-fb3c-4be6-a57a-6d17571606cc"
+					(reference "D45")
 					(unit 1)
 				)
 			)

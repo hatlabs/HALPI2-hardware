@@ -168,6 +168,16 @@
 	)
 	(wire
 		(pts
+			(xy 69.85 67.31) (xy 67.31 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66d1e689-20bb-4932-bf0e-4546c346b029")
+	)
+	(wire
+		(pts
 			(xy 152.4 43.18) (xy 151.13 43.18)
 		)
 		(stroke
@@ -175,6 +185,16 @@
 			(type default)
 		)
 		(uuid "6959dddb-e499-4862-b50e-7b46d65c3612")
+	)
+	(wire
+		(pts
+			(xy 29.21 29.21) (xy 31.75 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69bcdd1a-f88e-4981-9460-30ec5fdd064f")
 	)
 	(wire
 		(pts
@@ -546,7 +566,7 @@
 		)
 		(uuid "fc382bbf-6f0b-4eed-9aef-230831d902ad")
 	)
-	(label "VEN"
+	(label "EN5V"
 		(at 29.21 25.4 180)
 		(effects
 			(font
@@ -656,7 +676,7 @@
 		)
 		(uuid "2092871d-37f0-40a8-8599-75fe08a84a5f")
 	)
-	(label "VEN"
+	(label "EN5V"
 		(at 69.85 63.5 0)
 		(effects
 			(font
@@ -896,6 +916,16 @@
 		)
 		(uuid "adc1d97c-8708-4079-8777-4b2b1caf8c9f")
 	)
+	(label "EN3V3"
+		(at 29.21 29.21 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b4a6c5b6-71d8-428b-8bef-417e258c0068")
+	)
 	(label "PG_5V"
 		(at 29.21 91.44 180)
 		(effects
@@ -925,6 +955,16 @@
 			(justify right bottom)
 		)
 		(uuid "d6fe2081-aef6-46a7-8812-a20f23e00462")
+	)
+	(label "EN3V3"
+		(at 69.85 67.31 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d9a6bb40-2b5c-4543-9e39-65f6eb381f30")
 	)
 	(label "ETH{ETH}"
 		(at 184.15 26.67 180)
@@ -1410,7 +1450,7 @@
 				(justify left)
 			)
 		)
-		(pin "VEN" output
+		(pin "EN5V" output
 			(at 67.31 63.5 0)
 			(uuid "68ef7b1d-79e5-43ea-b3e1-b6a081af97ac")
 			(effects
@@ -1508,6 +1548,16 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(pin "EN3V3" output
+			(at 67.31 67.31 0)
+			(uuid "5568a4eb-04e3-4956-86a4-bf65699d2316")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -1900,7 +1950,7 @@
 				(justify right)
 			)
 		)
-		(pin "VEN" input
+		(pin "EN5V" input
 			(at 31.75 25.4 180)
 			(uuid "43ddbb20-ba71-449d-88d3-9f5bbed43853")
 			(effects
@@ -1938,6 +1988,16 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+		(pin "EN3V3" input
+			(at 31.75 29.21 180)
+			(uuid "a8d64c2d-265e-43a8-ab39-fabd2b4bc4bd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances

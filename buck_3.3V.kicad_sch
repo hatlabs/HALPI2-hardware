@@ -1431,156 +1431,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Jumper:Jumper_2_Open"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim yes)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "JP"
-				(at 0 2.794 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Jumper_2_Open"
-				(at 0 -2.286 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Jumper, 2-pole, open"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "Jumper SPST"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Jumper* TestPoint*2Pads* TestPoint*Bridge*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Jumper_2_Open_0_0"
-				(circle
-					(center -2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Jumper_2_Open_0_1"
-				(arc
-					(start -1.524 1.27)
-					(mid 0 1.778)
-					(end 1.524 1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Jumper_2_Open_1_1"
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "PCM_Transistor_MOSFET_AKL:Q_NMOS-E_Generic_GSD"
 			(pin_names
 				(hide yes)
@@ -2113,23 +1963,6 @@
 		)
 		(uuid "b440ac58-8844-42a7-bd6a-4b1e5884db46")
 	)
-	(text "Cap this jumper\nto force 3.3V\noff."
-		(exclude_from_sim no)
-		(at 69.85 111.76 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "c874cef0-280e-4b48-8b5f-4e98d90cee21")
-	)
-	(junction
-		(at 76.2 80.01)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "03c288e9-af6b-47e5-848b-effc4d0ad96f")
-	)
 	(junction
 		(at 177.8 69.85)
 		(diameter 0)
@@ -2177,6 +2010,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5be1e26c-6d86-479a-9181-1f31c1199e0b")
+	)
+	(junction
+		(at 73.66 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "771b07a6-4f14-44be-af5e-6f41b7e81ec7")
 	)
 	(junction
 		(at 31.75 64.77)
@@ -2314,7 +2153,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 80.01) (xy 76.2 80.01)
+			(xy 63.5 80.01) (xy 73.66 80.01)
 		)
 		(stroke
 			(width 0)
@@ -2384,13 +2223,13 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 97.79) (xy 76.2 100.33)
+			(xy 73.66 77.47) (xy 73.66 80.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "47446138-8d57-4be2-9a27-f8634409da06")
+		(uuid "3bdc7d32-de30-461e-97a9-ce2c1ca6575a")
 	)
 	(wire
 		(pts
@@ -2494,7 +2333,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 80.01) (xy 87.63 80.01)
+			(xy 73.66 80.01) (xy 87.63 80.01)
 		)
 		(stroke
 			(width 0)
@@ -2651,16 +2490,6 @@
 			(type default)
 		)
 		(uuid "9ef65adb-970b-48ee-86b9-23c3580fba3a")
-	)
-	(wire
-		(pts
-			(xy 76.2 87.63) (xy 76.2 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a3b77848-a2cb-45ef-8e05-ffca67e8a2f0")
 	)
 	(wire
 		(pts
@@ -2904,6 +2733,16 @@
 	)
 	(wire
 		(pts
+			(xy 72.39 77.47) (xy 73.66 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd94a790-5366-401a-8881-50c6516802bc")
+	)
+	(wire
+		(pts
 			(xy 128.27 64.77) (xy 130.81 64.77)
 		)
 		(stroke
@@ -2972,16 +2811,6 @@
 		)
 		(uuid "dd944f93-cc9f-4b5b-952e-29fabcfb50da")
 	)
-	(label "EN3V3"
-		(at 76.2 80.01 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e61b2bdb-23c1-4942-83bc-8307de7a61bb")
-	)
 	(hierarchical_label "Vin"
 		(shape input)
 		(at 22.86 64.77 180)
@@ -2992,6 +2821,17 @@
 			(justify right)
 		)
 		(uuid "a0f80e9a-5056-41ab-91f6-fa088b17e7fe")
+	)
+	(hierarchical_label "EN3V3"
+		(shape input)
+		(at 72.39 77.47 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a960fba4-f893-4bdb-9908-6719641b0d5a")
 	)
 	(hierarchical_label "Vout"
 		(shape output)
@@ -3066,7 +2906,7 @@
 	(netclass_flag ""
 		(length 2.54)
 		(shape round)
-		(at 76.2 82.55 270)
+		(at 77.47 80.01 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3076,7 +2916,7 @@
 		)
 		(uuid "38719d47-7aef-44fa-a52d-5245621ed452")
 		(property "Netclass" "Digital"
-			(at 78.74 81.661 90)
+			(at 78.359 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3286,94 +3126,6 @@
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/e9d5ec1c-aaca-4440-9248-34d6a57da48f"
 					(reference "#PWR0311")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Jumper:Jumper_2_Open")
-		(at 76.2 92.71 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0893fa11-c616-4949-9582-6b3bf6b120c6")
-		(property "Reference" "JP5"
-			(at 78.74 91.4399 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Jumper_2_Open"
-			(at 78.74 93.9799 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 76.2 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 76.2 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Jumper, 2-pole, open"
-			(at 76.2 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C492401"
-			(at 76.2 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB_CORRECTION" ""
-			(at 76.2 92.71 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "08a56b07-182d-4c71-a712-dd55adb3515e")
-		)
-		(pin "2"
-			(uuid "24d6ae74-933b-407f-a073-210fc739fc3d")
-		)
-		(instances
-			(project "HALPI2"
-				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/e9d5ec1c-aaca-4440-9248-34d6a57da48f"
-					(reference "JP5")
 					(unit 1)
 				)
 			)
@@ -3983,72 +3735,6 @@
 			(project ""
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/e9d5ec1c-aaca-4440-9248-34d6a57da48f"
 					(reference "#FLG09")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 76.2 100.33 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "561395b7-8ee0-4fd8-aca5-022f8eb54050")
-		(property "Reference" "#PWR0316"
-			(at 76.2 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 76.073 104.7242 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 76.2 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 76.2 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 76.2 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b04ae913-8954-4c45-bc15-0fdeba74aeb5")
-		)
-		(instances
-			(project "HALPI2"
-				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/e9d5ec1c-aaca-4440-9248-34d6a57da48f"
-					(reference "#PWR0316")
 					(unit 1)
 				)
 			)

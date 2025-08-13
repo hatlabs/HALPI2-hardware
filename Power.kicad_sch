@@ -587,7 +587,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 40.64) (xy 190.5 40.64)
+			(xy 187.96 40.64) (xy 190.5 40.64)
 		)
 		(stroke
 			(width 0)
@@ -654,6 +654,16 @@
 			(type default)
 		)
 		(uuid "7315bcad-a43b-4f8f-a800-0c9e57dcca8b")
+	)
+	(wire
+		(pts
+			(xy 187.96 73.66) (xy 190.5 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "741181dd-a031-47e4-aa7a-c3a18dd6c91e")
 	)
 	(wire
 		(pts
@@ -888,9 +898,9 @@
 		)
 		(uuid "642ffea3-aa4f-48b0-adcd-1349c1db3cf8")
 	)
-	(hierarchical_label "VEN"
+	(hierarchical_label "EN5V"
 		(shape input)
-		(at 189.23 40.64 180)
+		(at 187.96 40.64 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -898,6 +908,17 @@
 			(justify right)
 		)
 		(uuid "79ed7b44-7b08-4e70-a408-e1481ec8335a")
+	)
+	(hierarchical_label "EN3V3"
+		(shape input)
+		(at 187.96 73.66 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7ff0522d-a63d-422b-bfef-c889dcc79526")
 	)
 	(hierarchical_label "Vscap"
 		(shape output)
@@ -1244,7 +1265,7 @@
 				(justify left)
 			)
 		)
-		(pin "EN" input
+		(pin "EN5V" input
 			(at 190.5 40.64 180)
 			(uuid "42915dc6-b437-403e-90b3-8f98ef7f7184")
 			(effects
@@ -1570,6 +1591,16 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+		(pin "EN3V3" input
+			(at 190.5 73.66 180)
+			(uuid "3c8bfc02-573a-4702-8eb2-7a0c6654c35c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances

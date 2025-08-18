@@ -1561,13 +1561,14 @@
 		)
 		(uuid 72a8369d-4034-43d1-9d36-4646b5096c77)
 	)
-	(text "Ilim = 7.2A"
+	(text "NOTE: If the converter is configured\nwith a different SiC46x variant,\nILIM must be adjusted as well\n(even for the same output current value)."
 		(exclude_from_sim no)
-		(at 121.92 170.434 0)
+		(at 110.49 173.99 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
+			(justify left)
 		)
 		(uuid "18a94791-ca52-4b2b-ba1d-ded3ed99e39d")
 	)
@@ -1602,6 +1603,17 @@
 			(justify left bottom)
 		)
 		(uuid "39b7a288-f0bd-464c-9074-70b1bd35016d")
+	)
+	(text "Acceptable variants:\nSiC463ED\nSiC462ED\nSiC461ED"
+		(exclude_from_sim no)
+		(at 107.95 58.42 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7d4dcc86-96f4-46f6-b7fe-9e7e0b578216")
 	)
 	(text "Extremely slow\nsoft start"
 		(exclude_from_sim no)
@@ -4951,7 +4963,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "SIC462ED-T1-GE3"
+		(property "Value" "SIC463ED-T1-GE3"
 			(at 141.8433 74.93 0)
 			(effects
 				(font
@@ -4989,7 +5001,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C335617"
+		(property "LCSC" "C3191905"
 			(at 132.08 96.52 0)
 			(effects
 				(font

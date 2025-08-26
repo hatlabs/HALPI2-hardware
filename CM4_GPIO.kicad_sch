@@ -5111,7 +5111,7 @@
 	)
 	(rectangle
 		(start 218.44 91.44)
-		(end 271.145 125.73)
+		(end 271.145 129.54)
 		(stroke
 			(width 0)
 			(type dash)
@@ -5207,6 +5207,12 @@
 		(uuid "614e55b0-8433-496c-a16b-e1ea2f662e58")
 	)
 	(junction
+		(at 237.49 121.92)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7ae471a9-2e0e-4113-9033-9f287105042f")
+	)
+	(junction
 		(at 256.54 48.26)
 		(diameter 1.016)
 		(color 0 0 0 0)
@@ -5263,6 +5269,10 @@
 	(no_connect
 		(at 55.88 107.95)
 		(uuid "9d63e0c6-5286-4ff1-a5ca-a492b3dd334a")
+	)
+	(no_connect
+		(at 250.19 107.95)
+		(uuid "a0938356-f2f1-486b-8d75-035e62204078")
 	)
 	(no_connect
 		(at 106.68 72.39)
@@ -5723,16 +5733,6 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 113.03) (xy 243.84 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1348d48e-2cbd-4167-b832-369b726783cc")
-	)
-	(wire
-		(pts
 			(xy 44.45 50.8) (xy 55.88 50.8)
 		)
 		(stroke
@@ -5790,6 +5790,16 @@
 			(type solid)
 		)
 		(uuid "17711242-e8b5-44ee-b9ac-13202bd5b2f7")
+	)
+	(wire
+		(pts
+			(xy 243.84 113.03) (xy 243.84 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1880ae2d-d9e3-4a9e-bebb-eeff9d68d29b")
 	)
 	(wire
 		(pts
@@ -6543,7 +6553,7 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 121.92) (xy 232.41 121.92)
+			(xy 243.84 121.92) (xy 237.49 121.92)
 		)
 		(stroke
 			(width 0)
@@ -7343,6 +7353,16 @@
 	)
 	(wire
 		(pts
+			(xy 237.49 121.92) (xy 232.41 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d858cfdc-39f4-48be-8836-70523ad31a72")
+	)
+	(wire
+		(pts
 			(xy 55.88 63.5) (xy 55.88 62.23)
 		)
 		(stroke
@@ -7453,16 +7473,6 @@
 	)
 	(wire
 		(pts
-			(xy 250.19 107.95) (xy 247.65 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e4077f6c-81f4-4b2f-9c50-900e555b0b45")
-	)
-	(wire
-		(pts
 			(xy 255.27 73.66) (xy 256.54 73.66)
 		)
 		(stroke
@@ -7550,16 +7560,6 @@
 			(type solid)
 		)
 		(uuid "efd8ca0c-5f43-4780-a63b-be72552f2ca8")
-	)
-	(wire
-		(pts
-			(xy 247.65 107.95) (xy 247.65 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f4f50f10-e408-4648-9e07-b63ff5ae5053")
 	)
 	(wire
 		(pts
@@ -8442,6 +8442,16 @@
 			(justify right bottom)
 		)
 		(uuid "edec05f1-e5a9-4f74-bfe8-2b775d831087")
+	)
+	(label "nRPIBOOT_SW"
+		(at 234.95 121.92 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ef2557a7-8768-469e-acb1-4218bb214fa8")
 	)
 	(label "I2C1.SCL"
 		(at 229.87 38.1 0)
@@ -9635,15 +9645,16 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 247.65 104.14 0)
+		(at 237.49 121.92 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "7309bc65-03b2-40c6-8eb7-870f6e91e613")
 		(property "Reference" "TP35"
-			(at 245.11 99.5679 0)
+			(at 240.03 123.9519 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9652,7 +9663,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 245.11 102.1079 0)
+			(at 240.03 126.4919 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9661,7 +9672,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 252.73 104.14 0)
+			(at 232.41 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9670,7 +9681,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 252.73 104.14 0)
+			(at 232.41 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9679,7 +9690,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 247.65 104.14 0)
+			(at 237.49 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)

@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "HALPI2")
-		(date "2025-06-08")
-		(rev "v0.4.0")
+		(date "2025-08-15")
+		(rev "v0.5.0")
 		(company "Hat Labs Oy")
 		(comment 1 "https://ohwr.org/cern_ohl_s_v2.pdf")
 		(comment 2 "To view a copy of this license, visit ")
@@ -5092,7 +5092,7 @@
 		(members "D[0..3]" "CMD" "CLK" "PWR" "DET")
 	)
 	(bus_alias "SPI"
-		(members "SCK" "SDI" "SDO" "CS" "INT")
+		(members "SCK" "MOSI" "MISO" "CS" "INT")
 	)
 	(bus_alias "UART"
 		(members "RXD" "TXD")
@@ -5111,7 +5111,7 @@
 	)
 	(rectangle
 		(start 218.44 91.44)
-		(end 271.145 125.73)
+		(end 271.145 129.54)
 		(stroke
 			(width 0)
 			(type dash)
@@ -5207,6 +5207,12 @@
 		(uuid "614e55b0-8433-496c-a16b-e1ea2f662e58")
 	)
 	(junction
+		(at 237.49 121.92)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7ae471a9-2e0e-4113-9033-9f287105042f")
+	)
+	(junction
 		(at 256.54 48.26)
 		(diameter 1.016)
 		(color 0 0 0 0)
@@ -5263,6 +5269,10 @@
 	(no_connect
 		(at 55.88 107.95)
 		(uuid "9d63e0c6-5286-4ff1-a5ca-a492b3dd334a")
+	)
+	(no_connect
+		(at 250.19 107.95)
+		(uuid "a0938356-f2f1-486b-8d75-035e62204078")
 	)
 	(no_connect
 		(at 106.68 72.39)
@@ -5723,16 +5733,6 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 113.03) (xy 243.84 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1348d48e-2cbd-4167-b832-369b726783cc")
-	)
-	(wire
-		(pts
 			(xy 44.45 50.8) (xy 55.88 50.8)
 		)
 		(stroke
@@ -5790,6 +5790,16 @@
 			(type solid)
 		)
 		(uuid "17711242-e8b5-44ee-b9ac-13202bd5b2f7")
+	)
+	(wire
+		(pts
+			(xy 243.84 113.03) (xy 243.84 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1880ae2d-d9e3-4a9e-bebb-eeff9d68d29b")
 	)
 	(wire
 		(pts
@@ -6543,7 +6553,7 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 121.92) (xy 232.41 121.92)
+			(xy 243.84 121.92) (xy 237.49 121.92)
 		)
 		(stroke
 			(width 0)
@@ -7343,6 +7353,16 @@
 	)
 	(wire
 		(pts
+			(xy 237.49 121.92) (xy 232.41 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d858cfdc-39f4-48be-8836-70523ad31a72")
+	)
+	(wire
+		(pts
 			(xy 55.88 63.5) (xy 55.88 62.23)
 		)
 		(stroke
@@ -7453,16 +7473,6 @@
 	)
 	(wire
 		(pts
-			(xy 250.19 107.95) (xy 247.65 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e4077f6c-81f4-4b2f-9c50-900e555b0b45")
-	)
-	(wire
-		(pts
 			(xy 255.27 73.66) (xy 256.54 73.66)
 		)
 		(stroke
@@ -7550,16 +7560,6 @@
 			(type solid)
 		)
 		(uuid "efd8ca0c-5f43-4780-a63b-be72552f2ca8")
-	)
-	(wire
-		(pts
-			(xy 247.65 107.95) (xy 247.65 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f4f50f10-e408-4648-9e07-b63ff5ae5053")
 	)
 	(wire
 		(pts
@@ -7671,7 +7671,7 @@
 		)
 		(uuid "126c5e4b-e780-4abe-bc00-c79ddd396632")
 	)
-	(label "CAN.SDO"
+	(label "CAN.MISO"
 		(at 119.38 95.25 180)
 		(effects
 			(font
@@ -7901,7 +7901,7 @@
 		)
 		(uuid "4dab2cae-553c-40fd-98ca-9efd99436623")
 	)
-	(label "CAN.SDI"
+	(label "CAN.MOSI"
 		(at 238.76 55.88 180)
 		(effects
 			(font
@@ -8081,7 +8081,7 @@
 		)
 		(uuid "848353ed-b3fb-4048-a791-3dd7712b9cd5")
 	)
-	(label "CAN.SDO"
+	(label "CAN.MISO"
 		(at 238.76 58.42 180)
 		(effects
 			(font
@@ -8241,7 +8241,7 @@
 		)
 		(uuid "a7247e10-29b0-4905-a4f8-3563df42296c")
 	)
-	(label "CAN.SDI"
+	(label "CAN.MOSI"
 		(at 119.38 97.79 180)
 		(effects
 			(font
@@ -8442,6 +8442,16 @@
 			(justify right bottom)
 		)
 		(uuid "edec05f1-e5a9-4f74-bfe8-2b775d831087")
+	)
+	(label "nRPIBOOT_SW"
+		(at 234.95 121.92 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ef2557a7-8768-469e-acb1-4218bb214fa8")
 	)
 	(label "I2C1.SCL"
 		(at 229.87 38.1 0)
@@ -8672,6 +8682,21 @@
 	(rule_area
 		(polyline
 			(pts
+				(xy 52.07 82.55) (xy 54.61 82.55) (xy 54.61 140.97) (xy 52.07 140.97)
+			)
+			(stroke
+				(width 0)
+				(type dash)
+			)
+			(fill
+				(type none)
+			)
+			(uuid 2917bc41-bb6c-476c-937f-2cdcd8950c74)
+		)
+	)
+	(rule_area
+		(polyline
+			(pts
 				(xy 124.46 36.83) (xy 127 36.83) (xy 127 60.96) (xy 124.46 60.96)
 			)
 			(stroke
@@ -8681,7 +8706,7 @@
 			(fill
 				(type none)
 			)
-			(uuid 5bd8f813-4fd9-4b63-8911-cc38b5efdc75)
+			(uuid 4a8e9c3c-441d-47d0-9127-b6edfc4c8fcc)
 		)
 	)
 	(rule_area
@@ -8696,22 +8721,7 @@
 			(fill
 				(type none)
 			)
-			(uuid 5e0827a4-672a-4e69-a89e-3bffdc136d4e)
-		)
-	)
-	(rule_area
-		(polyline
-			(pts
-				(xy 52.07 82.55) (xy 54.61 82.55) (xy 54.61 140.97) (xy 52.07 140.97)
-			)
-			(stroke
-				(width 0)
-				(type dash)
-			)
-			(fill
-				(type none)
-			)
-			(uuid 6595e64a-3a07-4f54-8528-941e603398a1)
+			(uuid b43faf40-c2ed-49d1-b572-63d06addd32f)
 		)
 	)
 	(rule_area
@@ -8726,7 +8736,7 @@
 			(fill
 				(type none)
 			)
-			(uuid 8ee61da0-a650-41ff-ace3-2ca6086e4850)
+			(uuid de4f117e-3a56-40a1-9048-e0e631b3a50f)
 		)
 	)
 	(netclass_flag ""
@@ -9220,15 +9230,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 195.58 77.47 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "fc797724-1230-4f21-9a10-8c17fca99dd1")
 		)
@@ -9513,24 +9514,6 @@
 				(hide yes)
 			)
 		)
-		(property "Characteristics" ""
-			(at 247.65 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" ""
-			(at 247.65 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "4e86201d-1017-4c4b-9a7c-bad84092a98d")
 		)
@@ -9662,15 +9645,16 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 247.65 104.14 0)
+		(at 237.49 121.92 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "7309bc65-03b2-40c6-8eb7-870f6e91e613")
 		(property "Reference" "TP35"
-			(at 245.11 99.5679 0)
+			(at 240.03 123.9519 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9679,7 +9663,7 @@
 			)
 		)
 		(property "Value" "TestPoint"
-			(at 245.11 102.1079 0)
+			(at 240.03 126.4919 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9688,7 +9672,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 252.73 104.14 0)
+			(at 232.41 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9697,7 +9681,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 252.73 104.14 0)
+			(at 232.41 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9706,25 +9690,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 247.65 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Characteristics" ""
-			(at 247.65 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" ""
-			(at 247.65 104.14 0)
+			(at 237.49 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9808,24 +9774,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 232.41 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" ""
-			(at 232.41 106.68 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "b25d06a1-5705-482a-ad05-6760e2fd445b")
 		)
@@ -9897,15 +9845,6 @@
 		)
 		(property "LCSC" "C3008584"
 			(at 257.81 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" ""
-			(at 257.81 113.03 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10128,15 +10067,6 @@
 				(hide yes)
 			)
 		)
-		(property "Characteristics" ""
-			(at 81.28 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "Component Class" "fine_pitch"
 			(at 81.28 87.63 0)
 			(effects
@@ -10152,15 +10082,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-			)
-		)
-		(property "Sim.Enable" ""
-			(at 81.28 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
 			)
 		)
 		(pin "28"
@@ -10657,24 +10578,6 @@
 				(hide yes)
 			)
 		)
-		(property "Characteristics" ""
-			(at 207.01 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" ""
-			(at 207.01 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(instances
 			(project ""
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/7c248bd3-8232-4777-a40c-eab53460cf85"
@@ -10737,24 +10640,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Device" "D"
-			(at 227.33 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 227.33 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "LCSC" "C7420320"
 			(at 227.33 121.92 0)
 			(effects
@@ -10764,25 +10649,7 @@
 				(hide yes)
 			)
 		)
-		(property "Characteristics" ""
-			(at 227.33 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "JLCPCB_CORRECTION" "0;0;180"
-			(at 227.33 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" ""
 			(at 227.33 121.92 0)
 			(effects
 				(font
@@ -10936,15 +10803,6 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Enable" ""
-			(at 232.41 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "41c99eba-a1bb-4e86-8043-3002e77434d3")
 		)
@@ -11016,24 +10874,6 @@
 			)
 		)
 		(property "LCSC" "C5239862"
-			(at 246.38 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Characteristics" ""
-			(at 246.38 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" ""
 			(at 246.38 147.32 0)
 			(effects
 				(font

@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "HALPI2")
-		(date "2025-06-08")
-		(rev "v0.4.0")
+		(date "2025-08-15")
+		(rev "v0.5.0")
 		(company "Hat Labs Oy")
 		(comment 1 "https://ohwr.org/cern_ohl_s_v2.pdf")
 		(comment 2 "To view a copy of this license, visit ")
@@ -496,6 +496,12 @@
 		(uuid "e7c0623f-6f0b-4bba-995c-e265243f8943")
 	)
 	(junction
+		(at 87.63 40.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "01ea4214-4f32-4c26-b814-d14bab5a60a6")
+	)
+	(junction
 		(at 143.51 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -508,16 +514,26 @@
 		(uuid "5934a738-4552-483e-b388-bfdf77da8e4d")
 	)
 	(junction
-		(at 87.63 36.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5fb66592-f116-4d0f-ba06-fd4ee62675ab")
-	)
-	(junction
 		(at 149.86 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "65123903-951a-4f02-8b7c-9c60cb1b543d")
+	)
+	(junction
+		(at 143.51 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e8c2b234-f6a4-4fab-8b49-1416f42e522e")
+	)
+	(wire
+		(pts
+			(xy 87.63 40.64) (xy 100.33 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "089c84c3-8c47-4fe3-8ea5-761dbea20fc3")
 	)
 	(wire
 		(pts
@@ -561,17 +577,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 36.83) (xy 100.33 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "30aed373-8ece-465d-bd00-dd314c893042")
-	)
-	(wire
-		(pts
-			(xy 87.63 30.48) (xy 87.63 36.83)
+			(xy 87.63 46.99) (xy 87.63 40.64)
 		)
 		(stroke
 			(width 0)
@@ -581,7 +587,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 40.64) (xy 190.5 40.64)
+			(xy 187.96 40.64) (xy 190.5 40.64)
 		)
 		(stroke
 			(width 0)
@@ -631,6 +637,36 @@
 	)
 	(wire
 		(pts
+			(xy 171.45 99.06) (xy 168.91 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "711da35c-efb6-4374-ba3e-375da7220abe")
+	)
+	(wire
+		(pts
+			(xy 143.51 99.06) (xy 143.51 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7315bcad-a43b-4f8f-a800-0c9e57dcca8b")
+	)
+	(wire
+		(pts
+			(xy 187.96 73.66) (xy 190.5 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "741181dd-a031-47e4-aa7a-c3a18dd6c91e")
+	)
+	(wire
+		(pts
 			(xy 180.34 69.85) (xy 180.34 36.83)
 		)
 		(stroke
@@ -651,7 +687,17 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 40.64) (xy 100.33 40.64)
+			(xy 138.43 72.39) (xy 146.05 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b76c566-44e0-4782-afc7-8a220819cf4b")
+	)
+	(wire
+		(pts
+			(xy 80.01 40.64) (xy 87.63 40.64)
 		)
 		(stroke
 			(width 0)
@@ -681,7 +727,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 36.83) (xy 87.63 36.83)
+			(xy 80.01 36.83) (xy 100.33 36.83)
 		)
 		(stroke
 			(width 0)
@@ -701,7 +747,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 101.6) (xy 146.05 101.6)
+			(xy 143.51 105.41) (xy 146.05 105.41)
 		)
 		(stroke
 			(width 0)
@@ -721,7 +767,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 30.48) (xy 88.9 30.48)
+			(xy 87.63 46.99) (xy 88.9 46.99)
 		)
 		(stroke
 			(width 0)
@@ -751,6 +797,16 @@
 	)
 	(wire
 		(pts
+			(xy 146.05 99.06) (xy 143.51 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6b9dca0-21dd-4f12-b863-a1bdd5439e42")
+	)
+	(wire
+		(pts
 			(xy 180.34 36.83) (xy 190.5 36.83)
 		)
 		(stroke
@@ -760,7 +816,7 @@
 		(uuid "f96e83b5-f65c-4333-a3b0-1ff9b1bef007")
 	)
 	(label "B1_VIN"
-		(at 143.51 101.6 180)
+		(at 143.51 105.41 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -778,6 +834,26 @@
 			(justify left bottom)
 		)
 		(uuid "457c6f7b-b756-4bc1-b48e-a1ac5be18c6d")
+	)
+	(label "VscapE"
+		(at 138.43 72.39 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a87810bf-7a61-482f-9733-978a5f77f54b")
+	)
+	(label "VscapE"
+		(at 171.45 99.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b9c3f91d-06fd-43bc-81b8-cc5116661238")
 	)
 	(label "B1_VIN"
 		(at 133.35 46.99 0)
@@ -811,9 +887,9 @@
 		)
 		(uuid "42c75d69-d216-4731-bd31-1c508fbf14d7")
 	)
-	(hierarchical_label "Vin_prot"
+	(hierarchical_label "VIN_OVP"
 		(shape output)
-		(at 88.9 30.48 0)
+		(at 88.9 46.99 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -822,9 +898,9 @@
 		)
 		(uuid "642ffea3-aa4f-48b0-adcd-1349c1db3cf8")
 	)
-	(hierarchical_label "VEN"
+	(hierarchical_label "EN5V"
 		(shape input)
-		(at 189.23 40.64 180)
+		(at 187.96 40.64 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -832,6 +908,17 @@
 			(justify right)
 		)
 		(uuid "79ed7b44-7b08-4e70-a408-e1481ec8335a")
+	)
+	(hierarchical_label "EN3V3"
+		(shape input)
+		(at 187.96 73.66 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7ff0522d-a63d-422b-bfef-c889dcc79526")
 	)
 	(hierarchical_label "Vscap"
 		(shape output)
@@ -980,24 +1067,6 @@
 				(hide yes)
 			)
 		)
-		(property "Characteristics" ""
-			(at 30.48 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Enable" ""
-			(at 30.48 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "c5219e93-3bb1-4fbf-8f8b-56bb92a4b7dd")
 		)
@@ -1124,6 +1193,16 @@
 				(justify left)
 			)
 		)
+		(pin "VscapE" input
+			(at 146.05 72.39 180)
+			(uuid "0cce5d59-d809-49bc-a279-98106b9d3bd1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42"
@@ -1186,7 +1265,7 @@
 				(justify left)
 			)
 		)
-		(pin "EN" input
+		(pin "EN5V" input
 			(at 190.5 40.64 180)
 			(uuid "42915dc6-b437-403e-90b3-8f98ef7f7184")
 			(effects
@@ -1215,7 +1294,7 @@
 		)
 	)
 	(sheet
-		(at 146.05 97.79)
+		(at 146.05 95.25)
 		(size 22.86 14.605)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1231,7 +1310,7 @@
 		)
 		(uuid "8e6a478f-fb3c-4be6-a57a-6d17571606cc")
 		(property "Sheetname" "Early 3.3V"
-			(at 146.05 97.0784 0)
+			(at 146.05 94.5384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1240,7 +1319,7 @@
 			)
 		)
 		(property "Sheetfile" "early_3v3.kicad_sch"
-			(at 146.05 112.9796 0)
+			(at 146.05 110.4396 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1249,13 +1328,33 @@
 			)
 		)
 		(pin "Vin" input
-			(at 146.05 101.6 180)
+			(at 146.05 105.41 180)
 			(uuid "294bc635-309a-436b-a13b-fd3fb97e9286")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(pin "Vscap" input
+			(at 146.05 99.06 180)
+			(uuid "db229698-284c-40a6-9c77-db30980227a4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VscapE" output
+			(at 168.91 99.06 0)
+			(uuid "311d725d-a035-4d93-b5bf-65e7bc186203")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -1492,6 +1591,16 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+		(pin "EN3V3" input
+			(at 190.5 73.66 180)
+			(uuid "3c8bfc02-573a-4702-8eb2-7a0c6654c35c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances

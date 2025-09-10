@@ -1192,6 +1192,12 @@
 		(color 0 0 0 0)
 		(uuid "9add325f-a875-4741-8a37-029fbb803107")
 	)
+	(junction
+		(at 72.39 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f6af5d2c-ab55-40cf-aa2f-04e3c5687758")
+	)
 	(no_connect
 		(at 196.85 107.95)
 		(uuid "0942978c-0d90-49e4-a85a-c085b669ba07")
@@ -1585,6 +1591,16 @@
 	)
 	(wire
 		(pts
+			(xy 72.39 102.87) (xy 86.36 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e53cb1c7-5892-4ae8-a95d-d07f773f402b")
+	)
+	(wire
+		(pts
 			(xy 118.11 99.06) (xy 118.11 102.87)
 		)
 		(stroke
@@ -1605,7 +1621,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 102.87) (xy 86.36 102.87)
+			(xy 63.5 102.87) (xy 72.39 102.87)
 		)
 		(stroke
 			(width 0)
@@ -1714,7 +1730,7 @@
 		(uuid "c72200ba-634f-4444-9a56-578cb271c94b")
 	)
 	(label "SD.PWR"
-		(at 83.82 102.87 180)
+		(at 63.5 102.87 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1765,6 +1781,73 @@
 				)
 				(justify left)
 				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 72.39 102.87 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0b4d48e5-f84f-4b0e-9b33-7b6744b8d496")
+		(property "Reference" "TP32"
+			(at 74.93 100.8381 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 74.93 98.2981 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 67.31 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 67.31 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 72.39 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "40d63a93-ba17-4b67-a7a6-33c701a18fba")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/67ada73c-6692-4fd8-8c20-5be89f2b8650"
+					(reference "TP32")
+					(unit 1)
+				)
 			)
 		)
 	)

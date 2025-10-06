@@ -71,6 +71,20 @@
     (condition "A.Type == 'Via'")
     (constraint clearance (min 0.15mm)))
 
+(rule "diff_pair_via_clearance"
+    (condition "(A.Type == 'Via') && (A.hasNetclass('Diff90ohm') || A.hasNetclass('Diff100ohm'))")
+    (constraint clearance (min 0.3mm)))
+
+(rule "diff_pair_via_to_trace_clearance"
+    (condition "AB.isCoupledDiffPair() && (A.Type == 'Via' || B.Type == 'Via')")
+    (constraint clearance (min 0.15mm)))
+
+# Reduced clearance for GND vias to traces and other vias
+
+(rule "gnd_via_to_trace_clearance"
+    (condition "(A.Type == 'Via' && A.NetName == 'GND') && (B.Type == 'Track' || B.Type == 'Via')")
+    (constraint clearance (min 0.13mm)))
+
 ########################################################################################
 ## Zones
 

@@ -3716,7 +3716,7 @@
 		(uuid "8cf1d3b3-6d50-4019-8809-712251fadadb")
 	)
 	(label "USB3.RX+"
-		(at 231.14 128.27 0)
+		(at 231.14 133.35 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3785,8 +3785,8 @@
 		)
 		(uuid "cf4bb7f0-c50d-40f6-b76b-8e3cda966f27")
 	)
-	(label "VBUS_"
-		(at 160.02 133.35 180)
+	(label "VBUS"
+		(at 160.02 128.27 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3796,7 +3796,7 @@
 		(uuid "d03f83be-6d2d-4c77-bd30-8ff3845690e8")
 	)
 	(label "USB3.RX-"
-		(at 231.14 133.35 0)
+		(at 231.14 128.27 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5292,7 +5292,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 200.66 96.52 0)
 			(effects
 				(font
@@ -5319,8 +5319,17 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C1525"
+		(property "LCSC" "C76934"
 			(at 200.66 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Component Class" "fine_pitch"
+			(at 200.66 96.52 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5461,7 +5470,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Hatlabs:USB-3.0-TH_USB-302LD-ARW"
+		(property "Footprint" "HL_Connector_USB:USB3.0-A-SMD_916-862A205EY10200"
 			(at 217.17 83.82 0)
 			(effects
 				(font
@@ -5583,7 +5592,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 200.66 100.33 0)
 			(effects
 				(font
@@ -5610,8 +5619,17 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C1525"
+		(property "LCSC" "C76934"
 			(at 200.66 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Component Class" "fine_pitch"
+			(at 200.66 100.33 90)
 			(effects
 				(font
 					(size 1.27 1.27)

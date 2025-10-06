@@ -106,6 +106,16 @@
 		)
 		(uuid "2b76673b-cd02-4187-8cb7-1d7ec9770aff")
 	)
+	(wire
+		(pts
+			(xy 69.85 68.58) (xy 67.31 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c9518b6-8569-41a7-83dd-65ee6f11e78c")
+	)
 	(bus
 		(pts
 			(xy 184.15 104.14) (xy 186.69 104.14)
@@ -115,16 +125,6 @@
 			(type default)
 		)
 		(uuid "2e1b72bc-cf9c-4ad0-a7de-808f028d98e6")
-	)
-	(wire
-		(pts
-			(xy 29.21 73.66) (xy 31.75 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "44df15e7-d8a7-43ab-9c12-a16c4dd5cbe3")
 	)
 	(bus
 		(pts
@@ -158,6 +158,16 @@
 	)
 	(wire
 		(pts
+			(xy 69.85 34.29) (xy 67.31 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f889c57-8b72-4850-95aa-d0737c81d8ea")
+	)
+	(wire
+		(pts
 			(xy 29.21 63.5) (xy 31.75 63.5)
 		)
 		(stroke
@@ -168,7 +178,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 67.31) (xy 67.31 67.31)
+			(xy 67.31 66.04) (xy 69.85 66.04)
 		)
 		(stroke
 			(width 0)
@@ -185,16 +195,6 @@
 			(type default)
 		)
 		(uuid "6959dddb-e499-4862-b50e-7b46d65c3612")
-	)
-	(wire
-		(pts
-			(xy 29.21 29.21) (xy 31.75 29.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "69bcdd1a-f88e-4981-9460-30ec5fdd064f")
 	)
 	(wire
 		(pts
@@ -348,13 +348,13 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 26.67) (xy 69.85 26.67)
+			(xy 29.21 73.66) (xy 31.75 73.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ab65bb74-a5be-47c5-af50-42bd35015593")
+		(uuid "a9a3c694-0a71-4748-932c-4c80b28cc4e9")
 	)
 	(bus
 		(pts
@@ -408,7 +408,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 71.12) (xy 67.31 71.12)
+			(xy 67.31 74.93) (xy 69.85 74.93)
 		)
 		(stroke
 			(width 0)
@@ -445,6 +445,16 @@
 			(type default)
 		)
 		(uuid "d4e3db4b-00e7-472c-81ae-25dfdab8c7e5")
+	)
+	(wire
+		(pts
+			(xy 29.21 27.94) (xy 31.75 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5bbcec5-98c4-4147-ae43-f3ef46f879fe")
 	)
 	(wire
 		(pts
@@ -515,6 +525,16 @@
 			(type default)
 		)
 		(uuid "e9b0a3bd-e7d0-4edc-a244-3c1f3e3e625e")
+	)
+	(wire
+		(pts
+			(xy 29.21 30.48) (xy 31.75 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1b8b7e9-b711-40d5-be8c-2a0bde8e0185")
 	)
 	(bus
 		(pts
@@ -716,16 +736,6 @@
 		)
 		(uuid "4b68380b-32b4-4300-8304-fbc184f9e631")
 	)
-	(label "VIN_OVP"
-		(at 29.21 73.66 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "4b7a0618-6495-4a87-bf7e-d034837036ef")
-	)
 	(label "~{LED_PCIE}"
 		(at 224.79 82.55 0)
 		(effects
@@ -846,6 +856,16 @@
 		)
 		(uuid "79a97202-4bae-41ca-80e9-680cc8633a3f")
 	)
+	(label "VinS"
+		(at 29.21 73.66 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "81337b27-81a4-448f-8648-60acc3452c39")
+	)
 	(label "PCIe{PCIe}"
 		(at 153.67 66.04 0)
 		(effects
@@ -857,7 +877,7 @@
 		(uuid "82596ad6-82ad-4b0e-aa67-06653ab5a4b0")
 	)
 	(label "PWR_BUTTON"
-		(at 69.85 71.12 0)
+		(at 69.85 74.93 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -886,6 +906,16 @@
 		)
 		(uuid "995eb13d-c92e-40cc-8d33-d8f39b4909c6")
 	)
+	(label "~{EN3V3OUT}"
+		(at 29.21 30.48 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9b619ff7-61b1-4968-8ced-48e94de67836")
+	)
 	(label "I2C0{I2C}"
 		(at 104.14 83.82 180)
 		(effects
@@ -906,18 +936,18 @@
 		)
 		(uuid "a7932a4e-5838-4b52-86c7-bec8cc4e7102")
 	)
-	(label "VIN_OVP"
-		(at 69.85 26.67 0)
+	(label "VinS"
+		(at 69.85 34.29 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "adc1d97c-8708-4079-8777-4b2b1caf8c9f")
+		(uuid "a90ee3ad-2a69-4aea-b8fe-25f1e0a001fe")
 	)
-	(label "EN3V3"
-		(at 29.21 29.21 180)
+	(label "EN3V3BUCK"
+		(at 29.21 27.94 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -956,8 +986,8 @@
 		)
 		(uuid "d6fe2081-aef6-46a7-8812-a20f23e00462")
 	)
-	(label "EN3V3"
-		(at 69.85 67.31 0)
+	(label "EN3V3BUCK"
+		(at 69.85 66.04 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -985,6 +1015,16 @@
 			(justify left bottom)
 		)
 		(uuid "e8c1ca9e-13a1-4089-9a10-cbffb6dacb1b")
+	)
+	(label "~{EN3V3OUT}"
+		(at 69.85 68.58 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "eb737c8d-9f58-49ba-8fe7-a5389306b5eb")
 	)
 	(label "PCIESLEEP"
 		(at 184.15 86.36 180)
@@ -1430,16 +1470,6 @@
 				(justify left top)
 			)
 		)
-		(pin "VIN_OVP" input
-			(at 31.75 73.66 180)
-			(uuid "6b4f1da1-0804-4a5f-ab9b-d4f85225dfb7")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "Vscap" input
 			(at 31.75 76.2 180)
 			(uuid "d7ad14e1-d8a9-4175-bc55-388038823b54")
@@ -1491,7 +1521,7 @@
 			)
 		)
 		(pin "PWR_BTN_OUT" output
-			(at 67.31 71.12 0)
+			(at 67.31 74.93 0)
 			(uuid "1a36131c-9218-4a37-b18f-7ac990a87254")
 			(effects
 				(font
@@ -1550,9 +1580,29 @@
 				(justify left)
 			)
 		)
-		(pin "EN3V3" output
-			(at 67.31 67.31 0)
+		(pin "EN3V3BUCK" output
+			(at 67.31 66.04 0)
 			(uuid "5568a4eb-04e3-4956-86a4-bf65699d2316")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "VinS" input
+			(at 31.75 73.66 180)
+			(uuid "140aeab7-8020-4cd8-a6fb-565fd35e4cfc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "~{EN3V3OUT}" output
+			(at 67.31 68.58 0)
+			(uuid "8a2663a5-eb0b-428e-9875-a4f9f8378351")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1970,16 +2020,6 @@
 				(justify right)
 			)
 		)
-		(pin "VIN_OVP" output
-			(at 67.31 26.67 0)
-			(uuid "66410a0a-80bf-41fd-ac75-1d59563fdd17")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "PG_5V" output
 			(at 67.31 43.18 0)
 			(uuid "3050cdc3-4fc0-4eef-94f5-144e5653f0ba")
@@ -1990,9 +2030,29 @@
 				(justify right)
 			)
 		)
-		(pin "EN3V3" input
-			(at 31.75 29.21 180)
+		(pin "EN3V3BUCK" input
+			(at 31.75 27.94 180)
 			(uuid "a8d64c2d-265e-43a8-ab39-fabd2b4bc4bd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VinS" output
+			(at 67.31 34.29 0)
+			(uuid "0979ff24-f488-4216-9037-fd6d7a6069b5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "~{EN3V3OUT}" input
+			(at 31.75 30.48 180)
+			(uuid "0191df79-b425-42fd-914b-33d35747363a")
 			(effects
 				(font
 					(size 1.27 1.27)

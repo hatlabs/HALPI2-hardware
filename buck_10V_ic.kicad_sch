@@ -1646,16 +1646,6 @@
 		)
 		(uuid "c2f56766-eae5-4b40-ac5d-b5ee4eb5b71e")
 	)
-	(text "Startup at 9.8V"
-		(exclude_from_sim no)
-		(at 78.232 168.91 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "da4c958e-de0a-4ea9-8ab8-40ff581b2593")
-	)
 	(junction
 		(at 92.71 81.28)
 		(diameter 0)
@@ -1717,10 +1707,10 @@
 		(uuid "95f887ab-745a-4541-b786-789548a21adb")
 	)
 	(junction
-		(at 76.2 149.86)
+		(at 111.76 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "9fbb0dd8-1841-4f83-bca9-ad41e1fe7084")
+		(uuid "aedc796a-f608-4d15-a03a-d21774640280")
 	)
 	(junction
 		(at 59.69 85.09)
@@ -1812,23 +1802,13 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 81.28) (xy 114.3 81.28)
+			(xy 100.33 81.28) (xy 111.76 81.28)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "08dc8c47-dd0b-455f-aa22-68fa72e10663")
-	)
-	(wire
-		(pts
-			(xy 76.2 148.59) (xy 76.2 149.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0ba1e63f-aff7-41b0-aedc-40b89c2f8d00")
 	)
 	(wire
 		(pts
@@ -1929,16 +1909,6 @@
 			(type default)
 		)
 		(uuid "2243eefe-cb23-4776-a51d-e696d4e48d6f")
-	)
-	(wire
-		(pts
-			(xy 76.2 149.86) (xy 86.36 149.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "25cff017-897c-435f-9a6a-30d4438d7f29")
 	)
 	(wire
 		(pts
@@ -2182,13 +2152,13 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 140.97) (xy 76.2 138.43)
+			(xy 111.76 81.28) (xy 114.3 81.28)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "75bc99b9-d812-4d22-aa89-d0c553cff9a8")
+		(uuid "77e712ba-26c6-4fc1-8f3c-a8e77836358d")
 	)
 	(wire
 		(pts
@@ -2249,16 +2219,6 @@
 			(type default)
 		)
 		(uuid "8e231d95-a150-409c-85d2-f0cf71b56f83")
-	)
-	(wire
-		(pts
-			(xy 76.2 149.86) (xy 76.2 151.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "91f549df-379e-4c2c-8f05-c504e4df0a3e")
 	)
 	(wire
 		(pts
@@ -2402,6 +2362,16 @@
 	)
 	(wire
 		(pts
+			(xy 124.46 73.66) (xy 111.76 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c91105ae-822e-4220-859a-fc24dfb7dc31")
+	)
+	(wire
+		(pts
 			(xy 66.04 88.9) (xy 66.04 85.09)
 		)
 		(stroke
@@ -2529,6 +2499,16 @@
 			(type default)
 		)
 		(uuid "ec0e8063-1244-409d-91b0-c7d7ac177404")
+	)
+	(wire
+		(pts
+			(xy 111.76 73.66) (xy 111.76 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f19d7e94-b70e-4732-a88c-6b45da0fa995")
 	)
 	(wire
 		(pts
@@ -2680,16 +2660,6 @@
 		)
 		(uuid "5bfa3450-35ec-4bfb-be1d-5592f8d8f0a8")
 	)
-	(label "EN"
-		(at 86.36 149.86 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "65b2e6bc-c10f-473b-91d7-8ec113cdc63f")
-	)
 	(label "COMP"
 		(at 161.29 147.32 0)
 		(effects
@@ -2749,16 +2719,6 @@
 			(justify left bottom)
 		)
 		(uuid "b07709bf-487e-4730-97f9-175e0713459c")
-	)
-	(label "EN"
-		(at 124.46 73.66 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "bd8f7bc3-eee4-4192-9bde-2bf1d36c1d5a")
 	)
 	(label "VDRV"
 		(at 95.25 143.51 180)
@@ -2851,17 +2811,6 @@
 		)
 		(uuid "02572ba7-5e0a-4a0c-b367-165dfa00905a")
 	)
-	(hierarchical_label "VIN_OVP"
-		(shape input)
-		(at 76.2 138.43 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "0ef9aa7b-de4e-48ad-b182-6e723b46b8aa")
-	)
 	(hierarchical_label "Vout"
 		(shape output)
 		(at 259.08 85.09 0)
@@ -2883,30 +2832,6 @@
 			(justify right)
 		)
 		(uuid "a8129aa3-c442-47db-8086-92144f2d6208")
-	)
-	(netclass_flag ""
-		(length 2.54)
-		(shape round)
-		(at 83.82 149.86 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "0f5de31f-ccfe-48e4-8c5d-ff60e5fb7ec4")
-		(property "Netclass" "Analog"
-			(at 84.709 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
 	)
 	(netclass_flag ""
 		(length 2.54)
@@ -3249,85 +3174,6 @@
 				)
 				(justify left)
 				(hide yes)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 76.2 154.94 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "00cb9868-f7a2-41a8-b6b5-0cfbd240e8cf")
-		(property "Reference" "R122"
-			(at 78.74 153.6699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "33k"
-			(at 78.74 156.2099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 77.978 154.94 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 76.2 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 76.2 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C25779"
-			(at 76.2 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "bc6b9170-d0e9-4047-825b-efc265383015")
-		)
-		(pin "2"
-			(uuid "66a0e246-065a-4866-b701-af8df39a78d2")
-		)
-		(instances
-			(project "HALPI2"
-				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69/71cb3fa2-93c3-4e2e-bb44-1fabbacadff2"
-					(reference "R122")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -3991,150 +3837,6 @@
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69/71cb3fa2-93c3-4e2e-bb44-1fabbacadff2"
 					(reference "C183")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 76.2 144.78 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2bbf64eb-4331-4524-84b2-285aab397563")
-		(property "Reference" "R121"
-			(at 78.74 143.5099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "200k"
-			(at 78.74 146.0499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 77.978 144.78 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 76.2 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 76.2 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C25764"
-			(at 76.2 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a0370de7-3490-4e68-8e89-60c81b543f9a")
-		)
-		(pin "2"
-			(uuid "96698daa-e83f-4e7f-91a0-a739b4366469")
-		)
-		(instances
-			(project "HALPI2"
-				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69/71cb3fa2-93c3-4e2e-bb44-1fabbacadff2"
-					(reference "R121")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 76.2 158.75 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "2ffa93b0-7693-4c17-86af-0f3d58fa71c0")
-		(property "Reference" "#PWR0342"
-			(at 76.2 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 76.327 163.1442 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 76.2 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 76.2 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 76.2 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "dbbb16fc-90c8-4f9b-8f8f-17377737f38e")
-		)
-		(instances
-			(project "HALPI2"
-				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/949897e8-9bb6-4c13-b9c6-3f831f2e4c69/71cb3fa2-93c3-4e2e-bb44-1fabbacadff2"
-					(reference "#PWR0342")
 					(unit 1)
 				)
 			)

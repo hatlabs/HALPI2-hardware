@@ -49,7 +49,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.2
+          "min_clearance": 0.15
         }
       },
       "diff_pair_dimensions": [
@@ -74,7 +74,23 @@
           ""
         ],
         [
+          "copper_edge_clearance|215450000|105000000|10cf33ea-729c-4314-b1a2-ba82cf1a8245|47dff0c3-2a03-46f5-a2ae-49b020213b60",
+          ""
+        ],
+        [
+          "copper_edge_clearance|215450000|65000000|10cf33ea-729c-4314-b1a2-ba82cf1a8245|7d675339-abbd-423a-9793-4d7aec6fb4c0",
+          ""
+        ],
+        [
+          "copper_edge_clearance|215450000|85000000|10cf33ea-729c-4314-b1a2-ba82cf1a8245|522774ae-e229-4f89-b2e9-cdc9c274b49b",
+          ""
+        ],
+        [
           "copper_edge_clearance|36550000|105000000|ca4d09ed-e3bb-4e17-b8db-890ef327f825|821060b0-105f-48b3-b666-cc3b111e95d5",
+          ""
+        ],
+        [
+          "copper_edge_clearance|36550000|65000000|ca4d09ed-e3bb-4e17-b8db-890ef327f825|0ca1350c-5d90-4f45-ace6-6e4455b1b0bb",
           ""
         ],
         [
@@ -106,6 +122,10 @@
           ""
         ],
         [
+          "courtyards_overlap|195970852|64760000|2a31f970-63e0-4169-975a-2e393d6c6b6c|c541e760-e03a-407a-be00-c5ba0bfb1c34",
+          ""
+        ],
+        [
           "courtyards_overlap|197657700|57950000|1235b2ea-9977-4366-82e7-f929104ef29b|c541e760-e03a-407a-be00-c5ba0bfb1c34",
           ""
         ],
@@ -130,10 +150,6 @@
           ""
         ],
         [
-          "courtyards_overlap|70895000|115317943|802af8b0-29a4-458c-8bef-ee5ae20fa1c8|f5079631-9e14-47fe-9e0f-f4137a7f683c",
-          ""
-        ],
-        [
           "courtyards_overlap|87405000|55295000|88df531e-3a37-4cfc-94ca-4206184001c8|db564a84-e12f-47c2-8da5-2d11fe3c8639",
           ""
         ],
@@ -147,6 +163,22 @@
         ],
         [
           "courtyards_overlap|95134928|77596338|1ec7579f-fd57-4260-962f-f22f96b2e01e|77f18699-f0ec-45fd-a5a6-29956c5a7a62",
+          ""
+        ],
+        [
+          "footprint_type_mismatch|180570000|77650000|d4694d43-e2ea-49a5-9aa6-e5c6826e27a1|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "footprint_type_mismatch|180578097|101641243|f6a73b47-c6e6-43fa-8a7e-f1430b9c822b|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "footprint_type_mismatch|199578097|101641243|9833f234-e715-47a1-b2a4-fba5288456bb|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "footprint_type_mismatch|199658097|77641243|c9d17b55-e336-44ee-85da-2665dd38114d|00000000-0000-0000-0000-000000000000",
           ""
         ],
         [
@@ -214,19 +246,19 @@
           ""
         ],
         [
-          "items_not_allowed|45500000|31000000|7540fb84-45dc-439f-9070-4c37c575e938|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
           "lib_footprint_mismatch|119400000|64182500|1ec7579f-fd57-4260-962f-f22f96b2e01e|00000000-0000-0000-0000-000000000000",
           ""
         ],
         [
-          "starved_thermal|168850000|60240000|926a57b8-8a76-4c50-8172-8c028426f9f2|bccba6cd-e190-46a3-b5f3-5a4786135ffc|B.Cu",
+          "skew_out_of_range|164550000|70082500|a9b684a6-ef42-42df-a64a-52052076076c|00000000-0000-0000-0000-000000000000",
           ""
         ],
         [
-          "starved_thermal|37450000|105000000|f3ce4ee9-a2e7-4d2d-ac47-3cc4030fc25a|821060b0-105f-48b3-b666-cc3b111e95d5|B.Cu",
+          "starved_thermal|165610000|93557500|926a57b8-8a76-4c50-8172-8c028426f9f2|4e3c5c52-9007-48da-b109-fa973169bdc6|B.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|168850000|60240000|926a57b8-8a76-4c50-8172-8c028426f9f2|bccba6cd-e190-46a3-b5f3-5a4786135ffc|B.Cu",
           ""
         ],
         [
@@ -235,10 +267,6 @@
         ],
         [
           "starved_thermal|56850000|89025000|f3ce4ee9-a2e7-4d2d-ac47-3cc4030fc25a|ec2854cc-49b5-434f-a7ea-df9b43d9dba9|F.Cu",
-          ""
-        ],
-        [
-          "starved_thermal|93850000|70745000|926a57b8-8a76-4c50-8172-8c028426f9f2|3d7a9c82-c0d4-4dec-ab13-24e017c835c5|B.Cu",
           ""
         ]
       ],
@@ -737,13 +765,17 @@
         "name": "Diff100ohm",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 1,
-        "schematic_color": "rgb(255, 141, 141)"
+        "schematic_color": "rgb(255, 141, 141)",
+        "via_diameter": 0.5,
+        "via_drill": 0.3
       },
       {
         "name": "Diff90ohm",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2,
-        "schematic_color": "rgb(255, 141, 141)"
+        "schematic_color": "rgb(255, 141, 141)",
+        "via_diameter": 0.5,
+        "via_drill": 0.3
       },
       {
         "clearance": 0.3,
@@ -802,6 +834,9 @@
     "net_colors": null,
     "netclass_assignments": {
       "+3.3V": [
+        "Power"
+      ],
+      "+3.3VP": [
         "Power"
       ],
       "/CAN bus/CANH": [
@@ -1350,6 +1385,9 @@
       "/EN3V3": [
         "Digital"
       ],
+      "/EN3V3BUCK": [
+        "Digital"
+      ],
       "/EN5V": [
         "Digital"
       ],
@@ -1690,6 +1728,9 @@
       ],
       "/Power/Input Protection/VS": [
         "Power"
+      ],
+      "/Power/Input Protection/VinS": [
+        "Analog"
       ],
       "/Power/Supercaps/Supercap stage1/B+": [
         "Analog"
@@ -2222,6 +2263,9 @@
       "/Vcap": [
         "Power"
       ],
+      "/VinS": [
+        "Analog"
+      ],
       "/Vin_OVP": [
         "Power"
       ],
@@ -2231,6 +2275,9 @@
       ],
       "/Vscap": [
         "Power"
+      ],
+      "/~{EN3V3OUT}": [
+        "Digital"
       ],
       "/~{LED_ACT}": [
         "Digital"
@@ -2515,7 +2562,7 @@
       },
       {
         "netclass": "Power",
-        "pattern": "/Power/*/GND*"
+        "pattern": "GND*"
       },
       {
         "netclass": "Power",
@@ -2528,6 +2575,10 @@
       {
         "netclass": "Power",
         "pattern": "/Vin_prot"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "/Power/*/GND*"
       }
     ]
   },

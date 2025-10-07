@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "HALPI2")
-		(date "2025-08-15")
-		(rev "v0.5.0")
+		(date "2025-10-07")
+		(rev "v0.6.0")
 		(company "Hat Labs Oy")
 		(comment 1 "https://ohwr.org/cern_ohl_s_v2.pdf")
 		(comment 2 "To view a copy of this license, visit ")
@@ -2281,6 +2281,12 @@
 		(uuid "5be1e26c-6d86-479a-9181-1f31c1199e0b")
 	)
 	(junction
+		(at 179.07 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5c6850a9-572a-4bfb-89b9-256304d4732a")
+	)
+	(junction
 		(at 194.31 69.85)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2646,7 +2652,7 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 69.85) (xy 181.61 69.85)
+			(xy 173.99 69.85) (xy 179.07 69.85)
 		)
 		(stroke
 			(width 0)
@@ -3023,6 +3029,16 @@
 			(type default)
 		)
 		(uuid "d1dcb469-9d6a-489f-939e-1090008a9dac")
+	)
+	(wire
+		(pts
+			(xy 179.07 69.85) (xy 181.61 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2e8ae18-5fa1-400e-a287-93c101f1276a")
 	)
 	(wire
 		(pts
@@ -4986,6 +5002,72 @@
 				)
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/e9d5ec1c-aaca-4440-9248-34d6a57da48f"
 					(reference "U7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 179.07 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "850dd136-e8da-476e-8841-0868a41725e7")
+		(property "Reference" "#FLG027"
+			(at 179.07 67.945 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 179.07 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 179.07 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 179.07 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 179.07 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f89280b0-63b5-429f-a1cf-69b3ed401ead")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/e9d5ec1c-aaca-4440-9248-34d6a57da48f"
+					(reference "#FLG027")
 					(unit 1)
 				)
 			)

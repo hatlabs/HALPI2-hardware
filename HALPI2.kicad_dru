@@ -93,7 +93,7 @@
     (constraint clearance (min 1.0mm)))
 
 (rule "isolated_zone_clearance"
-    (condition "(A.NetName == '+5V' || A.NetName == '+3.3V') && (B.NetName == 'GND_CAN' || B.NetName == 'GND_RS485' || B.NetName == '+5V_CAN' || B.NetName == '+5V_RS485')")
+    (condition "(A.NetName == '+5V' || A.NetName == '+3.3V' || A.NetName == 'GND') && (B.NetName == 'GND_CAN' || B.NetName == 'GND_RS485' || B.NetName == '+5V_CAN' || B.NetName == '+5V_RS485')")
     (constraint clearance (min 1.0mm)))
 
 (rule "pad_zone_clearance"

@@ -2874,6 +2874,17 @@
 		)
 		(uuid "9997ebf8-0899-4566-9d49-ec98053a526e")
 	)
+	(text "Temporary fix: ensure the oscillator starts\neven with a fast 74LVC inverter."
+		(exclude_from_sim no)
+		(at 220.98 146.05 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "af1311d0-8331-448b-a33b-a393b4eec819")
+	)
 	(junction
 		(at 114.3 27.94)
 		(diameter 0)
@@ -4623,7 +4634,7 @@
 				)
 			)
 		)
-		(property "Value" "22pF C0G"
+		(property "Value" "100pF C0G"
 			(at 212.09 146.0437 90)
 			(effects
 				(font
@@ -4658,7 +4669,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C1653"
+		(property "LCSC" ""
 			(at 215.9 146.05 0)
 			(effects
 				(font

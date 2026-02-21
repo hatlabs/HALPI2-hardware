@@ -1712,6 +1712,157 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:FerriteBead_Small"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "FB"
+				(at 1.905 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "FerriteBead_Small"
+				(at 1.905 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Ferrite bead, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "L ferrite bead inductor filter"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Inductor_* L_* *Ferrite*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "FerriteBead_Small_0_1"
+				(polyline
+					(pts
+						(xy -1.8288 0.2794) (xy -1.1176 1.4986) (xy 1.8288 -0.2032) (xy 1.1176 -1.4224) (xy -1.8288 0.2794)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.889) (xy 0 1.2954)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 -0.7874)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "FerriteBead_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:LED"
 			(pin_numbers
 				(hide yes)
@@ -5412,7 +5563,7 @@
 		(uuid "8b97adbe-3dd3-4e4a-aa24-b99906b6086c")
 	)
 	(bus_entry
-		(at 121.92 102.87)
+		(at 139.7 102.87)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -5547,7 +5698,7 @@
 		(uuid "df51d327-34f3-41fc-ae41-c9dad044314f")
 	)
 	(bus_entry
-		(at 121.92 100.33)
+		(at 139.7 100.33)
 		(size -2.54 2.54)
 		(stroke
 			(width 0)
@@ -5574,7 +5725,7 @@
 		(uuid "ed09c519-4a22-4dde-bad9-33d71d6cf587")
 	)
 	(bus_entry
-		(at 121.92 132.08)
+		(at 139.7 107.95)
 		(size -2.54 2.54)
 		(stroke
 			(width 0.1524)
@@ -5893,7 +6044,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 102.87) (xy 119.38 102.87)
+			(xy 106.68 102.87) (xy 137.16 102.87)
 		)
 		(stroke
 			(width 0)
@@ -6303,7 +6454,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 110.49) (xy 119.38 110.49)
+			(xy 106.68 110.49) (xy 121.92 110.49)
 		)
 		(stroke
 			(width 0)
@@ -6473,7 +6624,7 @@
 	)
 	(bus
 		(pts
-			(xy 121.92 130.81) (xy 121.92 132.08)
+			(xy 139.7 102.87) (xy 139.7 107.95)
 		)
 		(stroke
 			(width 0)
@@ -6483,7 +6634,7 @@
 	)
 	(bus
 		(pts
-			(xy 121.92 100.33) (xy 125.73 100.33)
+			(xy 139.7 100.33) (xy 143.51 100.33)
 		)
 		(stroke
 			(width 0)
@@ -6613,16 +6764,6 @@
 	)
 	(bus
 		(pts
-			(xy 121.92 130.81) (xy 125.73 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "774e45e7-6fc1-4e7a-8c6f-2cc2cd6a66c4")
-	)
-	(bus
-		(pts
 			(xy 121.92 72.39) (xy 121.92 74.93)
 		)
 		(stroke
@@ -6673,7 +6814,7 @@
 	)
 	(wire
 		(pts
-			(xy 106.68 105.41) (xy 119.38 105.41)
+			(xy 106.68 105.41) (xy 137.16 105.41)
 		)
 		(stroke
 			(width 0)
@@ -7173,7 +7314,7 @@
 	)
 	(bus
 		(pts
-			(xy 121.92 132.08) (xy 121.92 133.35)
+			(xy 139.7 107.95) (xy 139.7 109.22)
 		)
 		(stroke
 			(width 0)
@@ -7280,6 +7421,16 @@
 			(type solid)
 		)
 		(uuid "c7d42e72-c1f2-46fd-a230-f082abc04809")
+	)
+	(wire
+		(pts
+			(xy 127 110.49) (xy 137.16 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cbfa12a1-0bfd-47d8-869a-56ea3f79b6e0")
 	)
 	(wire
 		(pts
@@ -7613,7 +7764,7 @@
 	)
 	(bus
 		(pts
-			(xy 121.92 102.87) (xy 121.92 100.33)
+			(xy 139.7 102.87) (xy 139.7 100.33)
 		)
 		(stroke
 			(width 0)
@@ -7630,16 +7781,6 @@
 			(type default)
 		)
 		(uuid "ffffb62f-32ac-489e-808f-ab61015c39ad")
-	)
-	(label "GPIO15"
-		(at 257.81 43.18 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "02d09613-f430-4491-87d0-dae2c73a4972")
 	)
 	(label "VBAT"
 		(at 246.38 140.97 180)
@@ -7711,16 +7852,6 @@
 		)
 		(uuid "1c7f5ad7-1867-431d-9911-9a8efb980bc3")
 	)
-	(label "RS485.~{EN}"
-		(at 257.81 53.34 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "1fdbd542-99b5-45e1-83ac-972fab3d53ec")
-	)
 	(label "ETH.TD4+"
 		(at 114.3 59.69 0)
 		(effects
@@ -7730,6 +7861,16 @@
 			(justify left bottom)
 		)
 		(uuid "22946eab-2fb9-40d0-a410-8a664476eea9")
+	)
+	(label "GPIO15"
+		(at 257.81 43.18 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2481dd07-3c49-412b-8e6d-7db8365690f7")
 	)
 	(label "ETH.TD1+"
 		(at 114.3 44.45 0)
@@ -7832,7 +7973,7 @@
 		(uuid "4001d352-8d37-43b1-9fe2-9efb87a48570")
 	)
 	(label "RS485.~{EN}"
-		(at 119.38 134.62 180)
+		(at 137.16 110.49 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8070,6 +8211,16 @@
 			(justify left bottom)
 		)
 		(uuid "7e001bf9-dea6-4eed-ac7d-aecc12914149")
+	)
+	(label "GPIO15"
+		(at 119.38 110.49 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "83409b75-c719-4f62-9dd7-8ce668cfd771")
 	)
 	(label "CAN.SCK"
 		(at 238.76 60.96 180)
@@ -8331,6 +8482,16 @@
 		)
 		(uuid "c6c95371-640e-47ab-8ae1-60f13de662d6")
 	)
+	(label "GPIO24"
+		(at 119.38 134.62 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "cc9da823-ea10-4450-bd58-1949e204e362")
+	)
 	(label "nRPIBOOT"
 		(at 224.79 121.92 180)
 		(effects
@@ -8360,16 +8521,6 @@
 			(justify right bottom)
 		)
 		(uuid "d34c1762-d4b2-4b92-bd5e-fd5fab398c52")
-	)
-	(label "GPIO15"
-		(at 119.38 110.49 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "d4915ff9-58f6-4afc-8c65-ac52a32599c1")
 	)
 	(label "I2C1.SDA"
 		(at 119.38 77.47 180)
@@ -8463,6 +8614,16 @@
 		)
 		(uuid "f15533c5-8eee-4da6-91c9-b9d7ae7d828b")
 	)
+	(label "GPIO24"
+		(at 257.81 53.34 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f30ab59d-9ff5-410b-bf4c-89e396954c71")
+	)
 	(label "RS485.TXD"
 		(at 257.81 71.12 0)
 		(effects
@@ -8527,7 +8688,7 @@
 	)
 	(hierarchical_label "RS485{RS485}"
 		(shape bidirectional)
-		(at 125.73 100.33 0)
+		(at 143.51 100.33 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8590,17 +8751,6 @@
 			(justify right)
 		)
 		(uuid "a9e2884f-fd3c-436c-b059-82bf3b6d2622")
-	)
-	(hierarchical_label "RS485{RS485}"
-		(shape bidirectional)
-		(at 125.73 130.81 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "aa86f2f0-2c6e-45fb-92da-efbdf167b8b2")
 	)
 	(hierarchical_label "CAN{SPI}"
 		(shape bidirectional)
@@ -10453,6 +10603,83 @@
 			(project "Yellow"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/7c248bd3-8232-4777-a40c-eab53460cf85"
 					(reference "#PWR079")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:FerriteBead_Small")
+		(at 124.46 110.49 90)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ab8b49a3-4ed6-4b72-90d2-852db5bee702")
+		(property "Reference" "FB8"
+			(at 127 113.03 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "BLM21PG600SN1"
+			(at 133.35 115.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Inductor_SMD:L_0805_2012Metric"
+			(at 124.46 108.712 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 124.46 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Ferrite bead, small symbol"
+			(at 124.46 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C18305"
+			(at 124.46 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "279fc635-751e-43fb-b225-ee85d0de1e93")
+		)
+		(pin "2"
+			(uuid "4842c8d6-33ed-4d97-a22a-d708f8386b49")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/7c248bd3-8232-4777-a40c-eab53460cf85"
+					(reference "FB8")
 					(unit 1)
 				)
 			)

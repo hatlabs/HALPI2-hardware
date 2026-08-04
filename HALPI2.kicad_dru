@@ -143,10 +143,10 @@
 # This also affects pad clearance
 
 (rule "class_neckdown"
-    (condition "((A.Type == 'Track' ) || (A.Type == 'Via' || (A.Type=='Pad'))) && (B.Type != 'Zone') && (A.intersectsCourtyard('${Class:fine_pitch}'))")
+    (condition "((A.Type == 'Track' ) || (A.Type == 'Via' || (A.Type=='Pad'))) && (B.Type != 'Zone') && (A.intersectsCourtyard('*'))")
     (constraint clearance (min 0.1mm)))
 
 (rule "pad_neckdown"
-    (condition "(A.Type == 'Pad') && (A.intersectsCourtyard('${Class:fine_pitch}'))")
+    (condition "(A.Type == 'Pad') && (A.intersectsCourtyard('*'))")
     (constraint clearance (min 0.1mm)))
 

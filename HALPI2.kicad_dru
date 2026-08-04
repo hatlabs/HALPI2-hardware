@@ -122,31 +122,17 @@
 ########################################################################################
 ## Neck-downs
 
-# Required to allow traces to neck-down when connecting to a component.
+# Dense areas around fine-pitch parts cannot be routed at the netclass and
+# diff-pair minimums, so tracks, vias and pads relax to the board minimum.
+# Applied globally: scoping this to fine-pitch courtyards needed
+# intersectsCourtyard(), which costs ~65 s per DRC and fill run on this board.
 
-#(rule "neckdown"
-#    (condition "((A.Type == 'Track' ) || (A.Type == 'Via')) && (A.intersectsCourtyard('${Class:fine_pitch}'))")
-#    (constraint clearance (min 0.1mm)))
-
-#(rule "front_neckdown"
-#    (condition "(A.Type != 'Zone') && (B.Type != 'Zone') && (A.intersectsFrontCourtyard('*'))")
-#    (layer F.Cu)
-#    (constraint clearance (min 0.1mm)))
-#
-#(rule "back_neckdown"
-#    (condition "(A.Type != 'Zone') && (B.Type != 'Zone') && (A.intersectsBackCourtyard('*'))")
-#    (layer B.Cu)
-#    (constraint clearance (min 0.1mm)))
-
-# Routing vias gets difficult unless we allow tight spacing inside fine_pitch components.
-
-# This also affects pad clearance
-
-(rule "class_neckdown"
-    (condition "((A.Type == 'Track' ) || (A.Type == 'Via' || (A.Type=='Pad'))) && (B.Type != 'Zone') && (A.intersectsCourtyard('*'))")
+(rule "neckdown"
+    (condition "((A.Type == 'Track') || (A.Type == 'Via') || (A.Type == 'Pad')) && (B.Type != 'Zone')")
     (constraint clearance (min 0.1mm)))
+
+# Pads also relax against zones, which the rule above excludes.
 
 (rule "pad_neckdown"
-    (condition "(A.Type == 'Pad') && (A.intersectsCourtyard('*'))")
+    (condition "(A.Type == 'Pad')")
     (constraint clearance (min 0.1mm)))
-

@@ -101,6 +101,25 @@
     (constraint clearance (min 0.30mm)))
 
 ########################################################################################
+## Other netclasses
+
+(rule "HV_clearance_outer"
+    (condition "A.hasNetClass('HV') && !B.hasNetClass('HV')")
+    (layer outer)
+    (constraint clearance (min 1.0mm)))
+
+(rule "HV_clearance"
+    (condition "A.hasNetClass('HV') && !B.hasNetClass('HV')")
+    (layer inner)
+    (constraint clearance (min 0.25mm)))
+
+# Route PoE taps close to each other
+
+(rule "PoE_tap"
+    (condition "A.hasNetClass('PoETap') && B.hasNetClass('PoETap')")
+    (constraint clearance (min 0.15mm)))
+
+########################################################################################
 ## Neck-downs
 
 # Required to allow traces to neck-down when connecting to a component.
@@ -127,25 +146,7 @@
     (condition "((A.Type == 'Track' ) || (A.Type == 'Via' || (A.Type=='Pad'))) && (B.Type != 'Zone') && (A.intersectsCourtyard('${Class:fine_pitch}'))")
     (constraint clearance (min 0.1mm)))
 
-#(rule "pad_neckdown"
-#    (condition "(A.Type == 'Pad') && (A.intersectsCourtyard('${Class:fine_pitch}'))")
-#    (constraint clearance (min 0.1mm)))
+(rule "pad_neckdown"
+    (condition "(A.Type == 'Pad') && (A.intersectsCourtyard('${Class:fine_pitch}'))")
+    (constraint clearance (min 0.1mm)))
 
-########################################################################################
-## Other netclasses
-
-(rule "HV_clearance_outer"
-    (condition "A.hasNetClass('HV') && !B.hasNetClass('HV')")
-    (layer outer)
-    (constraint clearance (min 1.0mm)))
-
-(rule "HV_clearance"
-    (condition "A.hasNetClass('HV') && !B.hasNetClass('HV')")
-    (layer inner)
-    (constraint clearance (min 0.25mm)))
-
-# Route PoE taps close to each other
-
-(rule "PoE_tap"
-    (condition "A.hasNetClass('PoETap') && B.hasNetClass('PoETap')")
-    (constraint clearance (min 0.15mm)))

@@ -3582,12 +3582,6 @@
 		(uuid "0188d807-ac84-43be-9065-80e590968e86")
 	)
 	(junction
-		(at 34.29 114.3)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "03d4d6c3-8881-485e-b0a9-f7a61c8cd734")
-	)
-	(junction
 		(at 170.18 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3702,6 +3696,12 @@
 		(uuid "8b1c31bc-7e08-4d8e-8906-4eb1a6043c18")
 	)
 	(junction
+		(at 24.13 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8ea21c43-a2be-4623-8671-e105db12a8fb")
+	)
+	(junction
 		(at 162.56 129.54)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3748,6 +3748,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bce9678c-0c49-46e1-a500-2682b3e07259")
+	)
+	(junction
+		(at 83.82 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bfbdeeb3-2771-4df2-aaf8-83d9c59155dc")
 	)
 	(junction
 		(at 203.2 129.54)
@@ -4435,7 +4441,7 @@
 	)
 	(wire
 		(pts
-			(xy 22.86 114.3) (xy 34.29 114.3)
+			(xy 22.86 114.3) (xy 24.13 114.3)
 		)
 		(stroke
 			(width 0)
@@ -4502,6 +4508,16 @@
 			(type default)
 		)
 		(uuid "7c2f2336-36e9-407a-b417-c3573856de5f")
+	)
+	(wire
+		(pts
+			(xy 24.13 114.3) (xy 30.48 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f07a71e-6853-4bc7-9eee-758abdad861d")
 	)
 	(wire
 		(pts
@@ -4615,6 +4631,16 @@
 	)
 	(wire
 		(pts
+			(xy 38.1 114.3) (xy 43.18 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95c93e71-600d-49cb-8699-c593bc3a5b01")
+	)
+	(wire
+		(pts
 			(xy 208.28 147.32) (xy 208.28 148.59)
 		)
 		(stroke
@@ -4692,16 +4718,6 @@
 			(type default)
 		)
 		(uuid "9f4753bf-1547-44f4-bb77-f70d22712924")
-	)
-	(wire
-		(pts
-			(xy 34.29 114.3) (xy 43.18 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9ffaa151-88c6-4b16-84a3-c51930939fe3")
 	)
 	(wire
 		(pts
@@ -4795,7 +4811,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 114.3) (xy 88.9 114.3)
+			(xy 63.5 114.3) (xy 83.82 114.3)
 		)
 		(stroke
 			(width 0)
@@ -5025,6 +5041,16 @@
 	)
 	(wire
 		(pts
+			(xy 83.82 114.3) (xy 88.9 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dca71f0b-d625-4282-858a-30f6a61ce963")
+	)
+	(wire
+		(pts
 			(xy 64.77 72.39) (xy 64.77 71.12)
 		)
 		(stroke
@@ -5213,6 +5239,16 @@
 		)
 		(uuid "8fdd0808-a0ac-4e15-9937-a0e40f14ac88")
 	)
+	(label "GND_F"
+		(at 99.06 114.3 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "95dfc229-6840-4eba-b9ed-db33b64edc16")
+	)
 	(label "VIN_OVP"
 		(at 102.87 135.89 90)
 		(effects
@@ -5378,7 +5414,7 @@
 			(justify left bottom)
 		)
 		(uuid "225fd1c8-ec3c-482d-81d3-82bd41bfeb26")
-		(property "Net Class" "Analog"
+		(property "Netclass" "Analog"
 			(at 100.33 148.971 90)
 			(hide yes)
 			(show_name no)
@@ -5404,7 +5440,7 @@
 			(justify left bottom)
 		)
 		(uuid "2c6514dc-f8be-4c49-b06d-850816a012b4")
-		(property "Net Class" "Power"
+		(property "Netclass" "Power"
 			(at 69.469 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -5431,6 +5467,42 @@
 	(netclass_flag ""
 		(length 2.54)
 		(shape round)
+		(at 55.88 114.3 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9fae3df0-9d5f-4b4f-a246-2ec352b9bca3")
+		(property "Netclass" "Power"
+			(at 56.769 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Component Class" ""
+			(at -242.57 46.99 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 2.54)
+		(shape round)
 		(at 119.38 60.96 270)
 		(fields_autoplaced yes)
 		(effects
@@ -5440,7 +5512,7 @@
 			(justify right bottom)
 		)
 		(uuid "c99d6e78-b803-46de-a625-e7130241297f")
-		(property "Net Class" "Power"
+		(property "Netclass" "Power"
 			(at 121.92 60.071 90)
 			(hide yes)
 			(show_name no)
@@ -6411,14 +6483,15 @@
 				)
 			)
 		)
-		(property "Value" "GNDPWR"
-			(at 102.743 165.1 0)
+		(property "Value" "GND_F"
+			(at 105.41 162.3567 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -6844,14 +6917,15 @@
 				)
 			)
 		)
-		(property "Value" "GNDPWR"
-			(at 117.983 165.1 0)
+		(property "Value" "GND_F"
+			(at 120.65 162.3567 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -7118,6 +7192,85 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 83.82 114.3 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2f9a3f6f-b37b-45f4-9ed4-189a34749131")
+		(property "Reference" "#FLG028"
+			(at 83.82 112.395 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 81.28 113.0299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 83.82 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 83.82 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 83.82 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f259c3b9-8f1b-42ca-8909-a893612ce584")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/b9ac802e-51d9-4be8-a7d3-5b5fa2c8bb97"
+					(reference "#FLG028")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 208.28 143.51 0)
 		(unit 1)
@@ -7226,7 +7379,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "3699f322-719f-47ca-b799-9c0a63581bc8")
 		(property "Reference" "#PWR0153"
 			(at 82.55 86.36 0)
@@ -7239,14 +7391,15 @@
 				)
 			)
 		)
-		(property "Value" "GNDPWR"
-			(at 82.423 85.09 0)
+		(property "Value" "GND_F"
+			(at 80.01 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -7396,7 +7549,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "3e39e197-d374-4c94-ba15-1191fefa40ec")
 		(property "Reference" "#PWR0316"
 			(at 64.77 86.36 0)
@@ -7409,14 +7561,15 @@
 				)
 			)
 		)
-		(property "Value" "GNDPWR"
-			(at 64.643 85.09 0)
+		(property "Value" "GND_F"
+			(at 62.23 85.09 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -7869,7 +8022,8 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 34.29 114.3 180)
+		(at 24.13 114.3 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7877,10 +8031,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "6c1e7268-cc61-4ced-af31-c211d7df277a")
 		(property "Reference" "#FLG01"
-			(at 34.29 116.205 0)
+			(at 24.13 112.395 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7891,17 +8044,18 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 34.29 119.38 0)
+			(at 21.59 113.0299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 34.29 114.3 0)
+			(at 24.13 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7912,7 +8066,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 34.29 114.3 0)
+			(at 24.13 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7923,7 +8077,7 @@
 			)
 		)
 		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 34.29 114.3 0)
+			(at 24.13 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7946,6 +8100,96 @@
 			(project "HALPI2"
 				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/b9ac802e-51d9-4be8-a7d3-5b5fa2c8bb97"
 					(reference "#FLG01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Fuse")
+		(at 34.29 114.3 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6d156847-95d3-4e3a-b073-ba0f1b3d1689")
+		(property "Reference" "F6"
+			(at 34.29 109.2962 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0451005.MRL"
+			(at 34.29 111.6076 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Fuse:Fuse_Littelfuse-NANO2-451_453"
+			(at 34.29 112.522 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 34.29 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Fuse"
+			(at 34.29 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C48467"
+			(at 34.29 114.3 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "13000483-a319-4d00-a19b-cf6dd3a7428b")
+		)
+		(pin "2"
+			(uuid "f459776a-2236-48a8-acc4-23b437da4e26")
+		)
+		(instances
+			(project "HALPI2"
+				(path "/abc482bd-3f17-4d35-80db-1da3dcdb5c27/c7bf4e1f-6bd1-4be7-9e56-1bd438bf5d42/b9ac802e-51d9-4be8-a7d3-5b5fa2c8bb97"
+					(reference "F6")
 					(unit 1)
 				)
 			)
@@ -9229,7 +9473,7 @@
 				)
 			)
 		)
-		(property "Value" "GNDPWR"
+		(property "Value" "GND_F"
 			(at 115.443 66.04 0)
 			(show_name no)
 			(do_not_autoplace no)

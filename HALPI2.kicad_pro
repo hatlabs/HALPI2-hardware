@@ -51,21 +51,21 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "border_display_style": 1,
-          "border_hatch_pitch": 0.2,
-          "corner_radius": 1.0,
-          "corner_smoothing": 2,
+          "border_display_style": 2,
+          "border_hatch_pitch": 0.5,
+          "corner_radius": 0.0,
+          "corner_smoothing": 0,
           "fill_mode": 0,
           "hatch_gap": 1.5,
           "hatch_orientation": 0.0,
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
-          "min_clearance": 0.5,
+          "min_clearance": 0.3,
           "min_island_area": 10.0,
-          "min_thickness": 0.25,
+          "min_thickness": 0.15,
           "pad_connection": 2,
-          "remove_islands": 0,
+          "remove_islands": 2,
           "thermal_relief_gap": 0.3,
           "thermal_relief_spoke_width": 0.5
         }
@@ -83,6 +83,18 @@
         }
       ],
       "drc_exclusions": [
+        [
+          "clearance|145900000|82932500|d70d9ec3-1a52-48ff-aac3-af59fa65a054|5e92e7ad-657c-40f8-bc97-dc99f972e91c",
+          ""
+        ],
+        [
+          "clearance|92900000|82932500|6c50f414-d973-4e1c-a1e1-b75fd963d7aa|43a3b69f-a8db-4535-9129-938f312142a0",
+          ""
+        ],
+        [
+          "connection_width|42295255|139045714|e487ca44-8c45-45d1-86e3-46b889e8f45d|59140543-c4dd-448e-b9e9-7a0f8de5a44b",
+          ""
+        ],
         [
           "copper_edge_clearance|215450000|105000000|10cf33ea-729c-4314-b1a2-ba82cf1a8245|47dff0c3-2a03-46f5-a2ae-49b020213b60",
           ""
@@ -140,6 +152,10 @@
           ""
         ],
         [
+          "courtyards_overlap|210901986|108645241|2de0ceeb-e188-46bc-979b-37240cee2ce8|7e1042b3-c0ba-453a-9ec5-c05032da1c42",
+          ""
+        ],
+        [
           "courtyards_overlap|38863450|60480912|0d7e9e8e-e9e3-45f8-bdac-9a3f08865aa0|1137f04f-89ee-42de-b0fb-dd0b4ef059dc",
           ""
         ],
@@ -185,6 +201,26 @@
         ],
         [
           "footprint_type_mismatch|81000000|64970000|680529a3-74b2-4592-9c64-6b88fa4564df|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "hole_clearance|143400000|47682500|4d95df6b-3360-4f1a-8523-7a0dfb1d0e3b|9e9dc6b2-b446-42e2-94a8-dbfe491b22cc",
+          ""
+        ],
+        [
+          "hole_clearance|143400000|80682500|d70d9ec3-1a52-48ff-aac3-af59fa65a054|688b070b-aea4-4b9d-b906-3f518b248f3c",
+          ""
+        ],
+        [
+          "hole_clearance|148400000|36182500|11ba5a06-27ca-4074-ba44-98eb726e659b|53dd28c2-457c-4d1c-8173-5a4316a2f236",
+          ""
+        ],
+        [
+          "hole_clearance|181448381|120882500|ac3e3225-bbb9-4ed5-9c80-871d4f4f6801|8b0887f4-1821-4d9a-b409-538706edb9db",
+          ""
+        ],
+        [
+          "hole_clearance|90400000|85182500|6c50f414-d973-4e1c-a1e1-b75fd963d7aa|a7b1fa7d-f3c9-4db3-8159-379f200f2344",
           ""
         ]
       ],
@@ -2012,7 +2048,7 @@
           "show": true
         }
       ],
-      "filter_string": "",
+      "filter_string": "C162",
       "group_symbols": true,
       "include_excluded_from_bom": true,
       "name": "",

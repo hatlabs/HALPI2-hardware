@@ -126,13 +126,12 @@
 # diff-pair minimums, so tracks, vias and pads relax to the board minimum.
 # Applied globally: scoping this to fine-pitch courtyards needed
 # intersectsCourtyard(), which costs ~65 s per DRC and fill run on this board.
+#
+# Zones are excluded so pad_zone_clearance still governs fill pullback, and
+# pairs crossing the HV boundary are excluded so HV_clearance keeps its
+# creepage. Within the HV domain the relaxation still applies -- MX pair
+# spacing at the RJ45 is ordinary signal routing, not an isolation gap.
 
 (rule "neckdown"
-    (condition "((A.Type == 'Track') || (A.Type == 'Via') || (A.Type == 'Pad')) && (B.Type != 'Zone')")
-    (constraint clearance (min 0.1mm)))
-
-# Pads also relax against zones, which the rule above excludes.
-
-(rule "pad_neckdown"
-    (condition "(A.Type == 'Pad')")
+    (condition "((A.Type == 'Track') || (A.Type == 'Via') || (A.Type == 'Pad')) && (B.Type != 'Zone') && ((A.hasNetClass('HV') && B.hasNetClass('HV')) || (!A.hasNetClass('HV') && !B.hasNetClass('HV')))")
     (constraint clearance (min 0.1mm)))

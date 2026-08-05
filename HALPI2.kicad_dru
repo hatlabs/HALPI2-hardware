@@ -111,7 +111,7 @@
 (rule "HV_clearance"
     (condition "A.hasNetClass('HV') && !B.hasNetClass('HV')")
     (layer inner)
-    (constraint clearance (min 0.25mm)))
+    (constraint clearance (min 1.0mm)))
 
 # Route PoE taps close to each other
 

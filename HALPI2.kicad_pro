@@ -53,15 +53,15 @@
           "45_degree_only": false,
           "border_display_style": 2,
           "border_hatch_pitch": 0.5,
-          "corner_radius": 0.0,
-          "corner_smoothing": 0,
+          "corner_radius": 1.0,
+          "corner_smoothing": 2,
           "fill_mode": 0,
           "hatch_gap": 1.5,
           "hatch_orientation": 0.0,
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
-          "min_clearance": 0.3,
+          "min_clearance": 1.0,
           "min_island_area": 10.0,
           "min_thickness": 0.15,
           "pad_connection": 2,
@@ -84,7 +84,7 @@
       ],
       "drc_exclusions": [
         [
-          "clearance|145900000|82932500|d70d9ec3-1a52-48ff-aac3-af59fa65a054|5e92e7ad-657c-40f8-bc97-dc99f972e91c",
+          "clearance|145900000|82932500|5e92e7ad-657c-40f8-bc97-dc99f972e91c|d70d9ec3-1a52-48ff-aac3-af59fa65a054",
           ""
         ],
         [
@@ -152,7 +152,7 @@
           ""
         ],
         [
-          "courtyards_overlap|210901986|108645241|2de0ceeb-e188-46bc-979b-37240cee2ce8|7e1042b3-c0ba-453a-9ec5-c05032da1c42",
+          "courtyards_overlap|210901982|108645238|2de0ceeb-e188-46bc-979b-37240cee2ce8|7e1042b3-c0ba-453a-9ec5-c05032da1c42",
           ""
         ],
         [
@@ -208,7 +208,7 @@
           ""
         ],
         [
-          "hole_clearance|143400000|80682500|d70d9ec3-1a52-48ff-aac3-af59fa65a054|688b070b-aea4-4b9d-b906-3f518b248f3c",
+          "hole_clearance|143448381|120882500|2abfd2a1-45a4-40f8-8d58-95dbb90f8881|50eda41c-d4da-47db-b6d5-71a667c7bb08",
           ""
         ],
         [
@@ -216,11 +216,23 @@
           ""
         ],
         [
-          "hole_clearance|181448381|120882500|ac3e3225-bbb9-4ed5-9c80-871d4f4f6801|8b0887f4-1821-4d9a-b409-538706edb9db",
+          "hole_clearance|148400000|85182500|5e92e7ad-657c-40f8-bc97-dc99f972e91c|aeaa0209-cac3-4e7f-a950-21f51402790d",
           ""
         ],
         [
-          "hole_clearance|90400000|85182500|6c50f414-d973-4e1c-a1e1-b75fd963d7aa|a7b1fa7d-f3c9-4db3-8159-379f200f2344",
+          "hole_clearance|161448381|120882500|a1862e4b-ec1e-43a2-b4cf-4718bd7d1d30|d84228cb-2db3-4b57-9640-ebd9c007d5a6",
+          ""
+        ],
+        [
+          "hole_clearance|72720000|112350000|afa3b001-52e3-421a-b02b-1a40e7ccd0cc|544fc1f4-eb8e-4071-904b-6a8c9d82e3ff",
+          ""
+        ],
+        [
+          "hole_clearance|90400000|36182500|1fee9a0f-6792-401c-adc7-585f106c5efa|4251736f-5541-4318-b6ef-dc6e170327a1",
+          ""
+        ],
+        [
+          "hole_clearance|95400000|47682500|2c8edc7e-5895-498f-b2fd-ed70a4cc1f9d|d67955fc-d649-4cbc-bae4-f1b50e63aa05",
           ""
         ]
       ],
@@ -1850,6 +1862,9 @@
       "/~{LED_PWR}": [
         "Digital"
       ],
+      "GND_ETH": [
+        "HV"
+      ],
       "GND_F": [
         "Power"
       ],
@@ -2217,7 +2232,7 @@
         "uuid": "abc482bd-3f17-4d35-80db-1da3dcdb5c27"
       }
     ],
-    "used_designators": "",
+    "used_designators": "R159,C190,#PWR62,#PWR375,#PWR389-390",
     "variants": []
   },
   "sheets": [

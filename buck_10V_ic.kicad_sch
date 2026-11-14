@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "HALPI2")
-		(date "2026-02-26")
-		(rev "v0.7.0")
+		(date "2026-08-05")
+		(rev "v1.0.0")
 		(company "Hat Labs Oy")
 		(comment 1 "https://ohwr.org/cern_ohl_s_v2.pdf")
 		(comment 2 "To view a copy of this license, visit ")
@@ -3187,7 +3187,7 @@
 			(justify left bottom)
 		)
 		(uuid "19ffb40a-f3b8-465f-9026-1fadb035e26b")
-		(property "Net Class" "Analog"
+		(property "Netclass" "Analog"
 			(at 158.75 135.001 90)
 			(hide yes)
 			(show_name no)
@@ -3213,7 +3213,7 @@
 			(justify right bottom)
 		)
 		(uuid "20cd22ac-5633-4ab2-ba91-f021889e83c3")
-		(property "Net Class" "Analog"
+		(property "Netclass" "Analog"
 			(at 154.559 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -3239,7 +3239,7 @@
 			(justify left bottom)
 		)
 		(uuid "3cdaf07d-06c3-40a7-9a48-8ccd959b8d08")
-		(property "Net Class" "Analog"
+		(property "Netclass" "Analog"
 			(at 141.859 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -3265,7 +3265,7 @@
 			(justify left bottom)
 		)
 		(uuid "69f1ccfe-3927-4a85-ae3a-7a16a805e5f1")
-		(property "Net Class" "Analog"
+		(property "Netclass" "Analog"
 			(at 158.75 145.161 90)
 			(hide yes)
 			(show_name no)
@@ -3291,7 +3291,7 @@
 			(justify right bottom)
 		)
 		(uuid "7d319d72-af2b-4a44-9b33-2ffebef7d601")
-		(property "Net Class" "Analog"
+		(property "Netclass" "Analog"
 			(at 152.019 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -3317,7 +3317,7 @@
 			(justify right bottom)
 		)
 		(uuid "840b737d-720c-409a-90e5-a1e81f3c055e")
-		(property "Net Class" "Analog"
+		(property "Netclass" "Analog"
 			(at 215.519 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -3343,7 +3343,7 @@
 			(justify right bottom)
 		)
 		(uuid "93b468ea-92be-4d9b-9b9b-c57f979fb14f")
-		(property "Net Class" "Analog"
+		(property "Netclass" "Analog"
 			(at 69.85 145.161 90)
 			(hide yes)
 			(show_name no)
@@ -3369,7 +3369,7 @@
 			(justify right bottom)
 		)
 		(uuid "b9f49063-b9e5-4b96-9d51-51ef76b14afa")
-		(property "Net Class" "Analog"
+		(property "Netclass" "Analog"
 			(at 111.76 143.891 90)
 			(hide yes)
 			(show_name no)
@@ -3395,7 +3395,7 @@
 			(justify right bottom)
 		)
 		(uuid "c6c9e9ff-121e-492e-86d6-4ccc585e9648")
-		(property "Net Class" "Analog"
+		(property "Netclass" "Analog"
 			(at 140.97 143.891 90)
 			(hide yes)
 			(show_name no)
@@ -3421,7 +3421,7 @@
 			(justify right bottom)
 		)
 		(uuid "d0beefa6-2a1a-4611-939b-b44ebe430ce9")
-		(property "Net Class" "Analog"
+		(property "Netclass" "Analog"
 			(at 124.46 143.891 90)
 			(hide yes)
 			(show_name no)
@@ -3447,7 +3447,7 @@
 			(justify left bottom)
 		)
 		(uuid "dc484fde-01ef-4f86-a522-6cc2dd4075a3")
-		(property "Net Class" "Power"
+		(property "Netclass" "Power"
 			(at 154.559 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -3483,7 +3483,7 @@
 			(justify right bottom)
 		)
 		(uuid "e114b9da-aa53-47df-9484-2414274efd2c")
-		(property "Net Class" "Analog"
+		(property "Netclass" "Analog"
 			(at 167.64 67.691 90)
 			(hide yes)
 			(show_name no)
@@ -3509,7 +3509,7 @@
 			(justify right bottom)
 		)
 		(uuid "e211bd9b-e6bd-4bdb-937b-b210e0a59f88")
-		(property "Net Class" "Analog"
+		(property "Netclass" "Analog"
 			(at 173.609 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -3535,7 +3535,7 @@
 			(justify right bottom)
 		)
 		(uuid "fefb3b71-0f3c-4136-9543-1abf05e2e344")
-		(property "Net Class" "Analog"
+		(property "Netclass" "Analog"
 			(at 97.79 144.526 90)
 			(hide yes)
 			(show_name no)
@@ -5138,9 +5138,9 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "579790c3-a0f5-42a1-b633-03c7b230d391")
 		(property "Reference" "TP90"
@@ -6264,9 +6264,9 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9feb57e1-1e26-4bbb-b96a-4773d4247c8c")

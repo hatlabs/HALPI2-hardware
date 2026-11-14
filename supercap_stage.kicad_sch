@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "HALPI2")
-		(date "2026-02-26")
-		(rev "v0.7.0")
+		(date "2026-08-05")
+		(rev "v1.0.0")
 		(company "Hat Labs Oy")
 		(comment 1 "https://ohwr.org/cern_ohl_s_v2.pdf")
 		(comment 2 "To view a copy of this license, visit ")
@@ -1914,7 +1914,7 @@
 			(justify left bottom)
 		)
 		(uuid "b9b37caf-16d0-4c99-bd43-b2a7aca0e79f")
-		(property "Net Class" "Analog"
+		(property "Netclass" "Analog"
 			(at 125.349 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -1940,7 +1940,7 @@
 			(justify left bottom)
 		)
 		(uuid "c86ca6a2-2220-4d77-aafe-941da47e6adb")
-		(property "Net Class" "Analog"
+		(property "Netclass" "Analog"
 			(at 102.87 91.821 90)
 			(hide yes)
 			(show_name no)
@@ -1966,7 +1966,7 @@
 			(justify right bottom)
 		)
 		(uuid "ec023701-388a-4117-821d-a40176f05258")
-		(property "Net Class" "Analog"
+		(property "Netclass" "Analog"
 			(at 96.52 93.091 90)
 			(hide yes)
 			(show_name no)
@@ -2077,9 +2077,9 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "071931f0-f576-471b-a933-4b34878bb047")
 		(property "Reference" "TP10"
@@ -2287,9 +2287,9 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "1b9eca70-0806-4d0b-8cda-44f6b02a1432")
 		(property "Reference" "TP9"
@@ -2658,6 +2658,17 @@
 				)
 			)
 		)
+		(property "LCSC_SUB" "C137969"
+			(at 105.41 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "81af5b71-223d-4c54-9b45-df64a1998be9")
 		)
@@ -2694,7 +2705,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5f9bf805-9ffe-4387-baf2-fe345e00cfdb")

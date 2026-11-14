@@ -127,11 +127,12 @@
 # Applied globally: scoping this to fine-pitch courtyards needed
 # intersectsCourtyard(), which costs ~65 s per DRC and fill run on this board.
 #
-# Zones are excluded so pad_zone_clearance still governs fill pullback, and
+# Zones are excluded so pad_zone_clearance still governs fill pullback,
 # pairs crossing the HV boundary are excluded so HV_clearance keeps its
-# creepage. Within the HV domain the relaxation still applies -- MX pair
+# creepage, and pairs across the CAN/RS485 isolation barrier are excluded so
+# isolated_zone_clearance keeps its 1 mm. Within the HV domain the relaxation still applies -- MX pair
 # spacing at the RJ45 is ordinary signal routing, not an isolation gap.
 
 (rule "neckdown"
-    (condition "((A.Type == 'Track') || (A.Type == 'Via') || (A.Type == 'Pad')) && (B.Type != 'Zone') && ((A.hasNetClass('HV') && B.hasNetClass('HV')) || (!A.hasNetClass('HV') && !B.hasNetClass('HV')))")
+    (condition "((A.Type == 'Track') || (A.Type == 'Via') || (A.Type == 'Pad')) && (B.Type != 'Zone') && ((A.hasNetClass('HV') && B.hasNetClass('HV')) || (!A.hasNetClass('HV') && !B.hasNetClass('HV'))) && !(((A.NetName == '+5V' || A.NetName == '+3.3V' || A.NetName == 'GND') && (B.NetName == 'GND_CAN' || B.NetName == 'GND_RS485' || B.NetName == '+5V_CAN' || B.NetName == '+5V_RS485')) || ((A.NetName == 'GND_CAN' || A.NetName == 'GND_RS485' || A.NetName == '+5V_CAN' || A.NetName == '+5V_RS485') && (B.NetName == '+5V' || B.NetName == '+3.3V' || B.NetName == 'GND')))")
     (constraint clearance (min 0.1mm)))

@@ -340,6 +340,7 @@
         {
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 1,
+          "td_enabled": false,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -351,6 +352,7 @@
         {
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 1,
+          "td_enabled": false,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -362,6 +364,7 @@
         {
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 1,
+          "td_enabled": false,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -688,6 +691,7 @@
       "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
+      "same_local_global_power": "warning",
       "similar_label_and_power": "warning",
       "similar_labels": "warning",
       "similar_power": "warning",
@@ -826,7 +830,7 @@
     "meta": {
       "version": 5
     },
-    "net_colors": null,
+    "net_colors": {},
     "netclass_assignments": {
       "+3.3VP": [
         "Power"
@@ -1862,9 +1866,6 @@
       "/~{LED_PWR}": [
         "Digital"
       ],
-      "GND_ETH": [
-        "HV"
-      ],
       "GND_F": [
         "Power"
       ],
@@ -2061,9 +2062,15 @@
           "label": "Component Class",
           "name": "Component Class",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "LCSC_SUB",
+          "name": "LCSC_SUB",
+          "show": true
         }
       ],
-      "filter_string": "C162",
+      "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
       "name": "",
@@ -2232,7 +2239,7 @@
         "uuid": "abc482bd-3f17-4d35-80db-1da3dcdb5c27"
       }
     ],
-    "used_designators": "R159,C190,#PWR62,#PWR375,#PWR389-390",
+    "used_designators": "#PWR62,#PWR375,#PWR389-390,C190,R159",
     "variants": []
   },
   "sheets": [

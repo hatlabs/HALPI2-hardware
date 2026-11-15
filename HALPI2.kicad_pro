@@ -88,11 +88,7 @@
           ""
         ],
         [
-          "clearance|92900000|82932500|6c50f414-d973-4e1c-a1e1-b75fd963d7aa|43a3b69f-a8db-4535-9129-938f312142a0",
-          ""
-        ],
-        [
-          "connection_width|42295255|139045714|e487ca44-8c45-45d1-86e3-46b889e8f45d|59140543-c4dd-448e-b9e9-7a0f8de5a44b",
+          "clearance|92900000|82932500|43a3b69f-a8db-4535-9129-938f312142a0|6c50f414-d973-4e1c-a1e1-b75fd963d7aa",
           ""
         ],
         [
@@ -152,7 +148,7 @@
           ""
         ],
         [
-          "courtyards_overlap|210901982|108645238|2de0ceeb-e188-46bc-979b-37240cee2ce8|7e1042b3-c0ba-453a-9ec5-c05032da1c42",
+          "courtyards_overlap|210901986|108645241|2de0ceeb-e188-46bc-979b-37240cee2ce8|7e1042b3-c0ba-453a-9ec5-c05032da1c42",
           ""
         ],
         [
@@ -224,15 +220,19 @@
           ""
         ],
         [
-          "hole_clearance|72720000|112350000|afa3b001-52e3-421a-b02b-1a40e7ccd0cc|544fc1f4-eb8e-4071-904b-6a8c9d82e3ff",
-          ""
-        ],
-        [
           "hole_clearance|90400000|36182500|1fee9a0f-6792-401c-adc7-585f106c5efa|4251736f-5541-4318-b6ef-dc6e170327a1",
           ""
         ],
         [
+          "hole_clearance|90400000|85182500|6c50f414-d973-4e1c-a1e1-b75fd963d7aa|a7b1fa7d-f3c9-4db3-8159-379f200f2344",
+          ""
+        ],
+        [
           "hole_clearance|95400000|47682500|2c8edc7e-5895-498f-b2fd-ed70a4cc1f9d|d67955fc-d649-4cbc-bae4-f1b50e63aa05",
+          ""
+        ],
+        [
+          "hole_clearance|95400000|80682500|43a3b69f-a8db-4535-9129-938f312142a0|fb7b4a3c-7a97-4b52-8f4f-6d9a822c0189",
           ""
         ]
       ],
@@ -718,7 +718,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.3,
+        "clearance": 0.1,
         "diff_pair_gap": 0.2,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -737,7 +737,7 @@
       },
       {
         "bus_width": 12,
-        "clearance": 0.3,
+        "clearance": 0.1,
         "diff_pair_gap": 0.4,
         "diff_pair_width": 0.2,
         "line_style": 0,
@@ -754,25 +754,33 @@
         "wire_width": 5
       },
       {
+        "clearance": 0.1,
+        "diff_pair_gap": 0.25,
+        "diff_pair_width": 0.1326,
         "name": "Diff100ohm",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 1,
         "schematic_color": "rgb(255, 141, 141)",
+        "track_width": 0.1326,
         "tuning_profile": "",
         "via_diameter": 0.5,
         "via_drill": 0.3
       },
       {
+        "clearance": 0.1,
+        "diff_pair_gap": 0.2,
+        "diff_pair_width": 0.1575,
         "name": "Diff90ohm",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2,
         "schematic_color": "rgb(255, 141, 141)",
+        "track_width": 0.1575,
         "tuning_profile": "",
         "via_diameter": 0.5,
         "via_drill": 0.3
       },
       {
-        "clearance": 0.3,
+        "clearance": 0.1,
         "name": "Digital",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 3,
@@ -783,7 +791,7 @@
         "via_drill": 0.3
       },
       {
-        "clearance": 0.3,
+        "clearance": 0.1,
         "name": "GND",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 5,
@@ -810,7 +818,7 @@
       },
       {
         "bus_width": 12,
-        "clearance": 0.3,
+        "clearance": 0.1,
         "diff_pair_gap": 0.4,
         "diff_pair_width": 0.2,
         "line_style": 0,

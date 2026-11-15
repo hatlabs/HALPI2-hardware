@@ -1,59 +1,50 @@
 (version 1)
 
-########################################################################################
-## Single-ended signal traces
+# Routing clearances live in the netclasses so that tools which do not read
+# custom rules see them. The rules here only widen spacing to pours, guard the
+# HV and isolation boundaries, and constrain diff-pair tuning.
+#
+# Later rules take precedence over earlier ones.
 
-(rule "digital"
-    (condition "(A.hasNetClass('Digital'))")
-    (constraint track_width (min 0.1mm) (opt 0.15mm) (max 0.3mm))
+########################################################################################
+## Pour pullback
+
+(rule "zone_pullback"
+    (condition "((A.Type == 'Pad') || (A.Type == 'Track') || (A.Type == 'Zone')) && (B.Type == 'Zone')")
     (constraint clearance (min 0.3mm)))
 
+# At 0.1 mm, pours leave slivers between vias and cut off via-fed islands.
+# 0.15 mm also keeps the JLCPCB 0.2 mm inner-layer hole-to-copper clearance
+# between pours and the smallest via (0.4/0.3 mm).
+
+(rule "via_zone_pullback"
+    (condition "(A.Type == 'Via') && (B.Type == 'Zone')")
+    (constraint clearance (min 0.15mm)))
+
+# 90 ohm tracks keep 2W to pours; 100 ohm tracks use zone_pullback.
+
+(rule "diff_90ohm_zone_pullback"
+    (condition "(A.Type == 'Track') && A.hasNetclass('Diff90ohm') && (B.Type == 'Zone')")
+    (layer outer)
+    (constraint clearance (min 0.315mm)))
+
+(rule "diff_pair_via_zone_pullback"
+    (condition "(A.Type == 'Via') && (A.hasNetclass('Diff90ohm') || A.hasNetclass('Diff100ohm')) && (B.Type == 'Zone')")
+    (constraint clearance (min 0.3mm)))
+
+# The input-protection ground pour keeps its 0.5 mm zone clearance to tracks
+# and other pours, which zone_pullback would otherwise override.
+
+(rule "gnd_f_zone_pullback"
+    (condition "((A.Type == 'Track') || (A.Type == 'Zone')) && (B.Type == 'Zone') && (B.NetName == 'GND_F')")
+    (constraint clearance (min 0.5mm)))
+
 ########################################################################################
-## General design rules
+## Diff-pair tuning
 
-(rule "pad_clearance"
-    (condition "(A.Type == 'Pad')")
-    (constraint clearance (min 0.2mm)))
-
-########################################################################################
-## Differential pairs
-
-# Calculated using the JLCPCB Impedance Calculator.
-
-# Differential pair clearance is 3W.
-
-(rule diff_90ohm_outer
-    (condition "(A.Type == 'Track') && (A.hasNetclass('Diff90ohm'))")
-    (layer outer)
-    (constraint track_width (opt 0.1575mm))
-    (constraint clearance (min 0.315mm))
-    (constraint diff_pair_gap (opt 0.2mm)))
-
-(rule diff_90ohm_layer1_pair_clearance
-    (condition "(AB.isCoupledDiffPair()) && (A.hasNetclass('Diff90ohm'))")
-    (layer outer)
-    (constraint clearance (min 0.19mm)))
-
-(rule diff_90ohm_layer3
-    (condition "(A.Type == 'Track') && (A.hasNetclass('Diff90ohm'))")
-    (layer In2.Cu)
-    (constraint track_width (opt 0.1430mm))
-    (constraint clearance (min 0.429mm))
-    (constraint diff_pair_gap (opt 0.2mm)))
-
-(rule "diff_100ohm_outer"
-    (condition "(A.Type == 'Track') && (A.hasNetclass('Diff100ohm'))")
-    (layer outer)
-    (constraint track_width (opt 0.1326mm))
-    (constraint clearance (opt 0.3978mm))
-    (constraint diff_pair_gap (opt 0.25mm)))
-
-(rule "diff_100ohm_layer3"
-    (condition "(A.Type == 'Track') && (A.hasNetclass('Diff100ohm'))")
-    (layer In2.Cu)
-    (constraint track_width (opt 0.1204mm))
-    (constraint clearance (min 0.3612mm))
-    (constraint diff_pair_gap (opt 0.25mm)))
+# Track widths and pair gaps from the JLCPCB Impedance Calculator are in the
+# Diff90ohm and Diff100ohm netclasses. Diff pairs are routed on the outer layers
+# only.
 
 (rule "ignore_diff_pattern_tuning_pair_gap"
     (condition "AB.isCoupledDiffPair() && B.Tuning_Mode=='Diff pair skew'")
@@ -63,76 +54,18 @@
     (constraint skew (min -0.2mm) (opt 0.0mm) (max 0.2mm) (within_diff_pairs)))
 
 ########################################################################################
-## Vias
+## HV and isolation boundaries
 
-# Drop clearance requirements for vias
-
-(rule "via_clearance"
-    (condition "A.Type == 'Via'")
-    (constraint clearance (min 0.15mm)))
-
-(rule "diff_pair_via_clearance"
-    (condition "(A.Type == 'Via') && (A.hasNetclass('Diff90ohm') || A.hasNetclass('Diff100ohm'))")
-    (constraint clearance (min 0.3mm)))
-
-(rule "diff_pair_via_to_trace_clearance"
-    (condition "AB.isCoupledDiffPair() && (A.Type == 'Via' || B.Type == 'Via')")
-    (constraint clearance (min 0.15mm)))
-
-# Reduced clearance for GND vias to traces and other vias
-
-(rule "gnd_via_to_trace_clearance"
-    (condition "(A.Type == 'Via' && A.NetName == 'GND') && (B.Type == 'Track' || B.Type == 'Via')")
-    (constraint clearance (min 0.13mm)))
-
-########################################################################################
-## Zones
-
-(rule "isolated_zone_clearance"
-    (condition "A.NetName == 'GND' && (B.NetName == 'GND_CAN' || B.NetName == 'GND_RS485')")
-    (constraint clearance (min 1.0mm)))
-
-(rule "isolated_zone_clearance"
-    (condition "(A.NetName == '+5V' || A.NetName == '+3.3V' || A.NetName == 'GND') && (B.NetName == 'GND_CAN' || B.NetName == 'GND_RS485' || B.NetName == '+5V_CAN' || B.NetName == '+5V_RS485')")
-    (constraint clearance (min 1.0mm)))
-
-(rule "pad_zone_clearance"
-    (condition "(A.Type == 'Pad') && (B.Type == 'Zone')")
-    (constraint clearance (min 0.30mm)))
-
-########################################################################################
-## Other netclasses
-
-(rule "HV_clearance_outer"
-    (condition "A.hasNetClass('HV') && !B.hasNetClass('HV')")
-    (layer outer)
-    (constraint clearance (min 1.0mm)))
+# Netclass clearances cannot express these: they apply between domains, not
+# within one. Tools that read only netclasses do not see them, so run DRC after
+# any such tool touches HV or isolated-side copper.
 
 (rule "HV_clearance"
     (condition "A.hasNetClass('HV') && !B.hasNetClass('HV')")
-    (layer inner)
     (constraint clearance (min 1.0mm)))
 
-# Route PoE taps close to each other
+# 1 mm across the CAN/RS485 isolation barrier, for all copper.
 
-(rule "PoE_tap"
-    (condition "A.hasNetClass('PoETap') && B.hasNetClass('PoETap')")
-    (constraint clearance (min 0.15mm)))
-
-########################################################################################
-## Neck-downs
-
-# Dense areas around fine-pitch parts cannot be routed at the netclass and
-# diff-pair minimums, so tracks, vias and pads relax to the board minimum.
-# Applied globally: scoping this to fine-pitch courtyards needed
-# intersectsCourtyard(), which costs ~65 s per DRC and fill run on this board.
-#
-# Zones are excluded so pad_zone_clearance still governs fill pullback,
-# pairs crossing the HV boundary are excluded so HV_clearance keeps its
-# creepage, and pairs across the CAN/RS485 isolation barrier are excluded so
-# isolated_zone_clearance keeps its 1 mm. Within the HV domain the relaxation still applies -- MX pair
-# spacing at the RJ45 is ordinary signal routing, not an isolation gap.
-
-(rule "neckdown"
-    (condition "((A.Type == 'Track') || (A.Type == 'Via') || (A.Type == 'Pad')) && (B.Type != 'Zone') && ((A.hasNetClass('HV') && B.hasNetClass('HV')) || (!A.hasNetClass('HV') && !B.hasNetClass('HV'))) && !(((A.NetName == '+5V' || A.NetName == '+3.3V' || A.NetName == 'GND') && (B.NetName == 'GND_CAN' || B.NetName == 'GND_RS485' || B.NetName == '+5V_CAN' || B.NetName == '+5V_RS485')) || ((A.NetName == 'GND_CAN' || A.NetName == 'GND_RS485' || A.NetName == '+5V_CAN' || A.NetName == '+5V_RS485') && (B.NetName == '+5V' || B.NetName == '+3.3V' || B.NetName == 'GND')))")
-    (constraint clearance (min 0.1mm)))
+(rule "isolation_barrier_clearance"
+    (condition "(A.NetName == '+5V' || A.NetName == '+3.3V' || A.NetName == 'GND') && (B.NetName == 'GND_CAN' || B.NetName == 'GND_RS485' || B.NetName == '+5V_CAN' || B.NetName == '+5V_RS485')")
+    (constraint clearance (min 1.0mm)))
